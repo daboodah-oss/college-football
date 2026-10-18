@@ -1,0 +1,3655 @@
+{
+ "seasons": {
+  "2024": {
+   "source_url": "https://cfbstats.com/2024/team/index.html",
+   "count": 134,
+   "teams": [
+    {
+     "cfb_id": 721,
+     "cfb_name": "Air Force",
+     "espn_id": "2005",
+     "name": "Air Force",
+     "nickname": "Falcons",
+     "abbr": "AF",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 5,
+     "cfb_name": "Akron",
+     "espn_id": "2006",
+     "name": "Akron",
+     "nickname": "Zips",
+     "abbr": "AKR",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 8,
+     "cfb_name": "Alabama",
+     "espn_id": "333",
+     "name": "Alabama",
+     "nickname": "Crimson Tide",
+     "abbr": "ALA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 27,
+     "cfb_name": "Appalachian State",
+     "espn_id": "2026",
+     "name": "App State",
+     "nickname": "Mountaineers",
+     "abbr": "APP",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 29,
+     "cfb_name": "Arizona",
+     "espn_id": "12",
+     "name": "Arizona",
+     "nickname": "Wildcats",
+     "abbr": "ARIZ",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 28,
+     "cfb_name": "Arizona State",
+     "espn_id": "9",
+     "name": "Arizona State",
+     "nickname": "Sun Devils",
+     "abbr": "ASU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 31,
+     "cfb_name": "Arkansas",
+     "espn_id": "8",
+     "name": "Arkansas",
+     "nickname": "Razorbacks",
+     "abbr": "ARK",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 30,
+     "cfb_name": "Arkansas State",
+     "espn_id": "2032",
+     "name": "Arkansas State",
+     "nickname": "Red Wolves",
+     "abbr": "ARST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 725,
+     "cfb_name": "Army",
+     "espn_id": "349",
+     "name": "Army",
+     "nickname": "Black Knights",
+     "abbr": "ARMY",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 37,
+     "cfb_name": "Auburn",
+     "espn_id": "2",
+     "name": "Auburn",
+     "nickname": "Tigers",
+     "abbr": "AUB",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 77,
+     "cfb_name": "BYU",
+     "espn_id": "252",
+     "name": "BYU",
+     "nickname": "Cougars",
+     "abbr": "BYU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 47,
+     "cfb_name": "Ball State",
+     "espn_id": "2050",
+     "name": "Ball State",
+     "nickname": "Cardinals",
+     "abbr": "BALL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 51,
+     "cfb_name": "Baylor",
+     "espn_id": "239",
+     "name": "Baylor",
+     "nickname": "Bears",
+     "abbr": "BAY",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 66,
+     "cfb_name": "Boise State",
+     "espn_id": "68",
+     "name": "Boise State",
+     "nickname": "Broncos",
+     "abbr": "BOIS",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 67,
+     "cfb_name": "Boston College",
+     "espn_id": "103",
+     "name": "Boston College",
+     "nickname": "Eagles",
+     "abbr": "BC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 71,
+     "cfb_name": "Bowling Green",
+     "espn_id": "189",
+     "name": "Bowling Green",
+     "nickname": "Falcons",
+     "abbr": "BGSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 86,
+     "cfb_name": "Buffalo",
+     "espn_id": "2084",
+     "name": "Buffalo",
+     "nickname": "Bulls",
+     "abbr": "BUF",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 107,
+     "cfb_name": "California",
+     "espn_id": "25",
+     "name": "California",
+     "nickname": "Golden Bears",
+     "abbr": "CAL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 129,
+     "cfb_name": "Central Michigan",
+     "espn_id": "2117",
+     "name": "Central Michigan",
+     "nickname": "Chippewas",
+     "abbr": "CMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 140,
+     "cfb_name": "Cincinnati",
+     "espn_id": "2132",
+     "name": "Cincinnati",
+     "nickname": "Bearcats",
+     "abbr": "CIN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 147,
+     "cfb_name": "Clemson",
+     "espn_id": "228",
+     "name": "Clemson",
+     "nickname": "Tigers",
+     "abbr": "CLEM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 149,
+     "cfb_name": "Coastal Carolina",
+     "espn_id": "324",
+     "name": "Coastal Carolina",
+     "nickname": "Chanticleers",
+     "abbr": "CCU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 157,
+     "cfb_name": "Colorado",
+     "espn_id": "38",
+     "name": "Colorado",
+     "nickname": "Buffaloes",
+     "abbr": "COLO",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 156,
+     "cfb_name": "Colorado State",
+     "espn_id": "36",
+     "name": "Colorado State",
+     "nickname": "Rams",
+     "abbr": "CSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 164,
+     "cfb_name": "Connecticut",
+     "espn_id": "41",
+     "name": "UConn",
+     "nickname": "Huskies",
+     "abbr": "CONN",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 193,
+     "cfb_name": "Duke",
+     "espn_id": "150",
+     "name": "Duke",
+     "nickname": "Blue Devils",
+     "abbr": "DUKE",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 196,
+     "cfb_name": "East Carolina",
+     "espn_id": "151",
+     "name": "East Carolina",
+     "nickname": "Pirates",
+     "abbr": "ECU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 204,
+     "cfb_name": "Eastern Michigan",
+     "espn_id": "2199",
+     "name": "Eastern Michigan",
+     "nickname": "Eagles",
+     "abbr": "EMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 231,
+     "cfb_name": "FIU",
+     "espn_id": "2229",
+     "name": "Florida International",
+     "nickname": "Panthers",
+     "abbr": "FIU",
+     "how": "name = ESPN short (fbs list)"
+    },
+    {
+     "cfb_id": 235,
+     "cfb_name": "Florida",
+     "espn_id": "57",
+     "name": "Florida",
+     "nickname": "Gators",
+     "abbr": "FLA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 229,
+     "cfb_name": "Florida Atlantic",
+     "espn_id": "2226",
+     "name": "Florida Atlantic",
+     "nickname": "Owls",
+     "abbr": "FAU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 234,
+     "cfb_name": "Florida State",
+     "espn_id": "52",
+     "name": "Florida State",
+     "nickname": "Seminoles",
+     "abbr": "FSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 96,
+     "cfb_name": "Fresno State",
+     "espn_id": "278",
+     "name": "Fresno State",
+     "nickname": "Bulldogs",
+     "abbr": "FRES",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 257,
+     "cfb_name": "Georgia",
+     "espn_id": "61",
+     "name": "Georgia",
+     "nickname": "Bulldogs",
+     "abbr": "UGA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 253,
+     "cfb_name": "Georgia Southern",
+     "espn_id": "290",
+     "name": "Georgia Southern",
+     "nickname": "Eagles",
+     "abbr": "GASO",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 254,
+     "cfb_name": "Georgia State",
+     "espn_id": "2247",
+     "name": "Georgia State",
+     "nickname": "Panthers",
+     "abbr": "GAST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 255,
+     "cfb_name": "Georgia Tech",
+     "espn_id": "59",
+     "name": "Georgia Tech",
+     "nickname": "Yellow Jackets",
+     "abbr": "GT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 277,
+     "cfb_name": "Hawaii",
+     "espn_id": "62",
+     "name": "Hawai'i",
+     "nickname": "Rainbow Warriors",
+     "abbr": "HAW",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 288,
+     "cfb_name": "Houston",
+     "espn_id": "248",
+     "name": "Houston",
+     "nickname": "Cougars",
+     "abbr": "HOU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 301,
+     "cfb_name": "Illinois",
+     "espn_id": "356",
+     "name": "Illinois",
+     "nickname": "Fighting Illini",
+     "abbr": "ILL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 306,
+     "cfb_name": "Indiana",
+     "espn_id": "84",
+     "name": "Indiana",
+     "nickname": "Hoosiers",
+     "abbr": "IU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 312,
+     "cfb_name": "Iowa",
+     "espn_id": "2294",
+     "name": "Iowa",
+     "nickname": "Hawkeyes",
+     "abbr": "IOWA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 311,
+     "cfb_name": "Iowa State",
+     "espn_id": "66",
+     "name": "Iowa State",
+     "nickname": "Cyclones",
+     "abbr": "ISU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 315,
+     "cfb_name": "Jacksonville State",
+     "espn_id": "55",
+     "name": "Jacksonville State",
+     "nickname": "Gamecocks",
+     "abbr": "JXST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 317,
+     "cfb_name": "James Madison",
+     "espn_id": "256",
+     "name": "James Madison",
+     "nickname": "Dukes",
+     "abbr": "JMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 328,
+     "cfb_name": "Kansas",
+     "espn_id": "2305",
+     "name": "Kansas",
+     "nickname": "Jayhawks",
+     "abbr": "KU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 327,
+     "cfb_name": "Kansas State",
+     "espn_id": "2306",
+     "name": "Kansas State",
+     "nickname": "Wildcats",
+     "abbr": "KSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 1157,
+     "cfb_name": "Kennesaw State",
+     "espn_id": "338",
+     "name": "Kennesaw State",
+     "nickname": "Owls",
+     "abbr": "KENN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 331,
+     "cfb_name": "Kent State",
+     "espn_id": "2309",
+     "name": "Kent State",
+     "nickname": "Golden Flashes",
+     "abbr": "KENT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 334,
+     "cfb_name": "Kentucky",
+     "espn_id": "96",
+     "name": "Kentucky",
+     "nickname": "Wildcats",
+     "abbr": "UK",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 365,
+     "cfb_name": "LSU",
+     "espn_id": "99",
+     "name": "LSU",
+     "nickname": "Tigers",
+     "abbr": "LSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 355,
+     "cfb_name": "Liberty",
+     "espn_id": "2335",
+     "name": "Liberty",
+     "nickname": "Flames",
+     "abbr": "LIB",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 671,
+     "cfb_name": "Louisiana",
+     "espn_id": "309",
+     "name": "Louisiana",
+     "nickname": "Ragin' Cajuns",
+     "abbr": "UL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 366,
+     "cfb_name": "Louisiana Tech",
+     "espn_id": "2348",
+     "name": "Louisiana Tech",
+     "nickname": "Bulldogs",
+     "abbr": "LT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 498,
+     "cfb_name": "Louisiana-Monroe",
+     "espn_id": "2433",
+     "name": "UL Monroe",
+     "nickname": "Warhawks",
+     "abbr": "ULM",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 367,
+     "cfb_name": "Louisville",
+     "espn_id": "97",
+     "name": "Louisville",
+     "nickname": "Cardinals",
+     "abbr": "LOU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 388,
+     "cfb_name": "Marshall",
+     "espn_id": "276",
+     "name": "Marshall",
+     "nickname": "Thundering Herd",
+     "abbr": "MRSH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 392,
+     "cfb_name": "Maryland",
+     "espn_id": "120",
+     "name": "Maryland",
+     "nickname": "Terrapins",
+     "abbr": "MD",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 400,
+     "cfb_name": "Massachusetts",
+     "espn_id": "113",
+     "name": "Massachusetts",
+     "nickname": "Minutemen",
+     "abbr": "MASS",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 404,
+     "cfb_name": "Memphis",
+     "espn_id": "235",
+     "name": "Memphis",
+     "nickname": "Tigers",
+     "abbr": "MEM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 415,
+     "cfb_name": "Miami (FL)",
+     "espn_id": "2390",
+     "name": "Miami",
+     "nickname": "Hurricanes",
+     "abbr": "MIA",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 414,
+     "cfb_name": "Miami (OH)",
+     "espn_id": "193",
+     "name": "Miami (OH)",
+     "nickname": "RedHawks",
+     "abbr": "M-OH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 418,
+     "cfb_name": "Michigan",
+     "espn_id": "130",
+     "name": "Michigan",
+     "nickname": "Wolverines",
+     "abbr": "MICH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 416,
+     "cfb_name": "Michigan State",
+     "espn_id": "127",
+     "name": "Michigan State",
+     "nickname": "Spartans",
+     "abbr": "MSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 419,
+     "cfb_name": "Middle Tennessee State",
+     "espn_id": "2393",
+     "name": "Middle Tennessee",
+     "nickname": "Blue Raiders",
+     "abbr": "MTSU",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 428,
+     "cfb_name": "Minnesota",
+     "espn_id": "135",
+     "name": "Minnesota",
+     "nickname": "Golden Gophers",
+     "abbr": "MINN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 430,
+     "cfb_name": "Mississippi State",
+     "espn_id": "344",
+     "name": "Mississippi State",
+     "nickname": "Bulldogs",
+     "abbr": "MSST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 434,
+     "cfb_name": "Missouri",
+     "espn_id": "142",
+     "name": "Missouri",
+     "nickname": "Tigers",
+     "abbr": "MIZ",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 490,
+     "cfb_name": "NC State",
+     "espn_id": "152",
+     "name": "NC State",
+     "nickname": "Wolfpack",
+     "abbr": "NCSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 726,
+     "cfb_name": "Navy",
+     "espn_id": "2426",
+     "name": "Navy",
+     "nickname": "Midshipmen",
+     "abbr": "NAVY",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 463,
+     "cfb_name": "Nebraska",
+     "espn_id": "158",
+     "name": "Nebraska",
+     "nickname": "Cornhuskers",
+     "abbr": "NEB",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 466,
+     "cfb_name": "Nevada",
+     "espn_id": "2440",
+     "name": "Nevada",
+     "nickname": "Wolf Pack",
+     "abbr": "NEV",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 473,
+     "cfb_name": "New Mexico",
+     "espn_id": "167",
+     "name": "New Mexico",
+     "nickname": "Lobos",
+     "abbr": "UNM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 472,
+     "cfb_name": "New Mexico State",
+     "espn_id": "166",
+     "name": "New Mexico State",
+     "nickname": "Aggies",
+     "abbr": "NMSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 457,
+     "cfb_name": "North Carolina",
+     "espn_id": "153",
+     "name": "North Carolina",
+     "nickname": "Tar Heels",
+     "abbr": "UNC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 497,
+     "cfb_name": "North Texas",
+     "espn_id": "249",
+     "name": "North Texas",
+     "nickname": "Mean Green",
+     "abbr": "UNT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 503,
+     "cfb_name": "Northern Illinois",
+     "espn_id": "2459",
+     "name": "Northern Illinois",
+     "nickname": "Huskies",
+     "abbr": "NIU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 509,
+     "cfb_name": "Northwestern",
+     "espn_id": "77",
+     "name": "Northwestern",
+     "nickname": "Wildcats",
+     "abbr": "NU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 513,
+     "cfb_name": "Notre Dame",
+     "espn_id": "87",
+     "name": "Notre Dame",
+     "nickname": "Fighting Irish",
+     "abbr": "ND",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 519,
+     "cfb_name": "Ohio",
+     "espn_id": "195",
+     "name": "Ohio",
+     "nickname": "Bobcats",
+     "abbr": "OHIO",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 518,
+     "cfb_name": "Ohio State",
+     "espn_id": "194",
+     "name": "Ohio State",
+     "nickname": "Buckeyes",
+     "abbr": "OSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 522,
+     "cfb_name": "Oklahoma",
+     "espn_id": "201",
+     "name": "Oklahoma",
+     "nickname": "Sooners",
+     "abbr": "OU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 521,
+     "cfb_name": "Oklahoma State",
+     "espn_id": "197",
+     "name": "Oklahoma State",
+     "nickname": "Cowboys",
+     "abbr": "OKST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 523,
+     "cfb_name": "Old Dominion",
+     "espn_id": "295",
+     "name": "Old Dominion",
+     "nickname": "Monarchs",
+     "abbr": "ODU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 433,
+     "cfb_name": "Ole Miss",
+     "espn_id": "145",
+     "name": "Ole Miss",
+     "nickname": "Rebels",
+     "abbr": "MISS",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 529,
+     "cfb_name": "Oregon",
+     "espn_id": "2483",
+     "name": "Oregon",
+     "nickname": "Ducks",
+     "abbr": "ORE",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 528,
+     "cfb_name": "Oregon State",
+     "espn_id": "204",
+     "name": "Oregon State",
+     "nickname": "Beavers",
+     "abbr": "ORST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 539,
+     "cfb_name": "Penn State",
+     "espn_id": "213",
+     "name": "Penn State",
+     "nickname": "Nittany Lions",
+     "abbr": "PSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 545,
+     "cfb_name": "Pittsburgh",
+     "espn_id": "221",
+     "name": "Pittsburgh",
+     "nickname": "Panthers",
+     "abbr": "PITT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 559,
+     "cfb_name": "Purdue",
+     "espn_id": "2509",
+     "name": "Purdue",
+     "nickname": "Boilermakers",
+     "abbr": "PUR",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 574,
+     "cfb_name": "Rice",
+     "espn_id": "242",
+     "name": "Rice",
+     "nickname": "Owls",
+     "abbr": "RICE",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 587,
+     "cfb_name": "Rutgers",
+     "espn_id": "164",
+     "name": "Rutgers",
+     "nickname": "Scarlet Knights",
+     "abbr": "RUTG",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 663,
+     "cfb_name": "SMU",
+     "espn_id": "2567",
+     "name": "SMU",
+     "nickname": "Mustangs",
+     "abbr": "SMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 624,
+     "cfb_name": "Sam Houston State",
+     "espn_id": "2534",
+     "name": "Sam Houston",
+     "nickname": "Bearkats",
+     "abbr": "SHSU",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 626,
+     "cfb_name": "San Diego State",
+     "espn_id": "21",
+     "name": "San Diego State",
+     "nickname": "Aztecs",
+     "abbr": "SDSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 630,
+     "cfb_name": "San Jose State",
+     "espn_id": "23",
+     "name": "San Jos\u00e9 State",
+     "nickname": "Spartans",
+     "abbr": "SJSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 646,
+     "cfb_name": "South Alabama",
+     "espn_id": "6",
+     "name": "South Alabama",
+     "nickname": "Jaguars",
+     "abbr": "USA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 648,
+     "cfb_name": "South Carolina",
+     "espn_id": "2579",
+     "name": "South Carolina",
+     "nickname": "Gamecocks",
+     "abbr": "SC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 664,
+     "cfb_name": "Southern Miss",
+     "espn_id": "2572",
+     "name": "Southern Miss",
+     "nickname": "Golden Eagles",
+     "abbr": "USM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 674,
+     "cfb_name": "Stanford",
+     "espn_id": "24",
+     "name": "Stanford",
+     "nickname": "Cardinal",
+     "abbr": "STAN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 688,
+     "cfb_name": "Syracuse",
+     "espn_id": "183",
+     "name": "Syracuse",
+     "nickname": "Orange",
+     "abbr": "SYR",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 698,
+     "cfb_name": "TCU",
+     "espn_id": "2628",
+     "name": "TCU",
+     "nickname": "Horned Frogs",
+     "abbr": "TCU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 690,
+     "cfb_name": "Temple",
+     "espn_id": "218",
+     "name": "Temple",
+     "nickname": "Owls",
+     "abbr": "TEM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 694,
+     "cfb_name": "Tennessee",
+     "espn_id": "2633",
+     "name": "Tennessee",
+     "nickname": "Volunteers",
+     "abbr": "TENN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 703,
+     "cfb_name": "Texas",
+     "espn_id": "251",
+     "name": "Texas",
+     "nickname": "Longhorns",
+     "abbr": "TEX",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 670,
+     "cfb_name": "Texas State",
+     "espn_id": "326",
+     "name": "Texas State",
+     "nickname": "Bobcats",
+     "abbr": "TXST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 700,
+     "cfb_name": "Texas Tech",
+     "espn_id": "2641",
+     "name": "Texas Tech",
+     "nickname": "Red Raiders",
+     "abbr": "TTU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 709,
+     "cfb_name": "Toledo",
+     "espn_id": "2649",
+     "name": "Toledo",
+     "nickname": "Rockets",
+     "abbr": "TOL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 718,
+     "cfb_name": "Tulane",
+     "espn_id": "2655",
+     "name": "Tulane",
+     "nickname": "Green Wave",
+     "abbr": "TULN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 719,
+     "cfb_name": "Tulsa",
+     "espn_id": "202",
+     "name": "Tulsa",
+     "nickname": "Golden Hurricane",
+     "abbr": "TLSA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 9,
+     "cfb_name": "UAB",
+     "espn_id": "5",
+     "name": "UAB",
+     "nickname": "Blazers",
+     "abbr": "UAB",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 128,
+     "cfb_name": "UCF",
+     "espn_id": "2116",
+     "name": "UCF",
+     "nickname": "Knights",
+     "abbr": "UCF",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 110,
+     "cfb_name": "UCLA",
+     "espn_id": "26",
+     "name": "UCLA",
+     "nickname": "Bruins",
+     "abbr": "UCLA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 465,
+     "cfb_name": "UNLV",
+     "espn_id": "2439",
+     "name": "UNLV",
+     "nickname": "Rebels",
+     "abbr": "UNLV",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 657,
+     "cfb_name": "USC",
+     "espn_id": "30",
+     "name": "USC",
+     "nickname": "Trojans",
+     "abbr": "USC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 704,
+     "cfb_name": "UTEP",
+     "espn_id": "2638",
+     "name": "UTEP",
+     "nickname": "Miners",
+     "abbr": "UTEP",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 706,
+     "cfb_name": "UTSA",
+     "espn_id": "2636",
+     "name": "UTSA",
+     "nickname": "Roadrunners",
+     "abbr": "UTSA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 732,
+     "cfb_name": "Utah",
+     "espn_id": "254",
+     "name": "Utah",
+     "nickname": "Utes",
+     "abbr": "UTAH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 731,
+     "cfb_name": "Utah State",
+     "espn_id": "328",
+     "name": "Utah State",
+     "nickname": "Aggies",
+     "abbr": "USU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 736,
+     "cfb_name": "Vanderbilt",
+     "espn_id": "238",
+     "name": "Vanderbilt",
+     "nickname": "Commodores",
+     "abbr": "VAN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 746,
+     "cfb_name": "Virginia",
+     "espn_id": "258",
+     "name": "Virginia",
+     "nickname": "Cavaliers",
+     "abbr": "UVA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 742,
+     "cfb_name": "Virginia Tech",
+     "espn_id": "259",
+     "name": "Virginia Tech",
+     "nickname": "Hokies",
+     "abbr": "VT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 749,
+     "cfb_name": "Wake Forest",
+     "espn_id": "154",
+     "name": "Wake Forest",
+     "nickname": "Demon Deacons",
+     "abbr": "WAKE",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 756,
+     "cfb_name": "Washington",
+     "espn_id": "264",
+     "name": "Washington",
+     "nickname": "Huskies",
+     "abbr": "WASH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 754,
+     "cfb_name": "Washington State",
+     "espn_id": "265",
+     "name": "Washington State",
+     "nickname": "Cougars",
+     "abbr": "WSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 768,
+     "cfb_name": "West Virginia",
+     "espn_id": "277",
+     "name": "West Virginia",
+     "nickname": "Mountaineers",
+     "abbr": "WVU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 772,
+     "cfb_name": "Western Kentucky",
+     "espn_id": "98",
+     "name": "Western Kentucky",
+     "nickname": "Hilltoppers",
+     "abbr": "WKU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 774,
+     "cfb_name": "Western Michigan",
+     "espn_id": "2711",
+     "name": "Western Michigan",
+     "nickname": "Broncos",
+     "abbr": "WMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 796,
+     "cfb_name": "Wisconsin",
+     "espn_id": "275",
+     "name": "Wisconsin",
+     "nickname": "Badgers",
+     "abbr": "WIS",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 811,
+     "cfb_name": "Wyoming",
+     "espn_id": "2751",
+     "name": "Wyoming",
+     "nickname": "Cowboys",
+     "abbr": "WYO",
+     "how": "name = ESPN location (fbs list)"
+    }
+   ],
+   "unmapped": [
+    {
+     "cfb_id": 458,
+     "cfb_name": "Charlotte",
+     "why": "'Charlotte' matches 2 ESPN teams by location"
+    },
+    {
+     "cfb_id": 697,
+     "cfb_name": "Texas A&amp;M",
+     "why": "no ESPN team with that name"
+    },
+    {
+     "cfb_id": 716,
+     "cfb_name": "Troy",
+     "why": "'Troy' matches 2 ESPN teams by location"
+    },
+    {
+     "cfb_id": 651,
+     "cfb_name": "USF",
+     "why": "no ESPN team with that name"
+    }
+   ],
+   "retrieved_at": "2026-10-18T19:36+00:00"
+  },
+  "2025": {
+   "source_url": "https://cfbstats.com/2025/team/index.html",
+   "count": 136,
+   "teams": [
+    {
+     "cfb_id": 721,
+     "cfb_name": "Air Force",
+     "espn_id": "2005",
+     "name": "Air Force",
+     "nickname": "Falcons",
+     "abbr": "AF",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 5,
+     "cfb_name": "Akron",
+     "espn_id": "2006",
+     "name": "Akron",
+     "nickname": "Zips",
+     "abbr": "AKR",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 8,
+     "cfb_name": "Alabama",
+     "espn_id": "333",
+     "name": "Alabama",
+     "nickname": "Crimson Tide",
+     "abbr": "ALA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 27,
+     "cfb_name": "Appalachian State",
+     "espn_id": "2026",
+     "name": "App State",
+     "nickname": "Mountaineers",
+     "abbr": "APP",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 29,
+     "cfb_name": "Arizona",
+     "espn_id": "12",
+     "name": "Arizona",
+     "nickname": "Wildcats",
+     "abbr": "ARIZ",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 28,
+     "cfb_name": "Arizona State",
+     "espn_id": "9",
+     "name": "Arizona State",
+     "nickname": "Sun Devils",
+     "abbr": "ASU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 31,
+     "cfb_name": "Arkansas",
+     "espn_id": "8",
+     "name": "Arkansas",
+     "nickname": "Razorbacks",
+     "abbr": "ARK",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 30,
+     "cfb_name": "Arkansas State",
+     "espn_id": "2032",
+     "name": "Arkansas State",
+     "nickname": "Red Wolves",
+     "abbr": "ARST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 725,
+     "cfb_name": "Army",
+     "espn_id": "349",
+     "name": "Army",
+     "nickname": "Black Knights",
+     "abbr": "ARMY",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 37,
+     "cfb_name": "Auburn",
+     "espn_id": "2",
+     "name": "Auburn",
+     "nickname": "Tigers",
+     "abbr": "AUB",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 77,
+     "cfb_name": "BYU",
+     "espn_id": "252",
+     "name": "BYU",
+     "nickname": "Cougars",
+     "abbr": "BYU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 47,
+     "cfb_name": "Ball State",
+     "espn_id": "2050",
+     "name": "Ball State",
+     "nickname": "Cardinals",
+     "abbr": "BALL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 51,
+     "cfb_name": "Baylor",
+     "espn_id": "239",
+     "name": "Baylor",
+     "nickname": "Bears",
+     "abbr": "BAY",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 66,
+     "cfb_name": "Boise State",
+     "espn_id": "68",
+     "name": "Boise State",
+     "nickname": "Broncos",
+     "abbr": "BOIS",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 67,
+     "cfb_name": "Boston College",
+     "espn_id": "103",
+     "name": "Boston College",
+     "nickname": "Eagles",
+     "abbr": "BC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 71,
+     "cfb_name": "Bowling Green",
+     "espn_id": "189",
+     "name": "Bowling Green",
+     "nickname": "Falcons",
+     "abbr": "BGSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 86,
+     "cfb_name": "Buffalo",
+     "espn_id": "2084",
+     "name": "Buffalo",
+     "nickname": "Bulls",
+     "abbr": "BUF",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 107,
+     "cfb_name": "California",
+     "espn_id": "25",
+     "name": "California",
+     "nickname": "Golden Bears",
+     "abbr": "CAL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 129,
+     "cfb_name": "Central Michigan",
+     "espn_id": "2117",
+     "name": "Central Michigan",
+     "nickname": "Chippewas",
+     "abbr": "CMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 140,
+     "cfb_name": "Cincinnati",
+     "espn_id": "2132",
+     "name": "Cincinnati",
+     "nickname": "Bearcats",
+     "abbr": "CIN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 147,
+     "cfb_name": "Clemson",
+     "espn_id": "228",
+     "name": "Clemson",
+     "nickname": "Tigers",
+     "abbr": "CLEM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 149,
+     "cfb_name": "Coastal Carolina",
+     "espn_id": "324",
+     "name": "Coastal Carolina",
+     "nickname": "Chanticleers",
+     "abbr": "CCU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 157,
+     "cfb_name": "Colorado",
+     "espn_id": "38",
+     "name": "Colorado",
+     "nickname": "Buffaloes",
+     "abbr": "COLO",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 156,
+     "cfb_name": "Colorado State",
+     "espn_id": "36",
+     "name": "Colorado State",
+     "nickname": "Rams",
+     "abbr": "CSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 164,
+     "cfb_name": "Connecticut",
+     "espn_id": "41",
+     "name": "UConn",
+     "nickname": "Huskies",
+     "abbr": "CONN",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 180,
+     "cfb_name": "Delaware",
+     "espn_id": "48",
+     "name": "Delaware",
+     "nickname": "Blue Hens",
+     "abbr": "DEL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 193,
+     "cfb_name": "Duke",
+     "espn_id": "150",
+     "name": "Duke",
+     "nickname": "Blue Devils",
+     "abbr": "DUKE",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 196,
+     "cfb_name": "East Carolina",
+     "espn_id": "151",
+     "name": "East Carolina",
+     "nickname": "Pirates",
+     "abbr": "ECU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 204,
+     "cfb_name": "Eastern Michigan",
+     "espn_id": "2199",
+     "name": "Eastern Michigan",
+     "nickname": "Eagles",
+     "abbr": "EMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 231,
+     "cfb_name": "FIU",
+     "espn_id": "2229",
+     "name": "Florida International",
+     "nickname": "Panthers",
+     "abbr": "FIU",
+     "how": "name = ESPN short (fbs list)"
+    },
+    {
+     "cfb_id": 235,
+     "cfb_name": "Florida",
+     "espn_id": "57",
+     "name": "Florida",
+     "nickname": "Gators",
+     "abbr": "FLA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 229,
+     "cfb_name": "Florida Atlantic",
+     "espn_id": "2226",
+     "name": "Florida Atlantic",
+     "nickname": "Owls",
+     "abbr": "FAU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 234,
+     "cfb_name": "Florida State",
+     "espn_id": "52",
+     "name": "Florida State",
+     "nickname": "Seminoles",
+     "abbr": "FSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 96,
+     "cfb_name": "Fresno State",
+     "espn_id": "278",
+     "name": "Fresno State",
+     "nickname": "Bulldogs",
+     "abbr": "FRES",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 257,
+     "cfb_name": "Georgia",
+     "espn_id": "61",
+     "name": "Georgia",
+     "nickname": "Bulldogs",
+     "abbr": "UGA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 253,
+     "cfb_name": "Georgia Southern",
+     "espn_id": "290",
+     "name": "Georgia Southern",
+     "nickname": "Eagles",
+     "abbr": "GASO",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 254,
+     "cfb_name": "Georgia State",
+     "espn_id": "2247",
+     "name": "Georgia State",
+     "nickname": "Panthers",
+     "abbr": "GAST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 255,
+     "cfb_name": "Georgia Tech",
+     "espn_id": "59",
+     "name": "Georgia Tech",
+     "nickname": "Yellow Jackets",
+     "abbr": "GT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 277,
+     "cfb_name": "Hawaii",
+     "espn_id": "62",
+     "name": "Hawai'i",
+     "nickname": "Rainbow Warriors",
+     "abbr": "HAW",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 288,
+     "cfb_name": "Houston",
+     "espn_id": "248",
+     "name": "Houston",
+     "nickname": "Cougars",
+     "abbr": "HOU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 301,
+     "cfb_name": "Illinois",
+     "espn_id": "356",
+     "name": "Illinois",
+     "nickname": "Fighting Illini",
+     "abbr": "ILL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 306,
+     "cfb_name": "Indiana",
+     "espn_id": "84",
+     "name": "Indiana",
+     "nickname": "Hoosiers",
+     "abbr": "IU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 312,
+     "cfb_name": "Iowa",
+     "espn_id": "2294",
+     "name": "Iowa",
+     "nickname": "Hawkeyes",
+     "abbr": "IOWA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 311,
+     "cfb_name": "Iowa State",
+     "espn_id": "66",
+     "name": "Iowa State",
+     "nickname": "Cyclones",
+     "abbr": "ISU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 315,
+     "cfb_name": "Jacksonville State",
+     "espn_id": "55",
+     "name": "Jacksonville State",
+     "nickname": "Gamecocks",
+     "abbr": "JXST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 317,
+     "cfb_name": "James Madison",
+     "espn_id": "256",
+     "name": "James Madison",
+     "nickname": "Dukes",
+     "abbr": "JMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 328,
+     "cfb_name": "Kansas",
+     "espn_id": "2305",
+     "name": "Kansas",
+     "nickname": "Jayhawks",
+     "abbr": "KU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 327,
+     "cfb_name": "Kansas State",
+     "espn_id": "2306",
+     "name": "Kansas State",
+     "nickname": "Wildcats",
+     "abbr": "KSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 1157,
+     "cfb_name": "Kennesaw State",
+     "espn_id": "338",
+     "name": "Kennesaw State",
+     "nickname": "Owls",
+     "abbr": "KENN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 331,
+     "cfb_name": "Kent State",
+     "espn_id": "2309",
+     "name": "Kent State",
+     "nickname": "Golden Flashes",
+     "abbr": "KENT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 334,
+     "cfb_name": "Kentucky",
+     "espn_id": "96",
+     "name": "Kentucky",
+     "nickname": "Wildcats",
+     "abbr": "UK",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 365,
+     "cfb_name": "LSU",
+     "espn_id": "99",
+     "name": "LSU",
+     "nickname": "Tigers",
+     "abbr": "LSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 355,
+     "cfb_name": "Liberty",
+     "espn_id": "2335",
+     "name": "Liberty",
+     "nickname": "Flames",
+     "abbr": "LIB",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 671,
+     "cfb_name": "Louisiana",
+     "espn_id": "309",
+     "name": "Louisiana",
+     "nickname": "Ragin' Cajuns",
+     "abbr": "UL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 366,
+     "cfb_name": "Louisiana Tech",
+     "espn_id": "2348",
+     "name": "Louisiana Tech",
+     "nickname": "Bulldogs",
+     "abbr": "LT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 498,
+     "cfb_name": "Louisiana-Monroe",
+     "espn_id": "2433",
+     "name": "UL Monroe",
+     "nickname": "Warhawks",
+     "abbr": "ULM",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 367,
+     "cfb_name": "Louisville",
+     "espn_id": "97",
+     "name": "Louisville",
+     "nickname": "Cardinals",
+     "abbr": "LOU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 388,
+     "cfb_name": "Marshall",
+     "espn_id": "276",
+     "name": "Marshall",
+     "nickname": "Thundering Herd",
+     "abbr": "MRSH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 392,
+     "cfb_name": "Maryland",
+     "espn_id": "120",
+     "name": "Maryland",
+     "nickname": "Terrapins",
+     "abbr": "MD",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 400,
+     "cfb_name": "Massachusetts",
+     "espn_id": "113",
+     "name": "Massachusetts",
+     "nickname": "Minutemen",
+     "abbr": "MASS",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 404,
+     "cfb_name": "Memphis",
+     "espn_id": "235",
+     "name": "Memphis",
+     "nickname": "Tigers",
+     "abbr": "MEM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 415,
+     "cfb_name": "Miami (FL)",
+     "espn_id": "2390",
+     "name": "Miami",
+     "nickname": "Hurricanes",
+     "abbr": "MIA",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 414,
+     "cfb_name": "Miami (OH)",
+     "espn_id": "193",
+     "name": "Miami (OH)",
+     "nickname": "RedHawks",
+     "abbr": "M-OH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 418,
+     "cfb_name": "Michigan",
+     "espn_id": "130",
+     "name": "Michigan",
+     "nickname": "Wolverines",
+     "abbr": "MICH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 416,
+     "cfb_name": "Michigan State",
+     "espn_id": "127",
+     "name": "Michigan State",
+     "nickname": "Spartans",
+     "abbr": "MSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 419,
+     "cfb_name": "Middle Tennessee State",
+     "espn_id": "2393",
+     "name": "Middle Tennessee",
+     "nickname": "Blue Raiders",
+     "abbr": "MTSU",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 428,
+     "cfb_name": "Minnesota",
+     "espn_id": "135",
+     "name": "Minnesota",
+     "nickname": "Golden Gophers",
+     "abbr": "MINN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 430,
+     "cfb_name": "Mississippi State",
+     "espn_id": "344",
+     "name": "Mississippi State",
+     "nickname": "Bulldogs",
+     "abbr": "MSST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 434,
+     "cfb_name": "Missouri",
+     "espn_id": "142",
+     "name": "Missouri",
+     "nickname": "Tigers",
+     "abbr": "MIZ",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 669,
+     "cfb_name": "Missouri State",
+     "espn_id": "2623",
+     "name": "Missouri State",
+     "nickname": "Bears",
+     "abbr": "MOST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 490,
+     "cfb_name": "NC State",
+     "espn_id": "152",
+     "name": "NC State",
+     "nickname": "Wolfpack",
+     "abbr": "NCSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 726,
+     "cfb_name": "Navy",
+     "espn_id": "2426",
+     "name": "Navy",
+     "nickname": "Midshipmen",
+     "abbr": "NAVY",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 463,
+     "cfb_name": "Nebraska",
+     "espn_id": "158",
+     "name": "Nebraska",
+     "nickname": "Cornhuskers",
+     "abbr": "NEB",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 466,
+     "cfb_name": "Nevada",
+     "espn_id": "2440",
+     "name": "Nevada",
+     "nickname": "Wolf Pack",
+     "abbr": "NEV",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 473,
+     "cfb_name": "New Mexico",
+     "espn_id": "167",
+     "name": "New Mexico",
+     "nickname": "Lobos",
+     "abbr": "UNM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 472,
+     "cfb_name": "New Mexico State",
+     "espn_id": "166",
+     "name": "New Mexico State",
+     "nickname": "Aggies",
+     "abbr": "NMSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 457,
+     "cfb_name": "North Carolina",
+     "espn_id": "153",
+     "name": "North Carolina",
+     "nickname": "Tar Heels",
+     "abbr": "UNC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 497,
+     "cfb_name": "North Texas",
+     "espn_id": "249",
+     "name": "North Texas",
+     "nickname": "Mean Green",
+     "abbr": "UNT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 503,
+     "cfb_name": "Northern Illinois",
+     "espn_id": "2459",
+     "name": "Northern Illinois",
+     "nickname": "Huskies",
+     "abbr": "NIU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 509,
+     "cfb_name": "Northwestern",
+     "espn_id": "77",
+     "name": "Northwestern",
+     "nickname": "Wildcats",
+     "abbr": "NU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 513,
+     "cfb_name": "Notre Dame",
+     "espn_id": "87",
+     "name": "Notre Dame",
+     "nickname": "Fighting Irish",
+     "abbr": "ND",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 519,
+     "cfb_name": "Ohio",
+     "espn_id": "195",
+     "name": "Ohio",
+     "nickname": "Bobcats",
+     "abbr": "OHIO",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 518,
+     "cfb_name": "Ohio State",
+     "espn_id": "194",
+     "name": "Ohio State",
+     "nickname": "Buckeyes",
+     "abbr": "OSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 522,
+     "cfb_name": "Oklahoma",
+     "espn_id": "201",
+     "name": "Oklahoma",
+     "nickname": "Sooners",
+     "abbr": "OU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 521,
+     "cfb_name": "Oklahoma State",
+     "espn_id": "197",
+     "name": "Oklahoma State",
+     "nickname": "Cowboys",
+     "abbr": "OKST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 523,
+     "cfb_name": "Old Dominion",
+     "espn_id": "295",
+     "name": "Old Dominion",
+     "nickname": "Monarchs",
+     "abbr": "ODU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 433,
+     "cfb_name": "Ole Miss",
+     "espn_id": "145",
+     "name": "Ole Miss",
+     "nickname": "Rebels",
+     "abbr": "MISS",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 529,
+     "cfb_name": "Oregon",
+     "espn_id": "2483",
+     "name": "Oregon",
+     "nickname": "Ducks",
+     "abbr": "ORE",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 528,
+     "cfb_name": "Oregon State",
+     "espn_id": "204",
+     "name": "Oregon State",
+     "nickname": "Beavers",
+     "abbr": "ORST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 539,
+     "cfb_name": "Penn State",
+     "espn_id": "213",
+     "name": "Penn State",
+     "nickname": "Nittany Lions",
+     "abbr": "PSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 545,
+     "cfb_name": "Pittsburgh",
+     "espn_id": "221",
+     "name": "Pittsburgh",
+     "nickname": "Panthers",
+     "abbr": "PITT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 559,
+     "cfb_name": "Purdue",
+     "espn_id": "2509",
+     "name": "Purdue",
+     "nickname": "Boilermakers",
+     "abbr": "PUR",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 574,
+     "cfb_name": "Rice",
+     "espn_id": "242",
+     "name": "Rice",
+     "nickname": "Owls",
+     "abbr": "RICE",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 587,
+     "cfb_name": "Rutgers",
+     "espn_id": "164",
+     "name": "Rutgers",
+     "nickname": "Scarlet Knights",
+     "abbr": "RUTG",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 663,
+     "cfb_name": "SMU",
+     "espn_id": "2567",
+     "name": "SMU",
+     "nickname": "Mustangs",
+     "abbr": "SMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 624,
+     "cfb_name": "Sam Houston State",
+     "espn_id": "2534",
+     "name": "Sam Houston",
+     "nickname": "Bearkats",
+     "abbr": "SHSU",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 626,
+     "cfb_name": "San Diego State",
+     "espn_id": "21",
+     "name": "San Diego State",
+     "nickname": "Aztecs",
+     "abbr": "SDSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 630,
+     "cfb_name": "San Jose State",
+     "espn_id": "23",
+     "name": "San Jos\u00e9 State",
+     "nickname": "Spartans",
+     "abbr": "SJSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 646,
+     "cfb_name": "South Alabama",
+     "espn_id": "6",
+     "name": "South Alabama",
+     "nickname": "Jaguars",
+     "abbr": "USA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 648,
+     "cfb_name": "South Carolina",
+     "espn_id": "2579",
+     "name": "South Carolina",
+     "nickname": "Gamecocks",
+     "abbr": "SC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 664,
+     "cfb_name": "Southern Miss",
+     "espn_id": "2572",
+     "name": "Southern Miss",
+     "nickname": "Golden Eagles",
+     "abbr": "USM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 674,
+     "cfb_name": "Stanford",
+     "espn_id": "24",
+     "name": "Stanford",
+     "nickname": "Cardinal",
+     "abbr": "STAN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 688,
+     "cfb_name": "Syracuse",
+     "espn_id": "183",
+     "name": "Syracuse",
+     "nickname": "Orange",
+     "abbr": "SYR",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 698,
+     "cfb_name": "TCU",
+     "espn_id": "2628",
+     "name": "TCU",
+     "nickname": "Horned Frogs",
+     "abbr": "TCU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 690,
+     "cfb_name": "Temple",
+     "espn_id": "218",
+     "name": "Temple",
+     "nickname": "Owls",
+     "abbr": "TEM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 694,
+     "cfb_name": "Tennessee",
+     "espn_id": "2633",
+     "name": "Tennessee",
+     "nickname": "Volunteers",
+     "abbr": "TENN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 703,
+     "cfb_name": "Texas",
+     "espn_id": "251",
+     "name": "Texas",
+     "nickname": "Longhorns",
+     "abbr": "TEX",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 670,
+     "cfb_name": "Texas State",
+     "espn_id": "326",
+     "name": "Texas State",
+     "nickname": "Bobcats",
+     "abbr": "TXST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 700,
+     "cfb_name": "Texas Tech",
+     "espn_id": "2641",
+     "name": "Texas Tech",
+     "nickname": "Red Raiders",
+     "abbr": "TTU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 709,
+     "cfb_name": "Toledo",
+     "espn_id": "2649",
+     "name": "Toledo",
+     "nickname": "Rockets",
+     "abbr": "TOL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 718,
+     "cfb_name": "Tulane",
+     "espn_id": "2655",
+     "name": "Tulane",
+     "nickname": "Green Wave",
+     "abbr": "TULN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 719,
+     "cfb_name": "Tulsa",
+     "espn_id": "202",
+     "name": "Tulsa",
+     "nickname": "Golden Hurricane",
+     "abbr": "TLSA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 9,
+     "cfb_name": "UAB",
+     "espn_id": "5",
+     "name": "UAB",
+     "nickname": "Blazers",
+     "abbr": "UAB",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 128,
+     "cfb_name": "UCF",
+     "espn_id": "2116",
+     "name": "UCF",
+     "nickname": "Knights",
+     "abbr": "UCF",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 110,
+     "cfb_name": "UCLA",
+     "espn_id": "26",
+     "name": "UCLA",
+     "nickname": "Bruins",
+     "abbr": "UCLA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 465,
+     "cfb_name": "UNLV",
+     "espn_id": "2439",
+     "name": "UNLV",
+     "nickname": "Rebels",
+     "abbr": "UNLV",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 657,
+     "cfb_name": "USC",
+     "espn_id": "30",
+     "name": "USC",
+     "nickname": "Trojans",
+     "abbr": "USC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 704,
+     "cfb_name": "UTEP",
+     "espn_id": "2638",
+     "name": "UTEP",
+     "nickname": "Miners",
+     "abbr": "UTEP",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 706,
+     "cfb_name": "UTSA",
+     "espn_id": "2636",
+     "name": "UTSA",
+     "nickname": "Roadrunners",
+     "abbr": "UTSA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 732,
+     "cfb_name": "Utah",
+     "espn_id": "254",
+     "name": "Utah",
+     "nickname": "Utes",
+     "abbr": "UTAH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 731,
+     "cfb_name": "Utah State",
+     "espn_id": "328",
+     "name": "Utah State",
+     "nickname": "Aggies",
+     "abbr": "USU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 736,
+     "cfb_name": "Vanderbilt",
+     "espn_id": "238",
+     "name": "Vanderbilt",
+     "nickname": "Commodores",
+     "abbr": "VAN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 746,
+     "cfb_name": "Virginia",
+     "espn_id": "258",
+     "name": "Virginia",
+     "nickname": "Cavaliers",
+     "abbr": "UVA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 742,
+     "cfb_name": "Virginia Tech",
+     "espn_id": "259",
+     "name": "Virginia Tech",
+     "nickname": "Hokies",
+     "abbr": "VT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 749,
+     "cfb_name": "Wake Forest",
+     "espn_id": "154",
+     "name": "Wake Forest",
+     "nickname": "Demon Deacons",
+     "abbr": "WAKE",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 756,
+     "cfb_name": "Washington",
+     "espn_id": "264",
+     "name": "Washington",
+     "nickname": "Huskies",
+     "abbr": "WASH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 754,
+     "cfb_name": "Washington State",
+     "espn_id": "265",
+     "name": "Washington State",
+     "nickname": "Cougars",
+     "abbr": "WSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 768,
+     "cfb_name": "West Virginia",
+     "espn_id": "277",
+     "name": "West Virginia",
+     "nickname": "Mountaineers",
+     "abbr": "WVU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 772,
+     "cfb_name": "Western Kentucky",
+     "espn_id": "98",
+     "name": "Western Kentucky",
+     "nickname": "Hilltoppers",
+     "abbr": "WKU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 774,
+     "cfb_name": "Western Michigan",
+     "espn_id": "2711",
+     "name": "Western Michigan",
+     "nickname": "Broncos",
+     "abbr": "WMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 796,
+     "cfb_name": "Wisconsin",
+     "espn_id": "275",
+     "name": "Wisconsin",
+     "nickname": "Badgers",
+     "abbr": "WIS",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 811,
+     "cfb_name": "Wyoming",
+     "espn_id": "2751",
+     "name": "Wyoming",
+     "nickname": "Cowboys",
+     "abbr": "WYO",
+     "how": "name = ESPN location (fbs list)"
+    }
+   ],
+   "unmapped": [
+    {
+     "cfb_id": 458,
+     "cfb_name": "Charlotte",
+     "why": "'Charlotte' matches 2 ESPN teams by location"
+    },
+    {
+     "cfb_id": 697,
+     "cfb_name": "Texas A&amp;M",
+     "why": "no ESPN team with that name"
+    },
+    {
+     "cfb_id": 716,
+     "cfb_name": "Troy",
+     "why": "'Troy' matches 2 ESPN teams by location"
+    },
+    {
+     "cfb_id": 651,
+     "cfb_name": "USF",
+     "why": "no ESPN team with that name"
+    }
+   ],
+   "retrieved_at": "2026-10-18T19:36+00:00"
+  },
+  "2026": {
+   "source_url": "https://cfbstats.com/2026/team/index.html",
+   "count": 138,
+   "teams": [
+    {
+     "cfb_id": 721,
+     "cfb_name": "Air Force",
+     "espn_id": "2005",
+     "name": "Air Force",
+     "nickname": "Falcons",
+     "abbr": "AF",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 5,
+     "cfb_name": "Akron",
+     "espn_id": "2006",
+     "name": "Akron",
+     "nickname": "Zips",
+     "abbr": "AKR",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 8,
+     "cfb_name": "Alabama",
+     "espn_id": "333",
+     "name": "Alabama",
+     "nickname": "Crimson Tide",
+     "abbr": "ALA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 27,
+     "cfb_name": "Appalachian State",
+     "espn_id": "2026",
+     "name": "App State",
+     "nickname": "Mountaineers",
+     "abbr": "APP",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 29,
+     "cfb_name": "Arizona",
+     "espn_id": "12",
+     "name": "Arizona",
+     "nickname": "Wildcats",
+     "abbr": "ARIZ",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 28,
+     "cfb_name": "Arizona State",
+     "espn_id": "9",
+     "name": "Arizona State",
+     "nickname": "Sun Devils",
+     "abbr": "ASU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 31,
+     "cfb_name": "Arkansas",
+     "espn_id": "8",
+     "name": "Arkansas",
+     "nickname": "Razorbacks",
+     "abbr": "ARK",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 30,
+     "cfb_name": "Arkansas State",
+     "espn_id": "2032",
+     "name": "Arkansas State",
+     "nickname": "Red Wolves",
+     "abbr": "ARST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 725,
+     "cfb_name": "Army",
+     "espn_id": "349",
+     "name": "Army",
+     "nickname": "Black Knights",
+     "abbr": "ARMY",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 37,
+     "cfb_name": "Auburn",
+     "espn_id": "2",
+     "name": "Auburn",
+     "nickname": "Tigers",
+     "abbr": "AUB",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 77,
+     "cfb_name": "BYU",
+     "espn_id": "252",
+     "name": "BYU",
+     "nickname": "Cougars",
+     "abbr": "BYU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 47,
+     "cfb_name": "Ball State",
+     "espn_id": "2050",
+     "name": "Ball State",
+     "nickname": "Cardinals",
+     "abbr": "BALL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 51,
+     "cfb_name": "Baylor",
+     "espn_id": "239",
+     "name": "Baylor",
+     "nickname": "Bears",
+     "abbr": "BAY",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 66,
+     "cfb_name": "Boise State",
+     "espn_id": "68",
+     "name": "Boise State",
+     "nickname": "Broncos",
+     "abbr": "BOIS",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 67,
+     "cfb_name": "Boston College",
+     "espn_id": "103",
+     "name": "Boston College",
+     "nickname": "Eagles",
+     "abbr": "BC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 71,
+     "cfb_name": "Bowling Green",
+     "espn_id": "189",
+     "name": "Bowling Green",
+     "nickname": "Falcons",
+     "abbr": "BGSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 86,
+     "cfb_name": "Buffalo",
+     "espn_id": "2084",
+     "name": "Buffalo",
+     "nickname": "Bulls",
+     "abbr": "BUF",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 107,
+     "cfb_name": "California",
+     "espn_id": "25",
+     "name": "California",
+     "nickname": "Golden Bears",
+     "abbr": "CAL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 129,
+     "cfb_name": "Central Michigan",
+     "espn_id": "2117",
+     "name": "Central Michigan",
+     "nickname": "Chippewas",
+     "abbr": "CMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 140,
+     "cfb_name": "Cincinnati",
+     "espn_id": "2132",
+     "name": "Cincinnati",
+     "nickname": "Bearcats",
+     "abbr": "CIN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 147,
+     "cfb_name": "Clemson",
+     "espn_id": "228",
+     "name": "Clemson",
+     "nickname": "Tigers",
+     "abbr": "CLEM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 149,
+     "cfb_name": "Coastal Carolina",
+     "espn_id": "324",
+     "name": "Coastal Carolina",
+     "nickname": "Chanticleers",
+     "abbr": "CCU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 157,
+     "cfb_name": "Colorado",
+     "espn_id": "38",
+     "name": "Colorado",
+     "nickname": "Buffaloes",
+     "abbr": "COLO",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 156,
+     "cfb_name": "Colorado State",
+     "espn_id": "36",
+     "name": "Colorado State",
+     "nickname": "Rams",
+     "abbr": "CSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 164,
+     "cfb_name": "Connecticut",
+     "espn_id": "41",
+     "name": "UConn",
+     "nickname": "Huskies",
+     "abbr": "CONN",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 180,
+     "cfb_name": "Delaware",
+     "espn_id": "48",
+     "name": "Delaware",
+     "nickname": "Blue Hens",
+     "abbr": "DEL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 193,
+     "cfb_name": "Duke",
+     "espn_id": "150",
+     "name": "Duke",
+     "nickname": "Blue Devils",
+     "abbr": "DUKE",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 196,
+     "cfb_name": "East Carolina",
+     "espn_id": "151",
+     "name": "East Carolina",
+     "nickname": "Pirates",
+     "abbr": "ECU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 204,
+     "cfb_name": "Eastern Michigan",
+     "espn_id": "2199",
+     "name": "Eastern Michigan",
+     "nickname": "Eagles",
+     "abbr": "EMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 231,
+     "cfb_name": "FIU",
+     "espn_id": "2229",
+     "name": "Florida International",
+     "nickname": "Panthers",
+     "abbr": "FIU",
+     "how": "name = ESPN short (fbs list)"
+    },
+    {
+     "cfb_id": 235,
+     "cfb_name": "Florida",
+     "espn_id": "57",
+     "name": "Florida",
+     "nickname": "Gators",
+     "abbr": "FLA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 229,
+     "cfb_name": "Florida Atlantic",
+     "espn_id": "2226",
+     "name": "Florida Atlantic",
+     "nickname": "Owls",
+     "abbr": "FAU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 234,
+     "cfb_name": "Florida State",
+     "espn_id": "52",
+     "name": "Florida State",
+     "nickname": "Seminoles",
+     "abbr": "FSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 96,
+     "cfb_name": "Fresno State",
+     "espn_id": "278",
+     "name": "Fresno State",
+     "nickname": "Bulldogs",
+     "abbr": "FRES",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 257,
+     "cfb_name": "Georgia",
+     "espn_id": "61",
+     "name": "Georgia",
+     "nickname": "Bulldogs",
+     "abbr": "UGA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 253,
+     "cfb_name": "Georgia Southern",
+     "espn_id": "290",
+     "name": "Georgia Southern",
+     "nickname": "Eagles",
+     "abbr": "GASO",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 254,
+     "cfb_name": "Georgia State",
+     "espn_id": "2247",
+     "name": "Georgia State",
+     "nickname": "Panthers",
+     "abbr": "GAST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 255,
+     "cfb_name": "Georgia Tech",
+     "espn_id": "59",
+     "name": "Georgia Tech",
+     "nickname": "Yellow Jackets",
+     "abbr": "GT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 277,
+     "cfb_name": "Hawaii",
+     "espn_id": "62",
+     "name": "Hawai'i",
+     "nickname": "Rainbow Warriors",
+     "abbr": "HAW",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 288,
+     "cfb_name": "Houston",
+     "espn_id": "248",
+     "name": "Houston",
+     "nickname": "Cougars",
+     "abbr": "HOU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 301,
+     "cfb_name": "Illinois",
+     "espn_id": "356",
+     "name": "Illinois",
+     "nickname": "Fighting Illini",
+     "abbr": "ILL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 306,
+     "cfb_name": "Indiana",
+     "espn_id": "84",
+     "name": "Indiana",
+     "nickname": "Hoosiers",
+     "abbr": "IU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 312,
+     "cfb_name": "Iowa",
+     "espn_id": "2294",
+     "name": "Iowa",
+     "nickname": "Hawkeyes",
+     "abbr": "IOWA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 311,
+     "cfb_name": "Iowa State",
+     "espn_id": "66",
+     "name": "Iowa State",
+     "nickname": "Cyclones",
+     "abbr": "ISU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 315,
+     "cfb_name": "Jacksonville State",
+     "espn_id": "55",
+     "name": "Jacksonville State",
+     "nickname": "Gamecocks",
+     "abbr": "JXST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 317,
+     "cfb_name": "James Madison",
+     "espn_id": "256",
+     "name": "James Madison",
+     "nickname": "Dukes",
+     "abbr": "JMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 328,
+     "cfb_name": "Kansas",
+     "espn_id": "2305",
+     "name": "Kansas",
+     "nickname": "Jayhawks",
+     "abbr": "KU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 327,
+     "cfb_name": "Kansas State",
+     "espn_id": "2306",
+     "name": "Kansas State",
+     "nickname": "Wildcats",
+     "abbr": "KSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 1157,
+     "cfb_name": "Kennesaw State",
+     "espn_id": "338",
+     "name": "Kennesaw State",
+     "nickname": "Owls",
+     "abbr": "KENN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 331,
+     "cfb_name": "Kent State",
+     "espn_id": "2309",
+     "name": "Kent State",
+     "nickname": "Golden Flashes",
+     "abbr": "KENT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 334,
+     "cfb_name": "Kentucky",
+     "espn_id": "96",
+     "name": "Kentucky",
+     "nickname": "Wildcats",
+     "abbr": "UK",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 365,
+     "cfb_name": "LSU",
+     "espn_id": "99",
+     "name": "LSU",
+     "nickname": "Tigers",
+     "abbr": "LSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 355,
+     "cfb_name": "Liberty",
+     "espn_id": "2335",
+     "name": "Liberty",
+     "nickname": "Flames",
+     "abbr": "LIB",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 671,
+     "cfb_name": "Louisiana",
+     "espn_id": "309",
+     "name": "Louisiana",
+     "nickname": "Ragin' Cajuns",
+     "abbr": "UL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 366,
+     "cfb_name": "Louisiana Tech",
+     "espn_id": "2348",
+     "name": "Louisiana Tech",
+     "nickname": "Bulldogs",
+     "abbr": "LT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 498,
+     "cfb_name": "Louisiana-Monroe",
+     "espn_id": "2433",
+     "name": "UL Monroe",
+     "nickname": "Warhawks",
+     "abbr": "ULM",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 367,
+     "cfb_name": "Louisville",
+     "espn_id": "97",
+     "name": "Louisville",
+     "nickname": "Cardinals",
+     "abbr": "LOU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 388,
+     "cfb_name": "Marshall",
+     "espn_id": "276",
+     "name": "Marshall",
+     "nickname": "Thundering Herd",
+     "abbr": "MRSH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 392,
+     "cfb_name": "Maryland",
+     "espn_id": "120",
+     "name": "Maryland",
+     "nickname": "Terrapins",
+     "abbr": "MD",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 400,
+     "cfb_name": "Massachusetts",
+     "espn_id": "113",
+     "name": "Massachusetts",
+     "nickname": "Minutemen",
+     "abbr": "MASS",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 404,
+     "cfb_name": "Memphis",
+     "espn_id": "235",
+     "name": "Memphis",
+     "nickname": "Tigers",
+     "abbr": "MEM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 415,
+     "cfb_name": "Miami (FL)",
+     "espn_id": "2390",
+     "name": "Miami",
+     "nickname": "Hurricanes",
+     "abbr": "MIA",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 414,
+     "cfb_name": "Miami (OH)",
+     "espn_id": "193",
+     "name": "Miami (OH)",
+     "nickname": "RedHawks",
+     "abbr": "M-OH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 418,
+     "cfb_name": "Michigan",
+     "espn_id": "130",
+     "name": "Michigan",
+     "nickname": "Wolverines",
+     "abbr": "MICH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 416,
+     "cfb_name": "Michigan State",
+     "espn_id": "127",
+     "name": "Michigan State",
+     "nickname": "Spartans",
+     "abbr": "MSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 419,
+     "cfb_name": "Middle Tennessee State",
+     "espn_id": "2393",
+     "name": "Middle Tennessee",
+     "nickname": "Blue Raiders",
+     "abbr": "MTSU",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 428,
+     "cfb_name": "Minnesota",
+     "espn_id": "135",
+     "name": "Minnesota",
+     "nickname": "Golden Gophers",
+     "abbr": "MINN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 430,
+     "cfb_name": "Mississippi State",
+     "espn_id": "344",
+     "name": "Mississippi State",
+     "nickname": "Bulldogs",
+     "abbr": "MSST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 434,
+     "cfb_name": "Missouri",
+     "espn_id": "142",
+     "name": "Missouri",
+     "nickname": "Tigers",
+     "abbr": "MIZ",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 669,
+     "cfb_name": "Missouri State",
+     "espn_id": "2623",
+     "name": "Missouri State",
+     "nickname": "Bears",
+     "abbr": "MOST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 490,
+     "cfb_name": "NC State",
+     "espn_id": "152",
+     "name": "NC State",
+     "nickname": "Wolfpack",
+     "abbr": "NCSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 726,
+     "cfb_name": "Navy",
+     "espn_id": "2426",
+     "name": "Navy",
+     "nickname": "Midshipmen",
+     "abbr": "NAVY",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 463,
+     "cfb_name": "Nebraska",
+     "espn_id": "158",
+     "name": "Nebraska",
+     "nickname": "Cornhuskers",
+     "abbr": "NEB",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 466,
+     "cfb_name": "Nevada",
+     "espn_id": "2440",
+     "name": "Nevada",
+     "nickname": "Wolf Pack",
+     "abbr": "NEV",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 473,
+     "cfb_name": "New Mexico",
+     "espn_id": "167",
+     "name": "New Mexico",
+     "nickname": "Lobos",
+     "abbr": "UNM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 472,
+     "cfb_name": "New Mexico State",
+     "espn_id": "166",
+     "name": "New Mexico State",
+     "nickname": "Aggies",
+     "abbr": "NMSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 457,
+     "cfb_name": "North Carolina",
+     "espn_id": "153",
+     "name": "North Carolina",
+     "nickname": "Tar Heels",
+     "abbr": "UNC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 493,
+     "cfb_name": "North Dakota State",
+     "espn_id": "2449",
+     "name": "North Dakota State",
+     "nickname": "Bison",
+     "abbr": "NDSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 497,
+     "cfb_name": "North Texas",
+     "espn_id": "249",
+     "name": "North Texas",
+     "nickname": "Mean Green",
+     "abbr": "UNT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 503,
+     "cfb_name": "Northern Illinois",
+     "espn_id": "2459",
+     "name": "Northern Illinois",
+     "nickname": "Huskies",
+     "abbr": "NIU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 509,
+     "cfb_name": "Northwestern",
+     "espn_id": "77",
+     "name": "Northwestern",
+     "nickname": "Wildcats",
+     "abbr": "NU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 513,
+     "cfb_name": "Notre Dame",
+     "espn_id": "87",
+     "name": "Notre Dame",
+     "nickname": "Fighting Irish",
+     "abbr": "ND",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 519,
+     "cfb_name": "Ohio",
+     "espn_id": "195",
+     "name": "Ohio",
+     "nickname": "Bobcats",
+     "abbr": "OHIO",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 518,
+     "cfb_name": "Ohio State",
+     "espn_id": "194",
+     "name": "Ohio State",
+     "nickname": "Buckeyes",
+     "abbr": "OSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 522,
+     "cfb_name": "Oklahoma",
+     "espn_id": "201",
+     "name": "Oklahoma",
+     "nickname": "Sooners",
+     "abbr": "OU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 521,
+     "cfb_name": "Oklahoma State",
+     "espn_id": "197",
+     "name": "Oklahoma State",
+     "nickname": "Cowboys",
+     "abbr": "OKST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 523,
+     "cfb_name": "Old Dominion",
+     "espn_id": "295",
+     "name": "Old Dominion",
+     "nickname": "Monarchs",
+     "abbr": "ODU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 433,
+     "cfb_name": "Ole Miss",
+     "espn_id": "145",
+     "name": "Ole Miss",
+     "nickname": "Rebels",
+     "abbr": "MISS",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 529,
+     "cfb_name": "Oregon",
+     "espn_id": "2483",
+     "name": "Oregon",
+     "nickname": "Ducks",
+     "abbr": "ORE",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 528,
+     "cfb_name": "Oregon State",
+     "espn_id": "204",
+     "name": "Oregon State",
+     "nickname": "Beavers",
+     "abbr": "ORST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 539,
+     "cfb_name": "Penn State",
+     "espn_id": "213",
+     "name": "Penn State",
+     "nickname": "Nittany Lions",
+     "abbr": "PSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 545,
+     "cfb_name": "Pittsburgh",
+     "espn_id": "221",
+     "name": "Pittsburgh",
+     "nickname": "Panthers",
+     "abbr": "PITT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 559,
+     "cfb_name": "Purdue",
+     "espn_id": "2509",
+     "name": "Purdue",
+     "nickname": "Boilermakers",
+     "abbr": "PUR",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 574,
+     "cfb_name": "Rice",
+     "espn_id": "242",
+     "name": "Rice",
+     "nickname": "Owls",
+     "abbr": "RICE",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 587,
+     "cfb_name": "Rutgers",
+     "espn_id": "164",
+     "name": "Rutgers",
+     "nickname": "Scarlet Knights",
+     "abbr": "RUTG",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 663,
+     "cfb_name": "SMU",
+     "espn_id": "2567",
+     "name": "SMU",
+     "nickname": "Mustangs",
+     "abbr": "SMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 102,
+     "cfb_name": "Sacramento State",
+     "espn_id": "16",
+     "name": "Sacramento State",
+     "nickname": "Hornets",
+     "abbr": "SAC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 624,
+     "cfb_name": "Sam Houston State",
+     "espn_id": "2534",
+     "name": "Sam Houston",
+     "nickname": "Bearkats",
+     "abbr": "SHSU",
+     "how": "alias = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 626,
+     "cfb_name": "San Diego State",
+     "espn_id": "21",
+     "name": "San Diego State",
+     "nickname": "Aztecs",
+     "abbr": "SDSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 630,
+     "cfb_name": "San Jose State",
+     "espn_id": "23",
+     "name": "San Jos\u00e9 State",
+     "nickname": "Spartans",
+     "abbr": "SJSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 646,
+     "cfb_name": "South Alabama",
+     "espn_id": "6",
+     "name": "South Alabama",
+     "nickname": "Jaguars",
+     "abbr": "USA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 648,
+     "cfb_name": "South Carolina",
+     "espn_id": "2579",
+     "name": "South Carolina",
+     "nickname": "Gamecocks",
+     "abbr": "SC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 664,
+     "cfb_name": "Southern Miss",
+     "espn_id": "2572",
+     "name": "Southern Miss",
+     "nickname": "Golden Eagles",
+     "abbr": "USM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 674,
+     "cfb_name": "Stanford",
+     "espn_id": "24",
+     "name": "Stanford",
+     "nickname": "Cardinal",
+     "abbr": "STAN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 688,
+     "cfb_name": "Syracuse",
+     "espn_id": "183",
+     "name": "Syracuse",
+     "nickname": "Orange",
+     "abbr": "SYR",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 698,
+     "cfb_name": "TCU",
+     "espn_id": "2628",
+     "name": "TCU",
+     "nickname": "Horned Frogs",
+     "abbr": "TCU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 690,
+     "cfb_name": "Temple",
+     "espn_id": "218",
+     "name": "Temple",
+     "nickname": "Owls",
+     "abbr": "TEM",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 694,
+     "cfb_name": "Tennessee",
+     "espn_id": "2633",
+     "name": "Tennessee",
+     "nickname": "Volunteers",
+     "abbr": "TENN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 703,
+     "cfb_name": "Texas",
+     "espn_id": "251",
+     "name": "Texas",
+     "nickname": "Longhorns",
+     "abbr": "TEX",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 670,
+     "cfb_name": "Texas State",
+     "espn_id": "326",
+     "name": "Texas State",
+     "nickname": "Bobcats",
+     "abbr": "TXST",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 700,
+     "cfb_name": "Texas Tech",
+     "espn_id": "2641",
+     "name": "Texas Tech",
+     "nickname": "Red Raiders",
+     "abbr": "TTU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 709,
+     "cfb_name": "Toledo",
+     "espn_id": "2649",
+     "name": "Toledo",
+     "nickname": "Rockets",
+     "abbr": "TOL",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 718,
+     "cfb_name": "Tulane",
+     "espn_id": "2655",
+     "name": "Tulane",
+     "nickname": "Green Wave",
+     "abbr": "TULN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 719,
+     "cfb_name": "Tulsa",
+     "espn_id": "202",
+     "name": "Tulsa",
+     "nickname": "Golden Hurricane",
+     "abbr": "TLSA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 9,
+     "cfb_name": "UAB",
+     "espn_id": "5",
+     "name": "UAB",
+     "nickname": "Blazers",
+     "abbr": "UAB",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 128,
+     "cfb_name": "UCF",
+     "espn_id": "2116",
+     "name": "UCF",
+     "nickname": "Knights",
+     "abbr": "UCF",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 110,
+     "cfb_name": "UCLA",
+     "espn_id": "26",
+     "name": "UCLA",
+     "nickname": "Bruins",
+     "abbr": "UCLA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 465,
+     "cfb_name": "UNLV",
+     "espn_id": "2439",
+     "name": "UNLV",
+     "nickname": "Rebels",
+     "abbr": "UNLV",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 657,
+     "cfb_name": "USC",
+     "espn_id": "30",
+     "name": "USC",
+     "nickname": "Trojans",
+     "abbr": "USC",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 704,
+     "cfb_name": "UTEP",
+     "espn_id": "2638",
+     "name": "UTEP",
+     "nickname": "Miners",
+     "abbr": "UTEP",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 706,
+     "cfb_name": "UTSA",
+     "espn_id": "2636",
+     "name": "UTSA",
+     "nickname": "Roadrunners",
+     "abbr": "UTSA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 732,
+     "cfb_name": "Utah",
+     "espn_id": "254",
+     "name": "Utah",
+     "nickname": "Utes",
+     "abbr": "UTAH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 731,
+     "cfb_name": "Utah State",
+     "espn_id": "328",
+     "name": "Utah State",
+     "nickname": "Aggies",
+     "abbr": "USU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 736,
+     "cfb_name": "Vanderbilt",
+     "espn_id": "238",
+     "name": "Vanderbilt",
+     "nickname": "Commodores",
+     "abbr": "VAN",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 746,
+     "cfb_name": "Virginia",
+     "espn_id": "258",
+     "name": "Virginia",
+     "nickname": "Cavaliers",
+     "abbr": "UVA",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 742,
+     "cfb_name": "Virginia Tech",
+     "espn_id": "259",
+     "name": "Virginia Tech",
+     "nickname": "Hokies",
+     "abbr": "VT",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 749,
+     "cfb_name": "Wake Forest",
+     "espn_id": "154",
+     "name": "Wake Forest",
+     "nickname": "Demon Deacons",
+     "abbr": "WAKE",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 756,
+     "cfb_name": "Washington",
+     "espn_id": "264",
+     "name": "Washington",
+     "nickname": "Huskies",
+     "abbr": "WASH",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 754,
+     "cfb_name": "Washington State",
+     "espn_id": "265",
+     "name": "Washington State",
+     "nickname": "Cougars",
+     "abbr": "WSU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 768,
+     "cfb_name": "West Virginia",
+     "espn_id": "277",
+     "name": "West Virginia",
+     "nickname": "Mountaineers",
+     "abbr": "WVU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 772,
+     "cfb_name": "Western Kentucky",
+     "espn_id": "98",
+     "name": "Western Kentucky",
+     "nickname": "Hilltoppers",
+     "abbr": "WKU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 774,
+     "cfb_name": "Western Michigan",
+     "espn_id": "2711",
+     "name": "Western Michigan",
+     "nickname": "Broncos",
+     "abbr": "WMU",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 796,
+     "cfb_name": "Wisconsin",
+     "espn_id": "275",
+     "name": "Wisconsin",
+     "nickname": "Badgers",
+     "abbr": "WIS",
+     "how": "name = ESPN location (fbs list)"
+    },
+    {
+     "cfb_id": 811,
+     "cfb_name": "Wyoming",
+     "espn_id": "2751",
+     "name": "Wyoming",
+     "nickname": "Cowboys",
+     "abbr": "WYO",
+     "how": "name = ESPN location (fbs list)"
+    }
+   ],
+   "unmapped": [
+    {
+     "cfb_id": 458,
+     "cfb_name": "Charlotte",
+     "why": "'Charlotte' matches 2 ESPN teams by location"
+    },
+    {
+     "cfb_id": 697,
+     "cfb_name": "Texas A&amp;M",
+     "why": "no ESPN team with that name"
+    },
+    {
+     "cfb_id": 716,
+     "cfb_name": "Troy",
+     "why": "'Troy' matches 2 ESPN teams by location"
+    },
+    {
+     "cfb_id": 651,
+     "cfb_name": "USF",
+     "why": "no ESPN team with that name"
+    }
+   ],
+   "retrieved_at": "2026-10-18T19:36+00:00"
+  }
+ }
+}
