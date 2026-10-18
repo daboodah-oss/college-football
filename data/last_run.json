@@ -1,13 +1,11 @@
 {
- "at": "2026-10-18T16:23-04:00",
+ "at": "2026-10-18T16:36-04:00",
  "failed": [
   "team_2026",
   "team_2025",
   "team_2024"
  ],
  "log": [
-  "[registry] 2024: 134 teams on the cfbstats index, 134 joined to ESPN ids",
-  "[registry] 2025: 136 teams on the cfbstats index, 136 joined to ESPN ids",
   "[registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids",
   "[team] Air Force 2026 REFUSED by validator",
   "[team] Buffalo 2026 REFUSED by validator",
@@ -93,7 +91,7 @@
   "[team] Washington 2025 REFUSED by validator",
   "[team] Washington State 2025 REFUSED by validator",
   "[team] West Virginia 2025 REFUSED by validator",
-  "[team] 2025: 136 registry teams; 10 sealed, 56 collected, 70 not stored",
+  "[team] 2025: 136 registry teams; 66 sealed, 0 collected, 70 not stored",
   "[team_2025] FAILED: 2025 team seasons not stored: Akron (refused, see above); Alabama (refused, see above); App State (refused, see above); Arizona State (refused, see above); Arkansas (refused, see above); Arkansas State (refused, see above); Army (refused, see above); BYU (refused, see above); Baylor (refused, see above); Boise State (refused, see above); Boston College (refused, see above); Buffalo (refused, see above); California (refused, see above); Central Michigan (refused, see above); East Carolina (refused, see above); Eastern Michigan (refused, see above); Florida International (refused, see above); Florida State (refused, see above); Fresno State (refused, see above); Georgia (refused, see above); Georgia Southern (refused, see above); Houston (refused, see above); Illinois (refused, see above); Jacksonville State (refused, see above); James Madison (refused, see above); Kansas State (refused, see above); Kennesaw State (refused, see above); Kentucky (refused, see above); LSU (refused, see above); Liberty (refused, see above); UL Monroe (refused, see above); Louisville (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Miami (refused, see above); Michigan State (refused, see above); Middle Tennessee (refused, see above); Mississippi State (refused, see above); Missouri (refused, see above); Missouri State (refused, see above); NC State (refused, see above); Navy (refused, see above); Nebraska (refused, see above); Nevada (refused, see above); New Mexico State (refused, see above); Northwestern (refused, see above); Ohio (refused, see above); Oregon (refused, see above); Oregon State (refused, see above); Purdue (refused, see above); Rice (refused, see above); Sam Houston (refused, see above); San Diego State (refused, see above); San Jos\u00e9 State (refused, see above); Stanford (refused, see above); Syracuse (refused, see above); Tennessee (refused, see above); Texas A&M (refused, see above); Tulsa (refused, see above); UCF (refused, see above); UNLV (refused, see above); USC (refused, see above); South Florida (refused, see above); UTEP (refused, see above); UTSA (refused, see above); Utah (refused, see above); Utah State (refused, see above); Washington (refused, see above); Washington State (refused, see above); West Virginia (refused, see above)",
   "[team] Air Force 2024 REFUSED by validator",
   "[team] Alabama 2024 REFUSED by validator",
@@ -149,7 +147,6 @@
   "[team] New Mexico 2024 REFUSED by validator",
   "[team] North Texas 2024 REFUSED by validator",
   "[team] Northwestern 2024 REFUSED by validator",
-  "[team] Notre Dame 2024: EXCEPTION applied: third_att 185 stored from ESPN, cfbstats 184 (known cfbstats error: cfbstats lists Notre Dame 3-of-9 on third down vs Northern Illinois (2024-09-07); the official stat-crew box score (niuhuskies.com boxscore 24108: '3rd. Down Conv.' UND 3 of 10), ESPN's box score (3-10) and ESPN's play-by-play (10 snaps) all give 10 attempts, so ESPN's 185 is stored); rushing yards 3,217 in ESPN box scores vs 3,215 on cfbstats; total yards 6,387 in ESPN box scores vs 6,385 on cfbstats",
   "[team] Ohio 2024 REFUSED by validator",
   "[team] Ohio State 2024 REFUSED by validator",
   "[team] Oklahoma 2024 REFUSED by validator",
@@ -190,16 +187,12 @@
   "[team] Western Kentucky 2024 REFUSED by validator",
   "[team] Western Michigan 2024 REFUSED by validator",
   "[team] Wisconsin 2024 REFUSED by validator",
-  "[team] 2024: 134 registry teams; 3 sealed, 37 collected, 94 not stored",
+  "[team] 2024: 134 registry teams; 40 sealed, 0 collected, 94 not stored",
   "[team_2024] FAILED: 2024 team seasons not stored: Air Force (refused, see above); Alabama (refused, see above); App State (refused, see above); Arizona (refused, see above); Arizona State (refused, see above); Arkansas (refused, see above); Arkansas State (refused, see above); Army (refused, see above); Auburn (refused, see above); Ball State (refused, see above); Boise State (refused, see above); Boston College (refused, see above); California (refused, see above); Central Michigan (refused, see above); Charlotte (refused, see above); Coastal Carolina (refused, see above); Colorado State (refused, see above); UConn (refused, see above); East Carolina (refused, see above); Eastern Michigan (refused, see above); Florida (refused, see above); Florida Atlantic (refused, see above); Georgia Southern (refused, see above); Georgia State (refused, see above); Georgia Tech (refused, see above); Hawai'i (refused, see above); Houston (refused, see above); Illinois (refused, see above); Iowa (refused, see above); Jacksonville State (refused, see above); James Madison (refused, see above); Kansas (refused, see above); Kennesaw State (refused, see above); Kent State (refused, see above); Kentucky (refused, see above); LSU (refused, see above); Liberty (refused, see above); Louisiana (refused, see above); Louisiana Tech (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Maryland (refused, see above); Massachusetts (refused, see above); Memphis (refused, see above); Miami (refused, see above); Michigan (refused, see above); Middle Tennessee (refused, see above); Missouri (refused, see above); NC State (refused, see above); Navy (refused, see above); Nevada (refused, see above); New Mexico (refused, see above); North Texas (refused, see above); Northwestern (refused, see above); Ohio (refused, see above); Ohio State (refused, see above); Oklahoma (refused, see above); Old Dominion (refused, see above); Ole Miss (refused, see above); Oregon (refused, see above); Oregon State (refused, see above); Pittsburgh (refused, see above); Purdue (refused, see above); Rice (refused, see above); Rutgers (refused, see above); Sam Houston (refused, see above); San Jos\u00e9 State (refused, see above); South Alabama (refused, see above); South Carolina (refused, see above); Southern Miss (refused, see above); Syracuse (refused, see above); Temple (refused, see above); Texas (refused, see above); Texas A&M (refused, see above); Texas State (refused, see above); Texas Tech (refused, see above); Toledo (refused, see above); Troy (refused, see above); Tulane (refused, see above); UAB (refused, see above); UCLA (refused, see above); UNLV (refused, see above); South Florida (refused, see above); UTSA (refused, see above); Utah State (refused, see above); Virginia (refused, see above); Virginia Tech (refused, see above); Wake Forest (refused, see above); Washington (refused, see above); Washington State (refused, see above); West Virginia (refused, see above); Western Kentucky (refused, see above); Western Michigan (refused, see above); Wisconsin (refused, see above)",
-  "[natref] 2026 qb: 47 players stored (47 game logs fetched, 0 unchanged)",
-  "[natref] 2026 rb: 53 players stored (53 game logs fetched, 0 unchanged)",
-  "[natref] 2026 wr: 54 players stored (54 game logs fetched, 0 unchanged)",
-  "[natref] 2025 qb: 45 players stored (45 game logs fetched, 0 unchanged)",
-  "[natref] 2025 rb: 51 players stored (51 game logs fetched, 0 unchanged)",
-  "[natref] 2024 qb: 47 players stored (47 game logs fetched, 0 unchanged)",
-  "[natref] 2024 rb: 45 players stored (45 game logs fetched, 0 unchanged)",
-  "[natref] 2024 wr: 60 players stored (60 game logs fetched, 0 unchanged)",
+  "[natref] 2026 qb: 47 players stored (0 game logs fetched, 47 unchanged)",
+  "[natref] 2026 rb: 53 players stored (0 game logs fetched, 53 unchanged)",
+  "[natref] 2026 wr: 54 players stored (0 game logs fetched, 54 unchanged)",
+  "[natref] 2025 wr: 54 players stored (38 game logs fetched, 16 unchanged)",
   "FAILED sections: team_2026, team_2025, team_2024"
  ],
  "finals_seen": [

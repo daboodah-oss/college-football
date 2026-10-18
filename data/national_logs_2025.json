@@ -25,7 +25,11 @@
      "430-1178066",
      "196-1112570",
      "229-1178330",
-     "519-2003289"
+     "519-2003289",
+     "30-1110632",
+     "107-1202607",
+     "694-1180442",
+     "709-1178082"
     ],
     "top": [
      "630-2001907",
@@ -38,58 +42,94 @@
     "source_url": "https://cfbstats.com/2025/leader/national/player/split01/category03/sort04.html",
     "order": [
      "415-50304358",
+     "107-1202607",
      "229-1178330",
      "164-1127654",
      "630-2001907",
+     "67-1121477",
      "518-50312218",
      "670-1206439",
+     "709-1178082",
+     "257-2000182",
      "657-2000154",
+     "277-1179862",
+     "30-1110632",
+     "288-1174066",
+     "30-2000737",
      "698-1127360",
-     "193-1176125"
+     "367-1174703",
+     "193-1176125",
+     "9-1177173",
+     "254-1187278"
     ],
     "top": [
      "415-50304358",
+     "107-1202607",
      "229-1178330"
     ],
-    "top_dropped": [
-     "Jacob De Jesus"
-    ]
+    "top_dropped": []
    },
    "td": {
     "source_url": "https://cfbstats.com/2025/leader/national/player/split01/category03/sort06.html",
     "order": [
+     "306-1176682",
      "253-1174049",
      "164-1127654",
+     "306-1174514",
+     "140-1174700",
      "518-50312218",
+     "277-2000690",
+     "288-2002206",
      "657-2000154",
+     "709-1178082",
+     "756-1175644",
      "630-2001907",
      "670-1206439",
      "698-1127360",
      "497-50212082",
-     "415-50304358"
+     "415-50304358",
+     "694-1180442",
+     "518-2000093",
+     "51-1127885",
+     "697-2000861"
     ],
     "top": [
+     "306-1176682",
      "253-1174049",
      "164-1127654"
     ],
-    "top_dropped": [
-     "Elijah Sarratt"
-    ]
+    "top_dropped": []
    },
    "ypr": {
     "source_url": "https://cfbstats.com/2025/leader/national/player/split01/category03/sort05.html",
     "order": [
+     "315-2001086",
+     "704-50292532",
+     "414-1174507",
+     "234-50312094",
+     "648-2003070",
+     "523-1254969",
+     "306-50304327",
+     "277-2000690",
      "234-1208932",
+     "66-1180365",
+     "27-1126616",
      "430-1178066",
+     "355-1187104",
+     "37-50311166",
      "587-50312274",
-     "497-50212082"
+     "497-50212082",
+     "157-2002441",
+     "317-1111945",
+     "703-50310504",
+     "664-1180466"
     ],
-    "top": [],
-    "top_dropped": [
-     "Deondre Johnson",
-     "Wondame Davis Jr.",
-     "Kam Perry"
-    ]
+    "top": [
+     "315-2001086",
+     "704-50292532",
+     "414-1174507"
+    ],
+    "top_dropped": []
    },
    "ypg": {
     "source_url": "https://cfbstats.com/2025/leader/national/player/split01/category03/sort01.html",
@@ -104,7 +144,14 @@
      "587-50312274",
      "234-1208932",
      "229-1178330",
+     "277-2000690",
+     "694-1180442",
+     "670-2000589",
+     "254-1187278",
+     "367-1174703",
      "253-1174049",
+     "67-1121477",
+     "86-1177293",
      "430-1178066",
      "196-1112570"
     ],
@@ -2212,49 +2259,4862 @@
       "td": 0
      }
     ]
+   },
+   "30-1110632": {
+    "name": "Corey Rucker",
+    "team": "Ark St",
+    "pos": "WR",
+    "line": {
+     "g": 13,
+     "rec": 75,
+     "yds": 1032,
+     "td": 4
+    },
+    "url": "https://cfbstats.com/2025/player/30/1110632/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Southeast Missouri State",
+      "site": "H",
+      "result": "W 42-24",
+      "rec": 2,
+      "yds": 59,
+      "td": 1
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Arkansas",
+      "site": "A",
+      "result": "L 14-56",
+      "rec": 3,
+      "yds": 20,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Iowa State",
+      "site": "H",
+      "result": "L 16-24",
+      "rec": 1,
+      "yds": 26,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Kennesaw State",
+      "site": "A",
+      "result": "L 21-28",
+      "rec": 2,
+      "yds": 4,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Louisiana-Monroe",
+      "site": "A",
+      "result": "L 16-28",
+      "rec": 11,
+      "yds": 123,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Texas State",
+      "site": "H",
+      "result": "W 31-30",
+      "rec": 8,
+      "yds": 102,
+      "td": 0
+     },
+     {
+      "date": "2025-10-14",
+      "opp": "South Alabama",
+      "site": "A",
+      "result": "W 15-14",
+      "rec": 8,
+      "yds": 58,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Georgia Southern",
+      "site": "H",
+      "result": "W 34-24",
+      "rec": 5,
+      "yds": 77,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Troy",
+      "site": "A",
+      "result": "W 23-10",
+      "rec": 4,
+      "yds": 64,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Southern Miss",
+      "site": "H",
+      "result": "L 21-27",
+      "rec": 7,
+      "yds": 123,
+      "td": 0
+     },
+     {
+      "date": "2025-11-20",
+      "opp": "Louisiana",
+      "site": "H",
+      "result": "L 30-34",
+      "rec": 8,
+      "yds": 120,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Appalachian State",
+      "site": "A",
+      "result": "W 30-29",
+      "rec": 10,
+      "yds": 90,
+      "td": 2
+     },
+     {
+      "date": "2025-12-18",
+      "opp": "Missouri State",
+      "site": "N",
+      "result": "W 34-28",
+      "rec": 6,
+      "yds": 166,
+      "td": 1
+     }
+    ]
+   },
+   "107-1202607": {
+    "name": "Jacob De Jesus",
+    "team": "California",
+    "pos": "WR",
+    "line": {
+     "g": 13,
+     "rec": 108,
+     "yds": 1030,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2025/player/107/1202607/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Oregon State",
+      "site": "A",
+      "result": "W 34-15",
+      "rec": 4,
+      "yds": 26,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Texas Southern",
+      "site": "H",
+      "result": "W 35-3",
+      "rec": 6,
+      "yds": 69,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Minnesota",
+      "site": "H",
+      "result": "W 27-14",
+      "rec": 7,
+      "yds": 54,
+      "td": 1
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "San Diego State",
+      "site": "A",
+      "result": "L 0-34",
+      "rec": 3,
+      "yds": 35,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Boston College",
+      "site": "A",
+      "result": "W 28-24",
+      "rec": 8,
+      "yds": 61,
+      "td": 1
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Duke",
+      "site": "H",
+      "result": "L 21-45",
+      "rec": 6,
+      "yds": 56,
+      "td": 0
+     },
+     {
+      "date": "2025-10-17",
+      "opp": "North Carolina",
+      "site": "H",
+      "result": "W 21-18",
+      "rec": 13,
+      "yds": 105,
+      "td": 1
+     },
+     {
+      "date": "2025-10-24",
+      "opp": "Virginia Tech",
+      "site": "A",
+      "result": "L 34-42",
+      "rec": 8,
+      "yds": 86,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Virginia",
+      "site": "H",
+      "result": "L 21-31",
+      "rec": 2,
+      "yds": 49,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Louisville",
+      "site": "A",
+      "result": "W 29-26",
+      "rec": 16,
+      "yds": 158,
+      "td": 1
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Stanford",
+      "site": "A",
+      "result": "L 10-31",
+      "rec": 14,
+      "yds": 96,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "SMU",
+      "site": "H",
+      "result": "W 38-35",
+      "rec": 12,
+      "yds": 97,
+      "td": 1
+     },
+     {
+      "date": "2025-12-24",
+      "opp": "Hawaii",
+      "site": "A",
+      "result": "L 31-35",
+      "rec": 9,
+      "yds": 138,
+      "td": 1
+     }
+    ]
+   },
+   "694-1180442": {
+    "name": "Chris Brazzell II",
+    "team": "Tennessee",
+    "pos": "WR",
+    "line": {
+     "g": 12,
+     "rec": 62,
+     "yds": 1017,
+     "td": 9
+    },
+    "url": "https://cfbstats.com/2025/player/694/1180442/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Syracuse",
+      "site": "N",
+      "result": "W 45-26",
+      "rec": 5,
+      "yds": 62,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "East Tennessee State",
+      "site": "H",
+      "result": "W 72-17",
+      "rec": 9,
+      "yds": 125,
+      "td": 2
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Georgia",
+      "site": "H",
+      "result": "L 41-44",
+      "rec": 6,
+      "yds": 177,
+      "td": 3
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "UAB",
+      "site": "H",
+      "result": "W 56-24",
+      "rec": 5,
+      "yds": 62,
+      "td": 1
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Mississippi State",
+      "site": "A",
+      "result": "W 41-34",
+      "rec": 6,
+      "yds": 105,
+      "td": 1
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Arkansas",
+      "site": "H",
+      "result": "W 34-31",
+      "rec": 1,
+      "yds": 5,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Alabama",
+      "site": "A",
+      "result": "L 20-37",
+      "rec": 7,
+      "yds": 66,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Kentucky",
+      "site": "A",
+      "result": "W 56-34",
+      "rec": 4,
+      "yds": 138,
+      "td": 1
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Oklahoma",
+      "site": "H",
+      "result": "L 27-33",
+      "rec": 6,
+      "yds": 68,
+      "td": 0
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "New Mexico State",
+      "site": "H",
+      "result": "W 42-9",
+      "rec": 3,
+      "yds": 65,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Florida",
+      "site": "A",
+      "result": "W 31-11",
+      "rec": 4,
+      "yds": 53,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Vanderbilt",
+      "site": "H",
+      "result": "L 24-45",
+      "rec": 6,
+      "yds": 91,
+      "td": 1
+     }
+    ]
+   },
+   "709-1178082": {
+    "name": "Junior Vandeross III",
+    "team": "Toledo",
+    "pos": "WR",
+    "line": {
+     "g": 13,
+     "rec": 82,
+     "yds": 1008,
+     "td": 11
+    },
+    "url": "https://cfbstats.com/2025/player/709/1178082/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Kentucky",
+      "site": "A",
+      "result": "L 16-24",
+      "rec": 7,
+      "yds": 88,
+      "td": 1
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Western Kentucky",
+      "site": "H",
+      "result": "W 45-21",
+      "rec": 5,
+      "yds": 122,
+      "td": 1
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Morgan State",
+      "site": "H",
+      "result": "W 60-0",
+      "rec": 6,
+      "yds": 45,
+      "td": 2
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Western Michigan",
+      "site": "A",
+      "result": "L 13-14",
+      "rec": 4,
+      "yds": 3,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Akron",
+      "site": "H",
+      "result": "W 45-3",
+      "rec": 9,
+      "yds": 122,
+      "td": 2
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Bowling Green",
+      "site": "A",
+      "result": "L 23-28",
+      "rec": 6,
+      "yds": 100,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Kent State",
+      "site": "H",
+      "result": "W 45-10",
+      "rec": 8,
+      "yds": 76,
+      "td": 1
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Washington State",
+      "site": "A",
+      "result": "L 7-28",
+      "rec": 7,
+      "yds": 52,
+      "td": 1
+     },
+     {
+      "date": "2025-11-05",
+      "opp": "Northern Illinois",
+      "site": "H",
+      "result": "W 42-3",
+      "rec": 6,
+      "yds": 97,
+      "td": 1
+     },
+     {
+      "date": "2025-11-12",
+      "opp": "Miami (OH)",
+      "site": "A",
+      "result": "W 24-3",
+      "rec": 6,
+      "yds": 44,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Ball State",
+      "site": "H",
+      "result": "W 38-9",
+      "rec": 7,
+      "yds": 127,
+      "td": 2
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Central Michigan",
+      "site": "A",
+      "result": "W 21-3",
+      "rec": 4,
+      "yds": 71,
+      "td": 0
+     },
+     {
+      "date": "2025-12-23",
+      "opp": "Louisville",
+      "site": "N",
+      "result": "L 22-27",
+      "rec": 7,
+      "yds": 61,
+      "td": 0
+     }
+    ]
+   },
+   "67-1121477": {
+    "name": "Lewis Bond",
+    "team": "Boston College",
+    "pos": "WR",
+    "line": {
+     "g": 12,
+     "rec": 88,
+     "yds": 993,
+     "td": 1
+    },
+    "url": "https://cfbstats.com/2025/player/67/1121477/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Fordham",
+      "site": "H",
+      "result": "W 66-10",
+      "rec": 10,
+      "yds": 121,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Michigan State",
+      "site": "A",
+      "result": "L 40-42",
+      "rec": 11,
+      "yds": 90,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Stanford",
+      "site": "A",
+      "result": "L 20-30",
+      "rec": 7,
+      "yds": 47,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "California",
+      "site": "H",
+      "result": "L 24-28",
+      "rec": 7,
+      "yds": 77,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Pittsburgh",
+      "site": "A",
+      "result": "L 7-48",
+      "rec": 2,
+      "yds": 14,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Clemson",
+      "site": "H",
+      "result": "L 10-41",
+      "rec": 7,
+      "yds": 70,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Connecticut",
+      "site": "H",
+      "result": "L 23-38",
+      "rec": 5,
+      "yds": 69,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Louisville",
+      "site": "A",
+      "result": "L 24-38",
+      "rec": 6,
+      "yds": 42,
+      "td": 1
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Notre Dame",
+      "site": "H",
+      "result": "L 10-25",
+      "rec": 8,
+      "yds": 92,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "SMU",
+      "site": "H",
+      "result": "L 13-45",
+      "rec": 9,
+      "yds": 94,
+      "td": 0
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Georgia Tech",
+      "site": "H",
+      "result": "L 34-36",
+      "rec": 8,
+      "yds": 106,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Syracuse",
+      "site": "A",
+      "result": "W 34-12",
+      "rec": 8,
+      "yds": 171,
+      "td": 0
+     }
+    ]
+   },
+   "257-2000182": {
+    "name": "Zachariah Branch",
+    "team": "Georgia",
+    "pos": "WR",
+    "line": {
+     "g": 14,
+     "rec": 81,
+     "yds": 811,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2025/player/257/2000182/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Marshall",
+      "site": "H",
+      "result": "W 45-7",
+      "rec": 3,
+      "yds": 95,
+      "td": 1
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Austin Peay",
+      "site": "H",
+      "result": "W 28-6",
+      "rec": 3,
+      "yds": 17,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Tennessee",
+      "site": "A",
+      "result": "W 44-41",
+      "rec": 5,
+      "yds": 69,
+      "td": 1
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Alabama",
+      "site": "H",
+      "result": "L 21-24",
+      "rec": 3,
+      "yds": 35,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Kentucky",
+      "site": "H",
+      "result": "W 35-14",
+      "rec": 4,
+      "yds": 18,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Auburn",
+      "site": "A",
+      "result": "W 20-10",
+      "rec": 9,
+      "yds": 57,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Ole Miss",
+      "site": "H",
+      "result": "W 43-35",
+      "rec": 8,
+      "yds": 71,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Florida",
+      "site": "N",
+      "result": "W 24-20",
+      "rec": 10,
+      "yds": 112,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Mississippi State",
+      "site": "A",
+      "result": "W 41-21",
+      "rec": 8,
+      "yds": 68,
+      "td": 1
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Texas",
+      "site": "H",
+      "result": "W 35-10",
+      "rec": 6,
+      "yds": 41,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Charlotte",
+      "site": "H",
+      "result": "W 35-3",
+      "rec": 4,
+      "yds": 55,
+      "td": 0
+     },
+     {
+      "date": "2025-11-28",
+      "opp": "Georgia Tech",
+      "site": "A",
+      "result": "W 16-9",
+      "rec": 5,
+      "yds": 53,
+      "td": 1
+     },
+     {
+      "date": "2025-12-06",
+      "opp": "Alabama",
+      "site": "N",
+      "result": "W 28-7",
+      "rec": 5,
+      "yds": 53,
+      "td": 1
+     },
+     {
+      "date": "2026-01-01",
+      "opp": "Ole Miss",
+      "site": "N",
+      "result": "L 34-39",
+      "rec": 8,
+      "yds": 67,
+      "td": 1
+     }
+    ]
+   },
+   "277-1179862": {
+    "name": "Pofele Ashlock",
+    "team": "Hawai'i",
+    "pos": "WR",
+    "line": {
+     "g": 13,
+     "rec": 76,
+     "yds": 827,
+     "td": 8
+    },
+    "url": "https://cfbstats.com/2025/player/277/1179862/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-23",
+      "opp": "Stanford",
+      "site": "H",
+      "result": "W 23-20",
+      "rec": 9,
+      "yds": 69,
+      "td": 1
+     },
+     {
+      "date": "2025-08-30",
+      "opp": "Arizona",
+      "site": "A",
+      "result": "L 6-40",
+      "rec": 6,
+      "yds": 24,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Sam Houston State",
+      "site": "H",
+      "result": "W 37-20",
+      "rec": 7,
+      "yds": 125,
+      "td": 2
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Portland State",
+      "site": "H",
+      "result": "W 23-3",
+      "rec": 4,
+      "yds": 17,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Fresno State",
+      "site": "H",
+      "result": "L 21-23",
+      "rec": 8,
+      "yds": 68,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Air Force",
+      "site": "A",
+      "result": "W 44-35",
+      "rec": 4,
+      "yds": 52,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Utah State",
+      "site": "H",
+      "result": "W 44-26",
+      "rec": 8,
+      "yds": 113,
+      "td": 3
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Colorado State",
+      "site": "A",
+      "result": "W 31-19",
+      "rec": 2,
+      "yds": 26,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "San Jose State",
+      "site": "A",
+      "result": "L 38-45",
+      "rec": 7,
+      "yds": 104,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "San Diego State",
+      "site": "H",
+      "result": "W 38-6",
+      "rec": 3,
+      "yds": 35,
+      "td": 0
+     },
+     {
+      "date": "2025-11-21",
+      "opp": "UNLV",
+      "site": "A",
+      "result": "L 10-38",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Wyoming",
+      "site": "H",
+      "result": "W 27-7",
+      "rec": 4,
+      "yds": 71,
+      "td": 0
+     },
+     {
+      "date": "2025-12-24",
+      "opp": "California",
+      "site": "H",
+      "result": "W 35-31",
+      "rec": 14,
+      "yds": 123,
+      "td": 2
+     }
+    ]
+   },
+   "288-1174066": {
+    "name": "Tanner Koziol",
+    "team": "Houston",
+    "pos": "TE",
+    "line": {
+     "g": 13,
+     "rec": 74,
+     "yds": 727,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2025/player/288/1174066/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-28",
+      "opp": "Stephen F. Austin",
+      "site": "H",
+      "result": "W 27-0",
+      "rec": 7,
+      "yds": 63,
+      "td": 1
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Rice",
+      "site": "A",
+      "result": "W 35-9",
+      "rec": 6,
+      "yds": 52,
+      "td": 0
+     },
+     {
+      "date": "2025-09-12",
+      "opp": "Colorado",
+      "site": "H",
+      "result": "W 36-20",
+      "rec": 4,
+      "yds": 33,
+      "td": 0
+     },
+     {
+      "date": "2025-09-26",
+      "opp": "Oregon State",
+      "site": "A",
+      "result": "W 27-24",
+      "rec": 6,
+      "yds": 86,
+      "td": 1
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Texas Tech",
+      "site": "H",
+      "result": "L 11-35",
+      "rec": 2,
+      "yds": 10,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Oklahoma State",
+      "site": "A",
+      "result": "W 39-17",
+      "rec": 5,
+      "yds": 66,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Arizona",
+      "site": "H",
+      "result": "W 31-28",
+      "rec": 6,
+      "yds": 40,
+      "td": 1
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Arizona State",
+      "site": "A",
+      "result": "W 24-16",
+      "rec": 7,
+      "yds": 100,
+      "td": 1
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "West Virginia",
+      "site": "H",
+      "result": "L 35-45",
+      "rec": 5,
+      "yds": 54,
+      "td": 1
+     },
+     {
+      "date": "2025-11-07",
+      "opp": "UCF",
+      "site": "A",
+      "result": "W 30-27",
+      "rec": 8,
+      "yds": 66,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "TCU",
+      "site": "H",
+      "result": "L 14-17",
+      "rec": 2,
+      "yds": 22,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Baylor",
+      "site": "A",
+      "result": "W 31-24",
+      "rec": 7,
+      "yds": 59,
+      "td": 0
+     },
+     {
+      "date": "2025-12-27",
+      "opp": "LSU",
+      "site": "N",
+      "result": "W 38-35",
+      "rec": 9,
+      "yds": 76,
+      "td": 1
+     }
+    ]
+   },
+   "30-2000737": {
+    "name": "Chauncy Cobb",
+    "team": "Ark St",
+    "pos": "WR",
+    "line": {
+     "g": 13,
+     "rec": 73,
+     "yds": 797,
+     "td": 1
+    },
+    "url": "https://cfbstats.com/2025/player/30/2000737/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Southeast Missouri State",
+      "site": "H",
+      "result": "W 42-24",
+      "rec": 5,
+      "yds": 85,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Arkansas",
+      "site": "A",
+      "result": "L 14-56",
+      "rec": 4,
+      "yds": 50,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Iowa State",
+      "site": "H",
+      "result": "L 16-24",
+      "rec": 7,
+      "yds": 81,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Kennesaw State",
+      "site": "A",
+      "result": "L 21-28",
+      "rec": 3,
+      "yds": 25,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Louisiana-Monroe",
+      "site": "A",
+      "result": "L 16-28",
+      "rec": 8,
+      "yds": 126,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Texas State",
+      "site": "H",
+      "result": "W 31-30",
+      "rec": 7,
+      "yds": 39,
+      "td": 0
+     },
+     {
+      "date": "2025-10-14",
+      "opp": "South Alabama",
+      "site": "A",
+      "result": "W 15-14",
+      "rec": 6,
+      "yds": 68,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Georgia Southern",
+      "site": "H",
+      "result": "W 34-24",
+      "rec": 12,
+      "yds": 81,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Troy",
+      "site": "A",
+      "result": "W 23-10",
+      "rec": 4,
+      "yds": 53,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Southern Miss",
+      "site": "H",
+      "result": "L 21-27",
+      "rec": 7,
+      "yds": 26,
+      "td": 0
+     },
+     {
+      "date": "2025-11-20",
+      "opp": "Louisiana",
+      "site": "H",
+      "result": "L 30-34",
+      "rec": 1,
+      "yds": 16,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Appalachian State",
+      "site": "A",
+      "result": "W 30-29",
+      "rec": 5,
+      "yds": 117,
+      "td": 0
+     },
+     {
+      "date": "2025-12-18",
+      "opp": "Missouri State",
+      "site": "N",
+      "result": "W 34-28",
+      "rec": 4,
+      "yds": 30,
+      "td": 1
+     }
+    ]
+   },
+   "367-1174703": {
+    "name": "Chris Bell",
+    "team": "Louisville",
+    "pos": "WR",
+    "line": {
+     "g": 11,
+     "rec": 72,
+     "yds": 917,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2025/player/367/1174703/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Eastern Kentucky",
+      "site": "H",
+      "result": "W 51-17",
+      "rec": 5,
+      "yds": 63,
+      "td": 0
+     },
+     {
+      "date": "2025-09-05",
+      "opp": "James Madison",
+      "site": "H",
+      "result": "W 28-14",
+      "rec": 4,
+      "yds": 83,
+      "td": 1
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Bowling Green",
+      "site": "H",
+      "result": "W 40-17",
+      "rec": 4,
+      "yds": 51,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Pittsburgh",
+      "site": "A",
+      "result": "W 34-27",
+      "rec": 10,
+      "yds": 135,
+      "td": 1
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Virginia",
+      "site": "H",
+      "result": "L 27-30",
+      "rec": 12,
+      "yds": 170,
+      "td": 2
+     },
+     {
+      "date": "2025-10-17",
+      "opp": "Miami (FL)",
+      "site": "A",
+      "result": "W 24-21",
+      "rec": 9,
+      "yds": 136,
+      "td": 2
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Boston College",
+      "site": "H",
+      "result": "W 38-24",
+      "rec": 4,
+      "yds": 49,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Virginia Tech",
+      "site": "A",
+      "result": "W 28-16",
+      "rec": 8,
+      "yds": 56,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "California",
+      "site": "H",
+      "result": "L 26-29",
+      "rec": 6,
+      "yds": 49,
+      "td": 0
+     },
+     {
+      "date": "2025-11-14",
+      "opp": "Clemson",
+      "site": "H",
+      "result": "L 19-20",
+      "rec": 5,
+      "yds": 79,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "SMU",
+      "site": "A",
+      "result": "L 6-38",
+      "rec": 5,
+      "yds": 46,
+      "td": 0
+     }
+    ]
+   },
+   "9-1177173": {
+    "name": "Iverson Hooks",
+    "team": "UAB",
+    "pos": "WR",
+    "line": {
+     "g": 12,
+     "rec": 72,
+     "yds": 927,
+     "td": 7
+    },
+    "url": "https://cfbstats.com/2025/player/9/1177173/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-28",
+      "opp": "Alabama State",
+      "site": "H",
+      "result": "W 52-42",
+      "rec": 7,
+      "yds": 73,
+      "td": 1
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Navy",
+      "site": "A",
+      "result": "L 24-38",
+      "rec": 4,
+      "yds": 72,
+      "td": 1
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Akron",
+      "site": "H",
+      "result": "W 31-28",
+      "rec": 5,
+      "yds": 84,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Tennessee",
+      "site": "A",
+      "result": "L 24-56",
+      "rec": 5,
+      "yds": 38,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Army",
+      "site": "H",
+      "result": "L 13-31",
+      "rec": 4,
+      "yds": 71,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Florida Atlantic",
+      "site": "A",
+      "result": "L 33-53",
+      "rec": 5,
+      "yds": 50,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Memphis",
+      "site": "H",
+      "result": "W 31-24",
+      "rec": 11,
+      "yds": 172,
+      "td": 3
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Connecticut",
+      "site": "A",
+      "result": "L 19-38",
+      "rec": 4,
+      "yds": 28,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Rice",
+      "site": "A",
+      "result": "L 17-24",
+      "rec": 6,
+      "yds": 89,
+      "td": 1
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "North Texas",
+      "site": "H",
+      "result": "L 24-53",
+      "rec": 6,
+      "yds": 58,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "USF",
+      "site": "H",
+      "result": "L 18-48",
+      "rec": 10,
+      "yds": 146,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Tulsa",
+      "site": "A",
+      "result": "W 31-24",
+      "rec": 5,
+      "yds": 46,
+      "td": 1
+     }
+    ]
+   },
+   "254-1187278": {
+    "name": "Ted Hurst",
+    "team": "Georgia St",
+    "pos": "WR",
+    "line": {
+     "g": 12,
+     "rec": 71,
+     "yds": 1004,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2025/player/254/1187278/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Ole Miss",
+      "site": "A",
+      "result": "L 7-63",
+      "rec": 1,
+      "yds": 6,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Memphis",
+      "site": "H",
+      "result": "L 16-38",
+      "rec": 7,
+      "yds": 97,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Murray State",
+      "site": "H",
+      "result": "W 37-21",
+      "rec": 10,
+      "yds": 172,
+      "td": 2
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Vanderbilt",
+      "site": "A",
+      "result": "L 21-70",
+      "rec": 7,
+      "yds": 71,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "James Madison",
+      "site": "H",
+      "result": "L 7-14",
+      "rec": 3,
+      "yds": 60,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Appalachian State",
+      "site": "H",
+      "result": "L 20-41",
+      "rec": 9,
+      "yds": 105,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Georgia Southern",
+      "site": "A",
+      "result": "L 24-41",
+      "rec": 5,
+      "yds": 68,
+      "td": 1
+     },
+     {
+      "date": "2025-10-23",
+      "opp": "South Alabama",
+      "site": "H",
+      "result": "L 31-38",
+      "rec": 5,
+      "yds": 110,
+      "td": 2
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Coastal Carolina",
+      "site": "A",
+      "result": "L 27-40",
+      "rec": 10,
+      "yds": 165,
+      "td": 1
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Marshall",
+      "site": "H",
+      "result": "L 18-30",
+      "rec": 7,
+      "yds": 74,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Troy",
+      "site": "A",
+      "result": "L 19-31",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Old Dominion",
+      "site": "A",
+      "result": "L 10-27",
+      "rec": 7,
+      "yds": 76,
+      "td": 0
+     }
+    ]
+   },
+   "306-1176682": {
+    "name": "Elijah Sarratt",
+    "team": "Indiana",
+    "pos": "WR",
+    "line": {
+     "g": 14,
+     "rec": 65,
+     "yds": 830,
+     "td": 15
+    },
+    "url": "https://cfbstats.com/2025/player/306/1176682/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Old Dominion",
+      "site": "H",
+      "result": "W 27-14",
+      "rec": 3,
+      "yds": 44,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Kennesaw State",
+      "site": "H",
+      "result": "W 56-9",
+      "rec": 9,
+      "yds": 97,
+      "td": 3
+     },
+     {
+      "date": "2025-09-12",
+      "opp": "Indiana State",
+      "site": "H",
+      "result": "W 73-0",
+      "rec": 3,
+      "yds": 23,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Illinois",
+      "site": "H",
+      "result": "W 63-10",
+      "rec": 9,
+      "yds": 92,
+      "td": 2
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Iowa",
+      "site": "A",
+      "result": "W 20-15",
+      "rec": 7,
+      "yds": 156,
+      "td": 1
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Oregon",
+      "site": "A",
+      "result": "W 30-20",
+      "rec": 8,
+      "yds": 121,
+      "td": 1
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Michigan State",
+      "site": "H",
+      "result": "W 38-13",
+      "rec": 4,
+      "yds": 70,
+      "td": 2
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "UCLA",
+      "site": "H",
+      "result": "W 56-6",
+      "rec": 2,
+      "yds": 6,
+      "td": 1
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Maryland",
+      "site": "A",
+      "result": "W 55-10",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-11-28",
+      "opp": "Purdue",
+      "site": "A",
+      "result": "W 56-3",
+      "rec": 3,
+      "yds": 41,
+      "td": 1
+     },
+     {
+      "date": "2025-12-06",
+      "opp": "Ohio State",
+      "site": "N",
+      "result": "W 13-10",
+      "rec": 3,
+      "yds": 37,
+      "td": 1
+     },
+     {
+      "date": "2026-01-01",
+      "opp": "Alabama",
+      "site": "N",
+      "result": "W 38-3",
+      "rec": 4,
+      "yds": 40,
+      "td": 1
+     },
+     {
+      "date": "2026-01-09",
+      "opp": "Oregon",
+      "site": "N",
+      "result": "W 56-22",
+      "rec": 7,
+      "yds": 75,
+      "td": 2
+     },
+     {
+      "date": "2026-01-19",
+      "opp": "Miami (FL)",
+      "site": "N",
+      "result": "W 27-21",
+      "rec": 3,
+      "yds": 28,
+      "td": 0
+     }
+    ]
+   },
+   "306-1174514": {
+    "name": "Omar Cooper Jr.",
+    "team": "Indiana",
+    "pos": "WR",
+    "line": {
+     "g": 16,
+     "rec": 69,
+     "yds": 937,
+     "td": 13
+    },
+    "url": "https://cfbstats.com/2025/player/306/1174514/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Old Dominion",
+      "site": "H",
+      "result": "W 27-14",
+      "rec": 2,
+      "yds": 52,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Kennesaw State",
+      "site": "H",
+      "result": "W 56-9",
+      "rec": 1,
+      "yds": 40,
+      "td": 0
+     },
+     {
+      "date": "2025-09-12",
+      "opp": "Indiana State",
+      "site": "H",
+      "result": "W 73-0",
+      "rec": 10,
+      "yds": 207,
+      "td": 4
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Illinois",
+      "site": "H",
+      "result": "W 63-10",
+      "rec": 6,
+      "yds": 78,
+      "td": 1
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Iowa",
+      "site": "A",
+      "result": "W 20-15",
+      "rec": 3,
+      "yds": 31,
+      "td": 1
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Oregon",
+      "site": "A",
+      "result": "W 30-20",
+      "rec": 7,
+      "yds": 58,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Michigan State",
+      "site": "H",
+      "result": "W 38-13",
+      "rec": 8,
+      "yds": 115,
+      "td": 1
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "UCLA",
+      "site": "H",
+      "result": "W 56-6",
+      "rec": 2,
+      "yds": 2,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Maryland",
+      "site": "A",
+      "result": "W 55-10",
+      "rec": 7,
+      "yds": 86,
+      "td": 1
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Penn State",
+      "site": "A",
+      "result": "W 27-24",
+      "rec": 6,
+      "yds": 32,
+      "td": 1
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Wisconsin",
+      "site": "H",
+      "result": "W 31-7",
+      "rec": 3,
+      "yds": 39,
+      "td": 1
+     },
+     {
+      "date": "2025-11-28",
+      "opp": "Purdue",
+      "site": "A",
+      "result": "W 56-3",
+      "rec": 3,
+      "yds": 64,
+      "td": 1
+     },
+     {
+      "date": "2025-12-06",
+      "opp": "Ohio State",
+      "site": "N",
+      "result": "W 13-10",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2026-01-01",
+      "opp": "Alabama",
+      "site": "N",
+      "result": "W 38-3",
+      "rec": 3,
+      "yds": 45,
+      "td": 1
+     },
+     {
+      "date": "2026-01-09",
+      "opp": "Oregon",
+      "site": "N",
+      "result": "W 56-22",
+      "rec": 3,
+      "yds": 17,
+      "td": 1
+     },
+     {
+      "date": "2026-01-19",
+      "opp": "Miami (FL)",
+      "site": "N",
+      "result": "W 27-21",
+      "rec": 5,
+      "yds": 71,
+      "td": 0
+     }
+    ]
+   },
+   "140-1174700": {
+    "name": "Cyrus Allen",
+    "team": "Cincinnati",
+    "pos": "WR",
+    "line": {
+     "g": 13,
+     "rec": 51,
+     "yds": 674,
+     "td": 13
+    },
+    "url": "https://cfbstats.com/2025/player/140/1174700/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-28",
+      "opp": "Nebraska",
+      "site": "N",
+      "result": "L 17-20",
+      "rec": 5,
+      "yds": 41,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Bowling Green",
+      "site": "H",
+      "result": "W 34-20",
+      "rec": 3,
+      "yds": 45,
+      "td": 2
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Northwestern State",
+      "site": "H",
+      "result": "W 70-0",
+      "rec": 4,
+      "yds": 59,
+      "td": 1
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Kansas",
+      "site": "A",
+      "result": "W 37-34",
+      "rec": 11,
+      "yds": 128,
+      "td": 2
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Iowa State",
+      "site": "H",
+      "result": "W 38-30",
+      "rec": 3,
+      "yds": 22,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "UCF",
+      "site": "H",
+      "result": "W 20-11",
+      "rec": 1,
+      "yds": -1,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Oklahoma State",
+      "site": "A",
+      "result": "W 49-17",
+      "rec": 4,
+      "yds": 51,
+      "td": 3
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Baylor",
+      "site": "H",
+      "result": "W 41-20",
+      "rec": 3,
+      "yds": 36,
+      "td": 1
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Utah",
+      "site": "A",
+      "result": "L 14-45",
+      "rec": 2,
+      "yds": 133,
+      "td": 1
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Arizona",
+      "site": "H",
+      "result": "L 24-30",
+      "rec": 5,
+      "yds": 58,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "BYU",
+      "site": "H",
+      "result": "L 14-26",
+      "rec": 5,
+      "yds": 51,
+      "td": 1
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "TCU",
+      "site": "A",
+      "result": "L 23-45",
+      "rec": 3,
+      "yds": 42,
+      "td": 1
+     },
+     {
+      "date": "2026-01-02",
+      "opp": "Navy",
+      "site": "N",
+      "result": "L 13-35",
+      "rec": 2,
+      "yds": 9,
+      "td": 1
+     }
+    ]
+   },
+   "277-2000690": {
+    "name": "Jackson Harris",
+    "team": "Hawai'i",
+    "pos": "WR",
+    "line": {
+     "g": 11,
+     "rec": 49,
+     "yds": 963,
+     "td": 12
+    },
+    "url": "https://cfbstats.com/2025/player/277/2000690/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-23",
+      "opp": "Stanford",
+      "site": "H",
+      "result": "W 23-20",
+      "rec": 6,
+      "yds": 59,
+      "td": 1
+     },
+     {
+      "date": "2025-08-30",
+      "opp": "Arizona",
+      "site": "A",
+      "result": "L 6-40",
+      "rec": 2,
+      "yds": 21,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Sam Houston State",
+      "site": "H",
+      "result": "W 37-20",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Fresno State",
+      "site": "H",
+      "result": "L 21-23",
+      "rec": 2,
+      "yds": 17,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Air Force",
+      "site": "A",
+      "result": "W 44-35",
+      "rec": 7,
+      "yds": 144,
+      "td": 2
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Utah State",
+      "site": "H",
+      "result": "W 44-26",
+      "rec": 7,
+      "yds": 117,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Colorado State",
+      "site": "A",
+      "result": "W 31-19",
+      "rec": 5,
+      "yds": 109,
+      "td": 2
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "San Jose State",
+      "site": "A",
+      "result": "L 38-45",
+      "rec": 6,
+      "yds": 134,
+      "td": 2
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "San Diego State",
+      "site": "H",
+      "result": "W 38-6",
+      "rec": 7,
+      "yds": 130,
+      "td": 3
+     },
+     {
+      "date": "2025-11-21",
+      "opp": "UNLV",
+      "site": "A",
+      "result": "L 10-38",
+      "rec": 3,
+      "yds": 79,
+      "td": 1
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Wyoming",
+      "site": "H",
+      "result": "W 27-7",
+      "rec": 4,
+      "yds": 153,
+      "td": 1
+     }
+    ]
+   },
+   "288-2002206": {
+    "name": "Amare Thomas",
+    "team": "Houston",
+    "pos": "WR",
+    "line": {
+     "g": 13,
+     "rec": 67,
+     "yds": 966,
+     "td": 12
+    },
+    "url": "https://cfbstats.com/2025/player/288/2002206/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-28",
+      "opp": "Stephen F. Austin",
+      "site": "H",
+      "result": "W 27-0",
+      "rec": 3,
+      "yds": 44,
+      "td": 1
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Rice",
+      "site": "A",
+      "result": "W 35-9",
+      "rec": 2,
+      "yds": 16,
+      "td": 0
+     },
+     {
+      "date": "2025-09-12",
+      "opp": "Colorado",
+      "site": "H",
+      "result": "W 36-20",
+      "rec": 3,
+      "yds": 50,
+      "td": 0
+     },
+     {
+      "date": "2025-09-26",
+      "opp": "Oregon State",
+      "site": "A",
+      "result": "W 27-24",
+      "rec": 6,
+      "yds": 104,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Texas Tech",
+      "site": "H",
+      "result": "L 11-35",
+      "rec": 2,
+      "yds": 70,
+      "td": 1
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Oklahoma State",
+      "site": "A",
+      "result": "W 39-17",
+      "rec": 7,
+      "yds": 157,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Arizona",
+      "site": "H",
+      "result": "W 31-28",
+      "rec": 4,
+      "yds": 69,
+      "td": 2
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Arizona State",
+      "site": "A",
+      "result": "W 24-16",
+      "rec": 3,
+      "yds": 25,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "West Virginia",
+      "site": "H",
+      "result": "L 35-45",
+      "rec": 10,
+      "yds": 99,
+      "td": 3
+     },
+     {
+      "date": "2025-11-07",
+      "opp": "UCF",
+      "site": "A",
+      "result": "W 30-27",
+      "rec": 5,
+      "yds": 103,
+      "td": 1
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "TCU",
+      "site": "H",
+      "result": "L 14-17",
+      "rec": 5,
+      "yds": 72,
+      "td": 1
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Baylor",
+      "site": "A",
+      "result": "W 31-24",
+      "rec": 9,
+      "yds": 97,
+      "td": 1
+     },
+     {
+      "date": "2025-12-27",
+      "opp": "LSU",
+      "site": "N",
+      "result": "W 38-35",
+      "rec": 8,
+      "yds": 60,
+      "td": 2
+     }
+    ]
+   },
+   "756-1175644": {
+    "name": "Denzel Boston",
+    "team": "Washington",
+    "pos": "WR",
+    "line": {
+     "g": 12,
+     "rec": 62,
+     "yds": 881,
+     "td": 11
+    },
+    "url": "https://cfbstats.com/2025/player/756/1175644/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Colorado State",
+      "site": "H",
+      "result": "W 38-21",
+      "rec": 5,
+      "yds": 92,
+      "td": 1
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "UC Davis",
+      "site": "H",
+      "result": "W 70-10",
+      "rec": 5,
+      "yds": 50,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Washington State",
+      "site": "A",
+      "result": "W 59-24",
+      "rec": 6,
+      "yds": 107,
+      "td": 2
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Ohio State",
+      "site": "H",
+      "result": "L 6-24",
+      "rec": 3,
+      "yds": 26,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Maryland",
+      "site": "A",
+      "result": "W 24-20",
+      "rec": 6,
+      "yds": 71,
+      "td": 1
+     },
+     {
+      "date": "2025-10-10",
+      "opp": "Rutgers",
+      "site": "H",
+      "result": "W 38-19",
+      "rec": 5,
+      "yds": 98,
+      "td": 2
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Michigan",
+      "site": "A",
+      "result": "L 7-24",
+      "rec": 4,
+      "yds": 71,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Illinois",
+      "site": "H",
+      "result": "W 42-25",
+      "rec": 10,
+      "yds": 153,
+      "td": 1
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Wisconsin",
+      "site": "A",
+      "result": "L 10-13",
+      "rec": 8,
+      "yds": 62,
+      "td": 1
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "UCLA",
+      "site": "A",
+      "result": "W 48-14",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Oregon",
+      "site": "H",
+      "result": "L 14-26",
+      "rec": 4,
+      "yds": 25,
+      "td": 2
+     },
+     {
+      "date": "2025-12-13",
+      "opp": "Boise State",
+      "site": "N",
+      "result": "W 38-10",
+      "rec": 6,
+      "yds": 126,
+      "td": 1
+     }
+    ]
+   },
+   "518-2000093": {
+    "name": "Carnell Tate",
+    "team": "Ohio State",
+    "pos": "WR",
+    "line": {
+     "g": 11,
+     "rec": 51,
+     "yds": 875,
+     "td": 9
+    },
+    "url": "https://cfbstats.com/2025/player/518/2000093/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Texas",
+      "site": "H",
+      "result": "W 14-7",
+      "rec": 2,
+      "yds": 49,
+      "td": 1
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Grambling State",
+      "site": "H",
+      "result": "W 70-0",
+      "rec": 5,
+      "yds": 69,
+      "td": 1
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Ohio",
+      "site": "H",
+      "result": "W 37-9",
+      "rec": 5,
+      "yds": 101,
+      "td": 1
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Washington",
+      "site": "A",
+      "result": "W 24-6",
+      "rec": 3,
+      "yds": 33,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Minnesota",
+      "site": "H",
+      "result": "W 42-3",
+      "rec": 9,
+      "yds": 183,
+      "td": 1
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Illinois",
+      "site": "A",
+      "result": "W 34-16",
+      "rec": 4,
+      "yds": 41,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Wisconsin",
+      "site": "A",
+      "result": "W 34-0",
+      "rec": 6,
+      "yds": 111,
+      "td": 2
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Penn State",
+      "site": "H",
+      "result": "W 38-14",
+      "rec": 5,
+      "yds": 124,
+      "td": 1
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Michigan",
+      "site": "A",
+      "result": "W 27-9",
+      "rec": 5,
+      "yds": 82,
+      "td": 1
+     },
+     {
+      "date": "2025-12-06",
+      "opp": "Indiana",
+      "site": "N",
+      "result": "L 10-13",
+      "rec": 4,
+      "yds": 45,
+      "td": 1
+     },
+     {
+      "date": "2025-12-31",
+      "opp": "Miami (FL)",
+      "site": "N",
+      "result": "L 14-24",
+      "rec": 3,
+      "yds": 37,
+      "td": 0
+     }
+    ]
+   },
+   "51-1127885": {
+    "name": "Josh Cameron",
+    "team": "Baylor",
+    "pos": "WR",
+    "line": {
+     "g": 12,
+     "rec": 69,
+     "yds": 872,
+     "td": 9
+    },
+    "url": "https://cfbstats.com/2025/player/51/1127885/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-29",
+      "opp": "Auburn",
+      "site": "H",
+      "result": "L 24-38",
+      "rec": 2,
+      "yds": 54,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "SMU",
+      "site": "A",
+      "result": "W 48-45",
+      "rec": 9,
+      "yds": 151,
+      "td": 2
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Samford",
+      "site": "H",
+      "result": "W 42-7",
+      "rec": 4,
+      "yds": 39,
+      "td": 1
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Arizona State",
+      "site": "H",
+      "result": "L 24-27",
+      "rec": 6,
+      "yds": 65,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Oklahoma State",
+      "site": "A",
+      "result": "W 45-27",
+      "rec": 6,
+      "yds": 98,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Kansas State",
+      "site": "H",
+      "result": "W 35-34",
+      "rec": 5,
+      "yds": 49,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "TCU",
+      "site": "A",
+      "result": "L 36-42",
+      "rec": 8,
+      "yds": 86,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Cincinnati",
+      "site": "A",
+      "result": "L 20-41",
+      "rec": 4,
+      "yds": 34,
+      "td": 1
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "UCF",
+      "site": "H",
+      "result": "W 30-3",
+      "rec": 3,
+      "yds": 5,
+      "td": 1
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Utah",
+      "site": "H",
+      "result": "L 28-55",
+      "rec": 13,
+      "yds": 165,
+      "td": 2
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Arizona",
+      "site": "A",
+      "result": "L 17-41",
+      "rec": 6,
+      "yds": 71,
+      "td": 1
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Houston",
+      "site": "H",
+      "result": "L 24-31",
+      "rec": 3,
+      "yds": 55,
+      "td": 1
+     }
+    ]
+   },
+   "697-2000861": {
+    "name": "KC Concepcion",
+    "team": "Texas A&M",
+    "pos": "WR",
+    "line": {
+     "g": 13,
+     "rec": 61,
+     "yds": 919,
+     "td": 9
+    },
+    "url": "https://cfbstats.com/2025/player/697/2000861/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "UTSA",
+      "site": "H",
+      "result": "W 42-24",
+      "rec": 3,
+      "yds": 72,
+      "td": 1
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Utah State",
+      "site": "H",
+      "result": "W 44-22",
+      "rec": 6,
+      "yds": 73,
+      "td": 2
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Notre Dame",
+      "site": "A",
+      "result": "W 41-40",
+      "rec": 4,
+      "yds": 82,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Auburn",
+      "site": "H",
+      "result": "W 16-10",
+      "rec": 7,
+      "yds": 113,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Mississippi State",
+      "site": "H",
+      "result": "W 31-9",
+      "rec": 4,
+      "yds": 61,
+      "td": 2
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Florida",
+      "site": "H",
+      "result": "W 34-17",
+      "rec": 4,
+      "yds": 46,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Arkansas",
+      "site": "A",
+      "result": "W 45-42",
+      "rec": 5,
+      "yds": 53,
+      "td": 1
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "LSU",
+      "site": "A",
+      "result": "W 49-25",
+      "rec": 3,
+      "yds": 45,
+      "td": 1
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Missouri",
+      "site": "A",
+      "result": "W 38-17",
+      "rec": 4,
+      "yds": 84,
+      "td": 1
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "South Carolina",
+      "site": "H",
+      "result": "W 31-30",
+      "rec": 7,
+      "yds": 158,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Samford",
+      "site": "H",
+      "result": "W 48-0",
+      "rec": 5,
+      "yds": 42,
+      "td": 1
+     },
+     {
+      "date": "2025-11-28",
+      "opp": "Texas",
+      "site": "A",
+      "result": "L 17-27",
+      "rec": 5,
+      "yds": 57,
+      "td": 0
+     },
+     {
+      "date": "2025-12-20",
+      "opp": "Miami (FL)",
+      "site": "H",
+      "result": "L 3-10",
+      "rec": 4,
+      "yds": 33,
+      "td": 0
+     }
+    ]
+   },
+   "315-2001086": {
+    "name": "Deondre Johnson",
+    "team": "J'ville St",
+    "pos": "WR",
+    "line": {
+     "g": 14,
+     "rec": 30,
+     "yds": 724,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2025/player/315/2001086/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-28",
+      "opp": "UCF",
+      "site": "A",
+      "result": "L 10-17",
+      "rec": 2,
+      "yds": 35,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Liberty",
+      "site": "H",
+      "result": "W 34-24",
+      "rec": 1,
+      "yds": 24,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Georgia Southern",
+      "site": "A",
+      "result": "L 34-41",
+      "rec": 1,
+      "yds": 6,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Murray State",
+      "site": "H",
+      "result": "W 45-10",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Southern Miss",
+      "site": "A",
+      "result": "L 25-42",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-10-09",
+      "opp": "Sam Houston State",
+      "site": "A",
+      "result": "W 29-27",
+      "rec": 1,
+      "yds": 8,
+      "td": 0
+     },
+     {
+      "date": "2025-10-15",
+      "opp": "Delaware",
+      "site": "H",
+      "result": "W 38-25",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-10-29",
+      "opp": "Middle Tennessee State",
+      "site": "A",
+      "result": "W 24-21",
+      "rec": 4,
+      "yds": 131,
+      "td": 2
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "UTEP",
+      "site": "A",
+      "result": "W 30-27",
+      "rec": 1,
+      "yds": 77,
+      "td": 1
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Kennesaw State",
+      "site": "H",
+      "result": "W 35-26",
+      "rec": 2,
+      "yds": 112,
+      "td": 1
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "FIU",
+      "site": "A",
+      "result": "L 21-27",
+      "rec": 3,
+      "yds": 49,
+      "td": 1
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Western Kentucky",
+      "site": "H",
+      "result": "W 37-34",
+      "rec": 5,
+      "yds": 122,
+      "td": 1
+     },
+     {
+      "date": "2025-12-05",
+      "opp": "Kennesaw State",
+      "site": "H",
+      "result": "L 15-19",
+      "rec": 4,
+      "yds": 59,
+      "td": 0
+     },
+     {
+      "date": "2025-12-16",
+      "opp": "Troy",
+      "site": "N",
+      "result": "W 17-13",
+      "rec": 6,
+      "yds": 101,
+      "td": 0
+     }
+    ]
+   },
+   "704-50292532": {
+    "name": "Wondame Davis Jr.",
+    "team": "UTEP",
+    "pos": "WR",
+    "line": {
+     "g": 11,
+     "rec": 26,
+     "yds": 610,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2025/player/704/50292532/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Utah State",
+      "site": "A",
+      "result": "L 16-28",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "UT Martin",
+      "site": "H",
+      "result": "W 42-17",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Louisiana-Monroe",
+      "site": "H",
+      "result": "L 25-31",
+      "rec": 6,
+      "yds": 119,
+      "td": 2
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Louisiana Tech",
+      "site": "H",
+      "result": "L 11-30",
+      "rec": 2,
+      "yds": 58,
+      "td": 1
+     },
+     {
+      "date": "2025-10-08",
+      "opp": "Liberty",
+      "site": "H",
+      "result": "L 8-19",
+      "rec": 2,
+      "yds": 16,
+      "td": 0
+     },
+     {
+      "date": "2025-10-15",
+      "opp": "Sam Houston State",
+      "site": "A",
+      "result": "W 35-17",
+      "rec": 3,
+      "yds": 79,
+      "td": 0
+     },
+     {
+      "date": "2025-10-28",
+      "opp": "Kennesaw State",
+      "site": "A",
+      "result": "L 20-33",
+      "rec": 2,
+      "yds": 19,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Jacksonville State",
+      "site": "H",
+      "result": "L 27-30",
+      "rec": 5,
+      "yds": 166,
+      "td": 1
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Missouri State",
+      "site": "A",
+      "result": "L 24-38",
+      "rec": 1,
+      "yds": 8,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "New Mexico State",
+      "site": "H",
+      "result": "L 31-34",
+      "rec": 1,
+      "yds": 27,
+      "td": 1
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Delaware",
+      "site": "A",
+      "result": "L 31-61",
+      "rec": 4,
+      "yds": 118,
+      "td": 1
+     }
+    ]
+   },
+   "414-1174507": {
+    "name": "Kam Perry",
+    "team": "Miami (Oh)",
+    "pos": "WR",
+    "line": {
+     "g": 14,
+     "rec": 43,
+     "yds": 976,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2025/player/414/1174507/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-28",
+      "opp": "Wisconsin",
+      "site": "A",
+      "result": "L 0-17",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Rutgers",
+      "site": "A",
+      "result": "L 17-45",
+      "rec": 4,
+      "yds": 108,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "UNLV",
+      "site": "H",
+      "result": "L 38-41",
+      "rec": 5,
+      "yds": 122,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Lindenwood",
+      "site": "H",
+      "result": "W 38-0",
+      "rec": 3,
+      "yds": 122,
+      "td": 2
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Northern Illinois",
+      "site": "A",
+      "result": "W 25-14",
+      "rec": 3,
+      "yds": 76,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Akron",
+      "site": "A",
+      "result": "W 20-7",
+      "rec": 2,
+      "yds": 77,
+      "td": 1
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Eastern Michigan",
+      "site": "H",
+      "result": "W 44-30",
+      "rec": 1,
+      "yds": 9,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Western Michigan",
+      "site": "H",
+      "result": "W 26-17",
+      "rec": 4,
+      "yds": 98,
+      "td": 0
+     },
+     {
+      "date": "2025-11-04",
+      "opp": "Ohio",
+      "site": "A",
+      "result": "L 20-24",
+      "rec": 3,
+      "yds": 45,
+      "td": 1
+     },
+     {
+      "date": "2025-11-12",
+      "opp": "Toledo",
+      "site": "H",
+      "result": "L 3-24",
+      "rec": 4,
+      "yds": 69,
+      "td": 0
+     },
+     {
+      "date": "2025-11-19",
+      "opp": "Buffalo",
+      "site": "A",
+      "result": "W 37-20",
+      "rec": 4,
+      "yds": 76,
+      "td": 1
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Ball State",
+      "site": "H",
+      "result": "W 45-24",
+      "rec": 2,
+      "yds": 63,
+      "td": 1
+     },
+     {
+      "date": "2025-12-06",
+      "opp": "Western Michigan",
+      "site": "N",
+      "result": "L 13-23",
+      "rec": 7,
+      "yds": 101,
+      "td": 0
+     },
+     {
+      "date": "2025-12-27",
+      "opp": "Fresno State",
+      "site": "N",
+      "result": "L 3-18",
+      "rec": 1,
+      "yds": 10,
+      "td": 0
+     }
+    ]
+   },
+   "234-50312094": {
+    "name": "Micahi Danzy",
+    "team": "FSU",
+    "pos": "WR",
+    "line": {
+     "g": 12,
+     "rec": 27,
+     "yds": 571,
+     "td": 3
+    },
+    "url": "https://cfbstats.com/2025/player/234/50312094/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Alabama",
+      "site": "H",
+      "result": "W 31-17",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "East Texas A&M",
+      "site": "H",
+      "result": "W 77-3",
+      "rec": 2,
+      "yds": 14,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Kent State",
+      "site": "H",
+      "result": "W 66-10",
+      "rec": 2,
+      "yds": 112,
+      "td": 0
+     },
+     {
+      "date": "2025-09-26",
+      "opp": "Virginia",
+      "site": "A",
+      "result": "L 38-46",
+      "rec": 3,
+      "yds": 42,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Miami (FL)",
+      "site": "H",
+      "result": "L 22-28",
+      "rec": 2,
+      "yds": 29,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Pittsburgh",
+      "site": "H",
+      "result": "L 31-34",
+      "rec": 7,
+      "yds": 133,
+      "td": 2
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Stanford",
+      "site": "A",
+      "result": "L 13-20",
+      "rec": 3,
+      "yds": 106,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Wake Forest",
+      "site": "H",
+      "result": "W 42-7",
+      "rec": 2,
+      "yds": 67,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Clemson",
+      "site": "A",
+      "result": "L 10-24",
+      "rec": 2,
+      "yds": 19,
+      "td": 0
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Virginia Tech",
+      "site": "H",
+      "result": "W 34-14",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-11-21",
+      "opp": "NC State",
+      "site": "A",
+      "result": "L 11-21",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Florida",
+      "site": "A",
+      "result": "L 21-40",
+      "rec": 4,
+      "yds": 49,
+      "td": 1
+     }
+    ]
+   },
+   "648-2003070": {
+    "name": "Nyck Harbor",
+    "team": "South Carolina",
+    "pos": "WR",
+    "line": {
+     "g": 11,
+     "rec": 30,
+     "yds": 618,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2025/player/648/2003070/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-31",
+      "opp": "Virginia Tech",
+      "site": "N",
+      "result": "W 24-11",
+      "rec": 3,
+      "yds": 99,
+      "td": 1
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "South Carolina State",
+      "site": "H",
+      "result": "W 38-10",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Vanderbilt",
+      "site": "H",
+      "result": "L 7-31",
+      "rec": 4,
+      "yds": 66,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Missouri",
+      "site": "A",
+      "result": "L 20-29",
+      "rec": 3,
+      "yds": 45,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Kentucky",
+      "site": "H",
+      "result": "W 35-13",
+      "rec": 1,
+      "yds": 10,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "LSU",
+      "site": "A",
+      "result": "L 10-20",
+      "rec": 2,
+      "yds": 36,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Oklahoma",
+      "site": "H",
+      "result": "L 7-26",
+      "rec": 4,
+      "yds": 22,
+      "td": 1
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Alabama",
+      "site": "H",
+      "result": "L 22-29",
+      "rec": 1,
+      "yds": 54,
+      "td": 1
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Ole Miss",
+      "site": "A",
+      "result": "L 14-30",
+      "rec": 3,
+      "yds": 69,
+      "td": 1
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Texas A&M",
+      "site": "A",
+      "result": "L 30-31",
+      "rec": 3,
+      "yds": 102,
+      "td": 1
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Clemson",
+      "site": "H",
+      "result": "L 14-28",
+      "rec": 6,
+      "yds": 115,
+      "td": 1
+     }
+    ]
+   },
+   "523-1254969": {
+    "name": "Tre' Brown III",
+    "team": "ODU",
+    "pos": "WR",
+    "line": {
+     "g": 13,
+     "rec": 38,
+     "yds": 762,
+     "td": 4
+    },
+    "url": "https://cfbstats.com/2025/player/523/1254969/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Indiana",
+      "site": "A",
+      "result": "L 14-27",
+      "rec": 3,
+      "yds": 27,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "North Carolina Central",
+      "site": "H",
+      "result": "W 54-6",
+      "rec": 4,
+      "yds": 74,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Virginia Tech",
+      "site": "A",
+      "result": "W 45-26",
+      "rec": 3,
+      "yds": 35,
+      "td": 1
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Liberty",
+      "site": "H",
+      "result": "W 21-7",
+      "rec": 4,
+      "yds": 81,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Coastal Carolina",
+      "site": "H",
+      "result": "W 47-7",
+      "rec": 3,
+      "yds": 85,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Marshall",
+      "site": "A",
+      "result": "L 24-48",
+      "rec": 1,
+      "yds": 71,
+      "td": 1
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "James Madison",
+      "site": "A",
+      "result": "L 27-63",
+      "rec": 4,
+      "yds": 138,
+      "td": 2
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Appalachian State",
+      "site": "H",
+      "result": "W 24-21",
+      "rec": 2,
+      "yds": 29,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Louisiana-Monroe",
+      "site": "A",
+      "result": "W 31-6",
+      "rec": 5,
+      "yds": 83,
+      "td": 0
+     },
+     {
+      "date": "2025-11-13",
+      "opp": "Troy",
+      "site": "H",
+      "result": "W 33-0",
+      "rec": 5,
+      "yds": 112,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Georgia Southern",
+      "site": "A",
+      "result": "W 45-10",
+      "rec": 2,
+      "yds": 12,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Georgia State",
+      "site": "H",
+      "result": "W 27-10",
+      "rec": 1,
+      "yds": 4,
+      "td": 0
+     },
+     {
+      "date": "2025-12-17",
+      "opp": "USF",
+      "site": "N",
+      "result": "W 24-10",
+      "rec": 1,
+      "yds": 11,
+      "td": 0
+     }
+    ]
+   },
+   "306-50304327": {
+    "name": "Charlie Becker",
+    "team": "Indiana",
+    "pos": "WR",
+    "line": {
+     "g": 16,
+     "rec": 34,
+     "yds": 679,
+     "td": 4
+    },
+    "url": "https://cfbstats.com/2025/player/306/50304327/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Old Dominion",
+      "site": "H",
+      "result": "W 27-14",
+      "rec": 1,
+      "yds": 4,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Kennesaw State",
+      "site": "H",
+      "result": "W 56-9",
+      "rec": 2,
+      "yds": 35,
+      "td": 1
+     },
+     {
+      "date": "2025-09-12",
+      "opp": "Indiana State",
+      "site": "H",
+      "result": "W 73-0",
+      "rec": 1,
+      "yds": 31,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Illinois",
+      "site": "H",
+      "result": "W 63-10",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Iowa",
+      "site": "A",
+      "result": "W 20-15",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Oregon",
+      "site": "A",
+      "result": "W 30-20",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Michigan State",
+      "site": "H",
+      "result": "W 38-13",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "UCLA",
+      "site": "H",
+      "result": "W 56-6",
+      "rec": 2,
+      "yds": 35,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Maryland",
+      "site": "A",
+      "result": "W 55-10",
+      "rec": 1,
+      "yds": 52,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Penn State",
+      "site": "A",
+      "result": "W 27-24",
+      "rec": 7,
+      "yds": 118,
+      "td": 0
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Wisconsin",
+      "site": "H",
+      "result": "W 31-7",
+      "rec": 5,
+      "yds": 108,
+      "td": 1
+     },
+     {
+      "date": "2025-11-28",
+      "opp": "Purdue",
+      "site": "A",
+      "result": "W 56-3",
+      "rec": 1,
+      "yds": 6,
+      "td": 0
+     },
+     {
+      "date": "2025-12-06",
+      "opp": "Ohio State",
+      "site": "N",
+      "result": "W 13-10",
+      "rec": 6,
+      "yds": 126,
+      "td": 0
+     },
+     {
+      "date": "2026-01-01",
+      "opp": "Alabama",
+      "site": "N",
+      "result": "W 38-3",
+      "rec": 2,
+      "yds": 51,
+      "td": 1
+     },
+     {
+      "date": "2026-01-09",
+      "opp": "Oregon",
+      "site": "N",
+      "result": "W 56-22",
+      "rec": 2,
+      "yds": 48,
+      "td": 1
+     },
+     {
+      "date": "2026-01-19",
+      "opp": "Miami (FL)",
+      "site": "N",
+      "result": "W 27-21",
+      "rec": 4,
+      "yds": 65,
+      "td": 0
+     }
+    ]
+   },
+   "66-1180365": {
+    "name": "Chris Marshall",
+    "team": "Boise St",
+    "pos": "WR",
+    "line": {
+     "g": 11,
+     "rec": 30,
+     "yds": 574,
+     "td": 2
+    },
+    "url": "https://cfbstats.com/2025/player/66/1180365/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-28",
+      "opp": "USF",
+      "site": "A",
+      "result": "L 7-34",
+      "rec": 2,
+      "yds": 19,
+      "td": 1
+     },
+     {
+      "date": "2025-09-05",
+      "opp": "Eastern Washington",
+      "site": "H",
+      "result": "W 51-14",
+      "rec": 4,
+      "yds": 132,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Air Force",
+      "site": "A",
+      "result": "W 49-37",
+      "rec": 1,
+      "yds": 13,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Appalachian State",
+      "site": "H",
+      "result": "W 47-14",
+      "rec": 3,
+      "yds": 52,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Notre Dame",
+      "site": "A",
+      "result": "L 7-28",
+      "rec": 4,
+      "yds": 58,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "New Mexico",
+      "site": "H",
+      "result": "W 41-25",
+      "rec": 5,
+      "yds": 70,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "UNLV",
+      "site": "H",
+      "result": "W 56-31",
+      "rec": 3,
+      "yds": 96,
+      "td": 1
+     },
+     {
+      "date": "2025-10-24",
+      "opp": "Nevada",
+      "site": "A",
+      "result": "W 24-3",
+      "rec": 2,
+      "yds": 27,
+      "td": 0
+     },
+     {
+      "date": "2025-11-28",
+      "opp": "Utah State",
+      "site": "A",
+      "result": "W 25-24",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-12-05",
+      "opp": "UNLV",
+      "site": "H",
+      "result": "W 38-21",
+      "rec": 1,
+      "yds": 10,
+      "td": 0
+     },
+     {
+      "date": "2025-12-13",
+      "opp": "Washington",
+      "site": "N",
+      "result": "L 10-38",
+      "rec": 5,
+      "yds": 97,
+      "td": 0
+     }
+    ]
+   },
+   "27-1126616": {
+    "name": "Dalton Stroman",
+    "team": "App St",
+    "pos": "WR",
+    "line": {
+     "g": 13,
+     "rec": 35,
+     "yds": 666,
+     "td": 4
+    },
+    "url": "https://cfbstats.com/2025/player/27/1126616/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-29",
+      "opp": "Charlotte",
+      "site": "A",
+      "result": "W 34-11",
+      "rec": 8,
+      "yds": 88,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Lindenwood",
+      "site": "H",
+      "result": "W 20-13",
+      "rec": 3,
+      "yds": 142,
+      "td": 1
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Southern Miss",
+      "site": "A",
+      "result": "L 22-38",
+      "rec": 4,
+      "yds": 65,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Boise State",
+      "site": "A",
+      "result": "L 14-47",
+      "rec": 1,
+      "yds": 7,
+      "td": 1
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Oregon State",
+      "site": "H",
+      "result": "W 27-23",
+      "rec": 2,
+      "yds": 48,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Georgia State",
+      "site": "A",
+      "result": "W 41-20",
+      "rec": 3,
+      "yds": 19,
+      "td": 1
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Coastal Carolina",
+      "site": "H",
+      "result": "L 37-45",
+      "rec": 2,
+      "yds": 24,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Old Dominion",
+      "site": "A",
+      "result": "L 21-24",
+      "rec": 1,
+      "yds": 17,
+      "td": 0
+     },
+     {
+      "date": "2025-11-06",
+      "opp": "Georgia Southern",
+      "site": "H",
+      "result": "L 23-25",
+      "rec": 1,
+      "yds": 14,
+      "td": 0
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "James Madison",
+      "site": "A",
+      "result": "L 10-58",
+      "rec": 3,
+      "yds": 74,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Marshall",
+      "site": "H",
+      "result": "W 26-24",
+      "rec": 1,
+      "yds": 8,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Arkansas State",
+      "site": "H",
+      "result": "L 29-30",
+      "rec": 3,
+      "yds": 64,
+      "td": 1
+     },
+     {
+      "date": "2025-12-29",
+      "opp": "Georgia Southern",
+      "site": "N",
+      "result": "L 10-29",
+      "rec": 3,
+      "yds": 96,
+      "td": 0
+     }
+    ]
+   },
+   "355-1187104": {
+    "name": "Donte Lee, Jr.",
+    "team": "Liberty",
+    "pos": "WR",
+    "line": {
+     "g": 12,
+     "rec": 32,
+     "yds": 589,
+     "td": 5
+    },
+    "url": "https://cfbstats.com/2025/player/355/1187104/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Maine",
+      "site": "H",
+      "result": "W 28-7",
+      "rec": 3,
+      "yds": 36,
+      "td": 1
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Jacksonville State",
+      "site": "A",
+      "result": "L 24-34",
+      "rec": 2,
+      "yds": 74,
+      "td": 1
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Bowling Green",
+      "site": "A",
+      "result": "L 13-23",
+      "rec": 3,
+      "yds": 77,
+      "td": 1
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "James Madison",
+      "site": "H",
+      "result": "L 13-31",
+      "rec": 1,
+      "yds": 21,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Old Dominion",
+      "site": "A",
+      "result": "L 7-21",
+      "rec": 1,
+      "yds": 53,
+      "td": 0
+     },
+     {
+      "date": "2025-10-08",
+      "opp": "UTEP",
+      "site": "A",
+      "result": "W 19-8",
+      "rec": 2,
+      "yds": 28,
+      "td": 0
+     },
+     {
+      "date": "2025-10-14",
+      "opp": "New Mexico State",
+      "site": "H",
+      "result": "W 30-27",
+      "rec": 6,
+      "yds": 55,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Delaware",
+      "site": "H",
+      "result": "W 59-30",
+      "rec": 5,
+      "yds": 92,
+      "td": 1
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Missouri State",
+      "site": "H",
+      "result": "L 17-21",
+      "rec": 3,
+      "yds": 57,
+      "td": 0
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "FIU",
+      "site": "A",
+      "result": "L 27-34",
+      "rec": 5,
+      "yds": 79,
+      "td": 1
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Louisiana Tech",
+      "site": "A",
+      "result": "L 28-34",
+      "rec": 1,
+      "yds": 17,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Kennesaw State",
+      "site": "H",
+      "result": "L 42-48",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     }
+    ]
+   },
+   "37-50311166": {
+    "name": "Malcolm Simmons",
+    "team": "Auburn",
+    "pos": "WR",
+    "line": {
+     "g": 12,
+     "rec": 25,
+     "yds": 457,
+     "td": 2
+    },
+    "url": "https://cfbstats.com/2025/player/37/50311166/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-29",
+      "opp": "Baylor",
+      "site": "A",
+      "result": "W 38-24",
+      "rec": 1,
+      "yds": 26,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Ball State",
+      "site": "H",
+      "result": "W 42-3",
+      "rec": 4,
+      "yds": 37,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "South Alabama",
+      "site": "H",
+      "result": "W 31-15",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Oklahoma",
+      "site": "A",
+      "result": "L 17-24",
+      "rec": 4,
+      "yds": 30,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Texas A&M",
+      "site": "A",
+      "result": "L 10-16",
+      "rec": 2,
+      "yds": 7,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Georgia",
+      "site": "H",
+      "result": "L 10-20",
+      "rec": 1,
+      "yds": 2,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Missouri",
+      "site": "H",
+      "result": "L 17-23",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Arkansas",
+      "site": "A",
+      "result": "W 33-24",
+      "rec": 3,
+      "yds": 17,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Kentucky",
+      "site": "H",
+      "result": "L 3-10",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Vanderbilt",
+      "site": "A",
+      "result": "L 38-45",
+      "rec": 2,
+      "yds": 46,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Mercer",
+      "site": "H",
+      "result": "W 62-17",
+      "rec": 5,
+      "yds": 149,
+      "td": 1
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Alabama",
+      "site": "H",
+      "result": "L 20-27",
+      "rec": 3,
+      "yds": 143,
+      "td": 1
+     }
+    ]
+   },
+   "157-2002441": {
+    "name": "Omarion Miller",
+    "team": "Colorado",
+    "pos": "WR",
+    "line": {
+     "g": 11,
+     "rec": 45,
+     "yds": 808,
+     "td": 8
+    },
+    "url": "https://cfbstats.com/2025/player/157/2002441/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-29",
+      "opp": "Georgia Tech",
+      "site": "H",
+      "result": "L 20-27",
+      "rec": 1,
+      "yds": 39,
+      "td": 0
+     },
+     {
+      "date": "2025-09-12",
+      "opp": "Houston",
+      "site": "A",
+      "result": "L 20-36",
+      "rec": 3,
+      "yds": 54,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Wyoming",
+      "site": "H",
+      "result": "W 37-20",
+      "rec": 6,
+      "yds": 88,
+      "td": 1
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "BYU",
+      "site": "H",
+      "result": "L 21-24",
+      "rec": 1,
+      "yds": 19,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "TCU",
+      "site": "A",
+      "result": "L 21-35",
+      "rec": 6,
+      "yds": 89,
+      "td": 2
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Iowa State",
+      "site": "H",
+      "result": "W 24-17",
+      "rec": 3,
+      "yds": 82,
+      "td": 1
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Utah",
+      "site": "A",
+      "result": "L 7-53",
+      "rec": 3,
+      "yds": 59,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Arizona",
+      "site": "H",
+      "result": "L 17-52",
+      "rec": 5,
+      "yds": 91,
+      "td": 2
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "West Virginia",
+      "site": "A",
+      "result": "L 22-29",
+      "rec": 6,
+      "yds": 131,
+      "td": 1
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Arizona State",
+      "site": "H",
+      "result": "L 17-42",
+      "rec": 3,
+      "yds": 35,
+      "td": 1
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Kansas State",
+      "site": "A",
+      "result": "L 14-24",
+      "rec": 8,
+      "yds": 121,
+      "td": 0
+     }
+    ]
+   },
+   "317-1111945": {
+    "name": "Nick DeGennaro",
+    "team": "James Mad",
+    "pos": "WR",
+    "line": {
+     "g": 14,
+     "rec": 28,
+     "yds": 500,
+     "td": 5
+    },
+    "url": "https://cfbstats.com/2025/player/317/1111945/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Weber State",
+      "site": "H",
+      "result": "W 45-10",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-09-05",
+      "opp": "Louisville",
+      "site": "A",
+      "result": "L 14-28",
+      "rec": 3,
+      "yds": 31,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Liberty",
+      "site": "A",
+      "result": "W 31-13",
+      "rec": 3,
+      "yds": 40,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Georgia Southern",
+      "site": "H",
+      "result": "W 35-10",
+      "rec": 2,
+      "yds": 26,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Georgia State",
+      "site": "A",
+      "result": "W 14-7",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Louisiana",
+      "site": "H",
+      "result": "W 24-14",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Old Dominion",
+      "site": "H",
+      "result": "W 63-27",
+      "rec": 3,
+      "yds": 106,
+      "td": 2
+     },
+     {
+      "date": "2025-10-28",
+      "opp": "Texas State",
+      "site": "A",
+      "result": "W 52-20",
+      "rec": 3,
+      "yds": 101,
+      "td": 2
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Marshall",
+      "site": "A",
+      "result": "W 35-23",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Appalachian State",
+      "site": "H",
+      "result": "W 58-10",
+      "rec": 3,
+      "yds": 31,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Washington State",
+      "site": "H",
+      "result": "W 24-20",
+      "rec": 1,
+      "yds": 4,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Coastal Carolina",
+      "site": "A",
+      "result": "W 59-10",
+      "rec": 3,
+      "yds": 47,
+      "td": 0
+     },
+     {
+      "date": "2025-12-05",
+      "opp": "Troy",
+      "site": "H",
+      "result": "W 31-14",
+      "rec": 2,
+      "yds": 24,
+      "td": 0
+     },
+     {
+      "date": "2025-12-20",
+      "opp": "Oregon",
+      "site": "A",
+      "result": "L 34-51",
+      "rec": 5,
+      "yds": 90,
+      "td": 1
+     }
+    ]
+   },
+   "703-50310504": {
+    "name": "Parker Livingstone",
+    "team": "Texas",
+    "pos": "WR",
+    "line": {
+     "g": 13,
+     "rec": 29,
+     "yds": 516,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2025/player/703/50310504/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Ohio State",
+      "site": "A",
+      "result": "L 7-14",
+      "rec": 2,
+      "yds": 47,
+      "td": 1
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "San Jose State",
+      "site": "H",
+      "result": "W 38-7",
+      "rec": 4,
+      "yds": 128,
+      "td": 2
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "UTEP",
+      "site": "H",
+      "result": "W 27-10",
+      "rec": 2,
+      "yds": 23,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Sam Houston State",
+      "site": "H",
+      "result": "W 55-0",
+      "rec": 3,
+      "yds": 34,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Florida",
+      "site": "A",
+      "result": "L 21-29",
+      "rec": 2,
+      "yds": 47,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Oklahoma",
+      "site": "N",
+      "result": "W 23-6",
+      "rec": 2,
+      "yds": 29,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Kentucky",
+      "site": "A",
+      "result": "W 16-13",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Mississippi State",
+      "site": "A",
+      "result": "W 45-38",
+      "rec": 4,
+      "yds": 22,
+      "td": 2
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Vanderbilt",
+      "site": "H",
+      "result": "W 34-31",
+      "rec": 2,
+      "yds": 21,
+      "td": 0
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Georgia",
+      "site": "A",
+      "result": "L 10-35",
+      "rec": 2,
+      "yds": 17,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Arkansas",
+      "site": "H",
+      "result": "W 52-37",
+      "rec": 2,
+      "yds": 104,
+      "td": 1
+     },
+     {
+      "date": "2025-11-28",
+      "opp": "Texas A&M",
+      "site": "H",
+      "result": "W 27-17",
+      "rec": 1,
+      "yds": 19,
+      "td": 0
+     },
+     {
+      "date": "2025-12-31",
+      "opp": "Michigan",
+      "site": "N",
+      "result": "W 41-27",
+      "rec": 3,
+      "yds": 25,
+      "td": 0
+     }
+    ]
+   },
+   "664-1180466": {
+    "name": "Carl Chester",
+    "team": "USM",
+    "pos": "WR",
+    "line": {
+     "g": 13,
+     "rec": 31,
+     "yds": 551,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2025/player/664/1180466/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Mississippi State",
+      "site": "H",
+      "result": "L 17-34",
+      "rec": 6,
+      "yds": 53,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Jackson State",
+      "site": "H",
+      "result": "W 38-20",
+      "rec": 3,
+      "yds": 40,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Appalachian State",
+      "site": "H",
+      "result": "W 38-22",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Louisiana Tech",
+      "site": "A",
+      "result": "L 20-30",
+      "rec": 4,
+      "yds": 118,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Jacksonville State",
+      "site": "H",
+      "result": "W 42-25",
+      "rec": 1,
+      "yds": 13,
+      "td": 1
+     },
+     {
+      "date": "2025-10-09",
+      "opp": "Georgia Southern",
+      "site": "A",
+      "result": "W 38-35",
+      "rec": 2,
+      "yds": 43,
+      "td": 1
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Louisiana",
+      "site": "A",
+      "result": "W 22-10",
+      "rec": 2,
+      "yds": 8,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Louisiana-Monroe",
+      "site": "H",
+      "result": "W 49-21",
+      "rec": 1,
+      "yds": 8,
+      "td": 1
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Arkansas State",
+      "site": "A",
+      "result": "W 27-21",
+      "rec": 1,
+      "yds": 35,
+      "td": 0
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Texas State",
+      "site": "H",
+      "result": "L 14-41",
+      "rec": 1,
+      "yds": 10,
+      "td": 0
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "South Alabama",
+      "site": "A",
+      "result": "L 35-42",
+      "rec": 5,
+      "yds": 128,
+      "td": 2
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "Troy",
+      "site": "H",
+      "result": "L 18-28",
+      "rec": 4,
+      "yds": 76,
+      "td": 1
+     },
+     {
+      "date": "2025-12-23",
+      "opp": "Western Kentucky",
+      "site": "N",
+      "result": "L 16-27",
+      "rec": 1,
+      "yds": 19,
+      "td": 0
+     }
+    ]
+   },
+   "670-2000589": {
+    "name": "Chris Dawn, Jr.",
+    "team": "Texas St",
+    "pos": "WR",
+    "line": {
+     "g": 12,
+     "rec": 65,
+     "yds": 1007,
+     "td": 4
+    },
+    "url": "https://cfbstats.com/2025/player/670/2000589/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-30",
+      "opp": "Eastern Michigan",
+      "site": "H",
+      "result": "W 52-27",
+      "rec": 5,
+      "yds": 50,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "UTSA",
+      "site": "A",
+      "result": "W 43-36",
+      "rec": 2,
+      "yds": 109,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Arizona State",
+      "site": "A",
+      "result": "L 15-34",
+      "rec": 1,
+      "yds": 1,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Arkansas State",
+      "site": "A",
+      "result": "L 30-31",
+      "rec": 5,
+      "yds": 46,
+      "td": 0
+     },
+     {
+      "date": "2025-10-11",
+      "opp": "Troy",
+      "site": "H",
+      "result": "L 41-48",
+      "rec": 7,
+      "yds": 119,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Marshall",
+      "site": "A",
+      "result": "L 37-40",
+      "rec": 5,
+      "yds": 180,
+      "td": 0
+     },
+     {
+      "date": "2025-10-28",
+      "opp": "James Madison",
+      "site": "H",
+      "result": "L 20-52",
+      "rec": 2,
+      "yds": 6,
+      "td": 0
+     },
+     {
+      "date": "2025-11-08",
+      "opp": "Louisiana",
+      "site": "A",
+      "result": "L 39-42",
+      "rec": 7,
+      "yds": 89,
+      "td": 1
+     },
+     {
+      "date": "2025-11-15",
+      "opp": "Southern Miss",
+      "site": "A",
+      "result": "W 41-14",
+      "rec": 5,
+      "yds": 117,
+      "td": 1
+     },
+     {
+      "date": "2025-11-22",
+      "opp": "Louisiana-Monroe",
+      "site": "H",
+      "result": "W 31-14",
+      "rec": 7,
+      "yds": 60,
+      "td": 0
+     },
+     {
+      "date": "2025-11-29",
+      "opp": "South Alabama",
+      "site": "H",
+      "result": "W 49-26",
+      "rec": 8,
+      "yds": 154,
+      "td": 0
+     },
+     {
+      "date": "2026-01-02",
+      "opp": "Rice",
+      "site": "N",
+      "result": "W 41-10",
+      "rec": 11,
+      "yds": 76,
+      "td": 2
+     }
+    ]
+   },
+   "86-1177293": {
+    "name": "Nik McMillan",
+    "team": "Buffalo",
+    "pos": "WR",
+    "line": {
+     "g": 12,
+     "rec": 62,
+     "yds": 981,
+     "td": 3
+    },
+    "url": "https://cfbstats.com/2025/player/86/1177293/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2025-08-28",
+      "opp": "Minnesota",
+      "site": "A",
+      "result": "L 10-23",
+      "rec": 2,
+      "yds": 20,
+      "td": 0
+     },
+     {
+      "date": "2025-09-06",
+      "opp": "Saint Francis (PA)",
+      "site": "H",
+      "result": "W 45-6",
+      "rec": 2,
+      "yds": 17,
+      "td": 0
+     },
+     {
+      "date": "2025-09-13",
+      "opp": "Kent State",
+      "site": "A",
+      "result": "W 31-28",
+      "rec": 7,
+      "yds": 117,
+      "td": 1
+     },
+     {
+      "date": "2025-09-20",
+      "opp": "Troy",
+      "site": "H",
+      "result": "L 17-21",
+      "rec": 1,
+      "yds": 6,
+      "td": 0
+     },
+     {
+      "date": "2025-09-27",
+      "opp": "Connecticut",
+      "site": "H",
+      "result": "L 17-20",
+      "rec": 2,
+      "yds": 3,
+      "td": 0
+     },
+     {
+      "date": "2025-10-04",
+      "opp": "Eastern Michigan",
+      "site": "H",
+      "result": "W 31-30",
+      "rec": 2,
+      "yds": 26,
+      "td": 0
+     },
+     {
+      "date": "2025-10-18",
+      "opp": "Massachusetts",
+      "site": "A",
+      "result": "W 28-21",
+      "rec": 10,
+      "yds": 119,
+      "td": 0
+     },
+     {
+      "date": "2025-10-25",
+      "opp": "Akron",
+      "site": "H",
+      "result": "L 16-24",
+      "rec": 8,
+      "yds": 177,
+      "td": 0
+     },
+     {
+      "date": "2025-11-01",
+      "opp": "Bowling Green",
+      "site": "A",
+      "result": "W 28-3",
+      "rec": 8,
+      "yds": 105,
+      "td": 0
+     },
+     {
+      "date": "2025-11-12",
+      "opp": "Central Michigan",
+      "site": "A",
+      "result": "L 19-38",
+      "rec": 7,
+      "yds": 122,
+      "td": 2
+     },
+     {
+      "date": "2025-11-19",
+      "opp": "Miami (OH)",
+      "site": "H",
+      "result": "L 20-37",
+      "rec": 8,
+      "yds": 147,
+      "td": 0
+     },
+     {
+      "date": "2025-11-28",
+      "opp": "Ohio",
+      "site": "H",
+      "result": "L 26-31",
+      "rec": 5,
+      "yds": 122,
+      "td": 0
+     }
+    ]
    }
   },
-  "dropped": [
-   "Corey Rucker (Ark St): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/30/1110632/receiving/gamelog.html)",
-   "Jacob De Jesus (California): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/107/1202607/receiving/gamelog.html)",
-   "Chris Brazzell II (Tennessee): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/694/1180442/receiving/gamelog.html)",
-   "Junior Vandeross III (Toledo): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/709/1178082/receiving/gamelog.html)",
-   "Lewis Bond (Boston College): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/67/1121477/receiving/gamelog.html)",
-   "Zachariah Branch (Georgia): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/257/2000182/receiving/gamelog.html)",
-   "Pofele Ashlock (Hawai'i): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/277/1179862/receiving/gamelog.html)",
-   "Tanner Koziol (Houston): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/288/1174066/receiving/gamelog.html)",
-   "Chauncy Cobb (Ark St): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/30/2000737/receiving/gamelog.html)",
-   "Chris Bell (Louisville): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/367/1174703/receiving/gamelog.html)",
-   "Iverson Hooks (UAB): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/9/1177173/receiving/gamelog.html)",
-   "Ted Hurst (Georgia St): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/254/1187278/receiving/gamelog.html)",
-   "Elijah Sarratt (Indiana): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/306/1176682/receiving/gamelog.html)",
-   "Omar Cooper Jr. (Indiana): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/306/1174514/receiving/gamelog.html)",
-   "Cyrus Allen (Cincinnati): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/140/1174700/receiving/gamelog.html)",
-   "Jackson Harris (Hawai'i): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/277/2000690/receiving/gamelog.html)",
-   "Amare Thomas (Houston): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/288/2002206/receiving/gamelog.html)",
-   "Denzel Boston (Washington): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/756/1175644/receiving/gamelog.html)",
-   "Carnell Tate (Ohio State): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/518/2000093/receiving/gamelog.html)",
-   "Josh Cameron (Baylor): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/51/1127885/receiving/gamelog.html)",
-   "KC Concepcion (Texas A&M): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/697/2000861/receiving/gamelog.html)",
-   "Deondre Johnson (J'ville St): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/315/2001086/receiving/gamelog.html)",
-   "Wondame Davis Jr. (UTEP): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/704/50292532/receiving/gamelog.html)",
-   "Kam Perry (Miami (Oh)): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/414/1174507/receiving/gamelog.html)",
-   "Micahi Danzy (FSU): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/234/50312094/receiving/gamelog.html)",
-   "Nyck Harbor (South Carolina): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/648/2003070/receiving/gamelog.html)",
-   "Tre' Brown III (ODU): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/523/1254969/receiving/gamelog.html)",
-   "Charlie Becker (Indiana): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/306/50304327/receiving/gamelog.html)",
-   "Chris Marshall (Boise St): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/66/1180365/receiving/gamelog.html)",
-   "Dalton Stroman (App St): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/27/1126616/receiving/gamelog.html)",
-   "Donte Lee, Jr. (Liberty): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/355/1187104/receiving/gamelog.html)",
-   "Malcolm Simmons (Auburn): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/37/50311166/receiving/gamelog.html)",
-   "Omarion Miller (Colorado): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/157/2002441/receiving/gamelog.html)",
-   "Nick DeGennaro (James Mad): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/317/1111945/receiving/gamelog.html)",
-   "Parker Livingstone (Texas): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/703/50310504/receiving/gamelog.html)",
-   "Carl Chester (USM): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/664/1180466/receiving/gamelog.html)",
-   "Chris Dawn, Jr. (Texas St): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/670/2000589/receiving/gamelog.html)",
-   "Nik McMillan (Buffalo): game log not read (403 Client Error: Forbidden for url: https://cfbstats.com/2025/player/86/1177293/receiving/gamelog.html)"
-  ],
-  "retrieved_at": "2026-10-18T19:44+00:00"
+  "dropped": [],
+  "retrieved_at": "2026-10-18T20:36+00:00"
  },
  "qb": {
   "season": 2025,
