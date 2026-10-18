@@ -14,7 +14,7 @@ match cfbstats.com's season totals once cfbstats has posted the same games.  A c
 before it is stored at all, and is then sealed: never collected again.  The cross-check is also what proves
 each registry join: a wrong ESPN id cannot reproduce that cfbstats team's season totals.
 """
-import datetime as dt, io, re, unicodedata
+import datetime as dt, html as H, io, re, unicodedata
 
 import pandas as pd
 
@@ -39,7 +39,7 @@ def cfb_team_ids(C, season):
     html = C.get(f"https://cfbstats.com/{season}/team/index.html").text
     out = {}
     for m in re.finditer(r'href="/?(?:https://cfbstats\.com)?/?(\d{4})/team/(\d+)/index\.html">([^<]+)</a>', html):
-        if int(m.group(1)) == int(season): out[m.group(3).strip()] = int(m.group(2))
+        if int(m.group(1)) == int(season): out[H.unescape(m.group(3)).strip()] = int(m.group(2))
     return out
 
 
@@ -58,11 +58,23 @@ def espn_teams(C, which):
     return _ESPN_TEAMS[which]
 
 
-def join(C, cfb_name, aliases):
-    """The ESPN team for a cfbstats team-index name, or (None, why).  Exact normalized names only, FBS list first."""
+def espn_fbs_ids(C, season):
+    """ESPN ids of the FBS teams in `season` (ESPN core API, FBS group 80 for that season), or None if unreadable."""
+    try:
+        j = C.get(f"https://sports.core.api.espn.com/v2/sports/football/leagues/college-football/seasons/{season}/types/2/groups/80/teams?limit=300").json()
+        ids = {m.group(1) for it in j.get("items", []) for m in [re.search(r"/teams/(\d+)", it.get("$ref", ""))] if m}
+        return ids if len(ids) >= 100 else None
+    except Exception as e:
+        C.log(f"[registry] {season}: ESPN FBS group list not readable ({e}); joining against ESPN's full team list")
+        return None
+
+
+def join(C, cfb_name, aliases, fbs_ids):
+    """The ESPN team for a cfbstats team-index name, or (None, why).  Exact normalized names only: first among
+    that season's ESPN FBS teams, then ESPN's full college list."""
     want = [cfb_name] + ([aliases[cfb_name]] if cfb_name in aliases else [])
-    for which in ("fbs", "all"):
-        teams = espn_teams(C, which)
+    every = espn_teams(C, "all")
+    for which, teams in (("season FBS", [t for t in every if fbs_ids and t["espn_id"] in fbs_ids]), ("FBS", espn_teams(C, "fbs")), ("all", every)):
         for field in ("location", "short", "display"):
             for w in want:
                 hits = [t for t in teams if norm(t[field]) == norm(w)]
@@ -79,9 +91,10 @@ def registry(C, U, season):
     ids = cfb_team_ids(C, season)
     if len(ids) < 100: raise ValueError(f"cfbstats {season} team index lists only {len(ids)} teams")
     aliases = C.CFG.get("registry_aliases", {})
+    fbs_ids = espn_fbs_ids(C, season)
     teams, unmapped = [], []
     for name, cid in sorted(ids.items()):
-        t, how = join(C, name, aliases)
+        t, how = join(C, name, aliases, fbs_ids)
         if t: teams.append({"cfb_id": cid, "cfb_name": name, "espn_id": t["espn_id"], "name": t["location"] or t["short"],
                             "nickname": t["nickname"], "abbr": t["abbr"], "how": how})
         else: unmapped.append({"cfb_id": cid, "cfb_name": name, "why": how})
@@ -187,11 +200,12 @@ def team_seasons(C, U, season):
     if not reg: raise ValueError(f"no {season} registry stored; team seasons cannot be collected")
     d = U.load_or("team.json", {"teams": {}, "ap": None})
     failed, done, sealed = [], 0, 0
+    through = cfb_through(C, season) if season == C.SEASON else None
     for t in reg["teams"]:
         stored = d["teams"].get(t["espn_id"], {}).get("seasons", {}).get(str(season))
         if stored and stored.get("complete") and str(stored.get("check", "")).startswith("cfbstats"):
             sealed += 1; continue  # a finished season that matched cfbstats never changes
-        try: team_job(C, U, d, t, season, stored); done += 1
+        try: team_job(C, U, t, season, stored, through); done += 1
         except SystemExit: failed.append(f"{t['name']} (refused, see above)"); C.log(f"[team] {t['name']} {season} REFUSED by validator")
         except Exception as e: failed.append(f"{t['name']} ({e})"); C.log(f"[team] {t['name']} {season} FAILED: {e}")
         d = U.load_or("team.json", {"teams": {}, "ap": None})
@@ -199,20 +213,35 @@ def team_seasons(C, U, season):
     if failed: raise ValueError(f"{season} team seasons not stored: " + "; ".join(failed))
 
 
-def team_job(C, U, d, t, season, stored):
+def cfb_through(C, season):
+    """The date cfbstats.com's season data runs through (one national leaderboard page, shared with the pools)."""
+    try:
+        return C.through_date(C.get(f"https://cfbstats.com/{season}/leader/national/player/split01/category01/sort01.html").text)
+    except Exception as e:
+        C.log(f"[team] {season}: cfbstats data-through date not readable ({e})"); return None
+
+
+def team_job(C, U, t, season, stored, through=None):
     tid, name, cfb = t["espn_id"], t["name"], t["cfb_id"]
     have = {g["event"]: g for g in (stored or {}).get("games", [])}
     sched = espn_completed(C, tid, season)
     if season == C.SEASON: C.NOTES["finals_seen"].update(g["event"] for g in sched)
     rows = [have.get(g["event"]) or box_row(C, g, tid) for g in sched]
     if not rows: print(f"[team] {name} {season}: no completed games yet"); return
+    same = stored and [g["event"] for g in stored["games"]] == [g["event"] for g in rows]
+    if same and str(stored.get("check", "")).startswith("cfbstats"):
+        print(f"[team] {name} {season}: no new games; still matches cfbstats"); return
     cf, note = None, "not cross-checked: no cfbstats page found for this team"
-    try:
-        tt = cfb_team_totals(C, season, cfb)
-        if tt["totals"]["games"] == len(rows): cf = tt
-        else: note = f"not cross-checked yet: cfbstats has {tt['totals']['games']} games through {tt['through']}, ESPN {len(rows)}"
-    except Exception as e:
-        note = f"not cross-checked: cfbstats season totals unreadable ({e})"
+    if through and rows[-1]["date"] > through:  # cfbstats has not posted this game yet: do not ask it
+        note = f"not cross-checked yet: cfbstats is through {through}, ESPN's latest game is {rows[-1]['date']}"
+        if same and stored.get("check") == note: print(f"[team] {name} {season}: unchanged ({note})"); return
+    else:
+        try:
+            tt = cfb_team_totals(C, season, cfb)
+            if tt["totals"]["games"] == len(rows): cf = tt
+            else: note = f"not cross-checked yet: cfbstats has {tt['totals']['games']} games through {tt['through']}, ESPN {len(rows)}"
+        except Exception as e:
+            note = f"not cross-checked: cfbstats season totals unreadable ({e})"
     if season < C.SEASON and not cf:  # a finished season is stored only once it matches; otherwise it is a named failure
         raise ValueError(f"completed season cannot be cross-checked: {note}")
     U.team_season({"team_id": tid, "name": name, "season": season, "games": rows, "cfbstats": cf, "check_note": note,

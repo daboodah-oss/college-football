@@ -56,7 +56,11 @@ class _Raw:  # offline testing: OFFLINE_RAW=<dir of saved pages>
 
 
 _S = requests.Session()
-_LAST = {}
+_LAST, _CACHE, _CFB = {}, {}, {"refusals": 0}
+CFB_GAP = 1.5  # seconds between cfbstats requests: it answers 403 to a faster crawl (first league-wide run, 2026-10-18)
+
+
+class SourceRefusing(RuntimeError): pass
 
 
 def get(url, **kw):
@@ -64,21 +68,30 @@ def get(url, **kw):
         f = os.path.join(os.environ["OFFLINE_RAW"], re.sub(r"[^A-Za-z0-9]+", "_", url)[-120:] + ".txt")
         return _Raw(open(f).read())
     host = url.split("/")[2]
-    if "cfbstats" in host:  # be polite to cfbstats: at most ~3 requests a second
-        wait = 0.35 - (time.time() - _LAST.get(host, 0))
-        if wait > 0: time.sleep(wait)
-    for attempt in range(3):  # a transient network error or 5xx gets two retries; a 4xx is final
+    cfb = "cfbstats" in host
+    if cfb and url in _CACHE: return _CACHE[url]  # the same page is read once per run
+    if cfb and _CFB["refusals"] >= 3:
+        raise SourceRefusing("cfbstats.com kept refusing requests (403) this run; skipped until the next run")
+    backoff = [20, 60] if cfb else [2, 4]
+    for attempt in range(3):  # a transient error, 5xx, 429, or a cfbstats 403 gets two retries with backoff
+        if cfb:
+            wait = CFB_GAP - (time.time() - _LAST.get(host, 0))
+            if wait > 0: time.sleep(wait)
         try:
             r = _S.get(url, headers=UA, timeout=30, **kw)
             _LAST[host] = time.time()
-            if r.status_code < 500 and r.status_code != 429: break
+            if r.status_code < 500 and r.status_code != 429 and not (cfb and r.status_code == 403): break
         except requests.RequestException:
+            _LAST[host] = time.time()
             if attempt == 2: raise
-        time.sleep(2 * (attempt + 1))
+        if attempt < 2: time.sleep(backoff[attempt])
+    if cfb:
+        _CFB["refusals"] = _CFB["refusals"] + 1 if r.status_code == 403 else 0
     if os.environ.get("SAVE_RAW"):  # debugging aid: keep exactly what each source returned
         d = os.path.join(ROOT, "raw"); os.makedirs(d, exist_ok=True)
         open(os.path.join(d, re.sub(r"[^A-Za-z0-9]+", "_", url)[-120:] + ".txt"), "w").write(f"{r.status_code}\n{r.text}")
     r.raise_for_status()
+    if cfb: _CACHE[url] = r
     return r
 
 

@@ -120,7 +120,7 @@ def run_tab(C, U, tab, season, stored):
         for x in rows: lines.setdefault(x["id"], x)
     dates.discard(None)
     if len(dates) != 1: raise ValueError(f"{season} {tab} leaderboard pages disagree on 'through' date: {sorted(dates)}")
-    players, dropped, fetched = {}, [], 0
+    players, dropped, fetched, unread = {}, [], 0, 0
     for pid, x in lines.items():
         line = {"g": x["g"], **{k: whole(x["cells"][c]) for k, c in spec["line"].items()}}
         old = stored.get(pid)
@@ -133,8 +133,10 @@ def run_tab(C, U, tab, season, stored):
         except Mismatch as e:
             dropped.append(f"{x['name']} ({x['team']}): {e}"); continue
         except Exception as e:
-            dropped.append(f"{x['name']} ({x['team']}): game log not read ({e})"); continue
+            unread += 1; dropped.append(f"{x['name']} ({x['team']}): game log not read ({e})"); continue
         players[pid] = {"name": x["name"], "team": x["team"], "pos": x["pos"], "line": line, "url": url, "games": games}
+    if unread and season < C.SEASON:  # a finished season seals on first store: never seal one with logs that simply did not load
+        raise ValueError(f"{season} {tab}: {unread} game logs could not be read; not stored, retried next run ({'; '.join(dropped[:2])})")
     if lines and not players: raise ValueError(f"{season} {tab}: no national player's game log could be verified ({'; '.join(dropped[:3])})")
     for s in stats.values():  # the Top 3 is the leaderboard's first 3; a dropped one is named, never replaced by #4
         s["top"] = [p for p in s["order"][:TOP_N] if p in players]

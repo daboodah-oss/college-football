@@ -1,12 +1,25 @@
 {
  "about": "Page config for cf.daboodah.com (replaces the school reports' roster.json).  seasons: every season the page carries; the newest is the current season, the only one that refreshes (earlier seasons are collected once and sealed).  default_teams: the Team tab's selection on open, by team name as it appears in the registry (ESPN location name) plus season; never an id.  caps: the most selections the Team and Player pickers allow at once.  site: page and bot identity.  registry_aliases: cfbstats.com team-index name -> ESPN location name, for names the two sources spell differently (the join is proven by the cfbstats season cross-check, never by the alias alone).",
- "seasons": [2024, 2025, 2026],
+ "seasons": [
+  2024,
+  2025,
+  2026
+ ],
  "current_season": 2026,
  "default_teams": [
-  {"name": "Indiana", "season": 2026},
-  {"name": "Notre Dame", "season": 2026}
+  {
+   "name": "Indiana",
+   "season": 2026
+  },
+  {
+   "name": "Notre Dame",
+   "season": 2026
+  }
  ],
- "caps": {"teams": 6, "players": 4},
+ "caps": {
+  "teams": 6,
+  "players": 4
+ },
  "site": {
   "name": "College Football",
   "eyebrow": "FBS team and player comparisons",
@@ -45,6 +58,8 @@
   "Sam Houston State": "Sam Houston",
   "Middle Tennessee State": "Middle Tennessee",
   "Pittsburgh": "Pittsburgh",
-  "Army West Point": "Army"
+  "Army West Point": "Army",
+  "USF": "South Florida",
+  "South Florida": "South Florida"
  }
 }
