@@ -31,6 +31,7 @@ ET = ZoneInfo("America/New_York")
 CFG = U.config()
 SEASONS = sorted(CFG["seasons"])
 SEASON = CFG["current_season"]
+FULL = not os.environ.get("QUICK")  # a game-window run that found a new final collects the current season only
 ESPN = "https://site.api.espn.com/apis/site/v2/sports/football/college-football"
 UA = {"User-Agent": "Mozilla/5.0 (compatible; college-football/1.0; +https://github.com/daboodah-oss/college-football)"}
 # cfbstats leaderboard abbreviations -> full team names (leaderboards abbreviate; the team index does not)

@@ -254,8 +254,9 @@ def team_job(C, U, t, season, stored, through=None):
 
 def run(C, U):
     """Run the team sections in order.  Each is independent; a failure keeps that section's stored data."""
-    for s in C.SEASONS:
+    seasons = [s for s in C.SEASONS if C.FULL or s == C.SEASON]  # game-window runs refresh the current season only
+    for s in seasons:
         C.section(f"registry_{s}")(lambda s=s: registry(C, U, s))()
     C.section("ap_poll")(lambda: ap_poll(C, U))()
-    for s in sorted(C.SEASONS, reverse=True):
+    for s in sorted(seasons, reverse=True):
         C.section(f"team_{s}")(lambda s=s: team_seasons(C, U, s))()

@@ -59,8 +59,8 @@ def build(root, as_of):
         for s, p in PL[t]["pools"].items():
             if p["status"] != "ok": notices.append(p["message"])
     if T["missing"]:
-        notices.append(f"{len(T['missing'])} registry team seasons are not stored yet, so they cannot be picked: " + ", ".join(T["missing"][:12]) + (" ..." if len(T["missing"]) > 12 else "") + ".")
-
+        notices.append(f"{len(T['missing'])} registry team seasons are not on the page: their ESPN rows did not pass the cfbstats.com "
+                       "cross-check (or have not been collected), so they cannot be picked.  The list is under Method on the Team tab.")
     sources = [{"label": f"cfbstats.com: {s} team index (registry)", "url": T["counts"][str(s)]["source_url"]} for s in seasons if str(s) in T["counts"]] + [
         {"label": "ESPN: team schedules and game box scores (site API)", "url": "https://www.espn.com/college-football/"},
         {"label": "ESPN: AP Top 25", "url": (T["poll"] or {}).get("source_url") or "https://www.espn.com/college-football/rankings"},

@@ -489,10 +489,11 @@ function updateTeam(){
     "Rows come from ESPN box scores.  Each row must have total yards equal to rushing plus passing, a score that matches ESPN's schedule, and turnovers equal to fumbles lost plus interceptions.  Each season must match cfbstats.com's season team totals once cfbstats has posted the same games; a completed season is stored only after it matches, and is then never collected again.",
     `The team list is every team on cfbstats.com's team index for each season (${SEASONS.map(s => C[s] ? `${s}: ${C[s].index}` : `${s}: not collected`).join(", ")}), joined by name to ESPN's team ids.  The cfbstats cross-check proves each join: a wrong ESPN id cannot reproduce that team's cfbstats season totals.`
       + (SEASONS.some(s => C[s] && C[s].unmapped.length) ? `  Not joined: ${SEASONS.filter(s => C[s] && C[s].unmapped.length).map(s => `${s}: ${C[s].unmapped.join(", ")}`).join("; ")}.` : ""),
-    ...(T.missing.length ? [`Not stored yet, so not pickable: ${T.missing.join(", ")}.`] : []),
+    ...(T.missing.length ? [`${T.missing.length} registry team seasons are not stored, so they cannot be picked: a completed season is stored only once its ESPN rows match cfbstats.com's season totals, and a refused season is named in the run log (list below).`] : []),
     ...(T.unmatched_current.length ? [`${SEASON} teams whose latest games cfbstats has not posted yet (stored, cross-checked on the next refresh): ${T.unmatched_current.length}.`] : []),
     ...S.map(s => `${tLab(s.e)}: ${s.e.check}.`)];
-  $("#team-notes").innerHTML = notes.map(n=>`<li>${esc(n)}</li>`).join("");
+  $("#team-notes").innerHTML = notes.map(n=>`<li>${esc(n)}</li>`).join("")
+    + (T.missing.length ? `<li><details><summary class="small" style="cursor:pointer">Show the ${T.missing.length} team seasons not stored</summary><p class="small">${esc(T.missing.join(", "))}.</p></details></li>` : "");
   $("#team-sources").innerHTML = [`<li><a href="${(T.poll&&T.poll.source_url)||"https://www.espn.com/college-football/rankings"}" target="_blank" rel="noopener">ESPN: AP Top 25</a></li>`, "<li>ESPN box scores for every game shown</li>",
     ...SEASONS.filter(s => C[s]).map(s => `<li><a href="${C[s].source_url}" target="_blank" rel="noopener">cfbstats.com: ${s} team index</a></li>`),
     ...S.filter(s => s.e.url).map(s => `<li><a href="${s.e.url}" target="_blank" rel="noopener">cfbstats.com: ${esc(tLab(s.e))} team statistics</a></li>`)].join("");

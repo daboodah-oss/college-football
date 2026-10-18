@@ -150,10 +150,12 @@ def run_tab(C, U, tab, season, stored):
 def run(C, U):
     """One section per season and tab, so a failed pool keeps its last verified data and the others still update."""
     for season in sorted(C.SEASONS, reverse=True):
+        if season < C.SEASON and not C.FULL: continue  # game-window runs refresh the current season only
         for tab in TABS:
             def job(tab=tab, season=season):
                 have = U.load_or(U.logs_file(season), {}).get(tab) or {}
-                if season < C.SEASON and have.get("season") == season and have.get("players"):
+                complete = have.get("players") and not any("game log not read" in d for d in have.get("dropped", []))
+                if season < C.SEASON and have.get("season") == season and complete:
                     print(f"[natref] {season} {tab}: sealed ({len(have['players'])} players)"); return
                 U.natref({"tab": tab, "season": season, **run_tab(C, U, tab, season, have.get("players", {}))})
             C.section(f"natref_{season}_{tab}")(job)()
