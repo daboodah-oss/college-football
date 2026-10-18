@@ -1,0 +1,4 @@
+# Data files are byte-exact: no line-ending conversion, no whitespace fixers (ai-build-standards, Data rules).
+# Encoding: UTF-8, no BOM, LF.
+data/** -text
+config.json -text
