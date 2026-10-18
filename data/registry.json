@@ -11,7 +11,7 @@
      "name": "Air Force",
      "nickname": "Falcons",
      "abbr": "AF",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 5,
@@ -20,7 +20,7 @@
      "name": "Akron",
      "nickname": "Zips",
      "abbr": "AKR",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 8,
@@ -29,7 +29,7 @@
      "name": "Alabama",
      "nickname": "Crimson Tide",
      "abbr": "ALA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 27,
@@ -38,7 +38,7 @@
      "name": "App State",
      "nickname": "Mountaineers",
      "abbr": "APP",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 29,
@@ -47,7 +47,7 @@
      "name": "Arizona",
      "nickname": "Wildcats",
      "abbr": "ARIZ",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 28,
@@ -56,7 +56,7 @@
      "name": "Arizona State",
      "nickname": "Sun Devils",
      "abbr": "ASU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 31,
@@ -65,7 +65,7 @@
      "name": "Arkansas",
      "nickname": "Razorbacks",
      "abbr": "ARK",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 30,
@@ -74,7 +74,7 @@
      "name": "Arkansas State",
      "nickname": "Red Wolves",
      "abbr": "ARST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 725,
@@ -83,7 +83,7 @@
      "name": "Army",
      "nickname": "Black Knights",
      "abbr": "ARMY",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 37,
@@ -92,7 +92,7 @@
      "name": "Auburn",
      "nickname": "Tigers",
      "abbr": "AUB",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 77,
@@ -101,7 +101,7 @@
      "name": "BYU",
      "nickname": "Cougars",
      "abbr": "BYU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 47,
@@ -110,7 +110,7 @@
      "name": "Ball State",
      "nickname": "Cardinals",
      "abbr": "BALL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 51,
@@ -119,7 +119,7 @@
      "name": "Baylor",
      "nickname": "Bears",
      "abbr": "BAY",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 66,
@@ -128,7 +128,7 @@
      "name": "Boise State",
      "nickname": "Broncos",
      "abbr": "BOIS",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 67,
@@ -137,7 +137,7 @@
      "name": "Boston College",
      "nickname": "Eagles",
      "abbr": "BC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 71,
@@ -146,7 +146,7 @@
      "name": "Bowling Green",
      "nickname": "Falcons",
      "abbr": "BGSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 86,
@@ -155,7 +155,7 @@
      "name": "Buffalo",
      "nickname": "Bulls",
      "abbr": "BUF",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 107,
@@ -164,7 +164,7 @@
      "name": "California",
      "nickname": "Golden Bears",
      "abbr": "CAL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 129,
@@ -173,7 +173,16 @@
      "name": "Central Michigan",
      "nickname": "Chippewas",
      "abbr": "CMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
+    },
+    {
+     "cfb_id": 458,
+     "cfb_name": "Charlotte",
+     "espn_id": "2429",
+     "name": "Charlotte",
+     "nickname": "49ers",
+     "abbr": "CLT",
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 140,
@@ -182,7 +191,7 @@
      "name": "Cincinnati",
      "nickname": "Bearcats",
      "abbr": "CIN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 147,
@@ -191,7 +200,7 @@
      "name": "Clemson",
      "nickname": "Tigers",
      "abbr": "CLEM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 149,
@@ -200,7 +209,7 @@
      "name": "Coastal Carolina",
      "nickname": "Chanticleers",
      "abbr": "CCU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 157,
@@ -209,7 +218,7 @@
      "name": "Colorado",
      "nickname": "Buffaloes",
      "abbr": "COLO",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 156,
@@ -218,7 +227,7 @@
      "name": "Colorado State",
      "nickname": "Rams",
      "abbr": "CSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 164,
@@ -227,7 +236,7 @@
      "name": "UConn",
      "nickname": "Huskies",
      "abbr": "CONN",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 193,
@@ -236,7 +245,7 @@
      "name": "Duke",
      "nickname": "Blue Devils",
      "abbr": "DUKE",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 196,
@@ -245,7 +254,7 @@
      "name": "East Carolina",
      "nickname": "Pirates",
      "abbr": "ECU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 204,
@@ -254,7 +263,7 @@
      "name": "Eastern Michigan",
      "nickname": "Eagles",
      "abbr": "EMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 231,
@@ -263,7 +272,7 @@
      "name": "Florida International",
      "nickname": "Panthers",
      "abbr": "FIU",
-     "how": "name = ESPN short (fbs list)"
+     "how": "name = ESPN short (season FBS list)"
     },
     {
      "cfb_id": 235,
@@ -272,7 +281,7 @@
      "name": "Florida",
      "nickname": "Gators",
      "abbr": "FLA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 229,
@@ -281,7 +290,7 @@
      "name": "Florida Atlantic",
      "nickname": "Owls",
      "abbr": "FAU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 234,
@@ -290,7 +299,7 @@
      "name": "Florida State",
      "nickname": "Seminoles",
      "abbr": "FSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 96,
@@ -299,7 +308,7 @@
      "name": "Fresno State",
      "nickname": "Bulldogs",
      "abbr": "FRES",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 257,
@@ -308,7 +317,7 @@
      "name": "Georgia",
      "nickname": "Bulldogs",
      "abbr": "UGA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 253,
@@ -317,7 +326,7 @@
      "name": "Georgia Southern",
      "nickname": "Eagles",
      "abbr": "GASO",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 254,
@@ -326,7 +335,7 @@
      "name": "Georgia State",
      "nickname": "Panthers",
      "abbr": "GAST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 255,
@@ -335,7 +344,7 @@
      "name": "Georgia Tech",
      "nickname": "Yellow Jackets",
      "abbr": "GT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 277,
@@ -344,7 +353,7 @@
      "name": "Hawai'i",
      "nickname": "Rainbow Warriors",
      "abbr": "HAW",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 288,
@@ -353,7 +362,7 @@
      "name": "Houston",
      "nickname": "Cougars",
      "abbr": "HOU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 301,
@@ -362,7 +371,7 @@
      "name": "Illinois",
      "nickname": "Fighting Illini",
      "abbr": "ILL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 306,
@@ -371,7 +380,7 @@
      "name": "Indiana",
      "nickname": "Hoosiers",
      "abbr": "IU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 312,
@@ -380,7 +389,7 @@
      "name": "Iowa",
      "nickname": "Hawkeyes",
      "abbr": "IOWA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 311,
@@ -389,7 +398,7 @@
      "name": "Iowa State",
      "nickname": "Cyclones",
      "abbr": "ISU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 315,
@@ -398,7 +407,7 @@
      "name": "Jacksonville State",
      "nickname": "Gamecocks",
      "abbr": "JXST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 317,
@@ -407,7 +416,7 @@
      "name": "James Madison",
      "nickname": "Dukes",
      "abbr": "JMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 328,
@@ -416,7 +425,7 @@
      "name": "Kansas",
      "nickname": "Jayhawks",
      "abbr": "KU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 327,
@@ -425,7 +434,7 @@
      "name": "Kansas State",
      "nickname": "Wildcats",
      "abbr": "KSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 1157,
@@ -434,7 +443,7 @@
      "name": "Kennesaw State",
      "nickname": "Owls",
      "abbr": "KENN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 331,
@@ -443,7 +452,7 @@
      "name": "Kent State",
      "nickname": "Golden Flashes",
      "abbr": "KENT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 334,
@@ -452,7 +461,7 @@
      "name": "Kentucky",
      "nickname": "Wildcats",
      "abbr": "UK",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 365,
@@ -461,7 +470,7 @@
      "name": "LSU",
      "nickname": "Tigers",
      "abbr": "LSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 355,
@@ -470,7 +479,7 @@
      "name": "Liberty",
      "nickname": "Flames",
      "abbr": "LIB",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 671,
@@ -479,7 +488,7 @@
      "name": "Louisiana",
      "nickname": "Ragin' Cajuns",
      "abbr": "UL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 366,
@@ -488,7 +497,7 @@
      "name": "Louisiana Tech",
      "nickname": "Bulldogs",
      "abbr": "LT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 498,
@@ -497,7 +506,7 @@
      "name": "UL Monroe",
      "nickname": "Warhawks",
      "abbr": "ULM",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 367,
@@ -506,7 +515,7 @@
      "name": "Louisville",
      "nickname": "Cardinals",
      "abbr": "LOU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 388,
@@ -515,7 +524,7 @@
      "name": "Marshall",
      "nickname": "Thundering Herd",
      "abbr": "MRSH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 392,
@@ -524,7 +533,7 @@
      "name": "Maryland",
      "nickname": "Terrapins",
      "abbr": "MD",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 400,
@@ -533,7 +542,7 @@
      "name": "Massachusetts",
      "nickname": "Minutemen",
      "abbr": "MASS",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 404,
@@ -542,7 +551,7 @@
      "name": "Memphis",
      "nickname": "Tigers",
      "abbr": "MEM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 415,
@@ -551,7 +560,7 @@
      "name": "Miami",
      "nickname": "Hurricanes",
      "abbr": "MIA",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 414,
@@ -560,7 +569,7 @@
      "name": "Miami (OH)",
      "nickname": "RedHawks",
      "abbr": "M-OH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 418,
@@ -569,7 +578,7 @@
      "name": "Michigan",
      "nickname": "Wolverines",
      "abbr": "MICH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 416,
@@ -578,7 +587,7 @@
      "name": "Michigan State",
      "nickname": "Spartans",
      "abbr": "MSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 419,
@@ -587,7 +596,7 @@
      "name": "Middle Tennessee",
      "nickname": "Blue Raiders",
      "abbr": "MTSU",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 428,
@@ -596,7 +605,7 @@
      "name": "Minnesota",
      "nickname": "Golden Gophers",
      "abbr": "MINN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 430,
@@ -605,7 +614,7 @@
      "name": "Mississippi State",
      "nickname": "Bulldogs",
      "abbr": "MSST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 434,
@@ -614,7 +623,7 @@
      "name": "Missouri",
      "nickname": "Tigers",
      "abbr": "MIZ",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 490,
@@ -623,7 +632,7 @@
      "name": "NC State",
      "nickname": "Wolfpack",
      "abbr": "NCSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 726,
@@ -632,7 +641,7 @@
      "name": "Navy",
      "nickname": "Midshipmen",
      "abbr": "NAVY",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 463,
@@ -641,7 +650,7 @@
      "name": "Nebraska",
      "nickname": "Cornhuskers",
      "abbr": "NEB",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 466,
@@ -650,7 +659,7 @@
      "name": "Nevada",
      "nickname": "Wolf Pack",
      "abbr": "NEV",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 473,
@@ -659,7 +668,7 @@
      "name": "New Mexico",
      "nickname": "Lobos",
      "abbr": "UNM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 472,
@@ -668,7 +677,7 @@
      "name": "New Mexico State",
      "nickname": "Aggies",
      "abbr": "NMSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 457,
@@ -677,7 +686,7 @@
      "name": "North Carolina",
      "nickname": "Tar Heels",
      "abbr": "UNC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 497,
@@ -686,7 +695,7 @@
      "name": "North Texas",
      "nickname": "Mean Green",
      "abbr": "UNT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 503,
@@ -695,7 +704,7 @@
      "name": "Northern Illinois",
      "nickname": "Huskies",
      "abbr": "NIU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 509,
@@ -704,7 +713,7 @@
      "name": "Northwestern",
      "nickname": "Wildcats",
      "abbr": "NU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 513,
@@ -713,7 +722,7 @@
      "name": "Notre Dame",
      "nickname": "Fighting Irish",
      "abbr": "ND",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 519,
@@ -722,7 +731,7 @@
      "name": "Ohio",
      "nickname": "Bobcats",
      "abbr": "OHIO",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 518,
@@ -731,7 +740,7 @@
      "name": "Ohio State",
      "nickname": "Buckeyes",
      "abbr": "OSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 522,
@@ -740,7 +749,7 @@
      "name": "Oklahoma",
      "nickname": "Sooners",
      "abbr": "OU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 521,
@@ -749,7 +758,7 @@
      "name": "Oklahoma State",
      "nickname": "Cowboys",
      "abbr": "OKST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 523,
@@ -758,7 +767,7 @@
      "name": "Old Dominion",
      "nickname": "Monarchs",
      "abbr": "ODU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 433,
@@ -767,7 +776,7 @@
      "name": "Ole Miss",
      "nickname": "Rebels",
      "abbr": "MISS",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 529,
@@ -776,7 +785,7 @@
      "name": "Oregon",
      "nickname": "Ducks",
      "abbr": "ORE",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 528,
@@ -785,7 +794,7 @@
      "name": "Oregon State",
      "nickname": "Beavers",
      "abbr": "ORST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 539,
@@ -794,7 +803,7 @@
      "name": "Penn State",
      "nickname": "Nittany Lions",
      "abbr": "PSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 545,
@@ -803,7 +812,7 @@
      "name": "Pittsburgh",
      "nickname": "Panthers",
      "abbr": "PITT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 559,
@@ -812,7 +821,7 @@
      "name": "Purdue",
      "nickname": "Boilermakers",
      "abbr": "PUR",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 574,
@@ -821,7 +830,7 @@
      "name": "Rice",
      "nickname": "Owls",
      "abbr": "RICE",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 587,
@@ -830,7 +839,7 @@
      "name": "Rutgers",
      "nickname": "Scarlet Knights",
      "abbr": "RUTG",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 663,
@@ -839,7 +848,7 @@
      "name": "SMU",
      "nickname": "Mustangs",
      "abbr": "SMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 624,
@@ -848,7 +857,7 @@
      "name": "Sam Houston",
      "nickname": "Bearkats",
      "abbr": "SHSU",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 626,
@@ -857,7 +866,7 @@
      "name": "San Diego State",
      "nickname": "Aztecs",
      "abbr": "SDSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 630,
@@ -866,7 +875,7 @@
      "name": "San Jos\u00e9 State",
      "nickname": "Spartans",
      "abbr": "SJSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 646,
@@ -875,7 +884,7 @@
      "name": "South Alabama",
      "nickname": "Jaguars",
      "abbr": "USA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 648,
@@ -884,7 +893,7 @@
      "name": "South Carolina",
      "nickname": "Gamecocks",
      "abbr": "SC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 664,
@@ -893,7 +902,7 @@
      "name": "Southern Miss",
      "nickname": "Golden Eagles",
      "abbr": "USM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 674,
@@ -902,7 +911,7 @@
      "name": "Stanford",
      "nickname": "Cardinal",
      "abbr": "STAN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 688,
@@ -911,7 +920,7 @@
      "name": "Syracuse",
      "nickname": "Orange",
      "abbr": "SYR",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 698,
@@ -920,7 +929,7 @@
      "name": "TCU",
      "nickname": "Horned Frogs",
      "abbr": "TCU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 690,
@@ -929,7 +938,7 @@
      "name": "Temple",
      "nickname": "Owls",
      "abbr": "TEM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 694,
@@ -938,7 +947,7 @@
      "name": "Tennessee",
      "nickname": "Volunteers",
      "abbr": "TENN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 703,
@@ -947,7 +956,16 @@
      "name": "Texas",
      "nickname": "Longhorns",
      "abbr": "TEX",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
+    },
+    {
+     "cfb_id": 697,
+     "cfb_name": "Texas A&M",
+     "espn_id": "245",
+     "name": "Texas A&M",
+     "nickname": "Aggies",
+     "abbr": "TA&M",
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 670,
@@ -956,7 +974,7 @@
      "name": "Texas State",
      "nickname": "Bobcats",
      "abbr": "TXST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 700,
@@ -965,7 +983,7 @@
      "name": "Texas Tech",
      "nickname": "Red Raiders",
      "abbr": "TTU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 709,
@@ -974,7 +992,16 @@
      "name": "Toledo",
      "nickname": "Rockets",
      "abbr": "TOL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
+    },
+    {
+     "cfb_id": 716,
+     "cfb_name": "Troy",
+     "espn_id": "2653",
+     "name": "Troy",
+     "nickname": "Trojans",
+     "abbr": "TROY",
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 718,
@@ -983,7 +1010,7 @@
      "name": "Tulane",
      "nickname": "Green Wave",
      "abbr": "TULN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 719,
@@ -992,7 +1019,7 @@
      "name": "Tulsa",
      "nickname": "Golden Hurricane",
      "abbr": "TLSA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 9,
@@ -1001,7 +1028,7 @@
      "name": "UAB",
      "nickname": "Blazers",
      "abbr": "UAB",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 128,
@@ -1010,7 +1037,7 @@
      "name": "UCF",
      "nickname": "Knights",
      "abbr": "UCF",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 110,
@@ -1019,7 +1046,7 @@
      "name": "UCLA",
      "nickname": "Bruins",
      "abbr": "UCLA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 465,
@@ -1028,7 +1055,7 @@
      "name": "UNLV",
      "nickname": "Rebels",
      "abbr": "UNLV",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 657,
@@ -1037,7 +1064,16 @@
      "name": "USC",
      "nickname": "Trojans",
      "abbr": "USC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
+    },
+    {
+     "cfb_id": 651,
+     "cfb_name": "USF",
+     "espn_id": "58",
+     "name": "South Florida",
+     "nickname": "Bulls",
+     "abbr": "USF",
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 704,
@@ -1046,7 +1082,7 @@
      "name": "UTEP",
      "nickname": "Miners",
      "abbr": "UTEP",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 706,
@@ -1055,7 +1091,7 @@
      "name": "UTSA",
      "nickname": "Roadrunners",
      "abbr": "UTSA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 732,
@@ -1064,7 +1100,7 @@
      "name": "Utah",
      "nickname": "Utes",
      "abbr": "UTAH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 731,
@@ -1073,7 +1109,7 @@
      "name": "Utah State",
      "nickname": "Aggies",
      "abbr": "USU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 736,
@@ -1082,7 +1118,7 @@
      "name": "Vanderbilt",
      "nickname": "Commodores",
      "abbr": "VAN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 746,
@@ -1091,7 +1127,7 @@
      "name": "Virginia",
      "nickname": "Cavaliers",
      "abbr": "UVA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 742,
@@ -1100,7 +1136,7 @@
      "name": "Virginia Tech",
      "nickname": "Hokies",
      "abbr": "VT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 749,
@@ -1109,7 +1145,7 @@
      "name": "Wake Forest",
      "nickname": "Demon Deacons",
      "abbr": "WAKE",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 756,
@@ -1118,7 +1154,7 @@
      "name": "Washington",
      "nickname": "Huskies",
      "abbr": "WASH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 754,
@@ -1127,7 +1163,7 @@
      "name": "Washington State",
      "nickname": "Cougars",
      "abbr": "WSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 768,
@@ -1136,7 +1172,7 @@
      "name": "West Virginia",
      "nickname": "Mountaineers",
      "abbr": "WVU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 772,
@@ -1145,7 +1181,7 @@
      "name": "Western Kentucky",
      "nickname": "Hilltoppers",
      "abbr": "WKU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 774,
@@ -1154,7 +1190,7 @@
      "name": "Western Michigan",
      "nickname": "Broncos",
      "abbr": "WMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 796,
@@ -1163,7 +1199,7 @@
      "name": "Wisconsin",
      "nickname": "Badgers",
      "abbr": "WIS",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 811,
@@ -1172,32 +1208,11 @@
      "name": "Wyoming",
      "nickname": "Cowboys",
      "abbr": "WYO",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     }
    ],
-   "unmapped": [
-    {
-     "cfb_id": 458,
-     "cfb_name": "Charlotte",
-     "why": "'Charlotte' matches 2 ESPN teams by location"
-    },
-    {
-     "cfb_id": 697,
-     "cfb_name": "Texas A&amp;M",
-     "why": "no ESPN team with that name"
-    },
-    {
-     "cfb_id": 716,
-     "cfb_name": "Troy",
-     "why": "'Troy' matches 2 ESPN teams by location"
-    },
-    {
-     "cfb_id": 651,
-     "cfb_name": "USF",
-     "why": "no ESPN team with that name"
-    }
-   ],
-   "retrieved_at": "2026-10-18T19:36+00:00"
+   "unmapped": [],
+   "retrieved_at": "2026-10-18T19:47+00:00"
   },
   "2025": {
    "source_url": "https://cfbstats.com/2025/team/index.html",
@@ -1210,7 +1225,7 @@
      "name": "Air Force",
      "nickname": "Falcons",
      "abbr": "AF",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 5,
@@ -1219,7 +1234,7 @@
      "name": "Akron",
      "nickname": "Zips",
      "abbr": "AKR",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 8,
@@ -1228,7 +1243,7 @@
      "name": "Alabama",
      "nickname": "Crimson Tide",
      "abbr": "ALA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 27,
@@ -1237,7 +1252,7 @@
      "name": "App State",
      "nickname": "Mountaineers",
      "abbr": "APP",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 29,
@@ -1246,7 +1261,7 @@
      "name": "Arizona",
      "nickname": "Wildcats",
      "abbr": "ARIZ",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 28,
@@ -1255,7 +1270,7 @@
      "name": "Arizona State",
      "nickname": "Sun Devils",
      "abbr": "ASU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 31,
@@ -1264,7 +1279,7 @@
      "name": "Arkansas",
      "nickname": "Razorbacks",
      "abbr": "ARK",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 30,
@@ -1273,7 +1288,7 @@
      "name": "Arkansas State",
      "nickname": "Red Wolves",
      "abbr": "ARST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 725,
@@ -1282,7 +1297,7 @@
      "name": "Army",
      "nickname": "Black Knights",
      "abbr": "ARMY",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 37,
@@ -1291,7 +1306,7 @@
      "name": "Auburn",
      "nickname": "Tigers",
      "abbr": "AUB",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 77,
@@ -1300,7 +1315,7 @@
      "name": "BYU",
      "nickname": "Cougars",
      "abbr": "BYU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 47,
@@ -1309,7 +1324,7 @@
      "name": "Ball State",
      "nickname": "Cardinals",
      "abbr": "BALL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 51,
@@ -1318,7 +1333,7 @@
      "name": "Baylor",
      "nickname": "Bears",
      "abbr": "BAY",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 66,
@@ -1327,7 +1342,7 @@
      "name": "Boise State",
      "nickname": "Broncos",
      "abbr": "BOIS",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 67,
@@ -1336,7 +1351,7 @@
      "name": "Boston College",
      "nickname": "Eagles",
      "abbr": "BC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 71,
@@ -1345,7 +1360,7 @@
      "name": "Bowling Green",
      "nickname": "Falcons",
      "abbr": "BGSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 86,
@@ -1354,7 +1369,7 @@
      "name": "Buffalo",
      "nickname": "Bulls",
      "abbr": "BUF",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 107,
@@ -1363,7 +1378,7 @@
      "name": "California",
      "nickname": "Golden Bears",
      "abbr": "CAL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 129,
@@ -1372,7 +1387,16 @@
      "name": "Central Michigan",
      "nickname": "Chippewas",
      "abbr": "CMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
+    },
+    {
+     "cfb_id": 458,
+     "cfb_name": "Charlotte",
+     "espn_id": "2429",
+     "name": "Charlotte",
+     "nickname": "49ers",
+     "abbr": "CLT",
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 140,
@@ -1381,7 +1405,7 @@
      "name": "Cincinnati",
      "nickname": "Bearcats",
      "abbr": "CIN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 147,
@@ -1390,7 +1414,7 @@
      "name": "Clemson",
      "nickname": "Tigers",
      "abbr": "CLEM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 149,
@@ -1399,7 +1423,7 @@
      "name": "Coastal Carolina",
      "nickname": "Chanticleers",
      "abbr": "CCU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 157,
@@ -1408,7 +1432,7 @@
      "name": "Colorado",
      "nickname": "Buffaloes",
      "abbr": "COLO",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 156,
@@ -1417,7 +1441,7 @@
      "name": "Colorado State",
      "nickname": "Rams",
      "abbr": "CSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 164,
@@ -1426,7 +1450,7 @@
      "name": "UConn",
      "nickname": "Huskies",
      "abbr": "CONN",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 180,
@@ -1435,7 +1459,7 @@
      "name": "Delaware",
      "nickname": "Blue Hens",
      "abbr": "DEL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 193,
@@ -1444,7 +1468,7 @@
      "name": "Duke",
      "nickname": "Blue Devils",
      "abbr": "DUKE",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 196,
@@ -1453,7 +1477,7 @@
      "name": "East Carolina",
      "nickname": "Pirates",
      "abbr": "ECU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 204,
@@ -1462,7 +1486,7 @@
      "name": "Eastern Michigan",
      "nickname": "Eagles",
      "abbr": "EMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 231,
@@ -1471,7 +1495,7 @@
      "name": "Florida International",
      "nickname": "Panthers",
      "abbr": "FIU",
-     "how": "name = ESPN short (fbs list)"
+     "how": "name = ESPN short (season FBS list)"
     },
     {
      "cfb_id": 235,
@@ -1480,7 +1504,7 @@
      "name": "Florida",
      "nickname": "Gators",
      "abbr": "FLA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 229,
@@ -1489,7 +1513,7 @@
      "name": "Florida Atlantic",
      "nickname": "Owls",
      "abbr": "FAU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 234,
@@ -1498,7 +1522,7 @@
      "name": "Florida State",
      "nickname": "Seminoles",
      "abbr": "FSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 96,
@@ -1507,7 +1531,7 @@
      "name": "Fresno State",
      "nickname": "Bulldogs",
      "abbr": "FRES",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 257,
@@ -1516,7 +1540,7 @@
      "name": "Georgia",
      "nickname": "Bulldogs",
      "abbr": "UGA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 253,
@@ -1525,7 +1549,7 @@
      "name": "Georgia Southern",
      "nickname": "Eagles",
      "abbr": "GASO",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 254,
@@ -1534,7 +1558,7 @@
      "name": "Georgia State",
      "nickname": "Panthers",
      "abbr": "GAST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 255,
@@ -1543,7 +1567,7 @@
      "name": "Georgia Tech",
      "nickname": "Yellow Jackets",
      "abbr": "GT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 277,
@@ -1552,7 +1576,7 @@
      "name": "Hawai'i",
      "nickname": "Rainbow Warriors",
      "abbr": "HAW",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 288,
@@ -1561,7 +1585,7 @@
      "name": "Houston",
      "nickname": "Cougars",
      "abbr": "HOU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 301,
@@ -1570,7 +1594,7 @@
      "name": "Illinois",
      "nickname": "Fighting Illini",
      "abbr": "ILL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 306,
@@ -1579,7 +1603,7 @@
      "name": "Indiana",
      "nickname": "Hoosiers",
      "abbr": "IU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 312,
@@ -1588,7 +1612,7 @@
      "name": "Iowa",
      "nickname": "Hawkeyes",
      "abbr": "IOWA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 311,
@@ -1597,7 +1621,7 @@
      "name": "Iowa State",
      "nickname": "Cyclones",
      "abbr": "ISU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 315,
@@ -1606,7 +1630,7 @@
      "name": "Jacksonville State",
      "nickname": "Gamecocks",
      "abbr": "JXST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 317,
@@ -1615,7 +1639,7 @@
      "name": "James Madison",
      "nickname": "Dukes",
      "abbr": "JMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 328,
@@ -1624,7 +1648,7 @@
      "name": "Kansas",
      "nickname": "Jayhawks",
      "abbr": "KU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 327,
@@ -1633,7 +1657,7 @@
      "name": "Kansas State",
      "nickname": "Wildcats",
      "abbr": "KSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 1157,
@@ -1642,7 +1666,7 @@
      "name": "Kennesaw State",
      "nickname": "Owls",
      "abbr": "KENN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 331,
@@ -1651,7 +1675,7 @@
      "name": "Kent State",
      "nickname": "Golden Flashes",
      "abbr": "KENT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 334,
@@ -1660,7 +1684,7 @@
      "name": "Kentucky",
      "nickname": "Wildcats",
      "abbr": "UK",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 365,
@@ -1669,7 +1693,7 @@
      "name": "LSU",
      "nickname": "Tigers",
      "abbr": "LSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 355,
@@ -1678,7 +1702,7 @@
      "name": "Liberty",
      "nickname": "Flames",
      "abbr": "LIB",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 671,
@@ -1687,7 +1711,7 @@
      "name": "Louisiana",
      "nickname": "Ragin' Cajuns",
      "abbr": "UL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 366,
@@ -1696,7 +1720,7 @@
      "name": "Louisiana Tech",
      "nickname": "Bulldogs",
      "abbr": "LT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 498,
@@ -1705,7 +1729,7 @@
      "name": "UL Monroe",
      "nickname": "Warhawks",
      "abbr": "ULM",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 367,
@@ -1714,7 +1738,7 @@
      "name": "Louisville",
      "nickname": "Cardinals",
      "abbr": "LOU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 388,
@@ -1723,7 +1747,7 @@
      "name": "Marshall",
      "nickname": "Thundering Herd",
      "abbr": "MRSH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 392,
@@ -1732,7 +1756,7 @@
      "name": "Maryland",
      "nickname": "Terrapins",
      "abbr": "MD",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 400,
@@ -1741,7 +1765,7 @@
      "name": "Massachusetts",
      "nickname": "Minutemen",
      "abbr": "MASS",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 404,
@@ -1750,7 +1774,7 @@
      "name": "Memphis",
      "nickname": "Tigers",
      "abbr": "MEM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 415,
@@ -1759,7 +1783,7 @@
      "name": "Miami",
      "nickname": "Hurricanes",
      "abbr": "MIA",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 414,
@@ -1768,7 +1792,7 @@
      "name": "Miami (OH)",
      "nickname": "RedHawks",
      "abbr": "M-OH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 418,
@@ -1777,7 +1801,7 @@
      "name": "Michigan",
      "nickname": "Wolverines",
      "abbr": "MICH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 416,
@@ -1786,7 +1810,7 @@
      "name": "Michigan State",
      "nickname": "Spartans",
      "abbr": "MSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 419,
@@ -1795,7 +1819,7 @@
      "name": "Middle Tennessee",
      "nickname": "Blue Raiders",
      "abbr": "MTSU",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 428,
@@ -1804,7 +1828,7 @@
      "name": "Minnesota",
      "nickname": "Golden Gophers",
      "abbr": "MINN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 430,
@@ -1813,7 +1837,7 @@
      "name": "Mississippi State",
      "nickname": "Bulldogs",
      "abbr": "MSST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 434,
@@ -1822,7 +1846,7 @@
      "name": "Missouri",
      "nickname": "Tigers",
      "abbr": "MIZ",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 669,
@@ -1831,7 +1855,7 @@
      "name": "Missouri State",
      "nickname": "Bears",
      "abbr": "MOST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 490,
@@ -1840,7 +1864,7 @@
      "name": "NC State",
      "nickname": "Wolfpack",
      "abbr": "NCSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 726,
@@ -1849,7 +1873,7 @@
      "name": "Navy",
      "nickname": "Midshipmen",
      "abbr": "NAVY",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 463,
@@ -1858,7 +1882,7 @@
      "name": "Nebraska",
      "nickname": "Cornhuskers",
      "abbr": "NEB",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 466,
@@ -1867,7 +1891,7 @@
      "name": "Nevada",
      "nickname": "Wolf Pack",
      "abbr": "NEV",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 473,
@@ -1876,7 +1900,7 @@
      "name": "New Mexico",
      "nickname": "Lobos",
      "abbr": "UNM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 472,
@@ -1885,7 +1909,7 @@
      "name": "New Mexico State",
      "nickname": "Aggies",
      "abbr": "NMSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 457,
@@ -1894,7 +1918,7 @@
      "name": "North Carolina",
      "nickname": "Tar Heels",
      "abbr": "UNC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 497,
@@ -1903,7 +1927,7 @@
      "name": "North Texas",
      "nickname": "Mean Green",
      "abbr": "UNT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 503,
@@ -1912,7 +1936,7 @@
      "name": "Northern Illinois",
      "nickname": "Huskies",
      "abbr": "NIU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 509,
@@ -1921,7 +1945,7 @@
      "name": "Northwestern",
      "nickname": "Wildcats",
      "abbr": "NU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 513,
@@ -1930,7 +1954,7 @@
      "name": "Notre Dame",
      "nickname": "Fighting Irish",
      "abbr": "ND",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 519,
@@ -1939,7 +1963,7 @@
      "name": "Ohio",
      "nickname": "Bobcats",
      "abbr": "OHIO",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 518,
@@ -1948,7 +1972,7 @@
      "name": "Ohio State",
      "nickname": "Buckeyes",
      "abbr": "OSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 522,
@@ -1957,7 +1981,7 @@
      "name": "Oklahoma",
      "nickname": "Sooners",
      "abbr": "OU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 521,
@@ -1966,7 +1990,7 @@
      "name": "Oklahoma State",
      "nickname": "Cowboys",
      "abbr": "OKST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 523,
@@ -1975,7 +1999,7 @@
      "name": "Old Dominion",
      "nickname": "Monarchs",
      "abbr": "ODU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 433,
@@ -1984,7 +2008,7 @@
      "name": "Ole Miss",
      "nickname": "Rebels",
      "abbr": "MISS",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 529,
@@ -1993,7 +2017,7 @@
      "name": "Oregon",
      "nickname": "Ducks",
      "abbr": "ORE",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 528,
@@ -2002,7 +2026,7 @@
      "name": "Oregon State",
      "nickname": "Beavers",
      "abbr": "ORST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 539,
@@ -2011,7 +2035,7 @@
      "name": "Penn State",
      "nickname": "Nittany Lions",
      "abbr": "PSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 545,
@@ -2020,7 +2044,7 @@
      "name": "Pittsburgh",
      "nickname": "Panthers",
      "abbr": "PITT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 559,
@@ -2029,7 +2053,7 @@
      "name": "Purdue",
      "nickname": "Boilermakers",
      "abbr": "PUR",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 574,
@@ -2038,7 +2062,7 @@
      "name": "Rice",
      "nickname": "Owls",
      "abbr": "RICE",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 587,
@@ -2047,7 +2071,7 @@
      "name": "Rutgers",
      "nickname": "Scarlet Knights",
      "abbr": "RUTG",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 663,
@@ -2056,7 +2080,7 @@
      "name": "SMU",
      "nickname": "Mustangs",
      "abbr": "SMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 624,
@@ -2065,7 +2089,7 @@
      "name": "Sam Houston",
      "nickname": "Bearkats",
      "abbr": "SHSU",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 626,
@@ -2074,7 +2098,7 @@
      "name": "San Diego State",
      "nickname": "Aztecs",
      "abbr": "SDSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 630,
@@ -2083,7 +2107,7 @@
      "name": "San Jos\u00e9 State",
      "nickname": "Spartans",
      "abbr": "SJSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 646,
@@ -2092,7 +2116,7 @@
      "name": "South Alabama",
      "nickname": "Jaguars",
      "abbr": "USA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 648,
@@ -2101,7 +2125,7 @@
      "name": "South Carolina",
      "nickname": "Gamecocks",
      "abbr": "SC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 664,
@@ -2110,7 +2134,7 @@
      "name": "Southern Miss",
      "nickname": "Golden Eagles",
      "abbr": "USM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 674,
@@ -2119,7 +2143,7 @@
      "name": "Stanford",
      "nickname": "Cardinal",
      "abbr": "STAN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 688,
@@ -2128,7 +2152,7 @@
      "name": "Syracuse",
      "nickname": "Orange",
      "abbr": "SYR",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 698,
@@ -2137,7 +2161,7 @@
      "name": "TCU",
      "nickname": "Horned Frogs",
      "abbr": "TCU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 690,
@@ -2146,7 +2170,7 @@
      "name": "Temple",
      "nickname": "Owls",
      "abbr": "TEM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 694,
@@ -2155,7 +2179,7 @@
      "name": "Tennessee",
      "nickname": "Volunteers",
      "abbr": "TENN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 703,
@@ -2164,7 +2188,16 @@
      "name": "Texas",
      "nickname": "Longhorns",
      "abbr": "TEX",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
+    },
+    {
+     "cfb_id": 697,
+     "cfb_name": "Texas A&M",
+     "espn_id": "245",
+     "name": "Texas A&M",
+     "nickname": "Aggies",
+     "abbr": "TA&M",
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 670,
@@ -2173,7 +2206,7 @@
      "name": "Texas State",
      "nickname": "Bobcats",
      "abbr": "TXST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 700,
@@ -2182,7 +2215,7 @@
      "name": "Texas Tech",
      "nickname": "Red Raiders",
      "abbr": "TTU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 709,
@@ -2191,7 +2224,16 @@
      "name": "Toledo",
      "nickname": "Rockets",
      "abbr": "TOL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
+    },
+    {
+     "cfb_id": 716,
+     "cfb_name": "Troy",
+     "espn_id": "2653",
+     "name": "Troy",
+     "nickname": "Trojans",
+     "abbr": "TROY",
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 718,
@@ -2200,7 +2242,7 @@
      "name": "Tulane",
      "nickname": "Green Wave",
      "abbr": "TULN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 719,
@@ -2209,7 +2251,7 @@
      "name": "Tulsa",
      "nickname": "Golden Hurricane",
      "abbr": "TLSA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 9,
@@ -2218,7 +2260,7 @@
      "name": "UAB",
      "nickname": "Blazers",
      "abbr": "UAB",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 128,
@@ -2227,7 +2269,7 @@
      "name": "UCF",
      "nickname": "Knights",
      "abbr": "UCF",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 110,
@@ -2236,7 +2278,7 @@
      "name": "UCLA",
      "nickname": "Bruins",
      "abbr": "UCLA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 465,
@@ -2245,7 +2287,7 @@
      "name": "UNLV",
      "nickname": "Rebels",
      "abbr": "UNLV",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 657,
@@ -2254,7 +2296,16 @@
      "name": "USC",
      "nickname": "Trojans",
      "abbr": "USC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
+    },
+    {
+     "cfb_id": 651,
+     "cfb_name": "USF",
+     "espn_id": "58",
+     "name": "South Florida",
+     "nickname": "Bulls",
+     "abbr": "USF",
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 704,
@@ -2263,7 +2314,7 @@
      "name": "UTEP",
      "nickname": "Miners",
      "abbr": "UTEP",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 706,
@@ -2272,7 +2323,7 @@
      "name": "UTSA",
      "nickname": "Roadrunners",
      "abbr": "UTSA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 732,
@@ -2281,7 +2332,7 @@
      "name": "Utah",
      "nickname": "Utes",
      "abbr": "UTAH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 731,
@@ -2290,7 +2341,7 @@
      "name": "Utah State",
      "nickname": "Aggies",
      "abbr": "USU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 736,
@@ -2299,7 +2350,7 @@
      "name": "Vanderbilt",
      "nickname": "Commodores",
      "abbr": "VAN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 746,
@@ -2308,7 +2359,7 @@
      "name": "Virginia",
      "nickname": "Cavaliers",
      "abbr": "UVA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 742,
@@ -2317,7 +2368,7 @@
      "name": "Virginia Tech",
      "nickname": "Hokies",
      "abbr": "VT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 749,
@@ -2326,7 +2377,7 @@
      "name": "Wake Forest",
      "nickname": "Demon Deacons",
      "abbr": "WAKE",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 756,
@@ -2335,7 +2386,7 @@
      "name": "Washington",
      "nickname": "Huskies",
      "abbr": "WASH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 754,
@@ -2344,7 +2395,7 @@
      "name": "Washington State",
      "nickname": "Cougars",
      "abbr": "WSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 768,
@@ -2353,7 +2404,7 @@
      "name": "West Virginia",
      "nickname": "Mountaineers",
      "abbr": "WVU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 772,
@@ -2362,7 +2413,7 @@
      "name": "Western Kentucky",
      "nickname": "Hilltoppers",
      "abbr": "WKU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 774,
@@ -2371,7 +2422,7 @@
      "name": "Western Michigan",
      "nickname": "Broncos",
      "abbr": "WMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 796,
@@ -2380,7 +2431,7 @@
      "name": "Wisconsin",
      "nickname": "Badgers",
      "abbr": "WIS",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 811,
@@ -2389,32 +2440,11 @@
      "name": "Wyoming",
      "nickname": "Cowboys",
      "abbr": "WYO",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     }
    ],
-   "unmapped": [
-    {
-     "cfb_id": 458,
-     "cfb_name": "Charlotte",
-     "why": "'Charlotte' matches 2 ESPN teams by location"
-    },
-    {
-     "cfb_id": 697,
-     "cfb_name": "Texas A&amp;M",
-     "why": "no ESPN team with that name"
-    },
-    {
-     "cfb_id": 716,
-     "cfb_name": "Troy",
-     "why": "'Troy' matches 2 ESPN teams by location"
-    },
-    {
-     "cfb_id": 651,
-     "cfb_name": "USF",
-     "why": "no ESPN team with that name"
-    }
-   ],
-   "retrieved_at": "2026-10-18T19:36+00:00"
+   "unmapped": [],
+   "retrieved_at": "2026-10-18T19:47+00:00"
   },
   "2026": {
    "source_url": "https://cfbstats.com/2026/team/index.html",
@@ -2427,7 +2457,7 @@
      "name": "Air Force",
      "nickname": "Falcons",
      "abbr": "AF",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 5,
@@ -2436,7 +2466,7 @@
      "name": "Akron",
      "nickname": "Zips",
      "abbr": "AKR",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 8,
@@ -2445,7 +2475,7 @@
      "name": "Alabama",
      "nickname": "Crimson Tide",
      "abbr": "ALA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 27,
@@ -2454,7 +2484,7 @@
      "name": "App State",
      "nickname": "Mountaineers",
      "abbr": "APP",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 29,
@@ -2463,7 +2493,7 @@
      "name": "Arizona",
      "nickname": "Wildcats",
      "abbr": "ARIZ",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 28,
@@ -2472,7 +2502,7 @@
      "name": "Arizona State",
      "nickname": "Sun Devils",
      "abbr": "ASU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 31,
@@ -2481,7 +2511,7 @@
      "name": "Arkansas",
      "nickname": "Razorbacks",
      "abbr": "ARK",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 30,
@@ -2490,7 +2520,7 @@
      "name": "Arkansas State",
      "nickname": "Red Wolves",
      "abbr": "ARST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 725,
@@ -2499,7 +2529,7 @@
      "name": "Army",
      "nickname": "Black Knights",
      "abbr": "ARMY",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 37,
@@ -2508,7 +2538,7 @@
      "name": "Auburn",
      "nickname": "Tigers",
      "abbr": "AUB",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 77,
@@ -2517,7 +2547,7 @@
      "name": "BYU",
      "nickname": "Cougars",
      "abbr": "BYU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 47,
@@ -2526,7 +2556,7 @@
      "name": "Ball State",
      "nickname": "Cardinals",
      "abbr": "BALL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 51,
@@ -2535,7 +2565,7 @@
      "name": "Baylor",
      "nickname": "Bears",
      "abbr": "BAY",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 66,
@@ -2544,7 +2574,7 @@
      "name": "Boise State",
      "nickname": "Broncos",
      "abbr": "BOIS",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 67,
@@ -2553,7 +2583,7 @@
      "name": "Boston College",
      "nickname": "Eagles",
      "abbr": "BC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 71,
@@ -2562,7 +2592,7 @@
      "name": "Bowling Green",
      "nickname": "Falcons",
      "abbr": "BGSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 86,
@@ -2571,7 +2601,7 @@
      "name": "Buffalo",
      "nickname": "Bulls",
      "abbr": "BUF",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 107,
@@ -2580,7 +2610,7 @@
      "name": "California",
      "nickname": "Golden Bears",
      "abbr": "CAL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 129,
@@ -2589,7 +2619,16 @@
      "name": "Central Michigan",
      "nickname": "Chippewas",
      "abbr": "CMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
+    },
+    {
+     "cfb_id": 458,
+     "cfb_name": "Charlotte",
+     "espn_id": "2429",
+     "name": "Charlotte",
+     "nickname": "49ers",
+     "abbr": "CLT",
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 140,
@@ -2598,7 +2637,7 @@
      "name": "Cincinnati",
      "nickname": "Bearcats",
      "abbr": "CIN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 147,
@@ -2607,7 +2646,7 @@
      "name": "Clemson",
      "nickname": "Tigers",
      "abbr": "CLEM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 149,
@@ -2616,7 +2655,7 @@
      "name": "Coastal Carolina",
      "nickname": "Chanticleers",
      "abbr": "CCU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 157,
@@ -2625,7 +2664,7 @@
      "name": "Colorado",
      "nickname": "Buffaloes",
      "abbr": "COLO",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 156,
@@ -2634,7 +2673,7 @@
      "name": "Colorado State",
      "nickname": "Rams",
      "abbr": "CSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 164,
@@ -2643,7 +2682,7 @@
      "name": "UConn",
      "nickname": "Huskies",
      "abbr": "CONN",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 180,
@@ -2652,7 +2691,7 @@
      "name": "Delaware",
      "nickname": "Blue Hens",
      "abbr": "DEL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 193,
@@ -2661,7 +2700,7 @@
      "name": "Duke",
      "nickname": "Blue Devils",
      "abbr": "DUKE",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 196,
@@ -2670,7 +2709,7 @@
      "name": "East Carolina",
      "nickname": "Pirates",
      "abbr": "ECU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 204,
@@ -2679,7 +2718,7 @@
      "name": "Eastern Michigan",
      "nickname": "Eagles",
      "abbr": "EMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 231,
@@ -2688,7 +2727,7 @@
      "name": "Florida International",
      "nickname": "Panthers",
      "abbr": "FIU",
-     "how": "name = ESPN short (fbs list)"
+     "how": "name = ESPN short (season FBS list)"
     },
     {
      "cfb_id": 235,
@@ -2697,7 +2736,7 @@
      "name": "Florida",
      "nickname": "Gators",
      "abbr": "FLA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 229,
@@ -2706,7 +2745,7 @@
      "name": "Florida Atlantic",
      "nickname": "Owls",
      "abbr": "FAU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 234,
@@ -2715,7 +2754,7 @@
      "name": "Florida State",
      "nickname": "Seminoles",
      "abbr": "FSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 96,
@@ -2724,7 +2763,7 @@
      "name": "Fresno State",
      "nickname": "Bulldogs",
      "abbr": "FRES",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 257,
@@ -2733,7 +2772,7 @@
      "name": "Georgia",
      "nickname": "Bulldogs",
      "abbr": "UGA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 253,
@@ -2742,7 +2781,7 @@
      "name": "Georgia Southern",
      "nickname": "Eagles",
      "abbr": "GASO",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 254,
@@ -2751,7 +2790,7 @@
      "name": "Georgia State",
      "nickname": "Panthers",
      "abbr": "GAST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 255,
@@ -2760,7 +2799,7 @@
      "name": "Georgia Tech",
      "nickname": "Yellow Jackets",
      "abbr": "GT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 277,
@@ -2769,7 +2808,7 @@
      "name": "Hawai'i",
      "nickname": "Rainbow Warriors",
      "abbr": "HAW",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 288,
@@ -2778,7 +2817,7 @@
      "name": "Houston",
      "nickname": "Cougars",
      "abbr": "HOU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 301,
@@ -2787,7 +2826,7 @@
      "name": "Illinois",
      "nickname": "Fighting Illini",
      "abbr": "ILL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 306,
@@ -2796,7 +2835,7 @@
      "name": "Indiana",
      "nickname": "Hoosiers",
      "abbr": "IU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 312,
@@ -2805,7 +2844,7 @@
      "name": "Iowa",
      "nickname": "Hawkeyes",
      "abbr": "IOWA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 311,
@@ -2814,7 +2853,7 @@
      "name": "Iowa State",
      "nickname": "Cyclones",
      "abbr": "ISU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 315,
@@ -2823,7 +2862,7 @@
      "name": "Jacksonville State",
      "nickname": "Gamecocks",
      "abbr": "JXST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 317,
@@ -2832,7 +2871,7 @@
      "name": "James Madison",
      "nickname": "Dukes",
      "abbr": "JMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 328,
@@ -2841,7 +2880,7 @@
      "name": "Kansas",
      "nickname": "Jayhawks",
      "abbr": "KU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 327,
@@ -2850,7 +2889,7 @@
      "name": "Kansas State",
      "nickname": "Wildcats",
      "abbr": "KSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 1157,
@@ -2859,7 +2898,7 @@
      "name": "Kennesaw State",
      "nickname": "Owls",
      "abbr": "KENN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 331,
@@ -2868,7 +2907,7 @@
      "name": "Kent State",
      "nickname": "Golden Flashes",
      "abbr": "KENT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 334,
@@ -2877,7 +2916,7 @@
      "name": "Kentucky",
      "nickname": "Wildcats",
      "abbr": "UK",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 365,
@@ -2886,7 +2925,7 @@
      "name": "LSU",
      "nickname": "Tigers",
      "abbr": "LSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 355,
@@ -2895,7 +2934,7 @@
      "name": "Liberty",
      "nickname": "Flames",
      "abbr": "LIB",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 671,
@@ -2904,7 +2943,7 @@
      "name": "Louisiana",
      "nickname": "Ragin' Cajuns",
      "abbr": "UL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 366,
@@ -2913,7 +2952,7 @@
      "name": "Louisiana Tech",
      "nickname": "Bulldogs",
      "abbr": "LT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 498,
@@ -2922,7 +2961,7 @@
      "name": "UL Monroe",
      "nickname": "Warhawks",
      "abbr": "ULM",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 367,
@@ -2931,7 +2970,7 @@
      "name": "Louisville",
      "nickname": "Cardinals",
      "abbr": "LOU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 388,
@@ -2940,7 +2979,7 @@
      "name": "Marshall",
      "nickname": "Thundering Herd",
      "abbr": "MRSH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 392,
@@ -2949,7 +2988,7 @@
      "name": "Maryland",
      "nickname": "Terrapins",
      "abbr": "MD",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 400,
@@ -2958,7 +2997,7 @@
      "name": "Massachusetts",
      "nickname": "Minutemen",
      "abbr": "MASS",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 404,
@@ -2967,7 +3006,7 @@
      "name": "Memphis",
      "nickname": "Tigers",
      "abbr": "MEM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 415,
@@ -2976,7 +3015,7 @@
      "name": "Miami",
      "nickname": "Hurricanes",
      "abbr": "MIA",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 414,
@@ -2985,7 +3024,7 @@
      "name": "Miami (OH)",
      "nickname": "RedHawks",
      "abbr": "M-OH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 418,
@@ -2994,7 +3033,7 @@
      "name": "Michigan",
      "nickname": "Wolverines",
      "abbr": "MICH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 416,
@@ -3003,7 +3042,7 @@
      "name": "Michigan State",
      "nickname": "Spartans",
      "abbr": "MSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 419,
@@ -3012,7 +3051,7 @@
      "name": "Middle Tennessee",
      "nickname": "Blue Raiders",
      "abbr": "MTSU",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 428,
@@ -3021,7 +3060,7 @@
      "name": "Minnesota",
      "nickname": "Golden Gophers",
      "abbr": "MINN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 430,
@@ -3030,7 +3069,7 @@
      "name": "Mississippi State",
      "nickname": "Bulldogs",
      "abbr": "MSST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 434,
@@ -3039,7 +3078,7 @@
      "name": "Missouri",
      "nickname": "Tigers",
      "abbr": "MIZ",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 669,
@@ -3048,7 +3087,7 @@
      "name": "Missouri State",
      "nickname": "Bears",
      "abbr": "MOST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 490,
@@ -3057,7 +3096,7 @@
      "name": "NC State",
      "nickname": "Wolfpack",
      "abbr": "NCSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 726,
@@ -3066,7 +3105,7 @@
      "name": "Navy",
      "nickname": "Midshipmen",
      "abbr": "NAVY",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 463,
@@ -3075,7 +3114,7 @@
      "name": "Nebraska",
      "nickname": "Cornhuskers",
      "abbr": "NEB",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 466,
@@ -3084,7 +3123,7 @@
      "name": "Nevada",
      "nickname": "Wolf Pack",
      "abbr": "NEV",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 473,
@@ -3093,7 +3132,7 @@
      "name": "New Mexico",
      "nickname": "Lobos",
      "abbr": "UNM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 472,
@@ -3102,7 +3141,7 @@
      "name": "New Mexico State",
      "nickname": "Aggies",
      "abbr": "NMSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 457,
@@ -3111,7 +3150,7 @@
      "name": "North Carolina",
      "nickname": "Tar Heels",
      "abbr": "UNC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 493,
@@ -3120,7 +3159,7 @@
      "name": "North Dakota State",
      "nickname": "Bison",
      "abbr": "NDSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 497,
@@ -3129,7 +3168,7 @@
      "name": "North Texas",
      "nickname": "Mean Green",
      "abbr": "UNT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 503,
@@ -3138,7 +3177,7 @@
      "name": "Northern Illinois",
      "nickname": "Huskies",
      "abbr": "NIU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 509,
@@ -3147,7 +3186,7 @@
      "name": "Northwestern",
      "nickname": "Wildcats",
      "abbr": "NU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 513,
@@ -3156,7 +3195,7 @@
      "name": "Notre Dame",
      "nickname": "Fighting Irish",
      "abbr": "ND",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 519,
@@ -3165,7 +3204,7 @@
      "name": "Ohio",
      "nickname": "Bobcats",
      "abbr": "OHIO",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 518,
@@ -3174,7 +3213,7 @@
      "name": "Ohio State",
      "nickname": "Buckeyes",
      "abbr": "OSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 522,
@@ -3183,7 +3222,7 @@
      "name": "Oklahoma",
      "nickname": "Sooners",
      "abbr": "OU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 521,
@@ -3192,7 +3231,7 @@
      "name": "Oklahoma State",
      "nickname": "Cowboys",
      "abbr": "OKST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 523,
@@ -3201,7 +3240,7 @@
      "name": "Old Dominion",
      "nickname": "Monarchs",
      "abbr": "ODU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 433,
@@ -3210,7 +3249,7 @@
      "name": "Ole Miss",
      "nickname": "Rebels",
      "abbr": "MISS",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 529,
@@ -3219,7 +3258,7 @@
      "name": "Oregon",
      "nickname": "Ducks",
      "abbr": "ORE",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 528,
@@ -3228,7 +3267,7 @@
      "name": "Oregon State",
      "nickname": "Beavers",
      "abbr": "ORST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 539,
@@ -3237,7 +3276,7 @@
      "name": "Penn State",
      "nickname": "Nittany Lions",
      "abbr": "PSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 545,
@@ -3246,7 +3285,7 @@
      "name": "Pittsburgh",
      "nickname": "Panthers",
      "abbr": "PITT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 559,
@@ -3255,7 +3294,7 @@
      "name": "Purdue",
      "nickname": "Boilermakers",
      "abbr": "PUR",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 574,
@@ -3264,7 +3303,7 @@
      "name": "Rice",
      "nickname": "Owls",
      "abbr": "RICE",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 587,
@@ -3273,7 +3312,7 @@
      "name": "Rutgers",
      "nickname": "Scarlet Knights",
      "abbr": "RUTG",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 663,
@@ -3282,7 +3321,7 @@
      "name": "SMU",
      "nickname": "Mustangs",
      "abbr": "SMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 102,
@@ -3291,7 +3330,7 @@
      "name": "Sacramento State",
      "nickname": "Hornets",
      "abbr": "SAC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 624,
@@ -3300,7 +3339,7 @@
      "name": "Sam Houston",
      "nickname": "Bearkats",
      "abbr": "SHSU",
-     "how": "alias = ESPN location (fbs list)"
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 626,
@@ -3309,7 +3348,7 @@
      "name": "San Diego State",
      "nickname": "Aztecs",
      "abbr": "SDSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 630,
@@ -3318,7 +3357,7 @@
      "name": "San Jos\u00e9 State",
      "nickname": "Spartans",
      "abbr": "SJSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 646,
@@ -3327,7 +3366,7 @@
      "name": "South Alabama",
      "nickname": "Jaguars",
      "abbr": "USA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 648,
@@ -3336,7 +3375,7 @@
      "name": "South Carolina",
      "nickname": "Gamecocks",
      "abbr": "SC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 664,
@@ -3345,7 +3384,7 @@
      "name": "Southern Miss",
      "nickname": "Golden Eagles",
      "abbr": "USM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 674,
@@ -3354,7 +3393,7 @@
      "name": "Stanford",
      "nickname": "Cardinal",
      "abbr": "STAN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 688,
@@ -3363,7 +3402,7 @@
      "name": "Syracuse",
      "nickname": "Orange",
      "abbr": "SYR",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 698,
@@ -3372,7 +3411,7 @@
      "name": "TCU",
      "nickname": "Horned Frogs",
      "abbr": "TCU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 690,
@@ -3381,7 +3420,7 @@
      "name": "Temple",
      "nickname": "Owls",
      "abbr": "TEM",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 694,
@@ -3390,7 +3429,7 @@
      "name": "Tennessee",
      "nickname": "Volunteers",
      "abbr": "TENN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 703,
@@ -3399,7 +3438,16 @@
      "name": "Texas",
      "nickname": "Longhorns",
      "abbr": "TEX",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
+    },
+    {
+     "cfb_id": 697,
+     "cfb_name": "Texas A&M",
+     "espn_id": "245",
+     "name": "Texas A&M",
+     "nickname": "Aggies",
+     "abbr": "TA&M",
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 670,
@@ -3408,7 +3456,7 @@
      "name": "Texas State",
      "nickname": "Bobcats",
      "abbr": "TXST",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 700,
@@ -3417,7 +3465,7 @@
      "name": "Texas Tech",
      "nickname": "Red Raiders",
      "abbr": "TTU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 709,
@@ -3426,7 +3474,16 @@
      "name": "Toledo",
      "nickname": "Rockets",
      "abbr": "TOL",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
+    },
+    {
+     "cfb_id": 716,
+     "cfb_name": "Troy",
+     "espn_id": "2653",
+     "name": "Troy",
+     "nickname": "Trojans",
+     "abbr": "TROY",
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 718,
@@ -3435,7 +3492,7 @@
      "name": "Tulane",
      "nickname": "Green Wave",
      "abbr": "TULN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 719,
@@ -3444,7 +3501,7 @@
      "name": "Tulsa",
      "nickname": "Golden Hurricane",
      "abbr": "TLSA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 9,
@@ -3453,7 +3510,7 @@
      "name": "UAB",
      "nickname": "Blazers",
      "abbr": "UAB",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 128,
@@ -3462,7 +3519,7 @@
      "name": "UCF",
      "nickname": "Knights",
      "abbr": "UCF",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 110,
@@ -3471,7 +3528,7 @@
      "name": "UCLA",
      "nickname": "Bruins",
      "abbr": "UCLA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 465,
@@ -3480,7 +3537,7 @@
      "name": "UNLV",
      "nickname": "Rebels",
      "abbr": "UNLV",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 657,
@@ -3489,7 +3546,16 @@
      "name": "USC",
      "nickname": "Trojans",
      "abbr": "USC",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
+    },
+    {
+     "cfb_id": 651,
+     "cfb_name": "USF",
+     "espn_id": "58",
+     "name": "South Florida",
+     "nickname": "Bulls",
+     "abbr": "USF",
+     "how": "alias = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 704,
@@ -3498,7 +3564,7 @@
      "name": "UTEP",
      "nickname": "Miners",
      "abbr": "UTEP",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 706,
@@ -3507,7 +3573,7 @@
      "name": "UTSA",
      "nickname": "Roadrunners",
      "abbr": "UTSA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 732,
@@ -3516,7 +3582,7 @@
      "name": "Utah",
      "nickname": "Utes",
      "abbr": "UTAH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 731,
@@ -3525,7 +3591,7 @@
      "name": "Utah State",
      "nickname": "Aggies",
      "abbr": "USU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 736,
@@ -3534,7 +3600,7 @@
      "name": "Vanderbilt",
      "nickname": "Commodores",
      "abbr": "VAN",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 746,
@@ -3543,7 +3609,7 @@
      "name": "Virginia",
      "nickname": "Cavaliers",
      "abbr": "UVA",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 742,
@@ -3552,7 +3618,7 @@
      "name": "Virginia Tech",
      "nickname": "Hokies",
      "abbr": "VT",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 749,
@@ -3561,7 +3627,7 @@
      "name": "Wake Forest",
      "nickname": "Demon Deacons",
      "abbr": "WAKE",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 756,
@@ -3570,7 +3636,7 @@
      "name": "Washington",
      "nickname": "Huskies",
      "abbr": "WASH",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 754,
@@ -3579,7 +3645,7 @@
      "name": "Washington State",
      "nickname": "Cougars",
      "abbr": "WSU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 768,
@@ -3588,7 +3654,7 @@
      "name": "West Virginia",
      "nickname": "Mountaineers",
      "abbr": "WVU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 772,
@@ -3597,7 +3663,7 @@
      "name": "Western Kentucky",
      "nickname": "Hilltoppers",
      "abbr": "WKU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 774,
@@ -3606,7 +3672,7 @@
      "name": "Western Michigan",
      "nickname": "Broncos",
      "abbr": "WMU",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 796,
@@ -3615,7 +3681,7 @@
      "name": "Wisconsin",
      "nickname": "Badgers",
      "abbr": "WIS",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     },
     {
      "cfb_id": 811,
@@ -3624,32 +3690,11 @@
      "name": "Wyoming",
      "nickname": "Cowboys",
      "abbr": "WYO",
-     "how": "name = ESPN location (fbs list)"
+     "how": "name = ESPN location (season FBS list)"
     }
    ],
-   "unmapped": [
-    {
-     "cfb_id": 458,
-     "cfb_name": "Charlotte",
-     "why": "'Charlotte' matches 2 ESPN teams by location"
-    },
-    {
-     "cfb_id": 697,
-     "cfb_name": "Texas A&amp;M",
-     "why": "no ESPN team with that name"
-    },
-    {
-     "cfb_id": 716,
-     "cfb_name": "Troy",
-     "why": "'Troy' matches 2 ESPN teams by location"
-    },
-    {
-     "cfb_id": 651,
-     "cfb_name": "USF",
-     "why": "no ESPN team with that name"
-    }
-   ],
-   "retrieved_at": "2026-10-18T19:36+00:00"
+   "unmapped": [],
+   "retrieved_at": "2026-10-18T19:47+00:00"
   }
  }
 }
