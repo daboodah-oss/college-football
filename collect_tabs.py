@@ -28,7 +28,8 @@ def num(d, k):
 def norm(name):
     s = unicodedata.normalize("NFKD", str(name)).encode("ascii", "ignore").decode().lower()
     s = s.replace("&", " and ")
-    s = re.sub(r"[.,'’()\-]", " ", s)
+    s = re.sub(r"['’.]", "", s)
+    s = re.sub(r"[,()\-/]", " ", s)
     s = re.sub(r"\bst\b$", "state", s.strip())
     return re.sub(r"\s+", " ", s).strip()
 
