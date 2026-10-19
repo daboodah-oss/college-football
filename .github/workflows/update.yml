@@ -10,6 +10,11 @@ on:
     # Each check exits in seconds unless ESPN shows an FBS game final that the stored data has not seen, then runs a full update.
     - cron: "*/20 20-23 * * 4,5,6"
     - cron: "*/20 0-6 * * 5,6,0"
+  # TEMPORARY (build branch only, removed before merge): GitHub cannot dispatch a workflow that is not yet on
+  # main, so a push that changes .github/branch-run starts a full run on the pushing branch.
+  push:
+    branches: ["claude/**"]
+    paths: [".github/branch-run"]
   workflow_dispatch:
     inputs:
       save_raw:

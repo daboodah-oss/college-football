@@ -127,19 +127,24 @@ def check_team_game(g, tag):
 
 
 YARD_KEYS = {"rush_yds", "pass_yds", "total_yds", "yds"}
-LABEL = {"rush_yds": "rushing yards", "pass_yds": "passing yards", "total_yds": "total yards", "yds": "yards"}
+THIRD_KEYS = {"third_att", "third_conv"}
+LABEL = {"rush_yds": "rushing yards", "pass_yds": "passing yards", "total_yds": "total yards", "yds": "yards",
+         "third_att": "third-down attempts", "third_conv": "third-down conversions"}
+THIRD_TOL = 2  # Jeff, 2026-10-19 (option b): ESPN's summed box scores and cfbstats' season total usually differ by 1-2
+               # third-down attempts (125 of 270 finished 2024/2025 team seasons on the first league-wide run)
 
 
 def compare(got, want, tag):
-    """Counts (games, points, turnovers, third downs, carries, catches, TD) must match exactly.  Season yardage may
-    differ by a hair (a late stat correction on one side): up to max(5, 0.2%) for teams or max(3, 0.5%) for players.
-    Any such difference is returned as a note that is shown on the page; anything larger is refused."""
+    """Counts (games, points, turnovers, carries, catches, TD) must match exactly.  Season yardage may differ by a
+    hair (a late stat correction on one side): up to max(5, 0.2%) for teams or max(3, 0.5%) for players.  Team
+    third-down attempts and conversions may differ by up to 2 per season (THIRD_TOL).  Any such difference is
+    returned as a note that is shown on the page; anything larger is refused."""
     notes, bad = [], {}
     for k, v in want.items():
         g = got.get(k)
         if g == v: continue
-        tol = max(5, round(0.002 * abs(v))) if k in ("rush_yds", "pass_yds", "total_yds") else max(3, round(0.005 * abs(v))) if k == "yds" else 0
-        if k in YARD_KEYS and abs(g - v) <= tol: notes.append(f"{LABEL[k]} {g:,} in ESPN box scores vs {v:,} on cfbstats")
+        tol = max(5, round(0.002 * abs(v))) if k in ("rush_yds", "pass_yds", "total_yds") else max(3, round(0.005 * abs(v))) if k == "yds" else THIRD_TOL if k in THIRD_KEYS else 0
+        if (k in YARD_KEYS or k in THIRD_KEYS) and abs(g - v) <= tol: notes.append(f"{LABEL[k]} {g:,} in ESPN box scores vs {v:,} on cfbstats")
         else: bad[k] = (g, v)
     if bad: die(f"{tag}: ESPN box scores disagree with cfbstats season totals {bad} (ESPN, cfbstats)")
     return notes

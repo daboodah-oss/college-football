@@ -188,8 +188,12 @@ season matches.
 - The one rating tolerance: a published passer rating may differ from the
   NCAA formula by up to 0.15, on that single comparison only (QB game logs).
   The `update.compare` yardage tolerances for ESPN-vs-cfbstats season totals
-  (teams max(5, 0.2%), players max(3, 0.5%)) are kept exactly; counts must
-  match exactly.  Do not widen any check.
+  (teams max(5, 0.2%), players max(3, 0.5%)) are kept exactly.  One deliberate
+  addition, Jeff's call on 2026-10-19: team third-down attempts and conversions
+  may differ by up to 2 per season (`update.THIRD_TOL`), stored with a note shown
+  on the page, because ESPN's summed box scores and cfbstats' season totals
+  usually differ by 1-2 attempts.  Every other count must match exactly.  Do
+  not widen any other check.
 - `SOURCE_EXCEPTIONS` in `update.py`: one team, one season, one stat, pinned to
   the exact recorded ESPN / cfbstats pair, applied only when both values match
   it, named in the run log.  The one entry is nd-report's documented Notre Dame

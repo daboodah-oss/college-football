@@ -131,7 +131,9 @@ changed player lines.
 - Team rows: total yards = rushing + passing; the box-score score = the schedule score; turnovers =
   fumbles lost + interceptions; third-down conversions ≤ attempts; the result string agrees with the
   score.  Each season must match cfbstats.com once cfbstats has posted the same number of games: counts
-  exactly; season yardage within max(5 yards, 0.2%) (a difference inside that is stored as a note shown
+  exactly, except third-down attempts and conversions, which may differ by up to 2 per season (Jeff's call,
+  2026-10-19: ESPN's summed box scores usually run 1-2 attempts above cfbstats' season total); season
+  yardage within max(5 yards, 0.2%) (a difference inside either tolerance is stored as a note shown
   on the page, anything larger is refused and nothing is stored).
 - Players: a game log is stored only if it has exactly the leaderboard G games and sums exactly to the
   leaderboard line; QB game logs must also match the NCAA passer-rating formula within 0.15 per game (a
