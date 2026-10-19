@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T22:46-04:00",
+ "at": "2026-10-18T23:06-04:00",
  "failed": [
   "team_2026",
   "team_2025",
@@ -33,7 +33,7 @@
   "[team] Oregon State 2025 REFUSED by validator",
   "[team] Utah State 2025 REFUSED by validator",
   "[team] Washington State 2025 REFUSED by validator",
-  "[team] 2025: 136 registry teams; 66 sealed, 58 collected, 12 not stored",
+  "[team] 2025: 136 registry teams; 124 sealed, 0 collected, 12 not stored",
   "[team_2025] FAILED: 2025 team seasons not stored: Army (refused, see above); East Carolina (refused, see above); Georgia Southern (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Navy (refused, see above); Oregon State (refused, see above); Utah State (refused, see above); Washington State (refused, see above)",
   "[team] Arizona 2024 REFUSED by validator",
   "[team] Arkansas 2024 REFUSED by validator",
@@ -67,7 +67,7 @@
   "[team] Utah State 2024 REFUSED by validator",
   "[team] West Virginia 2024 REFUSED by validator",
   "[team] Western Kentucky 2024 REFUSED by validator",
-  "[team] 2024: 134 registry teams; 40 sealed, 62 collected, 32 not stored",
+  "[team] 2024: 134 registry teams; 102 sealed, 0 collected, 32 not stored",
   "[team_2024] FAILED: 2024 team seasons not stored: Arizona (refused, see above); Arkansas (refused, see above); Boston College (refused, see above); Central Michigan (refused, see above); Coastal Carolina (refused, see above); Georgia Tech (refused, see above); Houston (refused, see above); Illinois (refused, see above); James Madison (refused, see above); Kansas (refused, see above); LSU (refused, see above); Liberty (refused, see above); Louisiana (refused, see above); Louisiana Tech (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Northwestern (refused, see above); Ohio (refused, see above); Ohio State (refused, see above); Old Dominion (refused, see above); San Jos\u00e9 State (refused, see above); Temple (refused, see above); Toledo (refused, see above); UAB (refused, see above); South Florida (refused, see above); UTSA (refused, see above); Utah State (refused, see above); West Virginia (refused, see above); Western Kentucky (refused, see above)",
   "[natref] 2026 qb: 47 players stored (0 game logs fetched, 47 unchanged)",
   "[natref] 2026 rb: 53 players stored (0 game logs fetched, 53 unchanged)",
