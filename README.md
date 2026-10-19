@@ -157,13 +157,13 @@ changed player lines.
 | `data/freshness.json` | when each section last collected successfully | `collect.py` |
 | `data/last_run.json` | the last run's failed sections, log and `finals_seen` | `collect.py` |
 
-At launch (branch run 3, 2026-10-18): the registry joins all 134 (2024), 136 (2025) and 138 (2026) cfbstats
-index teams to ESPN ids.  Stored team seasons: 40 (2024), 66 (2025) and 131 (2026); the rest were refused by
-the cfbstats cross-check and are named in `logs/collect.txt` (most of the finished-season refusals are
-third-down attempts 1 or 2 apart between ESPN's box scores and cfbstats' season total).  Pools: QB 47 / 45 /
-47, RB 45 / 51 / 53, WR 60 / 54 / 54 (2024 / 2025 / 2026), none dropped.  Sizes: `team.json` 898 KB (92 KB
-gzipped), the three pool files 403 / 401 / 237 KB (45 / 45 / 28 KB gzipped), `registry.json` 89 KB; the built
-page 270 KB (54 KB gzipped).
+At launch (branch run 4, 2026-10-19): the registry joins all 134 (2024), 136 (2025) and 138 (2026) cfbstats
+index teams to ESPN ids.  Stored team seasons: 102 (2024), 124 (2025) and 131 (2026); 120 of them carry a
+third-down note (within 2 of cfbstats).  The other 56 were refused by the cross-check (yardage beyond
+tolerance, turnovers, points, third downs 3 or more apart, or an ESPN box score whose total yards are not rushing
+plus passing) and are named in `logs/collect.txt`.  Pools: QB 47 / 45 / 47, RB 45 / 51 / 53, WR 60 / 54 / 54
+(2024 / 2025 / 2026), none dropped.  Sizes: `team.json` 1.5 MB (152 KB gzipped), the three pool files 403 / 401 /
+237 KB (45 / 45 / 28 KB gzipped), `registry.json` 89 KB; the built page 311 KB (59 KB gzipped).
 
 All public sports statistics.  No personal or contact data is ever stored.  Data files are UTF-8, no BOM,
 LF, byte-exact (`.gitattributes` turns off line-ending conversion for `data/` and `config.json`).
