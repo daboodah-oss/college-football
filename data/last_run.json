@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T23:06-04:00",
+ "at": "2026-10-21T15:00-04:00",
  "failed": [
   "team_2026",
   "team_2025",
@@ -69,9 +69,9 @@
   "[team] Western Kentucky 2024 REFUSED by validator",
   "[team] 2024: 134 registry teams; 102 sealed, 0 collected, 32 not stored",
   "[team_2024] FAILED: 2024 team seasons not stored: Arizona (refused, see above); Arkansas (refused, see above); Boston College (refused, see above); Central Michigan (refused, see above); Coastal Carolina (refused, see above); Georgia Tech (refused, see above); Houston (refused, see above); Illinois (refused, see above); James Madison (refused, see above); Kansas (refused, see above); LSU (refused, see above); Liberty (refused, see above); Louisiana (refused, see above); Louisiana Tech (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Northwestern (refused, see above); Ohio (refused, see above); Ohio State (refused, see above); Old Dominion (refused, see above); San Jos\u00e9 State (refused, see above); Temple (refused, see above); Toledo (refused, see above); UAB (refused, see above); South Florida (refused, see above); UTSA (refused, see above); Utah State (refused, see above); West Virginia (refused, see above); Western Kentucky (refused, see above)",
-  "[natref] 2026 qb: 47 players stored (0 game logs fetched, 47 unchanged)",
-  "[natref] 2026 rb: 53 players stored (0 game logs fetched, 53 unchanged)",
-  "[natref] 2026 wr: 54 players stored (0 game logs fetched, 54 unchanged)",
+  "[natref] 2026 qb: 49 players stored (4 game logs fetched, 45 unchanged)",
+  "[natref] 2026 rb: 53 players stored (2 game logs fetched, 51 unchanged)",
+  "[natref] 2026 wr: 55 players stored (3 game logs fetched, 52 unchanged)",
   "FAILED sections: team_2026, team_2025, team_2024"
  ],
  "finals_seen": [
@@ -579,11 +579,14 @@
   "401871052",
   "401871053",
   "401871054",
+  "401871055",
   "401871066",
   "401871067",
   "401871068",
+  "401871069",
   "401871089",
   "401871090",
-  "401871091"
+  "401871091",
+  "401871092"
  ]
 }

@@ -989,11 +989,28 @@
        "to_gained": 3,
        "third_conv": 3,
        "third_att": 10
+      },
+      {
+       "event": "401871092",
+       "date": "2026-10-20",
+       "opp": "Marshall",
+       "opp_id": "276",
+       "site": "A",
+       "pf": 13,
+       "pa": 20,
+       "result": "L 13-20",
+       "total_yds": 326,
+       "rush_yds": 178,
+       "pass_yds": 148,
+       "to_lost": 1,
+       "to_gained": 0,
+       "third_conv": 4,
+       "third_att": 18
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-18T19:37+00:00",
-     "check": "cfbstats season totals matched through 2026-10-17",
+     "retrieved_at": "2026-10-21T18:57+00:00",
+     "check": "cfbstats season totals matched through 2026-10-20",
      "cfbstats_url": "https://cfbstats.com/2026/team/646/index.html"
     },
     "2025": {
@@ -7573,11 +7590,28 @@
        "to_gained": 2,
        "third_conv": 5,
        "third_att": 12
+      },
+      {
+       "event": "401871069",
+       "date": "2026-10-20",
+       "opp": "Missouri State",
+       "opp_id": "2623",
+       "site": "H",
+       "pf": 61,
+       "pa": 38,
+       "result": "W 61-38",
+       "total_yds": 482,
+       "rush_yds": 232,
+       "pass_yds": 250,
+       "to_lost": 1,
+       "to_gained": 3,
+       "third_conv": 5,
+       "third_att": 12
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-18T19:48+00:00",
-     "check": "cfbstats season totals matched through 2026-10-17",
+     "retrieved_at": "2026-10-21T18:56+00:00",
+     "check": "cfbstats season totals matched through 2026-10-20",
      "cfbstats_url": "https://cfbstats.com/2026/team/180/index.html"
     },
     "2025": {
@@ -39755,11 +39789,28 @@
        "to_gained": 1,
        "third_conv": 9,
        "third_att": 15
+      },
+      {
+       "event": "401871092",
+       "date": "2026-10-20",
+       "opp": "South Alabama",
+       "opp_id": "6",
+       "site": "H",
+       "pf": 20,
+       "pa": 13,
+       "result": "W 20-13",
+       "total_yds": 328,
+       "rush_yds": 147,
+       "pass_yds": 181,
+       "to_lost": 0,
+       "to_gained": 1,
+       "third_conv": 5,
+       "third_att": 13
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-18T19:49+00:00",
-     "check": "cfbstats season totals matched through 2026-10-17",
+     "retrieved_at": "2026-10-21T18:56+00:00",
+     "check": "cfbstats season totals matched through 2026-10-20",
      "cfbstats_url": "https://cfbstats.com/2026/team/388/index.html"
     }
    }
@@ -50968,11 +51019,28 @@
        "to_gained": 1,
        "third_conv": 8,
        "third_att": 15
+      },
+      {
+       "event": "401871055",
+       "date": "2026-10-20",
+       "opp": "Middle Tennessee",
+       "opp_id": "2393",
+       "site": "H",
+       "pf": 23,
+       "pa": 26,
+       "result": "L 23-26",
+       "total_yds": 347,
+       "rush_yds": 168,
+       "pass_yds": 179,
+       "to_lost": 1,
+       "to_gained": 0,
+       "third_conv": 6,
+       "third_att": 13
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-18T19:48+00:00",
-     "check": "cfbstats season totals matched through 2026-10-17",
+     "retrieved_at": "2026-10-21T18:56+00:00",
+     "check": "cfbstats season totals matched through 2026-10-20",
      "cfbstats_url": "https://cfbstats.com/2026/team/231/index.html"
     },
     "2024": {
@@ -55370,11 +55438,28 @@
        "to_gained": 1,
        "third_conv": 2,
        "third_att": 9
+      },
+      {
+       "event": "401871055",
+       "date": "2026-10-20",
+       "opp": "Florida International",
+       "opp_id": "2229",
+       "site": "A",
+       "pf": 26,
+       "pa": 23,
+       "result": "W 26-23",
+       "total_yds": 448,
+       "rush_yds": 248,
+       "pass_yds": 200,
+       "to_lost": 0,
+       "to_gained": 1,
+       "third_conv": 3,
+       "third_att": 13
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-18T19:49+00:00",
-     "check": "cfbstats season totals matched through 2026-10-17",
+     "retrieved_at": "2026-10-21T18:57+00:00",
+     "check": "cfbstats season totals matched through 2026-10-20",
      "cfbstats_url": "https://cfbstats.com/2026/team/419/index.html"
     }
    }
@@ -61806,11 +61891,28 @@
        "to_gained": 0,
        "third_conv": 7,
        "third_att": 14
+      },
+      {
+       "event": "401871069",
+       "date": "2026-10-20",
+       "opp": "Delaware",
+       "opp_id": "48",
+       "site": "A",
+       "pf": 38,
+       "pa": 61,
+       "result": "L 38-61",
+       "total_yds": 431,
+       "rush_yds": 94,
+       "pass_yds": 337,
+       "to_lost": 3,
+       "to_gained": 1,
+       "third_conv": 4,
+       "third_att": 8
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-18T19:49+00:00",
-     "check": "cfbstats season totals matched through 2026-10-17",
+     "retrieved_at": "2026-10-21T18:57+00:00",
+     "check": "cfbstats season totals matched through 2026-10-20",
      "cfbstats_url": "https://cfbstats.com/2026/team/669/index.html"
     },
     "2025": {
@@ -67543,6 +67645,6 @@
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-10-19T03:03+00:00"
+  "retrieved_at": "2026-10-21T18:56+00:00"
  }
 }
