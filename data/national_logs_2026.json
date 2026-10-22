@@ -1,7 +1,7 @@
 {
  "qb": {
   "season": 2026,
-  "data_through": "2026-10-20",
+  "data_through": "2026-10-21",
   "positions": [
    "QB"
   ],
@@ -137,6 +137,7 @@
      "204-1112102",
      "528-50215853",
      "392-50311887",
+     "624-50215636",
      "674-1127454",
      "253-1111779",
      "742-50310484",
@@ -151,8 +152,7 @@
      "419-50216301",
      "365-2000773",
      "433-1136057",
-     "539-1174518",
-     "630-1237351"
+     "539-1174518"
     ],
     "top": [
      "277-50292486",
@@ -4047,6 +4047,106 @@
      }
     ]
    },
+   "624-50215636": {
+    "name": "Landyn Locke",
+    "team": "Sam Houston",
+    "pos": "QB",
+    "line": {
+     "g": 7,
+     "att": 236,
+     "cmp": 147,
+     "yds": 1653,
+     "td": 12,
+     "int": 5
+    },
+    "url": "https://cfbstats.com/2026/player/624/50215636/passing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-05",
+      "opp": "Troy",
+      "site": "A",
+      "result": "L 21-24",
+      "att": 46,
+      "cmp": 30,
+      "yds": 335,
+      "td": 3,
+      "int": 1,
+      "src_rating": 143.57
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Tulsa",
+      "site": "H",
+      "result": "L 17-23",
+      "att": 34,
+      "cmp": 24,
+      "yds": 316,
+      "td": 2,
+      "int": 0,
+      "src_rating": 168.07
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Nicholls State",
+      "site": "H",
+      "result": "W 59-0",
+      "att": 28,
+      "cmp": 19,
+      "yds": 322,
+      "td": 4,
+      "int": 0,
+      "src_rating": 211.6
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Texas Tech",
+      "site": "A",
+      "result": "L 14-49",
+      "att": 37,
+      "cmp": 23,
+      "yds": 195,
+      "td": 2,
+      "int": 2,
+      "src_rating": 113.46
+     },
+     {
+      "date": "2026-10-08",
+      "opp": "Liberty",
+      "site": "A",
+      "result": "L 3-35",
+      "att": 30,
+      "cmp": 20,
+      "yds": 138,
+      "td": 0,
+      "int": 0,
+      "src_rating": 105.31
+     },
+     {
+      "date": "2026-10-14",
+      "opp": "Western Kentucky",
+      "site": "H",
+      "result": "L 3-16",
+      "att": 30,
+      "cmp": 13,
+      "yds": 112,
+      "td": 0,
+      "int": 1,
+      "src_rating": 68.02
+     },
+     {
+      "date": "2026-10-21",
+      "opp": "New Mexico State",
+      "site": "H",
+      "result": "L 24-30",
+      "att": 31,
+      "cmp": 18,
+      "yds": 235,
+      "td": 1,
+      "int": 1,
+      "src_rating": 125.95
+     }
+    ]
+   },
    "674-1127454": {
     "name": "Davis Warren",
     "team": "Stanford",
@@ -4746,102 +4846,14 @@
       "src_rating": 113.02
      }
     ]
-   },
-   "630-1237351": {
-    "name": "Luke Weaver",
-    "team": "San Jose State",
-    "pos": "QB",
-    "line": {
-     "g": 6,
-     "att": 209,
-     "cmp": 132,
-     "yds": 1529,
-     "td": 11,
-     "int": 6
-    },
-    "url": "https://cfbstats.com/2026/player/630/1237351/passing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-08-29",
-      "opp": "USC",
-      "site": "A",
-      "result": "L 26-42",
-      "att": 32,
-      "cmp": 21,
-      "yds": 234,
-      "td": 2,
-      "int": 0,
-      "src_rating": 147.69
-     },
-     {
-      "date": "2026-09-04",
-      "opp": "Eastern Michigan",
-      "site": "A",
-      "result": "W 27-21",
-      "att": 39,
-      "cmp": 23,
-      "yds": 316,
-      "td": 3,
-      "int": 1,
-      "src_rating": 147.29
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Cal Poly",
-      "site": "H",
-      "result": "W 30-20",
-      "att": 34,
-      "cmp": 22,
-      "yds": 238,
-      "td": 3,
-      "int": 0,
-      "src_rating": 152.63
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Fresno State",
-      "site": "H",
-      "result": "L 10-26",
-      "att": 38,
-      "cmp": 21,
-      "yds": 244,
-      "td": 1,
-      "int": 4,
-      "src_rating": 96.84
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Hawaii",
-      "site": "A",
-      "result": "W 20-16",
-      "att": 28,
-      "cmp": 19,
-      "yds": 246,
-      "td": 2,
-      "int": 0,
-      "src_rating": 165.23
-     },
-     {
-      "date": "2026-10-09",
-      "opp": "Wyoming",
-      "site": "H",
-      "result": "L 13-16",
-      "att": 38,
-      "cmp": 26,
-      "yds": 251,
-      "td": 0,
-      "int": 1,
-      "src_rating": 118.64
-     }
-    ]
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-10-21T23:43+00:00"
+  "retrieved_at": "2026-10-22T22:50+00:00"
  },
  "rb": {
   "season": 2026,
-  "data_through": "2026-10-20",
+  "data_through": "2026-10-21",
   "positions": [
    "RB"
   ],
@@ -4856,6 +4868,7 @@
      "768-2000294",
      "193-50260473",
      "404-50218273",
+     "472-1136312",
      "317-1174939",
      "235-50309802",
      "497-2001366",
@@ -4864,7 +4877,6 @@
      "306-50216801",
      "742-50216041",
      "234-50311999",
-     "472-1136312",
      "732-50291238",
      "657-1255664",
      "521-50258899",
@@ -4951,10 +4963,10 @@
      "497-2001366",
      "311-50303320",
      "404-50218273",
+     "472-1136312",
      "317-1174939",
      "235-50309802",
      "312-2000034",
-     "472-1136312",
      "732-50291238",
      "521-50258899",
      "110-1174594",
@@ -4983,6 +4995,7 @@
      "66-50282868",
      "521-50258899",
      "630-1177958",
+     "472-1136312",
      "86-2002536",
      "234-50311999",
      "657-1255664",
@@ -4991,8 +5004,7 @@
      "465-1207891",
      "317-1174939",
      "670-1180411",
-     "306-1179517",
-     "518-50311981"
+     "306-1179517"
     ],
     "top": [
      "768-2000294",
@@ -5512,6 +5524,83 @@
       "att": 23,
       "yds": 135,
       "td": 0
+     }
+    ]
+   },
+   "472-1136312": {
+    "name": "James Jones",
+    "team": "NMSU",
+    "pos": "RB",
+    "line": {
+     "g": 7,
+     "att": 119,
+     "yds": 777,
+     "td": 4
+    },
+    "url": "https://cfbstats.com/2026/player/472/1136312/rushing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-08-29",
+      "opp": "Florida State",
+      "site": "A",
+      "result": "L 17-34",
+      "att": 11,
+      "yds": 28,
+      "td": 0
+     },
+     {
+      "date": "2026-09-05",
+      "opp": "Mercyhurst",
+      "site": "H",
+      "result": "W 51-14",
+      "att": 19,
+      "yds": 137,
+      "td": 1
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Hawaii",
+      "site": "A",
+      "result": "L 19-29",
+      "att": 13,
+      "yds": 78,
+      "td": 1
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "New Mexico",
+      "site": "H",
+      "result": "L 18-42",
+      "att": 14,
+      "yds": 112,
+      "td": 0
+     },
+     {
+      "date": "2026-10-01",
+      "opp": "Western Kentucky",
+      "site": "H",
+      "result": "W 34-13",
+      "att": 20,
+      "yds": 155,
+      "td": 1
+     },
+     {
+      "date": "2026-10-07",
+      "opp": "FIU",
+      "site": "A",
+      "result": "L 3-22",
+      "att": 15,
+      "yds": 89,
+      "td": 0
+     },
+     {
+      "date": "2026-10-21",
+      "opp": "Sam Houston State",
+      "site": "A",
+      "result": "W 30-24",
+      "att": 27,
+      "yds": 178,
+      "td": 1
      }
     ]
    },
@@ -6109,74 +6198,6 @@
       "result": "L 35-43",
       "att": 14,
       "yds": 44,
-      "td": 0
-     }
-    ]
-   },
-   "472-1136312": {
-    "name": "James Jones",
-    "team": "NMSU",
-    "pos": "RB",
-    "line": {
-     "g": 6,
-     "att": 92,
-     "yds": 599,
-     "td": 3
-    },
-    "url": "https://cfbstats.com/2026/player/472/1136312/rushing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-08-29",
-      "opp": "Florida State",
-      "site": "A",
-      "result": "L 17-34",
-      "att": 11,
-      "yds": 28,
-      "td": 0
-     },
-     {
-      "date": "2026-09-05",
-      "opp": "Mercyhurst",
-      "site": "H",
-      "result": "W 51-14",
-      "att": 19,
-      "yds": 137,
-      "td": 1
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Hawaii",
-      "site": "A",
-      "result": "L 19-29",
-      "att": 13,
-      "yds": 78,
-      "td": 1
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "New Mexico",
-      "site": "H",
-      "result": "L 18-42",
-      "att": 14,
-      "yds": 112,
-      "td": 0
-     },
-     {
-      "date": "2026-10-01",
-      "opp": "Western Kentucky",
-      "site": "H",
-      "result": "W 34-13",
-      "att": 20,
-      "yds": 155,
-      "td": 1
-     },
-     {
-      "date": "2026-10-07",
-      "opp": "FIU",
-      "site": "A",
-      "result": "L 3-22",
-      "att": 15,
-      "yds": 89,
       "td": 0
      }
     ]
@@ -8691,91 +8712,14 @@
       "td": 1
      }
     ]
-   },
-   "518-50311981": {
-    "name": "Bo Jackson",
-    "team": "Ohio State",
-    "pos": "RB",
-    "line": {
-     "g": 7,
-     "att": 107,
-     "yds": 516,
-     "td": 4
-    },
-    "url": "https://cfbstats.com/2026/player/518/50311981/rushing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-05",
-      "opp": "Ball State",
-      "site": "H",
-      "result": "W 56-3",
-      "att": 9,
-      "yds": 83,
-      "td": 1
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Texas",
-      "site": "A",
-      "result": "L 23-24",
-      "att": 19,
-      "yds": 74,
-      "td": 0
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Kent State",
-      "site": "H",
-      "result": "W 59-3",
-      "att": 11,
-      "yds": 73,
-      "td": 1
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "Illinois",
-      "site": "H",
-      "result": "W 42-19",
-      "att": 11,
-      "yds": 53,
-      "td": 0
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Iowa",
-      "site": "A",
-      "result": "W 31-14",
-      "att": 16,
-      "yds": 70,
-      "td": 0
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "Maryland",
-      "site": "H",
-      "result": "W 45-16",
-      "att": 23,
-      "yds": 107,
-      "td": 2
-     },
-     {
-      "date": "2026-10-17",
-      "opp": "Indiana",
-      "site": "A",
-      "result": "W 19-15",
-      "att": 18,
-      "yds": 56,
-      "td": 0
-     }
-    ]
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-10-21T23:43+00:00"
+  "retrieved_at": "2026-10-22T22:51+00:00"
  },
  "wr": {
   "season": 2026,
-  "data_through": "2026-10-20",
+  "data_through": "2026-10-21",
   "positions": [
    "WR",
    "TE"
@@ -8881,6 +8825,7 @@
      "355-1176676",
      "149-2002758",
      "528-50341534",
+     "624-1240520",
      "414-50303936",
      "716-50257156",
      "669-1238956",
@@ -8895,8 +8840,7 @@
      "518-50312218",
      "29-50258780",
      "29-50258482",
-     "742-2001494",
-     "749-50313147"
+     "742-2001494"
     ],
     "top": [
      "768-1178084",
@@ -11797,6 +11741,83 @@
      }
     ]
    },
+   "624-1240520": {
+    "name": "Tim Burns Jr.",
+    "team": "Sam Houston",
+    "pos": "WR",
+    "line": {
+     "g": 7,
+     "rec": 15,
+     "yds": 329,
+     "td": 3
+    },
+    "url": "https://cfbstats.com/2026/player/624/1240520/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-05",
+      "opp": "Troy",
+      "site": "A",
+      "result": "L 21-24",
+      "rec": 4,
+      "yds": 63,
+      "td": 0
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Tulsa",
+      "site": "H",
+      "result": "L 17-23",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Nicholls State",
+      "site": "H",
+      "result": "W 59-0",
+      "rec": 1,
+      "yds": 65,
+      "td": 1
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Texas Tech",
+      "site": "A",
+      "result": "L 14-49",
+      "rec": 2,
+      "yds": 61,
+      "td": 1
+     },
+     {
+      "date": "2026-10-08",
+      "opp": "Liberty",
+      "site": "A",
+      "result": "L 3-35",
+      "rec": 2,
+      "yds": 16,
+      "td": 0
+     },
+     {
+      "date": "2026-10-14",
+      "opp": "Western Kentucky",
+      "site": "H",
+      "result": "L 3-16",
+      "rec": 2,
+      "yds": 7,
+      "td": 0
+     },
+     {
+      "date": "2026-10-21",
+      "opp": "New Mexico State",
+      "site": "H",
+      "result": "L 24-30",
+      "rec": 4,
+      "yds": 117,
+      "td": 1
+     }
+    ]
+   },
    "414-50303936": {
     "name": "Damarion Witten",
     "team": "Miami (Oh)",
@@ -12735,83 +12756,6 @@
      }
     ]
    },
-   "749-50313147": {
-    "name": "Jack Foley",
-    "team": "Wake Forest",
-    "pos": "WR",
-    "line": {
-     "g": 7,
-     "rec": 20,
-     "yds": 373,
-     "td": 4
-    },
-    "url": "https://cfbstats.com/2026/player/749/50313147/receiving/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-03",
-      "opp": "Akron",
-      "site": "H",
-      "result": "W 38-16",
-      "rec": 0,
-      "yds": 0,
-      "td": 0
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Purdue",
-      "site": "A",
-      "result": "W 38-36",
-      "rec": 0,
-      "yds": 0,
-      "td": 0
-     },
-     {
-      "date": "2026-09-18",
-      "opp": "Miami (FL)",
-      "site": "H",
-      "result": "L 20-33",
-      "rec": 6,
-      "yds": 118,
-      "td": 1
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "Louisville",
-      "site": "A",
-      "result": "W 30-27",
-      "rec": 0,
-      "yds": 0,
-      "td": 0
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Stanford",
-      "site": "H",
-      "result": "W 57-3",
-      "rec": 3,
-      "yds": 54,
-      "td": 1
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "NC State",
-      "site": "A",
-      "result": "W 38-14",
-      "rec": 8,
-      "yds": 156,
-      "td": 1
-     },
-     {
-      "date": "2026-10-17",
-      "opp": "California",
-      "site": "A",
-      "result": "W 41-7",
-      "rec": 3,
-      "yds": 45,
-      "td": 1
-     }
-    ]
-   },
    "521-50212082": {
     "name": "Wyatt Young",
     "team": "Oklahoma State",
@@ -12950,6 +12894,6 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-10-21T23:43+00:00"
+  "retrieved_at": "2026-10-22T22:51+00:00"
  }
 }
