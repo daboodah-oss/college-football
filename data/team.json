@@ -20640,11 +20640,28 @@
        "to_gained": 0,
        "third_conv": 9,
        "third_att": 20
+      },
+      {
+       "event": "401862807",
+       "date": "2026-10-22",
+       "opp": "Memphis",
+       "opp_id": "235",
+       "site": "A",
+       "pf": 34,
+       "pa": 41,
+       "result": "L 34-41",
+       "total_yds": 421,
+       "rush_yds": 161,
+       "pass_yds": 260,
+       "to_lost": 3,
+       "to_gained": 1,
+       "third_conv": 5,
+       "third_att": 17
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-18T19:48+00:00",
-     "check": "cfbstats season totals matched through 2026-10-17, except rushing yards 935 in ESPN box scores vs 933 on cfbstats; total yards 2,037 in ESPN box scores vs 2,035 on cfbstats",
+     "retrieved_at": "2026-10-23T08:40+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-10-21, ESPN's latest game is 2026-10-22",
      "cfbstats_url": "https://cfbstats.com/2026/team/196/index.html"
     },
     "2024": {
@@ -31155,11 +31172,28 @@
        "to_gained": 2,
        "third_conv": 2,
        "third_att": 11
+      },
+      {
+       "event": "401862807",
+       "date": "2026-10-22",
+       "opp": "East Carolina",
+       "opp_id": "151",
+       "site": "H",
+       "pf": 41,
+       "pa": 34,
+       "result": "W 41-34",
+       "total_yds": 484,
+       "rush_yds": 164,
+       "pass_yds": 320,
+       "to_lost": 1,
+       "to_gained": 3,
+       "third_conv": 4,
+       "third_att": 15
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-18T19:37+00:00",
-     "check": "not cross-checked: cfbstats season totals unreadable (403 Client Error: Forbidden for url: https://cfbstats.com/2026/team/404/index.html)",
+     "retrieved_at": "2026-10-23T08:40+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-10-21, ESPN's latest game is 2026-10-22",
      "cfbstats_url": "https://cfbstats.com/2026/team/404/index.html"
     },
     "2025": {
@@ -67933,6 +67967,6 @@
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-10-23T03:16+00:00"
+  "retrieved_at": "2026-10-23T08:40+00:00"
  }
 }
