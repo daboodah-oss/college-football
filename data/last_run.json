@@ -1,15 +1,16 @@
 {
- "at": "2026-10-23T04:41-04:00",
+ "at": "2026-10-23T23:12-04:00",
  "failed": [
   "team_2026"
  ],
  "log": [
-  "quick check: new final 2026-10-22 East Carolina Pirates at Memphis Tigers",
+  "quick check: new final 2026-10-23 Duke Blue Devils at Virginia Cavaliers",
   "[registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids",
   "[team] Air Force 2026 REFUSED by validator",
   "[team] Buffalo 2026 REFUSED by validator",
   "[team] Colorado State 2026 REFUSED by validator",
   "[team] Hawai'i 2026 REFUSED by validator",
+  "[team] Memphis 2026 REFUSED by validator",
   "[team] New Mexico State 2026 REFUSED by validator",
   "[team] Old Dominion 2026 REFUSED by validator",
   "[team] Sacramento State 2026 REFUSED by validator",
@@ -17,11 +18,11 @@
   "[team] Stanford 2026 REFUSED by validator",
   "[team] Utah 2026 REFUSED by validator",
   "[team] Utah State 2026 REFUSED by validator",
-  "[team] 2026: 138 registry teams; 0 sealed, 127 collected, 11 not stored",
-  "[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); Colorado State (refused, see above); Hawai'i (refused, see above); New Mexico State (refused, see above); Old Dominion (refused, see above); Sacramento State (refused, see above); Sam Houston (refused, see above); Stanford (refused, see above); Utah (refused, see above); Utah State (refused, see above)",
-  "[natref] 2026 qb: 49 players stored (0 game logs fetched, 49 unchanged)",
-  "[natref] 2026 rb: 52 players stored (0 game logs fetched, 52 unchanged)",
-  "[natref] 2026 wr: 55 players stored (0 game logs fetched, 55 unchanged)",
+  "[team] 2026: 138 registry teams; 0 sealed, 126 collected, 12 not stored",
+  "[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); Colorado State (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); New Mexico State (refused, see above); Old Dominion (refused, see above); Sacramento State (refused, see above); Sam Houston (refused, see above); Stanford (refused, see above); Utah (refused, see above); Utah State (refused, see above)",
+  "[natref] 2026 qb: 49 players stored (3 game logs fetched, 46 unchanged)",
+  "[natref] 2026 rb: 53 players stored (5 game logs fetched, 48 unchanged)",
+  "[natref] 2026 wr: 55 players stored (2 game logs fetched, 53 unchanged)",
   "FAILED sections: team_2026"
  ],
  "finals_seen": [
@@ -230,6 +231,7 @@
   "401858267",
   "401858268",
   "401858269",
+  "401858271",
   "401858422",
   "401858423",
   "401858424",
@@ -337,6 +339,7 @@
   "401861962",
   "401861963",
   "401861964",
+  "401861965",
   "401861970",
   "401862693",
   "401862694",
