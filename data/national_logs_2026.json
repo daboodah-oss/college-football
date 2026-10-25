@@ -371,7 +371,7 @@
      "g": 8,
      "att": 274,
      "cmp": 183,
-     "yds": 2303,
+     "yds": 2302,
      "td": 19,
      "int": 5
     },
@@ -468,10 +468,10 @@
       "result": "L 7-24",
       "att": 50,
       "cmp": 31,
-      "yds": 258,
+      "yds": 257,
       "td": 1,
       "int": 2,
-      "src_rating": 103.94
+      "src_rating": 103.78
      }
     ]
    },
@@ -807,7 +807,7 @@
      "g": 8,
      "att": 256,
      "cmp": 180,
-     "yds": 2172,
+     "yds": 2163,
      "td": 17,
      "int": 8
     },
@@ -904,10 +904,10 @@
       "result": "W 38-17",
       "att": 45,
       "cmp": 32,
-      "yds": 387,
+      "yds": 378,
       "td": 3,
       "int": 0,
-      "src_rating": 165.35
+      "src_rating": 163.67
      }
     ]
    },
@@ -4685,7 +4685,7 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-10-25T19:18+00:00"
+  "retrieved_at": "2026-10-25T22:52+00:00"
  },
  "rb": {
   "season": 2026,
@@ -4713,8 +4713,8 @@
      "521-50258899",
      "306-50216801",
      "674-50312286",
-     "706-50304168",
      "365-50312359",
+     "706-50304168",
      "587-50304624",
      "732-50291238"
     ],
@@ -6146,6 +6146,92 @@
      }
     ]
    },
+   "365-50312359": {
+    "name": "Dilin Jones",
+    "team": "LSU",
+    "pos": "RB",
+    "line": {
+     "g": 8,
+     "att": 149,
+     "yds": 667,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2026/player/365/50312359/rushing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-05",
+      "opp": "Clemson",
+      "site": "H",
+      "result": "W 51-10",
+      "att": 23,
+      "yds": 113,
+      "td": 2
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Louisiana Tech",
+      "site": "H",
+      "result": "W 45-14",
+      "att": 18,
+      "yds": 66,
+      "td": 0
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Ole Miss",
+      "site": "A",
+      "result": "L 24-32",
+      "att": 23,
+      "yds": 106,
+      "td": 1
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Texas A&M",
+      "site": "H",
+      "result": "W 35-6",
+      "att": 14,
+      "yds": 63,
+      "td": 1
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "McNeese State",
+      "site": "H",
+      "result": "W 63-14",
+      "att": 16,
+      "yds": 78,
+      "td": 1
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "Kentucky",
+      "site": "A",
+      "result": "L 34-35",
+      "att": 16,
+      "yds": 56,
+      "td": 0
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Mississippi State",
+      "site": "H",
+      "result": "W 31-0",
+      "att": 18,
+      "yds": 84,
+      "td": 0
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Auburn",
+      "site": "A",
+      "result": "W 38-17",
+      "att": 21,
+      "yds": 101,
+      "td": 1
+     }
+    ]
+   },
    "706-50304168": {
     "name": "Will Henderson III",
     "team": "UTSA",
@@ -6228,92 +6314,6 @@
       "result": "W 42-19",
       "att": 15,
       "yds": 102,
-      "td": 1
-     }
-    ]
-   },
-   "365-50312359": {
-    "name": "Dilin Jones",
-    "team": "LSU",
-    "pos": "RB",
-    "line": {
-     "g": 8,
-     "att": 149,
-     "yds": 658,
-     "td": 6
-    },
-    "url": "https://cfbstats.com/2026/player/365/50312359/rushing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-05",
-      "opp": "Clemson",
-      "site": "H",
-      "result": "W 51-10",
-      "att": 23,
-      "yds": 113,
-      "td": 2
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Louisiana Tech",
-      "site": "H",
-      "result": "W 45-14",
-      "att": 18,
-      "yds": 66,
-      "td": 0
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Ole Miss",
-      "site": "A",
-      "result": "L 24-32",
-      "att": 23,
-      "yds": 106,
-      "td": 1
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "Texas A&M",
-      "site": "H",
-      "result": "W 35-6",
-      "att": 14,
-      "yds": 63,
-      "td": 1
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "McNeese State",
-      "site": "H",
-      "result": "W 63-14",
-      "att": 16,
-      "yds": 78,
-      "td": 1
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "Kentucky",
-      "site": "A",
-      "result": "L 34-35",
-      "att": 16,
-      "yds": 56,
-      "td": 0
-     },
-     {
-      "date": "2026-10-17",
-      "opp": "Mississippi State",
-      "site": "H",
-      "result": "W 31-0",
-      "att": 18,
-      "yds": 84,
-      "td": 0
-     },
-     {
-      "date": "2026-10-24",
-      "opp": "Auburn",
-      "site": "A",
-      "result": "W 38-17",
-      "att": 21,
-      "yds": 92,
       "td": 1
      }
     ]
@@ -8694,7 +8694,7 @@
     "line": {
      "g": 8,
      "att": 125,
-     "yds": 603,
+     "yds": 602,
      "td": 4
     },
     "url": "https://cfbstats.com/2026/player/657/1255664/rushing/gamelog.html",
@@ -8768,14 +8768,14 @@
       "site": "A",
       "result": "L 7-24",
       "att": 11,
-      "yds": 8,
+      "yds": 7,
       "td": 0
      }
     ]
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-10-25T19:19+00:00"
+  "retrieved_at": "2026-10-25T22:52+00:00"
  },
  "wr": {
   "season": 2026,
@@ -8802,8 +8802,8 @@
      "742-1202486",
      "229-2001308",
      "51-1177895",
-     "434-2002189",
      "301-2001442",
+     "434-2002189",
      "497-2002927",
      "545-2000121",
      "430-2002349",
@@ -8825,8 +8825,8 @@
      "503-1188575",
      "688-1127550",
      "229-2001308",
-     "107-2003289",
      "301-2001442",
+     "107-2003289",
      "430-2002349",
      "518-50312218",
      "392-50281408",
@@ -8923,8 +8923,8 @@
      "229-1178330",
      "229-2001308",
      "51-1177895",
-     "434-2002189",
      "301-2001442",
+     "434-2002189",
      "497-2002927",
      "430-2002349",
      "157-50292529",
@@ -10047,6 +10047,83 @@
      }
     ]
    },
+   "301-2001442": {
+    "name": "Collin Dixon",
+    "team": "Illinois",
+    "pos": "WR",
+    "line": {
+     "g": 7,
+     "rec": 54,
+     "yds": 678,
+     "td": 10
+    },
+    "url": "https://cfbstats.com/2026/player/301/2001442/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-03",
+      "opp": "UAB",
+      "site": "H",
+      "result": "W 42-23",
+      "rec": 6,
+      "yds": 70,
+      "td": 2
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Duke",
+      "site": "H",
+      "result": "L 27-31",
+      "rec": 11,
+      "yds": 166,
+      "td": 3
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Southern Illinois",
+      "site": "H",
+      "result": "W 48-10",
+      "rec": 8,
+      "yds": 131,
+      "td": 2
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Ohio State",
+      "site": "A",
+      "result": "L 19-42",
+      "rec": 5,
+      "yds": 63,
+      "td": 0
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Purdue",
+      "site": "H",
+      "result": "L 17-24",
+      "rec": 10,
+      "yds": 116,
+      "td": 1
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "Michigan State",
+      "site": "A",
+      "result": "W 38-37",
+      "rec": 7,
+      "yds": 62,
+      "td": 1
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Oregon",
+      "site": "H",
+      "result": "W 21-10",
+      "rec": 7,
+      "yds": 70,
+      "td": 1
+     }
+    ]
+   },
    "434-2002189": {
     "name": "Cayden Lee",
     "team": "Missouri",
@@ -10121,83 +10198,6 @@
       "rec": 5,
       "yds": 62,
       "td": 0
-     }
-    ]
-   },
-   "301-2001442": {
-    "name": "Collin Dixon",
-    "team": "Illinois",
-    "pos": "WR",
-    "line": {
-     "g": 7,
-     "rec": 53,
-     "yds": 673,
-     "td": 10
-    },
-    "url": "https://cfbstats.com/2026/player/301/2001442/receiving/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-03",
-      "opp": "UAB",
-      "site": "H",
-      "result": "W 42-23",
-      "rec": 6,
-      "yds": 70,
-      "td": 2
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Duke",
-      "site": "H",
-      "result": "L 27-31",
-      "rec": 11,
-      "yds": 166,
-      "td": 3
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Southern Illinois",
-      "site": "H",
-      "result": "W 48-10",
-      "rec": 8,
-      "yds": 131,
-      "td": 2
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "Ohio State",
-      "site": "A",
-      "result": "L 19-42",
-      "rec": 5,
-      "yds": 63,
-      "td": 0
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Purdue",
-      "site": "H",
-      "result": "L 17-24",
-      "rec": 10,
-      "yds": 116,
-      "td": 1
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "Michigan State",
-      "site": "A",
-      "result": "W 38-37",
-      "rec": 7,
-      "yds": 62,
-      "td": 1
-     },
-     {
-      "date": "2026-10-24",
-      "opp": "Oregon",
-      "site": "H",
-      "result": "W 21-10",
-      "rec": 6,
-      "yds": 65,
-      "td": 1
      }
     ]
    },
@@ -12979,6 +12979,6 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-10-25T19:19+00:00"
+  "retrieved_at": "2026-10-25T22:53+00:00"
  }
 }
