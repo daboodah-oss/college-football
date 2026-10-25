@@ -1,14 +1,12 @@
 {
- "at": "2026-10-25T13:57-04:00",
+ "at": "2026-10-25T15:19-04:00",
  "failed": [
-  "ap_poll",
   "team_2026",
   "team_2025",
   "team_2024"
  ],
  "log": [
   "[registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids",
-  "[ap_poll] FAILED: no AP poll in ESPN rankings",
   "[team] Air Force 2026 REFUSED by validator",
   "[team] Buffalo 2026 REFUSED by validator",
   "[team] Colorado State 2026 REFUSED by validator",
@@ -73,7 +71,7 @@
   "[natref] 2026 qb: 44 players stored (0 game logs fetched, 44 unchanged)",
   "[natref] 2026 rb: 50 players stored (0 game logs fetched, 50 unchanged)",
   "[natref] 2026 wr: 51 players stored (0 game logs fetched, 51 unchanged)",
-  "FAILED sections: ap_poll, team_2026, team_2025, team_2024"
+  "FAILED sections: team_2026, team_2025, team_2024"
  ],
  "finals_seen": [
   "401856634",

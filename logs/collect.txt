@@ -1,19 +1,8 @@
-Traceback (most recent call last):
-  File "/home/runner/work/college-football/college-football/collect.py", line 111, in run
-    out = fn(*a, **k)
-          ^^^^^^^^^^^
-  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 260, in <lambda>
-    C.section("ap_poll")(lambda: ap_poll(C, U))()
-                                 ^^^^^^^^^^^^^
-  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 187, in ap_poll
-    if not r: raise ValueError("no AP poll in ESPN rankings")
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: no AP poll in ESPN rankings
 [registry] 2024: sealed (134 teams)
 [registry] 2025: sealed (136 teams)
 STORED registry 2026: 138 of 138 cfbstats teams joined to ESPN
 [registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids
-[ap_poll] FAILED: no AP poll in ESPN rankings
+STORED AP Top 25 2026-10-25 1 Miami, 2 Ohio State, 3 Georgia, 4 Indiana, 5 Notre Dame ...
 REFUSED: team Air Force 2026 2026-10-10: total yards 433 != rushing 439 + passing 0
 [team] Air Force 2026 REFUSED by validator
 [team] Akron 2026: no new games; still matches cfbstats
@@ -136,8 +125,7 @@ REFUSED: team-season Texas 2026: ESPN box scores disagree with cfbstats season t
 [team] Texas A&M 2026: no new games; still matches cfbstats
 [team] Texas State 2026: no new games; still matches cfbstats
 [team] Texas Tech 2026: no new games; still matches cfbstats
-[team] Toledo 2026: no new games; still matches cfbstats
-[team] Troy 2026: no new games; still matches cfbstatsTraceback (most recent call last):
+[team] Toledo 2026: no new games; still matches cfbstatsTraceback (most recent call last):
   File "/home/runner/work/college-football/college-football/collect.py", line 111, in run
     out = fn(*a, **k)
           ^^^^^^^^^^^
@@ -160,6 +148,7 @@ Traceback (most recent call last):
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ValueError: 2025 team seasons not stored: Army (refused, see above); East Carolina (refused, see above); Georgia Southern (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Navy (refused, see above); Oregon State (refused, see above); Utah State (refused, see above); Washington State (refused, see above)
 
+[team] Troy 2026: no new games; still matches cfbstats
 [team] Tulane 2026: no new games; still matches cfbstats
 [team] Tulsa 2026: no new games; still matches cfbstats
 [team] UAB 2026: no new games; still matches cfbstats
@@ -247,8 +236,7 @@ REFUSED: team-season Marshall 2024: ESPN box scores disagree with cfbstats seaso
 [team] Marshall 2024 REFUSED by validator
 REFUSED: team-season Massachusetts 2024: ESPN box scores disagree with cfbstats season totals {'third_att': (174, 171)} (ESPN, cfbstats)
 [team] Massachusetts 2024 REFUSED by validator
-REFUSED: team-season Middle Tennessee 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1086, 1068), 'total_yds': (4219, 4201)} (ESPN, cfbstats)
-[team] Middle Tennessee 2024 REFUSED by validatorTraceback (most recent call last):
+REFUSED: team-season Middle Tennessee 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1086, 1068), 'total_yds': (4219, 4201)} (ESPN, cfbstats)Traceback (most recent call last):
   File "/home/runner/work/college-football/college-football/collect.py", line 111, in run
     out = fn(*a, **k)
           ^^^^^^^^^^^
@@ -260,6 +248,7 @@ REFUSED: team-season Middle Tennessee 2024: ESPN box scores disagree with cfbsta
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ValueError: 2024 team seasons not stored: Arizona (refused, see above); Arkansas (refused, see above); Boston College (refused, see above); Central Michigan (refused, see above); Coastal Carolina (refused, see above); Georgia Tech (refused, see above); Houston (refused, see above); Illinois (refused, see above); James Madison (refused, see above); Kansas (refused, see above); LSU (refused, see above); Liberty (refused, see above); Louisiana (refused, see above); Louisiana Tech (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Northwestern (refused, see above); Ohio (refused, see above); Ohio State (refused, see above); Old Dominion (refused, see above); San José State (refused, see above); Temple (refused, see above); Toledo (refused, see above); UAB (refused, see above); South Florida (refused, see above); UTSA (refused, see above); Utah State (refused, see above); West Virginia (refused, see above); Western Kentucky (refused, see above)
 
+[team] Middle Tennessee 2024 REFUSED by validator
 REFUSED: team-season NC State 2024: ESPN box scores disagree with cfbstats season totals {'pa': (392, 386)} (ESPN, cfbstats)
 [team] NC State 2024 REFUSED by validator
 REFUSED: team-season Northwestern 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1190, 1182), 'total_yds': (3421, 3413)} (ESPN, cfbstats)
@@ -302,4 +291,4 @@ STORED natref 2026 wr: 51 players through 2026-10-24
 [natref] 2024 qb: sealed (47 players)
 [natref] 2024 rb: sealed (45 players)
 [natref] 2024 wr: sealed (60 players)
-FAILED sections: ap_poll, team_2026, team_2025, team_2024
+FAILED sections: team_2026, team_2025, team_2024
