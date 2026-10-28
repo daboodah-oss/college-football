@@ -7794,11 +7794,28 @@
        "to_gained": 3,
        "third_conv": 5,
        "third_att": 12
+      },
+      {
+       "event": "401871071",
+       "date": "2026-10-27",
+       "opp": "Western Kentucky",
+       "opp_id": "98",
+       "site": "A",
+       "pf": 35,
+       "pa": 21,
+       "result": "W 35-21",
+       "total_yds": 495,
+       "rush_yds": 81,
+       "pass_yds": 414,
+       "to_lost": 1,
+       "to_gained": 2,
+       "third_conv": 6,
+       "third_att": 12
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-21T18:56+00:00",
-     "check": "cfbstats season totals matched through 2026-10-20",
+     "retrieved_at": "2026-10-28T19:54+00:00",
+     "check": "cfbstats season totals matched through 2026-10-27, except rushing yards 877 in ESPN box scores vs 876 on cfbstats; total yards 3,167 in ESPN box scores vs 3,166 on cfbstats",
      "cfbstats_url": "https://cfbstats.com/2026/team/180/index.html"
     },
     "2025": {
@@ -15720,11 +15737,28 @@
        "to_gained": 1,
        "third_conv": 8,
        "third_att": 20
+      },
+      {
+       "event": "401871071",
+       "date": "2026-10-27",
+       "opp": "Delaware",
+       "opp_id": "48",
+       "site": "H",
+       "pf": 21,
+       "pa": 35,
+       "result": "L 21-35",
+       "total_yds": 477,
+       "rush_yds": 232,
+       "pass_yds": 245,
+       "to_lost": 2,
+       "to_gained": 1,
+       "third_conv": 4,
+       "third_att": 14
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-18T19:51+00:00",
-     "check": "cfbstats season totals matched through 2026-10-17",
+     "retrieved_at": "2026-10-28T19:54+00:00",
+     "check": "cfbstats season totals matched through 2026-10-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/772/index.html"
     },
     "2025": {
@@ -61366,11 +61400,28 @@
        "to_gained": 2,
        "third_conv": 3,
        "third_att": 13
+      },
+      {
+       "event": "401871072",
+       "date": "2026-10-27",
+       "opp": "Missouri State",
+       "opp_id": "2623",
+       "site": "A",
+       "pf": 3,
+       "pa": 24,
+       "result": "L 3-24",
+       "total_yds": 284,
+       "rush_yds": 26,
+       "pass_yds": 258,
+       "to_lost": 1,
+       "to_gained": 0,
+       "third_conv": 5,
+       "third_att": 14
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-24T22:03+00:00",
-     "check": "cfbstats season totals matched through 2026-10-23",
+     "retrieved_at": "2026-10-28T19:54+00:00",
+     "check": "cfbstats season totals matched through 2026-10-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/624/index.html"
     },
     "2025": {
@@ -63692,11 +63743,28 @@
        "to_gained": 1,
        "third_conv": 4,
        "third_att": 8
+      },
+      {
+       "event": "401871072",
+       "date": "2026-10-27",
+       "opp": "Sam Houston",
+       "opp_id": "2534",
+       "site": "H",
+       "pf": 24,
+       "pa": 3,
+       "result": "W 24-3",
+       "total_yds": 313,
+       "rush_yds": 129,
+       "pass_yds": 184,
+       "to_lost": 0,
+       "to_gained": 1,
+       "third_conv": 4,
+       "third_att": 11
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-21T18:57+00:00",
-     "check": "cfbstats season totals matched through 2026-10-20",
+     "retrieved_at": "2026-10-28T19:54+00:00",
+     "check": "cfbstats season totals matched through 2026-10-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/669/index.html"
     },
     "2025": {
@@ -69692,6 +69760,6 @@
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-10-25T22:49+00:00"
+  "retrieved_at": "2026-10-28T19:53+00:00"
  }
 }

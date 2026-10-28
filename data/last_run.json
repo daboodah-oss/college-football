@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T18:53-04:00",
+ "at": "2026-10-28T15:57-04:00",
  "failed": [
   "team_2026",
   "team_2025",
@@ -69,8 +69,8 @@
   "[team] 2024: 134 registry teams; 102 sealed, 0 collected, 32 not stored",
   "[team_2024] FAILED: 2024 team seasons not stored: Arizona (refused, see above); Arkansas (refused, see above); Boston College (refused, see above); Central Michigan (refused, see above); Coastal Carolina (refused, see above); Georgia Tech (refused, see above); Houston (refused, see above); Illinois (refused, see above); James Madison (refused, see above); Kansas (refused, see above); LSU (refused, see above); Liberty (refused, see above); Louisiana (refused, see above); Louisiana Tech (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Northwestern (refused, see above); Ohio (refused, see above); Ohio State (refused, see above); Old Dominion (refused, see above); San Jos\u00e9 State (refused, see above); Temple (refused, see above); Toledo (refused, see above); UAB (refused, see above); South Florida (refused, see above); UTSA (refused, see above); Utah State (refused, see above); West Virginia (refused, see above); Western Kentucky (refused, see above)",
   "[natref] 2026 qb: 44 players stored (2 game logs fetched, 42 unchanged)",
-  "[natref] 2026 rb: 50 players stored (2 game logs fetched, 48 unchanged)",
-  "[natref] 2026 wr: 51 players stored (1 game logs fetched, 50 unchanged)",
+  "[natref] 2026 rb: 50 players stored (1 game logs fetched, 49 unchanged)",
+  "[natref] 2026 wr: 51 players stored (2 game logs fetched, 49 unchanged)",
   "FAILED sections: team_2026, team_2025, team_2024"
  ],
  "finals_seen": [
@@ -634,6 +634,8 @@
   "401871068",
   "401871069",
   "401871070",
+  "401871071",
+  "401871072",
   "401871089",
   "401871090",
   "401871091",

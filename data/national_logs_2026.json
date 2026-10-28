@@ -1,7 +1,7 @@
 {
  "qb": {
   "season": 2026,
-  "data_through": "2026-10-24",
+  "data_through": "2026-10-27",
   "positions": [
    "QB"
   ],
@@ -807,7 +807,7 @@
      "g": 8,
      "att": 256,
      "cmp": 180,
-     "yds": 2163,
+     "yds": 2173,
      "td": 17,
      "int": 8
     },
@@ -904,10 +904,10 @@
       "result": "W 38-17",
       "att": 45,
       "cmp": 32,
-      "yds": 378,
+      "yds": 388,
       "td": 3,
       "int": 0,
-      "src_rating": 163.67
+      "src_rating": 165.53
      }
     ]
    },
@@ -1129,7 +1129,7 @@
     "pos": "QB",
     "line": {
      "g": 8,
-     "att": 261,
+     "att": 262,
      "cmp": 187,
      "yds": 2140,
      "td": 17,
@@ -1202,12 +1202,12 @@
       "opp": "California",
       "site": "A",
       "result": "L 20-25",
-      "att": 30,
+      "att": 31,
       "cmp": 21,
       "yds": 288,
       "td": 1,
       "int": 0,
-      "src_rating": 161.64
+      "src_rating": 156.43
      },
      {
       "date": "2026-10-17",
@@ -4685,11 +4685,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-10-25T22:52+00:00"
+  "retrieved_at": "2026-10-28T19:57+00:00"
  },
  "rb": {
   "season": 2026,
-  "data_through": "2026-10-24",
+  "data_through": "2026-10-27",
   "positions": [
    "RB"
   ],
@@ -4713,8 +4713,8 @@
      "521-50258899",
      "306-50216801",
      "674-50312286",
-     "365-50312359",
      "706-50304168",
+     "365-50312359",
      "587-50304624",
      "732-50291238"
     ],
@@ -6146,92 +6146,6 @@
      }
     ]
    },
-   "365-50312359": {
-    "name": "Dilin Jones",
-    "team": "LSU",
-    "pos": "RB",
-    "line": {
-     "g": 8,
-     "att": 149,
-     "yds": 667,
-     "td": 6
-    },
-    "url": "https://cfbstats.com/2026/player/365/50312359/rushing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-05",
-      "opp": "Clemson",
-      "site": "H",
-      "result": "W 51-10",
-      "att": 23,
-      "yds": 113,
-      "td": 2
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Louisiana Tech",
-      "site": "H",
-      "result": "W 45-14",
-      "att": 18,
-      "yds": 66,
-      "td": 0
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Ole Miss",
-      "site": "A",
-      "result": "L 24-32",
-      "att": 23,
-      "yds": 106,
-      "td": 1
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "Texas A&M",
-      "site": "H",
-      "result": "W 35-6",
-      "att": 14,
-      "yds": 63,
-      "td": 1
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "McNeese State",
-      "site": "H",
-      "result": "W 63-14",
-      "att": 16,
-      "yds": 78,
-      "td": 1
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "Kentucky",
-      "site": "A",
-      "result": "L 34-35",
-      "att": 16,
-      "yds": 56,
-      "td": 0
-     },
-     {
-      "date": "2026-10-17",
-      "opp": "Mississippi State",
-      "site": "H",
-      "result": "W 31-0",
-      "att": 18,
-      "yds": 84,
-      "td": 0
-     },
-     {
-      "date": "2026-10-24",
-      "opp": "Auburn",
-      "site": "A",
-      "result": "W 38-17",
-      "att": 21,
-      "yds": 101,
-      "td": 1
-     }
-    ]
-   },
    "706-50304168": {
     "name": "Will Henderson III",
     "team": "UTSA",
@@ -6314,6 +6228,92 @@
       "result": "W 42-19",
       "att": 15,
       "yds": 102,
+      "td": 1
+     }
+    ]
+   },
+   "365-50312359": {
+    "name": "Dilin Jones",
+    "team": "LSU",
+    "pos": "RB",
+    "line": {
+     "g": 8,
+     "att": 149,
+     "yds": 657,
+     "td": 6
+    },
+    "url": "https://cfbstats.com/2026/player/365/50312359/rushing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-05",
+      "opp": "Clemson",
+      "site": "H",
+      "result": "W 51-10",
+      "att": 23,
+      "yds": 113,
+      "td": 2
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Louisiana Tech",
+      "site": "H",
+      "result": "W 45-14",
+      "att": 18,
+      "yds": 66,
+      "td": 0
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Ole Miss",
+      "site": "A",
+      "result": "L 24-32",
+      "att": 23,
+      "yds": 106,
+      "td": 1
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Texas A&M",
+      "site": "H",
+      "result": "W 35-6",
+      "att": 14,
+      "yds": 63,
+      "td": 1
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "McNeese State",
+      "site": "H",
+      "result": "W 63-14",
+      "att": 16,
+      "yds": 78,
+      "td": 1
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "Kentucky",
+      "site": "A",
+      "result": "L 34-35",
+      "att": 16,
+      "yds": 56,
+      "td": 0
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Mississippi State",
+      "site": "H",
+      "result": "W 31-0",
+      "att": 18,
+      "yds": 84,
+      "td": 0
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Auburn",
+      "site": "A",
+      "result": "W 38-17",
+      "att": 21,
+      "yds": 91,
       "td": 1
      }
     ]
@@ -8775,11 +8775,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-10-25T22:52+00:00"
+  "retrieved_at": "2026-10-28T19:57+00:00"
  },
  "wr": {
   "season": 2026,
-  "data_through": "2026-10-24",
+  "data_through": "2026-10-27",
   "positions": [
    "WR",
    "TE"
@@ -8792,8 +8792,8 @@
      "518-50312218",
      "415-50304358",
      "688-1127550",
-     "28-2000413",
      "669-1238956",
+     "28-2000413",
      "587-50312274",
      "306-50304327",
      "749-2000598",
@@ -8857,9 +8857,9 @@
      "587-50312274",
      "688-1127550",
      "28-2000413",
+     "669-1238956",
      "306-50304327",
      "254-1228138",
-     "669-1238956",
      "497-2002927",
      "521-1178652",
      "365-2000690",
@@ -8917,8 +8917,8 @@
      "415-50304358",
      "688-1127550",
      "28-2000413",
-     "669-1238956",
      "587-50312274",
+     "669-1238956",
      "749-2000598",
      "229-1178330",
      "229-2001308",
@@ -9250,6 +9250,92 @@
      }
     ]
    },
+   "669-1238956": {
+    "name": "Isaiah Myers",
+    "team": "MO State",
+    "pos": "WR",
+    "line": {
+     "g": 8,
+     "rec": 41,
+     "yds": 873,
+     "td": 8
+    },
+    "url": "https://cfbstats.com/2026/player/669/1238956/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-05",
+      "opp": "Texas A&M",
+      "site": "A",
+      "result": "L 0-50",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Lindenwood",
+      "site": "H",
+      "result": "W 48-14",
+      "rec": 5,
+      "yds": 155,
+      "td": 1
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Marshall",
+      "site": "H",
+      "result": "L 24-30",
+      "rec": 7,
+      "yds": 141,
+      "td": 0
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "SMU",
+      "site": "A",
+      "result": "L 24-34",
+      "rec": 5,
+      "yds": 46,
+      "td": 1
+     },
+     {
+      "date": "2026-10-08",
+      "opp": "Western Kentucky",
+      "site": "A",
+      "result": "L 13-34",
+      "rec": 3,
+      "yds": 77,
+      "td": 1
+     },
+     {
+      "date": "2026-10-14",
+      "opp": "Kennesaw State",
+      "site": "H",
+      "result": "W 24-21",
+      "rec": 7,
+      "yds": 135,
+      "td": 2
+     },
+     {
+      "date": "2026-10-20",
+      "opp": "Delaware",
+      "site": "A",
+      "result": "L 38-61",
+      "rec": 11,
+      "yds": 242,
+      "td": 2
+     },
+     {
+      "date": "2026-10-27",
+      "opp": "Sam Houston State",
+      "site": "H",
+      "result": "W 24-3",
+      "rec": 3,
+      "yds": 77,
+      "td": 1
+     }
+    ]
+   },
    "28-2000413": {
     "name": "Reed Harris",
     "team": "Arizona State",
@@ -9324,83 +9410,6 @@
       "rec": 6,
       "yds": 147,
       "td": 0
-     }
-    ]
-   },
-   "669-1238956": {
-    "name": "Isaiah Myers",
-    "team": "MO State",
-    "pos": "WR",
-    "line": {
-     "g": 7,
-     "rec": 38,
-     "yds": 796,
-     "td": 7
-    },
-    "url": "https://cfbstats.com/2026/player/669/1238956/receiving/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-05",
-      "opp": "Texas A&M",
-      "site": "A",
-      "result": "L 0-50",
-      "rec": 0,
-      "yds": 0,
-      "td": 0
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Lindenwood",
-      "site": "H",
-      "result": "W 48-14",
-      "rec": 5,
-      "yds": 155,
-      "td": 1
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Marshall",
-      "site": "H",
-      "result": "L 24-30",
-      "rec": 7,
-      "yds": 141,
-      "td": 0
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "SMU",
-      "site": "A",
-      "result": "L 24-34",
-      "rec": 5,
-      "yds": 46,
-      "td": 1
-     },
-     {
-      "date": "2026-10-08",
-      "opp": "Western Kentucky",
-      "site": "A",
-      "result": "L 13-34",
-      "rec": 3,
-      "yds": 77,
-      "td": 1
-     },
-     {
-      "date": "2026-10-14",
-      "opp": "Kennesaw State",
-      "site": "H",
-      "result": "W 24-21",
-      "rec": 7,
-      "yds": 135,
-      "td": 2
-     },
-     {
-      "date": "2026-10-20",
-      "opp": "Delaware",
-      "site": "A",
-      "result": "L 38-61",
-      "rec": 11,
-      "yds": 242,
-      "td": 2
      }
     ]
    },
@@ -11895,9 +11904,9 @@
     "team": "Sam Houston",
     "pos": "WR",
     "line": {
-     "g": 7,
-     "rec": 15,
-     "yds": 329,
+     "g": 8,
+     "rec": 18,
+     "yds": 392,
      "td": 3
     },
     "url": "https://cfbstats.com/2026/player/624/1240520/receiving/gamelog.html",
@@ -11964,6 +11973,15 @@
       "rec": 4,
       "yds": 117,
       "td": 1
+     },
+     {
+      "date": "2026-10-27",
+      "opp": "Missouri State",
+      "site": "A",
+      "result": "L 3-24",
+      "rec": 3,
+      "yds": 63,
+      "td": 0
      }
     ]
    },
@@ -12979,6 +12997,6 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-10-25T22:53+00:00"
+  "retrieved_at": "2026-10-28T19:57+00:00"
  }
 }
