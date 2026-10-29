@@ -8728,11 +8728,28 @@
        "to_gained": 0,
        "third_conv": 3,
        "third_att": 10
+      },
+      {
+       "event": "401871057",
+       "date": "2026-10-28",
+       "opp": "New Mexico State",
+       "opp_id": "166",
+       "site": "A",
+       "pf": 24,
+       "pa": 0,
+       "result": "W 24-0",
+       "total_yds": 433,
+       "rush_yds": 324,
+       "pass_yds": 109,
+       "to_lost": 2,
+       "to_gained": 1,
+       "third_conv": 6,
+       "third_att": 11
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-18T19:48+00:00",
-     "check": "cfbstats season totals matched through 2026-10-17",
+     "retrieved_at": "2026-10-29T23:41+00:00",
+     "check": "cfbstats season totals matched through 2026-10-28",
      "cfbstats_url": "https://cfbstats.com/2026/team/315/index.html"
     },
     "2025": {
@@ -23918,11 +23935,28 @@
        "to_gained": 2,
        "third_conv": 2,
        "third_att": 12
+      },
+      {
+       "event": "401871057",
+       "date": "2026-10-28",
+       "opp": "Jacksonville State",
+       "opp_id": "55",
+       "site": "H",
+       "pf": 0,
+       "pa": 24,
+       "result": "L 0-24",
+       "total_yds": 221,
+       "rush_yds": 192,
+       "pass_yds": 29,
+       "to_lost": 1,
+       "to_gained": 2,
+       "third_conv": 7,
+       "third_att": 14
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-24T22:03+00:00",
-     "check": "cfbstats season totals matched through 2026-10-23",
+     "retrieved_at": "2026-10-29T23:41+00:00",
+     "check": "cfbstats season totals matched through 2026-10-28",
      "cfbstats_url": "https://cfbstats.com/2026/team/472/index.html"
     },
     "2024": {
@@ -44665,11 +44699,28 @@
        "to_gained": 0,
        "third_conv": 6,
        "third_att": 17
+      },
+      {
+       "event": "401871058",
+       "date": "2026-10-28",
+       "opp": "Middle Tennessee",
+       "opp_id": "2393",
+       "site": "A",
+       "pf": 44,
+       "pa": 28,
+       "result": "W 44-28",
+       "total_yds": 318,
+       "rush_yds": 112,
+       "pass_yds": 206,
+       "to_lost": 2,
+       "to_gained": 2,
+       "third_conv": 2,
+       "third_att": 10
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-24T03:10+00:00",
-     "check": "cfbstats season totals matched through 2026-10-22",
+     "retrieved_at": "2026-10-29T23:41+00:00",
+     "check": "cfbstats season totals matched through 2026-10-28",
      "cfbstats_url": "https://cfbstats.com/2026/team/1157/index.html"
     },
     "2025": {
@@ -57103,11 +57154,28 @@
        "to_gained": 1,
        "third_conv": 3,
        "third_att": 13
+      },
+      {
+       "event": "401871058",
+       "date": "2026-10-28",
+       "opp": "Kennesaw State",
+       "opp_id": "338",
+       "site": "H",
+       "pf": 28,
+       "pa": 44,
+       "result": "L 28-44",
+       "total_yds": 380,
+       "rush_yds": 197,
+       "pass_yds": 183,
+       "to_lost": 2,
+       "to_gained": 2,
+       "third_conv": 11,
+       "third_att": 20
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-21T18:57+00:00",
-     "check": "cfbstats season totals matched through 2026-10-20",
+     "retrieved_at": "2026-10-29T23:41+00:00",
+     "check": "cfbstats season totals matched through 2026-10-28",
      "cfbstats_url": "https://cfbstats.com/2026/team/419/index.html"
     }
    }
@@ -69760,6 +69828,6 @@
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-10-29T00:26+00:00"
+  "retrieved_at": "2026-10-29T23:41+00:00"
  }
 }
