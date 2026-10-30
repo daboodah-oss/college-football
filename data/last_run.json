@@ -1,10 +1,10 @@
 {
- "at": "2026-10-29T19:42-04:00",
+ "at": "2026-10-30T00:17-04:00",
  "failed": [
   "team_2026"
  ],
  "log": [
-  "quick check: new final 2026-10-28 Kennesaw State Owls at Middle Tennessee Blue Raiders",
+  "quick check: new final 2026-10-29 Florida Atlantic Owls at North Texas Mean Green",
   "[registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids",
   "[team] Air Force 2026 REFUSED by validator",
   "[team] Buffalo 2026 REFUSED by validator",
@@ -19,9 +19,9 @@
   "[team] Utah State 2026 REFUSED by validator",
   "[team] 2026: 138 registry teams; 0 sealed, 127 collected, 11 not stored",
   "[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); Colorado State (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); Old Dominion (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); Utah (refused, see above); Utah State (refused, see above)",
-  "[natref] 2026 qb: 44 players stored (2 game logs fetched, 42 unchanged)",
-  "[natref] 2026 rb: 50 players stored (2 game logs fetched, 48 unchanged)",
-  "[natref] 2026 wr: 51 players stored (2 game logs fetched, 49 unchanged)",
+  "[natref] 2026 qb: 44 players stored (0 game logs fetched, 44 unchanged)",
+  "[natref] 2026 rb: 50 players stored (0 game logs fetched, 50 unchanged)",
+  "[natref] 2026 wr: 51 players stored (0 game logs fetched, 51 unchanged)",
   "FAILED sections: team_2026"
  ],
  "finals_seen": [
@@ -424,6 +424,7 @@
   "401862809",
   "401862810",
   "401862811",
+  "401862812",
   "401864424",
   "401864425",
   "401864432",
@@ -560,6 +561,7 @@
   "401869960",
   "401869961",
   "401869962",
+  "401869963",
   "401869965",
   "401869966",
   "401869967",
