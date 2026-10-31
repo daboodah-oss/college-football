@@ -1,4 +1,4 @@
-quick check: new final 2026-10-30 Tulane Green Wave at Charlotte 49ers
+quick check: new final 2026-10-30 Kent State Golden Flashes at Sacramento State Hornets
 STORED registry 2026: 138 of 138 cfbstats teams joined to ESPN
 [registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids
 STORED AP Top 25 2026-10-25 1 Miami, 2 Ohio State, 3 Georgia, 4 Indiana, 5 Notre Dame ...
@@ -16,7 +16,7 @@ REFUSED: team Air Force 2026 2026-10-10: total yards 433 != rushing 439 + passin
 [team] BYU 2026: no new games; still matches cfbstats
 [team] Ball State 2026: no new games; still matches cfbstats
 STORED team Baylor 2026: 8 games
-[team] Baylor 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-29, ESPN's latest game is 2026-10-30
+[team] Baylor 2026: 8 games; matches cfbstats through 2026-10-30
 [team] Boise State 2026: no new games; still matches cfbstats
 [team] Boston College 2026: no new games; still matches cfbstats
 [team] Bowling Green 2026: no new games; still matches cfbstats
@@ -25,7 +25,7 @@ REFUSED: team-season Buffalo 2026: ESPN box scores disagree with cfbstats season
 [team] California 2026: no new games; still matches cfbstats
 [team] Central Michigan 2026: no new games; still matches cfbstats
 STORED team Charlotte 2026: 8 games
-[team] Charlotte 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-29, ESPN's latest game is 2026-10-30
+[team] Charlotte 2026: 8 games; matches cfbstats through 2026-10-30
 [team] Cincinnati 2026: no new games; still matches cfbstats
 [team] Clemson 2026: no new games; still matches cfbstats
 [team] Coastal Carolina 2026: no new games; still matches cfbstats
@@ -39,8 +39,7 @@ REFUSED: team-season Colorado State 2026: ESPN box scores disagree with cfbstats
 [team] Eastern Michigan 2026: no new games; still matches cfbstats
 [team] Florida International 2026: no new games; still matches cfbstats
 [team] Florida 2026: no new games; still matches cfbstats
-STORED team Florida Atlantic 2026: 8 games
-[team] Florida Atlantic 2026: 8 games; matches cfbstats through 2026-10-29
+[team] Florida Atlantic 2026: no new games; still matches cfbstats
 [team] Florida State 2026: no new games; still matches cfbstats
 [team] Fresno State 2026: no new games; still matches cfbstats
 [team] Georgia 2026: no new games; still matches cfbstats
@@ -55,12 +54,12 @@ REFUSED: team Hawai'i 2026 2026-08-29: total yards 322 != rushing 46 + passing 2
 [team] Iowa 2026: no new games; still matches cfbstats
 [team] Iowa State 2026: no new games; still matches cfbstats
 [team] Jacksonville State 2026: no new games; still matches cfbstats
-STORED team James Madison 2026: 9 games
-[team] James Madison 2026: 9 games; matches cfbstats through 2026-10-29
+[team] James Madison 2026: no new games; still matches cfbstats
 [team] Kansas 2026: no new games; still matches cfbstats
 [team] Kansas State 2026: no new games; still matches cfbstats
 [team] Kennesaw State 2026: no new games; still matches cfbstats
-[team] Kent State 2026: no new games; still matches cfbstats
+STORED team Kent State 2026: 9 games
+[team] Kent State 2026: 9 games; matches cfbstats through 2026-10-30
 [team] Kentucky 2026: no new games; still matches cfbstats
 [team] LSU 2026: no new games; still matches cfbstats
 [team] Liberty 2026: no new games; still matches cfbstats
@@ -90,8 +89,7 @@ REFUSED: team-season Memphis 2026: ESPN box scores disagree with cfbstats season
 [team] New Mexico State 2026: no new games; still matches cfbstats
 [team] North Carolina 2026: no new games; still matches cfbstats
 [team] North Dakota State 2026: no new games; still matches cfbstats
-STORED team North Texas 2026: 8 games
-[team] North Texas 2026: 8 games; matches cfbstats through 2026-10-29
+[team] North Texas 2026: no new games; still matches cfbstats
 [team] Northern Illinois 2026: no new games; still matches cfbstats
 [team] Northwestern 2026: no new games; still matches cfbstats
 [team] Notre Dame 2026: no new games; still matches cfbstats
@@ -124,7 +122,10 @@ REFUSED: team Stanford 2026 2026-08-29: total yards 483 != rushing 158 + passing
 [team] TCU 2026: no new games; still matches cfbstats
 [team] Temple 2026: no new games; still matches cfbstats
 [team] Tennessee 2026: no new games; still matches cfbstats
-REFUSED: team-season Texas 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1017, 1023), 'total_yds': (2587, 2593)} (ESPN, cfbstats)Traceback (most recent call last):
+REFUSED: team-season Texas 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1017, 1023), 'total_yds': (2587, 2593)} (ESPN, cfbstats)
+[team] Texas 2026 REFUSED by validator
+[team] Texas A&M 2026: no new games; still matches cfbstats
+[team] Texas State 2026: no new games; still matches cfbstatsTraceback (most recent call last):
   File "/home/runner/work/college-football/college-football/collect.py", line 111, in run
     out = fn(*a, **k)
           ^^^^^^^^^^^
@@ -136,19 +137,15 @@ REFUSED: team-season Texas 2026: ESPN box scores disagree with cfbstats season t
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ValueError: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); Colorado State (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); Old Dominion (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); Utah (refused, see above); Utah State (refused, see above)
 
-[team] Texas 2026 REFUSED by validator
-[team] Texas A&M 2026: no new games; still matches cfbstats
-[team] Texas State 2026: no new games; still matches cfbstats
 [team] Texas Tech 2026: no new games; still matches cfbstats
 [team] Toledo 2026: no new games; still matches cfbstats
-STORED team Troy 2026: 8 games
-[team] Troy 2026: 8 games; matches cfbstats through 2026-10-29
+[team] Troy 2026: no new games; still matches cfbstats
 STORED team Tulane 2026: 8 games
-[team] Tulane 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-29, ESPN's latest game is 2026-10-30
+[team] Tulane 2026: 8 games; matches cfbstats through 2026-10-30
 [team] Tulsa 2026: no new games; still matches cfbstats
 [team] UAB 2026: no new games; still matches cfbstats
 STORED team UCF 2026: 8 games
-[team] UCF 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-29, ESPN's latest game is 2026-10-30
+[team] UCF 2026: 8 games; matches cfbstats through 2026-10-30
 [team] UCLA 2026: no new games; still matches cfbstats
 [team] UNLV 2026: no new games; still matches cfbstats
 [team] USC 2026: no new games; still matches cfbstats
@@ -172,10 +169,10 @@ REFUSED: team-season Utah State 2026: ESPN box scores disagree with cfbstats sea
 [team] Wyoming 2026: no new games; still matches cfbstats
 [team] 2026: 138 registry teams; 0 sealed, 127 collected, 11 not stored
 [team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); Colorado State (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); Old Dominion (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); Utah (refused, see above); Utah State (refused, see above)
-[natref] 2026 qb: 44 players stored (3 game logs fetched, 41 unchanged)
-STORED natref 2026 qb: 44 players through 2026-10-29
-[natref] 2026 rb: 50 players stored (1 game logs fetched, 49 unchanged)
-STORED natref 2026 rb: 50 players through 2026-10-29
-[natref] 2026 wr: 51 players stored (6 game logs fetched, 45 unchanged)
-STORED natref 2026 wr: 51 players through 2026-10-29
+[natref] 2026 qb: 46 players stored (3 game logs fetched, 43 unchanged)
+STORED natref 2026 qb: 46 players through 2026-10-30
+[natref] 2026 rb: 50 players stored (2 game logs fetched, 48 unchanged)
+STORED natref 2026 rb: 50 players through 2026-10-30
+[natref] 2026 wr: 52 players stored (4 game logs fetched, 48 unchanged)
+STORED natref 2026 wr: 52 players through 2026-10-30
 FAILED sections: team_2026

@@ -1,10 +1,10 @@
 {
- "at": "2026-10-30T23:58-04:00",
+ "at": "2026-10-31T06:15-04:00",
  "failed": [
   "team_2026"
  ],
  "log": [
-  "quick check: new final 2026-10-30 Tulane Green Wave at Charlotte 49ers",
+  "quick check: new final 2026-10-30 Kent State Golden Flashes at Sacramento State Hornets",
   "[registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids",
   "[team] Air Force 2026 REFUSED by validator",
   "[team] Buffalo 2026 REFUSED by validator",
@@ -19,9 +19,9 @@
   "[team] Utah State 2026 REFUSED by validator",
   "[team] 2026: 138 registry teams; 0 sealed, 127 collected, 11 not stored",
   "[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); Colorado State (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); Old Dominion (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); Utah (refused, see above); Utah State (refused, see above)",
-  "[natref] 2026 qb: 44 players stored (3 game logs fetched, 41 unchanged)",
-  "[natref] 2026 rb: 50 players stored (1 game logs fetched, 49 unchanged)",
-  "[natref] 2026 wr: 51 players stored (6 game logs fetched, 45 unchanged)",
+  "[natref] 2026 qb: 46 players stored (3 game logs fetched, 43 unchanged)",
+  "[natref] 2026 rb: 50 players stored (2 game logs fetched, 48 unchanged)",
+  "[natref] 2026 wr: 52 players stored (4 game logs fetched, 48 unchanged)",
   "FAILED sections: team_2026"
  ],
  "finals_seen": [
@@ -518,6 +518,7 @@
   "401866448",
   "401866449",
   "401866450",
+  "401866451",
   "401866476",
   "401866477",
   "401866478",

@@ -33137,8 +33137,8 @@
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-31T03:56+00:00",
-     "check": "not cross-checked yet: cfbstats is through 2026-10-29, ESPN's latest game is 2026-10-30",
+     "retrieved_at": "2026-10-31T10:14+00:00",
+     "check": "cfbstats season totals matched through 2026-10-30",
      "cfbstats_url": "https://cfbstats.com/2026/team/51/index.html"
     },
     "2024": {
@@ -50441,8 +50441,8 @@
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-31T03:57+00:00",
-     "check": "not cross-checked yet: cfbstats is through 2026-10-29, ESPN's latest game is 2026-10-30",
+     "retrieved_at": "2026-10-31T10:14+00:00",
+     "check": "cfbstats season totals matched through 2026-10-30",
      "cfbstats_url": "https://cfbstats.com/2026/team/128/index.html"
     }
    }
@@ -55337,11 +55337,28 @@
        "to_gained": 2,
        "third_conv": 4,
        "third_att": 11
+      },
+      {
+       "event": "401866451",
+       "date": "2026-10-30",
+       "opp": "Sacramento State",
+       "opp_id": "16",
+       "site": "A",
+       "pf": 10,
+       "pa": 31,
+       "result": "L 10-31",
+       "total_yds": 302,
+       "rush_yds": 93,
+       "pass_yds": 209,
+       "to_lost": 5,
+       "to_gained": 1,
+       "third_conv": 4,
+       "third_att": 13
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-25T08:32+00:00",
-     "check": "cfbstats season totals matched through 2026-10-24",
+     "retrieved_at": "2026-10-31T10:14+00:00",
+     "check": "cfbstats season totals matched through 2026-10-30",
      "cfbstats_url": "https://cfbstats.com/2026/team/331/index.html"
     },
     "2025": {
@@ -57769,8 +57786,8 @@
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-31T03:56+00:00",
-     "check": "not cross-checked yet: cfbstats is through 2026-10-29, ESPN's latest game is 2026-10-30",
+     "retrieved_at": "2026-10-31T10:14+00:00",
+     "check": "cfbstats season totals matched through 2026-10-30",
      "cfbstats_url": "https://cfbstats.com/2026/team/458/index.html"
     },
     "2025": {
@@ -68034,8 +68051,8 @@
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-31T03:57+00:00",
-     "check": "not cross-checked yet: cfbstats is through 2026-10-29, ESPN's latest game is 2026-10-30",
+     "retrieved_at": "2026-10-31T10:14+00:00",
+     "check": "cfbstats season totals matched through 2026-10-30",
      "cfbstats_url": "https://cfbstats.com/2026/team/718/index.html"
     },
     "2025": {
@@ -69964,6 +69981,6 @@
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-10-31T03:56+00:00"
+  "retrieved_at": "2026-10-31T10:14+00:00"
  }
 }
