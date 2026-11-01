@@ -4725,9 +4725,9 @@
     "pos": "QB",
     "line": {
      "g": 8,
-     "att": 279,
-     "cmp": 190,
-     "yds": 1919,
+     "att": 278,
+     "cmp": 189,
+     "yds": 1924,
      "td": 11,
      "int": 2
     },
@@ -4822,12 +4822,12 @@
       "opp": "Appalachian State",
       "site": "H",
       "result": "W 19-3",
-      "att": 47,
-      "cmp": 36,
-      "yds": 318,
+      "att": 46,
+      "cmp": 35,
+      "yds": 323,
       "td": 0,
       "int": 0,
-      "src_rating": 133.43
+      "src_rating": 135.07
      }
     ]
    },
@@ -5281,7 +5281,7 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-01T20:53+00:00"
+  "retrieved_at": "2026-11-01T23:58+00:00"
  },
  "rb": {
   "season": 2026,
@@ -9600,7 +9600,7 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-01T20:53+00:00"
+  "retrieved_at": "2026-11-01T23:58+00:00"
  },
  "wr": {
   "season": 2026,
@@ -14282,6 +14282,6 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-01T20:53+00:00"
+  "retrieved_at": "2026-11-01T23:58+00:00"
  }
 }
