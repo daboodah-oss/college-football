@@ -1,95 +1,193 @@
-quick check: new final 2026-10-31 Miami Hurricanes at North Carolina Tar Heels
-STORED registry 2026: 138 of 138 cfbstats teams joined to ESPN
-[registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids
+Traceback (most recent call last):
+  File "/home/runner/work/college-football/college-football/collect.py", line 111, in run
+    out = fn(*a, **k)
+          ^^^^^^^^^^^
+  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 259, in <lambda>
+    C.section(f"registry_{s}")(lambda s=s: registry(C, U, s))()
+                                           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 91, in registry
+    ids = cfb_team_ids(C, season)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 39, in cfb_team_ids
+    html = C.get(f"https://cfbstats.com/{season}/team/index.html").text
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/college-football/college-football/collect.py", line 94, in get
+    r.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://cfbstats.com/2026/team/index.html
+quick check: new final 2026-10-31 Texas State Bobcats at Boise State Broncos
+[registry_2026] FAILED: 404 Client Error: Not Found for url: https://cfbstats.com/2026/team/index.html
 STORED AP Top 25 2026-10-25 1 Miami, 2 Ohio State, 3 Georgia, 4 Indiana, 5 Notre Dame ...
 REFUSED: team Air Force 2026 2026-10-10: total yards 433 != rushing 439 + passing 0
 [team] Air Force 2026 REFUSED by validator
 [team] Akron 2026: no new games; still matches cfbstats
 [team] Alabama 2026: no new games; still matches cfbstats
 STORED team App State 2026: 8 games
-[team] App State 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
-[team] Arizona 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Arizona State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+[team] App State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/27/index.html)
+STORED team Arizona 2026: 8 games
+[team] Arizona 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/29/index.html)
+STORED team Arizona State 2026: 8 games
+[team] Arizona State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/28/index.html)
 STORED team Arkansas 2026: 8 games
-[team] Arkansas 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
+[team] Arkansas 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/31/index.html)
 [team] Arkansas State 2026: no new games; still matches cfbstats
 STORED team Army 2026: 8 games
-[team] Army 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
-[team] Auburn 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] BYU 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+[team] Army 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/725/index.html)
+STORED team Auburn 2026: 8 games
+[team] Auburn 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/37/index.html)
+STORED team BYU 2026: 8 games
+[team] BYU 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/77/index.html)
 [team] Ball State 2026: no new games; still matches cfbstats
 [team] Baylor 2026: no new games; still matches cfbstats
-[team] Boise State 2026: no new games; still matches cfbstats
-[team] Boston College 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Bowling Green 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-REFUSED: team-season Buffalo 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1411, 1405), 'total_yds': (2648, 2642)} (ESPN, cfbstats)
-[team] Buffalo 2026 REFUSED by validator
-[team] California 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Boise State 2026: 8 games
+[team] Boise State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/66/index.html)
+STORED team Boston College 2026: 8 games
+[team] Boston College 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/67/index.html)
+STORED team Bowling Green 2026: 9 games
+[team] Bowling Green 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/71/index.html)
+STORED team Buffalo 2026: 8 games
+[team] Buffalo 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/86/index.html)
+STORED team California 2026: 9 games
+[team] California 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/107/index.html)
 [team] Central Michigan 2026: no new games; still matches cfbstats
 [team] Charlotte 2026: no new games; still matches cfbstats
-[team] Cincinnati 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Cincinnati 2026: 8 games
+[team] Cincinnati 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/140/index.html)
 STORED team Clemson 2026: 8 games
-[team] Clemson 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
-[team] Coastal Carolina 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Colorado 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Colorado State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] UConn 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+[team] Clemson 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/147/index.html)
+STORED team Coastal Carolina 2026: 8 games
+[team] Coastal Carolina 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/149/index.html)
+STORED team Colorado 2026: 8 games
+[team] Colorado 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/157/index.html)
+STORED team Colorado State 2026: 8 games
+[team] Colorado State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/156/index.html)
+STORED team UConn 2026: 8 games
+[team] UConn 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/164/index.html)
 [team] Delaware 2026: no new games; still matches cfbstats
-[team] Duke 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] East Carolina 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Duke 2026: 8 games
+[team] Duke 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/193/index.html)
+STORED team East Carolina 2026: 8 games
+[team] East Carolina 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/196/index.html)
 [team] Eastern Michigan 2026: no new games; still matches cfbstats
-[team] Florida International 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Florida 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Florida International 2026: 8 games
+[team] Florida International 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/231/index.html)
+STORED team Florida 2026: 8 games
+[team] Florida 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/235/index.html)
 [team] Florida Atlantic 2026: no new games; still matches cfbstats
 STORED team Florida State 2026: 8 games
-[team] Florida State 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
-[team] Fresno State 2026: no new games; still matches cfbstats
-[team] Georgia 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+[team] Florida State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/234/index.html)
+STORED team Fresno State 2026: 8 games
+[team] Fresno State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/96/index.html)
+STORED team Georgia 2026: 8 games
+[team] Georgia 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/257/index.html)
 STORED team Georgia Southern 2026: 8 games
-[team] Georgia Southern 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
-[team] Georgia State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+[team] Georgia Southern 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/253/index.html)
+STORED team Georgia State 2026: 8 games
+[team] Georgia State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/254/index.html)
 STORED team Georgia Tech 2026: 8 games
-[team] Georgia Tech 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
+[team] Georgia Tech 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/255/index.html)
 REFUSED: team Hawai'i 2026 2026-08-29: total yards 322 != rushing 46 + passing 279
 [team] Hawai'i 2026 REFUSED by validator
 [team] Houston 2026: no new games; still matches cfbstats
-[team] Illinois 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Indiana 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Iowa 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Illinois 2026: 8 games
+[team] Illinois 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/301/index.html)
+STORED team Indiana 2026: 9 games
+[team] Indiana 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/306/index.html)
+STORED team Iowa 2026: 8 games
+[team] Iowa 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/312/index.html)
 STORED team Iowa State 2026: 8 games
-[team] Iowa State 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
+[team] Iowa State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/311/index.html)
 [team] Jacksonville State 2026: no new games; still matches cfbstats
 [team] James Madison 2026: no new games; still matches cfbstats
-[team] Kansas 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Kansas State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Kansas 2026: 8 games
+[team] Kansas 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/328/index.html)
+STORED team Kansas State 2026: 8 games
+[team] Kansas State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/327/index.html)
 [team] Kennesaw State 2026: no new games; still matches cfbstats
 [team] Kent State 2026: no new games; still matches cfbstats
 [team] Kentucky 2026: no new games; still matches cfbstats
 [team] LSU 2026: no new games; still matches cfbstats
-[team] Liberty 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Liberty 2026: 8 games
+[team] Liberty 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/355/index.html)
 [team] Louisiana 2026: no new games; still matches cfbstats
-[team] Louisiana Tech 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] UL Monroe 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Louisville 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Marshall 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Maryland 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Louisiana Tech 2026: 8 games
+[team] Louisiana Tech 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/366/index.html)
+STORED team UL Monroe 2026: 8 games
+[team] UL Monroe 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/498/index.html)
+STORED team Louisville 2026: 8 games
+[team] Louisville 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/367/index.html)
+STORED team Marshall 2026: 8 games
+[team] Marshall 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/388/index.html)
+STORED team Maryland 2026: 8 games
+[team] Maryland 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/392/index.html)
 [team] Massachusetts 2026: no new games; still matches cfbstats
 STORED team Memphis 2026: 9 games
-[team] Memphis 2026: 9 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
+[team] Memphis 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/404/index.html)
 STORED team Miami 2026: 8 games
-[team] Miami 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
+[team] Miami 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/415/index.html)
 [team] Miami (OH) 2026: no new games; still matches cfbstats
-[team] Michigan 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Michigan 2026: 8 games
+[team] Michigan 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/418/index.html)
 [team] Michigan State 2026: no new games; still matches cfbstats
 [team] Middle Tennessee 2026: no new games; still matches cfbstats
-[team] Minnesota 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Minnesota 2026: 8 games
+[team] Minnesota 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/428/index.html)
 STORED team Mississippi State 2026: 8 games
-[team] Mississippi State 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
+[team] Mississippi State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/430/index.html)
 STORED team Missouri 2026: 8 games
-[team] Missouri 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
+[team] Missouri 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/434/index.html)
 [team] Missouri State 2026: no new games; still matches cfbstats
-[team] NC State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Navy 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)Traceback (most recent call last):
+STORED team NC State 2026: 8 games
+[team] NC State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/490/index.html)
+STORED team Navy 2026: 8 games
+[team] Navy 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/726/index.html)
+STORED team Nebraska 2026: 8 games
+[team] Nebraska 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/463/index.html)
+STORED team Nevada 2026: 8 games
+[team] Nevada 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/466/index.html)
+STORED team New Mexico 2026: 8 games
+[team] New Mexico 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/473/index.html)
+[team] New Mexico State 2026: no new games; still matches cfbstats
+STORED team North Carolina 2026: 8 games
+[team] North Carolina 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/457/index.html)
+STORED team North Dakota State 2026: 9 games
+[team] North Dakota State 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/493/index.html)
+[team] North Texas 2026: no new games; still matches cfbstats
+STORED team Northern Illinois 2026: 8 games
+[team] Northern Illinois 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/503/index.html)
+STORED team Northwestern 2026: 8 games
+[team] Northwestern 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/509/index.html)
+STORED team Notre Dame 2026: 8 games
+[team] Notre Dame 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/513/index.html)
+[team] Ohio 2026: no new games; still matches cfbstats
+STORED team Ohio State 2026: 8 games
+[team] Ohio State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/518/index.html)
+STORED team Oklahoma 2026: 8 games
+[team] Oklahoma 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/522/index.html)
+STORED team Oklahoma State 2026: 8 games
+[team] Oklahoma State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/521/index.html)
+STORED team Old Dominion 2026: 9 games
+[team] Old Dominion 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/523/index.html)
+STORED team Ole Miss 2026: 8 games
+[team] Ole Miss 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/433/index.html)
+STORED team Oregon 2026: 8 games
+[team] Oregon 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/529/index.html)
+STORED team Oregon State 2026: 8 games
+[team] Oregon State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/528/index.html)
+STORED team Penn State 2026: 8 games
+[team] Penn State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/539/index.html)
+STORED team Pittsburgh 2026: 9 games
+[team] Pittsburgh 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/545/index.html)
+STORED team Purdue 2026: 8 games
+[team] Purdue 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/559/index.html)
+[team] Rice 2026: no new games; still matches cfbstats
+STORED team Rutgers 2026: 8 games
+[team] Rutgers 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/587/index.html)
+STORED team SMU 2026: 8 games
+[team] SMU 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/663/index.html)
+REFUSED: team Sacramento State 2026 2026-08-29: total yards 268 != rushing 49 + passing 222
+[team] Sacramento State 2026 REFUSED by validatorTraceback (most recent call last):
   File "/home/runner/work/college-football/college-football/collect.py", line 111, in run
     out = fn(*a, **k)
           ^^^^^^^^^^^
@@ -99,91 +197,80 @@ STORED team Missouri 2026: 8 games
   File "/home/runner/work/college-football/college-football/collect_tabs.py", line 213, in team_seasons
     if failed: raise ValueError(f"{season} team seasons not stored: " + "; ".join(failed))
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); Hawai'i (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above)
+ValueError: 2026 team seasons not stored: Air Force (refused, see above); Hawai'i (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above)
 
-STORED team Nebraska 2026: 8 games
-[team] Nebraska 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
-[team] Nevada 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] New Mexico 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] New Mexico State 2026: no new games; still matches cfbstats
-STORED team North Carolina 2026: 8 games
-[team] North Carolina 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
-[team] North Dakota State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] North Texas 2026: no new games; still matches cfbstats
-[team] Northern Illinois 2026: no new games; still matches cfbstats
-[team] Northwestern 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Notre Dame 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Ohio 2026: no new games; still matches cfbstats
-STORED team Ohio State 2026: 8 games
-[team] Ohio State 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
-[team] Oklahoma 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-STORED team Oklahoma State 2026: 8 games
-[team] Oklahoma State 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
-[team] Old Dominion 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Ole Miss 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Oregon 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Oregon State 2026: no new games; still matches cfbstats
-[team] Penn State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-STORED team Pittsburgh 2026: 9 games
-[team] Pittsburgh 2026: 9 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
-[team] Purdue 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Rice 2026: no new games; still matches cfbstats
-[team] Rutgers 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] SMU 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-REFUSED: team Sacramento State 2026 2026-08-29: total yards 268 != rushing 49 + passing 222
-[team] Sacramento State 2026 REFUSED by validator
 [team] Sam Houston 2026: no new games; still matches cfbstats
 STORED team San Diego State 2026: 9 games
-[team] San Diego State 2026: 9 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
-[team] San José State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] South Alabama 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] South Carolina 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Southern Miss 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+[team] San Diego State 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/626/index.html)
+STORED team San José State 2026: 9 games
+[team] San José State 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/630/index.html)
+STORED team South Alabama 2026: 8 games
+[team] South Alabama 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/646/index.html)
+STORED team South Carolina 2026: 8 games
+[team] South Carolina 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/648/index.html)
+STORED team Southern Miss 2026: 8 games
+[team] Southern Miss 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/664/index.html)
 REFUSED: team Stanford 2026 2026-08-29: total yards 483 != rushing 158 + passing 310
 [team] Stanford 2026 REFUSED by validator
-[team] Syracuse 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] TCU 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Temple 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Syracuse 2026: 8 games
+[team] Syracuse 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/688/index.html)
+STORED team TCU 2026: 8 games
+[team] TCU 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/698/index.html)
+STORED team Temple 2026: 8 games
+[team] Temple 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/690/index.html)
 [team] Tennessee 2026: no new games; still matches cfbstats
 STORED team Texas 2026: 8 games
-[team] Texas 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
+[team] Texas 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/703/index.html)
 [team] Texas A&M 2026: no new games; still matches cfbstats
-[team] Texas State 2026: no new games; still matches cfbstats
-[team] Texas Tech 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Texas State 2026: 8 games
+[team] Texas State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/670/index.html)
+STORED team Texas Tech 2026: 8 games
+[team] Texas Tech 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/700/index.html)
 [team] Toledo 2026: no new games; still matches cfbstats
 [team] Troy 2026: no new games; still matches cfbstats
 [team] Tulane 2026: no new games; still matches cfbstats
 [team] Tulsa 2026: no new games; still matches cfbstats
-[team] UAB 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team UAB 2026: 8 games
+[team] UAB 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/9/index.html)
 [team] UCF 2026: no new games; still matches cfbstats
-[team] UCLA 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] UNLV 2026: no new games; still matches cfbstats
+STORED team UCLA 2026: 8 games
+[team] UCLA 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/110/index.html)
+STORED team UNLV 2026: 8 games
+[team] UNLV 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/465/index.html)
 STORED team USC 2026: 9 games
-[team] USC 2026: 9 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
-[team] South Florida 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] UTEP 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+[team] USC 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/657/index.html)
+STORED team South Florida 2026: 8 games
+[team] South Florida 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/651/index.html)
+STORED team UTEP 2026: 8 games
+[team] UTEP 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/704/index.html)
 [team] UTSA 2026: no new games; still matches cfbstats
-[team] Utah 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Utah State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Utah 2026: 8 games
+[team] Utah 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/732/index.html)
+STORED team Utah State 2026: 8 games
+[team] Utah State 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/731/index.html)
 [team] Vanderbilt 2026: no new games; still matches cfbstats
-[team] Virginia 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Virginia 2026: 9 games
+[team] Virginia 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/746/index.html)
 [team] Virginia Tech 2026: no new games; still matches cfbstats
-[team] Wake Forest 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Wake Forest 2026: 8 games
+[team] Wake Forest 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/749/index.html)
 STORED team Washington 2026: 8 games
-[team] Washington 2026: 8 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
+[team] Washington 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/756/index.html)
 STORED team Washington State 2026: 9 games
-[team] Washington State 2026: 9 games; not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31
+[team] Washington State 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/754/index.html)
 [team] West Virginia 2026: no new games; still matches cfbstats
 [team] Western Kentucky 2026: no new games; still matches cfbstats
-[team] Western Michigan 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
-[team] Wisconsin 2026: unchanged (not cross-checked yet: cfbstats is through 2026-10-30, ESPN's latest game is 2026-10-31)
+STORED team Western Michigan 2026: 9 games
+[team] Western Michigan 2026: 9 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/774/index.html)
+STORED team Wisconsin 2026: 8 games
+[team] Wisconsin 2026: 8 games; not cross-checked: cfbstats season totals unreadable (404 Client Error: Not Found for url: https://cfbstats.com/2026/team/796/index.html)
 [team] Wyoming 2026: no new games; still matches cfbstats
-[team] 2026: 138 registry teams; 0 sealed, 133 collected, 5 not stored
-[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); Hawai'i (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above)
-[natref] 2026 qb: 46 players stored (0 game logs fetched, 46 unchanged)
-STORED natref 2026 qb: 46 players through 2026-10-30
-[natref] 2026 rb: 50 players stored (0 game logs fetched, 50 unchanged)
-STORED natref 2026 rb: 50 players through 2026-10-30
-[natref] 2026 wr: 52 players stored (0 game logs fetched, 52 unchanged)
-STORED natref 2026 wr: 52 players through 2026-10-30
-FAILED sections: team_2026
+[team] 2026: 138 registry teams; 0 sealed, 134 collected, 4 not stored
+[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Hawai'i (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above)
+[natref] 2026 qb: 17 players stored (29 game logs fetched, 17 unchanged); dropped 29: Braden Atkinson (Oregon State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/528/50215853/passing/gamelog.html); Drew Mestemaker (Oklahoma State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/521/50259623/passing/gamelog.html); Marcus Stokes (Memphis): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/404/2003393/passing/gamelog.html); Jayden Maiava (USC): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/657/1177721/passing/gamelog.html); Noah Fifita (Arizona): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/29/1173984/passing/gamelog.html); Darian Mensah (Miami (FL)): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/415/2000040/passing/gamelog.html); Kevin Jennings (SMU): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/663/1180322/passing/gamelog.html); Jaden Craig (TCU): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/698/1176123/passing/gamelog.html); Davis Warren (Stanford): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/674/1127454/passing/gamelog.html); Trinidad Chambliss (Miss): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/433/1136057/passing/gamelog.html); Gio Lopez (Wake Forest): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/749/2001667/passing/gamelog.html); Lincoln Kienholz (Louisville): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/367/2000170/passing/gamelog.html); Deuce Bailey (Coastal Carolina): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/149/50212936/passing/gamelog.html); Josh Hoover (Indiana): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/306/1175417/passing/gamelog.html); Brad Jackson (Texas St): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/670/50207426/passing/gamelog.html); Devon Dampier (Utah): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/732/2001675/passing/gamelog.html); CJ Carr (Notre Dame): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/513/50310480/passing/gamelog.html); Gunner Stockton (Georgia): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/257/1174433/passing/gamelog.html); Blake Baker (La Tech): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/366/2003103/passing/gamelog.html); Aidan Chiles (Northwestern): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/509/2000732/passing/gamelog.html); Deshawn Purdie (Liberty): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/355/50216829/passing/gamelog.html); Michael Hawkins Jr. (WVU): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/768/50311242/passing/gamelog.html); Aaron Philo (Florida): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/235/50217278/passing/gamelog.html); Alberto Mendoza (Georgia Tech): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/255/50312109/passing/gamelog.html); Malik Washington (Maryland): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/392/50311887/passing/gamelog.html); Max Johnson (Georgia Southern): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/253/1111779/passing/gamelog.html); Jaron-Keawe Sagapolutele (California): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/107/50262706/passing/gamelog.html); Anthony Colandrea (Nebraska): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/463/2001513/passing/gamelog.html); Drake Lindsey (Minnesota): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/428/50216959/passing/gamelog.html)
+STORED natref 2026 qb: 17 players through 2026-10-31
+[natref] 2026 rb: 14 players stored (35 game logs fetched, 14 unchanged); dropped 35: Dylan Riley (Boise St): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/66/50282868/rushing/gamelog.html); Jamal Roberts (Missouri): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/434/2000108/rushing/gamelog.html); Nate Sheppard (Duke): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/193/50260473/rushing/gamelog.html); Aiden Flora (Iowa State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/311/50303320/rushing/gamelog.html); Jaylin Carter (Memphis): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/404/50218273/rushing/gamelog.html); Torrance Burgess Jr. (Texas St): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/670/1180411/rushing/gamelog.html); Caleb Hawkins (Oklahoma State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/521/50258899/rushing/gamelog.html); Jadan Baugh (Florida): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/235/50309802/rushing/gamelog.html); J'Koby Williams (Texas Tech): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/700/50257165/rushing/gamelog.html); Cole Tabb (Cincinnati): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/140/50312285/rushing/gamelog.html); Micah Ford (Stanford): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/674/50312286/rushing/gamelog.html); Turbo Richard (Indiana): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/306/50216801/rushing/gamelog.html); Antwan Raymond (Rutgers): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/587/50304624/rushing/gamelog.html); Steven Robinson (USM): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/664/1255517/rushing/gamelog.html); Wayne Knight (UCLA): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/110/1174594/rushing/gamelog.html); Scottre Humphrey (New Mexico): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/473/2000290/rushing/gamelog.html); Wayshawn Parker (Utah): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/732/50291238/rushing/gamelog.html); Kendrick Raphael (SMU): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/663/2001305/rushing/gamelog.html); Fame Ijeboi (Purdue): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/559/50309829/rushing/gamelog.html); Mark Fletcher Jr. (Miami (FL)): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/415/2000887/rushing/gamelog.html); Durell Robinson (Colorado State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/156/2003309/rushing/gamelog.html); Joseph Himon II (Northwestern): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/509/1177828/rushing/gamelog.html); Keyjuan Brown (Louisville): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/367/2002330/rushing/gamelog.html); Isaac Brown (Louisville): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/367/50304348/rushing/gamelog.html); Jamar Searcy (Wake Forest): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/749/50287768/rushing/gamelog.html); Dwight Phillips, Jr. (Georgia): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/257/50312099/rushing/gamelog.html); Daniel Bray (Utah): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/732/50287296/rushing/gamelog.html); Javian Mallory (Miami (FL)): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/415/50212896/rushing/gamelog.html); Kam Davis (Liberty): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/355/50310437/rushing/gamelog.html); Jonaz Walton (Notre Dame): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/513/50304155/rushing/gamelog.html); Qwantavius Wiggins (Georgia St): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/254/50320887/rushing/gamelog.html); Quincy Craig (Arizona): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/29/1176590/rushing/gamelog.html); Jabari Bates (San Jose State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/630/1177958/rushing/gamelog.html); Jalen Buckley (W Mich): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/774/1180537/rushing/gamelog.html); King Miller (USC): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/657/1255664/rushing/gamelog.html)
+STORED natref 2026 rb: 14 players through 2026-10-31
+[natref] 2026 wr: 20 players stored (33 game logs fetched, 20 unchanged); dropped 33: Jesse Legree (Oregon State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/528/50341534/receiving/gamelog.html); Jeremiah Smith (Ohio State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/518/50312218/receiving/gamelog.html); Malachi Toney (Miami (FL)): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/415/50304358/receiving/gamelog.html); Umari Hatcher (Syracuse): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/688/1127550/receiving/gamelog.html); Charlie Becker (Indiana): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/306/50304327/receiving/gamelog.html); Carlos Hernandez (Wake Forest): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/749/2000598/receiving/gamelog.html); Reed Harris (Arizona State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/28/2000413/receiving/gamelog.html); Collin Dixon (Illinois): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/301/2001442/receiving/gamelog.html); KJ Duff (Rutgers): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/587/50312274/receiving/gamelog.html); Griffin Wilde (Northwestern): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/509/2001877/receiving/gamelog.html); Cayden Lee (Missouri): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/434/2002189/receiving/gamelog.html); Joseph Williams (Colorado): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/157/50292529/receiving/gamelog.html); Justin Bowick (Oklahoma State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/521/1178652/receiving/gamelog.html); Wyatt Young (Oklahoma State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/521/50212082/receiving/gamelog.html); DeAree Rogers (N Illinois): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/503/1188575/receiving/gamelog.html); Chase Hendricks (California): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/107/2003289/receiving/gamelog.html); Chris Durr Jr. (Maryland): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/392/50281408/receiving/gamelog.html); Anthony Evans III (Mississippi State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/430/2002349/receiving/gamelog.html); Carson Clark (San Jose State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/630/50311021/receiving/gamelog.html); Dezmen Roebuck (Washington): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/756/50284098/receiving/gamelog.html); Nick Marsh (Indiana): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/306/50312177/receiving/gamelog.html); Rodshaun Dorsey (Georgia St): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/254/1228138/receiving/gamelog.html); Donovan Olugbode (Missouri): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/434/50304512/receiving/gamelog.html); Kwazi Gilmer (Nebraska): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/463/50312328/receiving/gamelog.html); Anthony Eager (USA): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/646/2000620/receiving/gamelog.html); DJ Black (South Carolina): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/648/1185034/receiving/gamelog.html); Makai Jackson (Liberty): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/355/1176676/receiving/gamelog.html); Kayden McGee (UNLV): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/465/50291896/receiving/gamelog.html); Cataurus Hicks (Pittsburgh): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/545/2000121/receiving/gamelog.html); Jamal Polite Jr. (Iowa State): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/311/50371124/receiving/gamelog.html); Colton Hinton (Coastal Carolina): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/149/2002758/receiving/gamelog.html); Isaiah Mizell (Arizona): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/29/50258780/receiving/gamelog.html); Jayvan Boggs (FSU): game log not read (404 Client Error: Not Found for url: https://cfbstats.com/2026/player/234/50311721/receiving/gamelog.html)
+STORED natref 2026 wr: 20 players through 2026-10-31
+FAILED sections: registry_2026, team_2026
