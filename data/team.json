@@ -48288,11 +48288,28 @@
        "to_gained": 1,
        "third_conv": 7,
        "third_att": 13
+      },
+      {
+       "event": "401866453",
+       "date": "2026-11-03",
+       "opp": "Ohio",
+       "opp_id": "195",
+       "site": "H",
+       "pf": 20,
+       "pa": 28,
+       "result": "L 20-28",
+       "total_yds": 392,
+       "rush_yds": 160,
+       "pass_yds": 232,
+       "to_lost": 2,
+       "to_gained": 1,
+       "third_conv": 5,
+       "third_att": 12
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-25T08:31+00:00",
-     "check": "cfbstats season totals matched through 2026-10-24",
+     "retrieved_at": "2026-11-04T20:56+00:00",
+     "check": "cfbstats season totals matched through 2026-11-03",
      "cfbstats_url": "https://cfbstats.com/2026/team/5/index.html"
     },
     "2024": {
@@ -71579,6 +71596,6 @@
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-11-01T23:55+00:00"
+  "retrieved_at": "2026-11-04T20:56+00:00"
  }
 }
