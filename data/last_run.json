@@ -1,10 +1,10 @@
 {
- "at": "2026-11-05T19:37-05:00",
+ "at": "2026-11-06T00:00-05:00",
  "failed": [
   "team_2026"
  ],
  "log": [
-  "quick check: new final 2026-11-04 Ball State Cardinals at Massachusetts Minutemen",
+  "quick check: new final 2026-11-05 UTSA Roadrunners at Florida Atlantic Owls",
   "[registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids",
   "[team] Air Force 2026 REFUSED by validator",
   "[team] Buffalo 2026 REFUSED by validator",
@@ -24,9 +24,9 @@
   "[team] Utah State 2026 REFUSED by validator",
   "[team] 2026: 138 registry teams; 0 sealed, 122 collected, 16 not stored",
   "[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); California (refused, see above); Colorado State (refused, see above); Florida (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); Navy (refused, see above); Ohio (refused, see above); Old Dominion (refused, see above); SMU (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); Utah (refused, see above); Utah State (refused, see above)",
-  "[natref] 2026 qb: 46 players stored (2 game logs fetched, 44 unchanged)",
-  "[natref] 2026 rb: 51 players stored (2 game logs fetched, 49 unchanged)",
-  "[natref] 2026 wr: 53 players stored (1 game logs fetched, 52 unchanged)",
+  "[natref] 2026 qb: 46 players stored (0 game logs fetched, 46 unchanged)",
+  "[natref] 2026 rb: 51 players stored (0 game logs fetched, 51 unchanged)",
+  "[natref] 2026 wr: 53 players stored (0 game logs fetched, 53 unchanged)",
   "FAILED sections: team_2026"
  ],
  "finals_seen": [
@@ -469,6 +469,7 @@
   "401862814",
   "401862815",
   "401862816",
+  "401862817",
   "401864424",
   "401864425",
   "401864432",
@@ -618,6 +619,7 @@
   "401869961",
   "401869962",
   "401869963",
+  "401869964",
   "401869965",
   "401869966",
   "401869967",
