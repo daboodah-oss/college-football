@@ -17313,11 +17313,28 @@
        "to_gained": 0,
        "third_conv": 2,
        "third_att": 14
+      },
+      {
+       "event": "401866455",
+       "date": "2026-11-04",
+       "opp": "Ball State",
+       "opp_id": "2050",
+       "site": "H",
+       "pf": 31,
+       "pa": 30,
+       "result": "W 31-30",
+       "total_yds": 455,
+       "rush_yds": 153,
+       "pass_yds": 302,
+       "to_lost": 2,
+       "to_gained": 0,
+       "third_conv": 4,
+       "third_att": 10
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-24T22:03+00:00",
-     "check": "cfbstats season totals matched through 2026-10-23",
+     "retrieved_at": "2026-11-06T00:36+00:00",
+     "check": "cfbstats season totals matched through 2026-11-04",
      "cfbstats_url": "https://cfbstats.com/2026/team/400/index.html"
     }
    }
@@ -26958,11 +26975,28 @@
        "to_gained": 0,
        "third_conv": 6,
        "third_att": 12
+      },
+      {
+       "event": "401866454",
+       "date": "2026-11-03",
+       "opp": "Buffalo",
+       "opp_id": "2084",
+       "site": "H",
+       "pf": 31,
+       "pa": 34,
+       "result": "L 31-34",
+       "total_yds": 350,
+       "rush_yds": 196,
+       "pass_yds": 154,
+       "to_lost": 0,
+       "to_gained": 2,
+       "third_conv": 5,
+       "third_att": 15
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-25T08:33+00:00",
-     "check": "cfbstats season totals matched through 2026-10-24",
+     "retrieved_at": "2026-11-06T00:36+00:00",
+     "check": "cfbstats season totals matched through 2026-11-04",
      "cfbstats_url": "https://cfbstats.com/2026/team/414/index.html"
     },
     "2025": {
@@ -50058,11 +50092,28 @@
        "to_gained": 1,
        "third_conv": 8,
        "third_att": 13
+      },
+      {
+       "event": "401866455",
+       "date": "2026-11-04",
+       "opp": "Massachusetts",
+       "opp_id": "113",
+       "site": "A",
+       "pf": 30,
+       "pa": 31,
+       "result": "L 30-31",
+       "total_yds": 350,
+       "rush_yds": 168,
+       "pass_yds": 182,
+       "to_lost": 0,
+       "to_gained": 2,
+       "third_conv": 6,
+       "third_att": 14
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-25T08:31+00:00",
-     "check": "cfbstats season totals matched through 2026-10-24",
+     "retrieved_at": "2026-11-06T00:35+00:00",
+     "check": "cfbstats season totals matched through 2026-11-04, except third-down attempts 115 in ESPN box scores vs 114 on cfbstats; third-down conversions 41 in ESPN box scores vs 40 on cfbstats",
      "cfbstats_url": "https://cfbstats.com/2026/team/47/index.html"
     },
     "2025": {
@@ -51794,11 +51845,28 @@
        "to_gained": 2,
        "third_conv": 6,
        "third_att": 14
+      },
+      {
+       "event": "401866456",
+       "date": "2026-11-04",
+       "opp": "Eastern Michigan",
+       "opp_id": "2199",
+       "site": "N",
+       "pf": 35,
+       "pa": 7,
+       "result": "W 35-7",
+       "total_yds": 418,
+       "rush_yds": 235,
+       "pass_yds": 183,
+       "to_lost": 0,
+       "to_gained": 1,
+       "third_conv": 7,
+       "third_att": 15
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-25T08:32+00:00",
-     "check": "cfbstats season totals matched through 2026-10-24",
+     "retrieved_at": "2026-11-06T00:35+00:00",
+     "check": "cfbstats season totals matched through 2026-11-04",
      "cfbstats_url": "https://cfbstats.com/2026/team/129/index.html"
     },
     "2025": {
@@ -52779,11 +52847,28 @@
        "to_gained": 2,
        "third_conv": 2,
        "third_att": 15
+      },
+      {
+       "event": "401866456",
+       "date": "2026-11-04",
+       "opp": "Central Michigan",
+       "opp_id": "2117",
+       "site": "N",
+       "pf": 7,
+       "pa": 35,
+       "result": "L 7-35",
+       "total_yds": 177,
+       "rush_yds": 74,
+       "pass_yds": 103,
+       "to_lost": 1,
+       "to_gained": 0,
+       "third_conv": 1,
+       "third_att": 10
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-25T08:32+00:00",
-     "check": "cfbstats season totals matched through 2026-10-24",
+     "retrieved_at": "2026-11-06T00:35+00:00",
+     "check": "cfbstats season totals matched through 2026-11-04",
      "cfbstats_url": "https://cfbstats.com/2026/team/204/index.html"
     },
     "2025": {
@@ -68661,11 +68746,28 @@
        "to_gained": 3,
        "third_conv": 5,
        "third_att": 10
+      },
+      {
+       "event": "401866457",
+       "date": "2026-11-04",
+       "opp": "Sacramento State",
+       "opp_id": "16",
+       "site": "A",
+       "pf": 20,
+       "pa": 17,
+       "result": "W 20-17",
+       "total_yds": 290,
+       "rush_yds": 230,
+       "pass_yds": 60,
+       "to_lost": 1,
+       "to_gained": 1,
+       "third_conv": 5,
+       "third_att": 15
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-25T08:34+00:00",
-     "check": "cfbstats season totals matched through 2026-10-24, except rushing yards 1,503 in ESPN box scores vs 1,499 on cfbstats; total yards 3,808 in ESPN box scores vs 3,804 on cfbstats",
+     "retrieved_at": "2026-11-06T00:36+00:00",
+     "check": "cfbstats season totals matched through 2026-11-04, except rushing yards 1,733 in ESPN box scores vs 1,729 on cfbstats; total yards 4,098 in ESPN box scores vs 4,094 on cfbstats",
      "cfbstats_url": "https://cfbstats.com/2026/team/709/index.html"
     },
     "2025": {
@@ -71596,6 +71698,6 @@
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-11-05T01:04+00:00"
+  "retrieved_at": "2026-11-06T00:35+00:00"
  }
 }

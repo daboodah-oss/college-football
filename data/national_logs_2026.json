@@ -1,7 +1,7 @@
 {
  "qb": {
   "season": 2026,
-  "data_through": "2026-11-03",
+  "data_through": "2026-11-04",
   "positions": [
    "QB"
   ],
@@ -55,10 +55,10 @@
      "306-1175417",
      "433-1136057",
      "749-2001667",
+     "709-1175505",
      "670-50207426",
      "732-2001675",
      "513-50310480",
-     "709-1175505",
      "365-2000773"
     ],
     "top": [
@@ -115,8 +115,8 @@
      "365-2000773",
      "1157-2001020",
      "732-2001675",
-     "400-2000640",
      "706-1177364",
+     "400-2000640",
      "404-2003393",
      "334-2001303",
      "509-2000732",
@@ -143,6 +143,7 @@
      "204-1112102",
      "521-50259623",
      "253-1111779",
+     "709-1175505",
      "29-1173984",
      "698-1176123",
      "497-1175381",
@@ -150,7 +151,6 @@
      "463-2001513",
      "742-50310484",
      "404-2003393",
-     "709-1175505",
      "428-50216959",
      "419-50216301"
     ],
@@ -1200,12 +1200,12 @@
     "team": "Toledo",
     "pos": "QB",
     "line": {
-     "g": 8,
-     "att": 259,
-     "cmp": 173,
-     "yds": 2244,
-     "td": 17,
-     "int": 2
+     "g": 9,
+     "att": 276,
+     "cmp": 182,
+     "yds": 2304,
+     "td": 18,
+     "int": 3
     },
     "url": "https://cfbstats.com/2026/player/709/1175505/passing/gamelog.html",
     "games": [
@@ -1304,6 +1304,18 @@
       "td": 3,
       "int": 1,
       "src_rating": 170.11
+     },
+     {
+      "date": "2026-11-04",
+      "opp": "Sacramento State",
+      "site": "A",
+      "result": "W 20-17",
+      "att": 17,
+      "cmp": 9,
+      "yds": 60,
+      "td": 1,
+      "int": 1,
+      "src_rating": 90.23
      }
     ]
    },
@@ -4071,94 +4083,6 @@
      }
     ]
    },
-   "400-2000640": {
-    "name": "William Pop Watson III",
-    "team": "U Mass",
-    "pos": "QB",
-    "line": {
-     "g": 6,
-     "att": 138,
-     "cmp": 96,
-     "yds": 1025,
-     "td": 8,
-     "int": 2
-    },
-    "url": "https://cfbstats.com/2026/player/400/2000640/passing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-03",
-      "opp": "Rutgers",
-      "site": "A",
-      "result": "W 37-21",
-      "att": 22,
-      "cmp": 19,
-      "yds": 197,
-      "td": 3,
-      "int": 0,
-      "src_rating": 206.58
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Sacred Heart",
-      "site": "H",
-      "result": "W 37-10",
-      "att": 10,
-      "cmp": 9,
-      "yds": 152,
-      "td": 1,
-      "int": 0,
-      "src_rating": 250.68
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Stonehill",
-      "site": "H",
-      "result": "W 36-14",
-      "att": 25,
-      "cmp": 15,
-      "yds": 160,
-      "td": 1,
-      "int": 1,
-      "src_rating": 118.96
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "Sacramento State",
-      "site": "A",
-      "result": "W 35-6",
-      "att": 16,
-      "cmp": 11,
-      "yds": 101,
-      "td": 1,
-      "int": 0,
-      "src_rating": 142.41
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Eastern Michigan",
-      "site": "H",
-      "result": "L 14-38",
-      "att": 27,
-      "cmp": 20,
-      "yds": 210,
-      "td": 1,
-      "int": 1,
-      "src_rating": 144.22
-     },
-     {
-      "date": "2026-10-23",
-      "opp": "Connecticut",
-      "site": "A",
-      "result": "L 16-35",
-      "att": 38,
-      "cmp": 22,
-      "yds": 205,
-      "td": 1,
-      "int": 0,
-      "src_rating": 111.91
-     }
-    ]
-   },
    "706-1177364": {
     "name": "Owen McCown",
     "team": "UTSA",
@@ -4268,6 +4192,106 @@
       "td": 0,
       "int": 2,
       "src_rating": 115.36
+     }
+    ]
+   },
+   "400-2000640": {
+    "name": "William \"Pop\" Watson III",
+    "team": "U Mass",
+    "pos": "QB",
+    "line": {
+     "g": 7,
+     "att": 163,
+     "cmp": 113,
+     "yds": 1327,
+     "td": 9,
+     "int": 2
+    },
+    "url": "https://cfbstats.com/2026/player/400/2000640/passing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-03",
+      "opp": "Rutgers",
+      "site": "A",
+      "result": "W 37-21",
+      "att": 22,
+      "cmp": 19,
+      "yds": 197,
+      "td": 3,
+      "int": 0,
+      "src_rating": 206.58
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Sacred Heart",
+      "site": "H",
+      "result": "W 37-10",
+      "att": 10,
+      "cmp": 9,
+      "yds": 152,
+      "td": 1,
+      "int": 0,
+      "src_rating": 250.68
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Stonehill",
+      "site": "H",
+      "result": "W 36-14",
+      "att": 25,
+      "cmp": 15,
+      "yds": 160,
+      "td": 1,
+      "int": 1,
+      "src_rating": 118.96
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Sacramento State",
+      "site": "A",
+      "result": "W 35-6",
+      "att": 16,
+      "cmp": 11,
+      "yds": 101,
+      "td": 1,
+      "int": 0,
+      "src_rating": 142.41
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Eastern Michigan",
+      "site": "H",
+      "result": "L 14-38",
+      "att": 27,
+      "cmp": 20,
+      "yds": 210,
+      "td": 1,
+      "int": 1,
+      "src_rating": 144.22
+     },
+     {
+      "date": "2026-10-23",
+      "opp": "Connecticut",
+      "site": "A",
+      "result": "L 16-35",
+      "att": 38,
+      "cmp": 22,
+      "yds": 205,
+      "td": 1,
+      "int": 0,
+      "src_rating": 111.91
+     },
+     {
+      "date": "2026-11-04",
+      "opp": "Ball State",
+      "site": "H",
+      "result": "W 31-30",
+      "att": 25,
+      "cmp": 17,
+      "yds": 302,
+      "td": 1,
+      "int": 0,
+      "src_rating": 182.67
      }
     ]
    },
@@ -5281,11 +5305,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-05T01:08+00:00"
+  "retrieved_at": "2026-11-06T00:37+00:00"
  },
  "rb": {
   "season": 2026,
-  "data_through": "2026-11-03",
+  "data_through": "2026-11-04",
   "positions": [
    "RB"
   ],
@@ -5311,8 +5335,8 @@
      "140-50312285",
      "674-50312286",
      "306-50216801",
-     "587-50304624",
-     "5-1179190"
+     "709-1176384",
+     "587-50304624"
     ],
     "top": [
      "66-50282868",
@@ -5436,7 +5460,7 @@
      "559-50309829",
      "472-1136312",
      "657-1255664",
-     "663-2001305"
+     "709-1176384"
     ],
     "top": [
      "434-2000108",
@@ -7031,6 +7055,101 @@
      }
     ]
    },
+   "709-1176384": {
+    "name": "CJ Miller",
+    "team": "Toledo",
+    "pos": "RB",
+    "line": {
+     "g": 9,
+     "att": 136,
+     "yds": 744,
+     "td": 7
+    },
+    "url": "https://cfbstats.com/2026/player/709/1176384/rushing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-04",
+      "opp": "Michigan State",
+      "site": "A",
+      "result": "L 20-30",
+      "att": 8,
+      "yds": 22,
+      "td": 0
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Central Connecticut State",
+      "site": "H",
+      "result": "W 63-10",
+      "att": 9,
+      "yds": 56,
+      "td": 1
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Temple",
+      "site": "H",
+      "result": "W 49-48",
+      "att": 9,
+      "yds": 33,
+      "td": 1
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "San Diego State",
+      "site": "H",
+      "result": "W 41-16",
+      "att": 8,
+      "yds": 39,
+      "td": 0
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Ball State",
+      "site": "A",
+      "result": "W 39-24",
+      "att": 20,
+      "yds": 196,
+      "td": 2
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "Buffalo",
+      "site": "H",
+      "result": "L 8-23",
+      "att": 9,
+      "yds": 32,
+      "td": 0
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Eastern Michigan",
+      "site": "A",
+      "result": "W 34-14",
+      "att": 13,
+      "yds": 48,
+      "td": 2
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Western Michigan",
+      "site": "H",
+      "result": "W 45-38",
+      "att": 33,
+      "yds": 183,
+      "td": 1
+     },
+     {
+      "date": "2026-11-04",
+      "opp": "Sacramento State",
+      "site": "A",
+      "result": "W 20-17",
+      "att": 27,
+      "yds": 135,
+      "td": 0
+     }
+    ]
+   },
    "587-50304624": {
     "name": "Antwan Raymond",
     "team": "Rutgers",
@@ -7114,101 +7233,6 @@
       "att": 11,
       "yds": 85,
       "td": 0
-     }
-    ]
-   },
-   "5-1179190": {
-    "name": "Jordan Gant",
-    "team": "Akron",
-    "pos": "RB",
-    "line": {
-     "g": 9,
-     "att": 143,
-     "yds": 730,
-     "td": 7
-    },
-    "url": "https://cfbstats.com/2026/player/5/1179190/rushing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-03",
-      "opp": "Wake Forest",
-      "site": "A",
-      "result": "L 16-38",
-      "att": 8,
-      "yds": 15,
-      "td": 0
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Robert Morris",
-      "site": "H",
-      "result": "W 45-10",
-      "att": 12,
-      "yds": 81,
-      "td": 1
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Minnesota",
-      "site": "A",
-      "result": "L 7-41",
-      "att": 5,
-      "yds": 11,
-      "td": 0
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "UNLV",
-      "site": "H",
-      "result": "L 10-38",
-      "att": 20,
-      "yds": 84,
-      "td": 1
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Central Michigan",
-      "site": "A",
-      "result": "L 17-41",
-      "att": 17,
-      "yds": 102,
-      "td": 1
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "Eastern Michigan",
-      "site": "H",
-      "result": "L 23-25",
-      "att": 22,
-      "yds": 117,
-      "td": 0
-     },
-     {
-      "date": "2026-10-17",
-      "opp": "Miami (OH)",
-      "site": "A",
-      "result": "L 14-34",
-      "att": 15,
-      "yds": 46,
-      "td": 1
-     },
-     {
-      "date": "2026-10-24",
-      "opp": "Kent State",
-      "site": "A",
-      "result": "L 20-35",
-      "att": 28,
-      "yds": 162,
-      "td": 2
-     },
-     {
-      "date": "2026-11-03",
-      "opp": "Ohio",
-      "site": "H",
-      "result": "L 20-28",
-      "att": 16,
-      "yds": 112,
-      "td": 1
      }
     ]
    },
@@ -7982,9 +8006,9 @@
     "team": "Ball State",
     "pos": "RB",
     "line": {
-     "g": 8,
-     "att": 68,
-     "yds": 425,
+     "g": 9,
+     "att": 72,
+     "yds": 436,
      "td": 9
     },
     "url": "https://cfbstats.com/2026/player/47/2000027/rushing/gamelog.html",
@@ -8060,6 +8084,15 @@
       "att": 9,
       "yds": 33,
       "td": 2
+     },
+     {
+      "date": "2026-11-04",
+      "opp": "Massachusetts",
+      "site": "A",
+      "result": "L 30-31",
+      "att": 4,
+      "yds": 11,
+      "td": 0
      }
     ]
    },
@@ -9607,6 +9640,101 @@
      }
     ]
    },
+   "5-1179190": {
+    "name": "Jordan Gant",
+    "team": "Akron",
+    "pos": "RB",
+    "line": {
+     "g": 9,
+     "att": 143,
+     "yds": 730,
+     "td": 7
+    },
+    "url": "https://cfbstats.com/2026/player/5/1179190/rushing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-03",
+      "opp": "Wake Forest",
+      "site": "A",
+      "result": "L 16-38",
+      "att": 8,
+      "yds": 15,
+      "td": 0
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Robert Morris",
+      "site": "H",
+      "result": "W 45-10",
+      "att": 12,
+      "yds": 81,
+      "td": 1
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Minnesota",
+      "site": "A",
+      "result": "L 7-41",
+      "att": 5,
+      "yds": 11,
+      "td": 0
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "UNLV",
+      "site": "H",
+      "result": "L 10-38",
+      "att": 20,
+      "yds": 84,
+      "td": 1
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Central Michigan",
+      "site": "A",
+      "result": "L 17-41",
+      "att": 17,
+      "yds": 102,
+      "td": 1
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "Eastern Michigan",
+      "site": "H",
+      "result": "L 23-25",
+      "att": 22,
+      "yds": 117,
+      "td": 0
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Miami (OH)",
+      "site": "A",
+      "result": "L 14-34",
+      "att": 15,
+      "yds": 46,
+      "td": 1
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Kent State",
+      "site": "A",
+      "result": "L 20-35",
+      "att": 28,
+      "yds": 162,
+      "td": 2
+     },
+     {
+      "date": "2026-11-03",
+      "opp": "Ohio",
+      "site": "H",
+      "result": "L 20-28",
+      "att": 16,
+      "yds": 112,
+      "td": 1
+     }
+    ]
+   },
    "657-1255664": {
     "name": "King Miller",
     "team": "USC",
@@ -9704,11 +9832,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-05T01:08+00:00"
+  "retrieved_at": "2026-11-06T00:37+00:00"
  },
  "wr": {
   "season": 2026,
-  "data_through": "2026-11-03",
+  "data_through": "2026-11-04",
   "positions": [
    "WR",
    "TE"
@@ -9796,9 +9924,9 @@
      "306-50312177",
      "254-1228138",
      "365-2000690",
-     "709-2002016",
      "434-50304512",
-     "463-50312328"
+     "463-50312328",
+     "709-2002016"
     ],
     "top": [
      "528-50341534",
@@ -12582,92 +12710,6 @@
      }
     ]
    },
-   "709-2002016": {
-    "name": "Adjatay Dabbs",
-    "team": "Toledo",
-    "pos": "WR",
-    "line": {
-     "g": 8,
-     "rec": 40,
-     "yds": 592,
-     "td": 7
-    },
-    "url": "https://cfbstats.com/2026/player/709/2002016/receiving/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-04",
-      "opp": "Michigan State",
-      "site": "A",
-      "result": "L 20-30",
-      "rec": 4,
-      "yds": 101,
-      "td": 2
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Central Connecticut State",
-      "site": "H",
-      "result": "W 63-10",
-      "rec": 4,
-      "yds": 34,
-      "td": 1
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Temple",
-      "site": "H",
-      "result": "W 49-48",
-      "rec": 8,
-      "yds": 88,
-      "td": 0
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "San Diego State",
-      "site": "H",
-      "result": "W 41-16",
-      "rec": 3,
-      "yds": 62,
-      "td": 1
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Ball State",
-      "site": "A",
-      "result": "W 39-24",
-      "rec": 6,
-      "yds": 82,
-      "td": 0
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "Buffalo",
-      "site": "H",
-      "result": "L 8-23",
-      "rec": 2,
-      "yds": 35,
-      "td": 0
-     },
-     {
-      "date": "2026-10-17",
-      "opp": "Eastern Michigan",
-      "site": "A",
-      "result": "W 34-14",
-      "rec": 5,
-      "yds": 66,
-      "td": 1
-     },
-     {
-      "date": "2026-10-24",
-      "opp": "Western Michigan",
-      "site": "H",
-      "result": "W 45-38",
-      "rec": 8,
-      "yds": 124,
-      "td": 2
-     }
-    ]
-   },
    "434-50304512": {
     "name": "Donovan Olugbode",
     "team": "Missouri",
@@ -12836,6 +12878,101 @@
       "result": "L 10-17",
       "rec": 4,
       "yds": 53,
+      "td": 0
+     }
+    ]
+   },
+   "709-2002016": {
+    "name": "Adjatay Dabbs",
+    "team": "Toledo",
+    "pos": "WR",
+    "line": {
+     "g": 9,
+     "rec": 40,
+     "yds": 592,
+     "td": 7
+    },
+    "url": "https://cfbstats.com/2026/player/709/2002016/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-04",
+      "opp": "Michigan State",
+      "site": "A",
+      "result": "L 20-30",
+      "rec": 4,
+      "yds": 101,
+      "td": 2
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Central Connecticut State",
+      "site": "H",
+      "result": "W 63-10",
+      "rec": 4,
+      "yds": 34,
+      "td": 1
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Temple",
+      "site": "H",
+      "result": "W 49-48",
+      "rec": 8,
+      "yds": 88,
+      "td": 0
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "San Diego State",
+      "site": "H",
+      "result": "W 41-16",
+      "rec": 3,
+      "yds": 62,
+      "td": 1
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Ball State",
+      "site": "A",
+      "result": "W 39-24",
+      "rec": 6,
+      "yds": 82,
+      "td": 0
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "Buffalo",
+      "site": "H",
+      "result": "L 8-23",
+      "rec": 2,
+      "yds": 35,
+      "td": 0
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Eastern Michigan",
+      "site": "A",
+      "result": "W 34-14",
+      "rec": 5,
+      "yds": 66,
+      "td": 1
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Western Michigan",
+      "site": "H",
+      "result": "W 45-38",
+      "rec": 8,
+      "yds": 124,
+      "td": 2
+     },
+     {
+      "date": "2026-11-04",
+      "opp": "Sacramento State",
+      "site": "A",
+      "result": "W 20-17",
+      "rec": 0,
+      "yds": 0,
       "td": 0
      }
     ]
@@ -14395,6 +14532,6 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-05T01:08+00:00"
+  "retrieved_at": "2026-11-06T00:37+00:00"
  }
 }
