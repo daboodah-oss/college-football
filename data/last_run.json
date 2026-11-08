@@ -1,14 +1,12 @@
 {
- "at": "2026-11-08T14:14-05:00",
+ "at": "2026-11-08T15:49-05:00",
  "failed": [
-  "ap_poll",
   "team_2026",
   "team_2025",
   "team_2024"
  ],
  "log": [
   "[registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids",
-  "[ap_poll] FAILED: no AP poll in ESPN rankings",
   "[team] Air Force 2026 REFUSED by validator",
   "[team] Buffalo 2026 REFUSED by validator",
   "[team] California 2026 REFUSED by validator",
@@ -83,10 +81,10 @@
   "[team] Western Kentucky 2024 REFUSED by validator",
   "[team] 2024: 134 registry teams; 102 sealed, 0 collected, 32 not stored",
   "[team_2024] FAILED: 2024 team seasons not stored: Arizona (refused, see above); Arkansas (refused, see above); Boston College (refused, see above); Central Michigan (refused, see above); Coastal Carolina (refused, see above); Georgia Tech (refused, see above); Houston (refused, see above); Illinois (refused, see above); James Madison (refused, see above); Kansas (refused, see above); LSU (refused, see above); Liberty (refused, see above); Louisiana (refused, see above); Louisiana Tech (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Northwestern (refused, see above); Ohio (refused, see above); Ohio State (refused, see above); Old Dominion (refused, see above); San Jos\u00e9 State (refused, see above); Temple (refused, see above); Toledo (refused, see above); UAB (refused, see above); South Florida (refused, see above); UTSA (refused, see above); Utah State (refused, see above); West Virginia (refused, see above); Western Kentucky (refused, see above)",
-  "[natref] 2026 qb: 44 players stored (0 game logs fetched, 44 unchanged)",
+  "[natref] 2026 qb: 44 players stored (1 game logs fetched, 43 unchanged)",
   "[natref] 2026 rb: 44 players stored (0 game logs fetched, 44 unchanged)",
-  "[natref] 2026 wr: 55 players stored (0 game logs fetched, 55 unchanged)",
-  "FAILED sections: ap_poll, team_2026, team_2025, team_2024"
+  "[natref] 2026 wr: 55 players stored (1 game logs fetched, 54 unchanged)",
+  "FAILED sections: team_2026, team_2025, team_2024"
  ],
  "finals_seen": [
   "401856634",

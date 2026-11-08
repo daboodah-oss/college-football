@@ -1,19 +1,8 @@
-Traceback (most recent call last):
-  File "/home/runner/work/college-football/college-football/collect.py", line 111, in run
-    out = fn(*a, **k)
-          ^^^^^^^^^^^
-  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 260, in <lambda>
-    C.section("ap_poll")(lambda: ap_poll(C, U))()
-                                 ^^^^^^^^^^^^^
-  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 187, in ap_poll
-    if not r: raise ValueError("no AP poll in ESPN rankings")
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: no AP poll in ESPN rankings
 [registry] 2024: sealed (134 teams)
 [registry] 2025: sealed (136 teams)
 STORED registry 2026: 138 of 138 cfbstats teams joined to ESPN
 [registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids
-[ap_poll] FAILED: no AP poll in ESPN rankings
+STORED AP Top 25 2026-11-08 1 Georgia, 2 Utah, 3 Notre Dame, 4 UCLA, 5 Miami ...
 REFUSED: team Air Force 2026 2026-10-10: total yards 433 != rushing 439 + passing 0
 [team] Air Force 2026 REFUSED by validator
 [team] Akron 2026: no new games; still matches cfbstats
@@ -126,8 +115,7 @@ REFUSED: team-season Old Dominion 2026: ESPN box scores disagree with cfbstats s
 [team] Purdue 2026: no new games; still matches cfbstats
 [team] Rice 2026: no new games; still matches cfbstats
 [team] Rutgers 2026: no new games; still matches cfbstats
-REFUSED: team-season SMU 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1394, 1388)} (ESPN, cfbstats)
-[team] SMU 2026 REFUSED by validatorTraceback (most recent call last):
+REFUSED: team-season SMU 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1394, 1388)} (ESPN, cfbstats)Traceback (most recent call last):
   File "/home/runner/work/college-football/college-football/collect.py", line 111, in run
     out = fn(*a, **k)
           ^^^^^^^^^^^
@@ -150,6 +138,7 @@ Traceback (most recent call last):
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ValueError: 2025 team seasons not stored: Army (refused, see above); East Carolina (refused, see above); Georgia Southern (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Navy (refused, see above); Oregon State (refused, see above); Utah State (refused, see above); Washington State (refused, see above)
 
+[team] SMU 2026 REFUSED by validator
 REFUSED: team Sacramento State 2026 2026-08-29: total yards 268 != rushing 49 + passing 222
 [team] Sacramento State 2026 REFUSED by validator
 [team] Sam Houston 2026: no new games; still matches cfbstats
@@ -303,11 +292,11 @@ REFUSED: team-season Western Kentucky 2024: ESPN box scores disagree with cfbsta
 [team] Western Kentucky 2024 REFUSED by validator
 [team] 2024: 134 registry teams; 102 sealed, 0 collected, 32 not stored
 [team_2024] FAILED: 2024 team seasons not stored: Arizona (refused, see above); Arkansas (refused, see above); Boston College (refused, see above); Central Michigan (refused, see above); Coastal Carolina (refused, see above); Georgia Tech (refused, see above); Houston (refused, see above); Illinois (refused, see above); James Madison (refused, see above); Kansas (refused, see above); LSU (refused, see above); Liberty (refused, see above); Louisiana (refused, see above); Louisiana Tech (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Northwestern (refused, see above); Ohio (refused, see above); Ohio State (refused, see above); Old Dominion (refused, see above); San José State (refused, see above); Temple (refused, see above); Toledo (refused, see above); UAB (refused, see above); South Florida (refused, see above); UTSA (refused, see above); Utah State (refused, see above); West Virginia (refused, see above); Western Kentucky (refused, see above)
-[natref] 2026 qb: 44 players stored (0 game logs fetched, 44 unchanged)
+[natref] 2026 qb: 44 players stored (1 game logs fetched, 43 unchanged)
 STORED natref 2026 qb: 44 players through 2026-11-07
 [natref] 2026 rb: 44 players stored (0 game logs fetched, 44 unchanged)
 STORED natref 2026 rb: 44 players through 2026-11-07
-[natref] 2026 wr: 55 players stored (0 game logs fetched, 55 unchanged)
+[natref] 2026 wr: 55 players stored (1 game logs fetched, 54 unchanged)
 STORED natref 2026 wr: 55 players through 2026-11-07
 [natref] 2025 qb: sealed (45 players)
 [natref] 2025 rb: sealed (51 players)
@@ -315,4 +304,4 @@ STORED natref 2026 wr: 55 players through 2026-11-07
 [natref] 2024 qb: sealed (47 players)
 [natref] 2024 rb: sealed (45 players)
 [natref] 2024 wr: sealed (60 players)
-FAILED sections: ap_poll, team_2026, team_2025, team_2024
+FAILED sections: team_2026, team_2025, team_2024

@@ -73353,54 +73353,54 @@
  },
  "ap": {
   "poll": "AP Top 25",
-  "week": "Week 10",
-  "headline": "2026 NCAA Football Rankings - AP Poll Week 10",
-  "date": "2026-11-01",
+  "week": "Week 11",
+  "headline": "2026 NCAA Football Rankings - AP Poll Week 11",
+  "date": "2026-11-08",
   "season": 2026,
   "top": [
    {
     "rank": 1,
-    "team_id": "2390",
-    "name": "Miami",
-    "nickname": "Hurricanes",
-    "abbr": "MIA",
-    "record": "8-0",
-    "first_place": 62
-   },
-   {
-    "rank": 2,
     "team_id": "61",
     "name": "Georgia",
     "nickname": "Bulldogs",
     "abbr": "UGA",
-    "record": "7-1",
-    "first_place": 7
+    "record": "8-1",
+    "first_place": 53
    },
    {
-    "rank": 3,
+    "rank": 2,
     "team_id": "254",
     "name": "Utah",
     "nickname": "Utes",
     "abbr": "UTAH",
-    "record": "8-0",
-    "first_place": 1
+    "record": "9-0",
+    "first_place": 12
    },
    {
-    "rank": 4,
+    "rank": 3,
     "team_id": "87",
     "name": "Notre Dame",
     "nickname": "Fighting Irish",
     "abbr": "ND",
-    "record": "7-1",
-    "first_place": 0
+    "record": "8-1",
+    "first_place": 5
    },
    {
-    "rank": 5,
+    "rank": 4,
     "team_id": "26",
     "name": "UCLA",
     "nickname": "Bruins",
     "abbr": "UCLA",
-    "record": "8-0",
+    "record": "9-0",
+    "first_place": 0
+   },
+   {
+    "rank": 5,
+    "team_id": "2390",
+    "name": "Miami",
+    "nickname": "Hurricanes",
+    "abbr": "MIA",
+    "record": "8-1",
     "first_place": 0
    },
    {
@@ -73414,105 +73414,78 @@
    },
    {
     "rank": 7,
-    "team_id": "252",
-    "name": "BYU",
-    "nickname": "Cougars",
-    "abbr": "BYU",
-    "record": "7-1",
-    "first_place": 0
-   },
-   {
-    "rank": 8,
-    "team_id": "96",
-    "name": "Kentucky",
-    "nickname": "Wildcats",
-    "abbr": "UK",
-    "record": "7-1",
-    "first_place": 0
-   },
-   {
-    "rank": 9,
     "team_id": "333",
     "name": "Alabama",
     "nickname": "Crimson Tide",
     "abbr": "ALA",
-    "record": "6-2",
+    "record": "7-2",
     "first_place": 0
    },
    {
-    "rank": 10,
+    "rank": 8,
     "team_id": "251",
     "name": "Texas",
     "nickname": "Longhorns",
     "abbr": "TEX",
-    "record": "6-2",
+    "record": "7-2",
     "first_place": 0
    },
    {
-    "rank": 11,
-    "team_id": "194",
-    "name": "Ohio State",
-    "nickname": "Buckeyes",
-    "abbr": "OSU",
-    "record": "6-2",
-    "first_place": 0
-   },
-   {
-    "rank": 12,
-    "team_id": "145",
-    "name": "Ole Miss",
-    "nickname": "Rebels",
-    "abbr": "MISS",
-    "record": "6-2",
-    "first_place": 0
-   },
-   {
-    "rank": 13,
-    "team_id": "2641",
-    "name": "Texas Tech",
-    "nickname": "Red Raiders",
-    "abbr": "TTU",
-    "record": "7-1",
-    "first_place": 0
-   },
-   {
-    "rank": 14,
-    "team_id": "154",
-    "name": "Wake Forest",
-    "nickname": "Demon Deacons",
-    "abbr": "WAKE",
-    "record": "7-1",
-    "first_place": 0
-   },
-   {
-    "rank": 15,
-    "team_id": "99",
-    "name": "LSU",
-    "nickname": "Tigers",
-    "abbr": "LSU",
-    "record": "6-2",
-    "first_place": 0
-   },
-   {
-    "rank": 16,
+    "rank": 9,
     "team_id": "2633",
     "name": "Tennessee",
     "nickname": "Volunteers",
     "abbr": "TENN",
-    "record": "6-2",
+    "record": "7-2",
     "first_place": 0
    },
    {
-    "rank": 17,
+    "rank": 10,
+    "team_id": "2641",
+    "name": "Texas Tech",
+    "nickname": "Red Raiders",
+    "abbr": "TTU",
+    "record": "8-1",
+    "first_place": 0
+   },
+   {
+    "rank": 11,
+    "team_id": "154",
+    "name": "Wake Forest",
+    "nickname": "Demon Deacons",
+    "abbr": "WAKE",
+    "record": "8-1",
+    "first_place": 0
+   },
+   {
+    "rank": 12,
+    "team_id": "252",
+    "name": "BYU",
+    "nickname": "Cougars",
+    "abbr": "BYU",
+    "record": "7-2",
+    "first_place": 0
+   },
+   {
+    "rank": 13,
+    "team_id": "96",
+    "name": "Kentucky",
+    "nickname": "Wildcats",
+    "abbr": "UK",
+    "record": "7-2",
+    "first_place": 0
+   },
+   {
+    "rank": 14,
     "team_id": "248",
     "name": "Houston",
     "nickname": "Cougars",
     "abbr": "HOU",
-    "record": "6-2",
+    "record": "7-2",
     "first_place": 0
    },
    {
-    "rank": 18,
+    "rank": 15,
     "team_id": "30",
     "name": "USC",
     "nickname": "Trojans",
@@ -73521,70 +73494,97 @@
     "first_place": 0
    },
    {
-    "rank": 19,
-    "team_id": "142",
-    "name": "Missouri",
-    "nickname": "Tigers",
-    "abbr": "MIZ",
-    "record": "6-2",
-    "first_place": 0
-   },
-   {
-    "rank": 20,
-    "team_id": "68",
-    "name": "Boise State",
-    "nickname": "Broncos",
-    "abbr": "BOIS",
-    "record": "7-1",
-    "first_place": 0
-   },
-   {
-    "rank": 21,
+    "rank": 16,
     "team_id": "2294",
     "name": "Iowa",
     "nickname": "Hawkeyes",
     "abbr": "IOWA",
-    "record": "6-2",
+    "record": "7-2",
     "first_place": 0
    },
    {
-    "rank": 22,
-    "team_id": "167",
-    "name": "New Mexico",
-    "nickname": "Lobos",
-    "abbr": "UNM",
-    "record": "7-1",
+    "rank": 17,
+    "team_id": "68",
+    "name": "Boise State",
+    "nickname": "Broncos",
+    "abbr": "BOIS",
+    "record": "8-1",
     "first_place": 0
    },
    {
-    "rank": 23,
+    "rank": 18,
+    "team_id": "2483",
+    "name": "Oregon",
+    "nickname": "Ducks",
+    "abbr": "ORE",
+    "record": "6-3",
+    "first_place": 0
+   },
+   {
+    "rank": 19,
+    "team_id": "145",
+    "name": "Ole Miss",
+    "nickname": "Rebels",
+    "abbr": "MISS",
+    "record": "6-3",
+    "first_place": 0
+   },
+   {
+    "rank": 20,
     "team_id": "2579",
     "name": "South Carolina",
     "nickname": "Gamecocks",
     "abbr": "SC",
-    "record": "5-3",
+    "record": "6-3",
     "first_place": 0
    },
    {
-    "rank": 24,
+    "rank": 21,
+    "team_id": "194",
+    "name": "Ohio State",
+    "nickname": "Buckeyes",
+    "abbr": "OSU",
+    "record": "6-3",
+    "first_place": 0
+   },
+   {
+    "rank": 22,
     "team_id": "12",
     "name": "Arizona",
     "nickname": "Wildcats",
     "abbr": "ARIZ",
-    "record": "6-2",
+    "record": "7-2",
+    "first_place": 0
+   },
+   {
+    "rank": 23,
+    "team_id": "167",
+    "name": "New Mexico",
+    "nickname": "Lobos",
+    "abbr": "UNM",
+    "record": "8-1",
+    "first_place": 0
+   },
+   {
+    "rank": 24,
+    "team_id": "99",
+    "name": "LSU",
+    "nickname": "Tigers",
+    "abbr": "LSU",
+    "record": "6-3",
     "first_place": 0
    },
    {
     "rank": 25,
-    "team_id": "57",
-    "name": "Florida",
-    "nickname": "Gators",
-    "abbr": "FLA",
-    "record": "5-3",
+    "team_id": "2567",
+    "name": "SMU",
+    "nickname": "Mustangs",
+    "abbr": "SMU",
+    "record": "7-2",
     "first_place": 0
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-11-08T11:22+00:00"
+  "retrieved_at": "2026-11-08T20:45+00:00"
  }
 }
