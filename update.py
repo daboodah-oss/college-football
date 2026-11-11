@@ -10,6 +10,9 @@ and merges it into data/*.json.  Nothing is stored unless every check passes.
   ap-poll       {poll}           store the latest AP Top 25 (poll name, week, release date, teams)
   natref        {tab, season, players, ...}   replace one season's national player pool for one tab
                                  (every game log must match the player's leaderboard line)
+  cfp           {season, week, date, ...}   append one week's Playoff snapshot (committee Top 25, our
+                                 computed Top 25, per-team lines, agreement metrics) to data/cfp.json;
+                                 a week whose committee list equals the stored latest is refused
 
 The seasons come from config.json: the newest is the current season, the only one that
 refreshes; every earlier season is collected once and sealed.
@@ -270,9 +273,48 @@ def natref(x):
     save(f, d); print(f"STORED natref {season} {tab}: {len(players)} players through {x['data_through']}")
 
 
+# ================================================================ Playoff snapshots (Playoff tab)
+CFP_METRICS = ("overlap25", "overlap12", "avg_delta", "exact", "agreement")
+
+
+def cfp(x):
+    """Append one week's Playoff snapshot: {season, week, date, through, committee[25 ids], ours[25 ids],
+    lines{id: line}, metrics, weights}.  Snapshots are frozen once stored: a new snapshot is appended only
+    when the committee's Top 25 actually changed (a new release), never for a re-read of the same week."""
+    season = x.get("season") or die("cfp: season required")
+    if season not in config()["seasons"]: die(f"cfp: season {season} is not in config.json")
+    datetime.date.fromisoformat(x.get("date") or die("cfp: date required"))
+    if not x.get("week"): die("cfp: week label required")
+    comm, ours = x.get("committee") or [], x.get("ours") or []
+    if len(comm) != 25 or len(set(comm)) != 25: die("cfp: committee must be 25 distinct team ids")
+    if len(ours) != 25 or len(set(ours)) != 25: die("cfp: ours must be 25 distinct team ids")
+    teams = load_or("team.json", {"teams": {}}).get("teams", {})
+    for tid in set(comm) | set(ours):
+        if tid not in teams: die(f"cfp: team id {tid} is not a stored team")
+    lines = x.get("lines") or {}
+    for tid in set(comm) | set(ours):
+        ln = lines.get(tid) or die(f"cfp: no line stored for team id {tid}")
+        for k in ("record", "sos_rank", "quality_wins", "top25_wins"):
+            if k not in ln: die(f"cfp: line for team id {tid} lacks '{k}'")
+    m = x.get("metrics") or {}
+    for k in CFP_METRICS:
+        if not isinstance(m.get(k), (int, float)): die(f"cfp: metric '{k}' missing or not a number")
+    if not (0 <= m["overlap25"] <= 25 and 0 <= m["overlap12"] <= 12 and 0 <= m["exact"] <= 25 and 0 <= m["agreement"] <= 100):
+        die("cfp: a metric is out of range")
+    d = load_or("cfp.json", {"season": season, "weeks": []})
+    if d.get("season") != season: die(f"cfp: stored file is for season {d.get('season')}, not {season}")
+    weeks = d.setdefault("weeks", [])
+    if weeks and weeks[-1]["committee"] == comm: die(f"cfp: the latest stored week ({weeks[-1]['week']}) already holds this committee Top 25; not a new release")
+    if weeks and x["date"] < weeks[-1]["date"]: die(f"cfp: {x['date']} is before the latest stored week ({weeks[-1]['date']})")
+    weeks.append({k: x[k] for k in ("season", "week", "date", "through", "committee", "ours", "lines", "metrics", "weights") if k in x})
+    weeks[-1]["stored_at"] = now_iso()
+    save("cfp.json", d)
+    print(f"STORED cfp {x['week']} ({x['date']}): committee {len(comm)}, ours {len(ours)}, agreement {m['agreement']}%")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "status"
-    fn = {"status": None, "registry": registry, "team-season": team_season, "ap-poll": ap_poll, "natref": natref}.get(cmd)
+    fn = {"status": None, "registry": registry, "team-season": team_season, "ap-poll": ap_poll, "natref": natref, "cfp": cfp}.get(cmd)
     if cmd == "status": status()
     elif fn: fn(arg())
     else: print(__doc__); sys.exit(1)

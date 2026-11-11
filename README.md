@@ -13,7 +13,7 @@ Cloudflare DNS record is a DNS-only CNAME to `daboodah-oss.github.io`).
 It generalizes the two school reports in `daboodah-oss/iu-report` and `daboodah-oss/nd-report` from one school to all of FBS.  The pipeline,
 validation, design system and chart engine are theirs; see AGENTS.md for what differs.
 
-## The two tabs
+## The four tabs
 
 - **Team:** pick up to 6 team-seasons (any FBS team, 2024, 2025 or 2026; the same school can be added in
   two seasons) and compare them.  Opens on **Indiana 2026 vs Notre Dame 2026**.  The stat table is the
@@ -32,6 +32,20 @@ validation, design system and chart engine are theirs; see AGENTS.md for what di
   carries; WR receptions, receiving yards, TD, yards per catch, yards per game.  Charts per game or
   running total (QB also INT), plus gray **National Top 3** reference lines for the viewed stat and a
   chosen season (solid, dashed, dotted for #1, #2, #3; chips start off), game logs, Method and sources.
+- **Conferences:** per-season conference head-to-head: a non-conference standings table (W-L and win %,
+  FCS games included, with a vs-FCS column) and a full conference-vs-conference matrix, counted from
+  the same stored game rows as the Team tab (deduped by event id; an opponent with no FBS membership is
+  the combined FCS bucket).  Membership is per season from ESPN's standings (`conferences.json` at the
+  repo root), so realignment is honored — the 2024 Pac-12 is Oregon State and Washington State only.
+  The build writes the computed dataset to `data/conferences.json` on every run.
+- **Playoff:** a weekly critique of the College Football Playoff committee.  Each Tuesday-night release
+  is frozen as a snapshot in `data/cfp.json` (committee Top 25, our computed Top 25, per-team lines,
+  agreement metrics), appended only when the committee list changed.  "Our" ranking is a documented
+  blend — 45% capped-margin SRS, 30% Colley Matrix, 25% resume points — computed by `cfp_model.py`
+  from the stored game rows only; the assessment of the established systems behind the blend is in
+  `docs/cfp-model.md`.  The tab shows the agreement scorecard (headline Agreement % = the mean of the
+  Top 25 and Top 12 overlaps), a side-by-side table with deltas, the five biggest disagreements with
+  data-generated reasons, and a week picker over the stored snapshots.
 
 Line colours follow the order of picks: blue, orange, green solid, then amber, pink, violet dashed.  Past
 three lines colour alone is not enough to tell every pair apart for colour-blind readers, so the line
@@ -112,8 +126,13 @@ minutes; the next new final or the next scheduled refresh retries it.
    yards, receptions, TD, yards/catch, yards/game), the top 20 at the tab's positions (QB; RB; WR and
    TE) on each, and each listed player's game log from the link on his row.  A finished season's pool
    seals after its first complete store.
+5. `cfp_rankings`: ESPN rankings, College Football Playoff poll.  If the committee's Top 25 differs
+   from the stored latest snapshot, our Top 25 is computed from the just-collected game rows
+   (`cfp_model.py`) and the week is appended to `data/cfp.json`; if it is the same list, nothing is
+   stored.  This is how the Wednesday run lands each Tuesday-night release exactly once.
 
-Then `build_report.py --standalone` writes `index.html`, and the workflow commits `data/`, `index.html`
+Then `build_report.py --standalone` writes `index.html` (and regenerates `data/conferences.json` from
+the stored rows), and the workflow commits `data/`, `index.html`
 and `logs/` (as "college-football bot").  If the build fails, nothing is published and `data/` is put
 back.  The "Report problems" step then fails the run on purpose if any section failed, so GitHub emails
 the owner; `data/last_run.json` says which section.
@@ -156,6 +175,8 @@ changed player lines.
 | `data/national_logs_<season>.json` | `{qb, rb, wr}`: each `{season, data_through, positions, stats: {key: {order, top, top_dropped, source_url}}, players: {id: {name, team, pos, line, url, games}}, dropped}` | `natref_<season>_<tab>` |
 | `data/freshness.json` | when each section last collected successfully | `collect.py` |
 | `data/last_run.json` | the last run's failed sections, log and `finals_seen` | `collect.py` |
+| `data/conferences.json` | per-season conference pair matrix, non-conference W-L and vs-FCS records, computed from `data/team.json` + `conferences.json` (repo root) | `build_report.py` (every build) |
+| `data/cfp.json` | frozen weekly Playoff snapshots: `{season, weeks: [{week, date, through, committee[25], ours[25], lines, metrics, weights}]}` | `cfp_rankings` (appended only on a new committee release) |
 
 At launch (branch run 4, 2026-10-19): the registry joins all 134 (2024), 136 (2025) and 138 (2026) cfbstats
 index teams to ESPN ids.  Stored team seasons: 102 (2024), 124 (2025) and 131 (2026); 120 of them carry a

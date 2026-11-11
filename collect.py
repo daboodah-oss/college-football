@@ -14,6 +14,9 @@ earlier seasons are collected once and then sealed):
                        its cfbstats.com season team totals (collect_tabs.py)
   natref_<season>_<tab>  cfbstats.com national passing / rushing / receiving leaders, top 20 per
                        tracked stat, each player's linked game log (collect_natref.py)
+  cfp_rankings ....... ESPN rankings JSON, College Football Playoff poll; one frozen snapshot per
+                       committee release (committee Top 25, our computed Top 25, agreement metrics),
+                       appended only when the committee list changed (collect_cfp.py)
 
 QUICK=1 (the 20-minute game-window checks): read ESPN's FBS scoreboard for today and
 yesterday (Eastern) and exit at once, writing .nochange, unless some FBS game has gone
@@ -160,9 +163,11 @@ def main():
             sys.exit(0)
     import collect_tabs   # team registry, AP poll, league-wide team seasons
     import collect_natref  # national QB / RB / WR pools, one per season
+    import collect_cfp     # Playoff snapshots (after the team sections: our ranking uses fresh rows)
     me = sys.modules[__name__]
     collect_tabs.run(me, U)
     collect_natref.run(me, U)
+    collect_cfp.run(me, U)
     log("FAILED sections: " + (", ".join(FAILED) if FAILED else "none"))
     prev = U.load_or("last_run.json", {})
     seen = sorted(NOTES["finals_seen"]) or prev.get("finals_seen", [])

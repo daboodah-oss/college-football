@@ -17,9 +17,11 @@ reports is listed at the end of this file.
 
 1. `collect.py` runs the sections in order, each independent: the team registry
    per season (`registry_<season>`), the AP poll (`ap_poll`), every registry
-   team's season (`team_<season>`), and the national player pools
-   (`natref_<season>_<tab>`).  A failed section keeps its last verified data,
-   is logged in `logs/collect.txt`, and is recorded in `data/last_run.json`.
+   team's season (`team_<season>`), the national player pools
+   (`natref_<season>_<tab>`), and the Playoff snapshot (`cfp_rankings`, last:
+   its ranking is computed from this run's fresh team rows).  A failed section
+   keeps its last verified data, is logged in `logs/collect.txt`, and is
+   recorded in `data/last_run.json`.
 2. `update.py` validates every row before it is stored.  It refuses bad data;
    nothing is stored then.
 3. `build_report.py` (with `build_tabs.py`) re-checks every stored row and writes
@@ -117,12 +119,22 @@ season matches.
   schedule + box scores, cfbstats season cross-check)
 - `collect_natref.py` — national QB / RB / WR pools per season (cfbstats boards
   plus each listed player's linked game log)
+- `collect_cfp.py` — Playoff snapshots: ESPN's CFP poll + `cfp_model.compute`
+  on the stored rows, appended only when the committee list changed
+- `cfp_model.py` — our Top 25 blend (45% capped-margin SRS, 30% Colley, 25%
+  resume points); the assessment behind it is `docs/cfp-model.md`
 - `update.py` — row validation before storage, `SOURCE_EXCEPTIONS`
 - `build_tabs.py` — Team and Player models; re-checks every stored row
-- `build_report.py` — validation + model + render + `check_manifest` (no network)
+- `build_conferences.py` — Conferences model from `team.json` +
+  `conferences.json` (repo root: per-season membership by ESPN id, from ESPN's
+  standings API; add a season's membership before adding the season)
+- `build_cfp.py` — Playoff model: the stored snapshots with names resolved
+- `build_report.py` — validation + model + render + `check_manifest` (no
+  network); also regenerates `data/conferences.json` on every successful build
 - `template.html` — page; the model is injected at `/*__MODEL__*/null`
 - `data/` — `registry.json`, `team.json`, `national_logs_<season>.json`,
-  `freshness.json`, `last_run.json`
+  `freshness.json`, `last_run.json`, `conferences.json` (build product),
+  `cfp.json` (frozen weekly snapshots)
 - `icons/` — PWA icons and the link-preview card, drawn by `tools/make_icons.py`
 - `assets/fonts/` — Barlow Condensed and Public Sans (OFL), used only by
   `tools/make_icons.py` to set the link-preview card's text; the page loads
@@ -140,9 +152,12 @@ season matches.
 
 ## Page behavior notes
 
-- Two tabs, Team and Player; the tab shows in the URL hash (`#team`,
-  `#player`; section links `#team-h2h` and so on).  Charts draw only for the
-  visible tab and redraw when a tab opens.
+- Four tabs, Team, Player, Conferences and Playoff; the tab shows in the URL
+  hash (`#team`, `#player`, `#conf`, `#cfp`; section links `#team-h2h` and so
+  on).  Charts draw only for the visible tab and redraw when a tab opens.
+  Conferences carries a per-season toggle (standings + matrix counted at build
+  time from the stored rows); Playoff carries a week picker over the frozen
+  `data/cfp.json` snapshots and never recomputes a stored week.
 - Every pick carries its season: a team pick is team + season, a player pick
   is player + season.  Pills, chips, table rows and game-log headings show the
   full "Name 2026"; chart end labels use the short form "IND ’26" (the ND

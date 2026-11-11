@@ -17,7 +17,11 @@
    message; × removes; chips toggle and all-off shows the empty state; a chart tap pins the tooltip and a tap
    outside dismisses it; the AP list in the picker is in rank order, unranked last; the Player tab opens each of
    QB, RB, WR with its default picks, table, chart, National Top 3 line, game logs and method, takes a
-   cross-season pick and enforces its cap; the manifest link is present.  It also scans the page script for
+   cross-season pick and enforces its cap; the manifest link is present.  It also checks the Conferences tab
+   (standings rows and win % against the build's own conference model, the matrix cell for a known pair,
+   the season toggle re-rendering an earlier season) and the Playoff tab (scorecard figures against the
+   stored snapshot's metrics, 25 committee rows plus our extra teams, disagreement lines, the week picker).
+   It also scans the page script for
    const/let helpers whose first use at top level comes before their definition (the TDZ bug class).
    Exit 0 = pass.  Prints one line per check and a summary with the section and error counts. */
 const fs = require("fs");
@@ -230,6 +234,54 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
       ok(rowsOf(doc, "#player-table").length === CAP.players && /readable with up to/.test($("#player-cap").textContent), `[${theme}] ${U} cap holds at ${CAP.players}`);
       $("#player-picks [data-x]").click(); await sleep(30);
       ok(rowsOf(doc, "#player-table").length === CAP.players - 1, `[${theme}] ${U} × removes a player`);
+    }
+    /* ---------------- Conferences tab */
+    doc.querySelector('.tabs [data-tab="conf"]').click(); await sleep(100);
+    ok(!$("#tab-conf").hidden, `[${theme}] Conferences tab opens`);
+    for (const [s, what] of [["#conf-standings", "non-conference standings"], ["#conf-matrix", "head-to-head matrix"], ["#conf-method", "method and sources"]])
+      sec(doc, s, `[${theme}] conf ${s} (${what}) populated`);
+    const CN = M.conf, CSZ = CN.seasons[M.site.season];
+    const cRows = rowsOf(doc, "#conf-table");
+    ok(cRows.length === CSZ.conferences.length, `[${theme}] conf standings: ${cRows.length} conference rows (build has ${CSZ.conferences.length})`);
+    const pctOf = r => (r[0] + 0.5 * (r[2] || 0)) / Math.max(1, r[0] + r[1] + (r[2] || 0));
+    const topConf = CSZ.conferences.map(c => [c, CSZ.nonconf[c] || [0, 0, 0]]).sort((a, b) => pctOf(b[1]) - pctOf(a[1]) || b[1][0] - a[1][0])[0];
+    ok(cRows.length && cRows[0].querySelector("td").textContent === topConf[0] && cRows[0].querySelectorAll("td")[3].textContent === (100 * pctOf(topConf[1])).toFixed(1) + "%",
+      `[${theme}] conf standings top row is the build's best non-conference mark: ${cRows.length ? cRows[0].textContent.replace(/\s+/g, " ").trim() : "(none)"}`);
+    const mxHead = [...doc.querySelectorAll("#conf-matrix-table table.mx tr:first-child th")].map(t => t.textContent);
+    const mxRow = [...doc.querySelectorAll("#conf-matrix-table table.mx tr")].find(r => r.querySelector("td") && r.querySelector("td").textContent === "SEC");
+    const rawPair = CSZ.pair["Big Ten|SEC"] || CSZ.pair["SEC|Big Ten"];
+    const secWins = CSZ.pair["Big Ten|SEC"] ? rawPair[1] : rawPair[0], b10Wins = CSZ.pair["Big Ten|SEC"] ? rawPair[0] : rawPair[1];
+    const cell = mxRow && mxRow.querySelectorAll("td")[mxHead.indexOf("Big Ten")];
+    ok(!!cell && cell.textContent === `${secWins}-${b10Wins}`, `[${theme}] conf matrix SEC row vs Big Ten reads ${cell ? cell.textContent : "(missing)"} (build pair: SEC ${secWins}, Big Ten ${b10Wins})`);
+    const S0 = M.site.seasons[0];
+    doc.querySelector(`#conf-season [data-k="${S0}"]`).click(); await sleep(60);
+    const old = CN.seasons[S0], oldRows = rowsOf(doc, "#conf-table");
+    ok(oldRows.length === old.conferences.length && $("#conf-title").textContent.includes(String(S0)), `[${theme}] conf season toggle renders ${S0}: ${$("#conf-title").textContent}`);
+    doc.querySelector(`#conf-season [data-k="${M.site.season}"]`).click(); await sleep(60);
+
+    /* ---------------- Playoff tab */
+    doc.querySelector('.tabs [data-tab="cfp"]').click(); await sleep(100);
+    ok(!$("#tab-cfp").hidden, `[${theme}] Playoff tab opens`);
+    const WK = M.cfp.weeks[M.cfp.weeks.length - 1];
+    if (WK) {
+      for (const [s, what] of [["#cfp-score", "agreement scorecard"], ["#cfp-table", "side by side"], ["#cfp-diff", "biggest disagreements"], ["#cfp-method", "method and sources"]])
+        sec(doc, s, `[${theme}] cfp ${s} (${what}) populated`);
+      ok($("#cfp-title").textContent.includes(WK.week) && $("#cfp-score-grid").textContent.includes(`${WK.metrics.agreement}%`),
+        `[${theme}] cfp scorecard shows ${WK.week} with headline agreement ${WK.metrics.agreement}%`);
+      const sideRows = rowsOf(doc, "#cfp-side");
+      const oursOnly = WK.ours.filter(t => !WK.committee.includes(t)).length;
+      ok(sideRows.length === 25 + oursOnly, `[${theme}] cfp side-by-side: ${sideRows.length} rows (25 committee + ${oursOnly} ours-only)`);
+      const first = sideRows[0];
+      ok(first && first.querySelectorAll("td")[1].textContent === WK.names[WK.committee[0]], `[${theme}] cfp table opens on the committee's No. 1: ${WK.names[WK.committee[0]]}`);
+      const diffs = [...doc.querySelectorAll("#cfp-diffs li")];
+      ok(diffs.length >= 3 && diffs.length <= 5 && diffs.every(li => li.textContent.trim().length > 20), `[${theme}] cfp lists ${diffs.length} disagreement lines with reasons`);
+      if (M.cfp.weeks.length > 1) {
+        doc.querySelector('#cfp-week [data-k="0"]').click(); await sleep(60);
+        ok($("#cfp-title").textContent.includes(M.cfp.weeks[0].week), `[${theme}] cfp week picker shows the earliest snapshot: ${M.cfp.weeks[0].week}`);
+        doc.querySelector(`#cfp-week [data-k="${M.cfp.weeks.length - 1}"]`).click(); await sleep(60);
+      }
+    } else {
+      sec(doc, "#tab-cfp", `[${theme}] cfp empty state (no snapshot stored yet) populated`);
     }
     ok(errors.length === 0, `[${theme}] script errors: ${errors.length}${errors.length ? " -> " + errors.join(" | ") : ""}`);
     errorsTotal += errors.length;

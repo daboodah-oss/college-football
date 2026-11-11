@@ -1,0 +1,558 @@
+{
+ "season": 2026,
+ "weeks": [
+  {
+   "season": 2026,
+   "week": "Week 11",
+   "date": "2026-11-10",
+   "through": "2026-11-07",
+   "committee": [
+    "61",
+    "254",
+    "333",
+    "26",
+    "87",
+    "251",
+    "2390",
+    "2633",
+    "84",
+    "252",
+    "96",
+    "2641",
+    "154",
+    "248",
+    "2294",
+    "2483",
+    "2579",
+    "30",
+    "145",
+    "194",
+    "99",
+    "142",
+    "12",
+    "68",
+    "197"
+   ],
+   "ours": [
+    "251",
+    "333",
+    "61",
+    "2390",
+    "87",
+    "26",
+    "84",
+    "2633",
+    "145",
+    "254",
+    "2483",
+    "194",
+    "99",
+    "96",
+    "30",
+    "248",
+    "2294",
+    "2579",
+    "68",
+    "2641",
+    "201",
+    "252",
+    "154",
+    "57",
+    "197"
+   ],
+   "lines": {
+    "61": {
+     "record": "8-1",
+     "sos_rank": 23,
+     "best_win": {
+      "id": "333",
+      "name": "Alabama",
+      "record": "7-2"
+     },
+     "worst_loss": {
+      "id": "2",
+      "name": "Auburn",
+      "record": "5-4"
+     },
+     "quality_wins": 4,
+     "top25_wins": 3,
+     "score": 98.01,
+     "srs": 24.01
+    },
+    "254": {
+     "record": "9-0",
+     "sos_rank": 65,
+     "best_win": {
+      "id": "248",
+      "name": "Houston",
+      "record": "7-2"
+     },
+     "worst_loss": null,
+     "quality_wins": 3,
+     "top25_wins": 0,
+     "score": 91.69,
+     "srs": 15.23
+    },
+    "333": {
+     "record": "7-2",
+     "sos_rank": 1,
+     "best_win": {
+      "id": "99",
+      "name": "LSU",
+      "record": "6-3"
+     },
+     "worst_loss": {
+      "id": "2633",
+      "name": "Tennessee",
+      "record": "7-2"
+     },
+     "quality_wins": 4,
+     "top25_wins": 3,
+     "score": 98.01,
+     "srs": 27.17
+    },
+    "26": {
+     "record": "9-0",
+     "sos_rank": 41,
+     "best_win": {
+      "id": "2483",
+      "name": "Oregon",
+      "record": "6-3"
+     },
+     "worst_loss": null,
+     "quality_wins": 3,
+     "top25_wins": 1,
+     "score": 94.28,
+     "srs": 17.97
+    },
+    "87": {
+     "record": "8-1",
+     "sos_rank": 21,
+     "best_win": {
+      "id": "2390",
+      "name": "Miami",
+      "record": "8-1"
+     },
+     "worst_loss": {
+      "id": "252",
+      "name": "BYU",
+      "record": "7-2"
+     },
+     "quality_wins": 3,
+     "top25_wins": 2,
+     "score": 94.83,
+     "srs": 21.17
+    },
+    "251": {
+     "record": "7-2",
+     "sos_rank": 2,
+     "best_win": {
+      "id": "2633",
+      "name": "Tennessee",
+      "record": "7-2"
+     },
+     "worst_loss": {
+      "id": "57",
+      "name": "Florida",
+      "record": "5-4"
+     },
+     "quality_wins": 6,
+     "top25_wins": 4,
+     "score": 98.9,
+     "srs": 22.11
+    },
+    "2390": {
+     "record": "8-1",
+     "sos_rank": 34,
+     "best_win": {
+      "id": "154",
+      "name": "Wake Forest",
+      "record": "8-1"
+     },
+     "worst_loss": {
+      "id": "87",
+      "name": "Notre Dame",
+      "record": "8-1"
+     },
+     "quality_wins": 4,
+     "top25_wins": 2,
+     "score": 96.03,
+     "srs": 20.13
+    },
+    "2633": {
+     "record": "7-2",
+     "sos_rank": 19,
+     "best_win": {
+      "id": "333",
+      "name": "Alabama",
+      "record": "7-2"
+     },
+     "worst_loss": {
+      "id": "2579",
+      "name": "South Carolina",
+      "record": "6-3"
+     },
+     "quality_wins": 3,
+     "top25_wins": 2,
+     "score": 92.76,
+     "srs": 18.97
+    },
+    "84": {
+     "record": "8-1",
+     "sos_rank": 46,
+     "best_win": {
+      "id": "158",
+      "name": "Nebraska",
+      "record": "5-4"
+     },
+     "worst_loss": {
+      "id": "194",
+      "name": "Ohio State",
+      "record": "6-3"
+     },
+     "quality_wins": 5,
+     "top25_wins": 1,
+     "score": 94.26,
+     "srs": 14.98
+    },
+    "252": {
+     "record": "7-2",
+     "sos_rank": 39,
+     "best_win": {
+      "id": "87",
+      "name": "Notre Dame",
+      "record": "8-1"
+     },
+     "worst_loss": {
+      "id": "2116",
+      "name": "UCF",
+      "record": "5-4"
+     },
+     "quality_wins": 3,
+     "top25_wins": 1,
+     "score": 83.53,
+     "srs": 9.25
+    },
+    "96": {
+     "record": "7-2",
+     "sos_rank": 12,
+     "best_win": {
+      "id": "99",
+      "name": "LSU",
+      "record": "6-3"
+     },
+     "worst_loss": {
+      "id": "2633",
+      "name": "Tennessee",
+      "record": "7-2"
+     },
+     "quality_wins": 3,
+     "top25_wins": 3,
+     "score": 88.93,
+     "srs": 10.5
+    },
+    "2641": {
+     "record": "8-1",
+     "sos_rank": 73,
+     "best_win": {
+      "id": "248",
+      "name": "Houston",
+      "record": "7-2"
+     },
+     "worst_loss": {
+      "id": "2132",
+      "name": "Cincinnati",
+      "record": "5-4"
+     },
+     "quality_wins": 5,
+     "top25_wins": 0,
+     "score": 84.78,
+     "srs": 8.31
+    },
+    "154": {
+     "record": "8-1",
+     "sos_rank": 71,
+     "best_win": {
+      "id": "97",
+      "name": "Louisville",
+      "record": "6-3"
+     },
+     "worst_loss": {
+      "id": "2390",
+      "name": "Miami",
+      "record": "8-1"
+     },
+     "quality_wins": 1,
+     "top25_wins": 1,
+     "score": 83.44,
+     "srs": 14.89
+    },
+    "248": {
+     "record": "7-2",
+     "sos_rank": 38,
+     "best_win": {
+      "id": "197",
+      "name": "Oklahoma State",
+      "record": "6-3"
+     },
+     "worst_loss": {
+      "id": "2641",
+      "name": "Texas Tech",
+      "record": "8-1"
+     },
+     "quality_wins": 5,
+     "top25_wins": 1,
+     "score": 88.2,
+     "srs": 9.92
+    },
+    "2294": {
+     "record": "7-2",
+     "sos_rank": 51,
+     "best_win": {
+      "id": "77",
+      "name": "Northwestern",
+      "record": "6-3"
+     },
+     "worst_loss": {
+      "id": "135",
+      "name": "Minnesota",
+      "record": "5-4"
+     },
+     "quality_wins": 4,
+     "top25_wins": 0,
+     "score": 87.57,
+     "srs": 11.84
+    },
+    "2483": {
+     "record": "6-3",
+     "sos_rank": 9,
+     "best_win": {
+      "id": "194",
+      "name": "Ohio State",
+      "record": "6-3"
+     },
+     "worst_loss": {
+      "id": "356",
+      "name": "Illinois",
+      "record": "6-3"
+     },
+     "quality_wins": 5,
+     "top25_wins": 3,
+     "score": 91.43,
+     "srs": 13.51
+    },
+    "2579": {
+     "record": "6-3",
+     "sos_rank": 15,
+     "best_win": {
+      "id": "2633",
+      "name": "Tennessee",
+      "record": "7-2"
+     },
+     "worst_loss": {
+      "id": "344",
+      "name": "Mississippi State",
+      "record": "4-5"
+     },
+     "quality_wins": 3,
+     "top25_wins": 2,
+     "score": 86.99,
+     "srs": 13.53
+    },
+    "30": {
+     "record": "7-2",
+     "sos_rank": 20,
+     "best_win": {
+      "id": "194",
+      "name": "Ohio State",
+      "record": "6-3"
+     },
+     "worst_loss": {
+      "id": "275",
+      "name": "Wisconsin",
+      "record": "6-3"
+     },
+     "quality_wins": 5,
+     "top25_wins": 1,
+     "score": 88.53,
+     "srs": 10.21
+    },
+    "145": {
+     "record": "6-3",
+     "sos_rank": 4,
+     "best_win": {
+      "id": "99",
+      "name": "LSU",
+      "record": "6-3"
+     },
+     "worst_loss": {
+      "id": "57",
+      "name": "Florida",
+      "record": "5-4"
+     },
+     "quality_wins": 4,
+     "top25_wins": 3,
+     "score": 92.72,
+     "srs": 17.31
+    },
+    "194": {
+     "record": "6-3",
+     "sos_rank": 16,
+     "best_win": {
+      "id": "84",
+      "name": "Indiana",
+      "record": "8-1"
+     },
+     "worst_loss": {
+      "id": "30",
+      "name": "USC",
+      "record": "7-2"
+     },
+     "quality_wins": 3,
+     "top25_wins": 2,
+     "score": 89.98,
+     "srs": 17.22
+    },
+    "99": {
+     "record": "6-3",
+     "sos_rank": 11,
+     "best_win": {
+      "id": "2",
+      "name": "Auburn",
+      "record": "5-4"
+     },
+     "worst_loss": {
+      "id": "96",
+      "name": "Kentucky",
+      "record": "7-2"
+     },
+     "quality_wins": 3,
+     "top25_wins": 0,
+     "score": 89.93,
+     "srs": 20.47
+    },
+    "142": {
+     "record": "6-3",
+     "sos_rank": 30,
+     "best_win": {
+      "id": "57",
+      "name": "Florida",
+      "record": "5-4"
+     },
+     "worst_loss": {
+      "id": "344",
+      "name": "Mississippi State",
+      "record": "4-5"
+     },
+     "quality_wins": 1,
+     "top25_wins": 0,
+     "score": 71.71,
+     "srs": 12.39
+    },
+    "12": {
+     "record": "7-2",
+     "sos_rank": 74,
+     "best_win": {
+      "id": "2628",
+      "name": "TCU",
+      "record": "4-5"
+     },
+     "worst_loss": {
+      "id": "2641",
+      "name": "Texas Tech",
+      "record": "8-1"
+     },
+     "quality_wins": 2,
+     "top25_wins": 0,
+     "score": 77.54,
+     "srs": 9.57
+    },
+    "68": {
+     "record": "8-1",
+     "sos_rank": 78,
+     "best_win": {
+      "id": "326",
+      "name": "Texas State",
+      "record": "5-4"
+     },
+     "worst_loss": {
+      "id": "2483",
+      "name": "Oregon",
+      "record": "6-3"
+     },
+     "quality_wins": 4,
+     "top25_wins": 0,
+     "score": 84.82,
+     "srs": 9.03
+    },
+    "197": {
+     "record": "6-3",
+     "sos_rank": 56,
+     "best_win": {
+      "id": "2483",
+      "name": "Oregon",
+      "record": "6-3"
+     },
+     "worst_loss": {
+      "id": "66",
+      "name": "Iowa State",
+      "record": "4-5"
+     },
+     "quality_wins": 3,
+     "top25_wins": 1,
+     "score": 78.31,
+     "srs": 10.99
+    },
+    "201": {
+     "record": "5-4",
+     "sos_rank": 5,
+     "best_win": {
+      "id": "251",
+      "name": "Texas",
+      "record": "7-2"
+     },
+     "worst_loss": {
+      "id": "130",
+      "name": "Michigan",
+      "record": "5-4"
+     },
+     "quality_wins": 3,
+     "top25_wins": 1,
+     "score": 84.25,
+     "srs": 11.17
+    },
+    "57": {
+     "record": "5-4",
+     "sos_rank": 8,
+     "best_win": {
+      "id": "251",
+      "name": "Texas",
+      "record": "7-2"
+     },
+     "worst_loss": {
+      "id": "201",
+      "name": "Oklahoma",
+      "record": "5-4"
+     },
+     "quality_wins": 4,
+     "top25_wins": 2,
+     "score": 83.01,
+     "srs": 9.78
+    }
+   },
+   "metrics": {
+    "overlap25": 23,
+    "overlap12": 9,
+    "avg_delta": 4.35,
+    "exact": 3,
+    "agreement": 84
+   },
+   "weights": {
+    "srs": 0.45,
+    "colley": 0.3,
+    "resume": 0.25
+   },
+   "stored_at": "2026-11-11T13:17+00:00"
+  }
+ ]
+}

@@ -21,11 +21,13 @@ def check(cond, msg):
 
 
 def build(root, as_of):
-    import build_tabs
+    import build_tabs, build_conferences, build_cfp
     cfg = json.load(open(os.path.join(root, "config.json")))
     seasons, cur = sorted(cfg["seasons"]), cfg["current_season"]
     tabs = build_tabs.build(root, cfg, check)
     T, PL = tabs["team"], tabs["player"]
+    CONF = build_conferences.build(root, cfg, check)
+    CFP = build_cfp.build(root, cfg, check)
     site = cfg["site"]
 
     # data freshness: what each part covers and when it was last successfully checked
@@ -41,6 +43,10 @@ def build(root, as_of):
                "checked": fr.get("ap_poll")},
         "player": {"what": f"{cur} national leaderboards through {d(max((p['data_through'] for p in pools_cur), default=None))}; earlier seasons final",
                    "checked": max((fr[k] for k in fr if k.startswith(f"natref_{cur}_")), default=None)},
+        "conf": {"what": f"conference head-to-head computed from the same stored game rows, {cur} through {d((CONF['seasons'].get(str(cur)) or {}).get('through'))}",
+                 "checked": fr.get(f"team_{cur}")},
+        "cfp": {"what": (f"committee rankings {CFP['weeks'][-1]['week']}, released {d(CFP['weeks'][-1]['date'])}; our Top 25 from games through {d(CFP['weeks'][-1]['through'])}" if CFP["weeks"] else "no committee rankings released yet this season"),
+                "checked": fr.get("cfp_rankings")},
     }
     now = datetime.datetime.fromisoformat(as_of)
     for v in fresh.values():
@@ -52,7 +58,8 @@ def build(root, as_of):
         lr = json.load(open(lr_path))
         if lr.get("failed"):
             notices.append("The latest automatic update could not refresh: " + ", ".join(lr["failed"]) + ". Those sections show the last verified data.")
-    names = {"team": f"{cur} team data", "ap": "The AP poll", "player": f"{cur} national player pools"}
+    names = {"team": f"{cur} team data", "ap": "The AP poll", "player": f"{cur} national player pools",
+             "conf": "The conference table", "cfp": "The Playoff snapshot"}
     for k, v in fresh.items():
         if v["stale"]: notices.append(f"{names[k]} has not refreshed in over 5 days (last checked {v['checked'][:10]}).")
     for t in PL:
@@ -65,13 +72,17 @@ def build(root, as_of):
         {"label": "ESPN: team schedules and game box scores (site API)", "url": "https://www.espn.com/college-football/"},
         {"label": "ESPN: AP Top 25", "url": (T["poll"] or {}).get("source_url") or "https://www.espn.com/college-football/rankings"},
     ] + [{"label": f"cfbstats.com: {s} national {PL[t]['noun']} ({'passing' if t == 'qb' else 'rushing' if t == 'rb' else 'receiving'} leaders)",
-          "url": PL[t]["pools"][str(s)]["stats"]["yds"]["source_url"]} for t in PL for s in seasons if PL[t]["pools"].get(str(s), {}).get("status") == "ok"]
+          "url": PL[t]["pools"][str(s)]["stats"]["yds"]["source_url"]} for t in PL for s in seasons if PL[t]["pools"].get(str(s), {}).get("status") == "ok"] + [
+        {"label": "ESPN: conference standings (membership, per season)", "url": "https://www.espn.com/college-football/standings"},
+        {"label": "ESPN: College Football Playoff rankings (committee Top 25, weekly)", "url": "https://www.espn.com/college-football/rankings"},
+    ]
 
     model = {
         "as_of": as_of,
         "site": {"name": site["name"], "eyebrow": site["eyebrow"], "title": site["title"].format(season=cur), "season": cur,
                  "seasons": seasons, "caps": cfg["caps"], "theme_key": site["theme_key"]},
-        "data": tabs["data"], "team": T, "player": PL, "fresh": fresh, "notices": notices, "sources": sources,
+        "data": tabs["data"], "team": T, "player": PL, "conf": CONF, "cfp": CFP,
+        "fresh": fresh, "notices": notices, "sources": sources,
     }
     return model, cfg
 
@@ -134,6 +145,12 @@ def main():
         print("VALIDATION FAILED - report not written:", file=sys.stderr)
         for e in ERRORS: print("  -", e, file=sys.stderr)
         sys.exit(1)
+    # the Conferences dataset is a build product of the same validated rows: regenerate it next to the
+    # other data files (the workflow stages data/, so it is committed with the page it was built from)
+    conf_path = os.path.join(a.root, "data", "conferences.json")
+    conf_tmp = conf_path + ".tmp"
+    json.dump(model["conf"], open(conf_tmp, "w"), indent=1)
+    os.replace(conf_tmp, conf_path)
     site = cfg["site"]
     tpl = open(os.path.join(a.root, "template.html")).read()
     blob = json.dumps(model, separators=(",", ":")).replace("</", "<\\/")
