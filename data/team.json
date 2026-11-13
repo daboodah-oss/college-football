@@ -10523,8 +10523,8 @@
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-13T04:57+00:00",
-     "check": "not cross-checked yet: cfbstats is through 2026-11-11, ESPN's latest game is 2026-11-12",
+     "retrieved_at": "2026-11-13T12:54+00:00",
+     "check": "cfbstats season totals matched through 2026-11-12",
      "cfbstats_url": "https://cfbstats.com/2026/team/651/index.html"
     },
     "2025": {
@@ -45028,11 +45028,28 @@
        "to_gained": 1,
        "third_conv": 8,
        "third_att": 13
+      },
+      {
+       "event": "401869969",
+       "date": "2026-11-12",
+       "opp": "UL Monroe",
+       "opp_id": "2433",
+       "site": "A",
+       "pf": 42,
+       "pa": 21,
+       "result": "W 42-21",
+       "total_yds": 339,
+       "rush_yds": 274,
+       "pass_yds": 65,
+       "to_lost": 0,
+       "to_gained": 3,
+       "third_conv": 1,
+       "third_att": 5
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-08T11:24+00:00",
-     "check": "cfbstats season totals matched through 2026-11-07, except rushing yards 1,831 in ESPN box scores vs 1,832 on cfbstats; total yards 3,520 in ESPN box scores vs 3,521 on cfbstats; third-down attempts 116 in ESPN box scores vs 115 on cfbstats; third-down conversions 51 in ESPN box scores vs 50 on cfbstats",
+     "retrieved_at": "2026-11-13T12:53+00:00",
+     "check": "cfbstats season totals matched through 2026-11-12, except rushing yards 2,105 in ESPN box scores vs 2,106 on cfbstats; total yards 3,859 in ESPN box scores vs 3,860 on cfbstats; third-down attempts 121 in ESPN box scores vs 120 on cfbstats; third-down conversions 52 in ESPN box scores vs 51 on cfbstats",
      "cfbstats_url": "https://cfbstats.com/2026/team/671/index.html"
     },
     "2025": {
@@ -61552,11 +61569,28 @@
        "to_gained": 2,
        "third_conv": 9,
        "third_att": 14
+      },
+      {
+       "event": "401869969",
+       "date": "2026-11-12",
+       "opp": "Louisiana",
+       "opp_id": "309",
+       "site": "H",
+       "pf": 21,
+       "pa": 42,
+       "result": "L 21-42",
+       "total_yds": 372,
+       "rush_yds": 260,
+       "pass_yds": 112,
+       "to_lost": 3,
+       "to_gained": 0,
+       "third_conv": 9,
+       "third_att": 17
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-08T11:24+00:00",
-     "check": "cfbstats season totals matched through 2026-11-07",
+     "retrieved_at": "2026-11-13T12:53+00:00",
+     "check": "cfbstats season totals matched through 2026-11-12",
      "cfbstats_url": "https://cfbstats.com/2026/team/498/index.html"
     }
    }
@@ -73772,6 +73806,6 @@
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-11-13T04:56+00:00"
+  "retrieved_at": "2026-11-13T12:53+00:00"
  }
 }

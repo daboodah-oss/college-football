@@ -1,10 +1,10 @@
 {
- "at": "2026-11-12T23:58-05:00",
+ "at": "2026-11-13T07:55-05:00",
  "failed": [
   "team_2026"
  ],
  "log": [
-  "quick check: new final 2026-11-12 Memphis Tigers at South Florida Bulls",
+  "quick check: new final 2026-11-12 Louisiana Ragin' Cajuns at UL Monroe Warhawks",
   "[registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids",
   "[team] Air Force 2026 REFUSED by validator",
   "[team] Buffalo 2026 REFUSED by validator",
@@ -16,6 +16,7 @@
   "[team] Florida Atlantic 2026 REFUSED by validator",
   "[team] Georgia Southern 2026 REFUSED by validator",
   "[team] Hawai'i 2026 REFUSED by validator",
+  "[team] Memphis 2026 REFUSED by validator",
   "[team] Navy 2026 REFUSED by validator",
   "[team] New Mexico State 2026 REFUSED by validator",
   "[team] North Texas 2026 REFUSED by validator",
@@ -29,11 +30,11 @@
   "[team] Utah 2026 REFUSED by validator",
   "[team] Utah State 2026 REFUSED by validator",
   "[team] Virginia Tech 2026 REFUSED by validator",
-  "[team] 2026: 138 registry teams; 0 sealed, 115 collected, 23 not stored",
-  "[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); California (refused, see above); Coastal Carolina (refused, see above); Colorado (refused, see above); Colorado State (refused, see above); Florida (refused, see above); Florida Atlantic (refused, see above); Georgia Southern (refused, see above); Hawai'i (refused, see above); Navy (refused, see above); New Mexico State (refused, see above); North Texas (refused, see above); Ohio (refused, see above); Old Dominion (refused, see above); SMU (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); UTSA (refused, see above); Utah (refused, see above); Utah State (refused, see above); Virginia Tech (refused, see above)",
-  "[natref] 2026 qb: 44 players stored (0 game logs fetched, 44 unchanged)",
-  "[natref] 2026 rb: 46 players stored (0 game logs fetched, 46 unchanged)",
-  "[natref] 2026 wr: 56 players stored (0 game logs fetched, 56 unchanged)",
+  "[team] 2026: 138 registry teams; 0 sealed, 114 collected, 24 not stored",
+  "[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); California (refused, see above); Coastal Carolina (refused, see above); Colorado (refused, see above); Colorado State (refused, see above); Florida (refused, see above); Florida Atlantic (refused, see above); Georgia Southern (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); Navy (refused, see above); New Mexico State (refused, see above); North Texas (refused, see above); Ohio (refused, see above); Old Dominion (refused, see above); SMU (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); UTSA (refused, see above); Utah (refused, see above); Utah State (refused, see above); Virginia Tech (refused, see above)",
+  "[natref] 2026 qb: 45 players stored (2 game logs fetched, 43 unchanged)",
+  "[natref] 2026 rb: 46 players stored (2 game logs fetched, 44 unchanged)",
+  "[natref] 2026 wr: 56 players stored (1 game logs fetched, 55 unchanged)",
   "[cfp] committee Top 25 unchanged since Week 11 (2026-11-10); no new snapshot",
   "FAILED sections: team_2026"
  ],
@@ -688,6 +689,7 @@
   "401869966",
   "401869967",
   "401869968",
+  "401869969",
   "401870745",
   "401870763",
   "401870764",

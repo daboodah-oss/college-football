@@ -1,7 +1,7 @@
 {
  "qb": {
   "season": 2026,
-  "data_through": "2026-11-11",
+  "data_through": "2026-11-12",
   "positions": [
    "QB"
   ],
@@ -12,12 +12,12 @@
      "528-50215853",
      "521-50259623",
      "497-1175381",
+     "404-2003393",
      "29-1173984",
      "663-1180322",
      "229-1175688",
      "415-2000040",
      "365-2000773",
-     "404-2003393",
      "657-1177721",
      "709-1175505",
      "277-50292486",
@@ -42,10 +42,10 @@
     "order": [
      "521-50259623",
      "415-2000040",
+     "404-2003393",
      "229-1175688",
      "528-50215853",
      "663-1180322",
-     "404-2003393",
      "497-1175381",
      "288-1175394",
      "29-1173984",
@@ -64,7 +64,7 @@
     "top": [
      "521-50259623",
      "415-2000040",
-     "229-1175688"
+     "404-2003393"
     ],
     "top_dropped": []
    },
@@ -114,14 +114,14 @@
      "235-50217278",
      "334-2001303",
      "1157-2001020",
-     "404-2003393",
      "400-2000640",
      "509-2000732",
      "255-50312109",
      "253-1111779",
      "670-50207426",
      "518-50310418",
-     "732-2001675"
+     "732-2001675",
+     "706-1177364"
     ],
     "top": [
      "415-2000040",
@@ -151,8 +151,8 @@
      "709-1175505",
      "657-1177721",
      "428-50216959",
-     "331-2000558",
-     "559-1202665"
+     "404-2003393",
+     "331-2000558"
     ],
     "top": [
      "277-50292486",
@@ -532,6 +532,142 @@
       "td": 1,
       "int": 0,
       "src_rating": 150.82
+     }
+    ]
+   },
+   "404-2003393": {
+    "name": "Marcus Stokes",
+    "team": "Memphis",
+    "pos": "QB",
+    "line": {
+     "g": 10,
+     "att": 290,
+     "cmp": 194,
+     "yds": 2845,
+     "td": 28,
+     "int": 6
+    },
+    "url": "https://cfbstats.com/2026/player/404/2003393/passing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-08-29",
+      "opp": "UNLV",
+      "site": "A",
+      "result": "W 27-21",
+      "att": 26,
+      "cmp": 15,
+      "yds": 223,
+      "td": 2,
+      "int": 0,
+      "src_rating": 155.12
+     },
+     {
+      "date": "2026-09-05",
+      "opp": "Arkansas State",
+      "site": "H",
+      "result": "W 42-24",
+      "att": 15,
+      "cmp": 12,
+      "yds": 188,
+      "td": 2,
+      "int": 2,
+      "src_rating": 202.61
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Boise State",
+      "site": "A",
+      "result": "L 20-38",
+      "att": 25,
+      "cmp": 17,
+      "yds": 384,
+      "td": 1,
+      "int": 1,
+      "src_rating": 202.22
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "UT Martin",
+      "site": "H",
+      "result": "W 45-21",
+      "att": 32,
+      "cmp": 26,
+      "yds": 258,
+      "td": 4,
+      "int": 0,
+      "src_rating": 190.23
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Charlotte",
+      "site": "A",
+      "result": "W 59-8",
+      "att": 25,
+      "cmp": 20,
+      "yds": 318,
+      "td": 5,
+      "int": 0,
+      "src_rating": 252.85
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "UAB",
+      "site": "H",
+      "result": "W 38-13",
+      "att": 21,
+      "cmp": 11,
+      "yds": 164,
+      "td": 2,
+      "int": 0,
+      "src_rating": 149.41
+     },
+     {
+      "date": "2026-10-16",
+      "opp": "Tulane",
+      "site": "A",
+      "result": "L 17-31",
+      "att": 37,
+      "cmp": 20,
+      "yds": 306,
+      "td": 2,
+      "int": 3,
+      "src_rating": 125.14
+     },
+     {
+      "date": "2026-10-22",
+      "opp": "East Carolina",
+      "site": "H",
+      "result": "W 41-34",
+      "att": 43,
+      "cmp": 29,
+      "yds": 320,
+      "td": 3,
+      "int": 0,
+      "src_rating": 152.97
+     },
+     {
+      "date": "2026-10-31",
+      "opp": "Army",
+      "site": "H",
+      "result": "W 49-22",
+      "att": 35,
+      "cmp": 29,
+      "yds": 371,
+      "td": 4,
+      "int": 0,
+      "src_rating": 209.62
+     },
+     {
+      "date": "2026-11-12",
+      "opp": "USF",
+      "site": "A",
+      "result": "W 52-41",
+      "att": 31,
+      "cmp": 15,
+      "yds": 313,
+      "td": 3,
+      "int": 0,
+      "src_rating": 165.13
      }
     ]
    },
@@ -1152,130 +1288,6 @@
       "td": 0,
       "int": 1,
       "src_rating": 138.12
-     }
-    ]
-   },
-   "404-2003393": {
-    "name": "Marcus Stokes",
-    "team": "Memphis",
-    "pos": "QB",
-    "line": {
-     "g": 9,
-     "att": 259,
-     "cmp": 179,
-     "yds": 2532,
-     "td": 25,
-     "int": 6
-    },
-    "url": "https://cfbstats.com/2026/player/404/2003393/passing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-08-29",
-      "opp": "UNLV",
-      "site": "A",
-      "result": "W 27-21",
-      "att": 26,
-      "cmp": 15,
-      "yds": 223,
-      "td": 2,
-      "int": 0,
-      "src_rating": 155.12
-     },
-     {
-      "date": "2026-09-05",
-      "opp": "Arkansas State",
-      "site": "H",
-      "result": "W 42-24",
-      "att": 15,
-      "cmp": 12,
-      "yds": 188,
-      "td": 2,
-      "int": 2,
-      "src_rating": 202.61
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Boise State",
-      "site": "A",
-      "result": "L 20-38",
-      "att": 25,
-      "cmp": 17,
-      "yds": 384,
-      "td": 1,
-      "int": 1,
-      "src_rating": 202.22
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "UT Martin",
-      "site": "H",
-      "result": "W 45-21",
-      "att": 32,
-      "cmp": 26,
-      "yds": 258,
-      "td": 4,
-      "int": 0,
-      "src_rating": 190.23
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Charlotte",
-      "site": "A",
-      "result": "W 59-8",
-      "att": 25,
-      "cmp": 20,
-      "yds": 318,
-      "td": 5,
-      "int": 0,
-      "src_rating": 252.85
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "UAB",
-      "site": "H",
-      "result": "W 38-13",
-      "att": 21,
-      "cmp": 11,
-      "yds": 164,
-      "td": 2,
-      "int": 0,
-      "src_rating": 149.41
-     },
-     {
-      "date": "2026-10-16",
-      "opp": "Tulane",
-      "site": "A",
-      "result": "L 17-31",
-      "att": 37,
-      "cmp": 20,
-      "yds": 306,
-      "td": 2,
-      "int": 3,
-      "src_rating": 125.14
-     },
-     {
-      "date": "2026-10-22",
-      "opp": "East Carolina",
-      "site": "H",
-      "result": "W 41-34",
-      "att": 43,
-      "cmp": 29,
-      "yds": 320,
-      "td": 3,
-      "int": 0,
-      "src_rating": 152.97
-     },
-     {
-      "date": "2026-10-31",
-      "opp": "Army",
-      "site": "H",
-      "result": "W 49-22",
-      "att": 35,
-      "cmp": 29,
-      "yds": 371,
-      "td": 4,
-      "int": 0,
-      "src_rating": 209.62
      }
     ]
    },
@@ -4803,6 +4815,130 @@
      }
     ]
    },
+   "706-1177364": {
+    "name": "Owen McCown",
+    "team": "UTSA",
+    "pos": "QB",
+    "line": {
+     "g": 9,
+     "att": 278,
+     "cmp": 189,
+     "yds": 2016,
+     "td": 13,
+     "int": 4
+    },
+    "url": "https://cfbstats.com/2026/player/706/1177364/passing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-05",
+      "opp": "UTRGV",
+      "site": "H",
+      "result": "W 45-16",
+      "att": 27,
+      "cmp": 22,
+      "yds": 275,
+      "td": 3,
+      "int": 0,
+      "src_rating": 203.7
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Texas State",
+      "site": "A",
+      "result": "W 31-26",
+      "att": 42,
+      "cmp": 28,
+      "yds": 214,
+      "td": 1,
+      "int": 0,
+      "src_rating": 117.33
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Texas",
+      "site": "A",
+      "result": "L 6-30",
+      "att": 23,
+      "cmp": 14,
+      "yds": 70,
+      "td": 0,
+      "int": 1,
+      "src_rating": 77.73
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Colorado State",
+      "site": "H",
+      "result": "W 59-45",
+      "att": 30,
+      "cmp": 20,
+      "yds": 303,
+      "td": 3,
+      "int": 0,
+      "src_rating": 184.51
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Rice",
+      "site": "A",
+      "result": "W 16-14",
+      "att": 29,
+      "cmp": 19,
+      "yds": 148,
+      "td": 0,
+      "int": 1,
+      "src_rating": 101.49
+     },
+     {
+      "date": "2026-10-08",
+      "opp": "USF",
+      "site": "H",
+      "result": "W 31-24",
+      "att": 31,
+      "cmp": 22,
+      "yds": 209,
+      "td": 0,
+      "int": 0,
+      "src_rating": 127.6
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Navy",
+      "site": "H",
+      "result": "W 38-34",
+      "att": 38,
+      "cmp": 28,
+      "yds": 359,
+      "td": 3,
+      "int": 0,
+      "src_rating": 179.08
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Tulane",
+      "site": "A",
+      "result": "W 42-19",
+      "att": 23,
+      "cmp": 16,
+      "yds": 173,
+      "td": 0,
+      "int": 2,
+      "src_rating": 115.36
+     },
+     {
+      "date": "2026-11-05",
+      "opp": "Florida Atlantic",
+      "site": "A",
+      "result": "L 29-60",
+      "att": 35,
+      "cmp": 20,
+      "yds": 265,
+      "td": 3,
+      "int": 0,
+      "src_rating": 149.02
+     }
+    ]
+   },
    "674-1127454": {
     "name": "Davis Warren",
     "team": "Stanford",
@@ -5561,11 +5697,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-13T04:58+00:00"
+  "retrieved_at": "2026-11-13T12:54+00:00"
  },
  "rb": {
   "season": 2026,
-  "data_through": "2026-11-11",
+  "data_through": "2026-11-12",
   "positions": [
    "RB"
   ],
@@ -5583,9 +5719,9 @@
      "768-2000294",
      "434-2000108",
      "694-1203707",
+     "404-50218273",
      "700-50257165",
      "472-1136312",
-     "404-50218273",
      "235-50309802",
      "774-1180537",
      "709-1176384",
@@ -5610,9 +5746,9 @@
      "694-1203707",
      "110-1174594",
      "473-2000290",
+     "404-50218273",
      "66-50282868",
      "706-2000730",
-     "404-50218273",
      "140-50312285",
      "664-1255517",
      "663-2001305",
@@ -5639,12 +5775,12 @@
      "156-1182198",
      "509-1177828",
      "700-50257165",
+     "671-50286389",
      "367-2002330",
      "367-50304348",
      "749-50287768",
      "257-50312099",
      "497-2001366",
-     "671-50286389",
      "718-1174495",
      "718-1174715",
      "311-50303320",
@@ -5704,6 +5840,7 @@
      "193-50260473",
      "521-50258899",
      "66-50282868",
+     "404-50218273",
      "774-1180537",
      "365-50312359",
      "497-2001366",
@@ -5715,8 +5852,7 @@
      "664-1255517",
      "674-50312286",
      "472-1136312",
-     "5-1179190",
-     "404-50218273"
+     "5-1179190"
     ],
     "top": [
      "768-2000294",
@@ -6686,6 +6822,110 @@
      }
     ]
    },
+   "404-50218273": {
+    "name": "Jaylin Carter",
+    "team": "Memphis",
+    "pos": "RB",
+    "line": {
+     "g": 10,
+     "att": 172,
+     "yds": 1038,
+     "td": 12
+    },
+    "url": "https://cfbstats.com/2026/player/404/50218273/rushing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-08-29",
+      "opp": "UNLV",
+      "site": "A",
+      "result": "W 27-21",
+      "att": 15,
+      "yds": 97,
+      "td": 1
+     },
+     {
+      "date": "2026-09-05",
+      "opp": "Arkansas State",
+      "site": "H",
+      "result": "W 42-24",
+      "att": 19,
+      "yds": 183,
+      "td": 4
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Boise State",
+      "site": "A",
+      "result": "L 20-38",
+      "att": 9,
+      "yds": 95,
+      "td": 1
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "UT Martin",
+      "site": "H",
+      "result": "W 45-21",
+      "att": 12,
+      "yds": 62,
+      "td": 0
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Charlotte",
+      "site": "A",
+      "result": "W 59-8",
+      "att": 15,
+      "yds": 76,
+      "td": 0
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "UAB",
+      "site": "H",
+      "result": "W 38-13",
+      "att": 19,
+      "yds": 132,
+      "td": 2
+     },
+     {
+      "date": "2026-10-16",
+      "opp": "Tulane",
+      "site": "A",
+      "result": "L 17-31",
+      "att": 23,
+      "yds": 135,
+      "td": 0
+     },
+     {
+      "date": "2026-10-22",
+      "opp": "East Carolina",
+      "site": "H",
+      "result": "W 41-34",
+      "att": 16,
+      "yds": 53,
+      "td": 0
+     },
+     {
+      "date": "2026-10-31",
+      "opp": "Army",
+      "site": "H",
+      "result": "W 49-22",
+      "att": 23,
+      "yds": 96,
+      "td": 2
+     },
+     {
+      "date": "2026-11-12",
+      "opp": "USF",
+      "site": "A",
+      "result": "W 52-41",
+      "att": 21,
+      "yds": 109,
+      "td": 2
+     }
+    ]
+   },
    "700-50257165": {
     "name": "J'Koby Williams",
     "team": "Texas Tech",
@@ -6873,101 +7113,6 @@
       "att": 15,
       "yds": 51,
       "td": 0
-     }
-    ]
-   },
-   "404-50218273": {
-    "name": "Jaylin Carter",
-    "team": "Memphis",
-    "pos": "RB",
-    "line": {
-     "g": 9,
-     "att": 151,
-     "yds": 929,
-     "td": 10
-    },
-    "url": "https://cfbstats.com/2026/player/404/50218273/rushing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-08-29",
-      "opp": "UNLV",
-      "site": "A",
-      "result": "W 27-21",
-      "att": 15,
-      "yds": 97,
-      "td": 1
-     },
-     {
-      "date": "2026-09-05",
-      "opp": "Arkansas State",
-      "site": "H",
-      "result": "W 42-24",
-      "att": 19,
-      "yds": 183,
-      "td": 4
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Boise State",
-      "site": "A",
-      "result": "L 20-38",
-      "att": 9,
-      "yds": 95,
-      "td": 1
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "UT Martin",
-      "site": "H",
-      "result": "W 45-21",
-      "att": 12,
-      "yds": 62,
-      "td": 0
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Charlotte",
-      "site": "A",
-      "result": "W 59-8",
-      "att": 15,
-      "yds": 76,
-      "td": 0
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "UAB",
-      "site": "H",
-      "result": "W 38-13",
-      "att": 19,
-      "yds": 132,
-      "td": 2
-     },
-     {
-      "date": "2026-10-16",
-      "opp": "Tulane",
-      "site": "A",
-      "result": "L 17-31",
-      "att": 23,
-      "yds": 135,
-      "td": 0
-     },
-     {
-      "date": "2026-10-22",
-      "opp": "East Carolina",
-      "site": "H",
-      "result": "W 41-34",
-      "att": 16,
-      "yds": 53,
-      "td": 0
-     },
-     {
-      "date": "2026-10-31",
-      "opp": "Army",
-      "site": "H",
-      "result": "W 49-22",
-      "att": 23,
-      "yds": 96,
-      "td": 2
      }
     ]
    },
@@ -8672,6 +8817,110 @@
      }
     ]
    },
+   "671-50286389": {
+    "name": "JJ Garner",
+    "team": "La-Lafytte",
+    "pos": "RB",
+    "line": {
+     "g": 10,
+     "att": 70,
+     "yds": 545,
+     "td": 8
+    },
+    "url": "https://cfbstats.com/2026/player/671/50286389/rushing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-05",
+      "opp": "Lamar",
+      "site": "H",
+      "result": "W 38-7",
+      "att": 4,
+      "yds": 21,
+      "td": 0
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "USC",
+      "site": "A",
+      "result": "L 30-49",
+      "att": 5,
+      "yds": 26,
+      "td": 0
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "UAB",
+      "site": "H",
+      "result": "W 21-14",
+      "att": 5,
+      "yds": 16,
+      "td": 0
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Charlotte",
+      "site": "A",
+      "result": "W 34-7",
+      "att": 6,
+      "yds": 13,
+      "td": 1
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Arkansas State",
+      "site": "H",
+      "result": "W 23-20",
+      "att": 7,
+      "yds": 78,
+      "td": 1
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "Louisiana Tech",
+      "site": "A",
+      "result": "L 31-32",
+      "att": 7,
+      "yds": 36,
+      "td": 1
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Troy",
+      "site": "H",
+      "result": "W 33-6",
+      "att": 10,
+      "yds": 63,
+      "td": 1
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Southern Miss",
+      "site": "A",
+      "result": "L 31-35",
+      "att": 7,
+      "yds": 52,
+      "td": 1
+     },
+     {
+      "date": "2026-11-07",
+      "opp": "South Alabama",
+      "site": "H",
+      "result": "W 28-26",
+      "att": 10,
+      "yds": 136,
+      "td": 1
+     },
+     {
+      "date": "2026-11-12",
+      "opp": "Louisiana-Monroe",
+      "site": "A",
+      "result": "W 42-21",
+      "att": 9,
+      "yds": 104,
+      "td": 2
+     }
+    ]
+   },
    "367-2002330": {
     "name": "Keyjuan Brown",
     "team": "Louisville",
@@ -9022,101 +9271,6 @@
       "att": 11,
       "yds": 66,
       "td": 0
-     }
-    ]
-   },
-   "671-50286389": {
-    "name": "JJ Garner",
-    "team": "La-Lafytte",
-    "pos": "RB",
-    "line": {
-     "g": 9,
-     "att": 61,
-     "yds": 441,
-     "td": 6
-    },
-    "url": "https://cfbstats.com/2026/player/671/50286389/rushing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-05",
-      "opp": "Lamar",
-      "site": "H",
-      "result": "W 38-7",
-      "att": 4,
-      "yds": 21,
-      "td": 0
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "USC",
-      "site": "A",
-      "result": "L 30-49",
-      "att": 5,
-      "yds": 26,
-      "td": 0
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "UAB",
-      "site": "H",
-      "result": "W 21-14",
-      "att": 5,
-      "yds": 16,
-      "td": 0
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "Charlotte",
-      "site": "A",
-      "result": "W 34-7",
-      "att": 6,
-      "yds": 13,
-      "td": 1
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Arkansas State",
-      "site": "H",
-      "result": "W 23-20",
-      "att": 7,
-      "yds": 78,
-      "td": 1
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "Louisiana Tech",
-      "site": "A",
-      "result": "L 31-32",
-      "att": 7,
-      "yds": 36,
-      "td": 1
-     },
-     {
-      "date": "2026-10-17",
-      "opp": "Troy",
-      "site": "H",
-      "result": "W 33-6",
-      "att": 10,
-      "yds": 63,
-      "td": 1
-     },
-     {
-      "date": "2026-10-24",
-      "opp": "Southern Miss",
-      "site": "A",
-      "result": "L 31-35",
-      "att": 7,
-      "yds": 52,
-      "td": 1
-     },
-     {
-      "date": "2026-11-07",
-      "opp": "South Alabama",
-      "site": "H",
-      "result": "W 28-26",
-      "att": 10,
-      "yds": 136,
-      "td": 1
      }
     ]
    },
@@ -10000,11 +10154,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-13T04:58+00:00"
+  "retrieved_at": "2026-11-13T12:55+00:00"
  },
  "wr": {
   "season": 2026,
-  "data_through": "2026-11-11",
+  "data_through": "2026-11-12",
   "positions": [
    "WR",
    "TE"
@@ -10120,12 +10274,12 @@
      "768-1202419",
      "519-50282940",
      "355-1176676",
+     "404-1240752",
      "315-2001086",
      "749-50313147",
      "528-50341534",
      "9-1174424",
-     "288-50304697",
-     "311-50371124"
+     "288-50304697"
     ],
     "top": [
      "768-1178084",
@@ -14845,6 +14999,110 @@
      }
     ]
    },
+   "404-1240752": {
+    "name": "Jemyri Davis",
+    "team": "Memphis",
+    "pos": "WR",
+    "line": {
+     "g": 10,
+     "rec": 28,
+     "yds": 561,
+     "td": 7
+    },
+    "url": "https://cfbstats.com/2026/player/404/1240752/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2026-08-29",
+      "opp": "UNLV",
+      "site": "A",
+      "result": "W 27-21",
+      "rec": 3,
+      "yds": 62,
+      "td": 0
+     },
+     {
+      "date": "2026-09-05",
+      "opp": "Arkansas State",
+      "site": "H",
+      "result": "W 42-24",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Boise State",
+      "site": "A",
+      "result": "L 20-38",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "UT Martin",
+      "site": "H",
+      "result": "W 45-21",
+      "rec": 3,
+      "yds": 45,
+      "td": 0
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Charlotte",
+      "site": "A",
+      "result": "W 59-8",
+      "rec": 1,
+      "yds": 25,
+      "td": 1
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "UAB",
+      "site": "H",
+      "result": "W 38-13",
+      "rec": 1,
+      "yds": 13,
+      "td": 0
+     },
+     {
+      "date": "2026-10-16",
+      "opp": "Tulane",
+      "site": "A",
+      "result": "L 17-31",
+      "rec": 4,
+      "yds": 89,
+      "td": 1
+     },
+     {
+      "date": "2026-10-22",
+      "opp": "East Carolina",
+      "site": "H",
+      "result": "W 41-34",
+      "rec": 7,
+      "yds": 91,
+      "td": 2
+     },
+     {
+      "date": "2026-10-31",
+      "opp": "Army",
+      "site": "H",
+      "result": "W 49-22",
+      "rec": 4,
+      "yds": 75,
+      "td": 2
+     },
+     {
+      "date": "2026-11-12",
+      "opp": "USF",
+      "site": "A",
+      "result": "W 52-41",
+      "rec": 5,
+      "yds": 161,
+      "td": 1
+     }
+    ]
+   },
    "315-2001086": {
     "name": "Deondre Johnson",
     "team": "J'ville St",
@@ -15225,92 +15483,6 @@
      }
     ]
    },
-   "311-50371124": {
-    "name": "Jamal Polite Jr.",
-    "team": "Iowa State",
-    "pos": "WR",
-    "line": {
-     "g": 8,
-     "rec": 17,
-     "yds": 321,
-     "td": 2
-    },
-    "url": "https://cfbstats.com/2026/player/311/50371124/receiving/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-12",
-      "opp": "Iowa",
-      "site": "A",
-      "result": "L 13-16",
-      "rec": 1,
-      "yds": 20,
-      "td": 0
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Bowling Green",
-      "site": "H",
-      "result": "W 55-7",
-      "rec": 1,
-      "yds": 34,
-      "td": 1
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "Utah",
-      "site": "H",
-      "result": "L 17-31",
-      "rec": 1,
-      "yds": 2,
-      "td": 0
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "West Virginia",
-      "site": "H",
-      "result": "W 45-42",
-      "rec": 2,
-      "yds": 12,
-      "td": 0
-     },
-     {
-      "date": "2026-10-09",
-      "opp": "BYU",
-      "site": "A",
-      "result": "L 10-24",
-      "rec": 2,
-      "yds": 20,
-      "td": 0
-     },
-     {
-      "date": "2026-10-24",
-      "opp": "Arizona",
-      "site": "A",
-      "result": "L 3-39",
-      "rec": 1,
-      "yds": 27,
-      "td": 0
-     },
-     {
-      "date": "2026-10-31",
-      "opp": "Oklahoma State",
-      "site": "H",
-      "result": "W 51-49",
-      "rec": 6,
-      "yds": 171,
-      "td": 1
-     },
-     {
-      "date": "2026-11-07",
-      "opp": "Baylor",
-      "site": "A",
-      "result": "L 31-42",
-      "rec": 3,
-      "yds": 35,
-      "td": 0
-     }
-    ]
-   },
    "31-1180365": {
     "name": "Chris Marshall",
     "team": "Arkansas",
@@ -15399,6 +15571,6 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-13T04:58+00:00"
+  "retrieved_at": "2026-11-13T12:55+00:00"
  }
 }
