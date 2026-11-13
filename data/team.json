@@ -17789,11 +17789,28 @@
        "to_gained": 0,
        "third_conv": 4,
        "third_att": 10
+      },
+      {
+       "event": "401866463",
+       "date": "2026-11-11",
+       "opp": "Toledo",
+       "opp_id": "2649",
+       "site": "A",
+       "pf": 0,
+       "pa": 24,
+       "result": "L 0-24",
+       "total_yds": 188,
+       "rush_yds": 67,
+       "pass_yds": 121,
+       "to_lost": 1,
+       "to_gained": 0,
+       "third_conv": 3,
+       "third_att": 15
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-06T00:36+00:00",
-     "check": "cfbstats season totals matched through 2026-11-04",
+     "retrieved_at": "2026-11-13T00:46+00:00",
+     "check": "cfbstats season totals matched through 2026-11-11",
      "cfbstats_url": "https://cfbstats.com/2026/team/400/index.html"
     }
    }
@@ -51486,11 +51503,28 @@
        "to_gained": 2,
        "third_conv": 6,
        "third_att": 14
+      },
+      {
+       "event": "401866461",
+       "date": "2026-11-11",
+       "opp": "Buffalo",
+       "opp_id": "2084",
+       "site": "H",
+       "pf": 7,
+       "pa": 28,
+       "result": "L 7-28",
+       "total_yds": 325,
+       "rush_yds": 189,
+       "pass_yds": 136,
+       "to_lost": 0,
+       "to_gained": 0,
+       "third_conv": 4,
+       "third_att": 15
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-06T00:35+00:00",
-     "check": "cfbstats season totals matched through 2026-11-04, except third-down attempts 115 in ESPN box scores vs 114 on cfbstats; third-down conversions 41 in ESPN box scores vs 40 on cfbstats",
+     "retrieved_at": "2026-11-13T00:46+00:00",
+     "check": "cfbstats season totals matched through 2026-11-11, except third-down attempts 130 in ESPN box scores vs 129 on cfbstats; third-down conversions 45 in ESPN box scores vs 44 on cfbstats",
      "cfbstats_url": "https://cfbstats.com/2026/team/47/index.html"
     },
     "2025": {
@@ -53256,11 +53290,28 @@
        "to_gained": 1,
        "third_conv": 7,
        "third_att": 15
+      },
+      {
+       "event": "401866462",
+       "date": "2026-11-11",
+       "opp": "Sacramento State",
+       "opp_id": "16",
+       "site": "H",
+       "pf": 28,
+       "pa": 7,
+       "result": "W 28-7",
+       "total_yds": 424,
+       "rush_yds": 319,
+       "pass_yds": 105,
+       "to_lost": 1,
+       "to_gained": 1,
+       "third_conv": 11,
+       "third_att": 18
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-06T00:35+00:00",
-     "check": "cfbstats season totals matched through 2026-11-04",
+     "retrieved_at": "2026-11-13T00:46+00:00",
+     "check": "cfbstats season totals matched through 2026-11-11",
      "cfbstats_url": "https://cfbstats.com/2026/team/129/index.html"
     },
     "2025": {
@@ -70667,11 +70718,28 @@
        "to_gained": 1,
        "third_conv": 5,
        "third_att": 15
+      },
+      {
+       "event": "401866463",
+       "date": "2026-11-11",
+       "opp": "Massachusetts",
+       "opp_id": "113",
+       "site": "H",
+       "pf": 24,
+       "pa": 0,
+       "result": "W 24-0",
+       "total_yds": 436,
+       "rush_yds": 239,
+       "pass_yds": 197,
+       "to_lost": 0,
+       "to_gained": 1,
+       "third_conv": 7,
+       "third_att": 15
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-06T00:36+00:00",
-     "check": "cfbstats season totals matched through 2026-11-04, except rushing yards 1,733 in ESPN box scores vs 1,729 on cfbstats; total yards 4,098 in ESPN box scores vs 4,094 on cfbstats",
+     "retrieved_at": "2026-11-13T00:48+00:00",
+     "check": "cfbstats season totals matched through 2026-11-11, except rushing yards 1,972 in ESPN box scores vs 1,968 on cfbstats; total yards 4,534 in ESPN box scores vs 4,530 on cfbstats",
      "cfbstats_url": "https://cfbstats.com/2026/team/709/index.html"
     },
     "2025": {
@@ -73670,6 +73738,6 @@
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-11-12T02:01+00:00"
+  "retrieved_at": "2026-11-13T00:46+00:00"
  }
 }
