@@ -1,4 +1,4 @@
-quick check: new final 2026-11-13 Florida State Seminoles at Pittsburgh Panthers
+quick check: new final 2026-11-13 Illinois Fighting Illini at UCLA Bruins
 STORED registry 2026: 138 of 138 cfbstats teams joined to ESPN
 [registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids
 STORED AP Top 25 2026-11-08 1 Georgia, 2 Utah, 3 Notre Dame, 4 UCLA, 5 Miami ...
@@ -29,7 +29,7 @@ REFUSED: team-season California 2026: ESPN box scores disagree with cfbstats sea
 [team] Clemson 2026: no new games; still matches cfbstats
 REFUSED: team-season Coastal Carolina 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1126, 1116), 'pass_yds': (2189, 2199)} (ESPN, cfbstats)
 [team] Coastal Carolina 2026 REFUSED by validator
-REFUSED: team-season Colorado 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1184, 1172), 'total_yds': (3483, 3471)} (ESPN, cfbstats)
+REFUSED: team-season Colorado 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1433, 1421), 'total_yds': (3949, 3937)} (ESPN, cfbstats)
 [team] Colorado 2026 REFUSED by validator
 REFUSED: team-season Colorado State 2026: ESPN box scores disagree with cfbstats season totals {'pass_yds': (2480, 2473)} (ESPN, cfbstats)
 [team] Colorado State 2026 REFUSED by validator
@@ -44,7 +44,7 @@ REFUSED: team-season Florida 2026: ESPN box scores disagree with cfbstats season
 REFUSED: team-season Florida Atlantic 2026: ESPN box scores disagree with cfbstats season totals {'to_gained': (13, 12)} (ESPN, cfbstats)
 [team] Florida Atlantic 2026 REFUSED by validator
 STORED team Florida State 2026: 10 games
-[team] Florida State 2026: 10 games; not cross-checked yet: cfbstats is through 2026-11-12, ESPN's latest game is 2026-11-13
+[team] Florida State 2026: 10 games; matches cfbstats through 2026-11-13
 [team] Fresno State 2026: no new games; still matches cfbstats
 [team] Georgia 2026: no new games; still matches cfbstats
 REFUSED: team-season Georgia Southern 2026: ESPN box scores disagree with cfbstats season totals {'pass_yds': (2539, 2545)} (ESPN, cfbstats)
@@ -53,8 +53,10 @@ REFUSED: team-season Georgia Southern 2026: ESPN box scores disagree with cfbsta
 [team] Georgia Tech 2026: no new games; still matches cfbstats
 REFUSED: team Hawai'i 2026 2026-08-29: total yards 322 != rushing 46 + passing 279
 [team] Hawai'i 2026 REFUSED by validator
-[team] Houston 2026: no new games; still matches cfbstats
-[team] Illinois 2026: no new games; still matches cfbstats
+STORED team Houston 2026: 10 games
+[team] Houston 2026: 10 games; matches cfbstats through 2026-11-13
+STORED team Illinois 2026: 10 games
+[team] Illinois 2026: 10 games; matches cfbstats through 2026-11-13
 [team] Indiana 2026: no new games; still matches cfbstats
 [team] Iowa 2026: no new games; still matches cfbstats
 [team] Iowa State 2026: no new games; still matches cfbstats
@@ -112,7 +114,7 @@ REFUSED: team-season Old Dominion 2026: ESPN box scores disagree with cfbstats s
 [team] Oregon State 2026: no new games; still matches cfbstats
 [team] Penn State 2026: no new games; still matches cfbstats
 STORED team Pittsburgh 2026: 10 games
-[team] Pittsburgh 2026: 10 games; not cross-checked yet: cfbstats is through 2026-11-12, ESPN's latest game is 2026-11-13
+[team] Pittsburgh 2026: 10 games; matches cfbstats through 2026-11-13
 [team] Purdue 2026: no new games; still matches cfbstats
 [team] Rice 2026: no new games; still matches cfbstatsTraceback (most recent call last):
   File "/home/runner/work/college-football/college-football/collect.py", line 114, in run
@@ -154,7 +156,8 @@ REFUSED: team-season Texas 2026: ESPN box scores disagree with cfbstats season t
 [team] Tulsa 2026: no new games; still matches cfbstats
 [team] UAB 2026: no new games; still matches cfbstats
 [team] UCF 2026: no new games; still matches cfbstats
-[team] UCLA 2026: no new games; still matches cfbstats
+STORED team UCLA 2026: 10 games
+[team] UCLA 2026: 10 games; matches cfbstats through 2026-11-13
 [team] UNLV 2026: no new games; still matches cfbstats
 [team] USC 2026: no new games; still matches cfbstats
 [team] South Florida 2026: no new games; still matches cfbstats
@@ -179,11 +182,11 @@ REFUSED: team-season Virginia Tech 2026: ESPN box scores disagree with cfbstats 
 [team] Wyoming 2026: no new games; still matches cfbstats
 [team] 2026: 138 registry teams; 0 sealed, 114 collected, 24 not stored
 [team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); California (refused, see above); Coastal Carolina (refused, see above); Colorado (refused, see above); Colorado State (refused, see above); Florida (refused, see above); Florida Atlantic (refused, see above); Georgia Southern (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); Navy (refused, see above); New Mexico State (refused, see above); North Texas (refused, see above); Ohio (refused, see above); Old Dominion (refused, see above); SMU (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); UTSA (refused, see above); Utah (refused, see above); Utah State (refused, see above); Virginia Tech (refused, see above)
-[natref] 2026 qb: 45 players stored (0 game logs fetched, 45 unchanged)
-STORED natref 2026 qb: 45 players through 2026-11-12
-[natref] 2026 rb: 46 players stored (0 game logs fetched, 46 unchanged)
-STORED natref 2026 rb: 46 players through 2026-11-12
-[natref] 2026 wr: 56 players stored (0 game logs fetched, 56 unchanged)
-STORED natref 2026 wr: 56 players through 2026-11-12
+[natref] 2026 qb: 44 players stored (2 game logs fetched, 42 unchanged)
+STORED natref 2026 qb: 44 players through 2026-11-13
+[natref] 2026 rb: 46 players stored (2 game logs fetched, 44 unchanged)
+STORED natref 2026 rb: 46 players through 2026-11-13
+[natref] 2026 wr: 56 players stored (6 game logs fetched, 50 unchanged)
+STORED natref 2026 wr: 56 players through 2026-11-13
 [cfp] committee Top 25 unchanged since Week 11 (2026-11-10); no new snapshot
 FAILED sections: team_2026
