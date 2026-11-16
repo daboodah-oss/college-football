@@ -1,7 +1,7 @@
 {
  "qb": {
   "season": 2026,
-  "data_through": "2026-11-14",
+  "data_through": "2026-11-15",
   "positions": [
    "QB"
   ],
@@ -25,10 +25,10 @@
      "288-1175394",
      "670-50207426",
      "709-1175505",
+     "433-1136057",
      "8-50311743",
      "367-2000170",
-     "559-1202665",
-     "674-1127454"
+     "559-1202665"
     ],
     "top": [
      "521-50259623",
@@ -136,6 +136,7 @@
      "277-50292486",
      "229-1175688",
      "528-50215853",
+     "433-1136057",
      "521-50259623",
      "29-1173984",
      "698-1176123",
@@ -144,7 +145,6 @@
      "657-1177721",
      "742-50310484",
      "419-50216301",
-     "433-1136057",
      "463-2001513",
      "253-1111779",
      "428-50216959",
@@ -2327,6 +2327,142 @@
      }
     ]
    },
+   "433-1136057": {
+    "name": "Trinidad Chambliss",
+    "team": "Miss",
+    "pos": "QB",
+    "line": {
+     "g": 10,
+     "att": 357,
+     "cmp": 221,
+     "yds": 2486,
+     "td": 19,
+     "int": 9
+    },
+    "url": "https://cfbstats.com/2026/player/433/1136057/passing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-06",
+      "opp": "Louisville",
+      "site": "N",
+      "result": "W 41-38",
+      "att": 36,
+      "cmp": 21,
+      "yds": 336,
+      "td": 3,
+      "int": 1,
+      "src_rating": 158.67
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Charlotte",
+      "site": "H",
+      "result": "W 41-9",
+      "att": 26,
+      "cmp": 23,
+      "yds": 225,
+      "td": 2,
+      "int": 0,
+      "src_rating": 186.53
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "LSU",
+      "site": "H",
+      "result": "W 32-24",
+      "att": 48,
+      "cmp": 33,
+      "yds": 363,
+      "td": 2,
+      "int": 1,
+      "src_rating": 141.86
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Florida",
+      "site": "A",
+      "result": "L 28-52",
+      "att": 34,
+      "cmp": 25,
+      "yds": 298,
+      "td": 1,
+      "int": 1,
+      "src_rating": 150.99
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "Vanderbilt",
+      "site": "A",
+      "result": "W 52-17",
+      "att": 30,
+      "cmp": 20,
+      "yds": 213,
+      "td": 3,
+      "int": 1,
+      "src_rating": 152.64
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Missouri",
+      "site": "H",
+      "result": "W 31-3",
+      "att": 36,
+      "cmp": 20,
+      "yds": 241,
+      "td": 3,
+      "int": 0,
+      "src_rating": 139.29
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Texas",
+      "site": "A",
+      "result": "L 27-34",
+      "att": 52,
+      "cmp": 25,
+      "yds": 250,
+      "td": 2,
+      "int": 3,
+      "src_rating": 89.62
+     },
+     {
+      "date": "2026-10-31",
+      "opp": "Auburn",
+      "site": "H",
+      "result": "W 45-15",
+      "att": 34,
+      "cmp": 22,
+      "yds": 263,
+      "td": 2,
+      "int": 1,
+      "src_rating": 143.21
+     },
+     {
+      "date": "2026-11-07",
+      "opp": "Georgia",
+      "site": "H",
+      "result": "L 7-42",
+      "att": 34,
+      "cmp": 18,
+      "yds": 170,
+      "td": 0,
+      "int": 1,
+      "src_rating": 89.06
+     },
+     {
+      "date": "2026-11-15",
+      "opp": "Oklahoma",
+      "site": "A",
+      "result": "L 17-24",
+      "att": 27,
+      "cmp": 14,
+      "yds": 127,
+      "td": 1,
+      "int": 0,
+      "src_rating": 103.58
+     }
+    ]
+   },
    "8-50311743": {
     "name": "Keelon Russell",
     "team": "Alabama",
@@ -2732,142 +2868,6 @@
       "td": 1,
       "int": 1,
       "src_rating": 124.23
-     }
-    ]
-   },
-   "674-1127454": {
-    "name": "Davis Warren",
-    "team": "Stanford",
-    "pos": "QB",
-    "line": {
-     "g": 10,
-     "att": 339,
-     "cmp": 202,
-     "yds": 2406,
-     "td": 14,
-     "int": 3
-    },
-    "url": "https://cfbstats.com/2026/player/674/1127454/passing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-08-29",
-      "opp": "Hawaii",
-      "site": "H",
-      "result": "W 37-27",
-      "att": 34,
-      "cmp": 22,
-      "yds": 310,
-      "td": 1,
-      "int": 0,
-      "src_rating": 151.01
-     },
-     {
-      "date": "2026-09-04",
-      "opp": "Miami (FL)",
-      "site": "H",
-      "result": "L 6-45",
-      "att": 41,
-      "cmp": 21,
-      "yds": 214,
-      "td": 0,
-      "int": 0,
-      "src_rating": 95.07
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Duke",
-      "site": "A",
-      "result": "L 7-35",
-      "att": 32,
-      "cmp": 18,
-      "yds": 151,
-      "td": 1,
-      "int": 0,
-      "src_rating": 106.2
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "Georgia Tech",
-      "site": "H",
-      "result": "W 34-27",
-      "att": 36,
-      "cmp": 22,
-      "yds": 396,
-      "td": 3,
-      "int": 0,
-      "src_rating": 181.01
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Wake Forest",
-      "site": "A",
-      "result": "L 3-57",
-      "att": 30,
-      "cmp": 19,
-      "yds": 136,
-      "td": 0,
-      "int": 1,
-      "src_rating": 94.74
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "Notre Dame",
-      "site": "A",
-      "result": "L 7-58",
-      "att": 22,
-      "cmp": 12,
-      "yds": 144,
-      "td": 1,
-      "int": 1,
-      "src_rating": 115.44
-     },
-     {
-      "date": "2026-10-17",
-      "opp": "Elon",
-      "site": "H",
-      "result": "W 34-7",
-      "att": 39,
-      "cmp": 27,
-      "yds": 279,
-      "td": 1,
-      "int": 0,
-      "src_rating": 137.78
-     },
-     {
-      "date": "2026-10-23",
-      "opp": "NC State",
-      "site": "H",
-      "result": "W 31-28",
-      "att": 37,
-      "cmp": 22,
-      "yds": 303,
-      "td": 4,
-      "int": 0,
-      "src_rating": 163.93
-     },
-     {
-      "date": "2026-10-31",
-      "opp": "Louisville",
-      "site": "A",
-      "result": "L 24-52",
-      "att": 37,
-      "cmp": 23,
-      "yds": 270,
-      "td": 3,
-      "int": 1,
-      "src_rating": 144.8
-     },
-     {
-      "date": "2026-11-14",
-      "opp": "Virginia Tech",
-      "site": "A",
-      "result": "W 40-22",
-      "att": 31,
-      "cmp": 16,
-      "yds": 203,
-      "td": 0,
-      "int": 0,
-      "src_rating": 106.61
      }
     ]
    },
@@ -5387,6 +5387,142 @@
      }
     ]
    },
+   "674-1127454": {
+    "name": "Davis Warren",
+    "team": "Stanford",
+    "pos": "QB",
+    "line": {
+     "g": 10,
+     "att": 339,
+     "cmp": 202,
+     "yds": 2406,
+     "td": 14,
+     "int": 3
+    },
+    "url": "https://cfbstats.com/2026/player/674/1127454/passing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-08-29",
+      "opp": "Hawaii",
+      "site": "H",
+      "result": "W 37-27",
+      "att": 34,
+      "cmp": 22,
+      "yds": 310,
+      "td": 1,
+      "int": 0,
+      "src_rating": 151.01
+     },
+     {
+      "date": "2026-09-04",
+      "opp": "Miami (FL)",
+      "site": "H",
+      "result": "L 6-45",
+      "att": 41,
+      "cmp": 21,
+      "yds": 214,
+      "td": 0,
+      "int": 0,
+      "src_rating": 95.07
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Duke",
+      "site": "A",
+      "result": "L 7-35",
+      "att": 32,
+      "cmp": 18,
+      "yds": 151,
+      "td": 1,
+      "int": 0,
+      "src_rating": 106.2
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Georgia Tech",
+      "site": "H",
+      "result": "W 34-27",
+      "att": 36,
+      "cmp": 22,
+      "yds": 396,
+      "td": 3,
+      "int": 0,
+      "src_rating": 181.01
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Wake Forest",
+      "site": "A",
+      "result": "L 3-57",
+      "att": 30,
+      "cmp": 19,
+      "yds": 136,
+      "td": 0,
+      "int": 1,
+      "src_rating": 94.74
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "Notre Dame",
+      "site": "A",
+      "result": "L 7-58",
+      "att": 22,
+      "cmp": 12,
+      "yds": 144,
+      "td": 1,
+      "int": 1,
+      "src_rating": 115.44
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Elon",
+      "site": "H",
+      "result": "W 34-7",
+      "att": 39,
+      "cmp": 27,
+      "yds": 279,
+      "td": 1,
+      "int": 0,
+      "src_rating": 137.78
+     },
+     {
+      "date": "2026-10-23",
+      "opp": "NC State",
+      "site": "H",
+      "result": "W 31-28",
+      "att": 37,
+      "cmp": 22,
+      "yds": 303,
+      "td": 4,
+      "int": 0,
+      "src_rating": 163.93
+     },
+     {
+      "date": "2026-10-31",
+      "opp": "Louisville",
+      "site": "A",
+      "result": "L 24-52",
+      "att": 37,
+      "cmp": 23,
+      "yds": 270,
+      "td": 3,
+      "int": 1,
+      "src_rating": 144.8
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "Virginia Tech",
+      "site": "A",
+      "result": "W 40-22",
+      "att": 31,
+      "cmp": 16,
+      "yds": 203,
+      "td": 0,
+      "int": 0,
+      "src_rating": 106.61
+     }
+    ]
+   },
    "419-50216301": {
     "name": "Roman Gagliano",
     "team": "MTSU",
@@ -5520,130 +5656,6 @@
       "td": 2,
       "int": 0,
       "src_rating": 139.9
-     }
-    ]
-   },
-   "433-1136057": {
-    "name": "Trinidad Chambliss",
-    "team": "Miss",
-    "pos": "QB",
-    "line": {
-     "g": 9,
-     "att": 330,
-     "cmp": 207,
-     "yds": 2359,
-     "td": 18,
-     "int": 9
-    },
-    "url": "https://cfbstats.com/2026/player/433/1136057/passing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-06",
-      "opp": "Louisville",
-      "site": "N",
-      "result": "W 41-38",
-      "att": 36,
-      "cmp": 21,
-      "yds": 336,
-      "td": 3,
-      "int": 1,
-      "src_rating": 158.67
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Charlotte",
-      "site": "H",
-      "result": "W 41-9",
-      "att": 26,
-      "cmp": 23,
-      "yds": 225,
-      "td": 2,
-      "int": 0,
-      "src_rating": 186.53
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "LSU",
-      "site": "H",
-      "result": "W 32-24",
-      "att": 48,
-      "cmp": 33,
-      "yds": 363,
-      "td": 2,
-      "int": 1,
-      "src_rating": 141.86
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "Florida",
-      "site": "A",
-      "result": "L 28-52",
-      "att": 34,
-      "cmp": 25,
-      "yds": 298,
-      "td": 1,
-      "int": 1,
-      "src_rating": 150.99
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "Vanderbilt",
-      "site": "A",
-      "result": "W 52-17",
-      "att": 30,
-      "cmp": 20,
-      "yds": 213,
-      "td": 3,
-      "int": 1,
-      "src_rating": 152.64
-     },
-     {
-      "date": "2026-10-17",
-      "opp": "Missouri",
-      "site": "H",
-      "result": "W 31-3",
-      "att": 36,
-      "cmp": 20,
-      "yds": 241,
-      "td": 3,
-      "int": 0,
-      "src_rating": 139.29
-     },
-     {
-      "date": "2026-10-24",
-      "opp": "Texas",
-      "site": "A",
-      "result": "L 27-34",
-      "att": 52,
-      "cmp": 25,
-      "yds": 250,
-      "td": 2,
-      "int": 3,
-      "src_rating": 89.62
-     },
-     {
-      "date": "2026-10-31",
-      "opp": "Auburn",
-      "site": "H",
-      "result": "W 45-15",
-      "att": 34,
-      "cmp": 22,
-      "yds": 263,
-      "td": 2,
-      "int": 1,
-      "src_rating": 143.21
-     },
-     {
-      "date": "2026-11-07",
-      "opp": "Georgia",
-      "site": "H",
-      "result": "L 7-42",
-      "att": 34,
-      "cmp": 18,
-      "yds": 170,
-      "td": 0,
-      "int": 1,
-      "src_rating": 89.06
      }
     ]
    },
@@ -6193,11 +6205,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-15T21:21+00:00"
+  "retrieved_at": "2026-11-16T00:27+00:00"
  },
  "rb": {
   "season": 2026,
-  "data_through": "2026-11-14",
+  "data_through": "2026-11-15",
   "positions": [
    "RB"
   ],
@@ -10847,11 +10859,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-15T21:21+00:00"
+  "retrieved_at": "2026-11-16T00:28+00:00"
  },
  "wr": {
   "season": 2026,
-  "data_through": "2026-11-14",
+  "data_through": "2026-11-15",
   "positions": [
    "WR",
    "TE"
@@ -16298,6 +16310,6 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-15T21:22+00:00"
+  "retrieved_at": "2026-11-16T00:28+00:00"
  }
 }

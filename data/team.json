@@ -21622,8 +21622,8 @@
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-15T21:18+00:00",
-     "check": "not cross-checked yet: cfbstats is through 2026-11-14, ESPN's latest game is 2026-11-15",
+     "retrieved_at": "2026-11-16T00:25+00:00",
+     "check": "cfbstats season totals matched through 2026-11-15",
      "cfbstats_url": "https://cfbstats.com/2026/team/433/index.html"
     },
     "2025": {
@@ -30631,8 +30631,8 @@
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-15T21:18+00:00",
-     "check": "not cross-checked yet: cfbstats is through 2026-11-14, ESPN's latest game is 2026-11-15",
+     "retrieved_at": "2026-11-16T00:25+00:00",
+     "check": "cfbstats season totals matched through 2026-11-15",
      "cfbstats_url": "https://cfbstats.com/2026/team/522/index.html"
     },
     "2025": {

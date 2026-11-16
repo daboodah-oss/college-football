@@ -117,14 +117,15 @@ REFUSED: team-season Ohio 2026: ESPN box scores disagree with cfbstats season to
 [team] Ohio 2026 REFUSED by validator
 [team] Ohio State 2026: no new games; still matches cfbstats
 STORED team Oklahoma 2026: 10 games
-[team] Oklahoma 2026: 10 games; not cross-checked yet: cfbstats is through 2026-11-14, ESPN's latest game is 2026-11-15
+[team] Oklahoma 2026: 10 games; matches cfbstats through 2026-11-15
 [team] Oklahoma State 2026: no new games; still matches cfbstats
 REFUSED: team-season Old Dominion 2026: ESPN box scores disagree with cfbstats season totals {'pass_yds': (1738, 1746), 'total_yds': (2674, 2682)} (ESPN, cfbstats)
 [team] Old Dominion 2026 REFUSED by validator
 STORED team Ole Miss 2026: 10 games
-[team] Ole Miss 2026: 10 games; not cross-checked yet: cfbstats is through 2026-11-14, ESPN's latest game is 2026-11-15
+[team] Ole Miss 2026: 10 games; matches cfbstats through 2026-11-15
 [team] Oregon 2026: no new games; still matches cfbstats
-[team] Oregon State 2026: no new games; still matches cfbstatsTraceback (most recent call last):
+[team] Oregon State 2026: no new games; still matches cfbstats
+[team] Penn State 2026: no new games; still matches cfbstatsTraceback (most recent call last):
   File "/home/runner/work/college-football/college-football/collect.py", line 114, in run
     out = fn(*a, **k)
           ^^^^^^^^^^^
@@ -147,7 +148,6 @@ Traceback (most recent call last):
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ValueError: 2025 team seasons not stored: Army (refused, see above); East Carolina (refused, see above); Georgia Southern (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Navy (refused, see above); Oregon State (refused, see above); Utah State (refused, see above); Washington State (refused, see above)
 
-[team] Penn State 2026: no new games; still matches cfbstats
 [team] Pittsburgh 2026: no new games; still matches cfbstats
 [team] Purdue 2026: no new games; still matches cfbstats
 [team] Rice 2026: no new games; still matches cfbstats
@@ -318,12 +318,12 @@ REFUSED: team-season Western Kentucky 2024: ESPN box scores disagree with cfbsta
 [team] Western Kentucky 2024 REFUSED by validator
 [team] 2024: 134 registry teams; 102 sealed, 0 collected, 32 not stored
 [team_2024] FAILED: 2024 team seasons not stored: Arizona (refused, see above); Arkansas (refused, see above); Boston College (refused, see above); Central Michigan (refused, see above); Coastal Carolina (refused, see above); Georgia Tech (refused, see above); Houston (refused, see above); Illinois (refused, see above); James Madison (refused, see above); Kansas (refused, see above); LSU (refused, see above); Liberty (refused, see above); Louisiana (refused, see above); Louisiana Tech (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Northwestern (refused, see above); Ohio (refused, see above); Ohio State (refused, see above); Old Dominion (refused, see above); San José State (refused, see above); Temple (refused, see above); Toledo (refused, see above); UAB (refused, see above); South Florida (refused, see above); UTSA (refused, see above); Utah State (refused, see above); West Virginia (refused, see above); Western Kentucky (refused, see above)
-[natref] 2026 qb: 46 players stored (0 game logs fetched, 46 unchanged)
-STORED natref 2026 qb: 46 players through 2026-11-14
+[natref] 2026 qb: 46 players stored (1 game logs fetched, 45 unchanged)
+STORED natref 2026 qb: 46 players through 2026-11-15
 [natref] 2026 rb: 44 players stored (0 game logs fetched, 44 unchanged)
-STORED natref 2026 rb: 44 players through 2026-11-14
+STORED natref 2026 rb: 44 players through 2026-11-15
 [natref] 2026 wr: 52 players stored (0 game logs fetched, 52 unchanged)
-STORED natref 2026 wr: 52 players through 2026-11-14
+STORED natref 2026 wr: 52 players through 2026-11-15
 [natref] 2025 qb: sealed (45 players)
 [natref] 2025 rb: sealed (51 players)
 [natref] 2025 wr: sealed (54 players)
