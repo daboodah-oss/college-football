@@ -1,10 +1,10 @@
 {
- "at": "2026-11-19T20:30-05:00",
+ "at": "2026-11-20T00:40-05:00",
  "failed": [
   "team_2026"
  ],
  "log": [
-  "quick check: new final 2026-11-18 Akron Zips at Massachusetts Minutemen",
+  "quick check: new final 2026-11-19 Rice Owls at Temple Owls",
   "[registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids",
   "[team] Air Force 2026 REFUSED by validator",
   "[team] Buffalo 2026 REFUSED by validator",
@@ -34,9 +34,9 @@
   "[team] Virginia Tech 2026 REFUSED by validator",
   "[team] 2026: 138 registry teams; 0 sealed, 112 collected, 26 not stored",
   "[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); California (refused, see above); Coastal Carolina (refused, see above); Colorado (refused, see above); Colorado State (refused, see above); Florida International (refused, see above); Florida (refused, see above); Florida Atlantic (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); Middle Tennessee (refused, see above); Missouri State (refused, see above); Navy (refused, see above); New Mexico State (refused, see above); North Texas (refused, see above); Ohio (refused, see above); Old Dominion (refused, see above); SMU (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); UTSA (refused, see above); Utah (refused, see above); Utah State (refused, see above); Virginia Tech (refused, see above)",
-  "[natref] 2026 qb: 46 players stored (1 game logs fetched, 45 unchanged)",
-  "[natref] 2026 rb: 45 players stored (2 game logs fetched, 43 unchanged)",
-  "[natref] 2026 wr: 52 players stored (1 game logs fetched, 51 unchanged)",
+  "[natref] 2026 qb: 46 players stored (0 game logs fetched, 46 unchanged)",
+  "[natref] 2026 rb: 45 players stored (0 game logs fetched, 45 unchanged)",
+  "[natref] 2026 wr: 52 players stored (0 game logs fetched, 52 unchanged)",
   "[cfp] committee Top 25 unchanged since Week 12 (2026-11-17); no new snapshot",
   "FAILED sections: team_2026"
  ],
@@ -567,6 +567,7 @@
   "401862827",
   "401862828",
   "401862829",
+  "401862830",
   "401864424",
   "401864425",
   "401864432",

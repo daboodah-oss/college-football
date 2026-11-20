@@ -32997,11 +32997,28 @@
        "to_gained": 1,
        "third_conv": 2,
        "third_att": 12
+      },
+      {
+       "event": "401862830",
+       "date": "2026-11-19",
+       "opp": "Rice",
+       "opp_id": "242",
+       "site": "H",
+       "pf": 27,
+       "pa": 31,
+       "result": "L 27-31",
+       "total_yds": 410,
+       "rush_yds": 300,
+       "pass_yds": 110,
+       "to_lost": 2,
+       "to_gained": 1,
+       "third_conv": 5,
+       "third_att": 10
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-15T12:32+00:00",
-     "check": "cfbstats season totals matched through 2026-11-14, except rushing yards 1,741 in ESPN box scores vs 1,740 on cfbstats; total yards 3,412 in ESPN box scores vs 3,411 on cfbstats",
+     "retrieved_at": "2026-11-20T05:39+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-18, ESPN's latest game is 2026-11-19",
      "cfbstats_url": "https://cfbstats.com/2026/team/690/index.html"
     },
     "2025": {
@@ -36597,11 +36614,28 @@
        "to_gained": 2,
        "third_conv": 4,
        "third_att": 15
+      },
+      {
+       "event": "401862830",
+       "date": "2026-11-19",
+       "opp": "Temple",
+       "opp_id": "218",
+       "site": "A",
+       "pf": 31,
+       "pa": 27,
+       "result": "W 31-27",
+       "total_yds": 458,
+       "rush_yds": 264,
+       "pass_yds": 194,
+       "to_lost": 1,
+       "to_gained": 2,
+       "third_conv": 5,
+       "third_att": 15
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-15T12:31+00:00",
-     "check": "cfbstats season totals matched through 2026-11-14, except rushing yards 2,656 in ESPN box scores vs 2,657 on cfbstats; total yards 3,527 in ESPN box scores vs 3,528 on cfbstats",
+     "retrieved_at": "2026-11-20T05:38+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-18, ESPN's latest game is 2026-11-19",
      "cfbstats_url": "https://cfbstats.com/2026/team/574/index.html"
     },
     "2025": {
@@ -75812,6 +75846,6 @@
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-11-20T01:28+00:00"
+  "retrieved_at": "2026-11-20T05:38+00:00"
  }
 }
