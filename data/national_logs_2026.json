@@ -1,7 +1,7 @@
 {
  "qb": {
   "season": 2026,
-  "data_through": "2026-11-19",
+  "data_through": "2026-11-20",
   "positions": [
    "QB"
   ],
@@ -21,10 +21,10 @@
      "365-2000773",
      "277-50292486",
      "742-50310484",
+     "709-1175505",
      "698-1176123",
      "288-1175394",
      "670-50207426",
-     "709-1175505",
      "433-1136057",
      "8-50311743",
      "367-2000170",
@@ -57,9 +57,9 @@
      "434-1211842",
      "257-1174433",
      "742-50310484",
+     "709-1175505",
      "149-50212936",
-     "518-50310418",
-     "365-2000773"
+     "518-50310418"
     ],
     "top": [
      "521-50259623",
@@ -147,12 +147,12 @@
      "419-50216301",
      "463-2001513",
      "253-1111779",
+     "193-1126444",
      "428-50216959",
+     "709-1175505",
      "231-2000776",
      "497-1175381",
-     "663-1180322",
-     "503-2001780",
-     "415-2000040"
+     "663-1180322"
     ],
     "top": [
      "277-50292486",
@@ -1783,6 +1783,154 @@
      }
     ]
    },
+   "709-1175505": {
+    "name": "John Alan Richter",
+    "team": "Toledo",
+    "pos": "QB",
+    "line": {
+     "g": 11,
+     "att": 322,
+     "cmp": 209,
+     "yds": 2692,
+     "td": 20,
+     "int": 3
+    },
+    "url": "https://cfbstats.com/2026/player/709/1175505/passing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-04",
+      "opp": "Michigan State",
+      "site": "A",
+      "result": "L 20-30",
+      "att": 21,
+      "cmp": 12,
+      "yds": 196,
+      "td": 2,
+      "int": 1,
+      "src_rating": 157.45
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Central Connecticut State",
+      "site": "H",
+      "result": "W 63-10",
+      "att": 24,
+      "cmp": 15,
+      "yds": 252,
+      "td": 3,
+      "int": 0,
+      "src_rating": 191.95
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Temple",
+      "site": "H",
+      "result": "W 49-48",
+      "att": 51,
+      "cmp": 36,
+      "yds": 429,
+      "td": 4,
+      "int": 0,
+      "src_rating": 167.13
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "San Diego State",
+      "site": "H",
+      "result": "W 41-16",
+      "att": 22,
+      "cmp": 16,
+      "yds": 284,
+      "td": 3,
+      "int": 0,
+      "src_rating": 226.17
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Ball State",
+      "site": "A",
+      "result": "W 39-24",
+      "att": 35,
+      "cmp": 19,
+      "yds": 201,
+      "td": 1,
+      "int": 0,
+      "src_rating": 111.96
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "Buffalo",
+      "site": "H",
+      "result": "L 8-23",
+      "att": 35,
+      "cmp": 22,
+      "yds": 203,
+      "td": 0,
+      "int": 0,
+      "src_rating": 111.58
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Eastern Michigan",
+      "site": "A",
+      "result": "W 34-14",
+      "att": 30,
+      "cmp": 24,
+      "yds": 288,
+      "td": 1,
+      "int": 0,
+      "src_rating": 171.64
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Western Michigan",
+      "site": "H",
+      "result": "W 45-38",
+      "att": 41,
+      "cmp": 29,
+      "yds": 391,
+      "td": 3,
+      "int": 1,
+      "src_rating": 170.11
+     },
+     {
+      "date": "2026-11-04",
+      "opp": "Sacramento State",
+      "site": "A",
+      "result": "W 20-17",
+      "att": 17,
+      "cmp": 9,
+      "yds": 60,
+      "td": 1,
+      "int": 1,
+      "src_rating": 90.23
+     },
+     {
+      "date": "2026-11-11",
+      "opp": "Massachusetts",
+      "site": "H",
+      "result": "W 24-0",
+      "att": 22,
+      "cmp": 13,
+      "yds": 197,
+      "td": 1,
+      "int": 0,
+      "src_rating": 149.31
+     },
+     {
+      "date": "2026-11-20",
+      "opp": "Bowling Green",
+      "site": "H",
+      "result": "W 19-0",
+      "att": 24,
+      "cmp": 14,
+      "yds": 191,
+      "td": 1,
+      "int": 0,
+      "src_rating": 138.93
+     }
+    ]
+   },
    "698-1176123": {
     "name": "Jaden Craig",
     "team": "TCU",
@@ -2188,142 +2336,6 @@
       "td": 3,
       "int": 0,
       "src_rating": 196.13
-     }
-    ]
-   },
-   "709-1175505": {
-    "name": "John Alan Richter",
-    "team": "Toledo",
-    "pos": "QB",
-    "line": {
-     "g": 10,
-     "att": 298,
-     "cmp": 195,
-     "yds": 2501,
-     "td": 19,
-     "int": 3
-    },
-    "url": "https://cfbstats.com/2026/player/709/1175505/passing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-04",
-      "opp": "Michigan State",
-      "site": "A",
-      "result": "L 20-30",
-      "att": 21,
-      "cmp": 12,
-      "yds": 196,
-      "td": 2,
-      "int": 1,
-      "src_rating": 157.45
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Central Connecticut State",
-      "site": "H",
-      "result": "W 63-10",
-      "att": 24,
-      "cmp": 15,
-      "yds": 252,
-      "td": 3,
-      "int": 0,
-      "src_rating": 191.95
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Temple",
-      "site": "H",
-      "result": "W 49-48",
-      "att": 51,
-      "cmp": 36,
-      "yds": 429,
-      "td": 4,
-      "int": 0,
-      "src_rating": 167.13
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "San Diego State",
-      "site": "H",
-      "result": "W 41-16",
-      "att": 22,
-      "cmp": 16,
-      "yds": 284,
-      "td": 3,
-      "int": 0,
-      "src_rating": 226.17
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Ball State",
-      "site": "A",
-      "result": "W 39-24",
-      "att": 35,
-      "cmp": 19,
-      "yds": 201,
-      "td": 1,
-      "int": 0,
-      "src_rating": 111.96
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "Buffalo",
-      "site": "H",
-      "result": "L 8-23",
-      "att": 35,
-      "cmp": 22,
-      "yds": 203,
-      "td": 0,
-      "int": 0,
-      "src_rating": 111.58
-     },
-     {
-      "date": "2026-10-17",
-      "opp": "Eastern Michigan",
-      "site": "A",
-      "result": "W 34-14",
-      "att": 30,
-      "cmp": 24,
-      "yds": 288,
-      "td": 1,
-      "int": 0,
-      "src_rating": 171.64
-     },
-     {
-      "date": "2026-10-24",
-      "opp": "Western Michigan",
-      "site": "H",
-      "result": "W 45-38",
-      "att": 41,
-      "cmp": 29,
-      "yds": 391,
-      "td": 3,
-      "int": 1,
-      "src_rating": 170.11
-     },
-     {
-      "date": "2026-11-04",
-      "opp": "Sacramento State",
-      "site": "A",
-      "result": "W 20-17",
-      "att": 17,
-      "cmp": 9,
-      "yds": 60,
-      "td": 1,
-      "int": 1,
-      "src_rating": 90.23
-     },
-     {
-      "date": "2026-11-11",
-      "opp": "Massachusetts",
-      "site": "H",
-      "result": "W 24-0",
-      "att": 22,
-      "cmp": 13,
-      "yds": 197,
-      "td": 1,
-      "int": 0,
-      "src_rating": 149.31
      }
     ]
    },
@@ -5795,6 +5807,154 @@
      }
     ]
    },
+   "193-1126444": {
+    "name": "Walker Eget",
+    "team": "Duke",
+    "pos": "QB",
+    "line": {
+     "g": 11,
+     "att": 326,
+     "cmp": 197,
+     "yds": 2193,
+     "td": 11,
+     "int": 5
+    },
+    "url": "https://cfbstats.com/2026/player/193/1126444/passing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-05",
+      "opp": "Tulane",
+      "site": "H",
+      "result": "W 17-3",
+      "att": 26,
+      "cmp": 13,
+      "yds": 131,
+      "td": 0,
+      "int": 0,
+      "src_rating": 92.32
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Illinois",
+      "site": "A",
+      "result": "W 31-27",
+      "att": 21,
+      "cmp": 15,
+      "yds": 206,
+      "td": 3,
+      "int": 0,
+      "src_rating": 200.97
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Stanford",
+      "site": "H",
+      "result": "W 35-7",
+      "att": 24,
+      "cmp": 14,
+      "yds": 202,
+      "td": 1,
+      "int": 1,
+      "src_rating": 134.45
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "William & Mary",
+      "site": "H",
+      "result": "W 62-7",
+      "att": 22,
+      "cmp": 16,
+      "yds": 182,
+      "td": 2,
+      "int": 0,
+      "src_rating": 172.22
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "Georgia Tech",
+      "site": "A",
+      "result": "L 25-28",
+      "att": 41,
+      "cmp": 26,
+      "yds": 259,
+      "td": 1,
+      "int": 0,
+      "src_rating": 124.53
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "North Carolina",
+      "site": "H",
+      "result": "L 20-24",
+      "att": 38,
+      "cmp": 24,
+      "yds": 249,
+      "td": 1,
+      "int": 1,
+      "src_rating": 121.64
+     },
+     {
+      "date": "2026-10-23",
+      "opp": "Virginia",
+      "site": "A",
+      "result": "W 19-16",
+      "att": 25,
+      "cmp": 14,
+      "yds": 211,
+      "td": 0,
+      "int": 1,
+      "src_rating": 118.9
+     },
+     {
+      "date": "2026-10-31",
+      "opp": "Boston College",
+      "site": "H",
+      "result": "W 47-2",
+      "att": 18,
+      "cmp": 11,
+      "yds": 201,
+      "td": 1,
+      "int": 0,
+      "src_rating": 173.24
+     },
+     {
+      "date": "2026-11-07",
+      "opp": "NC State",
+      "site": "A",
+      "result": "W 41-3",
+      "att": 31,
+      "cmp": 22,
+      "yds": 208,
+      "td": 1,
+      "int": 0,
+      "src_rating": 137.98
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "Miami (FL)",
+      "site": "A",
+      "result": "L 25-36",
+      "att": 42,
+      "cmp": 26,
+      "yds": 195,
+      "td": 1,
+      "int": 1,
+      "src_rating": 104.01
+     },
+     {
+      "date": "2026-11-20",
+      "opp": "Clemson",
+      "site": "H",
+      "result": "L 10-20",
+      "att": 38,
+      "cmp": 16,
+      "yds": 149,
+      "td": 0,
+      "int": 1,
+      "src_rating": 69.79
+     }
+    ]
+   },
    "428-50216959": {
     "name": "Drake Lindsey",
     "team": "Minnesota",
@@ -6066,150 +6226,14 @@
       "src_rating": 139.44
      }
     ]
-   },
-   "503-2001780": {
-    "name": "Taron Dickens",
-    "team": "N Illinois",
-    "pos": "QB",
-    "line": {
-     "g": 10,
-     "att": 318,
-     "cmp": 204,
-     "yds": 2070,
-     "td": 10,
-     "int": 8
-    },
-    "url": "https://cfbstats.com/2026/player/503/2001780/passing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-05",
-      "opp": "Iowa",
-      "site": "A",
-      "result": "L 0-40",
-      "att": 14,
-      "cmp": 9,
-      "yds": 96,
-      "td": 0,
-      "int": 1,
-      "src_rating": 107.6
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Illinois State",
-      "site": "H",
-      "result": "L 24-28",
-      "att": 27,
-      "cmp": 22,
-      "yds": 193,
-      "td": 1,
-      "int": 1,
-      "src_rating": 146.33
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Arizona",
-      "site": "A",
-      "result": "L 17-42",
-      "att": 37,
-      "cmp": 25,
-      "yds": 228,
-      "td": 1,
-      "int": 0,
-      "src_rating": 128.25
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "Georgia State",
-      "site": "A",
-      "result": "L 14-35",
-      "att": 42,
-      "cmp": 28,
-      "yds": 320,
-      "td": 1,
-      "int": 0,
-      "src_rating": 138.53
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "Air Force",
-      "site": "H",
-      "result": "L 7-28",
-      "att": 20,
-      "cmp": 13,
-      "yds": 140,
-      "td": 0,
-      "int": 1,
-      "src_rating": 113.8
-     },
-     {
-      "date": "2026-10-17",
-      "opp": "Wyoming",
-      "site": "A",
-      "result": "L 23-41",
-      "att": 44,
-      "cmp": 24,
-      "yds": 216,
-      "td": 1,
-      "int": 0,
-      "src_rating": 103.29
-     },
-     {
-      "date": "2026-10-24",
-      "opp": "Hawaii",
-      "site": "H",
-      "result": "L 21-56",
-      "att": 26,
-      "cmp": 17,
-      "yds": 171,
-      "td": 2,
-      "int": 2,
-      "src_rating": 130.64
-     },
-     {
-      "date": "2026-10-31",
-      "opp": "UNLV",
-      "site": "A",
-      "result": "L 24-31",
-      "att": 37,
-      "cmp": 19,
-      "yds": 253,
-      "td": 2,
-      "int": 1,
-      "src_rating": 121.22
-     },
-     {
-      "date": "2026-11-07",
-      "opp": "San Jose State",
-      "site": "A",
-      "result": "L 19-30",
-      "att": 36,
-      "cmp": 26,
-      "yds": 259,
-      "td": 1,
-      "int": 1,
-      "src_rating": 136.26
-     },
-     {
-      "date": "2026-11-14",
-      "opp": "Nevada",
-      "site": "H",
-      "result": "L 7-28",
-      "att": 35,
-      "cmp": 21,
-      "yds": 194,
-      "td": 1,
-      "int": 1,
-      "src_rating": 110.28
-     }
-    ]
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-21T05:33+00:00"
+  "retrieved_at": "2026-11-21T13:43+00:00"
  },
  "rb": {
   "season": 2026,
-  "data_through": "2026-11-19",
+  "data_through": "2026-11-20",
   "positions": [
    "RB"
   ],
@@ -6252,10 +6276,10 @@
      "497-2001366",
      "235-50309802",
      "706-2000730",
+     "311-50303320",
      "473-2000290",
      "694-1203707",
      "110-1174594",
-     "311-50303320",
      "404-50218273",
      "774-1180537",
      "66-50282868",
@@ -6290,8 +6314,8 @@
      "671-50286389",
      "367-2002330",
      "257-50312099",
-     "367-50304348",
      "311-50303320",
+     "367-50304348",
      "513-50304155",
      "497-2001366",
      "718-1174715",
@@ -6343,13 +6367,13 @@
     "order": [
      "694-1203707",
      "434-2000108",
+     "193-50260473",
      "86-2002536",
      "768-2000294",
-     "193-50260473",
+     "311-50303320",
      "521-50258899",
      "66-50282868",
      "774-1180537",
-     "311-50303320",
      "365-50312359",
      "674-50312286",
      "472-1136312",
@@ -6365,7 +6389,7 @@
     "top": [
      "694-1203707",
      "434-2000108",
-     "86-2002536"
+     "193-50260473"
     ],
     "top_dropped": []
    }
@@ -6376,10 +6400,10 @@
     "team": "Iowa State",
     "pos": "RB",
     "line": {
-     "g": 10,
-     "att": 185,
-     "yds": 1335,
-     "td": 12
+     "g": 11,
+     "att": 208,
+     "yds": 1506,
+     "td": 14
     },
     "url": "https://cfbstats.com/2026/player/311/50303320/rushing/gamelog.html",
     "games": [
@@ -6472,6 +6496,15 @@
       "att": 28,
       "yds": 216,
       "td": 3
+     },
+     {
+      "date": "2026-11-20",
+      "opp": "UCF",
+      "site": "A",
+      "result": "L 17-48",
+      "att": 23,
+      "yds": 171,
+      "td": 2
      }
     ]
    },
@@ -6480,10 +6513,10 @@
     "team": "Duke",
     "pos": "RB",
     "line": {
-     "g": 10,
-     "att": 207,
-     "yds": 1320,
-     "td": 19
+     "g": 11,
+     "att": 226,
+     "yds": 1436,
+     "td": 20
     },
     "url": "https://cfbstats.com/2026/player/193/50260473/rushing/gamelog.html",
     "games": [
@@ -6576,6 +6609,15 @@
       "att": 16,
       "yds": 131,
       "td": 2
+     },
+     {
+      "date": "2026-11-20",
+      "opp": "Clemson",
+      "site": "H",
+      "result": "L 10-20",
+      "att": 19,
+      "yds": 116,
+      "td": 1
      }
     ]
    },
@@ -8587,9 +8629,9 @@
     "team": "New Mexico",
     "pos": "RB",
     "line": {
-     "g": 10,
-     "att": 147,
-     "yds": 736,
+     "g": 11,
+     "att": 149,
+     "yds": 762,
      "td": 14
     },
     "url": "https://cfbstats.com/2026/player/473/2000290/rushing/gamelog.html",
@@ -8683,6 +8725,15 @@
       "att": 19,
       "yds": 89,
       "td": 1
+     },
+     {
+      "date": "2026-11-20",
+      "opp": "Wyoming",
+      "site": "A",
+      "result": "W 24-17",
+      "att": 2,
+      "yds": 26,
+      "td": 0
      }
     ]
    },
@@ -10990,11 +11041,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-21T05:33+00:00"
+  "retrieved_at": "2026-11-21T13:44+00:00"
  },
  "wr": {
   "season": 2026,
-  "data_through": "2026-11-19",
+  "data_through": "2026-11-20",
   "positions": [
    "WR",
    "TE"
@@ -11078,13 +11129,13 @@
      "29-50258780",
      "365-2000690",
      "288-2002206",
+     "529-50311694",
      "430-50304374",
      "254-1228138",
      "688-1127550",
      "749-2000598",
      "669-1238956",
-     "66-50295279",
-     "497-2002927"
+     "66-50295279"
     ],
     "top": [
      "528-50341534",
@@ -11109,13 +11160,13 @@
      "404-1240752",
      "749-50313147",
      "545-2000121",
-     "311-50371124",
      "430-50304374",
+     "811-50287688",
      "624-1240520",
+     "311-50371124",
      "648-1185034",
      "149-2002758",
-     "355-1176676",
-     "9-1174424"
+     "355-1176676"
     ],
     "top": [
      "465-50291896",
@@ -14467,6 +14518,119 @@
      }
     ]
    },
+   "529-50311694": {
+    "name": "Dakorien Moore",
+    "team": "Oregon",
+    "pos": "WR",
+    "line": {
+     "g": 11,
+     "rec": 60,
+     "yds": 757,
+     "td": 9
+    },
+    "url": "https://cfbstats.com/2026/player/529/50311694/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-05",
+      "opp": "Boise State",
+      "site": "H",
+      "result": "W 34-27",
+      "rec": 6,
+      "yds": 93,
+      "td": 1
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Oklahoma State",
+      "site": "A",
+      "result": "L 31-39",
+      "rec": 3,
+      "yds": 45,
+      "td": 1
+     },
+     {
+      "date": "2026-09-18",
+      "opp": "Portland State",
+      "site": "H",
+      "result": "W 84-0",
+      "rec": 2,
+      "yds": 54,
+      "td": 1
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "USC",
+      "site": "A",
+      "result": "W 41-27",
+      "rec": 3,
+      "yds": 42,
+      "td": 1
+     },
+     {
+      "date": "2026-10-10",
+      "opp": "UCLA",
+      "site": "H",
+      "result": "L 15-17",
+      "rec": 4,
+      "yds": 77,
+      "td": 0
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Nebraska",
+      "site": "H",
+      "result": "W 17-14",
+      "rec": 7,
+      "yds": 36,
+      "td": 0
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Illinois",
+      "site": "A",
+      "result": "L 10-21",
+      "rec": 9,
+      "yds": 70,
+      "td": 0
+     },
+     {
+      "date": "2026-10-31",
+      "opp": "Northwestern",
+      "site": "H",
+      "result": "W 34-26",
+      "rec": 7,
+      "yds": 128,
+      "td": 2
+     },
+     {
+      "date": "2026-11-07",
+      "opp": "Ohio State",
+      "site": "A",
+      "result": "W 41-28",
+      "rec": 7,
+      "yds": 56,
+      "td": 1
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "Michigan",
+      "site": "H",
+      "result": "W 31-7",
+      "rec": 7,
+      "yds": 101,
+      "td": 1
+     },
+     {
+      "date": "2026-11-20",
+      "opp": "Michigan State",
+      "site": "A",
+      "result": "W 45-7",
+      "rec": 5,
+      "yds": 55,
+      "td": 1
+     }
+    ]
+   },
    "430-50304374": {
     "name": "Sanfrisco Magee",
     "team": "Mississippi State",
@@ -15869,98 +16033,116 @@
      }
     ]
    },
-   "311-50371124": {
-    "name": "Jamal Polite Jr.",
-    "team": "Iowa State",
-    "pos": "WR",
+   "811-50287688": {
+    "name": "Kyle Frendt",
+    "team": "Wyoming",
+    "pos": "TE",
     "line": {
-     "g": 9,
-     "rec": 20,
-     "yds": 389,
-     "td": 2
+     "g": 11,
+     "rec": 22,
+     "yds": 425,
+     "td": 3
     },
-    "url": "https://cfbstats.com/2026/player/311/50371124/receiving/gamelog.html",
+    "url": "https://cfbstats.com/2026/player/811/50287688/receiving/gamelog.html",
     "games": [
      {
-      "date": "2026-09-12",
-      "opp": "Iowa",
+      "date": "2026-09-05",
+      "opp": "Colorado State",
       "site": "A",
-      "result": "L 13-16",
-      "rec": 1,
-      "yds": 20,
+      "result": "L 13-35",
+      "rec": 2,
+      "yds": 15,
       "td": 0
      },
      {
-      "date": "2026-09-19",
-      "opp": "Bowling Green",
+      "date": "2026-09-12",
+      "opp": "Northern Colorado",
       "site": "H",
-      "result": "W 55-7",
+      "result": "W 21-13",
       "rec": 1,
-      "yds": 34,
+      "yds": 18,
       "td": 1
      },
      {
-      "date": "2026-09-26",
-      "opp": "Utah",
-      "site": "H",
-      "result": "L 17-31",
-      "rec": 1,
-      "yds": 2,
-      "td": 0
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "West Virginia",
-      "site": "H",
-      "result": "W 45-42",
-      "rec": 2,
-      "yds": 12,
-      "td": 0
-     },
-     {
-      "date": "2026-10-09",
-      "opp": "BYU",
+      "date": "2026-09-19",
+      "opp": "Central Michigan",
       "site": "A",
       "result": "L 10-24",
-      "rec": 2,
-      "yds": 20,
+      "rec": 4,
+      "yds": 95,
       "td": 0
      },
      {
-      "date": "2026-10-24",
-      "opp": "Arizona",
-      "site": "A",
-      "result": "L 3-39",
+      "date": "2026-09-26",
+      "opp": "Hawaii",
+      "site": "H",
+      "result": "W 27-10",
       "rec": 1,
       "yds": 27,
       "td": 0
      },
      {
-      "date": "2026-10-31",
-      "opp": "Oklahoma State",
+      "date": "2026-10-03",
+      "opp": "North Dakota State",
+      "site": "A",
+      "result": "L 0-28",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2026-10-09",
+      "opp": "San Jose State",
+      "site": "A",
+      "result": "W 16-13",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Northern Illinois",
       "site": "H",
-      "result": "W 51-49",
-      "rec": 6,
-      "yds": 171,
-      "td": 1
+      "result": "W 41-23",
+      "rec": 3,
+      "yds": 61,
+      "td": 0
+     },
+     {
+      "date": "2026-10-23",
+      "opp": "Air Force",
+      "site": "H",
+      "result": "W 28-14",
+      "rec": 0,
+      "yds": 0,
+      "td": 0
      },
      {
       "date": "2026-11-07",
-      "opp": "Baylor",
+      "opp": "UNLV",
       "site": "A",
-      "result": "L 31-42",
-      "rec": 3,
-      "yds": 35,
-      "td": 0
+      "result": "W 41-35",
+      "rec": 2,
+      "yds": 27,
+      "td": 1
      },
      {
       "date": "2026-11-14",
-      "opp": "Cincinnati",
-      "site": "H",
-      "result": "W 41-13",
-      "rec": 3,
-      "yds": 68,
+      "opp": "UTEP",
+      "site": "A",
+      "result": "W 27-15",
+      "rec": 4,
+      "yds": 113,
       "td": 0
+     },
+     {
+      "date": "2026-11-20",
+      "opp": "New Mexico",
+      "site": "H",
+      "result": "L 17-24",
+      "rec": 5,
+      "yds": 69,
+      "td": 1
      }
     ]
    },
@@ -16064,6 +16246,110 @@
       "result": "L 7-26",
       "rec": 2,
       "yds": 11,
+      "td": 0
+     }
+    ]
+   },
+   "311-50371124": {
+    "name": "Jamal Polite Jr.",
+    "team": "Iowa State",
+    "pos": "WR",
+    "line": {
+     "g": 10,
+     "rec": 22,
+     "yds": 417,
+     "td": 2
+    },
+    "url": "https://cfbstats.com/2026/player/311/50371124/receiving/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-12",
+      "opp": "Iowa",
+      "site": "A",
+      "result": "L 13-16",
+      "rec": 1,
+      "yds": 20,
+      "td": 0
+     },
+     {
+      "date": "2026-09-19",
+      "opp": "Bowling Green",
+      "site": "H",
+      "result": "W 55-7",
+      "rec": 1,
+      "yds": 34,
+      "td": 1
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Utah",
+      "site": "H",
+      "result": "L 17-31",
+      "rec": 1,
+      "yds": 2,
+      "td": 0
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "West Virginia",
+      "site": "H",
+      "result": "W 45-42",
+      "rec": 2,
+      "yds": 12,
+      "td": 0
+     },
+     {
+      "date": "2026-10-09",
+      "opp": "BYU",
+      "site": "A",
+      "result": "L 10-24",
+      "rec": 2,
+      "yds": 20,
+      "td": 0
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Arizona",
+      "site": "A",
+      "result": "L 3-39",
+      "rec": 1,
+      "yds": 27,
+      "td": 0
+     },
+     {
+      "date": "2026-10-31",
+      "opp": "Oklahoma State",
+      "site": "H",
+      "result": "W 51-49",
+      "rec": 6,
+      "yds": 171,
+      "td": 1
+     },
+     {
+      "date": "2026-11-07",
+      "opp": "Baylor",
+      "site": "A",
+      "result": "L 31-42",
+      "rec": 3,
+      "yds": 35,
+      "td": 0
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "Cincinnati",
+      "site": "H",
+      "result": "W 41-13",
+      "rec": 3,
+      "yds": 68,
+      "td": 0
+     },
+     {
+      "date": "2026-11-20",
+      "opp": "UCF",
+      "site": "A",
+      "result": "L 17-48",
+      "rec": 2,
+      "yds": 28,
       "td": 0
      }
     ]
@@ -16361,113 +16647,9 @@
       "td": 1
      }
     ]
-   },
-   "9-1174424": {
-    "name": "CJ Smith",
-    "team": "UAB",
-    "pos": "WR",
-    "line": {
-     "g": 10,
-     "rec": 24,
-     "yds": 450,
-     "td": 1
-    },
-    "url": "https://cfbstats.com/2026/player/9/1174424/receiving/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-03",
-      "opp": "Illinois",
-      "site": "A",
-      "result": "L 23-42",
-      "rec": 2,
-      "yds": 57,
-      "td": 0
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Louisiana-Monroe",
-      "site": "H",
-      "result": "W 26-20",
-      "rec": 1,
-      "yds": 14,
-      "td": 0
-     },
-     {
-      "date": "2026-09-19",
-      "opp": "Louisiana",
-      "site": "A",
-      "result": "L 14-21",
-      "rec": 2,
-      "yds": 28,
-      "td": 0
-     },
-     {
-      "date": "2026-09-25",
-      "opp": "Navy",
-      "site": "H",
-      "result": "W 24-20",
-      "rec": 3,
-      "yds": 39,
-      "td": 0
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Samford",
-      "site": "H",
-      "result": "W 33-14",
-      "rec": 2,
-      "yds": 85,
-      "td": 1
-     },
-     {
-      "date": "2026-10-10",
-      "opp": "Memphis",
-      "site": "A",
-      "result": "L 13-38",
-      "rec": 1,
-      "yds": 8,
-      "td": 0
-     },
-     {
-      "date": "2026-10-15",
-      "opp": "East Carolina",
-      "site": "H",
-      "result": "W 30-17",
-      "rec": 8,
-      "yds": 119,
-      "td": 0
-     },
-     {
-      "date": "2026-10-31",
-      "opp": "USF",
-      "site": "A",
-      "result": "L 10-30",
-      "rec": 2,
-      "yds": 53,
-      "td": 0
-     },
-     {
-      "date": "2026-11-07",
-      "opp": "Charlotte",
-      "site": "H",
-      "result": "W 23-12",
-      "rec": 2,
-      "yds": 34,
-      "td": 0
-     },
-     {
-      "date": "2026-11-14",
-      "opp": "Temple",
-      "site": "A",
-      "result": "W 36-10",
-      "rec": 1,
-      "yds": 13,
-      "td": 0
-     }
-    ]
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-21T05:33+00:00"
+  "retrieved_at": "2026-11-21T13:44+00:00"
  }
 }
