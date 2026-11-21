@@ -311,7 +311,7 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
         ok(cr.length > 0 && cr.length === BWk.confs.length && doc.querySelectorAll("#bias-bars .bar").length === cr.length,
           `[${theme}] bias conference table: ${cr.length} rows, one bar each`);
         const sumTxt = $("#bias-sum").textContent;
-        ok(sumTxt.trim().length > 80 && /^Verdict: /.test($("#bias-sum .verdict").textContent) && $("#bias-sum").textContent.includes(BWk.verdict),
+        ok(sumTxt.trim().length > 80 && /^Verdict, measured against the all-25 averages: /.test($("#bias-sum .verdict").textContent) && $("#bias-sum").textContent.includes(BWk.verdict),
           `[${theme}] bias summary block non-empty and ends on the verdict line`);
         ok(rowsOf(doc, "#bias-trend-table").length === BIAS_TREND(M).rows.length, `[${theme}] bias trend table: one row per conference`);
         ok(!/Bias tracking beg/.test($("#bias-none").hidden ? "" : $("#bias-none").textContent), `[${theme}] bias week shows no "tracking began" line`);

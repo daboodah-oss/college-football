@@ -10,11 +10,18 @@ gap = baseline_rank - cfp_rank; positive = the committee ranks the team HIGHER t
 
 The frozen snapshot is read as stored; nothing here is recomputed from game rows.  Conference comes from
 the repo's conferences.json membership for the snapshot's season (the Conferences tab's source).
-The summary sentences and the verdict follow fixed rules (thresholds below), so they are re-checkable."""
+The summary sentences and the verdict follow fixed rules (thresholds below), so they are re-checkable.
+
+Centering (Jeff's ruling, 2026-11-21): the verdict and the resume check compare each conference's average
+gap with that week's ALL-25 average gap (mean gap vs SRS over the committee's 25; mean gap vs WAB over the
+committee teams that have a WAB rank), not with zero.  The all-25 average is structurally positive: a
+committee team's rank is at most 25, while its baseline rank can be 30 or 40, so the gaps of any Top 25
+average above zero unless the two lists hold the same teams.  Tables, chart and trend keep the RAW gaps;
+centering is applied in the verdict layer only."""
 import statistics
 
-SRS_T = 2.0      # an average gap vs SRS at least this far from zero is an efficiency gap worth explaining
-WAB_T = 1.0      # an average gap vs WAB within +/- this is "explained by resume"; beyond it, same sign = not
+SRS_T = 2.0      # a centered average gap vs SRS at least this far from zero is an efficiency gap worth explaining
+WAB_T = 1.0      # a centered average gap vs WAB within +/- this is "explained by resume"; beyond it, same sign = not
 MIN_N = 3        # the verdict only considers conferences with at least this many committee Top 25 teams
 
 
@@ -59,16 +66,23 @@ def analyze(w, conf_of):
                       "omissions": sum(1 for x in left if x["conf"] == c),
                       "_avg_srs": sum(gs) / len(gs), "_avg_wab": (sum(gw) / len(gw)) if gw else None})
     confs.sort(key=lambda x: (-x["_avg_srs"], x["conf"]))
-    summary, verdict = summarize(rows, confs)
-    for x in confs: x.pop("_avg_srs"); x.pop("_avg_wab")
-    return {"rows": rows, "left": left, "confs": confs, "summary": summary, "verdict": verdict}
+    allw = [r["gap_wab"] for r in rows if r["gap_wab"] is not None]
+    field = {"srs": sum(r["gap_srs"] for r in rows) / len(rows), "wab": (sum(allw) / len(allw)) if allw else None}
+    for x in confs:   # centered on the week's all-25 averages (verdict layer only)
+        x["_c_srs"] = x["_avg_srs"] - field["srs"]
+        x["_c_wab"] = None if x["_avg_wab"] is None or field["wab"] is None else x["_avg_wab"] - field["wab"]
+    summary, verdict = summarize(rows, confs, field)
+    for x in confs:
+        for k in ("_avg_srs", "_avg_wab", "_c_srs", "_c_wab"): x.pop(k)
+    return {"rows": rows, "left": left, "confs": confs, "summary": summary, "verdict": verdict,
+            "field": {"srs": r1(field["srs"]), "wab": r1(field["wab"]), "n_wab": len(allw)}}
 
 
-def resume_check(x, side):
-    """The resume check for one conference, in words, or '' when it has no WAB average."""
-    a, b = x["_avg_srs"], x["_avg_wab"]
+def resume_check(x):
+    """The resume check for one conference, on centered values, in words ('' with no WAB average)."""
+    a, b = x["_c_srs"], x["_c_wab"]
     if b is None: return ""
-    s = f"  Against Wins Above Bubble its average gap is {sg(b)}"
+    s = f"  Against Wins Above Bubble it averages {sg(x['_avg_wab'])}, {rel(b)}"
     if abs(a) > SRS_T and abs(b) <= WAB_T:
         return s + f": most of that efficiency gap is explained by {x['conf']}'s résumé, not its conference."
     if abs(a) > SRS_T and (b > 0) == (a > 0):
@@ -76,17 +90,22 @@ def resume_check(x, side):
     return s + "."
 
 
-def summarize(rows, confs):
+def rel(c):
+    """A centered value in words: '1.8 above the all-25 average', '6.1 below the all-25 average'."""
+    return f"{abs(round(c, 1)):.1f} {'above' if round(c, 1) >= 0 else 'below'} the all-25 average"
+
+
+def summarize(rows, confs, field):
     top, bot = confs[0], confs[-1]
-    out = [f"The committee is kindest to {top['conf']} relative to SRS: an average gap of {sg(top['_avg_srs'])} spots "
-           f"across its {top['n']} ranked team{'s' if top['n'] != 1 else ''}.{resume_check(top, 'pos')}"]
+    plural = lambda n: f"{n} ranked team{'s' if n != 1 else ''}"
+    out = [f"This week the committee's 25 average {sg(field['srs'])} spots vs SRS"
+           + (f" and {sg(field['wab'])} vs WAB" if field["wab"] is not None else "")
+           + ".  Any Top 25 averages above zero (see Method), so each conference is judged against these all-25 averages, not against zero."]
+    out.append(f"The committee is kindest to {top['conf']} relative to SRS: {sg(top['_avg_srs'])} spots across its "
+               f"{plural(top['n'])}, {rel(top['_c_srs'])}.{resume_check(top)}")
     if bot is not top:
-        if bot["_avg_srs"] < 0:
-            out.append(f"It is hardest on {bot['conf']}: {sg(bot['_avg_srs'])} spots across {bot['n']} "
-                       f"team{'s' if bot['n'] != 1 else ''}.{resume_check(bot, 'neg')}")
-        else:
-            out.append(f"No conference sits below its SRS ranks on average; the lowest is {bot['conf']} at {sg(bot['_avg_srs'])} "
-                       f"across {bot['n']} team{'s' if bot['n'] != 1 else ''}.")
+        out.append(f"It is hardest on {bot['conf']}: {sg(bot['_avg_srs'])} spots across its {plural(bot['n'])}, "
+                   f"{rel(bot['_c_srs'])}.{resume_check(bot)}")
     hi, lo = rows[0], rows[-1]
     single = []
     if hi["gap_srs"] > 0:
@@ -95,20 +114,22 @@ def summarize(rows, confs):
         single.append(f"its No. {lo['cfp']} {lo['name']} is SRS No. {lo['srs']} ({sg(lo['gap_srs'], 0)})")
     if single:
         out.append("Largest single-team gaps: " + "; ".join(single) + ".")
-    fav = [x for x in confs if x["n"] >= MIN_N and x["_avg_wab"] is not None and x["_avg_srs"] >= SRS_T and x["_avg_wab"] >= WAB_T]
-    agn = [x for x in confs if x["n"] >= MIN_N and x["_avg_wab"] is not None and x["_avg_srs"] <= -SRS_T and x["_avg_wab"] <= -WAB_T]
-    expl = [x for x in confs if x["n"] >= MIN_N and x["_avg_wab"] is not None and abs(x["_avg_srs"]) >= SRS_T and abs(x["_avg_wab"]) <= WAB_T]
-    q = lambda x: f"{x['conf']} ({sg(x['_avg_srs'])} vs SRS, {sg(x['_avg_wab'])} vs WAB, n={x['n']})"
+    ok = [x for x in confs if x["n"] >= MIN_N and x["_c_wab"] is not None]
+    fav = [x for x in ok if x["_c_srs"] >= SRS_T and x["_c_wab"] >= WAB_T]
+    agn = [x for x in ok if x["_c_srs"] <= -SRS_T and x["_c_wab"] <= -WAB_T]
+    expl = [x for x in ok if abs(x["_c_srs"]) >= SRS_T and abs(x["_c_wab"]) <= WAB_T]
+    q = lambda x: f"{x['conf']} ({sg(x['_c_srs'])} vs SRS, {sg(x['_c_wab'])} vs WAB, n={x['n']})"
+    head = "Verdict, measured against the all-25 averages: "
     if fav or agn:
         parts = []
         if fav: parts.append("in favor of " + " and ".join(q(x) for x in fav))
         if agn: parts.append("against " + " and ".join(q(x) for x in agn))
-        v = "Verdict: bias indicated " + "; ".join(parts) + ".  The efficiency gap survives the résumé check."
+        v = head + "bias indicated " + "; ".join(parts) + ".  The efficiency gap survives the résumé check."
         if expl: v += "  No bias indicated for " + " or ".join(q(x) for x in expl) + ": résumé explains it."
     elif expl:
-        v = "Verdict: no bias indicated.  " + "; ".join(q(x) for x in expl) + (": résumé explains the gap." if len(expl) == 1 else ": résumé explains the gaps.")
+        v = head + "no bias indicated.  " + "; ".join(q(x) for x in expl) + (": résumé explains the gap." if len(expl) == 1 else ": résumé explains the gaps.")
     else:
-        v = "Verdict: no clear bias in either direction this week."
+        v = head + "no clear bias in either direction this week."
     return out, v
 
 

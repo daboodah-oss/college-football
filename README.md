@@ -58,7 +58,9 @@ validation, design system and chart engine are theirs; see AGENTS.md for what di
   (résumé).  The tab shows a team table, the teams a baseline has Top 25 but the committee left out, a
   conference summary (n always printed), a bar chart of average gap vs SRS, a week-by-week trend table,
   and a deterministic summary ending in a fixed-rule verdict (bias indicated only when a conference with
-  n ≥ 3 averages at least ±2.0 vs SRS and ±1.0 vs WAB in the same direction).  Computed at build time by
+  n ≥ 3 sits at least ±2.0 vs SRS and ±1.0 vs WAB from that week's all-25 average gaps, in the same
+  direction; the all-25 average is structurally positive, so the verdict is centered on it, while the
+  tables, chart and trend show raw gaps).  Computed at build time by
   `build_bias.py` from the frozen snapshots; spec `docs/claude-spec-cfp-bias-analysis.md`.
 
 Line colours follow the order of picks: blue, orange, green solid, then amber, pink, violet dashed.  Past

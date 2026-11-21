@@ -137,7 +137,8 @@ season matches.
 - `build_cfp.py` — Playoff model: the stored snapshots with names resolved
 - `build_bias.py` — Bias model: per snapshot with `srs_top25`, committee rank
   vs SRS rank and WAB rank per team, conference roll-up, trend, and the
-  fixed-rule summary + verdict (thresholds at the top of the file; spec
+  fixed-rule summary + verdict, centered on the week's all-25 average gaps
+  (tables/chart/trend stay raw; thresholds at the top of the file; spec
   `docs/claude-spec-cfp-bias-analysis.md`)
 - `build_report.py` — validation + model + render + `check_manifest` (no
   network); also regenerates `data/conferences.json` on every successful build
