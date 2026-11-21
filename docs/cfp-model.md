@@ -46,7 +46,15 @@ percentile among FBS teams; the final score is the weighted sum; ties break on r
 
 1. **SRS, 45%.**  Iterated to convergence (delta < 1e-9, mean-centered): rating = mean over games of
    (margin capped at ±28, minus 2.5 if the team was home, plus 2.5 if the opponent was home) +
-   opponent rating.
+   opponent rating.  Each game's two terms are exact negatives of each other.
+   *Correction, 2026-11-21:* until this date the loser's term was coded as `-c - hw` instead of
+   `-(c - hw)`, so each non-neutral game's pair summed to −2 × home edge and the home team was docked
+   an extra 5 points per game (home field counted twice against it).  Fixed to the symmetric form
+   described above.  The fix applies from the first snapshot stored after it landed; snapshots
+   frozen earlier keep the ratings they were stored with and are never recomputed.  WAB calls
+   `srs_ratings` and inherits the fix with no change of its own.  On games through 2026-11-17 the
+   ratings moved by up to 3.6 points (North Carolina 11.95 → 8.35; Georgia 26.29 → 24.40) and the
+   WAB bubble from 15.40 to 14.36.
 2. **Colley, 30%.**  Solve (2I + L) r = b over all games, FCS included as one node.
 3. **Resume points, 25%.**  Per game played: +1.0 per win over a team with a winning record, +0.5 more
    per win over an SRS Top 25 team, −0.75 per loss to a team at .500 or worse, +0.1 per win over the

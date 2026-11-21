@@ -60,7 +60,7 @@ def srs_ratings(nodes, games):
         c = min(m, MARGIN_CAP)
         hw = HOME_FIELD if home == w else -HOME_FIELD if home == l else 0.0
         adj[w].append((l, c - hw))    # winner's margin, minus its home edge if it was home
-        adj[l].append((w, -c - hw))   # loser's view: negative margin, home edge flips sign the same way
+        adj[l].append((w, -(c - hw)))  # loser's view: exactly the negative of the winner's term (pair sums to 0)
     r = {n: 0.0 for n in nodes}
     for _ in range(10000):
         delta = 0.0
