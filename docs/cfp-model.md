@@ -56,6 +56,16 @@ Stored per team in each snapshot: record, strength-of-schedule rank (by mean opp
 and worst loss (by opponent SRS) with their records, quality wins, Top-25 wins, and the three component
 scores' final blend.  The Playoff tab's disagreement lines are generated from those fields only.
 
+**Correction, 2026-11-21 (SRS home field).**  Until this date `srs_ratings` stored the loser's
+adjacency term as `-c - hw` instead of `-(c - hw)`, so the two terms of a non-neutral game summed to
+-2hw instead of 0: home field counted twice against the home team (an extra 5 points across the pair).
+The formula above was always the intent; the code now matches it, and `tools/check_srs_symmetry.py`
+checks every stored game.  The fix applies from the first snapshot stored after it landed.  Weeks
+frozen before it keep the ratings they were stored with; snapshots are never recomputed.  Wins Above
+Bubble uses `srs_ratings` for its ratings and bubble, so it inherits the fix with no change to `wab()`.
+On games through 2026-11-17 ratings moved by up to 3.6 points (North Carolina 11.95 -> 8.35, Georgia
+26.29 -> 24.40) and the WAB bubble from 15.40 (Utah / Indiana) to 14.36 (Ole Miss / Indiana).
+
 ## Agreement metrics (collect_cfp.agreement_metrics)
 
 - **Agreement %** (the headline) = mean of the Top 25 overlap share and the Top 12 overlap share.
