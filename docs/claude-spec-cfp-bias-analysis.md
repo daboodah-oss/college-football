@@ -1,10 +1,14 @@
-# Claude spec — "CFP Bias Analysis" section on the Playoff tab
+# Claude spec — "CFP Bias Analysis" tab
 
 Repo: daboodah-oss/college-football (live page https://cf.daboodah.com/)
 Author: Budzilla, 2026-11-21. Proposed by Jeff (from a Grok chat draft) and
 resolved by Jeff's ruling the same day: "I want the numbers to tell the
 story, but provide honest summary and any indication of bias in any
-direction." Build on your own branch, do not merge without Jeff's approval.
+direction." Jeff clarified the same day, in his own words: a SEPARATE TAB;
+rankings "purely based on numbers this season — not preseason, not what
+people thought they were ranked"; and "something straight up that tells
+me: does it look like there's bias?" Build on your own branch, do not
+merge without Jeff's approval.
 
 Sequencing: this job runs AFTER the SRS home-field fix
 (docs/claude-spec-srs-home-field-fix.md) has merged, and BEFORE the
@@ -13,11 +17,22 @@ time.
 
 ## What this is
 
-A new section inside the Playoff tab (anchor `cfp-bias`, placed after
-Biggest disagreements and before Method), driven by the existing week
-picker. For the selected snapshot it measures how far the committee's
-Top 25 sits from two baselines the pipeline already computes, and rolls
-the gaps up by conference:
+A new TAB of its own ("Bias", alongside Team / Player / Conferences /
+Playoff), with its own week picker listing the same CFP snapshot weeks
+the Playoff tab uses. For the selected snapshot it measures how far the
+committee's Top 25 sits from two baselines the pipeline already
+computes, and rolls the gaps up by conference.
+
+This is an ADDITION, not a change: the existing Playoff tab, the model
+blend, and WAB keep their current behavior and presentation exactly.
+The only existing-code touch is the snapshot step storing the extra
+fields below.
+
+Both baselines are PURE NUMBERS FROM THIS SEASON'S GAMES ONLY — computed
+from the stored game results, with no preseason projections, no polls,
+and no human input of any kind. That is the point of the tab, and the
+intro copy says so. (There is deliberately no AP column: the AP poll is
+another human ranking, and Jeff ruled polls out.)
 
 - **Efficiency baseline: our SRS margin rating** (opponent-adjusted,
   predictive in character — the in-house analogue of SP+). SP+ itself is
@@ -43,24 +58,22 @@ exactly that check.
 Extend the cfp snapshot step (collect_cfp.py / update.py), same pattern
 as the WAB fields:
 
-- Store the AP Top 25 (team ids) from the same ESPN rankings feed family
-  the CFP poll already comes from, as `ap` on the snapshot.
 - On every stored line for a team in the bias universe (below), store
   `srs_rank`: the team's rank by SRS among all FBS teams at snapshot
   time. (Lines already store the SRS value; the rank must be frozen at
   collect time, not derived later from the stored subset.)
 - Bias universe per snapshot: committee Top 25 ∪ SRS Top 25 ∪ WAB
-  Top 25 ∪ AP Top 25. Lines must exist for every team in the universe
-  (extend the existing line-collection union accordingly).
-- update.py validates the new fields in the same style as the WAB block
-  (25 distinct stored ids for `ap`; numeric `srs_rank` on universe
-  lines). build_cfp.py re-checks and passes `ap` and the lines through.
-- Snapshots stored before this ships have no bias data: the section
-  shows one line, "Bias tracking began <first week with data>", exactly
-  like the WAB start line, and no empty tables. The start week is read
-  from the data, never hard-coded.
+  Top 25. Lines must exist for every team in the universe (extend the
+  existing line-collection union accordingly).
+- update.py validates the new field in the same style as the WAB block
+  (numeric `srs_rank` on universe lines). build_cfp.py re-checks and
+  passes the lines through.
+- Snapshots stored before this ships have no bias data: the tab shows
+  one line, "Bias tracking began <first week with data>", exactly like
+  the WAB start line, and no empty tables. The start week is read from
+  the data, never hard-coded.
 
-## The section (for a snapshot with bias data)
+## The tab (for a snapshot with bias data)
 
 Conference for each team comes from the repo's stored conference data
 (conferences.json, the selected season's actual membership — the same
@@ -68,8 +81,7 @@ source the Conferences tab uses).
 
 1. **Team table**, sorted by gap vs SRS descending (most
    committee-favored first, most committee-disfavored last):
-   Team | Conf | CFP rank | SRS rank | Gap (SRS) | WAB rank | Gap (WAB)
-   | AP rank.
+   Team | Conf | CFP rank | SRS rank | Gap (SRS) | WAB rank | Gap (WAB).
    Teams in a baseline's Top 25 but unranked by the committee have no
    numeric gap: they appear after the ranked rows in a short
    "Left out by the committee" list, grouped by which baseline(s) had
@@ -105,18 +117,30 @@ source the Conferences tab uses).
      conference.)
    - Name the largest single-team gap in each direction (team,
      committee rank, baseline rank, gap).
-   - Never assert "bias" as a conclusion. The generated text states
-     gaps, sample sizes, and the résumé check. The word bias appears
-     in the section title and the caveats, not as a verdict.
+   - End with a straight verdict line that answers Jeff's question —
+     does it look like there's bias? — under this fixed rule, applied
+     per conference (n ≥ 3): bias is INDICATED in a conference's favor
+     when its average gap vs SRS is at least +2.0 AND its average gap
+     vs WAB is at least +1.0 in the same direction (the résumé check
+     failed to explain it); mirrored for bias against a conference.
+     When an efficiency gap is explained by résumé (gap vs WAB within
+     ±1.0), the verdict says so plainly: no bias indicated, résumé
+     explains it. When no conference meets the rule, the verdict is:
+     no clear bias in either direction this week. The thresholds are
+     printed in the Method note so the verdict is re-checkable, and
+     the verdict never names a conference the rule didn't select.
 
-## Method note addition (Playoff tab)
+## Method note (on the Bias tab)
 
-Add a short note covering: the gap definition and sign; the two
-baselines and why there are two; that the efficiency baseline is our
-own SRS margin rating, an SP+-style predictive rating, because SP+'s
-inputs are not public data this page can store and re-check; that a
-gap is expected by design (the committee ranks résumés, efficiency
-ratings forecast) and is not by itself evidence of bias; that
+A short note covering: the gap definition and sign; the two baselines
+and why there are two; that both baselines are computed from this
+season's stored game results only — no preseason projections, no
+polls; that the efficiency baseline is our own SRS margin rating, an
+SP+-style predictive rating, because SP+'s inputs are not public data
+this page can store and re-check; that a gap against efficiency alone
+is expected by design (the committee ranks résumés, efficiency ratings
+forecast), which is why the verdict requires the gap to survive the
+résumé check; the verdict thresholds from the summary block; that
 conference averages rest on small samples (n shown everywhere); and
 that bias tracking begins with the first snapshot stored after this
 ships, with earlier weeks never recomputed.
@@ -124,11 +148,12 @@ ships, with earlier weeks never recomputed.
 ## Acceptance
 
 - tools/render_check.js passes completely, extended to cover: bias
-  section populates for a bias week (team table row count = committee
+  tab populates for a bias week (team table row count = committee
   25, conference rows present, summary block non-empty), and a pre-bias
   week shows the "Bias tracking began" line with no bias tables.
 - Summary reports: the first bias snapshot's conference table and
-  honest-summary text verbatim, the largest single-team gaps in both
-  directions that week, and explicit confirmation that earlier
-  snapshots are byte-untouched and the model blend and WAB are
-  unchanged.
+  honest-summary text verbatim (including the verdict line), the
+  largest single-team gaps in both directions that week, and explicit
+  confirmation that earlier snapshots are byte-untouched, the model
+  blend and WAB are unchanged, and the Playoff tab renders exactly as
+  before.
