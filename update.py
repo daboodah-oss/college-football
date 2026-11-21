@@ -11,7 +11,8 @@ and merges it into data/*.json.  Nothing is stored unless every check passes.
   natref        {tab, season, players, ...}   replace one season's national player pool for one tab
                                  (every game log must match the player's leaderboard line)
   cfp           {season, week, date, ...}   append one week's Playoff snapshot (committee Top 25, our
-                                 computed Top 25, per-team lines, agreement metrics) to data/cfp.json;
+                                 computed Top 25, per-team lines, agreement metrics; from 2026 Week 13 also the
+                                 Wins Above Bubble Top 25, bubble and WAB metrics) to data/cfp.json;
                                  a week whose committee list equals the stored latest is refused
 
 The seasons come from config.json: the newest is the current season, the only one that
@@ -301,12 +302,31 @@ def cfp(x):
         if not isinstance(m.get(k), (int, float)): die(f"cfp: metric '{k}' missing or not a number")
     if not (0 <= m["overlap25"] <= 25 and 0 <= m["overlap12"] <= 12 and 0 <= m["exact"] <= 25 and 0 <= m["agreement"] <= 100):
         die("cfp: a metric is out of range")
+    if "wab" in x:   # Wins Above Bubble comparison column (snapshots from 2026 Week 13 on)
+        wab = x["wab"]
+        if len(wab) != 25 or len(set(wab)) != 25: die("cfp: wab must be 25 distinct team ids")
+        for tid in wab:
+            if tid not in teams: die(f"cfp: wab team id {tid} is not a stored team")
+        for tid in set(comm) | set(ours) | set(wab):
+            ln = lines.get(tid) or die(f"cfp: no line stored for wab team id {tid}")
+            if not isinstance(ln.get("wab"), (int, float)): die(f"cfp: line for team id {tid} lacks a numeric 'wab'")
+        for i, tid in enumerate(wab):
+            if lines[tid].get("wab_rank") != i + 1: die(f"cfp: wab_rank for team id {tid} is not {i + 1}")
+        if any(lines[a]["wab"] < lines[b]["wab"] for a, b in zip(wab, wab[1:])): die("cfp: wab Top 25 is not in WAB order")
+        bb = x.get("wab_bubble") or {}
+        if not isinstance(bb.get("rating"), (int, float)) or not bb.get("team12") or not bb.get("team13"):
+            die("cfp: wab_bubble needs rating, team12 and team13")
+        wm = x.get("wab_metrics") or {}
+        for k in CFP_METRICS:
+            if not isinstance(wm.get(k), (int, float)): die(f"cfp: wab metric '{k}' missing or not a number")
+        if not (0 <= wm["overlap25"] <= 25 and 0 <= wm["overlap12"] <= 12 and 0 <= wm["exact"] <= 25):
+            die("cfp: a wab metric is out of range")
     d = load_or("cfp.json", {"season": season, "weeks": []})
     if d.get("season") != season: die(f"cfp: stored file is for season {d.get('season')}, not {season}")
     weeks = d.setdefault("weeks", [])
     if weeks and weeks[-1]["committee"] == comm: die(f"cfp: the latest stored week ({weeks[-1]['week']}) already holds this committee Top 25; not a new release")
     if weeks and x["date"] < weeks[-1]["date"]: die(f"cfp: {x['date']} is before the latest stored week ({weeks[-1]['date']})")
-    weeks.append({k: x[k] for k in ("season", "week", "date", "through", "committee", "ours", "lines", "metrics", "weights") if k in x})
+    weeks.append({k: x[k] for k in ("season", "week", "date", "through", "committee", "ours", "lines", "metrics", "weights", "wab", "wab_bubble", "wab_metrics") if k in x})
     weeks[-1]["stored_at"] = now_iso()
     save("cfp.json", d)
     print(f"STORED cfp {x['week']} ({x['date']}): committee {len(comm)}, ours {len(ours)}, agreement {m['agreement']}%")

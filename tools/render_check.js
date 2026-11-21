@@ -270,7 +270,17 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
         `[${theme}] cfp scorecard shows ${WK.week} with headline agreement ${WK.metrics.agreement}%`);
       const sideRows = rowsOf(doc, "#cfp-side");
       const oursOnly = WK.ours.filter(t => !WK.committee.includes(t)).length;
-      ok(sideRows.length === 25 + oursOnly, `[${theme}] cfp side-by-side: ${sideRows.length} rows (25 committee + ${oursOnly} ours-only)`);
+      const wabOnly = (WK.wab || []).filter(t => !WK.committee.includes(t) && !WK.ours.includes(t)).length;
+      ok(sideRows.length === 25 + oursOnly + wabOnly, `[${theme}] cfp side-by-side: ${sideRows.length} rows (25 committee + ${oursOnly} ours-only + ${wabOnly} WAB-only)`);
+      const wabTxt = $("#cfp-wab-score").textContent;
+      if (WK.wab) {
+        ok(wabTxt.includes(`${WK.wab_metrics.overlap12} of 12`) && wabTxt.includes(`${WK.wab_metrics.agreement}%`) && rowsOf(doc, "#cfp-side")[0].querySelectorAll("td").length === 7,
+          `[${theme}] cfp WAB agreement line shows ${WK.wab_metrics.overlap12} of 12, ${WK.wab_metrics.agreement}%, and the side table carries WAB columns`);
+      } else {
+        ok(/WAB tracking began/.test(wabTxt) && rowsOf(doc, "#cfp-side")[0].querySelectorAll("td").length === 5,
+          `[${theme}] cfp pre-WAB week says when WAB tracking began and shows no WAB columns`);
+      }
+      ok(/Wins Above Bubble/.test($("#cfp-notes").textContent), `[${theme}] cfp Method explains Wins Above Bubble`);
       const first = sideRows[0];
       ok(first && first.querySelectorAll("td")[1].textContent === WK.names[WK.committee[0]], `[${theme}] cfp table opens on the committee's No. 1: ${WK.names[WK.committee[0]]}`);
       const diffs = [...doc.querySelectorAll("#cfp-diffs li")];

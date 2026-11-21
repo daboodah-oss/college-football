@@ -46,6 +46,11 @@ validation, design system and chart engine are theirs; see AGENTS.md for what di
   `docs/cfp-model.md`.  The tab shows the agreement scorecard (headline Agreement % = the mean of the
   Top 25 and Top 12 overlaps), a side-by-side table with deltas, the five biggest disagreements with
   data-generated reasons, and a week picker over the stored snapshots.
+  From 2026 Week 13 each snapshot also freezes a third ranking, Wins Above Bubble (`cfp_model.wab`):
+  per game, wins earned above (+) or below (−) what a team on the playoff cut line (mean SRS of the
+  12th and 13th FBS teams) would expect against the same schedule, win chance Φ((bubble − opp SRS ±
+  2.5 site) / 13.5).  It is a comparison column with its own agreement line (same metric code as
+  ours), not part of the blend; Weeks 11 and 12 were not backfilled.  Method: `docs/claude-spec-wab-column.md`.
 
 Line colours follow the order of picks: blue, orange, green solid, then amber, pink, violet dashed.  Past
 three lines colour alone is not enough to tell every pair apart for colour-blind readers, so the line
@@ -128,7 +133,7 @@ minutes; the next new final or the next scheduled refresh retries it.
    seals after its first complete store.
 5. `cfp_rankings`: ESPN rankings, College Football Playoff poll.  If the committee's Top 25 differs
    from the stored latest snapshot, our Top 25 is computed from the just-collected game rows
-   (`cfp_model.py`) and the week is appended to `data/cfp.json`; if it is the same list, nothing is
+   (`cfp_model.py`), with the Wins Above Bubble Top 25 beside it, and the week is appended to `data/cfp.json`; if it is the same list, nothing is
    stored.  This is how the Wednesday run lands each Tuesday-night release exactly once.
 
 Then `build_report.py --standalone` writes `index.html` (and regenerates `data/conferences.json` from
@@ -176,7 +181,7 @@ changed player lines.
 | `data/freshness.json` | when each section last collected successfully | `collect.py` |
 | `data/last_run.json` | the last run's failed sections, log and `finals_seen` | `collect.py` |
 | `data/conferences.json` | per-season conference pair matrix, non-conference W-L and vs-FCS records, computed from `data/team.json` + `conferences.json` (repo root) | `build_report.py` (every build) |
-| `data/cfp.json` | frozen weekly Playoff snapshots: `{season, weeks: [{week, date, through, committee[25], ours[25], lines, metrics, weights}]}` | `cfp_rankings` (appended only on a new committee release) |
+| `data/cfp.json` | frozen weekly Playoff snapshots: `{season, weeks: [{week, date, through, committee[25], ours[25], lines, metrics, weights, wab[25], wab_bubble, wab_metrics}]}` (the `wab*` keys from 2026 Week 13 on) | `cfp_rankings` (appended only on a new committee release) |
 
 At launch (branch run 4, 2026-10-19): the registry joins all 134 (2024), 136 (2025) and 138 (2026) cfbstats
 index teams to ESPN ids.  Stored team seasons: 102 (2024), 124 (2025) and 131 (2026); 120 of them carry a

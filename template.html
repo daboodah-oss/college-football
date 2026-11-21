@@ -193,6 +193,7 @@ table.mx td:first-child{text-align:left}
 .ddn{color:var(--bad);font-weight:700}
 .difflist{margin:0;padding-left:18px;display:grid;gap:8px;color:var(--ink-2);font-size:14.5px}
 .difflist b{color:var(--ink)}
+.sclabel{font-family:var(--display);font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:18px 0 10px}
 @media (prefers-reduced-motion:no-preference){ .seg button{transition:background .15s} }
 </style>
 
@@ -792,8 +793,9 @@ function renderCfpShell(){
     <div class="picker panel"><div class="row"><div class="seg toggle" id="cfp-week" role="group" aria-label="Committee week"></div></div>
     <p class="small" style="margin:10px 0 0">Each Tuesday-night release is frozen as its own snapshot: our ranking is computed from the stored game rows at that moment and never revised afterwards.</p></div>${freshLine(M.fresh.cfp)}</div>
     ${jump("cfp", [["score","Scorecard"], ["table","Side by side"], ["diff","Disagreements"], ["method","Method"]])}
-    <section id="cfp-score">${secHead("How much the two Top 25s agree", "Agreement scorecard")}<div class="scgrid" id="cfp-score-grid"></div></section>
-    <section id="cfp-table">${secHead("Committee order, our rank alongside", "Side by side")}<div class="panel tscroll" id="cfp-side"></div><p class="caption">Delta is committee rank minus our rank: ▲ means we rank the team higher than the committee does.  “Out” marks a team missing from the other list's Top 25; our extra teams are listed after the committee's 25.<span class="swipe">  Swipe the table sideways for every column.</span></p></section>
+    <section id="cfp-score">${secHead("How much the two Top 25s agree", "Agreement scorecard")}<div class="scgrid" id="cfp-score-grid"></div>
+    <h3 class="sclabel">Wins Above Bubble vs the committee</h3><div id="cfp-wab-score"></div></section>
+    <section id="cfp-table">${secHead("Committee order, our rank alongside", "Side by side")}<div class="panel tscroll" id="cfp-side"></div><p class="caption" id="cfp-side-cap">Delta is committee rank minus our rank: ▲ means we rank the team higher than the committee does.  “Out” marks a team missing from the other list's Top 25; our extra teams are listed after the committee's 25.<span class="swipe">  Swipe the table sideways for every column.</span></p></section>
     <section id="cfp-diff">${secHead("Where the argument is", "Biggest disagreements")}<div class="panel"><ul class="difflist" id="cfp-diffs"></ul></div></section>
     <section id="cfp-method">${secHead("How our ranking is built", "Method and sources")}<div class="notes"><div><h3>Notes</h3><ul id="cfp-notes"></ul></div><div><h3>Sources</h3><ul id="cfp-sources"></ul></div></div></section>`;
   seg($("#cfp-week"), W.map((w,i) => [i, w.week]), CFPS.wi, i => { CFPS.wi = +i; updateCfp(); });
@@ -804,16 +806,29 @@ function updateCfp(){
   W.committee.forEach((t,i) => crank[t] = i + 1); W.ours.forEach((t,i) => orank[t] = i + 1);
   const nm = t => W.names[t] || t, ln = t => W.lines[t];
   $("#cfp-title").textContent = `${W.week}: the committee vs ours`;
-  $("#cfp-lede").textContent = `Committee rankings released ${dateFmtY(W.date)}.  Our Top 25 was computed from games through ${W.through ? dateFmtY(W.through) : "the latest stored games"}; the blend behind it is explained under Method.`;
-  const m = W.metrics;
+  $("#cfp-lede").textContent = `Committee rankings released ${dateFmtY(W.date)}.  Our Top 25 was computed from games through ${W.through ? dateFmtY(W.through) : "the latest stored games"}; the blend behind it is explained under Method.${W.wab ? "  A third ranking, Wins Above Bubble, is shown alongside for comparison." : ""}`;
+  const m = W.metrics, wm = W.wab_metrics, wrank = {};
+  (W.wab || []).forEach((t,i) => wrank[t] = i + 1);
+  const firstWab = ((CFP || {}).weeks || []).find(x => x.wab), wabStart = firstWab ? firstWab.week : "Week 13";
+  const box = ([n,l]) => `<div class="scbox"><div class="n num">${n}</div><div class="l">${l}</div></div>`;
   $("#cfp-score-grid").innerHTML = [[`${m.agreement}%`, "Agreement (headline)"], [`${m.overlap25} of 25`, "Same teams in the Top 25"],
     [`${m.overlap12} of 12`, "Same playoff field (Top 12)"], [`${fmt(m.avg_delta, 1)} spots`, "Average rank gap, shared teams"],
-    [`${m.exact}`, "Exact position matches"]].map(([n,l]) => `<div class="scbox"><div class="n num">${n}</div><div class="l">${l}</div></div>`).join("");
+    [`${m.exact}`, "Exact position matches"]].map(box).join("");
+  $("#cfp-wab-score").innerHTML = W.wab
+    ? `<div class="scgrid">${[[`${wm.agreement}%`, "WAB agreement"], [`${wm.overlap25} of 25`, "Same teams in the Top 25"],
+        [`${wm.overlap12} of 12`, "Same playoff field (Top 12)"], [`${fmt(wm.avg_delta, 1)} spots`, "Average rank gap, shared teams"],
+        [`${wm.exact}`, "Exact position matches"]].map(box).join("")}</div>
+      <p class="small" style="margin:10px 0 0">Same definitions as ours above.  Ours: ${m.overlap12} of 12 in the playoff field, ${m.overlap25} of 25 overall.  Wins Above Bubble: ${wm.overlap12} of 12, ${wm.overlap25} of 25.  The bubble this week sat at an SRS of ${fmt(W.wab_bubble.rating, 2)}, between ${esc(W.wab_bubble.team12)} (12th) and ${esc(W.wab_bubble.team13)} (13th).</p>`
+    : `<p class="small" style="margin:0">WAB tracking began ${esc(wabStart)}${firstWab ? "" : " (the next committee release)"}.  This week's snapshot was frozen before then and is never recomputed, so it has no WAB column.</p>`;
   const rowFor = t => {
     const c = crank[t], o = orank[t], L = ln(t), d = c && o ? c - o : null;
     const dtxt = !o ? `<span class="ddn">Out</span>` : !c ? `<span class="dup">In ours only</span>` : d > 0 ? `<span class="dup">▲ ${d}</span>` : d < 0 ? `<span class="ddn">▼ ${-d}</span>` : "—";
-    return `<tr><td class="num">${c || "—"}</td><td class="who">${esc(nm(t))}</td><td class="num">${L ? esc(L.record) : ""}</td><td class="num">${o || "—"}</td><td class="num">${dtxt}</td></tr>`; };
-  $("#cfp-side").innerHTML = `<table class="cmp"><tr><th>CFP</th><th>Team</th><th>Record</th><th>Ours</th><th>Delta</th></tr>${W.committee.map(rowFor).join("")}${W.ours.filter(t => !crank[t]).map(rowFor).join("")}</table>`;
+    const wtd = !W.wab ? "" : `<td class="num">${L && L.wab_rank ? L.wab_rank : "—"}</td><td class="num">${L && typeof L.wab === "number" ? (L.wab > 0 ? "+" : L.wab < 0 ? "−" : "") + fmt(Math.abs(L.wab), 2) : ""}</td>`;
+    return `<tr><td class="num">${c || "—"}</td><td class="who">${esc(nm(t))}</td><td class="num">${L ? esc(L.record) : ""}</td><td class="num">${o || "—"}</td><td class="num">${dtxt}</td>${wtd}</tr>`; };
+  const extra = [...W.ours.filter(t => !crank[t]), ...(W.wab || []).filter(t => !crank[t] && !orank[t])];
+  $("#cfp-side").innerHTML = `<table class="cmp"><tr><th>CFP</th><th>Team</th><th>Record</th><th>Ours</th><th>Delta</th>${W.wab ? "<th>WAB</th><th>WAB value</th>" : ""}</tr>${W.committee.map(rowFor).join("")}${extra.map(rowFor).join("")}</table>`;
+  $("#cfp-side-cap").firstChild.textContent = "Delta is committee rank minus our rank: ▲ means we rank the team higher than the committee does.  “Out” marks a team missing from the other list's Top 25; our extra teams are listed after the committee's 25"
+    + (W.wab ? ", then any team only Wins Above Bubble has in its Top 25.  WAB is that team's Wins Above Bubble rank among all FBS teams, and WAB value is the wins it earned above (+) or below (−) a playoff-bubble team's expected total against the same schedule." : `.  Wins Above Bubble columns start ${wabStart}.`);
   const diffs = [...new Set([...W.committee, ...W.ours])]
     .map(t => ({t, c: crank[t] || 26, o: orank[t] || 26})).filter(x => x.c !== x.o)
     .sort((a,b) => Math.abs(b.c - b.o) - Math.abs(a.c - a.o) || a.o - b.o).slice(0, 5);
@@ -830,6 +845,7 @@ function updateCfp(){
     `${pct(wts.colley)} is a Colley Matrix rating: wins and losses only, adjusted for schedule by solving Colley's equations.  It ignores margin completely, so it cannot be bought with blowouts; it answers only “who beat whom, and how good were they?”`,
     `${pct(wts.resume)} is resume points, per game played: +1 for a win over a team with a winning record, +0.5 more for a win over our margin rating's Top 25, −0.75 for a loss to a team at .500 or worse, +0.1 for beating an FCS team.  Per game, so simply playing more games does not help.`,
     "Left out on purpose: Elo's game-by-game path (it cares about the order games happened in, and about streaks more than resumes), the old BCS computers' unpublished tweaks, and predictive efficiency systems like SP+ and FPI.  Those forecast who would win next week, a different question from who has earned a spot, and their play-by-play inputs are not public data this page can store and re-check.",
+    `Wins Above Bubble (WAB) is a third ranking, shown for comparison only: it is not part of our blend and never moves our Top 25.  It counts only wins and losses.  For each game, it asks how many more (or fewer) wins you earned than a team sitting exactly on the playoff cut line would be expected to earn against your schedule.  The cut-line team is rated halfway between the 12th- and 13th-best teams by the margin rating above; its chance of winning each of your games comes from that rating gap, the site (${2.5} points for home field) and a spread of ${13.5} points.  Beat a team the bubble team would usually lose to and you gain nearly a full win; lose to a team it would usually beat and you give back nearly a full win.  Teams with fewer than 5 stored games are not ranked.  WAB tracking began ${wabStart}; earlier weeks stay as they were frozen.`,
     "Agreement is the average of two overlaps: the share of the same 25 teams, and the share of the same Top 12 (the playoff field).  The average rank gap counts only the teams on both lists.",
     "Every week is a frozen snapshot.  Later results never rewrite an earlier week, so the argument history stays exactly as it was on the night."];
   $("#cfp-notes").innerHTML = notes.map(n => `<li>${esc(n)}</li>`).join("");
