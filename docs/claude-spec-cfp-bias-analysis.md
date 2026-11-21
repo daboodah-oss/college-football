@@ -15,6 +15,25 @@ Sequencing: this job runs AFTER the SRS home-field fix
 warnings/model-v2 job. All three touch the Playoff snapshot code; one at a
 time.
 
+## Rulings after the first build (Jeff, 2026-11-21: "A" and "A")
+
+1. **Centering (A).**  The verdict and the résumé check compare each
+   conference's average gap with that week's ALL-25 average gap, not
+   with zero: vs SRS, the mean gap over the committee's 25; vs WAB, the
+   mean gap over the committee teams that have a WAB rank.  Reason: the
+   all-25 average is structurally positive (a committee team's rank is
+   at most 25, its baseline rank can be 30 or 40), so measured from zero
+   an ordinary conference already clears +2.0.  Thresholds are unchanged
+   (±2.0 SRS, ±1.0 WAB, n ≥ 3), applied to the centered values.  The
+   summary states the week's all-25 averages and frames the verdict
+   against them.  Tables, chart and trend keep the RAW gaps; centering
+   is verdict-layer only, and the Method note says so and why.
+2. **Net spots (A).**  As built: the conference's committee Top 25 count
+   minus its baseline Top 25 count.  No change.
+
+Where the sections below say "average gap" in the summary and verdict
+rules, read "centered average gap" per ruling 1.
+
 ## What this is
 
 A new TAB of its own ("Bias", alongside Team / Player / Conferences /
@@ -120,7 +139,7 @@ source the Conferences tab uses).
    - End with a straight verdict line that answers Jeff's question —
      does it look like there's bias? — under this fixed rule, applied
      per conference (n ≥ 3): bias is INDICATED in a conference's favor
-     when its average gap vs SRS is at least +2.0 AND its average gap
+     when its (centered, ruling 1) average gap vs SRS is at least +2.0 AND its average gap
      vs WAB is at least +1.0 in the same direction (the résumé check
      failed to explain it); mirrored for bias against a conference.
      When an efficiency gap is explained by résumé (gap vs WAB within

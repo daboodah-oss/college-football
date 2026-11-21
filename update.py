@@ -12,7 +12,8 @@ and merges it into data/*.json.  Nothing is stored unless every check passes.
                                  (every game log must match the player's leaderboard line)
   cfp           {season, week, date, ...}   append one week's Playoff snapshot (committee Top 25, our
                                  computed Top 25, per-team lines, agreement metrics; from 2026 Week 13 also the
-                                 Wins Above Bubble Top 25, bubble and WAB metrics) to data/cfp.json;
+                                 Wins Above Bubble Top 25, bubble and WAB metrics; after 2026-11-21 also
+                                 srs_top25 and a srs_rank per line, for the Bias tab) to data/cfp.json;
                                  a week whose committee list equals the stored latest is refused
 
 The seasons come from config.json: the newest is the current season, the only one that
@@ -321,12 +322,28 @@ def cfp(x):
             if not isinstance(wm.get(k), (int, float)): die(f"cfp: wab metric '{k}' missing or not a number")
         if not (0 <= wm["overlap25"] <= 25 and 0 <= wm["overlap12"] <= 12 and 0 <= wm["exact"] <= 25):
             die("cfp: a wab metric is out of range")
+    if "srs_top25" in x:   # Bias tab inputs (snapshots stored after 2026-11-21)
+        s25 = x["srs_top25"]
+        if len(s25) != 25 or len(set(s25)) != 25: die("cfp: srs_top25 must be 25 distinct team ids")
+        if "wab" not in x: die("cfp: a bias snapshot must also carry the wab block")
+        for tid in s25:
+            if tid not in teams: die(f"cfp: srs_top25 team id {tid} is not a stored team")
+        for tid in set(comm) | set(ours) | set(x["wab"]) | set(s25):
+            ln = lines.get(tid) or die(f"cfp: no line stored for bias team id {tid}")
+            r = ln.get("srs_rank")
+            if not isinstance(r, int) or isinstance(r, bool) or r < 1: die(f"cfp: line for team id {tid} lacks a positive integer 'srs_rank'")
+        for i, tid in enumerate(s25):
+            if lines[tid]["srs_rank"] != i + 1: die(f"cfp: srs_rank for team id {tid} is not {i + 1}")
+        for tid, ln in lines.items():
+            if tid not in s25 and isinstance(ln.get("srs_rank"), int) and ln["srs_rank"] <= 25:
+                die(f"cfp: team id {tid} has srs_rank {ln['srs_rank']} but is not in srs_top25")
+        if any(lines[a]["srs"] < lines[b]["srs"] for a, b in zip(s25, s25[1:])): die("cfp: srs_top25 is not in SRS order")
     d = load_or("cfp.json", {"season": season, "weeks": []})
     if d.get("season") != season: die(f"cfp: stored file is for season {d.get('season')}, not {season}")
     weeks = d.setdefault("weeks", [])
     if weeks and weeks[-1]["committee"] == comm: die(f"cfp: the latest stored week ({weeks[-1]['week']}) already holds this committee Top 25; not a new release")
     if weeks and x["date"] < weeks[-1]["date"]: die(f"cfp: {x['date']} is before the latest stored week ({weeks[-1]['date']})")
-    weeks.append({k: x[k] for k in ("season", "week", "date", "through", "committee", "ours", "lines", "metrics", "weights", "wab", "wab_bubble", "wab_metrics") if k in x})
+    weeks.append({k: x[k] for k in ("season", "week", "date", "through", "committee", "ours", "lines", "metrics", "weights", "wab", "wab_bubble", "wab_metrics", "srs_top25") if k in x})
     weeks[-1]["stored_at"] = now_iso()
     save("cfp.json", d)
     print(f"STORED cfp {x['week']} ({x['date']}): committee {len(comm)}, ours {len(ours)}, agreement {m['agreement']}%")

@@ -32,6 +32,7 @@ const target = process.argv[2] || path.join(__dirname, "..", "index.html");
 const live = /^https?:/.test(target);
 const results = []; let failed = 0;
 const ok = (cond, what) => { results.push(`${cond ? "PASS" : "FAIL"}  ${what}`); if (!cond) failed++; return cond; };
+const BIAS_TREND = M => (M.bias || {}).trend || {rows: []};
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 async function load() {
@@ -292,6 +293,38 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
       }
     } else {
       sec(doc, "#tab-cfp", `[${theme}] cfp empty state (no snapshot stored yet) populated`);
+    }
+    /* ---------------- Bias tab */
+    doc.querySelector('.tabs [data-tab="bias"]').click(); await sleep(100);
+    ok(!$("#tab-bias").hidden, `[${theme}] Bias tab opens`);
+    const BW = (M.bias || {}).weeks || [];
+    if (BW.length) {
+      sec(doc, "#bias-method", `[${theme}] bias method and sources populated`);
+      const bi = BW.map(w => !!w.rows).lastIndexOf(true), pre = BW.findIndex(w => !w.rows);
+      if (bi >= 0) {
+        doc.querySelector(`#bias-week [data-k="${bi}"]`).click(); await sleep(60);
+        const BWk = BW[bi];
+        for (const [s, what] of [["#bias-summary", "straight answer"], ["#bias-teams", "team gaps"], ["#bias-confs", "conference summary"], ["#bias-chart", "bar chart"], ["#bias-trend", "season trend"]])
+          sec(doc, s, `[${theme}] bias ${s} (${what}) populated for ${BWk.week}`);
+        ok(rowsOf(doc, "#bias-team-table").length === 25, `[${theme}] bias team table: ${rowsOf(doc, "#bias-team-table").length} rows (the committee's 25)`);
+        const cr = rowsOf(doc, "#bias-conf-table");
+        ok(cr.length > 0 && cr.length === BWk.confs.length && doc.querySelectorAll("#bias-bars .bar").length === cr.length,
+          `[${theme}] bias conference table: ${cr.length} rows, one bar each`);
+        const sumTxt = $("#bias-sum").textContent;
+        ok(sumTxt.trim().length > 80 && /^Verdict, measured against the all-25 averages: /.test($("#bias-sum .verdict").textContent) && $("#bias-sum").textContent.includes(BWk.verdict),
+          `[${theme}] bias summary block non-empty and ends on the verdict line`);
+        ok(rowsOf(doc, "#bias-trend-table").length === BIAS_TREND(M).rows.length, `[${theme}] bias trend table: one row per conference`);
+        ok(!/Bias tracking beg/.test($("#bias-none").hidden ? "" : $("#bias-none").textContent), `[${theme}] bias week shows no "tracking began" line`);
+      }
+      if (pre >= 0) {
+        doc.querySelector(`#bias-week [data-k="${pre}"]`).click(); await sleep(60);
+        ok(!$("#bias-none").hidden && /Bias tracking beg(an|ins)/.test($("#bias-none-txt").textContent) && $("#bias-body").hidden,
+          `[${theme}] pre-bias week (${BW[pre].week}) says when bias tracking began and shows no bias tables: "${$("#bias-none-txt").textContent.slice(0, 40)}…"`);
+        if (bi >= 0) ok($("#bias-none-txt").textContent.includes(M.bias.first), `[${theme}] pre-bias line names the first bias week from the data: ${M.bias.first}`);
+      }
+      doc.querySelector(`#bias-week [data-k="${BW.length - 1}"]`).click(); await sleep(60);
+    } else {
+      sec(doc, "#tab-bias", `[${theme}] bias empty state (no snapshot stored yet) populated`);
     }
     ok(errors.length === 0, `[${theme}] script errors: ${errors.length}${errors.length ? " -> " + errors.join(" | ") : ""}`);
     errorsTotal += errors.length;
