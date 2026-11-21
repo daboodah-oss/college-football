@@ -13,6 +13,10 @@ list, our list, the per-team lines and the agreement metrics for that week.
 From Week 13 (2026) each snapshot also freezes a Wins Above Bubble Top 25 (cfp_model.wab), a third
 ranking for comparison only: it is not in the blend and does not change our Top 25.  Earlier snapshots
 stay exactly as stored (no backfill).
+
+From the first snapshot stored after 2026-11-21 each snapshot also freezes the Bias tab's inputs: the SRS
+Top 25 (`srs_top25`) and, on every line, `srs_rank` (the team's SRS rank among all FBS teams).  Lines then
+cover the bias universe, committee Top 25 + SRS Top 25 + WAB Top 25 (plus our Top 25, as before).
 """
 import os, sys
 
@@ -36,6 +40,21 @@ def agreement_metrics(committee, ours):
             "agreement": round(100 * (o25 / 25 + o12 / 12) / 2)}
 
 
+def make_snapshot(root, season, committee, week, date):
+    """One week's snapshot from the stored rows and the committee's 25 ids (no network)."""
+    model = cfp_model.compute(root, season)
+    ours = model["top25"]
+    wab = cfp_model.wab(root, season, model["through"])   # comparison column only; not in the blend
+    srs25 = model["srs_top25"]                            # Bias tab baseline; not in the blend
+    lines = {tid: dict(model["lines"][tid], wab=wab["values"][tid], wab_rank=wab["ranks"].get(tid))
+             for tid in dict.fromkeys(committee + ours + wab["top25"] + srs25)}
+    return {"season": season, "week": week, "date": date, "through": model["through"],
+            "committee": committee, "ours": ours, "lines": lines,
+            "metrics": agreement_metrics(committee, ours), "weights": model["weights"],
+            "wab": wab["top25"], "wab_bubble": dict(wab["bubble"], sigma=wab["sigma"]),
+            "wab_metrics": agreement_metrics(committee, wab["top25"]), "srs_top25": srs25}
+
+
 def cfp_poll(C, U):
     stored = U.load_or("cfp.json", {"weeks": []}).get("weeks", [])
     j = C.get(f"{ESPN}/rankings?season={C.SEASON}").json()
@@ -49,17 +68,8 @@ def cfp_poll(C, U):
     if stored and stored[-1]["committee"] == committee:
         C.log(f"[cfp] committee Top 25 unchanged since {stored[-1]['week']} ({stored[-1]['date']}); no new snapshot")
         return
-    model = cfp_model.compute(C.ROOT, C.SEASON)
-    ours = model["top25"]
-    wab = cfp_model.wab(C.ROOT, C.SEASON, model["through"])   # comparison column only; not in the blend
-    lines = {tid: dict(model["lines"][tid], wab=wab["values"][tid], wab_rank=wab["ranks"].get(tid))
-             for tid in dict.fromkeys(committee + ours + wab["top25"])}
     week = (r.get("occurrence") or {}).get("displayValue", "") or f"Week {len(stored) + 1}"
-    snap = {"season": C.SEASON, "week": week, "date": r.get("date", "")[:10], "through": model["through"],
-            "committee": committee, "ours": ours, "lines": lines,
-            "metrics": agreement_metrics(committee, ours), "weights": model["weights"],
-            "wab": wab["top25"], "wab_bubble": dict(wab["bubble"], sigma=wab["sigma"]),
-            "wab_metrics": agreement_metrics(committee, wab["top25"])}
+    snap = make_snapshot(C.ROOT, C.SEASON, committee, week, r.get("date", "")[:10])
     U.cfp(snap)
     C.log(f"[cfp] {week} ({snap['date']}): snapshot stored; agreement {snap['metrics']['agreement']}%, "
           f"overlap {snap['metrics']['overlap25']}/25, Top 12 overlap {snap['metrics']['overlap12']}/12; "

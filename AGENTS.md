@@ -86,10 +86,13 @@ season matches.
    from, in Actions), and let the next run prove it: a join counts only once
    that team's season matches cfbstats.com's season totals.
 4. **Run the build and the render check locally before pushing** template or
-   build changes: `python3 build_report.py --standalone --out /tmp/test.html`
-   must print `OK`, and `node tools/render_check.js /tmp/test.html` (run from
-   the repo root so the page can read `data/`) must pass (0 script errors,
-   every section populated, TDZ scan clean).  A build that has not been
+   build changes: `python3 build_report.py --standalone --out _test.html`
+   must print `OK`, and `node tools/render_check.js _test.html` must pass
+   (0 script errors, every section populated, TDZ scan clean); delete
+   `_test.html` after.  Build into the repo root: the page reads `data/` next
+   to itself, so a page built elsewhere fails the pick checks with HTTP 404s.
+   For Bias tab changes also run it on `tools/bias_fixture.py`'s copy (README,
+   Render check).  A build that has not been
    executed is not done (see Lessons).
 5. **Update this file and README.md when behavior changes.**
 6. **Do not remove or let any step overwrite the `CNAME` file.**  It holds the
@@ -132,6 +135,10 @@ season matches.
   `conferences.json` (repo root: per-season membership by ESPN id, from ESPN's
   standings API; add a season's membership before adding the season)
 - `build_cfp.py` — Playoff model: the stored snapshots with names resolved
+- `build_bias.py` — Bias model: per snapshot with `srs_top25`, committee rank
+  vs SRS rank and WAB rank per team, conference roll-up, trend, and the
+  fixed-rule summary + verdict (thresholds at the top of the file; spec
+  `docs/claude-spec-cfp-bias-analysis.md`)
 - `build_report.py` — validation + model + render + `check_manifest` (no
   network); also regenerates `data/conferences.json` on every successful build
 - `template.html` — page; the model is injected at `/*__MODEL__*/null`
@@ -147,6 +154,11 @@ season matches.
 - `tools/render_check.js` — executes the built page in jsdom (light and dark);
   fails on any script error, empty section, broken picker, wrong leader box, or
   a TDZ-order helper
+- `tools/bias_fixture.py` — offline: a scratch copy of the repo whose latest
+  snapshot is re-stored with bias fields, to render-check the populated Bias
+  tab before the pipeline has stored a bias week (never writes the repo)
+- `tools/check_srs_symmetry.py` — offline regression check: every stored
+  game's two SRS adjacency terms sum to 0
 - `tools/resolve_espn_ids.py` — registry joins: `proofs` (offline) shows every
   join and whether cfbstats proved it; `candidates NAME` (network) lists ESPN
   teams for an alias
@@ -155,15 +167,20 @@ season matches.
 
 ## Page behavior notes
 
-- Four tabs, Team, Player, Conferences and Playoff; the tab shows in the URL
-  hash (`#team`, `#player`, `#conf`, `#cfp`; section links `#team-h2h` and so
+- Five tabs, Team, Player, Conferences, Playoff and Bias; the tab shows in the
+  URL hash (`#team`, `#player`, `#conf`, `#cfp`, `#bias`; section links `#team-h2h` and so
   on).  Charts draw only for the visible tab and redraw when a tab opens.
   Conferences carries a per-season toggle (standings + matrix counted at build
   time from the stored rows); Playoff carries a week picker over the frozen
   `data/cfp.json` snapshots and never recomputes a stored week.  From 2026
   Week 13 a snapshot carries a Wins Above Bubble Top 25 shown as a third
   ranking (side-table columns + its own agreement line); earlier weeks say
-  "WAB tracking began Week 13" instead of showing empty columns.
+  "WAB tracking began Week 13" instead of showing empty columns.  Bias carries
+  the same week picker; a snapshot stored after 2026-11-21 freezes
+  `srs_top25` and a `srs_rank` per line (lines cover committee ∪ ours ∪ WAB
+  ∪ SRS Top 25), and earlier weeks say "Bias tracking began <first bias
+  week>", read from the data.  The Playoff tab, the blend and WAB are not
+  changed by it.
 - Every pick carries its season: a team pick is team + season, a player pick
   is player + season.  Pills, chips, table rows and game-log headings show the
   full "Name 2026"; chart end labels use the short form "IND ’26" (the ND

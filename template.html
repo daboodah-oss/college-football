@@ -194,6 +194,19 @@ table.mx td:first-child{text-align:left}
 .difflist{margin:0;padding-left:18px;display:grid;gap:8px;color:var(--ink-2);font-size:14.5px}
 .difflist b{color:var(--ink)}
 .sclabel{font-family:var(--display);font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:18px 0 10px}
+.bars{display:grid;gap:8px}
+.bar{display:grid;grid-template-columns:minmax(84px,120px) 1fr 52px;align-items:center;gap:10px;font-size:14px}
+.bar .bl{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .bl small{color:var(--muted);font-weight:400;margin-left:4px}
+.bar .bt{position:relative;height:18px;background:linear-gradient(var(--rule),var(--rule)) center/1.5px 100% no-repeat}
+.bar .bf{position:absolute;top:2px;bottom:2px;border-radius:2px}
+.bar .bf.pos{left:50%;background:var(--s1)}
+.bar .bf.neg{right:50%;background:var(--s2)}
+.bar .bv{font-family:var(--display);font-size:17px;font-weight:600;text-align:right}
+.barkey{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted);margin:0 62px 8px 130px}
+@media (max-width:480px){ .bar{grid-template-columns:76px 1fr 44px;gap:6px} .barkey{margin:0 50px 8px 82px} }
+.verdict{font-weight:700;color:var(--ink);margin:12px 0 0}
+.leftout{margin:0;padding-left:18px;display:grid;gap:6px;color:var(--ink-2);font-size:14.5px}
 @media (prefers-reduced-motion:no-preference){ .seg button{transition:background .15s} }
 </style>
 
@@ -205,13 +218,14 @@ table.mx td:first-child{text-align:left}
     </div>
   </header>
   <nav class="tabs" role="tablist" aria-label="Compare">
-    <button role="tab" data-tab="team" aria-controls="tab-team" aria-selected="true">Team</button><button role="tab" data-tab="player" aria-controls="tab-player" aria-selected="false">Player</button><button role="tab" data-tab="conf" aria-controls="tab-conf" aria-selected="false">Conferences</button><button role="tab" data-tab="cfp" aria-controls="tab-cfp" aria-selected="false">Playoff</button>
+    <button role="tab" data-tab="team" aria-controls="tab-team" aria-selected="true">Team</button><button role="tab" data-tab="player" aria-controls="tab-player" aria-selected="false">Player</button><button role="tab" data-tab="conf" aria-controls="tab-conf" aria-selected="false">Conferences</button><button role="tab" data-tab="cfp" aria-controls="tab-cfp" aria-selected="false">Playoff</button><button role="tab" data-tab="bias" aria-controls="tab-bias" aria-selected="false">Bias</button>
   </nav>
   <div class="notices" id="notices" hidden></div>
   <div class="tabpanel" id="tab-team" role="tabpanel" aria-label="Teams"></div>
   <div class="tabpanel" id="tab-player" role="tabpanel" aria-label="Players" hidden></div>
   <div class="tabpanel" id="tab-conf" role="tabpanel" aria-label="Conferences" hidden></div>
   <div class="tabpanel" id="tab-cfp" role="tabpanel" aria-label="Playoff" hidden></div>
+  <div class="tabpanel" id="tab-bias" role="tabpanel" aria-label="Bias" hidden></div>
   <footer><span id="foot-l"></span><span>Built from stored, cross-checked game rows; every figure is computed from them.</span></footer>
 </div>
 
@@ -853,14 +867,88 @@ function updateCfp(){
     "<li>ESPN box scores for every game our ranking is computed from (the Team tab's stored rows)</li>"].join("");
 }
 
+/* ================================================================ Bias tab */
+const BIAS = M.bias || {weeks: [], trend: {weeks: [], rows: []}, thresholds: {srs: 2, wab: 1, min_n: 3}}, BS = {wi: Math.max(0, BIAS.weeks.length - 1)};
+const sgn = (v, dp=1) => v == null ? "" : (v > 0 ? "+" : v < 0 ? "−" : "") + fmt(Math.abs(v), dp);
+function renderBiasShell(){
+  const host = $("#tab-bias"), W = BIAS.weeks;
+  const eyebrow = `Bias · the committee vs pure numbers, ${SEASON}`;
+  if (!W.length) {
+    host.innerHTML = `<div class="tabhead" id="bias-pick"><div class="eyebrow">${eyebrow}</div><h2>Bias</h2>
+      <p class="lede">The committee has not released a ranking for ${SEASON} yet.  Bias tracking begins with the first snapshot stored after a release.</p></div>`;
+    return;
+  }
+  host.innerHTML = `<div class="tabhead" id="bias-pick"><div class="eyebrow">${eyebrow}</div><h2 id="bias-title"></h2>
+    <p class="lede">Does the committee favor or punish any conference?  This tab measures how far the committee's Top 25 sits from two rankings built purely from this season's game results: no preseason projections, no polls, no human input of any kind.</p>
+    <div class="picker panel"><div class="row"><div class="seg toggle" id="bias-week" role="group" aria-label="Committee week"></div></div>
+    <p class="small" style="margin:10px 0 0" id="bias-week-note"></p></div>${freshLine(M.fresh.cfp)}</div>
+    <div id="bias-none" hidden><div class="panel"><p class="small" id="bias-none-txt" style="margin:0"></p></div></div>
+    <div id="bias-body">
+    ${jump("bias", [["summary","Summary"], ["teams","Teams"], ["confs","Conferences"], ["chart","Chart"], ["trend","Trend"], ["method","Method"]])}
+    <section id="bias-summary">${secHead("Does it look like there's bias?", "Straight answer")}<div class="panel"><div id="bias-sum"></div></div></section>
+    <section id="bias-teams">${secHead("Committee Top 25, most committee-favored first", "Team gaps")}<div class="panel tscroll" id="bias-team-table"></div>
+      <p class="caption">Gap is the baseline's rank minus the committee's rank: positive (▲) means the committee ranks the team higher than the numbers do.  SRS and WAB ranks are among all FBS teams.<span class="swipe">  Swipe the table sideways for every column.</span></p>
+      <h3 class="sclabel">Left out by the committee</h3><div class="panel" id="bias-left"></div></section>
+    <section id="bias-confs">${secHead("Committee-ranked conferences, by average gap vs SRS", "Conference summary")}<div class="panel tscroll" id="bias-conf-table"></div>
+      <p class="caption">n is the conference's teams in the committee's Top 25: these are small samples, so one team can move an average a long way.  Net spots is the committee's Top 25 count for the conference minus the baseline's Top 25 count.  Omissions are that conference's teams in a baseline's Top 25 that the committee left out entirely.<span class="swipe">  Swipe the table sideways for every column.</span></p></section>
+    <section id="bias-chart">${secHead("Average gap vs SRS, by conference", "At a glance")}<div class="panel"><div class="barkey"><span>◀ committee lower</span><span>committee higher ▶</span></div><div class="bars" id="bias-bars"></div></div></section>
+    <section id="bias-trend">${secHead("Systematic, or one loud week?", "Season trend")}<div class="panel tscroll" id="bias-trend-table"></div>
+      <p class="caption">Each cell is that week's average gap vs SRS.  Blank: the conference had no team in the committee's Top 25 that week.<span class="swipe">  Swipe the table sideways for every column.</span></p></section>
+    </div>
+    <section id="bias-method">${secHead("How the numbers are built", "Method and sources")}<div class="notes"><div><h3>Notes</h3><ul id="bias-notes"></ul></div><div><h3>Sources</h3><ul id="bias-sources"></ul></div></div></section>`;
+  seg($("#bias-week"), W.map((w,i) => [i, w.week]), BS.wi, i => { BS.wi = +i; updateBias(); });
+}
+function updateBias(){
+  const W = BIAS.weeks[BS.wi]; if (!W) return;
+  const th = BIAS.thresholds, has = !!W.rows;
+  $("#bias-title").textContent = `${W.week}: is the committee biased?`;
+  $("#bias-week-note").textContent = `Committee rankings released ${dateFmtY(W.date)}; both baselines computed from games through ${W.through ? dateFmtY(W.through) : "the latest stored games"} and frozen with the snapshot.`;
+  $("#bias-none").hidden = has; $("#bias-body").hidden = !has;
+  if (!has) {
+    $("#bias-none-txt").textContent = BIAS.first
+      ? `Bias tracking began ${BIAS.first}.  This week's snapshot was frozen before then and is never recomputed, so it has no bias data.`
+      : `Bias tracking begins with the next committee release.  This week's snapshot was frozen before then and is never recomputed, so it has no bias data.`;
+  } else {
+    const arrow = g => g == null ? "—" : g > 0 ? `<span class="dup">▲ ${g}</span>` : g < 0 ? `<span class="ddn">▼ ${-g}</span>` : "0";
+    $("#bias-sum").innerHTML = `<ul class="difflist">${W.summary.map(t => `<li>${esc(t)}</li>`).join("")}</ul><p class="verdict">${esc(W.verdict)}</p>`;
+    $("#bias-team-table").innerHTML = `<table class="cmp"><tr><th>Team</th><th>Conf</th><th>CFP</th><th>SRS</th><th>Gap (SRS)</th><th>WAB</th><th>Gap (WAB)</th></tr>${W.rows.map(r =>
+      `<tr><td class="who">${esc(r.name)}</td><td>${esc(r.conf)}</td><td class="num">${r.cfp}</td><td class="num">${r.srs}</td><td class="num">${arrow(r.gap_srs)}</td><td class="num">${r.wab || "—"}</td><td class="num">${arrow(r.gap_wab)}</td></tr>`).join("")}</table>`;
+    const groups = [["SRS and WAB", x => x.by.length === 2], ["SRS only", x => x.by.length === 1 && x.by[0] === "SRS"], ["WAB only", x => x.by.length === 1 && x.by[0] === "WAB"]];
+    $("#bias-left").innerHTML = W.left.length ? groups.map(([lab, f]) => { const xs = W.left.filter(f); return xs.length
+      ? `<h3 class="sclabel" style="margin-top:0">In the ${lab} Top 25</h3><ul class="leftout">${xs.map(x => `<li><b>${esc(x.name)}</b> (${esc(x.conf)}): SRS No. ${x.srs}${x.wab ? `, WAB No. ${x.wab}` : ""}</li>`).join("")}</ul>` : ""; }).join("")
+      : `<p class="small" style="margin:0">None: every team in either baseline's Top 25 is in the committee's Top 25.</p>`;
+    $("#bias-conf-table").innerHTML = `<table class="cmp"><tr><th>Conf</th><th>Teams (n)</th><th>Avg gap vs SRS</th><th>Median vs SRS</th><th>Net spots vs SRS</th><th>Avg gap vs WAB</th><th>Net spots vs WAB</th><th>Omissions</th></tr>${W.confs.map(c =>
+      `<tr><td class="who">${esc(c.conf)}</td><td class="num">${c.n}</td><td class="num">${sgn(c.avg_srs)}</td><td class="num">${sgn(c.med_srs)}</td><td class="num">${sgn(c.net_srs, 0) || "0"}</td><td class="num">${c.avg_wab == null ? "—" : sgn(c.avg_wab)}</td><td class="num">${c.net_wab == null ? "—" : sgn(c.net_wab, 0) || "0"}</td><td class="num">${c.omissions}</td></tr>`).join("")}</table>`;
+    const mx = Math.max(1, ...W.confs.map(c => Math.abs(c.avg_srs)));
+    $("#bias-bars").innerHTML = W.confs.map(c => `<div class="bar"><span class="bl">${esc(c.conf)}<small>n=${c.n}</small></span><span class="bt"><span class="bf ${c.avg_srs >= 0 ? "pos" : "neg"}" style="width:${(50 * Math.abs(c.avg_srs) / mx).toFixed(2)}%"></span></span><span class="bv num">${sgn(c.avg_srs) || "0.0"}</span></div>`).join("");
+    const T = BIAS.trend;
+    $("#bias-trend-table").innerHTML = `<table class="cmp"><tr><th>Conf</th>${T.weeks.map(k => `<th>${esc(k)}</th>`).join("")}</tr>${T.rows.map(r =>
+      `<tr><td class="who">${esc(r.conf)}</td>${r.cells.map(v => `<td class="num">${v == null ? "" : sgn(v) || "0.0"}</td>`).join("")}</tr>`).join("")}</table>`;
+  }
+  const notes = [
+    "Gap = baseline rank − committee rank, for each team in the committee's Top 25.  Positive means the committee ranks the team higher than the numbers do; negative, lower.  Both directions are shown, and neither is hidden when it points the “wrong” way.",
+    "Both baselines are computed from this season's stored game results only: no preseason projections, no polls (the AP poll is another human ranking, so it is left out on purpose), and no adjustments by hand.",
+    `The efficiency baseline is our own SRS margin rating (scoring margin capped at 28, ${2.5} points for home field, adjusted for opponents), an SP+-style predictive rating.  SP+ itself is not used: its play-by-play inputs are subscription data this page cannot store and re-check.`,
+    "The résumé baseline is Wins Above Bubble (WAB): wins earned above or below what a team on the playoff cut line would be expected to win against the same schedule.",
+    "Why two: a gap against efficiency alone proves nothing about favoritism.  The committee ranks résumés by design, and efficiency ratings forecast, so some efficiency gap is expected.  A conference only looks favored when its gap survives the résumé check.",
+    `The verdict rule, per conference with at least ${th.min_n} committee Top 25 teams: bias is indicated in a conference's favor when its average gap vs SRS is at least +${fmt(th.srs, 1)} and its average gap vs WAB is at least +${fmt(th.wab, 1)}; against it when they are at most −${fmt(th.srs, 1)} and −${fmt(th.wab, 1)}.  When the SRS gap is that large but the WAB gap is within ±${fmt(th.wab, 1)}, the résumé explains it and no bias is indicated.  If no conference meets the rule, the verdict is no clear bias.`,
+    "Conference averages rest on small samples (often 3 to 9 teams), so n is printed everywhere.  Conference membership is the season's actual membership, the same source as the Conferences tab.",
+    `Bias tracking began ${BIAS.first || "with the first snapshot stored after this tab shipped"}.  Earlier weeks are frozen and never recomputed, so they carry no bias data.`];
+  $("#bias-notes").innerHTML = notes.map(n => `<li>${esc(n)}</li>`).join("");
+  $("#bias-sources").innerHTML = [`<li><a href="https://www.espn.com/college-football/rankings" target="_blank" rel="noopener">ESPN: College Football Playoff rankings</a></li>`,
+    "<li>ESPN box scores for every game both baselines are computed from (the Team tab's stored rows)</li>",
+    `<li><a href="https://www.espn.com/college-football/standings" target="_blank" rel="noopener">ESPN: conference standings (membership)</a></li>`].join("");
+}
+
 /* ================================================================ tabs */
-const TABS = ["team", "player", "conf", "cfp"];
+const TABS = ["team", "player", "conf", "cfp", "bias"];
 let curTab = "team";
 const tabOf = h => TABS.includes(h) ? h : TABS.includes(h.split("-")[0]) ? h.split("-")[0] : "team";
 renderTeamShell(); updateTeam();
 renderPlayerShell(); updatePlayer();
 renderConfShell(); updateConf();
 renderCfpShell(); updateCfp();
+renderBiasShell(); updateBias();
 function showTab(k, user){
   curTab = tabOf(k);
   TABS.forEach(t => { $("#tab-"+t).hidden = t!==curTab; const b = $(`.tabs [data-tab="${t}"]`); b.setAttribute("aria-selected", String(t===curTab)); b.tabIndex = t===curTab ? 0 : -1; });
@@ -878,6 +966,6 @@ let rt; addEventListener("resize", ()=>{ clearTimeout(rt); rt = setTimeout(drawA
 matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => { drawAll(); try { if(!localStorage.getItem(THEME_KEY)) paintThemeBtn(); }catch(e){} });
 new MutationObserver(drawAll).observe(document.documentElement, {attributes:true, attributeFilter:["data-theme"]});
 // for tools/render_check.js: the page's own totals for the default selection, compared there with the build's
-window.CF_CHECK = {teamTotals: k => teamTotals(teamRows(TEAMROWS[k] || [])), addTeam, removeTeam, addPlayer, removePlayer, state: () => ({TS, PS, CS, CFPS})};
+window.CF_CHECK = {teamTotals: k => teamTotals(teamRows(TEAMROWS[k] || [])), addTeam, removeTeam, addPlayer, removePlayer, state: () => ({TS, PS, CS, CFPS, BS})};
 })();
 </script>

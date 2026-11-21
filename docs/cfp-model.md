@@ -66,6 +66,12 @@ Bubble uses `srs_ratings` for its ratings and bubble, so it inherits the fix wit
 On games through 2026-11-17 ratings moved by up to 3.6 points (North Carolina 11.95 -> 8.35, Georgia
 26.29 -> 24.40) and the WAB bubble from 15.40 (Utah / Indiana) to 14.36 (Ole Miss / Indiana).
 
+**Bias tab inputs (from the first snapshot stored after 2026-11-21).**  `compute` also returns the SRS
+Top 25 and puts each team's SRS rank among all FBS teams (`srs_rank`, ordered by rating then name, the
+same order as WAB's bubble) on its line.  Neither enters the blend; our Top 25, the scores and WAB are
+unchanged.  The Bias tab (`build_bias.py`, spec `docs/claude-spec-cfp-bias-analysis.md`) reads them from
+the frozen snapshot.
+
 ## Agreement metrics (collect_cfp.agreement_metrics)
 
 - **Agreement %** (the headline) = mean of the Top 25 overlap share and the Top 12 overlap share.

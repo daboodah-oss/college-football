@@ -13,7 +13,7 @@ Cloudflare DNS record is a DNS-only CNAME to `daboodah-oss.github.io`).
 It generalizes the two school reports in `daboodah-oss/iu-report` and `daboodah-oss/nd-report` from one school to all of FBS.  The pipeline,
 validation, design system and chart engine are theirs; see AGENTS.md for what differs.
 
-## The four tabs
+## The five tabs
 
 - **Team:** pick up to 6 team-seasons (any FBS team, 2024, 2025 or 2026; the same school can be added in
   two seasons) and compare them.  Opens on **Indiana 2026 vs Notre Dame 2026**.  The stat table is the
@@ -51,6 +51,15 @@ validation, design system and chart engine are theirs; see AGENTS.md for what di
   12th and 13th FBS teams) would expect against the same schedule, win chance Φ((bubble − opp SRS ±
   2.5 site) / 13.5).  It is a comparison column with its own agreement line (same metric code as
   ours), not part of the blend; Weeks 11 and 12 were not backfilled.  Method: `docs/claude-spec-wab-column.md`.
+- **Bias:** does the committee look biased toward or against a conference?  For each snapshot stored
+  after 2026-11-21 (no backfill; earlier weeks say "Bias tracking began <week>"), the gap for each
+  committee Top 25 team is baseline rank − committee rank against two pure-numbers baselines from this
+  season's games only (no preseason, no polls): our SRS margin rating (efficiency) and Wins Above Bubble
+  (résumé).  The tab shows a team table, the teams a baseline has Top 25 but the committee left out, a
+  conference summary (n always printed), a bar chart of average gap vs SRS, a week-by-week trend table,
+  and a deterministic summary ending in a fixed-rule verdict (bias indicated only when a conference with
+  n ≥ 3 averages at least ±2.0 vs SRS and ±1.0 vs WAB in the same direction).  Computed at build time by
+  `build_bias.py` from the frozen snapshots; spec `docs/claude-spec-cfp-bias-analysis.md`.
 
 Line colours follow the order of picks: blue, orange, green solid, then amber, pink, violet dashed.  Past
 three lines colour alone is not enough to tell every pair apart for colour-blind readers, so the line
@@ -181,7 +190,7 @@ changed player lines.
 | `data/freshness.json` | when each section last collected successfully | `collect.py` |
 | `data/last_run.json` | the last run's failed sections, log and `finals_seen` | `collect.py` |
 | `data/conferences.json` | per-season conference pair matrix, non-conference W-L and vs-FCS records, computed from `data/team.json` + `conferences.json` (repo root) | `build_report.py` (every build) |
-| `data/cfp.json` | frozen weekly Playoff snapshots: `{season, weeks: [{week, date, through, committee[25], ours[25], lines, metrics, weights, wab[25], wab_bubble, wab_metrics}]}` (the `wab*` keys from 2026 Week 13 on) | `cfp_rankings` (appended only on a new committee release) |
+| `data/cfp.json` | frozen weekly Playoff snapshots: `{season, weeks: [{week, date, through, committee[25], ours[25], lines, metrics, weights, wab[25], wab_bubble, wab_metrics, srs_top25[25]}]}` (the `wab*` keys from 2026 Week 13 on; `srs_top25` and each line's `srs_rank` on snapshots stored after 2026-11-21, for the Bias tab) | `cfp_rankings` (appended only on a new committee release) |
 
 At launch (branch run 4, 2026-10-19): the registry joins all 134 (2024), 136 (2025) and 138 (2026) cfbstats
 index teams to ESPN ids.  Stored team seasons: 102 (2024), 124 (2025) and 131 (2026); 120 of them carry a
@@ -210,13 +219,22 @@ with the build's).
 error or empty section; it checks the default comparison, the page-vs-build totals, every leader box, a
 3-team and a cross-season pick, the caps and their message, chips, the empty state, the sticky tooltip,
 rank order in the picker, each Player position with its defaults, National Top 3 and a cross-season pick,
-and scans the page script for const/let helpers called before their definition (the TDZ bug that once
+the Playoff and Bias tabs (a bias week's 25 team rows, conference rows, summary and verdict; a pre-bias
+week's "Bias tracking began" line with no tables), and scans the page script for const/let helpers called before their definition (the TDZ bug that once
 blanked the IU page for 2.5 days).  Run it after any template change, and against the live page after a
 merge:
 
     npm install --no-save jsdom@24.1.0
     node tools/render_check.js index.html
     node tools/render_check.js https://cf.daboodah.com/
+
+Build into the repo root (as `index.html` does): the page reads `data/` next to itself, so a page built
+elsewhere fails the pick checks with HTTP 404s.  Until the pipeline stores a bias week, cover the Bias
+tab's populated view with a fixture (a scratch copy of the repo whose latest snapshot is re-stored with
+bias fields, through the real `make_snapshot` and `update.cfp`; the repo's `data/` is never written):
+
+    python3 tools/bias_fixture.py /tmp/cf-fixture
+    cd /tmp/cf-fixture && python3 build_report.py --standalone --out index.html && node tools/render_check.js index.html
 
 ## Installed app
 

@@ -145,6 +145,10 @@ def compute(root, season):
     sos_val = {n: (sum(opp_srs[n]) / len(opp_srs[n]) if opp_srs[n] else 0.0) for n in fbs}
     sos_rank = {n: i + 1 for i, n in enumerate(sorted(fbs, key=lambda n: -sos_val[n]))}
     names = {tid: t.get("name", tid) for tid, t in teams.items()}
+    # SRS rank among all FBS teams (same order as wab()'s bubble: rating, then name).  Frozen on each
+    # snapshot line for the Bias tab; it does not enter the blend.
+    by_srs = sorted(fbs, key=lambda n: (-srs[n], names.get(n, n)))
+    srs_rank = {n: i + 1 for i, n in enumerate(by_srs)}
     lines = {}
     for n in fbs:
         qw = sum(1 for w, l, _m, _h in games if w == n and l in winning)
@@ -155,9 +159,9 @@ def compute(root, season):
                     "worst_loss": ({"id": worst_loss[n], "name": names.get(worst_loss[n], worst_loss[n]),
                                     "record": f"{rec[worst_loss[n]][0]}-{rec[worst_loss[n]][1]}"} if n in worst_loss else None),
                     "quality_wins": qw, "top25_wins": t25,
-                    "score": round(score[n], 2), "srs": round(srs[n], 2)}
+                    "score": round(score[n], 2), "srs": round(srs[n], 2), "srs_rank": srs_rank[n]}
     through = max((g["date"] for t in teams.values() for g in t.get("seasons", {}).get(str(season), {}).get("games", [])), default=None)
-    return {"top25": order[:25], "lines": lines, "through": through,
+    return {"top25": order[:25], "lines": lines, "through": through, "srs_top25": by_srs[:25],
             "weights": {"srs": W_SRS, "colley": W_COLLEY, "resume": W_RESUME},
             "margin_cap": MARGIN_CAP, "home_field": HOME_FIELD}
 

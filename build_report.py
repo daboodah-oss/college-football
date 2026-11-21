@@ -21,13 +21,14 @@ def check(cond, msg):
 
 
 def build(root, as_of):
-    import build_tabs, build_conferences, build_cfp
+    import build_tabs, build_conferences, build_cfp, build_bias
     cfg = json.load(open(os.path.join(root, "config.json")))
     seasons, cur = sorted(cfg["seasons"]), cfg["current_season"]
     tabs = build_tabs.build(root, cfg, check)
     T, PL = tabs["team"], tabs["player"]
     CONF = build_conferences.build(root, cfg, check)
     CFP = build_cfp.build(root, cfg, check)
+    BIAS = build_bias.build(CFP, json.load(open(os.path.join(root, "conferences.json"))).get("members", {}), check)
     site = cfg["site"]
 
     # data freshness: what each part covers and when it was last successfully checked
@@ -81,7 +82,7 @@ def build(root, as_of):
         "as_of": as_of,
         "site": {"name": site["name"], "eyebrow": site["eyebrow"], "title": site["title"].format(season=cur), "season": cur,
                  "seasons": seasons, "caps": cfg["caps"], "theme_key": site["theme_key"]},
-        "data": tabs["data"], "team": T, "player": PL, "conf": CONF, "cfp": CFP,
+        "data": tabs["data"], "team": T, "player": PL, "conf": CONF, "cfp": CFP, "bias": BIAS,
         "fresh": fresh, "notices": notices, "sources": sources,
     }
     return model, cfg
