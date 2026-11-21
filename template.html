@@ -810,7 +810,9 @@ function renderCfpShell(){
     <section id="cfp-score">${secHead("How much the two Top 25s agree", "Agreement scorecard")}<div class="scgrid" id="cfp-score-grid"></div>
     <h3 class="sclabel">Wins Above Bubble vs the committee</h3><div id="cfp-wab-score"></div></section>
     <section id="cfp-table">${secHead("Committee order, our rank alongside", "Side by side")}<div class="panel tscroll" id="cfp-side"></div><p class="caption" id="cfp-side-cap">Delta is committee rank minus our rank: ▲ means we rank the team higher than the committee does.  “Out” marks a team missing from the other list's Top 25; our extra teams are listed after the committee's 25.<span class="swipe">  Swipe the table sideways for every column.</span></p></section>
-    <section id="cfp-diff">${secHead("Where the argument is", "Biggest disagreements")}<div class="panel"><ul class="difflist" id="cfp-diffs"></ul></div></section>
+    <section id="cfp-diff">${secHead("Where the argument is", "Biggest disagreements")}<div class="panel"><ul class="difflist" id="cfp-diffs"></ul></div>
+    <div id="cfp-context-wrap" hidden><h3 class="sclabel">Context this week (not part of any ranking)</h3><div class="panel"><ul class="difflist" id="cfp-context"></ul>
+    <p class="small" style="margin:10px 0 0">Sourced availability and context notes, curated when the week was recorded.  They explain; they never move a ranking or a metric.</p></div></div></section>
     <section id="cfp-method">${secHead("How our ranking is built", "Method and sources")}<div class="notes"><div><h3>Notes</h3><ul id="cfp-notes"></ul></div><div><h3>Sources</h3><ul id="cfp-sources"></ul></div></div></section>`;
   seg($("#cfp-week"), W.map((w,i) => [i, w.week]), CFPS.wi, i => { CFPS.wi = +i; updateCfp(); });
 }
@@ -820,7 +822,10 @@ function updateCfp(){
   W.committee.forEach((t,i) => crank[t] = i + 1); W.ours.forEach((t,i) => orank[t] = i + 1);
   const nm = t => W.names[t] || t, ln = t => W.lines[t];
   $("#cfp-title").textContent = `${W.week}: the committee vs ours`;
-  $("#cfp-lede").textContent = `Committee rankings released ${dateFmtY(W.date)}.  Our Top 25 was computed from games through ${W.through ? dateFmtY(W.through) : "the latest stored games"}; the blend behind it is explained under Method.${W.wab ? "  A third ranking, Wins Above Bubble, is shown alongside for comparison." : ""}`;
+  $("#cfp-lede").textContent = `Committee rankings released ${dateFmtY(W.date)}.  Our Top 25 (model ${W.model || "v1"}) was computed from games through ${W.through ? dateFmtY(W.through) : "the latest stored games"}; the blend behind it is explained under Method.${W.wab ? "  A third ranking, Wins Above Bubble, is shown alongside for comparison." : ""}`;
+  const ctx = W.context || [];
+  $("#cfp-context-wrap").hidden = !ctx.length;
+  $("#cfp-context").innerHTML = ctx.map(c => `<li><b>${esc(c.name)}:</b> ${esc(c.fact)}  <span class="small">Source: <a href="${esc(c.source_url)}" target="_blank" rel="noopener">${esc(c.source)}</a>, ${dateFmtY(c.date)}.</span></li>`).join("");
   const m = W.metrics, wm = W.wab_metrics, wrank = {};
   (W.wab || []).forEach((t,i) => wrank[t] = i + 1);
   const firstWab = ((CFP || {}).weeks || []).find(x => x.wab), wabStart = firstWab ? firstWab.week : "Week 13";
@@ -852,16 +857,20 @@ function updateCfp(){
       ? `We rank <b>${esc(nm(x.t))}</b> No. ${x.o}, the committee ${crank[x.t] ? `No. ${x.c}` : "leaves them out"}`
       : `The committee ranks <b>${esc(nm(x.t))}</b> No. ${x.c}; we have them ${orank[x.t] ? `No. ${x.o}` : "out of our Top 25"}`;
     return `<li>${head}${why ? `: ${esc(why)}` : ""}.</li>`; }).join("");
-  const wts = W.weights || {srs: .45, colley: .30, resume: .25}, pct = v => `${Math.round(v * 100)}%`;
+  const wts = W.weights || {srs: .45, colley: .30, resume: .25}, pct = v => `${Math.round(v * 100)}%`, v2 = "dated" in wts;
   const notes = [
-    "Our ranking is a blend of three published ideas, computed only from the stored game rows on this page: no polls, no betting lines, no play-by-play, and no adjustments by hand.",
+    v2 ? "This week uses model v2: our ranking blends four components, computed only from the stored game rows on this page: no polls, no betting lines, no play-by-play, and no adjustments by hand."
+       : "Our ranking is a blend of three published ideas, computed only from the stored game rows on this page: no polls, no betting lines, no play-by-play, and no adjustments by hand.",
     `${pct(wts.srs)} is a margin rating in the style of the Simple Rating System: each game moves a team by its scoring margin (capped at ${28} points, so running up the score stops paying) plus its opponent's rating, with ${2.5} points for home field, repeated until the ratings settle.  It rewards how a team plays, against whom.`,
+    ...(v2 ? [`${pct(wts.dated)} is the same margin idea with opponents valued as of the game's date: each opponent is rated only from the games it had played before that day (until it has played 4, its rating is blended with its season rating).  A team that falls apart later, say after an injury, no longer cheapens the results earned against it at full strength.`] : []),
     `${pct(wts.colley)} is a Colley Matrix rating: wins and losses only, adjusted for schedule by solving Colley's equations.  It ignores margin completely, so it cannot be bought with blowouts; it answers only “who beat whom, and how good were they?”`,
     `${pct(wts.resume)} is resume points, per game played: +1 for a win over a team with a winning record, +0.5 more for a win over our margin rating's Top 25, −0.75 for a loss to a team at .500 or worse, +0.1 for beating an FCS team.  Per game, so simply playing more games does not help.`,
     "Left out on purpose: Elo's game-by-game path (it cares about the order games happened in, and about streaks more than resumes), the old BCS computers' unpublished tweaks, and predictive efficiency systems like SP+ and FPI.  Those forecast who would win next week, a different question from who has earned a spot, and their play-by-play inputs are not public data this page can store and re-check.",
     `Wins Above Bubble (WAB) is a third ranking, shown for comparison only: it is not part of our blend and never moves our Top 25.  It counts only wins and losses.  For each game, it asks how many more (or fewer) wins you earned than a team sitting exactly on the playoff cut line would be expected to earn against your schedule.  The cut-line team is rated halfway between the 12th- and 13th-best teams by the margin rating above; its chance of winning each of your games comes from that rating gap, the site (${2.5} points for home field) and a spread of ${13.5} points.  Beat a team the bubble team would usually lose to and you gain nearly a full win; lose to a team it would usually beat and you give back nearly a full win.  Teams with fewer than 5 stored games are not ranked.  WAB tracking began ${wabStart}; earlier weeks stay as they were frozen.`,
     "Agreement is the average of two overlaps: the share of the same 25 teams, and the share of the same Top 12 (the playoff field).  The average rank gap counts only the teams on both lists.",
-    "Every week is a frozen snapshot.  Later results never rewrite an earlier week, so the argument history stays exactly as it was on the night."];
+    "Every week is a frozen snapshot.  Later results never rewrite an earlier week, so the argument history stays exactly as it was on the night.",
+    "Model versions: v1 (45% margin rating, 30% Colley, 25% resume) is every week stored through Nov 21, 2026; v2 (25% margin rating, 20% margin rating against opponents as of the game date, 30% Colley, 25% resume) starts with the next committee release.  Each week shows the version it was frozen with.",
+    "Context notes, when a week has them, are sourced facts (an injury announced by a coach, for example) shown for reading only: no ranking is adjusted for them."];
   $("#cfp-notes").innerHTML = notes.map(n => `<li>${esc(n)}</li>`).join("");
   $("#cfp-sources").innerHTML = [`<li><a href="https://www.espn.com/college-football/rankings" target="_blank" rel="noopener">ESPN: College Football Playoff rankings</a></li>`,
     "<li>ESPN box scores for every game our ranking is computed from (the Team tab's stored rows)</li>"].join("");

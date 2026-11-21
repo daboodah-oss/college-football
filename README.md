@@ -45,7 +45,11 @@ validation, design system and chart engine are theirs; see AGENTS.md for what di
   from the stored game rows only; the assessment of the established systems behind the blend is in
   `docs/cfp-model.md`.  The tab shows the agreement scorecard (headline Agreement % = the mean of the
   Top 25 and Top 12 overlaps), a side-by-side table with deltas, the five biggest disagreements with
-  data-generated reasons, and a week picker over the stored snapshots.
+  data-generated reasons, and a week picker over the stored snapshots.  From the first snapshot after
+  2026-11-21 the blend is **model v2** (25% SRS, 20% "Dated": each game valued against the opponent's
+  rating as of that game's date, 30% Colley, 25% resume); Weeks 11-12 stay v1 and are labelled so.
+  Curated, sourced context notes (`cfp_context.json`, e.g. an injury a coach announced) show under
+  "Context this week" and never move a ranking.
   From 2026 Week 13 each snapshot also freezes a third ranking, Wins Above Bubble (`cfp_model.wab`):
   per game, wins earned above (+) or below (−) what a team on the playoff cut line (mean SRS of the
   12th and 13th FBS teams) would expect against the same schedule, win chance Φ((bubble − opp SRS ±
@@ -150,8 +154,15 @@ minutes; the next new final or the next scheduled refresh retries it.
 Then `build_report.py --standalone` writes `index.html` (and regenerates `data/conferences.json` from
 the stored rows), and the workflow commits `data/`, `index.html`
 and `logs/` (as "college-football bot").  If the build fails, nothing is published and `data/` is put
-back.  The "Report problems" step then fails the run on purpose if any section failed, so GitHub emails
-the owner; `data/last_run.json` says which section.
+back.  The "Report problems" step (`tools/run_report.py`) writes a run summary and fails the run, so
+GitHub emails the owner, only for a real problem: a failed build, a collect section that broke (an
+exception), or a team-season the validator refused that the previous run did not.  A team-season that
+stays refused run after run is a known data condition: it is listed in the run summary, in
+`data/last_run.json` (`refused`, `new_refusals`) and in the page's notices, and does not fail the run.
+(Until 2026-11-21 any refused team-season failed its whole `team_<season>` section, so every full run
+"failed" and the emails carried no signal.)  The page's notice counts them per season: "N of M <season>
+team seasons could not be re-verified in the latest update and show their last verified data: …";
+refused seasons with nothing stored are in the missing-team-seasons notice instead.
 
 **cfbstats pacing.**  cfbstats.com refuses a fast crawl (403).  `collect.py` spaces its requests 1.5 s
 apart, backs off 20 s and 60 s on a 403, reads each page once per run, and stops asking cfbstats for the
@@ -165,11 +176,15 @@ changed player lines.
 - Match or drop, never fabricate.
 - Team rows: total yards = rushing + passing; the box-score score = the schedule score; turnovers =
   fumbles lost + interceptions; third-down conversions ≤ attempts; the result string agrees with the
-  score.  Each season must match cfbstats.com once cfbstats has posted the same number of games: counts
-  exactly, except third-down attempts and conversions, which may differ by up to 2 per season (Jeff's call,
-  2026-10-19: ESPN's summed box scores usually run 1-2 attempts above cfbstats' season total); season
-  yardage within max(5 yards, 0.2%) (a difference inside either tolerance is stored as a note shown
-  on the page, anything larger is refused and nothing is stored).
+  score; a game whose ESPN box score carries no team statistics at all is refused.  Total yards are
+  stored as rushing + passing: ESPN's `totalYards` field is intermittently wrong, so when it disagrees
+  `collect_tabs.box_row` stores rush + pass, but only if ESPN's own player lines sum to the team's
+  rushing and passing, and logs the game (proven on Hawai'i at Stanford 2026-08-29 against the official
+  stat-crew box score).  Each season must match cfbstats.com once cfbstats has posted the same number
+  of games: games and points exactly; season yardage within max(5 yards, 0.5%); third-down attempts and
+  conversions within 5; turnovers lost and gained within 1 (Jeff's calls of 2026-10-19 and 2026-11-11;
+  `update.tolerance`).  A difference inside a tolerance is stored as a note shown on the page; anything
+  larger is refused and nothing is stored.  `tools/test_validator.py` tests every tolerance at its edge.
 - Players: a game log is stored only if it has exactly the leaderboard G games and sums exactly to the
   leaderboard line; QB game logs must also match the NCAA passer-rating formula within 0.15 per game (a
   published rating can round 0.1 off; this one comparison only).  Anything else is dropped and named

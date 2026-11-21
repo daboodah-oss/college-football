@@ -28,8 +28,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
@@ -63,7 +63,7 @@ jobs:
           [ -d raw ] && git add -f raw || true
           if git diff --cached --quiet; then echo "No changes"; else git commit -m "Update $(date -u +%F)"; git pull --rebase -q || true; git push; fi
       - name: Report problems
-        if: steps.collect.outcome == 'failure' || steps.build.outcome == 'failure'
-        run: |
-          echo "collect=${{ steps.collect.outcome }} build=${{ steps.build.outcome }}; see logs/ in the repository"
-          exit 1
+        # Fails the run (so GitHub emails the owner) only for a real problem: a failed build, a collect section that
+        # broke, or a team-season newly refused since the last run.  Known refusals are listed in the run summary.
+        if: always()
+        run: python tools/run_report.py "${{ steps.collect.outcome }}" "${{ steps.build.outcome }}"

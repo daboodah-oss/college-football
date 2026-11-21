@@ -59,6 +59,15 @@ def build(root, as_of):
         lr = json.load(open(lr_path))
         if lr.get("failed"):
             notices.append("The latest automatic update could not refresh: " + ", ".join(lr["failed"]) + ". Those sections show the last verified data.")
+        # team seasons the validator refused this run but that are on the page from an earlier verified run
+        # (refused seasons with nothing stored are counted in the missing-team-seasons notice below instead)
+        missing = set(T["missing"])
+        for s in sorted(lr.get("refused") or {}, reverse=True):
+            kept = [n for n in lr["refused"][s] if f"{n} {s}" not in missing]
+            if kept:
+                tot = (lr.get("registry_teams") or {}).get(s) or len(T["index"].get(s, []))
+                notices.append(f"{len(kept)} of {tot} {s} team seasons could not be re-verified in the latest update and show their "
+                               f"last verified data: {', '.join(kept)}.")
     names = {"team": f"{cur} team data", "ap": "The AP poll", "player": f"{cur} national player pools",
              "conf": "The conference table", "cfp": "The Playoff snapshot"}
     for k, v in fresh.items():

@@ -3,7 +3,7 @@
 No network.  Called by build_report.py.  Snapshots are frozen history (each week's committee Top 25,
 our computed Top 25, lines and agreement metrics, stored by collect_cfp.py through update.py); the
 build only re-checks their shape and resolves ids to names, it never recomputes a past week."""
-import json, os
+import datetime, json, os
 
 
 def load(root, f, default):
@@ -11,9 +11,37 @@ def load(root, f, default):
     return json.load(open(p)) if os.path.exists(p) else default
 
 
+def context_notes(root, season, weeks, teams, check):
+    """cfp_context.json (repo root): curated, sourced, display-only notes per committee week.  Returns
+    {week label: [note, ...]} for stored weeks; a note for a week not stored yet waits (printed, not shown)."""
+    p = os.path.join(root, "cfp_context.json")
+    if not os.path.exists(p): return {}
+    by_name = {}
+    for tid, t in teams.items(): by_name.setdefault(t.get("name"), []).append(tid)
+    have = {w.get("week"): w for w in weeks}
+    out = {}
+    for i, n in enumerate(json.load(open(p)).get("notes", [])):
+        tag = f"cfp_context.json note {i + 1}"
+        for k in ("season", "week", "team", "fact", "source", "source_url", "date"):
+            check(n.get(k) not in (None, ""), f"{tag}: '{k}' is required")
+        if n.get("season") != season: continue
+        check(len(by_name.get(n.get("team"), [])) == 1, f"{tag}: team '{n.get('team')}' does not name exactly one stored team")
+        check(str(n.get("source_url", "")).startswith("https://"), f"{tag}: source_url must be an https link")
+        try: datetime.date.fromisoformat(str(n.get("date")))
+        except ValueError: check(False, f"{tag}: date '{n.get('date')}' is not YYYY-MM-DD")
+        w = have.get(n.get("week"))
+        if not w: print(f"    {tag}: {n.get('week')} is not stored yet; the note waits"); continue
+        check(str(n.get("date")) <= str(w.get("date")), f"{tag}: dated {n.get('date')}, after the {n.get('week')} release ({w.get('date')})")
+        tid = (by_name.get(n.get("team")) or [None])[0]
+        out.setdefault(n["week"], []).append({"team": tid, "name": n["team"], "fact": n["fact"], "source": n["source"],
+                                              "source_url": n["source_url"], "date": n["date"]})
+    return out
+
+
 def build(root, cfg, check):
     d = load(root, "cfp.json", {"season": cfg["current_season"], "weeks": []})
     teams = load(root, "team.json", {"teams": {}}).get("teams", {})
+    ctx = context_notes(root, d.get("season", cfg["current_season"]), d.get("weeks", []), teams, check)
     weeks = []
     for w in d.get("weeks", []):
         tag = f"cfp {w.get('week')} {w.get('date')}"
@@ -46,5 +74,6 @@ def build(root, cfg, check):
         weeks.append({"week": w.get("week", ""), "date": w.get("date", ""), "through": w.get("through"),
                       "committee": comm, "ours": ours, "names": names,
                       "lines": w.get("lines", {}), "metrics": m, "weights": w.get("weights"),
-                      "wab": wab, "wab_bubble": w.get("wab_bubble"), "wab_metrics": w.get("wab_metrics"), "srs_top25": s25})
+                      "wab": wab, "wab_bubble": w.get("wab_bubble"), "wab_metrics": w.get("wab_metrics"), "srs_top25": s25,
+                      "model": w.get("model", "v1"), "context": ctx.get(w.get("week"), [])})
     return {"season": d.get("season", cfg["current_season"]), "weeks": weeks}

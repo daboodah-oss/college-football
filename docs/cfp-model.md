@@ -72,6 +72,43 @@ same order as WAB's bubble) on its line.  Neither enters the blend; our Top 25, 
 unchanged.  The Bias tab (`build_bias.py`, spec `docs/claude-spec-cfp-bias-analysis.md`) reads them from
 the frozen snapshot.
 
+## Model v2 (from the first snapshot stored after 2026-11-21)
+
+Jeff-approved 2026-11-11 (`docs/claude-spec-warnings-model-v2.md` Part 6B).  v1 values every opponent at
+its season-long rating, so a team that collapses later (the case that prompted this: Ohio State without QB
+Julian Sayin after Oct 17) retroactively cheapens results earned against it at full strength.
+
+- **Dated, 20%.**  Per team, the mean over its games of (capped margin, home-adjusted, exactly as SRS) +
+  the opponent's rating *as of that game's date*: SRS computed from only the games played strictly before
+  that day (an expanding window over the same stored rows; deterministic; no new data).  Early in the
+  season an opponent has few prior games, so while it has fewer than 4 its as-of rating is blended with
+  its season rating (weight n/4).  No preseason or poll input exists to stand in for it, by design.
+- **Weights v2:** SRS 25, Dated 20, Colley 30, Resume 25.  The 20 comes out of SRS, so margin-based
+  evidence keeps its 45 and wins-and-losses and resume keep their 30 and 25: the blend's balance is
+  unchanged, only how opponents are valued shifts.
+- **Versioning.**  `cfp_model.MODEL` is what collect_cfp stores; each snapshot records `model` and its
+  `weights`, and v2 lines carry `dated`.  Snapshots stored through 2026-11-21 (Weeks 11 and 12) have no
+  `model` key, are labelled v1 on the page, and are never recomputed.  `compute(..., model="v1")`
+  reproduces v1 exactly (checked against the pre-v2 code).  `tools/model_compare.py` shows committee /
+  frozen / v1 / v2 for any stored week without storing anything.
+- **Effect, honestly.**  On Week 11's games (through 2026-11-07) Ohio State rates 19.95 as of Oct 17
+  against 15.40 for its season, so Indiana's Oct 17 loss is now valued 4.5 points higher; Indiana's Dated
+  score is 14.10 against an SRS of 13.61.  The Top 12 moves little (Tennessee and Oregon swap 10th and
+  11th); v2 corrects the valuation without reshuffling the list.
+- Unchanged: the SRS baseline and `srs_rank` of the Bias tab, WAB, the margin cap and home field.
+- Numeric injury adjustments are out of scope (no reliable source in the pipeline; they would break the
+  no-hand-tuning rule).  Context instead appears as notes (below).
+
+## Context notes (cfp_context.json)
+
+Curated, sourced, display-only notes per committee week, shown in the Playoff tab's critique area under
+"Context this week (not part of any ranking)".  Each names the team (exactly as stored), the fact, the
+source, a link and the source's date, from a cited public report (a coach's statement or a credible beat
+report), never rumor.  They live in `cfp_context.json` at the repo root, not in `data/cfp.json`: adding a
+note to a past week does not touch its frozen snapshot (update.py's cfp guard would refuse any re-store of
+an earlier week anyway: it refuses a date before the latest stored week and a committee list equal to the
+latest).  `build_cfp.py` validates every note; a note for a week not yet stored waits.
+
 ## Agreement metrics (collect_cfp.agreement_metrics)
 
 - **Agreement %** (the headline) = mean of the Top 25 overlap share and the Top 12 overlap share.

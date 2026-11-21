@@ -52,7 +52,7 @@ def make_snapshot(root, season, committee, week, date):
             "committee": committee, "ours": ours, "lines": lines,
             "metrics": agreement_metrics(committee, ours), "weights": model["weights"],
             "wab": wab["top25"], "wab_bubble": dict(wab["bubble"], sigma=wab["sigma"]),
-            "wab_metrics": agreement_metrics(committee, wab["top25"]), "srs_top25": srs25}
+            "wab_metrics": agreement_metrics(committee, wab["top25"]), "srs_top25": srs25, "model": model["model"]}
 
 
 def cfp_poll(C, U):
