@@ -1,7 +1,7 @@
 {
  "qb": {
   "season": 2026,
-  "data_through": "2026-11-18",
+  "data_through": "2026-11-19",
   "positions": [
    "QB"
   ],
@@ -6205,11 +6205,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-20T05:39+00:00"
+  "retrieved_at": "2026-11-21T05:33+00:00"
  },
  "rb": {
   "season": 2026,
-  "data_through": "2026-11-18",
+  "data_through": "2026-11-19",
   "positions": [
    "RB"
   ],
@@ -10990,11 +10990,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-20T05:39+00:00"
+  "retrieved_at": "2026-11-21T05:33+00:00"
  },
  "wr": {
   "season": 2026,
-  "data_through": "2026-11-18",
+  "data_through": "2026-11-19",
   "positions": [
    "WR",
    "TE"
@@ -16468,6 +16468,6 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-20T05:40+00:00"
+  "retrieved_at": "2026-11-21T05:33+00:00"
  }
 }
