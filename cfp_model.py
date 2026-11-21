@@ -32,7 +32,7 @@ def load_teams(root):
     return json.load(open(p)).get("teams", {}) if os.path.exists(p) else {}
 
 
-def collect_games(teams, season):
+def collect_games(teams, season, through=None):
     """Deduped completed games for one season: [(winner_id, loser_id, margin, home_id or None)].
     A game against an opponent with no FBS membership in team.json's registry sense (no stored team
     entry) is a game against the combined FCS node.  Ties are skipped (no FBS ties in the data era
@@ -43,6 +43,7 @@ def collect_games(teams, season):
         for g in t.get("seasons", {}).get(str(season), {}).get("games", []):
             ev = g.get("event")
             if not ev or ev in seen or g.get("pf") == g.get("pa"): continue
+            if through and str(g.get("date", ""))[:10] > through: continue
             seen.add(ev)
             op = str(g.get("opp_id", ""))
             op = op if op in ids else FCS_ID
@@ -159,3 +160,49 @@ def compute(root, season):
     return {"top25": order[:25], "lines": lines, "through": through,
             "weights": {"srs": W_SRS, "colley": W_COLLEY, "resume": W_RESUME},
             "margin_cap": MARGIN_CAP, "home_field": HOME_FIELD}
+
+
+# ================================================================ Wins Above Bubble (comparison only)
+# A third ranking shown next to the committee's and ours.  It is NOT part of the blend above and never
+# changes our Top 25.  Method (docs/claude-spec-wab-column.md, fixed; do not tune): SRS as srs_ratings
+# computes it; the bubble is the mean SRS of the 12th- and 13th-best FBS teams; the bubble team's chance
+# of beating an opponent at that game's site is Phi((bubble - opp_srs + site_adj) / 13.5), site_adj -2.5
+# when the ranked team was home, +2.5 when it was away, 0 neutral; a win is worth 1 - p, a loss -p.
+WAB_SIGMA = 13.5
+WAB_BUBBLE = 12      # the cut line sits between the 12th and 13th teams by SRS
+WAB_MIN_GAMES = 5
+
+
+def _phi(x):
+    import math
+    return 0.5 * (1.0 + math.erf(x / math.sqrt(2.0)))
+
+
+def wab(root, season, through=None):
+    """Wins Above Bubble for every FBS team from the stored rows (games through `through` if given).
+    A team with fewer than 5 of its own stored game rows (a missing team-season) is unranked.
+    Returns {"top25", "values", "ranks", "own_games", "bubble": {"rating", "team12", "team13"}, "sigma", "through"}."""
+    teams = load_teams(root)
+    games = collect_games(teams, season, through)
+    nodes = sorted({x for g in games for x in g[:2]})
+    fbs = [n for n in nodes if n != FCS_ID]
+    srs = srs_ratings(nodes, games)
+    name = lambda n: teams.get(n, {}).get("name", n)
+    by_srs = sorted(fbs, key=lambda n: (-srs[n], name(n)))
+    t12, t13 = by_srs[WAB_BUBBLE - 1], by_srs[WAB_BUBBLE]
+    bubble = (srs[t12] + srs[t13]) / 2.0
+    val = {n: 0.0 for n in fbs}; gp = {n: 0 for n in fbs}
+    for w, l, _m, home in games:
+        for n, opp, won in ((w, l, True), (l, w, False)):
+            if n == FCS_ID: continue
+            site = -HOME_FIELD if home == n else HOME_FIELD if home == opp else 0.0
+            p = _phi((bubble - srs[opp] + site) / WAB_SIGMA)
+            val[n] += (1.0 - p) if won else -p
+            gp[n] += 1
+    own = {n: sum(1 for g in teams.get(n, {}).get("seasons", {}).get(str(season), {}).get("games", [])
+                  if not through or str(g.get("date", ""))[:10] <= through) for n in fbs}
+    ranked = sorted((n for n in fbs if own[n] >= WAB_MIN_GAMES), key=lambda n: (-val[n], -srs[n], name(n)))
+    return {"top25": ranked[:25], "values": {n: round(val[n], 2) for n in fbs},
+            "ranks": {n: i + 1 for i, n in enumerate(ranked)}, "own_games": own,
+            "bubble": {"rating": round(bubble, 2), "team12": name(t12), "team13": name(t13)},
+            "sigma": WAB_SIGMA, "through": through}

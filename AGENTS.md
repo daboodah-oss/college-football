@@ -122,7 +122,10 @@ season matches.
 - `collect_cfp.py` — Playoff snapshots: ESPN's CFP poll + `cfp_model.compute`
   on the stored rows, appended only when the committee list changed
 - `cfp_model.py` — our Top 25 blend (45% capped-margin SRS, 30% Colley, 25%
-  resume points); the assessment behind it is `docs/cfp-model.md`
+  resume points); the assessment behind it is `docs/cfp-model.md`.  Also
+  `wab()`, Wins Above Bubble, a comparison-only third ranking (not in the
+  blend; method fixed by `docs/claude-spec-wab-column.md`, σ 13.5 and the
+  12/13 bubble are not to be tuned)
 - `update.py` — row validation before storage, `SOURCE_EXCEPTIONS`
 - `build_tabs.py` — Team and Player models; re-checks every stored row
 - `build_conferences.py` — Conferences model from `team.json` +
@@ -157,7 +160,10 @@ season matches.
   on).  Charts draw only for the visible tab and redraw when a tab opens.
   Conferences carries a per-season toggle (standings + matrix counted at build
   time from the stored rows); Playoff carries a week picker over the frozen
-  `data/cfp.json` snapshots and never recomputes a stored week.
+  `data/cfp.json` snapshots and never recomputes a stored week.  From 2026
+  Week 13 a snapshot carries a Wins Above Bubble Top 25 shown as a third
+  ranking (side-table columns + its own agreement line); earlier weeks say
+  "WAB tracking began Week 13" instead of showing empty columns.
 - Every pick carries its season: a team pick is team + season, a player pick
   is player + season.  Pills, chips, table rows and game-log headings show the
   full "Name 2026"; chart end labels use the short form "IND ’26" (the ND

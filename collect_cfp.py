@@ -9,6 +9,10 @@ committee's Top 25 actually changed, so each release is kept exactly once and ne
 "Our" Top 25 is cfp_model.compute: a documented blend (45% capped-margin SRS, 30% Colley Matrix,
 25% resume points) over the stored team.json game rows only.  The snapshot freezes the committee
 list, our list, the per-team lines and the agreement metrics for that week.
+
+From Week 13 (2026) each snapshot also freezes a Wins Above Bubble Top 25 (cfp_model.wab), a third
+ranking for comparison only: it is not in the blend and does not change our Top 25.  Earlier snapshots
+stay exactly as stored (no backfill).
 """
 import os, sys
 
@@ -47,14 +51,19 @@ def cfp_poll(C, U):
         return
     model = cfp_model.compute(C.ROOT, C.SEASON)
     ours = model["top25"]
-    lines = {tid: model["lines"][tid] for tid in dict.fromkeys(committee + ours)}
+    wab = cfp_model.wab(C.ROOT, C.SEASON, model["through"])   # comparison column only; not in the blend
+    lines = {tid: dict(model["lines"][tid], wab=wab["values"][tid], wab_rank=wab["ranks"].get(tid))
+             for tid in dict.fromkeys(committee + ours + wab["top25"])}
     week = (r.get("occurrence") or {}).get("displayValue", "") or f"Week {len(stored) + 1}"
     snap = {"season": C.SEASON, "week": week, "date": r.get("date", "")[:10], "through": model["through"],
             "committee": committee, "ours": ours, "lines": lines,
-            "metrics": agreement_metrics(committee, ours), "weights": model["weights"]}
+            "metrics": agreement_metrics(committee, ours), "weights": model["weights"],
+            "wab": wab["top25"], "wab_bubble": dict(wab["bubble"], sigma=wab["sigma"]),
+            "wab_metrics": agreement_metrics(committee, wab["top25"])}
     U.cfp(snap)
     C.log(f"[cfp] {week} ({snap['date']}): snapshot stored; agreement {snap['metrics']['agreement']}%, "
-          f"overlap {snap['metrics']['overlap25']}/25, Top 12 overlap {snap['metrics']['overlap12']}/12")
+          f"overlap {snap['metrics']['overlap25']}/25, Top 12 overlap {snap['metrics']['overlap12']}/12; "
+          f"WAB Top 12 overlap {snap['wab_metrics']['overlap12']}/12, bubble {snap['wab_bubble']['rating']}")
 
 
 def run(C, U):
