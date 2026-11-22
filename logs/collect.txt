@@ -1,193 +1,263 @@
-quick check: new final 2026-11-21 Georgia Bulldogs at South Carolina Gamecocks
+quick check: new final 2026-11-21 Utah Utes at TCU Horned Frogs
 STORED registry 2026: 138 of 138 cfbstats teams joined to ESPN
 [registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids
 STORED AP Top 25 2026-11-16 1 Georgia, 2 Utah, 3 Notre Dame, 4 UCLA, 5 Miami ...
 REFUSED: team Air Force 2026 2026-10-10: total yards 433 != rushing 439 + passing 0
 [team] Air Force 2026 REFUSED by validator
 [team] Akron 2026: no new games; still matches cfbstats
-[team] Alabama 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] App State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+STORED team Alabama 2026: 11 games
+[team] Alabama 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team App State 2026: 11 games
+[team] App State 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Arizona 2026: 11 games
-[team] Arizona 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Arizona State 2026: no new games; still matches cfbstats
-[team] Arkansas 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Arizona 2026: 11 games; matches cfbstats through 2026-11-21
+REFUSED: team-season Arizona State 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1515, 1499), 'pass_yds': (2690, 2706)} (ESPN, cfbstats)
+[team] Arizona State 2026 REFUSED by validator
+STORED team Arkansas 2026: 11 games
+[team] Arkansas 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Arkansas State 2026: 11 games
-[team] Arkansas State 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Army 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Arkansas State 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Army 2026: 10 games
+[team] Army 2026: 10 games; matches cfbstats through 2026-11-21
 STORED team Auburn 2026: 11 games
-[team] Auburn 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] BYU 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Auburn 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team BYU 2026: 11 games
+[team] BYU 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Ball State 2026: no new games; still matches cfbstats
 STORED team Baylor 2026: 11 games
-[team] Baylor 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Boise State 2026: no new games; still matches cfbstats
-[team] Boston College 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Baylor 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Boise State 2026: 11 games
+[team] Boise State 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Boston College 2026: 11 games
+[team] Boston College 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Bowling Green 2026: no new games; still matches cfbstats
 REFUSED: team-season Buffalo 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2097, 2091)} (ESPN, cfbstats)
 [team] Buffalo 2026 REFUSED by validator
-STORED team California 2026: 11 games
-[team] California 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+REFUSED: team-season California 2026: ESPN box scores disagree with cfbstats season totals {'to_gained': (11, 10)} (ESPN, cfbstats)
+[team] California 2026 REFUSED by validator
 [team] Central Michigan 2026: no new games; still matches cfbstats
-[team] Charlotte 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Cincinnati 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+STORED team Charlotte 2026: 11 games
+[team] Charlotte 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Cincinnati 2026: 11 games
+[team] Cincinnati 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Clemson 2026: no new games; still matches cfbstats
-[team] Coastal Carolina 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Colorado 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-STORED team Colorado State 2026: 11 games
-[team] Colorado State 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] UConn 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Delaware 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+REFUSED: team-season Coastal Carolina 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1294, 1284), 'pass_yds': (2687, 2697)} (ESPN, cfbstats)
+[team] Coastal Carolina 2026 REFUSED by validator
+REFUSED: team-season Colorado 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1554, 1542), 'total_yds': (4382, 4370)} (ESPN, cfbstats)
+[team] Colorado 2026 REFUSED by validator
+REFUSED: team-season Colorado State 2026: ESPN box scores disagree with cfbstats season totals {'pass_yds': (3106, 3099)} (ESPN, cfbstats)
+[team] Colorado State 2026 REFUSED by validator
+STORED team UConn 2026: 11 games
+[team] UConn 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Delaware 2026: 11 games
+[team] Delaware 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Duke 2026: no new games; still matches cfbstats
-[team] East Carolina 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+STORED team East Carolina 2026: 11 games
+[team] East Carolina 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Eastern Michigan 2026: no new games; still matches cfbstats
-[team] Florida International 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Florida 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-STORED team Florida Atlantic 2026: 11 games
-[team] Florida Atlantic 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+REFUSED: team-season Florida International 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1419, 1403), 'pass_yds': (2693, 2709)} (ESPN, cfbstats)
+[team] Florida International 2026 REFUSED by validator
+REFUSED: team-season Florida 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1865, 1859)} (ESPN, cfbstats)
+[team] Florida 2026 REFUSED by validator
+REFUSED: team-season Florida Atlantic 2026: ESPN box scores disagree with cfbstats season totals {'to_gained': (18, 17)} (ESPN, cfbstats)
+[team] Florida Atlantic 2026 REFUSED by validator
 STORED team Florida State 2026: 11 games
-[team] Florida State 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Florida State 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Fresno State 2026: 11 games
-[team] Fresno State 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Fresno State 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Georgia 2026: 11 games
-[team] Georgia 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Georgia 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Georgia Southern 2026: 11 games
-[team] Georgia Southern 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Georgia Southern 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Georgia State 2026: 11 games
-[team] Georgia State 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Georgia Tech 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Georgia State 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Georgia Tech 2026: 11 games
+[team] Georgia Tech 2026: 11 games; matches cfbstats through 2026-11-21
 REFUSED: team Hawai'i 2026 2026-08-29: total yards 322 != rushing 46 + passing 279
 [team] Hawai'i 2026 REFUSED by validator
-[team] Houston 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Illinois 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+STORED team Houston 2026: 11 games
+[team] Houston 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Illinois 2026: 11 games
+[team] Illinois 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Indiana 2026: 11 games
-[team] Indiana 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Iowa 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Indiana 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Iowa 2026: 11 games
+[team] Iowa 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Iowa State 2026: no new games; still matches cfbstats
-[team] Jacksonville State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+STORED team Jacksonville State 2026: 11 games
+[team] Jacksonville State 2026: 11 games; matches cfbstats through 2026-11-21
 [team] James Madison 2026: no new games; still matches cfbstats
-[team] Kansas 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+STORED team Kansas 2026: 11 games
+[team] Kansas 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Kansas State 2026: 11 games
-[team] Kansas State 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Kennesaw State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Kansas State 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Kennesaw State 2026: 11 games
+[team] Kennesaw State 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Kent State 2026: no new games; still matches cfbstats
 STORED team Kentucky 2026: 11 games
-[team] Kentucky 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Kentucky 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team LSU 2026: 11 games
-[team] LSU 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Liberty 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Louisiana 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] LSU 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Liberty 2026: 11 games
+[team] Liberty 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Louisiana 2026: 11 games
+[team] Louisiana 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Louisiana Tech 2026: 11 games
-[team] Louisiana Tech 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] UL Monroe 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Louisiana Tech 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team UL Monroe 2026: 11 games
+[team] UL Monroe 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Louisville 2026: 11 games
-[team] Louisville 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Louisville 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Marshall 2026: 11 games
-[team] Marshall 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Marshall 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Maryland 2026: 11 games
-[team] Maryland 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Maryland 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Massachusetts 2026: no new games; still matches cfbstats
-[team] Memphis 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+REFUSED: team-season Memphis 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2605, 2599)} (ESPN, cfbstats)
+[team] Memphis 2026 REFUSED by validator
 STORED team Miami 2026: 11 games
-[team] Miami 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Miami 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Miami (OH) 2026: no new games; still matches cfbstats
 STORED team Michigan 2026: 11 games
-[team] Michigan 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Michigan 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Michigan State 2026: no new games; still matches cfbstats
-[team] Middle Tennessee 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Minnesota 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Mississippi State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+REFUSED: team-season Middle Tennessee 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1703, 1697)} (ESPN, cfbstats)
+[team] Middle Tennessee 2026 REFUSED by validator
+STORED team Minnesota 2026: 11 games
+[team] Minnesota 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Mississippi State 2026: 11 games
+[team] Mississippi State 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Missouri 2026: 11 games
-[team] Missouri 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Missouri State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Missouri 2026: 11 games; matches cfbstats through 2026-11-21
+REFUSED: team-season Missouri State 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1383, 1374), 'pass_yds': (2442, 2448)} (ESPN, cfbstats)
+[team] Missouri State 2026 REFUSED by validator
 STORED team NC State 2026: 11 games
-[team] NC State 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Navy 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Nebraska 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Nevada 2026: no new games; still matches cfbstats
+[team] NC State 2026: 11 games; matches cfbstats through 2026-11-21
+REFUSED: team-season Navy 2026: ESPN box scores disagree with cfbstats season totals {'pass_yds': (1180, 1157), 'total_yds': (4198, 4175)} (ESPN, cfbstats)
+[team] Navy 2026 REFUSED by validator
+STORED team Nebraska 2026: 11 games
+[team] Nebraska 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Nevada 2026: 11 games
+[team] Nevada 2026: 11 games; matches cfbstats through 2026-11-21
 [team] New Mexico 2026: no new games; still matches cfbstats
-[team] New Mexico State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] North Carolina 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+REFUSED: team-season New Mexico State 2026: ESPN box scores disagree with cfbstats season totals {'pass_yds': (2216, 2210)} (ESPN, cfbstats)
+[team] New Mexico State 2026 REFUSED by validator
+STORED team North Carolina 2026: 11 games
+[team] North Carolina 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team North Dakota State 2026: 11 games
-[team] North Dakota State 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] North Texas 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] North Dakota State 2026: 11 games; matches cfbstats through 2026-11-21
+REFUSED: team-season North Texas 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2136, 2129), 'to_lost': (14, 13)} (ESPN, cfbstats)
+[team] North Texas 2026 REFUSED by validator
 STORED team Northern Illinois 2026: 11 games
-[team] Northern Illinois 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Northwestern 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Northern Illinois 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Northwestern 2026: 11 games
+[team] Northwestern 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Notre Dame 2026: 11 games
-[team] Notre Dame 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Notre Dame 2026: 11 games; matches cfbstats through 2026-11-21
 REFUSED: team-season Ohio 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2044, 2032), 'pass_yds': (2022, 2034)} (ESPN, cfbstats)
 [team] Ohio 2026 REFUSED by validator
-[team] Ohio State 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+STORED team Ohio State 2026: 11 games
+[team] Ohio State 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Oklahoma 2026: 11 games
-[team] Oklahoma 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Oklahoma State 2026: no new games; still matches cfbstats
-[team] Old Dominion 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Ole Miss 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Oklahoma 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Oklahoma State 2026: 11 games
+[team] Oklahoma State 2026: 11 games; matches cfbstats through 2026-11-21
+REFUSED: team-season Old Dominion 2026: ESPN box scores disagree with cfbstats season totals {'pass_yds': (2077, 2085), 'total_yds': (3066, 3074)} (ESPN, cfbstats)
+[team] Old Dominion 2026 REFUSED by validator
+REFUSED: team-season Ole Miss 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1732, 1720), 'total_yds': (4864, 4852)} (ESPN, cfbstats)
+[team] Ole Miss 2026 REFUSED by validator
 [team] Oregon 2026: no new games; still matches cfbstats
-[team] Oregon State 2026: no new games; still matches cfbstats
+STORED team Oregon State 2026: 11 games
+[team] Oregon State 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Penn State 2026: 11 games
-[team] Penn State 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Penn State 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Pittsburgh 2026: 11 games
-[team] Pittsburgh 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Purdue 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Pittsburgh 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Purdue 2026: 11 games
+[team] Purdue 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Rice 2026: no new games; still matches cfbstats
 STORED team Rutgers 2026: 11 games
-[team] Rutgers 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-STORED team SMU 2026: 11 games
-[team] SMU 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Rutgers 2026: 11 games; matches cfbstats through 2026-11-21
+REFUSED: team-season SMU 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1571, 1565)} (ESPN, cfbstats)
+[team] SMU 2026 REFUSED by validator
 REFUSED: team Sacramento State 2026 2026-08-29: total yards 268 != rushing 49 + passing 222
 [team] Sacramento State 2026 REFUSED by validator
-[team] Sam Houston 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] San Diego State 2026: no new games; still matches cfbstats
+STORED team Sam Houston 2026: 11 games
+[team] Sam Houston 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team San Diego State 2026: 11 games
+[team] San Diego State 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team San José State 2026: 12 games
-[team] San José State 2026: 12 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] San José State 2026: 12 games; matches cfbstats through 2026-11-21
 STORED team South Alabama 2026: 11 games
-[team] South Alabama 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] South Alabama 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team South Carolina 2026: 11 games
-[team] South Carolina 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] South Carolina 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Southern Miss 2026: 11 games
-[team] Southern Miss 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Southern Miss 2026: 11 games; matches cfbstats through 2026-11-21
 REFUSED: team Stanford 2026 2026-08-29: total yards 483 != rushing 158 + passing 310
 [team] Stanford 2026 REFUSED by validator
-[team] Syracuse 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] TCU 2026: no new games; still matches cfbstats
+STORED team Syracuse 2026: 11 games
+[team] Syracuse 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team TCU 2026: 11 games
+[team] TCU 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Temple 2026: no new games; still matches cfbstats
 STORED team Tennessee 2026: 11 games
-[team] Tennessee 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Texas 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Tennessee 2026: 11 games; matches cfbstats through 2026-11-21
+REFUSED: team-season Texas 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1396, 1402)} (ESPN, cfbstats)
+[team] Texas 2026 REFUSED by validator
 STORED team Texas A&M 2026: 11 games
-[team] Texas A&M 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Texas A&M 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Texas State 2026: 11 games
-[team] Texas State 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Texas State 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team Texas Tech 2026: 11 games
-[team] Texas Tech 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] Texas Tech 2026: 11 games; matches cfbstats through 2026-11-21
 [team] Toledo 2026: no new games; still matches cfbstats
 STORED team Troy 2026: 11 games
-[team] Troy 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] Tulane 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Tulsa 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
+[team] Troy 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Tulane 2026: 11 games
+[team] Tulane 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Tulsa 2026: 11 games
+[team] Tulsa 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team UAB 2026: 11 games
-[team] UAB 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] UAB 2026: 11 games; matches cfbstats through 2026-11-21
 [team] UCF 2026: no new games; still matches cfbstats
 STORED team UCLA 2026: 11 games
-[team] UCLA 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] UCLA 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team UNLV 2026: 11 games
-[team] UNLV 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] UNLV 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team USC 2026: 11 games
-[team] USC 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] USC 2026: 11 games; matches cfbstats through 2026-11-21
 STORED team South Florida 2026: 11 games
-[team] South Florida 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
+[team] South Florida 2026: 11 games; matches cfbstats through 2026-11-21
 [team] UTEP 2026: no new games; still matches cfbstats
-STORED team UTSA 2026: 11 games
-[team] UTSA 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-REFUSED: team-season Utah 2026: ESPN box scores disagree with cfbstats season totals {'to_gained': (17, 18)} (ESPN, cfbstats)
+REFUSED: team-season UTSA 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2070, 2064)} (ESPN, cfbstats)
+[team] UTSA 2026 REFUSED by validator
+REFUSED: team-season Utah 2026: ESPN box scores disagree with cfbstats season totals {'to_gained': (19, 20)} (ESPN, cfbstats)
 [team] Utah 2026 REFUSED by validator
-REFUSED: team-season Utah State 2026: ESPN box scores disagree with cfbstats season totals {'to_lost': (12, 13)} (ESPN, cfbstats)
+REFUSED: team-season Utah State 2026: ESPN box scores disagree with cfbstats season totals {'to_lost': (13, 14)} (ESPN, cfbstats)
 [team] Utah State 2026 REFUSED by validator
-[team] Vanderbilt 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Virginia 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-STORED team Virginia Tech 2026: 11 games
-[team] Virginia Tech 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21Traceback (most recent call last):
+STORED team Vanderbilt 2026: 11 games
+[team] Vanderbilt 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Virginia 2026: 11 games
+[team] Virginia 2026: 11 games; matches cfbstats through 2026-11-21
+REFUSED: team-season Virginia Tech 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1401, 1412), 'total_yds': (4405, 4416), 'to_lost': (16, 15)} (ESPN, cfbstats)
+[team] Virginia Tech 2026 REFUSED by validator
+STORED team Wake Forest 2026: 11 games
+[team] Wake Forest 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Washington 2026: 11 games
+[team] Washington 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Washington State 2026: 11 games
+[team] Washington State 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team West Virginia 2026: 11 games
+[team] West Virginia 2026: 11 games; matches cfbstats through 2026-11-21
+STORED team Western Kentucky 2026: 11 games
+[team] Western Kentucky 2026: 11 games; matches cfbstats through 2026-11-21
+[team] Western Michigan 2026: no new games; still matches cfbstats
+STORED team Wisconsin 2026: 11 games
+[team] Wisconsin 2026: 11 games; matches cfbstats through 2026-11-21
+[team] Wyoming 2026: no new games; still matches cfbstats
+[team] 2026: 138 registry teams; 0 sealed, 110 collected, 28 not stored
+[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Arizona State (refused, see above); Buffalo (refused, see above); California (refused, see above); Coastal Carolina (refused, see above); Colorado (refused, see above); Colorado State (refused, see above); Florida International (refused, see above); Florida (refused, see above); Florida Atlantic (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); Middle Tennessee (refused, see above); Missouri State (refused, see above); Navy (refused, see above); New Mexico State (refused, see above); North Texas (refused, see above); Ohio (refused, see above); Old Dominion (refused, see above); Ole Miss (refused, see above); SMU (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); UTSA (refused, see above); Utah (refused, see above); Utah State (refused, see above); Virginia Tech (refused, see above)Traceback (most recent call last):
   File "/home/runner/work/college-football/college-football/collect.py", line 114, in run
     out = fn(*a, **k)
           ^^^^^^^^^^^
@@ -197,25 +267,13 @@ STORED team Virginia Tech 2026: 11 games
   File "/home/runner/work/college-football/college-football/collect_tabs.py", line 213, in team_seasons
     if failed: raise ValueError(f"{season} team seasons not stored: " + "; ".join(failed))
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); Hawai'i (refused, see above); Ohio (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Utah (refused, see above); Utah State (refused, see above)
+ValueError: 2026 team seasons not stored: Air Force (refused, see above); Arizona State (refused, see above); Buffalo (refused, see above); California (refused, see above); Coastal Carolina (refused, see above); Colorado (refused, see above); Colorado State (refused, see above); Florida International (refused, see above); Florida (refused, see above); Florida Atlantic (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); Middle Tennessee (refused, see above); Missouri State (refused, see above); Navy (refused, see above); New Mexico State (refused, see above); North Texas (refused, see above); Ohio (refused, see above); Old Dominion (refused, see above); Ole Miss (refused, see above); SMU (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); UTSA (refused, see above); Utah (refused, see above); Utah State (refused, see above); Virginia Tech (refused, see above)
 
-[team] Wake Forest 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-STORED team Washington 2026: 11 games
-[team] Washington 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-STORED team Washington State 2026: 11 games
-[team] Washington State 2026: 11 games; not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21
-[team] West Virginia 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Western Kentucky 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Western Michigan 2026: no new games; still matches cfbstats
-[team] Wisconsin 2026: unchanged (not cross-checked yet: cfbstats is through 2026-11-20, ESPN's latest game is 2026-11-21)
-[team] Wyoming 2026: no new games; still matches cfbstats
-[team] 2026: 138 registry teams; 0 sealed, 130 collected, 8 not stored
-[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Buffalo (refused, see above); Hawai'i (refused, see above); Ohio (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Utah (refused, see above); Utah State (refused, see above)
-[natref] 2026 qb: 46 players stored (0 game logs fetched, 46 unchanged)
-STORED natref 2026 qb: 46 players through 2026-11-20
-[natref] 2026 rb: 45 players stored (0 game logs fetched, 45 unchanged)
-STORED natref 2026 rb: 45 players through 2026-11-20
-[natref] 2026 wr: 53 players stored (0 game logs fetched, 53 unchanged)
-STORED natref 2026 wr: 53 players through 2026-11-20
+[natref] 2026 qb: 43 players stored (36 game logs fetched, 7 unchanged)
+STORED natref 2026 qb: 43 players through 2026-11-21
+[natref] 2026 rb: 45 players stored (39 game logs fetched, 6 unchanged)
+STORED natref 2026 rb: 45 players through 2026-11-21
+[natref] 2026 wr: 54 players stored (48 game logs fetched, 6 unchanged)
+STORED natref 2026 wr: 54 players through 2026-11-21
 [cfp] committee Top 25 unchanged since Week 12 (2026-11-17); no new snapshot
 FAILED sections: team_2026
