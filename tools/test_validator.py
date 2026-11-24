@@ -45,5 +45,29 @@ g = {"event": "1", "opp": "X", "date": "2025-12-13", "site": "N", "pf": 17, "pa"
 case("an empty ESPN box score is refused", refused(lambda: U.check_team_game(dict(g), "test")))
 case("a normal game passes", not refused(lambda: U.check_team_game(dict(g, total_yds=300, rush_yds=200, pass_yds=100, third_att=12, third_conv=5), "test")))
 case("total != rush + pass is still refused", refused(lambda: U.check_team_game(dict(g, total_yds=301, rush_yds=200, pass_yds=100, third_att=12), "test")))
+# Playoff poll missing from ESPN's feed: normal between releases, a failure only after CFP_GAP_DAYS in season
+import datetime as _dt, collect_cfp as CF  # noqa: E402
+class _C:
+    SEASON = 2026
+    def __init__(s): s.logs = []
+    def log(s, m): s.logs.append(m)
+    def get(s, url):
+        class R:
+            def json(self): return {"rankings": [{"type": "ap", "name": "AP Top 25", "ranks": []}]}
+        return R()
+class _U:
+    def __init__(s, last): s.last = last
+    def load_or(s, f, d): return {"weeks": [{"week": "Week 12", "date": s.last, "committee": []}]} if s.last else {"weeks": []}
+_today = _dt.datetime.now(CF.ZoneInfo("America/New_York")).date()
+def _poll(days_ago, season=2026):
+    c = _C(); c.SEASON = season
+    try: CF.cfp_poll(c, _U((_today - _dt.timedelta(days=days_ago)).isoformat() if days_ago is not None else None)); return "ok"
+    except ValueError: return "fail"
+in_season = _today <= _dt.date(_today.year, *CF.CFP_LAST_DAY)
+case("no CFP poll, nothing stored yet: not a failure", _poll(None) == "ok")
+case("no CFP poll, latest release 7 days old: not a failure", _poll(7, _today.year) == "ok")
+case("no CFP poll, latest release 8 days old: " + ("a failure (in season)" if in_season else "not a failure (after the final ranking)"),
+     _poll(8, _today.year) == ("fail" if in_season else "ok"))
+case("no CFP poll, 30 days old in a past season: not a failure", _poll(30, _today.year - 1) == "ok")
 print(f"\n{'FAIL' if fails else 'OK'}: {len(fails)} failed")
 sys.exit(1 if fails else 0)

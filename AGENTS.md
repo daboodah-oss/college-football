@@ -123,7 +123,9 @@ season matches.
 - `collect_natref.py` — national QB / RB / WR pools per season (cfbstats boards
   plus each listed player's linked game log)
 - `collect_cfp.py` — Playoff snapshots: ESPN's CFP poll + `cfp_model.compute`
-  on the stored rows, appended only when the committee list changed
+  on the stored rows, appended only when the committee list changed; no poll
+  in ESPN's feed (normal Sunday to the Tuesday release) is not a failure
+  unless no release has been stored for 8+ days before Dec 10
 - `cfp_model.py` — our Top 25 blend, versioned: v1 (45% capped-margin SRS,
   30% Colley, 25% resume points; every snapshot through 2026-11-21) and v2
   (25% SRS, 20% Dated: games valued against the opponent's rating as of the

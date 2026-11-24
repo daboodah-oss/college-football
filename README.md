@@ -149,7 +149,10 @@ minutes; the next new final or the next scheduled refresh retries it.
 5. `cfp_rankings`: ESPN rankings, College Football Playoff poll.  If the committee's Top 25 differs
    from the stored latest snapshot, our Top 25 is computed from the just-collected game rows
    (`cfp_model.py`), with the Wins Above Bubble Top 25 beside it, and the week is appended to `data/cfp.json`; if it is the same list, nothing is
-   stored.  This is how the Wednesday run lands each Tuesday-night release exactly once.
+   stored.  This is how the Wednesday run lands each Tuesday-night release exactly once.  ESPN drops the
+   committee poll from its rankings feed between releases (from Sunday until the Tuesday reveal); a run
+   that finds no poll logs it and stores nothing.  It is a failure only when no release has been stored
+   for 8 days or more before Dec 10 (`collect_cfp.CFP_GAP_DAYS`, `CFP_LAST_DAY`): a missed release.
 
 Then `build_report.py --standalone` writes `index.html` (and regenerates `data/conferences.json` from
 the stored rows), and the workflow commits `data/`, `index.html`
