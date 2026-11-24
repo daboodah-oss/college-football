@@ -18,12 +18,24 @@ Components (each turned into a 0-100 percentile among FBS teams before blending)
 
 Final score = .45 * SRS percentile + .30 * Colley percentile + .25 * Resume percentile; ties break on
 the raw SRS rating, then team name, so the order is stable run to run.
+
+Model v2 (from the first snapshot stored after 2026-11-21; docs/cfp-model.md "Model v2"): a fourth component,
+  Dated .... each game valued against the opponent's rating AS OF THAT GAME'S DATE (expanding-window SRS over the
+             games played before that day), so a team that collapses later (an injury) no longer cheapens results
+             earned against it at full strength.  Weight 20, taken from SRS: v2 = SRS 25 + Dated 20 + Colley 30 +
+             Resume 25, so margin-based evidence keeps its 45 and wins/losses and resume their 30 and 25.
+Snapshots stored before v2 stay v1 (they carry no "model" key) and are never recomputed.
 """
 import json, os
 
 MARGIN_CAP = 28.0
 HOME_FIELD = 2.5
-W_SRS, W_COLLEY, W_RESUME = 0.45, 0.30, 0.25
+W_SRS, W_COLLEY, W_RESUME = 0.45, 0.30, 0.25           # v1 (snapshots stored through 2026-11-21)
+WEIGHTS = {"v1": {"srs": 0.45, "colley": 0.30, "resume": 0.25},
+           "v2": {"srs": 0.25, "dated": 0.20, "colley": 0.30, "resume": 0.25}}
+MODEL = "v2"          # what collect_cfp stores from now on
+DATED_FULL = 4        # an opponent's as-of rating counts fully once it has 4 games before the date; with fewer it is
+                      # blended with its season rating (weight n/4): no preseason input exists to stand in for it
 FCS_ID = "__FCS__"
 
 
@@ -32,7 +44,7 @@ def load_teams(root):
     return json.load(open(p)).get("teams", {}) if os.path.exists(p) else {}
 
 
-def collect_games(teams, season, through=None):
+def collect_games(teams, season, through=None, dated=False):
     """Deduped completed games for one season: [(winner_id, loser_id, margin, home_id or None)].
     A game against an opponent with no FBS membership in team.json's registry sense (no stored team
     entry) is a game against the combined FCS node.  Ties are skipped (no FBS ties in the data era
@@ -49,7 +61,7 @@ def collect_games(teams, season, through=None):
             op = op if op in ids else FCS_ID
             w, l = (tid, op) if g["pf"] > g["pa"] else (op, tid)
             home = tid if g.get("site") == "H" else op if g.get("site") == "A" else None
-            games.append((w, l, abs(g["pf"] - g["pa"]), home))
+            games.append((w, l, abs(g["pf"] - g["pa"]), home) + ((str(g.get("date", ""))[:10],) if dated else ()))
     return games
 
 
@@ -72,6 +84,30 @@ def srs_ratings(nodes, games):
         for n in r: r[n] -= mean
         if delta < 1e-9: break
     return r
+
+
+def dated_scores(nodes, dgames, srs):
+    """v2's Dated component: per team, the mean over its games of (signed capped margin, home-adjusted) + the
+    opponent's SRS as of that game's date, i.e. computed from the games played strictly before that day (blended
+    with its season rating while it has fewer than DATED_FULL prior games).  dgames: (w, l, m, home, date)."""
+    asof = {}
+    for d in sorted({g[4] for g in dgames}):
+        prior = [g[:4] for g in dgames if g[4] < d]
+        pn = sorted({x for g in prior for x in g[:2]})
+        r = srs_ratings(pn, prior) if prior else {}
+        cnt = {}
+        for w, l, _m, _h in prior: cnt[w] = cnt.get(w, 0) + 1; cnt[l] = cnt.get(l, 0) + 1
+        asof[d] = {n: (r.get(n, 0.0), cnt.get(n, 0)) for n in nodes}
+    def opp_val(o, d):
+        ra, k = asof[d][o]; f = min(1.0, k / DATED_FULL)
+        return f * ra + (1 - f) * srs[o]
+    tot = {n: [] for n in nodes}
+    for w, l, m, home, d in dgames:
+        c = min(m, MARGIN_CAP)
+        hw = HOME_FIELD if home == w else -HOME_FIELD if home == l else 0.0
+        tot[w].append(c - hw + opp_val(l, d))
+        tot[l].append(-(c - hw) + opp_val(w, d))
+    return {n: (sum(v) / len(v) if v else 0.0) for n, v in tot.items()}
 
 
 def colley_ratings(nodes, games):
@@ -107,11 +143,12 @@ def percentile(values):
     return out
 
 
-def compute(root, season):
-    """Our Top 25 plus every ranked team's display line, from the stored rows alone.
-    Returns {"top25": [team_id, ...], "lines": {team_id: {...}}, "through": last game date}."""
+def compute(root, season, through=None, model=MODEL):
+    """Our Top 25 plus every ranked team's display line, from the stored rows alone (games through `through` if
+    given; model "v1" or "v2").  Returns {"top25": [team_id, ...], "lines": {team_id: {...}}, "through": last game date}."""
     teams = load_teams(root)
-    games = collect_games(teams, season)
+    dgames = collect_games(teams, season, through, dated=True)
+    games = [g[:4] for g in dgames]
     nodes = sorted({x for g in games for x in g[:2]})
     fbs = [n for n in nodes if n != FCS_ID]
     srs = srs_ratings(nodes, games)
@@ -133,8 +170,13 @@ def compute(root, season):
                 pts -= 0.75; bad += 1
         gp = rec[n][0] + rec[n][1]
         resume[n] = pts / gp if gp else 0.0
-    ps, pc, pr = percentile({n: srs[n] for n in fbs}), percentile({n: col[n] for n in fbs}), percentile({n: resume[n] for n in fbs})
-    score = {n: W_SRS * ps[n] + W_COLLEY * pc[n] + W_RESUME * pr[n] for n in fbs}
+    W = WEIGHTS[model]
+    pct = {"srs": percentile({n: srs[n] for n in fbs}), "colley": percentile({n: col[n] for n in fbs}),
+           "resume": percentile({n: resume[n] for n in fbs})}
+    if "dated" in W:
+        dated = dated_scores(nodes, dgames, srs)
+        pct["dated"] = percentile({n: dated[n] for n in fbs})
+    score = {n: sum(W[k] * pct[k][n] for k in W) for n in fbs}
     order = sorted(fbs, key=lambda n: (-score[n], -srs[n], teams.get(n, {}).get("name", n)))
     opp_srs = {n: [] for n in nodes}
     best_win, worst_loss = {}, {}
@@ -159,10 +201,12 @@ def compute(root, season):
                     "worst_loss": ({"id": worst_loss[n], "name": names.get(worst_loss[n], worst_loss[n]),
                                     "record": f"{rec[worst_loss[n]][0]}-{rec[worst_loss[n]][1]}"} if n in worst_loss else None),
                     "quality_wins": qw, "top25_wins": t25,
-                    "score": round(score[n], 2), "srs": round(srs[n], 2), "srs_rank": srs_rank[n]}
-    through = max((g["date"] for t in teams.values() for g in t.get("seasons", {}).get(str(season), {}).get("games", [])), default=None)
+                    "score": round(score[n], 2), "srs": round(srs[n], 2), "srs_rank": srs_rank[n],
+                    **({"dated": round(dated[n], 2)} if "dated" in W else {})}
+    through = max((g["date"] for t in teams.values() for g in t.get("seasons", {}).get(str(season), {}).get("games", [])
+                   if not through or str(g.get("date", ""))[:10] <= through), default=None)
     return {"top25": order[:25], "lines": lines, "through": through, "srs_top25": by_srs[:25],
-            "weights": {"srs": W_SRS, "colley": W_COLLEY, "resume": W_RESUME},
+            "weights": dict(W), "model": model,
             "margin_cap": MARGIN_CAP, "home_field": HOME_FIELD}
 
 

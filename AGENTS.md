@@ -123,13 +123,21 @@ season matches.
 - `collect_natref.py` — national QB / RB / WR pools per season (cfbstats boards
   plus each listed player's linked game log)
 - `collect_cfp.py` — Playoff snapshots: ESPN's CFP poll + `cfp_model.compute`
-  on the stored rows, appended only when the committee list changed
-- `cfp_model.py` — our Top 25 blend (45% capped-margin SRS, 30% Colley, 25%
-  resume points); the assessment behind it is `docs/cfp-model.md`.  Also
+  on the stored rows, appended only when the committee list changed; no poll
+  in ESPN's feed (normal Sunday to the Tuesday release) is not a failure
+  unless no release has been stored for 8+ days before Dec 10
+- `cfp_model.py` — our Top 25 blend, versioned: v1 (45% capped-margin SRS,
+  30% Colley, 25% resume points; every snapshot through 2026-11-21) and v2
+  (25% SRS, 20% Dated: games valued against the opponent's rating as of the
+  game date, 30% Colley, 25% resume; `MODEL`, from the next snapshot).  The
+  assessment behind it is `docs/cfp-model.md`.  Also
   `wab()`, Wins Above Bubble, a comparison-only third ranking (not in the
   blend; method fixed by `docs/claude-spec-wab-column.md`, σ 13.5 and the
   12/13 bubble are not to be tuned)
-- `update.py` — row validation before storage, `SOURCE_EXCEPTIONS`
+- `cfp_context.json` — curated, sourced, display-only context notes per
+  Playoff week (team by stored name, fact, source, link, date); validated by
+  `build_cfp.py`; never touches `data/cfp.json`, never moves a ranking
+- `update.py` — row validation before storage (`tolerance`), `SOURCE_EXCEPTIONS`
 - `build_tabs.py` — Team and Player models; re-checks every stored row
 - `build_conferences.py` — Conferences model from `team.json` +
   `conferences.json` (repo root: per-season membership by ESPN id, from ESPN's
@@ -160,6 +168,18 @@ season matches.
   tab before the pipeline has stored a bias week (never writes the repo)
 - `tools/check_srs_symmetry.py` — offline regression check: every stored
   game's two SRS adjacency terms sum to 0
+- `tools/test_validator.py` — offline negative tests: every season tolerance
+  at its edge, exact counts, empty box scores
+- `tools/sim_refusals.py` — offline: re-judge a past run's logged refusals
+  under the current tolerances
+- `tools/trial_collect.py` — network: re-collect chosen (default: every
+  refused) team-seasons with the current code in a scratch copy; real
+  before/after counts without touching `data/`
+- `tools/localize_refusal.py` — network: narrow a refused season's
+  disagreement to candidate games via cfbstats' splits
+- `tools/model_compare.py` — offline: committee / frozen / v1 / v2 for a
+  stored week, side by side, nothing stored
+- `tools/run_report.py` — the workflow's "Report problems" step
 - `tools/resolve_espn_ids.py` — registry joins: `proofs` (offline) shows every
   join and whether cfbstats proved it; `candidates NAME` (network) lists ESPN
   teams for an alias
@@ -226,17 +246,28 @@ season matches.
   cfbstats beyond the yardage tolerance is refused and named.
 - The one rating tolerance: a published passer rating may differ from the
   NCAA formula by up to 0.15, on that single comparison only (QB game logs).
-  The `update.compare` yardage tolerances for ESPN-vs-cfbstats season totals
-  (teams max(5, 0.2%), players max(3, 0.5%)) are kept exactly.  One deliberate
-  addition, Jeff's call on 2026-10-19: team third-down attempts and conversions
-  may differ by up to 2 per season (`update.THIRD_TOL`), stored with a note shown
-  on the page, because ESPN's summed box scores and cfbstats' season totals
-  usually differ by 1-2 attempts.  Every other count must match exactly.  Do
-  not widen any other check.
+  The `update.tolerance` values for ESPN-vs-cfbstats season totals are kept
+  exactly: team yardage max(5, 0.5%), player yards max(3, 0.5%), team
+  third-down attempts and conversions 5 (`THIRD_TOL`), team turnovers lost /
+  gained 1 (`TO_TOL`); Jeff's calls of 2026-10-19 and 2026-11-11
+  (`docs/claude-spec-warnings-model-v2.md` Part 1).  Every difference inside a
+  tolerance is stored as a note shown on the page.  Games and points, and
+  every other count, must match exactly.  Do not widen any check further:
+  reconcile against an official box score instead (Part 3 of that spec).
+- Team total yards are stored as rushing + passing (`collect_tabs.box_row`):
+  ESPN's `totalYards` is intermittently wrong; the correction applies only
+  when ESPN's player lines prove the components, and is logged per game.
+- A refused team-season does not fail its `team_<season>` section; it is
+  recorded in `data/last_run.json` (`refused`, `new_refusals`).  The run fails
+  (email) only for a failed build, a broken section, or a new refusal
+  (`tools/run_report.py`).
 - `SOURCE_EXCEPTIONS` in `update.py`: one team, one season, one stat, pinned to
   the exact recorded ESPN / cfbstats pair, applied only when both values match
-  it, named in the run log.  The one entry is nd-report's documented Notre Dame
-  2024 `third_att` (185 vs 184, the 2024-09-07 Northern Illinois box score).
+  it, named in the run log.  Entries: nd-report's documented Notre Dame 2024
+  `third_att` (185 vs 184, the 2024-09-07 Northern Illinois box score), and
+  Georgia Tech 2024 `pf` (376 vs 370) / NC State 2024 `pa` (392 vs 386):
+  cfbstats' own schedule tables sum to ESPN's values; its season lines miss 6
+  points of the 30-29 game on 2024-11-21.
   Add an entry only with the same kind of per-game evidence from an official box
   score.  It is not a general tolerance.
 

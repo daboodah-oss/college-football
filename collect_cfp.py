@@ -18,12 +18,15 @@ From the first snapshot stored after 2026-11-21 each snapshot also freezes the B
 Top 25 (`srs_top25`) and, on every line, `srs_rank` (the team's SRS rank among all FBS teams).  Lines then
 cover the bias universe, committee Top 25 + SRS Top 25 + WAB Top 25 (plus our Top 25, as before).
 """
-import os, sys
+import datetime, os, sys
+from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import cfp_model  # noqa: E402
 
 ESPN = "https://site.api.espn.com/apis/site/v2/sports/football/college-football"
+CFP_GAP_DAYS = 8         # the committee releases weekly; 8+ days without a stored release while it is ranking = missed
+CFP_LAST_DAY = (12, 10)  # (month, day): after the final ranking (selection day, early December) the feed stays empty
 
 
 def agreement_metrics(committee, ours):
@@ -52,14 +55,26 @@ def make_snapshot(root, season, committee, week, date):
             "committee": committee, "ours": ours, "lines": lines,
             "metrics": agreement_metrics(committee, ours), "weights": model["weights"],
             "wab": wab["top25"], "wab_bubble": dict(wab["bubble"], sigma=wab["sigma"]),
-            "wab_metrics": agreement_metrics(committee, wab["top25"]), "srs_top25": srs25}
+            "wab_metrics": agreement_metrics(committee, wab["top25"]), "srs_top25": srs25, "model": model["model"]}
 
 
 def cfp_poll(C, U):
     stored = U.load_or("cfp.json", {"weeks": []}).get("weeks", [])
     j = C.get(f"{ESPN}/rankings?season={C.SEASON}").json()
     r = next((x for x in j.get("rankings", []) if x.get("type") == "cfp" or "Playoff" in x.get("name", "")), None)
-    if not r: raise ValueError("no College Football Playoff poll in ESPN rankings")
+    if not r:
+        # ESPN drops the committee poll from this feed once a new week starts (seen Sunday 2026-11-22 to the Tuesday
+        # release): between releases that is normal, not a failure.  It is a failure only when no release has been
+        # stored for CFP_GAP_DAYS or more while the committee is still ranking (through CFP_LAST_DAY), i.e. a weekly
+        # release was missed.
+        today = datetime.datetime.now(ZoneInfo("America/New_York")).date()
+        last = datetime.date.fromisoformat(stored[-1]["date"]) if stored else None
+        if last and (today - last).days >= CFP_GAP_DAYS and today <= datetime.date(C.SEASON, *CFP_LAST_DAY):
+            raise ValueError(f"no College Football Playoff poll in ESPN rankings, and the latest stored release "
+                             f"({stored[-1]['week']}, {stored[-1]['date']}) is {(today - last).days} days old")
+        C.log("[cfp] no committee poll in ESPN's rankings feed right now (normal between releases); "
+              + (f"latest stored {stored[-1]['week']} ({stored[-1]['date']}); no new snapshot" if stored else "none stored yet"))
+        return
     if str(C.SEASON) not in (r.get("headline", "") + r.get("date", "")):
         raise ValueError(f"CFP poll is not for {C.SEASON}: {r.get('headline')}")
     ranks = sorted(r["ranks"], key=lambda x: x["current"])

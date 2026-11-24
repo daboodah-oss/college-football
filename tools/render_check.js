@@ -286,6 +286,16 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
       ok(first && first.querySelectorAll("td")[1].textContent === WK.names[WK.committee[0]], `[${theme}] cfp table opens on the committee's No. 1: ${WK.names[WK.committee[0]]}`);
       const diffs = [...doc.querySelectorAll("#cfp-diffs li")];
       ok(diffs.length >= 3 && diffs.length <= 5 && diffs.every(li => li.textContent.trim().length > 20), `[${theme}] cfp lists ${diffs.length} disagreement lines with reasons`);
+      ok($("#cfp-lede").textContent.includes(`model ${WK.model || "v1"}`), `[${theme}] cfp lede names the model version: ${WK.model || "v1"}`);
+      const ci = M.cfp.weeks.findIndex(w => (w.context || []).length);
+      if (ci >= 0) {
+        doc.querySelector(`#cfp-week [data-k="${ci}"]`).click(); await sleep(60);
+        const li = [...doc.querySelectorAll("#cfp-context li")], CW = M.cfp.weeks[ci];
+        ok(!$("#cfp-context-wrap").hidden && li.length === CW.context.length && li.every((x, j) => x.textContent.includes(CW.context[j].name) && x.querySelector("a[href^='https://']")) && /not part of any ranking/.test($("#cfp-context-wrap").textContent),
+          `[${theme}] cfp ${CW.week} shows ${CW.context.length} labeled, sourced context note(s)`);
+        doc.querySelector(`#cfp-week [data-k="${M.cfp.weeks.length - 1}"]`).click(); await sleep(60);
+        ok($("#cfp-context-wrap").hidden === !(WK.context || []).length, `[${theme}] cfp context block hidden for a week without notes`);
+      }
       if (M.cfp.weeks.length > 1) {
         doc.querySelector('#cfp-week [data-k="0"]').click(); await sleep(60);
         ok($("#cfp-title").textContent.includes(M.cfp.weeks[0].week), `[${theme}] cfp week picker shows the earliest snapshot: ${M.cfp.weeks[0].week}`);

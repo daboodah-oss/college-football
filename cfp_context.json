@@ -1,0 +1,10 @@
+{
+ "about": "Curated context notes for the Playoff tab: short, sourced facts about availability or context bearing on a Top 25 team in a given committee week (docs/claude-spec-warnings-model-v2.md Part 6A).  Each note names the team (exactly as stored in data/team.json), the fact, its source and the source's date, and links the source.  Notes come from a cited public report (a coach's statement or a credible beat report), never rumor.  They are display-only: they never change a ranking, a metric or a stored snapshot, and they live here, not in data/cfp.json, so a frozen week is never rewritten.  A note for a week not yet stored waits until that week's snapshot exists.  build_cfp.py validates every note.",
+ "notes": [
+  {"season": 2026, "week": "Week 11", "team": "Ohio State",
+   "fact": "QB Julian Sayin has been out since the Indiana game (Oct 17), when he hurt his throwing arm; Ryan Day announced on Oct 20 that he is out indefinitely.  Ohio State then lost to USC (Oct 31) and Oregon (Nov 7) without him.",
+   "source": "Ryan Day's Oct 20 announcement, reported by the Associated Press",
+   "source_url": "https://www.news4jax.com/sports/2026/10/21/ohio-state-qb-julian-sayin-out-indefinitely-after-injuring-throwing-arm/",
+   "date": "2026-10-20"}
+ ]
+}

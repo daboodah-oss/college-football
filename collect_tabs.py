@@ -146,8 +146,36 @@ def box_row(C, g, team_id):
     lost = num(me, "fumblesLost") + num(me, "interceptions")
     gained = num(op, "fumblesLost") + num(op, "interceptions")
     if "turnovers" in me and num(me, "turnovers") != lost: raise ValueError(f"{tag}: turnovers {me['turnovers']} != fumbles lost + interceptions {lost}")
-    return dict(g, total_yds=num(me, "totalYards"), rush_yds=num(me, "rushingYards"), pass_yds=num(me, "netPassingYards"),
+    rush, pas = num(me, "rushingYards"), num(me, "netPassingYards")
+    espn_total = num(me, "totalYards")
+    if espn_total != rush + pas:
+        # ESPN's `totalYards` summary field is intermittently wrong (docs/claude-spec-warnings-model-v2.md Part 2:
+        # Hawai'i at Stanford 2026-08-29, where the official stat-crew box score gives exactly rush + pass).  Total
+        # offense under NCAA rules IS rush + pass, so store that, but only when ESPN's own player lines prove the
+        # components: their rushing and passing totals must equal the team fields.  Otherwise keep ESPN's numbers
+        # as they are and let the validator refuse the game, named.
+        pr, pp = player_totals(j, team_id, "rushing"), player_totals(j, team_id, "passing")
+        if (pr, pp) == (rush, pas):
+            C.log(f"[team] {tag} (event {g['event']}, team {team_id}): ESPN totalYards {espn_total} != rushing {rush} + "
+                  f"passing {pas}; player lines agree with the components, total stored as {rush + pas}")
+            espn_total = rush + pas
+        else:
+            C.log(f"[team] {tag} (event {g['event']}, team {team_id}): ESPN totalYards {espn_total} != rushing {rush} + "
+                  f"passing {pas}, and player lines (rushing {pr}, passing {pp}) do not prove the components; not corrected")
+    return dict(g, total_yds=espn_total, rush_yds=rush, pass_yds=pas,
                 to_lost=lost, to_gained=gained, third_conv=conv, third_att=att)
+
+
+def player_totals(j, team_id, cat):
+    """ESPN's player-line YDS total for one team and category ('rushing' / 'passing') from a summary, or None."""
+    for t in (j.get("boxscore") or {}).get("players", []):
+        if str(t.get("team", {}).get("id")) != str(team_id): continue
+        for st in t.get("statistics", []):
+            if st.get("name") == cat and "YDS" in (st.get("labels") or []):
+                try: return int(float(str(st["totals"][st["labels"].index("YDS")]).replace(",", "")))
+                except (KeyError, IndexError, ValueError): return None
+        return 0 if cat == "passing" else None   # a team with no passing line threw for 0 (e.g. Air Force)
+    return None
 
 
 # ------------------------------------------------------------------ cfbstats
@@ -199,18 +227,23 @@ def team_seasons(C, U, season):
     reg = U.load_or("registry.json", {"seasons": {}})["seasons"].get(str(season))
     if not reg: raise ValueError(f"no {season} registry stored; team seasons cannot be collected")
     d = U.load_or("team.json", {"teams": {}, "ap": None})
-    failed, done, sealed = [], 0, 0
+    failed, refused, done, sealed = [], [], 0, 0
     through = cfb_through(C, season) if season == C.SEASON else None
     for t in reg["teams"]:
         stored = d["teams"].get(t["espn_id"], {}).get("seasons", {}).get(str(season))
         if stored and stored.get("complete") and str(stored.get("check", "")).startswith("cfbstats"):
             sealed += 1; continue  # a finished season that matched cfbstats never changes
         try: team_job(C, U, t, season, stored, through); done += 1
-        except SystemExit: failed.append(f"{t['name']} (refused, see above)"); C.log(f"[team] {t['name']} {season} REFUSED by validator")
+        except SystemExit: refused.append(t["name"]); C.log(f"[team] {t['name']} {season} REFUSED by validator")
         except Exception as e: failed.append(f"{t['name']} ({e})"); C.log(f"[team] {t['name']} {season} FAILED: {e}")
         d = U.load_or("team.json", {"teams": {}, "ap": None})
-    C.log(f"[team] {season}: {len(reg['teams'])} registry teams; {sealed} sealed, {done} collected, {len(failed)} not stored")
-    if failed: raise ValueError(f"{season} team seasons not stored: " + "; ".join(failed))
+    C.log(f"[team] {season}: {len(reg['teams'])} registry teams; {sealed} sealed, {done} collected, "
+          f"{len(refused)} refused by the validator, {len(failed)} failed")
+    # A validator refusal is a data finding, not a breakage: the team keeps its last verified season (or stays off
+    # the page, named), and the run records it in last_run.json (`refused`) for the page's notice and the run report.
+    C.NOTES.setdefault("refused", {})[str(season)] = sorted(refused)
+    C.NOTES.setdefault("registry_teams", {})[str(season)] = len(reg["teams"])
+    if failed: raise ValueError(f"{season} team seasons not collected: " + "; ".join(failed))
 
 
 def cfb_through(C, season):

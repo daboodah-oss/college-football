@@ -123,6 +123,8 @@ def check_team_game(g, tag):
     datetime.date.fromisoformat(g["date"])
     if not g.get("event") or not g.get("opp"): die(f"{tag}: event and opponent required")
     if g.get("site") not in ("H", "A", "N"): die(f"{tag}: bad site")
+    if g["rush_yds"] == g["pass_yds"] == g["total_yds"] == g["third_att"] == 0:   # e.g. Army-Navy 2025-12-13 on ESPN
+        die(f"{tag}: ESPN's box score carries no team statistics (0 rushing, 0 passing, 0 third-down attempts)")
     if g["total_yds"] != g["rush_yds"] + g["pass_yds"]: die(f"{tag}: total yards {g['total_yds']} != rushing {g['rush_yds']} + passing {g['pass_yds']}")
     if not 0 <= g["third_conv"] <= g["third_att"]: die(f"{tag}: third-down conversions exceed attempts")
     if min(g["to_lost"], g["to_gained"], g["pf"], g["pa"]) < 0: die(f"{tag}: negative count")
@@ -133,23 +135,37 @@ def check_team_game(g, tag):
 
 YARD_KEYS = {"rush_yds", "pass_yds", "total_yds", "yds"}
 THIRD_KEYS = {"third_att", "third_conv"}
+TO_KEYS = {"to_lost", "to_gained"}
 LABEL = {"rush_yds": "rushing yards", "pass_yds": "passing yards", "total_yds": "total yards", "yds": "yards",
-         "third_att": "third-down attempts", "third_conv": "third-down conversions"}
-THIRD_TOL = 2  # Jeff, 2026-10-19 (option b): ESPN's summed box scores and cfbstats' season total usually differ by 1-2
-               # third-down attempts (125 of 270 finished 2024/2025 team seasons on the first league-wide run)
+         "third_att": "third-down attempts", "third_conv": "third-down conversions",
+         "to_lost": "turnovers lost", "to_gained": "turnovers gained"}
+TEAM_YARD_PCT = 0.005  # Jeff, 2026-11-11 (docs/claude-spec-warnings-model-v2.md Part 1): was 0.002; the same 0.5%
+                       # family as the player `yds` check
+THIRD_TOL = 5  # Jeff, 2026-10-19 (option b) set 2: ESPN's summed box scores and cfbstats' season total usually differ by
+               # 1-2 third-down attempts; widened to 5 on 2026-11-11 (same spec, Part 1) for the same reason
+TO_TOL = 1     # Jeff, 2026-11-11 (same spec, Part 1): turnovers lost / gained may differ by 1 per season (was exact)
+
+
+def tolerance(k, v):
+    """How far ESPN's summed value may sit from cfbstats' season value `v` for key k (0 = must match exactly).
+    Games, points, carries, catches and TD stay exact."""
+    if k in ("rush_yds", "pass_yds", "total_yds"): return max(5, round(TEAM_YARD_PCT * abs(v)))
+    if k == "yds": return max(3, round(0.005 * abs(v)))
+    if k in THIRD_KEYS: return THIRD_TOL
+    if k in TO_KEYS: return TO_TOL
+    return 0
 
 
 def compare(got, want, tag):
-    """Counts (games, points, turnovers, carries, catches, TD) must match exactly.  Season yardage may differ by a
-    hair (a late stat correction on one side): up to max(5, 0.2%) for teams or max(3, 0.5%) for players.  Team
-    third-down attempts and conversions may differ by up to 2 per season (THIRD_TOL).  Any such difference is
-    returned as a note that is shown on the page; anything larger is refused."""
+    """Counts (games, points, carries, catches, TD) must match exactly.  Season yardage may differ by a hair (a late
+    stat correction on one side): up to max(5, 0.5%) for teams or max(3, 0.5%) for players.  Team third-down
+    attempts and conversions may differ by up to 5 per season (THIRD_TOL), turnovers lost / gained by 1 (TO_TOL).
+    Any such difference is returned as a note that is shown on the page; anything larger is refused."""
     notes, bad = [], {}
     for k, v in want.items():
         g = got.get(k)
         if g == v: continue
-        tol = max(5, round(0.002 * abs(v))) if k in ("rush_yds", "pass_yds", "total_yds") else max(3, round(0.005 * abs(v))) if k == "yds" else THIRD_TOL if k in THIRD_KEYS else 0
-        if (k in YARD_KEYS or k in THIRD_KEYS) and abs(g - v) <= tol: notes.append(f"{LABEL[k]} {g:,} in ESPN box scores vs {v:,} on cfbstats")
+        if g is not None and abs(g - v) <= tolerance(k, v): notes.append(f"{LABEL[k]} {g:,} in ESPN box scores vs {v:,} on cfbstats")
         else: bad[k] = (g, v)
     if bad: die(f"{tag}: ESPN box scores disagree with cfbstats season totals {bad} (ESPN, cfbstats)")
     return notes
@@ -169,6 +185,20 @@ SOURCE_EXCEPTIONS = {
         "why": "cfbstats lists Notre Dame 3-of-9 on third down vs Northern Illinois (2024-09-07); the official "
                "stat-crew box score (niuhuskies.com boxscore 24108: '3rd. Down Conv.' UND 3 of 10), ESPN's box score "
                "(3-10) and ESPN's play-by-play (10 snaps) all give 10 attempts, so ESPN's 185 is stored"},
+    # Georgia Tech 30, NC State 29 (2024-11-21): cfbstats' 2024 season scoring totals are 6 points short for BOTH teams
+    # for this one game (docs/claude-spec-warnings-model-v2.md Part 3, 2026-11-21).
+    ("59", "2024", "pf"): {
+        "espn": 376, "cfbstats": 370,
+        "why": "cfbstats' own 2024 Georgia Tech schedule table (cfbstats.com/2024/team/255/index.html) lists all 13 "
+               "scores, which sum to 376 including the 30-29 win over NC State on 2024-11-21, while its season line says "
+               "13 - 370; the final 30-29 is the official result (stat-crew box score gopack.com boxscore 23347; AP: Aaron "
+               "Philo's go-ahead TD run with 22 seconds left), so ESPN's 376 is stored"},
+    ("152", "2024", "pa"): {
+        "espn": 392, "cfbstats": 386,
+        "why": "cfbstats' own 2024 NC State schedule table (cfbstats.com/2024/team/490/index.html) sums to 392 points "
+               "allowed including the 29-30 loss at Georgia Tech on 2024-11-21, while its season line says 13 - 386: the "
+               "same missing 6 points as Georgia Tech's 2024 total; official final 30-29 (stat-crew box score gopack.com "
+               "boxscore 23347), so ESPN's 392 is stored"},
 }
 
 
@@ -338,12 +368,18 @@ def cfp(x):
             if tid not in s25 and isinstance(ln.get("srs_rank"), int) and ln["srs_rank"] <= 25:
                 die(f"cfp: team id {tid} has srs_rank {ln['srs_rank']} but is not in srs_top25")
         if any(lines[a]["srs"] < lines[b]["srs"] for a, b in zip(s25, s25[1:])): die("cfp: srs_top25 is not in SRS order")
+    if x.get("model", "v1") not in ("v1", "v2"): die(f"cfp: unknown model version {x.get('model')}")
+    if x.get("model") == "v2":
+        wt = x.get("weights") or {}
+        if set(wt) != {"srs", "dated", "colley", "resume"} or abs(sum(wt.values()) - 1) > 1e-9: die("cfp: v2 weights must be srs, dated, colley, resume summing to 1")
+        for tid in set(comm) | set(ours):
+            if not isinstance(lines[tid].get("dated"), (int, float)): die(f"cfp: v2 line for team id {tid} lacks a numeric 'dated'")
     d = load_or("cfp.json", {"season": season, "weeks": []})
     if d.get("season") != season: die(f"cfp: stored file is for season {d.get('season')}, not {season}")
     weeks = d.setdefault("weeks", [])
     if weeks and weeks[-1]["committee"] == comm: die(f"cfp: the latest stored week ({weeks[-1]['week']}) already holds this committee Top 25; not a new release")
     if weeks and x["date"] < weeks[-1]["date"]: die(f"cfp: {x['date']} is before the latest stored week ({weeks[-1]['date']})")
-    weeks.append({k: x[k] for k in ("season", "week", "date", "through", "committee", "ours", "lines", "metrics", "weights", "wab", "wab_bubble", "wab_metrics", "srs_top25") if k in x})
+    weeks.append({k: x[k] for k in ("season", "week", "date", "through", "committee", "ours", "lines", "metrics", "weights", "wab", "wab_bubble", "wab_metrics", "srs_top25", "model") if k in x})
     weeks[-1]["stored_at"] = now_iso()
     save("cfp.json", d)
     print(f"STORED cfp {x['week']} ({x['date']}): committee {len(comm)}, ours {len(ours)}, agreement {m['agreement']}%")

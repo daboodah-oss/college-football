@@ -3,7 +3,7 @@
 
 Runs inside GitHub Actions (or any machine with open internet). Each section is
 independent: a failure keeps that section's stored data, is logged, and makes
-the script exit 1 at the end (so GitHub emails the owner), but every section
+the script exit 1 at the end (tools/run_report.py then fails the run), but every section
 that did succeed is still saved and the page is still rebuilt.
 
 Sections, in order (seasons from config.json; only the current season refreshes,
@@ -171,8 +171,15 @@ def main():
     log("FAILED sections: " + (", ".join(FAILED) if FAILED else "none"))
     prev = U.load_or("last_run.json", {})
     seen = sorted(NOTES["finals_seen"]) or prev.get("finals_seen", [])
+    refused = NOTES.get("refused", {})
+    # newly refused: refused now, and not refused by the previous run that collected the same season
+    new = {s: [n for n in names if n not in (prev.get("refused") or {}).get(s, names)] for s, names in refused.items()}
+    new = {s: v for s, v in new.items() if v}
+    for s, names in refused.items():
+        log(f"[team] {s}: {len(names)} team seasons refused by the validator" + (f" (new since the last run: {', '.join(new[s])})" if s in new else ""))
     open(os.path.join(ROOT, "data", "last_run.json"), "w").write(
-        json.dumps({"at": dt.datetime.now(ET).isoformat(timespec="minutes"), "failed": FAILED, "log": LOG, "finals_seen": seen}, indent=1))
+        json.dumps({"at": dt.datetime.now(ET).isoformat(timespec="minutes"), "failed": FAILED, "refused": refused,
+                    "registry_teams": NOTES.get("registry_teams", {}), "new_refusals": new, "log": LOG, "finals_seen": seen}, indent=1))
     sys.exit(1 if FAILED else 0)
 
 
