@@ -158,6 +158,63 @@ Drop the old td-count assertions (5/7 columns). Keep every other assertion.
   fabricate a WAB week to test it; note in the handoff that it is guarded
   and unexercised.
 
+## Amendment (2026-11-25, Jeff approved): WAB is a list, not just a column
+
+This section supersedes "WAB adaptations" item 1 above (item 2 stands: WAB-only
+teams are named in the caption, never rows). Jeff asked for WAB to be sortable,
+then for all three lists at once on desktop. The section therefore ships in two
+presentations of the same data, chosen by the section's own width:
+
+### Narrow presentation (below ~920px container width): the swap view
+
+- The layout in the main spec, plus the slim third column from the start: it
+  shows each team's rank in the *other* numbers ranking, riding with the Ours
+  list exactly like Δ does, headed by a swap button labelled with that other
+  ranking's name ("WAB", with a "tap to swap" cue).
+- Tapping the swap button makes the right list the WAB list: entries re-order
+  by WAB rank and are labelled with WAB ranks, the right header reads "WAB",
+  Δ becomes CFP − WAB, the connector lines re-colour by CFP vs WAB, and the
+  slim column flips to showing our ranks (headed "Ours", also a swap button).
+  Tapping again swaps back. Default is Ours.
+- The pop-up follows the view: sub-line shows all three ranks and the Δ
+  against the ranking on the right; in WAB view the first evidence block is
+  "What WAB sees" (WAB rank and signed value with a one-line gloss — wins
+  earned above a bubble team's expected total on this schedule — then quality
+  wins, Top-25 wins, best win, and where our model has them); the closing
+  sentence is generated against the WAB gap (WAB pricing the wins themselves
+  vs the committee pricing the losses, and mirror-image).
+- Weeks without WAB have no slim column and no swap: exactly the main spec.
+
+### Wide presentation (~920px and up): all three lists
+
+- Five columns of content: CFP list, connector gutter, Ours list, Δ
+  (CFP − Ours), connector gutter, WAB list, Δ (CFP − WAB). Each list carries
+  the same combined entries and conference pills; each list's bottom carries
+  its NR entries (teams missing from that list, ordered by committee rank).
+  The union is still committee ∪ ours; WAB-only teams stay caption-named.
+- Each team's trace is two segments (CFP→Ours, Ours→WAB), coloured per
+  segment by the same rule, generalised: red where the list on the left
+  ranks the team higher than the list on the right, green where it ranks
+  them lower, blue where equal; NR counts as 26 for colour. Hover/tap
+  highlights the whole trace.
+- Pop-ups are the main spec's (the "What our model sees" form), with the WAB
+  line in that block also carrying its Δ vs the committee.
+- Weeks without WAB render the main spec's two lists at any width.
+
+### Mechanics and checking
+
+- Pick the presentation from the section's measured width on render and on
+  resize (debounced is fine); when the width measures 0 (jsdom), use the
+  narrow presentation so the checker exercises the swap. The wide
+  presentation gets its first real exercise on the live page; say so in the
+  handoff, and Budzilla verifies it there after the merge.
+- Checker additions for a WAB week: the slim column's cells count = union
+  size; clicking the swap button re-orders the right list so its first entry
+  is the WAB No. 1 team and the right header reads "WAB"; clicking again
+  restores our order. (The Week 13 snapshot is the first WAB week the checker
+  will meet; Weeks 11/12 exercise the no-WAB path until the retrospective
+  backfill lands.)
+
 ## Handoff
 
 Leave `docs/handoff-<date>-side-by-side.md` on the branch: what changed per
