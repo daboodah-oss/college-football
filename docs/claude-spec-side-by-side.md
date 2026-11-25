@@ -150,7 +150,7 @@ Drop the old td-count assertions (5/7 columns). Keep every other assertion.
   section populated, TDZ scan clean. Delete `_test.html` after.
 - Sanity-read the rendered Week 12 (latest stored): 27 entries per side
   (25 + LSU and Auburn ours-only), 27 lines; Ole Miss's line is green
-  (CFP 25, ours 11), Texas's is red (CFP 5, ours 2), Georgia's and Indiana's
+  (CFP 25, ours 11), Texas's is green (CFP 5, ours 2), Georgia's and Indiana's
   are blue; Ole Miss's pop-up shows the #2 schedule and 4 Top-25 wins.
 - The WAB-week code path is data-guarded (pop-up WAB line only when the
   stored line carries wab_rank): no WAB week exists in stored data until the
