@@ -3,8 +3,11 @@
 STORED registry 2026: 138 of 138 cfbstats teams joined to ESPN
 [registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids
 STORED AP Top 25 2026-11-22 1 Georgia, 2 Utah, 3 Notre Dame, 4 Miami, 5 Texas ...
-REFUSED: team Air Force 2026 2026-10-10: total yards 433 != rushing 439 + passing 0
-[team] Air Force 2026 REFUSED by validator
+[team] box 2026-10-10 Northern Illinois (event 401864516, team 2005): ESPN totalYards 433 != rushing 439 + passing 0; player lines agree with the components, total stored as 439
+[team] box 2026-10-31 UConn (event 401861966, team 2005): ESPN totalYards 359 != rushing 366 + passing 0; player lines agree with the components, total stored as 366
+[team] box 2026-11-14 San José State (event 401864538, team 2005): ESPN totalYards 451 != rushing 452 + passing 0; player lines agree with the components, total stored as 452
+STORED team Air Force 2026: 11 games
+[team] Air Force 2026: 11 games; matches cfbstats through 2026-11-24
 [team] Akron 2026: no new games; still matches cfbstats
 [team] Alabama 2026: no new games; still matches cfbstats
 [team] App State 2026: no new games; still matches cfbstats
@@ -21,39 +24,41 @@ REFUSED: team-season Arizona State 2026: ESPN box scores disagree with cfbstats 
 [team] Boise State 2026: no new games; still matches cfbstats
 [team] Boston College 2026: no new games; still matches cfbstats
 [team] Bowling Green 2026: no new games; still matches cfbstats
-REFUSED: team-season Buffalo 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2097, 2091)} (ESPN, cfbstats)
-[team] Buffalo 2026 REFUSED by validator
-REFUSED: team-season California 2026: ESPN box scores disagree with cfbstats season totals {'to_gained': (11, 10)} (ESPN, cfbstats)
-[team] California 2026 REFUSED by validator
+STORED team Buffalo 2026: 11 games
+[team] Buffalo 2026: 11 games; matches cfbstats through 2026-11-24
+STORED team California 2026: 11 games
+[team] California 2026: 11 games; matches cfbstats through 2026-11-24
 [team] Central Michigan 2026: no new games; still matches cfbstats
 [team] Charlotte 2026: no new games; still matches cfbstats
 [team] Cincinnati 2026: no new games; still matches cfbstats
 [team] Clemson 2026: no new games; still matches cfbstats
-REFUSED: team-season Coastal Carolina 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1294, 1284), 'pass_yds': (2687, 2697)} (ESPN, cfbstats)
+REFUSED: team-season Coastal Carolina 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1294, 1284)} (ESPN, cfbstats)
 [team] Coastal Carolina 2026 REFUSED by validator
-REFUSED: team-season Colorado 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1554, 1542), 'total_yds': (4382, 4370)} (ESPN, cfbstats)
+REFUSED: team-season Colorado 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1554, 1542)} (ESPN, cfbstats)
 [team] Colorado 2026 REFUSED by validator
-REFUSED: team-season Colorado State 2026: ESPN box scores disagree with cfbstats season totals {'pass_yds': (3106, 3099)} (ESPN, cfbstats)
+REFUSED: team-season Colorado State 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1743, 1758), 'pass_yds': (3106, 3084)} (ESPN, cfbstats)
 [team] Colorado State 2026 REFUSED by validator
 [team] UConn 2026: no new games; still matches cfbstats
 [team] Delaware 2026: no new games; still matches cfbstats
 [team] Duke 2026: no new games; still matches cfbstats
 [team] East Carolina 2026: no new games; still matches cfbstats
-[team] Eastern Michigan 2026: no new games; still matches cfbstats
+STORED team Eastern Michigan 2026: 12 games
+[team] Eastern Michigan 2026: 12 games; matches cfbstats through 2026-11-24
 REFUSED: team-season Florida International 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1419, 1403), 'pass_yds': (2693, 2709)} (ESPN, cfbstats)
 [team] Florida International 2026 REFUSED by validator
-REFUSED: team-season Florida 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1865, 1859)} (ESPN, cfbstats)
-[team] Florida 2026 REFUSED by validator
-REFUSED: team-season Florida Atlantic 2026: ESPN box scores disagree with cfbstats season totals {'to_gained': (18, 17)} (ESPN, cfbstats)
-[team] Florida Atlantic 2026 REFUSED by validator
+STORED team Florida 2026: 11 games
+[team] Florida 2026: 11 games; matches cfbstats through 2026-11-24
+STORED team Florida Atlantic 2026: 11 games
+[team] Florida Atlantic 2026: 11 games; matches cfbstats through 2026-11-24
 [team] Florida State 2026: no new games; still matches cfbstats
 [team] Fresno State 2026: no new games; still matches cfbstats
 [team] Georgia 2026: no new games; still matches cfbstats
 [team] Georgia Southern 2026: no new games; still matches cfbstats
 [team] Georgia State 2026: no new games; still matches cfbstats
 [team] Georgia Tech 2026: no new games; still matches cfbstats
-REFUSED: team Hawai'i 2026 2026-08-29: total yards 322 != rushing 46 + passing 279
-[team] Hawai'i 2026 REFUSED by validator
+[team] box 2026-08-29 Stanford (event 401858201, team 62): ESPN totalYards 322 != rushing 46 + passing 279; player lines agree with the components, total stored as 325
+STORED team Hawai'i 2026: 11 games
+[team] Hawai'i 2026: 11 games; matches cfbstats through 2026-11-24
 [team] Houston 2026: no new games; still matches cfbstats
 [team] Illinois 2026: no new games; still matches cfbstats
 [team] Indiana 2026: no new games; still matches cfbstats
@@ -64,7 +69,8 @@ REFUSED: team Hawai'i 2026 2026-08-29: total yards 322 != rushing 46 + passing 2
 [team] Kansas 2026: no new games; still matches cfbstats
 [team] Kansas State 2026: no new games; still matches cfbstats
 [team] Kennesaw State 2026: no new games; still matches cfbstats
-[team] Kent State 2026: no new games; still matches cfbstats
+STORED team Kent State 2026: 12 games
+[team] Kent State 2026: 12 games; matches cfbstats through 2026-11-24
 [team] Kentucky 2026: no new games; still matches cfbstats
 [team] LSU 2026: no new games; still matches cfbstats
 [team] Liberty 2026: no new games; still matches cfbstats
@@ -75,31 +81,32 @@ REFUSED: team Hawai'i 2026 2026-08-29: total yards 322 != rushing 46 + passing 2
 [team] Marshall 2026: no new games; still matches cfbstats
 [team] Maryland 2026: no new games; still matches cfbstats
 [team] Massachusetts 2026: no new games; still matches cfbstats
-REFUSED: team-season Memphis 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2605, 2599)} (ESPN, cfbstats)
-[team] Memphis 2026 REFUSED by validator
+STORED team Memphis 2026: 11 games
+[team] Memphis 2026: 11 games; matches cfbstats through 2026-11-24
 [team] Miami 2026: no new games; still matches cfbstats
-[team] Miami (OH) 2026: no new games; still matches cfbstats
+STORED team Miami (OH) 2026: 12 games
+[team] Miami (OH) 2026: 12 games; matches cfbstats through 2026-11-24
 [team] Michigan 2026: no new games; still matches cfbstats
 [team] Michigan State 2026: no new games; still matches cfbstats
-REFUSED: team-season Middle Tennessee 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1703, 1697)} (ESPN, cfbstats)
-[team] Middle Tennessee 2026 REFUSED by validator
+STORED team Middle Tennessee 2026: 11 games
+[team] Middle Tennessee 2026: 11 games; matches cfbstats through 2026-11-24
 [team] Minnesota 2026: no new games; still matches cfbstats
 [team] Mississippi State 2026: no new games; still matches cfbstats
 [team] Missouri 2026: no new games; still matches cfbstats
-REFUSED: team-season Missouri State 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1383, 1374), 'pass_yds': (2442, 2448)} (ESPN, cfbstats)
+REFUSED: team-season Missouri State 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1383, 1374)} (ESPN, cfbstats)
 [team] Missouri State 2026 REFUSED by validator
 [team] NC State 2026: no new games; still matches cfbstats
-REFUSED: team-season Navy 2026: ESPN box scores disagree with cfbstats season totals {'pass_yds': (1180, 1157), 'total_yds': (4198, 4175)} (ESPN, cfbstats)
+REFUSED: team-season Navy 2026: ESPN box scores disagree with cfbstats season totals {'pass_yds': (1180, 1157)} (ESPN, cfbstats)
 [team] Navy 2026 REFUSED by validator
 [team] Nebraska 2026: no new games; still matches cfbstats
 [team] Nevada 2026: no new games; still matches cfbstats
 [team] New Mexico 2026: no new games; still matches cfbstats
-REFUSED: team-season New Mexico State 2026: ESPN box scores disagree with cfbstats season totals {'pass_yds': (2216, 2210)} (ESPN, cfbstats)
-[team] New Mexico State 2026 REFUSED by validator
+STORED team New Mexico State 2026: 11 games
+[team] New Mexico State 2026: 11 games; matches cfbstats through 2026-11-24
 [team] North Carolina 2026: no new games; still matches cfbstats
 [team] North Dakota State 2026: no new games; still matches cfbstats
-REFUSED: team-season North Texas 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2136, 2129), 'to_lost': (14, 13)} (ESPN, cfbstats)
-[team] North Texas 2026 REFUSED by validator
+STORED team North Texas 2026: 11 games
+[team] North Texas 2026: 11 games; matches cfbstats through 2026-11-24
 [team] Northern Illinois 2026: no new games; still matches cfbstats
 [team] Northwestern 2026: no new games; still matches cfbstats
 [team] Notre Dame 2026: no new games; still matches cfbstats
@@ -108,32 +115,10 @@ REFUSED: team-season Ohio 2026: ESPN box scores disagree with cfbstats season to
 [team] Ohio State 2026: no new games; still matches cfbstats
 [team] Oklahoma 2026: no new games; still matches cfbstats
 [team] Oklahoma State 2026: no new games; still matches cfbstats
-REFUSED: team-season Old Dominion 2026: ESPN box scores disagree with cfbstats season totals {'pass_yds': (2077, 2085), 'total_yds': (3066, 3074)} (ESPN, cfbstats)
-[team] Old Dominion 2026 REFUSED by validator
-REFUSED: team-season Ole Miss 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1732, 1720), 'total_yds': (4864, 4852)} (ESPN, cfbstats)Traceback (most recent call last):
-  File "/home/runner/work/college-football/college-football/collect.py", line 114, in run
-    out = fn(*a, **k)
-          ^^^^^^^^^^^
-  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 262, in <lambda>
-    C.section(f"team_{s}")(lambda s=s: team_seasons(C, U, s))()
-                                       ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 213, in team_seasons
-    if failed: raise ValueError(f"{season} team seasons not stored: " + "; ".join(failed))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: 2026 team seasons not stored: Air Force (refused, see above); Arizona State (refused, see above); Buffalo (refused, see above); California (refused, see above); Coastal Carolina (refused, see above); Colorado (refused, see above); Colorado State (refused, see above); Florida International (refused, see above); Florida (refused, see above); Florida Atlantic (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); Middle Tennessee (refused, see above); Missouri State (refused, see above); Navy (refused, see above); New Mexico State (refused, see above); North Texas (refused, see above); Ohio (refused, see above); Old Dominion (refused, see above); Ole Miss (refused, see above); SMU (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); UTSA (refused, see above); Utah (refused, see above); Utah State (refused, see above); Virginia Tech (refused, see above)
-Traceback (most recent call last):
-  File "/home/runner/work/college-football/college-football/collect.py", line 114, in run
-    out = fn(*a, **k)
-          ^^^^^^^^^^^
-  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 262, in <lambda>
-    C.section(f"team_{s}")(lambda s=s: team_seasons(C, U, s))()
-                                       ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 213, in team_seasons
-    if failed: raise ValueError(f"{season} team seasons not stored: " + "; ".join(failed))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: 2025 team seasons not stored: Army (refused, see above); East Carolina (refused, see above); Georgia Southern (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Navy (refused, see above); Oregon State (refused, see above); Utah State (refused, see above); Washington State (refused, see above)
-
-[team] Ole Miss 2026 REFUSED by validator
+STORED team Old Dominion 2026: 11 games
+[team] Old Dominion 2026: 11 games; matches cfbstats through 2026-11-24
+STORED team Ole Miss 2026: 11 games
+[team] Ole Miss 2026: 11 games; matches cfbstats through 2026-11-24
 [team] Oregon 2026: no new games; still matches cfbstats
 [team] Oregon State 2026: no new games; still matches cfbstats
 [team] Penn State 2026: no new games; still matches cfbstats
@@ -141,24 +126,26 @@ ValueError: 2025 team seasons not stored: Army (refused, see above); East Caroli
 [team] Purdue 2026: no new games; still matches cfbstats
 [team] Rice 2026: no new games; still matches cfbstats
 [team] Rutgers 2026: no new games; still matches cfbstats
-REFUSED: team-season SMU 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1571, 1565)} (ESPN, cfbstats)
-[team] SMU 2026 REFUSED by validator
-REFUSED: team Sacramento State 2026 2026-08-29: total yards 268 != rushing 49 + passing 222
-[team] Sacramento State 2026 REFUSED by validator
+STORED team SMU 2026: 11 games
+[team] SMU 2026: 11 games; matches cfbstats through 2026-11-24
+[team] box 2026-08-29 Eastern Michigan (event 401866408, team 16): ESPN totalYards 268 != rushing 49 + passing 222; player lines agree with the components, total stored as 271
+STORED team Sacramento State 2026: 11 games
+[team] Sacramento State 2026: 11 games; matches cfbstats through 2026-11-24
 [team] Sam Houston 2026: no new games; still matches cfbstats
 [team] San Diego State 2026: no new games; still matches cfbstats
 [team] San José State 2026: no new games; still matches cfbstats
 [team] South Alabama 2026: no new games; still matches cfbstats
 [team] South Carolina 2026: no new games; still matches cfbstats
 [team] Southern Miss 2026: no new games; still matches cfbstats
-REFUSED: team Stanford 2026 2026-08-29: total yards 483 != rushing 158 + passing 310
-[team] Stanford 2026 REFUSED by validator
+[team] box 2026-08-29 Hawai'i (event 401858201, team 24): ESPN totalYards 483 != rushing 158 + passing 310; player lines agree with the components, total stored as 468
+STORED team Stanford 2026: 11 games
+[team] Stanford 2026: 11 games; matches cfbstats through 2026-11-24
 [team] Syracuse 2026: no new games; still matches cfbstats
 [team] TCU 2026: no new games; still matches cfbstats
 [team] Temple 2026: no new games; still matches cfbstats
 [team] Tennessee 2026: no new games; still matches cfbstats
-REFUSED: team-season Texas 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1396, 1402)} (ESPN, cfbstats)
-[team] Texas 2026 REFUSED by validator
+STORED team Texas 2026: 11 games
+[team] Texas 2026: 11 games; matches cfbstats through 2026-11-24
 [team] Texas A&M 2026: no new games; still matches cfbstats
 [team] Texas State 2026: no new games; still matches cfbstats
 [team] Texas Tech 2026: no new games; still matches cfbstats
@@ -173,151 +160,139 @@ REFUSED: team-season Texas 2026: ESPN box scores disagree with cfbstats season t
 [team] USC 2026: no new games; still matches cfbstats
 [team] South Florida 2026: no new games; still matches cfbstats
 [team] UTEP 2026: no new games; still matches cfbstats
-REFUSED: team-season UTSA 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2070, 2064)} (ESPN, cfbstats)
-[team] UTSA 2026 REFUSED by validator
-REFUSED: team-season Utah 2026: ESPN box scores disagree with cfbstats season totals {'to_gained': (19, 20)} (ESPN, cfbstats)
-[team] Utah 2026 REFUSED by validator
-REFUSED: team-season Utah State 2026: ESPN box scores disagree with cfbstats season totals {'to_lost': (13, 14)} (ESPN, cfbstats)
-[team] Utah State 2026 REFUSED by validator
+STORED team UTSA 2026: 11 games
+[team] UTSA 2026: 11 games; matches cfbstats through 2026-11-24
+STORED team Utah 2026: 11 games
+[team] Utah 2026: 11 games; matches cfbstats through 2026-11-24
+STORED team Utah State 2026: 11 games
+[team] Utah State 2026: 11 games; matches cfbstats through 2026-11-24
 [team] Vanderbilt 2026: no new games; still matches cfbstats
 [team] Virginia 2026: no new games; still matches cfbstats
-REFUSED: team-season Virginia Tech 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1401, 1412), 'total_yds': (4405, 4416), 'to_lost': (16, 15)} (ESPN, cfbstats)
+REFUSED: team-season Virginia Tech 2026: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1401, 1412)} (ESPN, cfbstats)
 [team] Virginia Tech 2026 REFUSED by validator
 [team] Wake Forest 2026: no new games; still matches cfbstats
 [team] Washington 2026: no new games; still matches cfbstats
 [team] Washington State 2026: no new games; still matches cfbstats
 [team] West Virginia 2026: no new games; still matches cfbstats
 [team] Western Kentucky 2026: no new games; still matches cfbstats
-[team] Western Michigan 2026: no new games; still matches cfbstats
+STORED team Western Michigan 2026: 12 games
+[team] Western Michigan 2026: 12 games; matches cfbstats through 2026-11-24
 [team] Wisconsin 2026: no new games; still matches cfbstats
 [team] Wyoming 2026: no new games; still matches cfbstats
-[team] 2026: 138 registry teams; 0 sealed, 110 collected, 28 not stored
-[team_2026] FAILED: 2026 team seasons not stored: Air Force (refused, see above); Arizona State (refused, see above); Buffalo (refused, see above); California (refused, see above); Coastal Carolina (refused, see above); Colorado (refused, see above); Colorado State (refused, see above); Florida International (refused, see above); Florida (refused, see above); Florida Atlantic (refused, see above); Hawai'i (refused, see above); Memphis (refused, see above); Middle Tennessee (refused, see above); Missouri State (refused, see above); Navy (refused, see above); New Mexico State (refused, see above); North Texas (refused, see above); Ohio (refused, see above); Old Dominion (refused, see above); Ole Miss (refused, see above); SMU (refused, see above); Sacramento State (refused, see above); Stanford (refused, see above); Texas (refused, see above); UTSA (refused, see above); Utah (refused, see above); Utah State (refused, see above); Virginia Tech (refused, see above)
-REFUSED: team-season Army 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (3194, 3314), 'pass_yds': (969, 1051), 'total_yds': (4163, 4365), 'to_lost': (10, 11), 'to_gained': (14, 16)} (ESPN, cfbstats)
+[team] 2026: 138 registry teams; 0 sealed, 129 collected, 9 refused by the validator, 0 failed
+REFUSED: team-season Army 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (3194, 3314), 'pass_yds': (969, 1051), 'total_yds': (4163, 4365), 'to_gained': (14, 16)} (ESPN, cfbstats)
 [team] Army 2025 REFUSED by validator
 REFUSED: team-season East Carolina 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2280, 2292)} (ESPN, cfbstats)
 [team] East Carolina 2025 REFUSED by validator
-REFUSED: team-season Georgia Southern 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2014, 2004), 'third_att': (179, 176)} (ESPN, cfbstats)
-[team] Georgia Southern 2025 REFUSED by validator
+STORED team Georgia Southern 2025: 13 games
+[team] Georgia Southern 2025: 13 games; matches cfbstats through 2026-01-19
 REFUSED: team-season UL Monroe 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1929, 1957), 'total_yds': (3854, 3882)} (ESPN, cfbstats)
 [team] UL Monroe 2025 REFUSED by validator
-REFUSED: team-season Marshall 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2370, 2364)} (ESPN, cfbstats)
-[team] Marshall 2025 REFUSED by validator
-REFUSED: team-season Massachusetts 2025: ESPN box scores disagree with cfbstats season totals {'third_att': (176, 172)} (ESPN, cfbstats)
-[team] Massachusetts 2025 REFUSED by validator
-REFUSED: team-season Middle Tennessee 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1260, 1266)} (ESPN, cfbstats)
-[team] Middle Tennessee 2025 REFUSED by validator
-REFUSED: team-season NC State 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1905, 1891), 'total_yds': (5099, 5085)} (ESPN, cfbstats)
+STORED team Marshall 2025: 12 games
+[team] Marshall 2025: 12 games; matches cfbstats through 2026-01-19
+STORED team Massachusetts 2025: 12 games
+[team] Massachusetts 2025: 12 games; matches cfbstats through 2026-01-19
+STORED team Middle Tennessee 2025: 12 games
+[team] Middle Tennessee 2025: 12 games; matches cfbstats through 2026-01-19
+REFUSED: team-season NC State 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1905, 1891)} (ESPN, cfbstats)
 [team] NC State 2025 REFUSED by validator
-REFUSED: team-season Navy 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (3523, 3713), 'pass_yds': (1608, 1690), 'total_yds': (5131, 5403), 'to_lost': (12, 14), 'to_gained': (14, 15)} (ESPN, cfbstats)
+REFUSED: team-season Navy 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (3523, 3713), 'pass_yds': (1608, 1690), 'total_yds': (5131, 5403), 'to_lost': (12, 14)} (ESPN, cfbstats)
 [team] Navy 2025 REFUSED by validator
-REFUSED: team-season Oregon State 2025: ESPN box scores disagree with cfbstats season totals {'to_gained': (10, 9)} (ESPN, cfbstats)
-[team] Oregon State 2025 REFUSED by validator
-REFUSED: team-season Utah State 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2118, 2112)} (ESPN, cfbstats)
-[team] Utah State 2025 REFUSED by validator
-REFUSED: team-season Washington State 2025: ESPN box scores disagree with cfbstats season totals {'to_lost': (21, 20)} (ESPN, cfbstats)
-[team] Washington State 2025 REFUSED by validator
-[team] 2025: 136 registry teams; 124 sealed, 0 collected, 12 not stored
-[team_2025] FAILED: 2025 team seasons not stored: Army (refused, see above); East Carolina (refused, see above); Georgia Southern (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Navy (refused, see above); Oregon State (refused, see above); Utah State (refused, see above); Washington State (refused, see above)
+STORED team Oregon State 2025: 12 games
+[team] Oregon State 2025: 12 games; matches cfbstats through 2026-01-19
+STORED team Utah State 2025: 13 games
+[team] Utah State 2025: 13 games; matches cfbstats through 2026-01-19
+STORED team Washington State 2025: 13 games
+[team] Washington State 2025: 13 games; matches cfbstats through 2026-01-19
+[team] 2025: 136 registry teams; 124 sealed, 7 collected, 5 refused by the validator, 0 failed
 REFUSED: team-season Arizona 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1270, 1279)} (ESPN, cfbstats)
 [team] Arizona 2024 REFUSED by validator
-REFUSED: team Arkansas 2024 2024-10-05: total yards 431 != rushing 137 + passing 297
-[team] Arkansas 2024 REFUSED by validator
-REFUSED: team-season Boston College 2024: ESPN box scores disagree with cfbstats season totals {'third_att': (180, 177)} (ESPN, cfbstats)Traceback (most recent call last):
-  File "/home/runner/work/college-football/college-football/collect.py", line 114, in run
-    out = fn(*a, **k)
-          ^^^^^^^^^^^
-  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 262, in <lambda>
-    C.section(f"team_{s}")(lambda s=s: team_seasons(C, U, s))()
-                                       ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/college-football/college-football/collect_tabs.py", line 213, in team_seasons
-    if failed: raise ValueError(f"{season} team seasons not stored: " + "; ".join(failed))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: 2024 team seasons not stored: Arizona (refused, see above); Arkansas (refused, see above); Boston College (refused, see above); Central Michigan (refused, see above); Coastal Carolina (refused, see above); Georgia Tech (refused, see above); Houston (refused, see above); Illinois (refused, see above); James Madison (refused, see above); Kansas (refused, see above); LSU (refused, see above); Liberty (refused, see above); Louisiana (refused, see above); Louisiana Tech (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Northwestern (refused, see above); Ohio (refused, see above); Ohio State (refused, see above); Old Dominion (refused, see above); San José State (refused, see above); Temple (refused, see above); Toledo (refused, see above); UAB (refused, see above); South Florida (refused, see above); UTSA (refused, see above); Utah State (refused, see above); West Virginia (refused, see above); Western Kentucky (refused, see above)
-Traceback (most recent call last):
-  File "/home/runner/work/college-football/college-football/collect.py", line 114, in run
-    out = fn(*a, **k)
-          ^^^^^^^^^^^
-  File "/home/runner/work/college-football/college-football/collect_cfp.py", line 82, in <lambda>
-    C.section("cfp_rankings")(lambda: cfp_poll(C, U))()
-                                      ^^^^^^^^^^^^^^
-  File "/home/runner/work/college-football/college-football/collect_cfp.py", line 62, in cfp_poll
-    if not r: raise ValueError("no College Football Playoff poll in ESPN rankings")
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: no College Football Playoff poll in ESPN rankings
-
-[team] Boston College 2024 REFUSED by validator
+[team] box 2024-10-05 Tennessee (event 401628379, team 8): ESPN totalYards 431 != rushing 137 + passing 297; player lines agree with the components, total stored as 434
+STORED team Arkansas 2024: 13 games
+[team] Arkansas 2024: 13 games; matches cfbstats through 2025-01-20
+STORED team Boston College 2024: 13 games
+[team] Boston College 2024: 13 games; matches cfbstats through 2025-01-20
 REFUSED: team-season Central Michigan 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2027, 1993), 'total_yds': (3988, 3954)} (ESPN, cfbstats)
 [team] Central Michigan 2024 REFUSED by validator
-REFUSED: team Coastal Carolina 2024 2024-11-23: total yards 290 != rushing 163 + passing 117
-[team] Coastal Carolina 2024 REFUSED by validator
-REFUSED: team-season Georgia Tech 2024: ESPN box scores disagree with cfbstats season totals {'pf': (376, 370)} (ESPN, cfbstats)
-[team] Georgia Tech 2024 REFUSED by validator
-REFUSED: team-season Houston 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1618, 1625)} (ESPN, cfbstats)
-[team] Houston 2024 REFUSED by validator
-REFUSED: team-season Illinois 2024: ESPN box scores disagree with cfbstats season totals {'third_att': (158, 155)} (ESPN, cfbstats)
-[team] Illinois 2024 REFUSED by validator
-REFUSED: team-season James Madison 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2496, 2490)} (ESPN, cfbstats)
-[team] James Madison 2024 REFUSED by validator
-REFUSED: team-season Kansas 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2545, 2537)} (ESPN, cfbstats)
-[team] Kansas 2024 REFUSED by validator
-REFUSED: team LSU 2024 2024-11-16: total yards 392 != rushing 128 + passing 262
-[team] LSU 2024 REFUSED by validator
-REFUSED: team-season Liberty 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (3016, 3008)} (ESPN, cfbstats)
-[team] Liberty 2024 REFUSED by validator
-REFUSED: team-season Louisiana 2024: ESPN box scores disagree with cfbstats season totals {'third_att': (175, 170)} (ESPN, cfbstats)
-[team] Louisiana 2024 REFUSED by validator
-REFUSED: team-season Louisiana Tech 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1430, 1420), 'total_yds': (4341, 4328), 'to_lost': (21, 22)} (ESPN, cfbstats)
+[team] box 2024-11-23 Georgia Southern (event 401643837, team 324): ESPN totalYards 290 != rushing 163 + passing 117; player lines agree with the components, total stored as 280
+STORED team Coastal Carolina 2024: 13 games
+[team] Coastal Carolina 2024: 13 games; matches cfbstats through 2025-01-20
+EXCEPTION applied (team-season Georgia Tech 2024): pf 376 stored from ESPN, cfbstats 370 (known cfbstats error: cfbstats' own 2024 Georgia Tech schedule table (cfbstats.com/2024/team/255/index.html) lists all 13 scores, which sum to 376 including the 30-29 win over NC State on 2024-11-21, while its season line says 13 - 370; the final 30-29 is the official result (stat-crew box score gopack.com boxscore 23347; AP: Aaron Philo's go-ahead TD run with 22 seconds left), so ESPN's 376 is stored)
+STORED team Georgia Tech 2024: 13 games
+[team] Georgia Tech 2024: 13 games; matches cfbstats through 2025-01-20
+[team] Georgia Tech 2024: EXCEPTION applied: pf 376 stored from ESPN, cfbstats 370 (known cfbstats error: cfbstats' own 2024 Georgia Tech schedule table (cfbstats.com/2024/team/255/index.html) lists all 13 scores, which sum to 376 including the 30-29 win over NC State on 2024-11-21, while its season line says 13 - 370; the final 30-29 is the official result (stat-crew box score gopack.com boxscore 23347; AP: Aaron Philo's go-ahead TD run with 22 seconds left), so ESPN's 376 is stored); third-down attempts 170 in ESPN box scores vs 169 on cfbstats
+STORED team Houston 2024: 12 games
+[team] Houston 2024: 12 games; matches cfbstats through 2025-01-20
+STORED team Illinois 2024: 13 games
+[team] Illinois 2024: 13 games; matches cfbstats through 2025-01-20
+STORED team James Madison 2024: 13 games
+[team] James Madison 2024: 13 games; matches cfbstats through 2025-01-20
+STORED team Kansas 2024: 12 games
+[team] Kansas 2024: 12 games; matches cfbstats through 2025-01-20
+[team] box 2024-11-16 Florida (event 401628420, team 99): ESPN totalYards 392 != rushing 128 + passing 262; player lines agree with the components, total stored as 390
+STORED team LSU 2024: 13 games
+[team] LSU 2024: 13 games; matches cfbstats through 2025-01-20
+STORED team Liberty 2024: 12 games
+[team] Liberty 2024: 12 games; matches cfbstats through 2025-01-20
+STORED team Louisiana 2024: 14 games
+[team] Louisiana 2024: 14 games; matches cfbstats through 2025-01-20
+REFUSED: team-season Louisiana Tech 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1430, 1420)} (ESPN, cfbstats)
 [team] Louisiana Tech 2024 REFUSED by validator
-REFUSED: team-season UL Monroe 2024: ESPN box scores disagree with cfbstats season totals {'to_gained': (13, 14)} (ESPN, cfbstats)
-[team] UL Monroe 2024 REFUSED by validator
-REFUSED: team-season Marshall 2024: ESPN box scores disagree with cfbstats season totals {'to_lost': (9, 10), 'to_gained': (19, 20)} (ESPN, cfbstats)
-[team] Marshall 2024 REFUSED by validator
-REFUSED: team-season Massachusetts 2024: ESPN box scores disagree with cfbstats season totals {'third_att': (174, 171)} (ESPN, cfbstats)
-[team] Massachusetts 2024 REFUSED by validator
-REFUSED: team-season Middle Tennessee 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1086, 1068), 'total_yds': (4219, 4201)} (ESPN, cfbstats)
+STORED team UL Monroe 2024: 12 games
+[team] UL Monroe 2024: 12 games; matches cfbstats through 2025-01-20
+STORED team Marshall 2024: 13 games
+[team] Marshall 2024: 13 games; matches cfbstats through 2025-01-20
+STORED team Massachusetts 2024: 12 games
+[team] Massachusetts 2024: 12 games; matches cfbstats through 2025-01-20
+REFUSED: team-season Middle Tennessee 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1086, 1068)} (ESPN, cfbstats)
 [team] Middle Tennessee 2024 REFUSED by validator
-REFUSED: team-season NC State 2024: ESPN box scores disagree with cfbstats season totals {'pa': (392, 386)} (ESPN, cfbstats)
-[team] NC State 2024 REFUSED by validator
-REFUSED: team-season Northwestern 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1190, 1182), 'total_yds': (3421, 3413)} (ESPN, cfbstats)
+EXCEPTION applied (team-season NC State 2024): pa 392 stored from ESPN, cfbstats 386 (known cfbstats error: cfbstats' own 2024 NC State schedule table (cfbstats.com/2024/team/490/index.html) sums to 392 points allowed including the 29-30 loss at Georgia Tech on 2024-11-21, while its season line says 13 - 386: the same missing 6 points as Georgia Tech's 2024 total; official final 30-29 (stat-crew box score gopack.com boxscore 23347), so ESPN's 392 is stored)
+STORED team NC State 2024: 13 games
+[team] NC State 2024: 13 games; matches cfbstats through 2025-01-20
+[team] NC State 2024: EXCEPTION applied: pa 392 stored from ESPN, cfbstats 386 (known cfbstats error: cfbstats' own 2024 NC State schedule table (cfbstats.com/2024/team/490/index.html) sums to 392 points allowed including the 29-30 loss at Georgia Tech on 2024-11-21, while its season line says 13 - 386: the same missing 6 points as Georgia Tech's 2024 total; official final 30-29 (stat-crew box score gopack.com boxscore 23347), so ESPN's 392 is stored)
+REFUSED: team-season Northwestern 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1190, 1182)} (ESPN, cfbstats)
 [team] Northwestern 2024 REFUSED by validator
-REFUSED: team-season Ohio 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2992, 2984)} (ESPN, cfbstats)
-[team] Ohio 2024 REFUSED by validator
-REFUSED: team-season Ohio State 2024: ESPN box scores disagree with cfbstats season totals {'to_lost': (15, 16)} (ESPN, cfbstats)
-[team] Ohio State 2024 REFUSED by validator
+STORED team Ohio 2024: 14 games
+[team] Ohio 2024: 14 games; matches cfbstats through 2025-01-20
+STORED team Ohio State 2024: 16 games
+[team] Ohio State 2024: 16 games; matches cfbstats through 2025-01-20
 REFUSED: team-season Old Dominion 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2633, 2517), 'total_yds': (4948, 4832)} (ESPN, cfbstats)
 [team] Old Dominion 2024 REFUSED by validator
 REFUSED: team-season San José State 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1138, 1145)} (ESPN, cfbstats)
 [team] San José State 2024 REFUSED by validator
-REFUSED: team-season Temple 2024: ESPN box scores disagree with cfbstats season totals {'to_lost': (24, 25)} (ESPN, cfbstats)
-[team] Temple 2024 REFUSED by validator
-REFUSED: team Toledo 2024 2024-12-26: total yards 416 != rushing 80 + passing 351
+STORED team Temple 2024: 12 games
+[team] Temple 2024: 12 games; matches cfbstats through 2025-01-20
+[team] box 2024-12-26 Pittsburgh (event 401677180, team 2649): ESPN totalYards 416 != rushing 80 + passing 351; player lines agree with the components, total stored as 431
+REFUSED: team-season Toledo 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1524, 1504)} (ESPN, cfbstats)
 [team] Toledo 2024 REFUSED by validator
-REFUSED: team-season UAB 2024: ESPN box scores disagree with cfbstats season totals {'to_lost': (26, 25)} (ESPN, cfbstats)
-[team] UAB 2024 REFUSED by validator
-REFUSED: team-season South Florida 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2351, 2343), 'third_att': (198, 195), 'to_gained': (26, 25)} (ESPN, cfbstats)
-[team] South Florida 2024 REFUSED by validator
-REFUSED: team-season UTSA 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2197, 2180), 'total_yds': (5882, 5865), 'to_gained': (21, 22)} (ESPN, cfbstats)
+STORED team UAB 2024: 12 games
+[team] UAB 2024: 12 games; matches cfbstats through 2025-01-20
+STORED team South Florida 2024: 13 games
+[team] South Florida 2024: 13 games; matches cfbstats through 2025-01-20
+REFUSED: team-season UTSA 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2197, 2180)} (ESPN, cfbstats)
 [team] UTSA 2024 REFUSED by validator
-REFUSED: team-season Utah State 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2391, 2383)} (ESPN, cfbstats)
-[team] Utah State 2024 REFUSED by validator
-REFUSED: team-season West Virginia 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2536, 2518), 'total_yds': (5270, 5252)} (ESPN, cfbstats)
+STORED team Utah State 2024: 12 games
+[team] Utah State 2024: 12 games; matches cfbstats through 2025-01-20
+REFUSED: team-season West Virginia 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2536, 2518)} (ESPN, cfbstats)
 [team] West Virginia 2024 REFUSED by validator
-REFUSED: team-season Western Kentucky 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1531, 1524)} (ESPN, cfbstats)
-[team] Western Kentucky 2024 REFUSED by validator
-[team] 2024: 134 registry teams; 102 sealed, 0 collected, 32 not stored
-[team_2024] FAILED: 2024 team seasons not stored: Arizona (refused, see above); Arkansas (refused, see above); Boston College (refused, see above); Central Michigan (refused, see above); Coastal Carolina (refused, see above); Georgia Tech (refused, see above); Houston (refused, see above); Illinois (refused, see above); James Madison (refused, see above); Kansas (refused, see above); LSU (refused, see above); Liberty (refused, see above); Louisiana (refused, see above); Louisiana Tech (refused, see above); UL Monroe (refused, see above); Marshall (refused, see above); Massachusetts (refused, see above); Middle Tennessee (refused, see above); NC State (refused, see above); Northwestern (refused, see above); Ohio (refused, see above); Ohio State (refused, see above); Old Dominion (refused, see above); San José State (refused, see above); Temple (refused, see above); Toledo (refused, see above); UAB (refused, see above); South Florida (refused, see above); UTSA (refused, see above); Utah State (refused, see above); West Virginia (refused, see above); Western Kentucky (refused, see above)
+STORED team Western Kentucky 2024: 14 games
+[team] Western Kentucky 2024: 14 games; matches cfbstats through 2025-01-20
+[team] 2024: 134 registry teams; 102 sealed, 22 collected, 10 refused by the validator, 0 failed
 [natref] 2026 qb: 43 players stored (0 game logs fetched, 43 unchanged)
-STORED natref 2026 qb: 43 players through 2026-11-21
-[natref] 2026 rb: 45 players stored (0 game logs fetched, 45 unchanged)
-STORED natref 2026 rb: 45 players through 2026-11-21
-[natref] 2026 wr: 54 players stored (0 game logs fetched, 54 unchanged)
-STORED natref 2026 wr: 54 players through 2026-11-21
+STORED natref 2026 qb: 43 players through 2026-11-24
+[natref] 2026 rb: 45 players stored (3 game logs fetched, 42 unchanged)
+STORED natref 2026 rb: 45 players through 2026-11-24
+[natref] 2026 wr: 55 players stored (2 game logs fetched, 53 unchanged)
+STORED natref 2026 wr: 55 players through 2026-11-24
 [natref] 2025 qb: sealed (45 players)
 [natref] 2025 rb: sealed (51 players)
 [natref] 2025 wr: sealed (54 players)
 [natref] 2024 qb: sealed (47 players)
 [natref] 2024 rb: sealed (45 players)
 [natref] 2024 wr: sealed (60 players)
-[cfp_rankings] FAILED: no College Football Playoff poll in ESPN rankings
-FAILED sections: team_2026, team_2025, team_2024, cfp_rankings
+STORED cfp Week 13 (2026-11-24): committee 25, ours 25, agreement 88%
+[cfp] Week 13 (2026-11-24): snapshot stored; agreement 88%, overlap 21/25, Top 12 overlap 11/12; WAB Top 12 overlap 11/12, bubble 14.34
+FAILED sections: none
+[team] 2026: 9 team seasons refused by the validator
+[team] 2025: 5 team seasons refused by the validator
+[team] 2024: 10 team seasons refused by the validator
