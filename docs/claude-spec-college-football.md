@@ -101,7 +101,7 @@ themselves are the truth.) The two trees are near-identical; verified inventory:
   scan — see Render-verify), `logs/render_check.txt`, `tools/resolve_espn_ids.py`,
   `tools/gh_status.py`, and the `SOURCE_EXCEPTIONS` mechanism in `update.py` (see Validation).
   nd-report also carries self-hosted font files under `assets/fonts/` but its template still loads
-  Google Fonts like iu-report's — mirror the template behaviour, do not cargo-cult the unused
+  Google Fonts like iu-report's — mirror the template behavior, do not cargo-cult the unused
   files.
 
 What carries over **unchanged in spirit**: per-section independent collection (a failed section
@@ -161,7 +161,7 @@ Generalize it to **every FBS team × 2024, 2025, 2026**:
    should land around **1.5–2 MB** across the three seasons. Report the actual size.
 3. **2024 and 2025 collect once and seal** under the same rule as the reports (complete +
    cfbstats-matched → never recollected). Only 2026 team-seasons refresh. The AP poll block stays
-   in the store exactly as the reports keep it (current poll, week + release date labelled) — on
+   in the store exactly as the reports keep it (current poll, week + release date labeled) — on
    this page it annotates the picker (below); it is not a fixed set of comparison entries.
 
 ## Player pools — generalize `collect_natref.py` per season
@@ -200,7 +200,7 @@ their first successful collect** exactly like finished team seasons. Expected sc
 - **Picker:** search/select over the registry — every FBS team, every season (2024/2025/2026).
   Selecting a team adds it **with a season** (defaulting to 2026); the same school may be added
   twice in different seasons. Annotate picker rows with the current AP rank where one exists
-  (from the stored poll). Selections are removable pills, labelled *Team + season* (season always
+  (from the stored poll). Selections are removable pills, labeled *Team + season* (season always
   shown — it is part of the pick). **Maximum simultaneous selections: your answer to Open
   Question 1** — enforce it in the picker with a friendly message at the cap.
 - **Default on open: Indiana 2026 vs Notre Dame 2026 preselected**, table and charts drawn.
@@ -253,7 +253,7 @@ their first successful collect** exactly like finished team seasons. Expected sc
   **tolerance 0.15 on that single comparison only**, everywhere it occurs in the templates
   (the ESPN gamelog check in `collect.py` and the QB check in `collect_natref.py`). **Do not
   widen any other check.** The `update.compare` yardage tolerances (teams max(5, 0.2%), players
-  max(3, 0.5%)) are existing template behaviour for ESPN-vs-cfbstats season totals — keep them
+  max(3, 0.5%)) are existing template behavior for ESPN-vs-cfbstats season totals — keep them
   exactly; do not extend them to counts, which must match exactly.
 - **Known-source-error exceptions:** nd-report's `update.py` carries a `SOURCE_EXCEPTIONS`
   mechanism — an entry pinned to one team / season / stat key with the **exact** recorded
@@ -303,18 +303,18 @@ sealed 2024/2025 data is never recollected by either path.
 - **Dark/light theme toggle**: follows OS, header override remembered in localStorage (use a
   page-specific key, e.g. `cf-theme` — the reports' key is `qb-theme`).
 - **Chips/pills are name-only**: player/team name (+ season), with a **tight underline in the
-  line's colour and style** via the templates' `.un` / `.pu` treatment — no swatch inside pills.
+  line's color and style** via the templates' `.un` / `.pu` treatment — no swatch inside pills.
   ON = full opacity, OFF = dimmed; tap toggles the line; **friendly empty state** when everything
   is off. **Tables keep their line swatches** — Jeff's explicit standing call; only legends,
   chips, tooltips, and game-log headings use underlines.
 - **Sticky chart tooltips**: tap/click in a chart pins the pop-up; tap outside any chart
   dismisses it (one shared tip element + guide registry in `lineChart()`; `pointerleave` does
-  NOT hide). Copy the shipped template behaviour exactly.
+  NOT hide). Copy the shipped template behavior exactly.
 - **Every leaderboard / ranked list sorted by rank ascending, unranked last** — standing rule,
   always.
 - Line assignment: follow the templates' palette-slot logic (distinct hues, solid then
   dashed/dotted as selections multiply, gray reserved for National Top 3 reference lines on the
-  Player tab). Every colour/style combination you use must stay legible and distinguishable in
+  Player tab). Every color/style combination you use must stay legible and distinguishable in
   **both** light and dark themes — this feeds Open Question 1.
 - Collapsible chip categories with the templates' disclosure treatment, as shipped.
 
@@ -325,7 +325,7 @@ Replicate the templates' manifest + build validation (`check_manifest` in `build
 `scope` `/`, icons 192 / 512 / maskable-512 whose declared sizes match the actual PNGs, and a
 `theme_color` that **matches the page's theme-color meta tag and actually appears in the built
 page** (the validator enforces all of this — do not weaken it). Name, short name, description,
-theme colour, and the icon mark all come from your **Open Question 2** branding proposal.
+theme color, and the icon mark all come from your **Open Question 2** branding proposal.
 Icons: adapt `tools/make_icons.py` — generate the set from a simple neutral mark drawn in code
 (do not scrape or hotlink any school's logo).
 
@@ -334,14 +334,14 @@ Icons: adapt `tools/make_icons.py` — generate the set from a simple neutral ma
 1. **Comparison caps.** Propose the **maximum number of teams** comparable at once on the Team
    tab and the **maximum number of players** at once on the Player tab, with reasoning that
    explicitly weighs: chart readability (how many lines stay followable), how many **distinct
-   line colours × styles** the design system can honestly offer in both themes, **data size /
+   line colors × styles** the design system can honestly offer in both themes, **data size /
    built-page weight** (see the size warning below), and **mobile UX** (table column count,
    pill wrapping, tap targets). Build the caps you propose into the pickers. Jeff approves or
    adjusts them at the merge gate — a well-argued number, not a guess, is the deliverable.
 2. **Neutral branding.** Propose the page's identity: masthead name (working title “College
    Football”), browser-title pattern, manifest `name` / `short_name` / description, and a
-   **neutral colour scheme — not IU crimson (`#990000`), not ND navy/gold
-   (`#0C2340` / `#AE9142`)** — with the primary/theme colour and the line palette worked out for
+   **neutral color scheme — not IU crimson (`#990000`), not ND navy/gold
+   (`#0C2340` / `#AE9142`)** — with the primary/theme color and the line palette worked out for
    **both light and dark themes**, plus the code-drawn icon mark. Build with your proposal and
    flag it as an explicit approval item in your summary; Jeff approves or redirects it at the
    merge gate (branding is display-only and cheap to change after).

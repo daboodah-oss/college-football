@@ -7,9 +7,9 @@
 :root{
   --bg:#f3f4f6; --surface:#ffffff; --surface-2:#eceef2; --ink:#16181d; --ink-2:#4a4f5c; --muted:#6a7080;
   --rule:#d8dbe2; --grid:#e6e8ed;
-  /* brand: neutral slate (theme colour #24303F); accent marks the selected tab and stat only */
+  /* brand: neutral slate (theme color #24303F); accent marks the selected tab and stat only */
   --brand:#24303F; --accent:#24303F;
-  /* selection slots, in pick order: s1-s3 solid lines, s4-s6 dashed (colour plus line style past three);
+  /* selection slots, in pick order: s1-s3 solid lines, s4-s6 dashed (color plus line style past three);
      validated with the dataviz palette checker against --surface in each theme */
   --s1:#2a78d6; --s1-soft:#dbe9fa; --s2:#eb6834; --s2-soft:#fde3d8; --s3:#1baf7a; --s3-soft:#d6f3e8;
   --s4:#eda100; --s4-soft:#fcefcc; --s5:#e87ba4; --s5-soft:#fbe4ed; --s6:#6250d6; --s6-soft:#e4e0f8;
@@ -298,7 +298,7 @@ const ord = n => n+(["th","st","nd","rd"][(n%100-20)%10]||["th","st","nd","rd"][
 const yr = s => "’" + String(s).slice(2);          // 2026 -> ’26 (chart end labels, the ND report's short pattern)
 const SEASON = M.site.season, SEASONS = M.site.seasons, CAPS = M.site.caps, THEME_KEY = M.site.theme_key;
 const SLOTS = ["s1","s2","s3","s4","s5","s6"], DASH = "7 4";
-const dashed = slot => SLOTS.indexOf(slot) >= 3;  // colour carries identity for three lines; past three the line style does too
+const dashed = slot => SLOTS.indexOf(slot) >= 3;  // color carries identity for three lines; past three the line style does too
 const NRDASH = ["", "7 4", "1.5 4"], NRBORDER = ["solid", "dashed", "dotted"];
 const un = (slot, inner) => `<span class="un" style="border-bottom-color:var(--${slot})${dashed(slot)?";border-bottom-style:dashed":""}">${inner}</span>`;
 const sw = (slot, w=3) => `<svg class="lsw" width="26" height="10" aria-hidden="true"><line x1="2" y1="5" x2="24" y2="5" stroke="var(--${slot})" stroke-width="${w}" stroke-linecap="round"${dashed(slot)?` stroke-dasharray="${DASH}"`:""}/></svg>`;
@@ -382,7 +382,7 @@ $("#foot-l").textContent = `Updated ${new Date(M.as_of).toLocaleString("en-US",{
   }
 }
 
-/* ---------- chart engine (the reports' lineChart, unchanged in behaviour) ---------- */
+/* ---------- chart engine (the reports' lineChart, unchanged in behavior) ---------- */
 const tip = (() => { const d = document.createElement("div"); d.className="tip"; d.hidden=true; return d; })();
 /* sticky tooltip: a tap/click in a chart pins the tip; it stays until a tap/click lands outside any chart */
 const tipGuides = new Set();

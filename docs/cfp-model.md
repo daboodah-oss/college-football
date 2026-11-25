@@ -88,7 +88,7 @@ Julian Sayin after Oct 17) retroactively cheapens results earned against it at f
   unchanged, only how opponents are valued shifts.
 - **Versioning.**  `cfp_model.MODEL` is what collect_cfp stores; each snapshot records `model` and its
   `weights`, and v2 lines carry `dated`.  Snapshots stored through 2026-11-21 (Weeks 11 and 12) have no
-  `model` key, are labelled v1 on the page, and are never recomputed.  `compute(..., model="v1")`
+  `model` key, are labeled v1 on the page, and are never recomputed.  `compute(..., model="v1")`
   reproduces v1 exactly (checked against the pre-v2 code).  `tools/model_compare.py` shows committee /
   frozen / v1 / v2 for any stored week without storing anything.
 - **Effect, honestly.**  On Week 11's games (through 2026-11-07) Ohio State rates 19.95 as of Oct 17

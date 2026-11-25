@@ -100,10 +100,10 @@ def build(root, as_of):
 def check_manifest(root, html):
     """Problems with the web app manifest the page links, or [].
 
-    An installed app takes its name, colours and icons from the manifest, so a
+    An installed app takes its name, colors and icons from the manifest, so a
     broken link or a missing icon is an app with default chrome.  Pages serves
     the repo root, so every path resolves against `root`.  theme_color must
-    match the page's theme-color meta tag, and both colours must appear in the
+    match the page's theme-color meta tag, and both colors must appear in the
     built page, so the manifest cannot drift from what the page paints."""
     import re, struct
     m = re.search(r'<link rel="manifest" href="([^"]+)">', html[:html.find("</head>")])

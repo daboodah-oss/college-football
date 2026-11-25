@@ -51,7 +51,7 @@ validation, design system and chart engine are theirs; see AGENTS.md for what di
   and value in the pop-ups), the five biggest disagreements with
   data-generated reasons, and a week picker over the stored snapshots.  From the first snapshot after
   2026-11-21 the blend is **model v2** (25% SRS, 20% "Dated": each game valued against the opponent's
-  rating as of that game's date, 30% Colley, 25% resume); Weeks 11-12 stay v1 and are labelled so.
+  rating as of that game's date, 30% Colley, 25% resume); Weeks 11-12 stay v1 and are labeled so.
   Curated, sourced context notes (`cfp_context.json`, e.g. an injury a coach announced) show under
   "Context this week" and never move a ranking.
   From 2026 Week 13 each snapshot also freezes a third ranking, Wins Above Bubble (`cfp_model.wab`):
@@ -71,8 +71,8 @@ validation, design system and chart engine are theirs; see AGENTS.md for what di
   tables, chart and trend show raw gaps).  Computed at build time by
   `build_bias.py` from the frozen snapshots; spec `docs/claude-spec-cfp-bias-analysis.md`.
 
-Line colours follow the order of picks: blue, orange, green solid, then amber, pink, violet dashed.  Past
-three lines colour alone is not enough to tell every pair apart for colour-blind readers, so the line
+Line colors follow the order of picks: blue, orange, green solid, then amber, pink, violet dashed.  Past
+three lines color alone is not enough to tell every pair apart for color-blind readers, so the line
 style carries identity too (checked with the dataviz palette validator in both themes).  Gray is
 reserved for the National Top 3.
 
@@ -263,7 +263,7 @@ bias fields, through the real `make_snapshot` and `update.cfp`; the repo's `data
 ## Installed app
 
 `manifest.webmanifest` gives the installed app its name ("College Football", short "College FB"), its
-colours (`theme_color` #24303F, the neutral slate brand and the page's theme-color; `background_color`
+colors (`theme_color` #24303F, the neutral slate brand and the page's theme-color; `background_color`
 #111216, the dark theme's `--bg`, the theme Jeff runs) and its icons in `icons/` (192, 512, maskable 512,
 the 180 apple-touch icon and the link-preview card).  `id` is "/" because the page owns its origin.
 `build_report.py --standalone` refuses to publish if the manifest link, a member, or an icon does not
