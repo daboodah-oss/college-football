@@ -269,21 +269,55 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
         sec(doc, s, `[${theme}] cfp ${s} (${what}) populated`);
       ok($("#cfp-title").textContent.includes(WK.week) && $("#cfp-score-grid").textContent.includes(`${WK.metrics.agreement}%`),
         `[${theme}] cfp scorecard shows ${WK.week} with headline agreement ${WK.metrics.agreement}%`);
-      const sideRows = rowsOf(doc, "#cfp-side");
-      const oursOnly = WK.ours.filter(t => !WK.committee.includes(t)).length;
-      const wabOnly = (WK.wab || []).filter(t => !WK.committee.includes(t) && !WK.ours.includes(t)).length;
-      ok(sideRows.length === 25 + oursOnly + wabOnly, `[${theme}] cfp side-by-side: ${sideRows.length} rows (25 committee + ${oursOnly} ours-only + ${wabOnly} WAB-only)`);
+      // Side by side: two ranked lists (three on a wide WAB week; jsdom measures 0, so the narrow swap view)
+      const sbsCheck = async (W, tag) => {
+        const union = [...W.committee, ...W.ours.filter(t => !W.committee.includes(t))], U = union.length;
+        const nC = doc.querySelectorAll('#cfp-side .sbs-row[data-side="cfp"]').length, nO = doc.querySelectorAll('#cfp-side .sbs-row[data-side="ours"]').length;
+        const nP = doc.querySelectorAll("#cfp-side path.sbs-ln").length, nD = doc.querySelectorAll("#cfp-side .sbs-d").length;
+        ok(nC === U && nO === U && nP === U && nD === U, `[${theme}] cfp ${tag} side by side: ${nC} CFP / ${nO} Ours entries, ${nP} lines, ${nD} Δ cells (25 + ${U - 25} in one list only)`);
+        const rows = [...doc.querySelectorAll("#cfp-side .sbs-row")];
+        ok(rows.length && rows.every(r => { const p = r.querySelector(".cpill"); return p && p.textContent.trim().length >= 2; }), `[${theme}] cfp ${tag}: every entry carries a conference pill`);
+        const wabOnly = (W.wab || []).filter(t => !union.includes(t)), cap = $("#cfp-side-cap").textContent;
+        ok(wabOnly.every(t => cap.includes(W.names[t])) && (W.wab ? true : /Wins Above Bubble tracking began/.test(cap)) && /Tap any team/.test(cap),
+          `[${theme}] cfp ${tag} caption explains the lists${wabOnly.length ? ` and names ${wabOnly.length} WAB-only team(s)` : ""}`);
+        const swap = doc.querySelector("#cfp-side .sbs-swap"), xs = doc.querySelectorAll("#cfp-side .sbs-x").length;
+        if (W.wab) {
+          ok(!!swap && xs === U, `[${theme}] cfp ${tag}: the slim WAB column has ${xs} cells and a swap button`);
+          const rightFirst = () => { const c = doc.querySelector('#cfp-side .sbs-col[data-pos="right"]'); return c && [c.querySelector(".sbs-h").textContent, c.querySelector(".sbs-row").dataset.team]; };
+          const wab1 = W.wab.find(t => union.includes(t));
+          swap.click(); await sleep(30);
+          const [h1, t1] = rightFirst();
+          ok(h1 === "WAB" && t1 === wab1, `[${theme}] cfp ${tag}: swap makes the right list WAB, opening on ${W.names[wab1]}`);
+          doc.querySelector("#cfp-side .sbs-swap").click(); await sleep(30);
+          const [h2, t2] = rightFirst();
+          ok(h2 === "Ours" && t2 === W.ours[0], `[${theme}] cfp ${tag}: swapping back restores our order, opening on ${W.names[W.ours[0]]}`);
+        } else {
+          ok(!swap && xs === 0, `[${theme}] cfp ${tag}: a week without WAB has no slim column and no swap`);
+        }
+        const first = doc.querySelector('#cfp-side .sbs-row[data-side="cfp"]');
+        ok(first && first.dataset.team === W.committee[0] && first.textContent.includes(W.names[W.committee[0]]), `[${theme}] cfp ${tag}: the CFP list opens on the committee's No. 1: ${W.names[W.committee[0]]}`);
+        first.click(); await sleep(30);
+        const pop = doc.querySelector("#cfp-side .sbs-pop"), pt = pop ? pop.textContent : "";
+        ok(pop && !pop.hidden && pt.includes(W.names[W.committee[0]]) && /What our model sees/.test(pt) && /What the committee sees/.test(pt) && /stored numbers/.test(pt) && (!W.wab || /Wins Above Bubble/.test(pt)),
+          `[${theme}] cfp ${tag}: tapping it opens the rationale pop-up${W.wab ? " with its Wins Above Bubble line" : ""}`);
+        doc.body.dispatchEvent(new w.MouseEvent("pointerdown", { bubbles: true }));
+        ok(pop.hidden, `[${theme}] cfp ${tag}: a pointerdown outside the section dismisses the pop-up`);
+      };
+      await sbsCheck(WK, WK.week);
       const wabTxt = $("#cfp-wab-score").textContent;
       if (WK.wab) {
-        ok(wabTxt.includes(`${WK.wab_metrics.overlap12} of 12`) && wabTxt.includes(`${WK.wab_metrics.agreement}%`) && rowsOf(doc, "#cfp-side")[0].querySelectorAll("td").length === 7,
-          `[${theme}] cfp WAB agreement line shows ${WK.wab_metrics.overlap12} of 12, ${WK.wab_metrics.agreement}%, and the side table carries WAB columns`);
+        ok(wabTxt.includes(`${WK.wab_metrics.overlap12} of 12`) && wabTxt.includes(`${WK.wab_metrics.agreement}%`),
+          `[${theme}] cfp WAB agreement line shows ${WK.wab_metrics.overlap12} of 12, ${WK.wab_metrics.agreement}%`);
       } else {
-        ok(/WAB tracking began/.test(wabTxt) && rowsOf(doc, "#cfp-side")[0].querySelectorAll("td").length === 5,
-          `[${theme}] cfp pre-WAB week says when WAB tracking began and shows no WAB columns`);
+        ok(/WAB tracking began/.test(wabTxt), `[${theme}] cfp pre-WAB week says when WAB tracking began`);
       }
       ok(/Wins Above Bubble/.test($("#cfp-notes").textContent), `[${theme}] cfp Method explains Wins Above Bubble`);
-      const first = sideRows[0];
-      ok(first && first.querySelectorAll("td")[1].textContent === WK.names[WK.committee[0]], `[${theme}] cfp table opens on the committee's No. 1: ${WK.names[WK.committee[0]]}`);
+      const preWab = M.cfp.weeks.findIndex(x => !x.wab);
+      if (WK.wab && preWab >= 0) {   // the no-WAB path, on the earliest stored week without it
+        doc.querySelector(`#cfp-week [data-k="${preWab}"]`).click(); await sleep(60);
+        await sbsCheck(M.cfp.weeks[preWab], M.cfp.weeks[preWab].week);
+        doc.querySelector(`#cfp-week [data-k="${M.cfp.weeks.length - 1}"]`).click(); await sleep(60);
+      }
       const diffs = [...doc.querySelectorAll("#cfp-diffs li")];
       ok(diffs.length >= 3 && diffs.length <= 5 && diffs.every(li => li.textContent.trim().length > 20), `[${theme}] cfp lists ${diffs.length} disagreement lines with reasons`);
       ok($("#cfp-lede").textContent.includes(`model ${WK.model || "v1"}`), `[${theme}] cfp lede names the model version: ${WK.model || "v1"}`);

@@ -20,8 +20,8 @@ lines, one list per ranking, plus a delta column and a per-team rationale pop-up
 - Right list headed "Ours": our 25 in our order, followed at the bottom by any
   committee-only teams as NR entries, ordered among themselves by committee rank.
 - Between the lists, an SVG connector joins each team's two entries with a
-  smooth curve. Line colour, by the week's two ranks (a team missing from a
-  list counts as rank 26 for colour only):
+  smooth curve. Line color, by the week's two ranks (a team missing from a
+  list counts as rank 26 for color only):
   - red when CFP rank < our rank (the committee ranks the team higher than we do)
   - green when CFP rank > our rank (the committee ranks the team lower)
   - blue when the ranks are equal
@@ -29,7 +29,7 @@ lines, one list per ranking, plus a delta column and a per-team rationale pop-up
   so both themes come out right. Lines are ~1.8px at ~55% opacity; hovering or
   tapping a team thickens its line to full opacity and dims the rest.
 - A slim Δ column rides with the Ours list, one cell per Ours entry:
-  Δ = CFP rank − our rank, shown signed, coloured like its line (positive
+  Δ = CFP rank − our rank, shown signed, colored like its line (positive
   green, negative red, 0 blue), and `—` when either rank is NR.
 - No sorting controls. Both lists have exactly one order (see above).
 - The section eyebrow becomes "Two Top 25s, drawn against each other" and
@@ -40,7 +40,7 @@ lines, one list per ranking, plus a delta column and a per-team rationale pop-up
 Each entry carries a small pill at its right edge with the team's conference
 abbreviation for the snapshot's season: Big Ten B1G, SEC SEC, Big 12 B12,
 ACC ACC, Pac-12 P12, AAC AAC, Sun Belt SBC, MWC MWC, MAC MAC, CUSA CUSA,
-Independent IND. Colours (light-theme text / dark-theme text, tinted
+Independent IND. Colors (light-theme text / dark-theme text, tinted
 background of the same hue, ~12% alpha, border ~50%):
 SEC gold #96690a / #eec95c; B1G blue #1d4ed8 / #7db4ff; B12 red #b42318 / #ff9a8a;
 ACC green #14713c / #6fd598; P12 purple #6d28d9 / #c4b5fd; AAC teal #0f6a72 / #5fd4c8;
@@ -48,7 +48,7 @@ SBC orange #b45508 / #ffb37d; MWC pink #a02c5e / #f09ec0; MAC olive #4f6d00 / #b
 CUSA brown #7c5222 / #d9a05b; IND uses the page's muted/surface-2 neutrals.
 Dark overrides must follow the page's existing pattern (both the
 prefers-color-scheme block and `:root[data-theme="dark"]`). No conference
-logos or external images — colours only, deliberately.
+logos or external images — colors only, deliberately.
 
 ### Data: build_cfp.py
 
@@ -106,7 +106,7 @@ hand-written text, no new data:
 
 Rewrite the `#cfp-side-cap` text (updateCfp sets it, as today) to cover, in
 plain words: Δ rides with our list and green means we rank the team higher;
-the line colours (red = committee higher, green = committee lower, blue =
+the line colors (red = committee higher, green = committee lower, blue =
 agreement); the pill is the team's conference this season; NR marks a team
 missing from that list's Top 25; tap any team for the numbers behind its gap;
 plus the WAB sentences from the adaptation above (pop-up pointer on WAB weeks,
@@ -169,11 +169,11 @@ presentations of the same data, chosen by the section's own width:
 
 - The layout in the main spec, plus the slim third column from the start: it
   shows each team's rank in the *other* numbers ranking, riding with the Ours
-  list exactly like Δ does, headed by a swap button labelled with that other
+  list exactly like Δ does, headed by a swap button labeled with that other
   ranking's name ("WAB", with a "tap to swap" cue).
 - Tapping the swap button makes the right list the WAB list: entries re-order
-  by WAB rank and are labelled with WAB ranks, the right header reads "WAB",
-  Δ becomes CFP − WAB, the connector lines re-colour by CFP vs WAB, and the
+  by WAB rank and are labeled with WAB ranks, the right header reads "WAB",
+  Δ becomes CFP − WAB, the connector lines re-color by CFP vs WAB, and the
   slim column flips to showing our ranks (headed "Ours", also a swap button).
   Tapping again swaps back. Default is Ours.
 - The pop-up follows the view: sub-line shows all three ranks and the Δ
@@ -192,10 +192,10 @@ presentations of the same data, chosen by the section's own width:
   the same combined entries and conference pills; each list's bottom carries
   its NR entries (teams missing from that list, ordered by committee rank).
   The union is still committee ∪ ours; WAB-only teams stay caption-named.
-- Each team's trace is two segments (CFP→Ours, Ours→WAB), coloured per
+- Each team's trace is two segments (CFP→Ours, Ours→WAB), colored per
   segment by the same rule, generalised: red where the list on the left
   ranks the team higher than the list on the right, green where it ranks
-  them lower, blue where equal; NR counts as 26 for colour. Hover/tap
+  them lower, blue where equal; NR counts as 26 for color. Hover/tap
   highlights the whole trace.
 - Pop-ups are the main spec's (the "What our model sees" form), with the WAB
   line in that block also carrying its Δ vs the committee.

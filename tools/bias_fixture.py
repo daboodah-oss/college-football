@@ -6,7 +6,7 @@ populated view can be built and render-checked before the pipeline has stored a 
   python3 build_report.py --standalone --out index.html && node tools/render_check.js index.html
 
 It copies the repo (no .git) to OUT_DIR, removes the latest stored snapshot from the COPY's cfp.json, and
-stores in its place a snapshot for that same committee Top 25 labelled "<week> (bias preview)", made by
+stores in its place a snapshot for that same committee Top 25 labeled "<week> (bias preview)", made by
 collect_cfp.make_snapshot on the stored game rows and passed through the copy's update.cfp validation.
 The repo's own data/ is never written."""
 import json, os, shutil, sys

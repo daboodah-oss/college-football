@@ -23,7 +23,7 @@ Repo daboodah-oss/college-football, branch `claude/modest-pasteur-qsttu7`.  Jeff
    its feed between releases (Sunday until the Tuesday reveal); that no longer fails the run unless no release has
    been stored for 8+ days before Dec 10.
 6. **Playoff model v2** from the next snapshot (Week 13): SRS 25%, Dated 20% (each game valued against the
-   opponent's rating as of that game's date), Colley 30%, Resume 25%.  Weeks 11-12 stay v1 and are labelled v1.
+   opponent's rating as of that game's date), Colley 30%, Resume 25%.  Weeks 11-12 stay v1 and are labeled v1.
    Curated, sourced, display-only context notes live in `cfp_context.json` (Week 11: Ohio State QB Julian Sayin,
    out since Oct 17; Ryan Day's announcement was Oct 20).  They never move a ranking and never touch `data/cfp.json`.
 
@@ -56,7 +56,7 @@ only touch 2026.
    10:47 AM ET so Week 13 is stored as v2.
 2. After the next workflow run: check the run is green and its summary lists refusals; run
    `node tools/render_check.js https://cf.daboodah.com/` against the live page; confirm the banner shows counts.
-3. After the Wednesday run: confirm Week 13 is stored, labelled "model v2", and the Bias tab shows its first week.
+3. After the Wednesday run: confirm Week 13 is stored, labeled "model v2", and the Bias tab shows its first week.
 4. When convenient: open the official box scores listed in `docs/part3-reconciliation.md` and report the official
    team rushing yards per candidate game, so Claude can pin exceptions where the evidence supports one.  Do not edit
    `update.py` or `data/` directly (Claude's lane).

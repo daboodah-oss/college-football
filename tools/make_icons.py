@@ -4,13 +4,13 @@
     python3 tools/make_icons.py
 
 The mark is a plain football drawn in code: a chalk-white ball (two circle arcs) with
-slate laces and seam stripes, on a slate square (#24303F, the page's theme colour).
+slate laces and seam stripes, on a slate square (#24303F, the page's theme color).
 No team logo is scraped, copied or hotlinked; the mark belongs to no school.
 
 Writes, all into icons/:
   icon-192.png, icon-512.png ... slate rounded square, football (purpose any)
   icon-maskable-512.png ........ slate to the edge, the ball sized so its farthest
-                                 pixel from the centre sits at 38% of the side
+                                 pixel from the center sits at 38% of the side
                                  (inside the 40% maskable safe circle), measured
                                  on the generated file
   apple-touch-icon.png (180), favicon-32.png
@@ -84,7 +84,7 @@ def icon(size, frac=0.74, radius_frac=0.2):
 
 
 def farthest(img):
-    """Distance from the centre to the farthest pixel nearer chalk than slate, as a fraction of the side."""
+    """Distance from the center to the farthest pixel nearer chalk than slate, as a fraction of the side."""
     n = img.size[0]; c = (n - 1) / 2; px = img.convert("RGB").load(); best = 0
     for y in range(n):
         for x in range(n):

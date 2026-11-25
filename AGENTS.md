@@ -61,7 +61,7 @@ season matches.
 - **Pipeline (collect, update, build, workflow, config, template logic) is
   Claude's lane**, worked through Claude cloud sessions on a feature branch
   (`claude/...`), merged only after Jeff approves in chat.
-- **Small display-only fixes** (copy, a colour, a CSS tweak) may be pushed to
+- **Small display-only fixes** (copy, a color, a CSS tweak) may be pushed to
   `main` by Budzilla at Jeff's request on this Tier 2 repo.  Anything that
   changes what is collected, validated or computed goes through Claude's lane.
 - `data/`, `index.html`, `logs/` are written by "college-football bot" (the
@@ -111,6 +111,10 @@ season matches.
     `collect.py` spaces cfbstats requests 1.5 s apart, backs off on a 403, reads
     each page once per run, and stops asking after three refusals in a row.
     Do not lower `CFB_GAP` or add cfbstats requests to the quick check.
+12. **US English spelling everywhere** (color, behavior, center, labeled,
+    neighbor): page copy, code comments, docs, specs, handoffs and commit
+    messages, even when quoting or extending older text.  Jeff's standing
+    preference, 2026-11-25.
 
 ## File map
 
@@ -195,8 +199,16 @@ season matches.
   time from the stored rows); Playoff carries a week picker over the frozen
   `data/cfp.json` snapshots and never recomputes a stored week.  From 2026
   Week 13 a snapshot carries a Wins Above Bubble Top 25 shown as a third
-  ranking (side-table columns + its own agreement line); earlier weeks say
-  "WAB tracking began Week 13" instead of showing empty columns.  Bias carries
+  ranking (rationale pop-ups + its own agreement line); earlier weeks say
+  "WAB tracking began Week 13".  Side by Side (`#cfp-side`, spec
+  `docs/claude-spec-side-by-side.md`) is ranked lists joined by SVG connector
+  lines (red = the left list ranks the team higher, green = lower, blue =
+  equal; NR counts as 26), a conference pill per entry (`conf` per week from
+  `build_cfp.py`), a Δ column (CFP minus that list) and a per-team rationale
+  pop-up generated from the stored line.  The presentation follows the
+  section's measured width: under 920px (and in jsdom) two lists, plus a slim
+  column and swap button to WAB on a WAB week; 920px and up on a WAB week,
+  CFP, ours and WAB at once.  WAB-only teams are named in the caption.  Bias carries
   the same week picker; a snapshot stored after 2026-11-21 freezes
   `srs_top25` and a `srs_rank` per line (lines cover committee ∪ ours ∪ WAB
   ∪ SRS Top 25), and earlier weeks say "Bias tracking began <first bias
@@ -218,15 +230,15 @@ season matches.
   Leader boxes: best value wins (fewer is better only for Points allowed); no
   box when every compared entry ties.
 - Line slots in pick order: `--s1`..`--s3` solid, `--s4`..`--s6` dashed (and
-  hollow markers), so colour plus line style separate every pair in both
-  themes.  A removed pick frees its slot; the survivors keep their colours.
+  hollow markers), so color plus line style separate every pair in both
+  themes.  A removed pick frees its slot; the survivors keep their colors.
   National Top 3 lines are gray (`--field`), solid / dashed / dotted for #1 / #2
   / #3, chips off until tapped, chosen per stat and per season (a season toggle
   inside the group).
-- Chips and pills show the name (+ season) only, underlined in the line's colour
+- Chips and pills show the name (+ season) only, underlined in the line's color
   and style (`.un` / `.pu`); ON is full opacity, OFF is dimmed; all off shows a
   friendly empty state.  Tables keep their line swatches; table numbers are in
-  ink, not the series colour.
+  ink, not the series color.
 - Chart tooltips are sticky: a tap or click in a chart pins the pop-up; a tap
   outside any chart dismisses it (one shared tip element and a guide registry
   in `lineChart()`; pointerleave does not hide it).

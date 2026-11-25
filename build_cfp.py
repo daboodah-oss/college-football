@@ -42,6 +42,8 @@ def build(root, cfg, check):
     d = load(root, "cfp.json", {"season": cfg["current_season"], "weeks": []})
     teams = load(root, "team.json", {"teams": {}}).get("teams", {})
     ctx = context_notes(root, d.get("season", cfg["current_season"]), d.get("weeks", []), teams, check)
+    cp = os.path.join(root, "conferences.json")   # per-season membership (the Conferences tab's source), for the pills
+    members = (json.load(open(cp)).get("members", {}) if os.path.exists(cp) else {}).get(str(d.get("season", cfg["current_season"])), {})
     weeks = []
     for w in d.get("weeks", []):
         tag = f"cfp {w.get('week')} {w.get('date')}"
@@ -63,16 +65,18 @@ def build(root, cfg, check):
                 r = ((w.get("lines") or {}).get(tid) or {}).get("srs_rank")
                 check(isinstance(r, int) and r >= 1, f"{tag}: line for team id {tid} lacks a numeric srs_rank")
             check([((w.get("lines") or {}).get(t) or {}).get("srs_rank") for t in s25] == list(range(1, 26)), f"{tag}: SRS Top 25 ranks are not 1-25 in order")
-        names = {}
+        names, conf = {}, {}
         for tid in set(comm) | set(ours) | set(wab or []) | set(s25 or []):
             check(tid in teams, f"{tag}: team id {tid} is not a stored team")
             check(tid in (w.get("lines") or {}), f"{tag}: no stored line for team id {tid}")
+            check(tid in members, f"{tag}: team id {tid} has no {d.get('season')} conference membership in conferences.json")
             names[tid] = teams.get(tid, {}).get("name", tid)
+            conf[tid] = members.get(tid, "")
         m = w.get("metrics") or {}
         for k in ("overlap25", "overlap12", "avg_delta", "exact", "agreement"):
             check(isinstance(m.get(k), (int, float)), f"{tag}: metric '{k}' missing")
         weeks.append({"week": w.get("week", ""), "date": w.get("date", ""), "through": w.get("through"),
-                      "committee": comm, "ours": ours, "names": names,
+                      "committee": comm, "ours": ours, "names": names, "conf": conf,
                       "lines": w.get("lines", {}), "metrics": m, "weights": w.get("weights"),
                       "wab": wab, "wab_bubble": w.get("wab_bubble"), "wab_metrics": w.get("wab_metrics"), "srs_top25": s25,
                       "model": w.get("model", "v1"), "context": ctx.get(w.get("week"), [])})
