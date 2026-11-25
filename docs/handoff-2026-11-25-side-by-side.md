@@ -11,8 +11,8 @@ screens, three lists on wide).  Branch `ccr-fb9ca8d7-x96vm1`, not merged.  Displ
   union team has no membership for the season.  Nothing else in the model changed.
 - `template.html`:
   - CSS: conference pill tokens `--cp-*` in the light root, the `prefers-color-scheme` dark block and
-    `:root[data-theme="dark"]` (spec colours; tint 12% and border 50% are `color-mix` of the text
-    colour; IND uses `--muted` / `--surface-2` / `--rule`).  New `.sbs*` styles: rows share one height
+    `:root[data-theme="dark"]` (spec colors; tint 12% and border 50% are `color-mix` of the text
+    color; IND uses `--muted` / `--surface-2` / `--rule`).  New `.sbs*` styles: rows share one height
     so the Δ and slim columns ride with their list; under 560px the record wraps to a second line.
   - Shell: eyebrow "Two Top 25s, drawn against each other"; `#cfp-side` drops `tscroll`; caption no
     longer has the swipe hint.  Click / keyboard / hover listeners on `#cfp-side` are registered once
@@ -48,7 +48,7 @@ screens, three lists on wide).  Branch `ccr-fb9ca8d7-x96vm1`, not merged.  Displ
   NR at the bottom of ours), 27 lines.  Ole Miss green (CFP 25, ours 11, Δ +14); Georgia and Indiana
   blue.  Ole Miss's pop-up: "Schedule strength: 2nd nationally", "Top-25 wins: 4".
 - **Spec discrepancy, Texas:** the spec's sanity list says Texas's Week 12 line is red, but the stored
-  ranks are CFP 5, ours 2.  The spec's colour rule (green when CFP rank > our rank), its Δ rule
+  ranks are CFP 5, ours 2.  The spec's color rule (green when CFP rank > our rank), its Δ rule
   (5 − 2 = +3, positive green) and the caption all make that green, the same direction as Ole Miss.
   The build follows the rule; Texas is green.  If red was intended, the rule itself would have to flip.
 - Week 13 at 1200px renders the three-list view (58 path segments); at 390px the swap view.
@@ -68,14 +68,14 @@ line stays data-guarded (shown only when the line carries `wab_rank`).
    the whole trace, Δ columns after Ours and after WAB, pop-up WAB line carries "Δ vs CFP".  This is
    the wide presentation's first exercise outside a scratch browser.
 3. Week 13 on a phone: slim WAB column, swap and swap back, pop-up "What WAB sees" in the WAB view.
-4. Both themes: pill colours and line colours.
+4. Both themes: pill colors and line colors.
 5. Run `node tools/render_check.js` against the live page.
 
 ## Small calls made inside the spec
 
 - A team NR in both the CFP and the right-hand list (possible only in the WAB swap view) reads
   "in neither of these Top 25s" in the pop-up sub-line.
-- On WAB weeks the sub-line's Δ is labelled with its list ("Δ vs Ours", "Δ vs WAB"), since three ranks
+- On WAB weeks the sub-line's Δ is labeled with its list ("Δ vs Ours", "Δ vs WAB"), since three ranks
   are shown; weeks without WAB keep the plain "Δ".
 - The slim column shows a Top 25 position or NR (matching the lists), not the FBS-wide WAB rank;
   the FBS-wide rank and value are in the pop-up.

@@ -14,7 +14,7 @@
   --s1:#2a78d6; --s1-soft:#dbe9fa; --s2:#eb6834; --s2-soft:#fde3d8; --s3:#1baf7a; --s3-soft:#d6f3e8;
   --s4:#eda100; --s4-soft:#fcefcc; --s5:#e87ba4; --s5-soft:#fbe4ed; --s6:#6250d6; --s6-soft:#e4e0f8;
   --field:#8d93a1; --good:#1f7a4d; --bad:#b3382e;
-  /* conference pills (Playoff side by side): text colour; the tint and border are mixed from it */
+  /* conference pills (Playoff side by side): text color; the tint and border are mixed from it */
   --cp-sec:#96690a; --cp-b1g:#1d4ed8; --cp-b12:#b42318; --cp-acc:#14713c; --cp-p12:#6d28d9; --cp-aac:#0f6a72;
   --cp-sbc:#b45508; --cp-mwc:#a02c5e; --cp-mac:#4f6d00; --cp-cusa:#7c5222;
   --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
@@ -880,7 +880,7 @@ function sbsCaption(W, R, wide, right){
   const firstWab = ((CFP || {}).weeks || []).find(x => x.wab), wabStart = firstWab ? firstWab.week : "Week 13";
   const lines = "red where the committee ranks the team higher, green where it ranks them lower, blue where the two agree.";
   const out = [wide
-    ? "Three lists: the committee's, ours and Wins Above Bubble's.  Each Δ rides with the list on its left: committee rank minus that list's rank, so green (+) means that list ranks the team higher than the committee does.  Each line runs between neighbouring lists: red where the list on the left ranks the team higher, green where it ranks them lower, blue where they agree."
+    ? "Three lists: the committee's, ours and Wins Above Bubble's.  Each Δ rides with the list on its left: committee rank minus that list's rank, so green (+) means that list ranks the team higher than the committee does.  Each line runs between neighboring lists: red where the list on the left ranks the team higher, green where it ranks them lower, blue where they agree."
     : right === "wab"
     ? `Δ rides with the Wins Above Bubble list: committee rank minus WAB rank, so green (+) means WAB ranks the team higher than the committee does.  Lines join each team's two entries: ${lines}`
     : `Δ rides with our list: committee rank minus our rank, so green (+) means we rank the team higher than the committee does.  Lines join each team's two entries: ${lines}`,

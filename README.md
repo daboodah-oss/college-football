@@ -45,7 +45,7 @@ validation, design system and chart engine are theirs; see AGENTS.md for what di
   from the stored game rows only; the assessment of the established systems behind the blend is in
   `docs/cfp-model.md`.  The tab shows the agreement scorecard (headline Agreement % = the mean of the
   Top 25 and Top 12 overlaps), Side by Side (the committee's Top 25 and ours as two ranked lists joined
-  by connector lines coloured by who ranks the team higher, a conference pill per entry, a Δ column,
+  by connector lines colored by who ranks the team higher, a conference pill per entry, a Δ column,
   and a rationale pop-up per team generated from the stored line; on a WAB week a narrow screen gets a
   slim WAB column with a swap button and a wide one shows CFP, ours and WAB side by side, with WAB's rank
   and value in the pop-ups), the five biggest disagreements with
