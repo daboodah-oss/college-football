@@ -14,6 +14,9 @@
   --s1:#2a78d6; --s1-soft:#dbe9fa; --s2:#eb6834; --s2-soft:#fde3d8; --s3:#1baf7a; --s3-soft:#d6f3e8;
   --s4:#eda100; --s4-soft:#fcefcc; --s5:#e87ba4; --s5-soft:#fbe4ed; --s6:#6250d6; --s6-soft:#e4e0f8;
   --field:#8d93a1; --good:#1f7a4d; --bad:#b3382e;
+  /* conference pills (Playoff side by side): text colour; the tint and border are mixed from it */
+  --cp-sec:#96690a; --cp-b1g:#1d4ed8; --cp-b12:#b42318; --cp-acc:#14713c; --cp-p12:#6d28d9; --cp-aac:#0f6a72;
+  --cp-sbc:#b45508; --cp-mwc:#a02c5e; --cp-mac:#4f6d00; --cp-cusa:#7c5222;
   --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
   --body:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
@@ -25,6 +28,8 @@
     --s1:#3987e5; --s1-soft:#1a2c45; --s2:#d95926; --s2-soft:#3d2216; --s3:#199e70; --s3-soft:#123a2c;
     --s4:#c98500; --s4-soft:#3a2e10; --s5:#d55181; --s5-soft:#3d1a29; --s6:#9085e9; --s6-soft:#2a2645;
     --field:#7a808e; --good:#4cc38a; --bad:#e0655f;
+    --cp-sec:#eec95c; --cp-b1g:#7db4ff; --cp-b12:#ff9a8a; --cp-acc:#6fd598; --cp-p12:#c4b5fd; --cp-aac:#5fd4c8;
+    --cp-sbc:#ffb37d; --cp-mwc:#f09ec0; --cp-mac:#b8d94e; --cp-cusa:#d9a05b;
   }
 }
 :root[data-theme="dark"]{
@@ -34,6 +39,8 @@
   --s1:#3987e5; --s1-soft:#1a2c45; --s2:#d95926; --s2-soft:#3d2216; --s3:#199e70; --s3-soft:#123a2c;
   --s4:#c98500; --s4-soft:#3a2e10; --s5:#d55181; --s5-soft:#3d1a29; --s6:#9085e9; --s6-soft:#2a2645;
   --field:#7a808e; --good:#4cc38a; --bad:#e0655f;
+  --cp-sec:#eec95c; --cp-b1g:#7db4ff; --cp-b12:#ff9a8a; --cp-acc:#6fd598; --cp-p12:#c4b5fd; --cp-aac:#5fd4c8;
+  --cp-sbc:#ffb37d; --cp-mwc:#f09ec0; --cp-mac:#b8d94e; --cp-cusa:#d9a05b;
 }
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
@@ -207,6 +214,54 @@ table.mx td:first-child{text-align:left}
 @media (max-width:480px){ .bar{grid-template-columns:76px 1fr 44px;gap:6px} .barkey{margin:0 50px 8px 82px} }
 .verdict{font-weight:700;color:var(--ink);margin:12px 0 0}
 .leftout{margin:0;padding-left:18px;display:grid;gap:6px;color:var(--ink-2);font-size:14.5px}
+/* Playoff side by side: ranked lists joined by connector lines (rows share one height so the slim columns ride along) */
+.sbs-panel{padding:12px}
+.sbs{--rh:36px;--hh:40px;position:relative;display:grid;grid-template-columns:minmax(0,1fr) 36px minmax(0,1fr) 38px;align-items:start}
+.sbs.x3n{grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr) 36px 44px}
+.sbs.wide{grid-template-columns:minmax(0,1fr) 56px minmax(0,1fr) 44px 56px minmax(0,1fr) 44px}
+.sbs-col,.sbs-sl{display:flex;flex-direction:column;min-width:0}
+.sbs-h{height:var(--hh);display:flex;align-items:flex-end;padding:0 4px 6px;font:600 12.5px/1.1 var(--display);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);border-bottom:1px solid var(--rule);margin-bottom:4px}
+.sbs-sl .sbs-h{justify-content:center;text-align:center}
+.sbs-row{height:var(--rh);margin:2px 0;display:flex;align-items:center;gap:6px;padding:0 6px;border:1px solid var(--rule);border-radius:4px;background:var(--surface);cursor:pointer;font-size:13.5px;min-width:0;transition:opacity .12s}
+.sbs-row:hover,.sbs-row.on{border-color:var(--ink-2)}
+.sbs-row .tx{flex:0 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sbs-row .rk{font-weight:700;font-variant-numeric:tabular-nums}
+.sbs-row .nm{font-weight:600}
+.sbs-row .rec{color:var(--muted);font-variant-numeric:tabular-nums}
+.sbs-row.nr{background:var(--surface-2)}
+.sbs-row.nr .rk{color:var(--muted)}
+.sbs-c{height:var(--rh);margin:2px 0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;font-variant-numeric:tabular-nums;color:var(--muted);transition:opacity .12s}
+.sbs-c.up{color:var(--good)} .sbs-c.dn{color:var(--bad)} .sbs-c.eq{color:var(--s1)}
+.sbs-swap{width:100%;border:1px solid var(--rule);border-radius:4px;background:var(--surface-2);color:var(--ink);font:700 12.5px/1.05 var(--display);text-transform:uppercase;letter-spacing:.06em;padding:3px 2px;cursor:pointer}
+.sbs-swap small{display:block;font:500 9.5px/1.1 var(--body);text-transform:none;letter-spacing:0;color:var(--muted)}
+.sbs-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.sbs-ln{fill:none;stroke-width:1.8;opacity:.55;transition:opacity .12s,stroke-width .12s}
+.sbs-ln.up{stroke:var(--good)} .sbs-ln.dn{stroke:var(--bad)} .sbs-ln.eq{stroke:var(--s1)}
+.sbs.hot .sbs-ln{opacity:.12} .sbs.hot .sbs-ln.on{opacity:1;stroke-width:3}
+.sbs.hot .sbs-row:not(.on),.sbs.hot .sbs-c:not(.on){opacity:.45}
+.sbs-row .cpill{margin-left:auto}
+.cpill{flex:none;font:700 10px/1 var(--body);letter-spacing:.03em;padding:3px 5px;border-radius:999px;color:var(--cp,var(--muted));background:color-mix(in srgb,var(--cp,var(--muted)) 12%,transparent);border:1px solid color-mix(in srgb,var(--cp,var(--muted)) 50%,transparent)}
+.cpill.cp-ind{color:var(--muted);background:var(--surface-2);border-color:var(--rule)}
+.cp-sec{--cp:var(--cp-sec)} .cp-b1g{--cp:var(--cp-b1g)} .cp-b12{--cp:var(--cp-b12)} .cp-acc{--cp:var(--cp-acc)} .cp-p12{--cp:var(--cp-p12)} .cp-aac{--cp:var(--cp-aac)}
+.cp-sbc{--cp:var(--cp-sbc)} .cp-mwc{--cp:var(--cp-mwc)} .cp-mac{--cp:var(--cp-mac)} .cp-cusa{--cp:var(--cp-cusa)}
+.sbs-pop{position:absolute;z-index:4;width:min(340px,100%);background:var(--surface);border:1px solid var(--rule);border-radius:6px;box-shadow:0 6px 20px rgba(0,0,0,.16);padding:12px 14px 10px;font-size:13.5px;color:var(--ink-2)}
+.sbs-pop .ph{display:flex;align-items:center;gap:8px;padding-right:26px}
+.sbs-pop .ph b{font:700 18px/1.1 var(--display);text-transform:uppercase;letter-spacing:.03em;color:var(--ink)}
+.sbs-pop .ps{font-size:12.5px;color:var(--muted);margin:3px 0 8px;font-variant-numeric:tabular-nums}
+.sbs-pop h4{font:700 12.5px/1.2 var(--display);text-transform:uppercase;letter-spacing:.08em;color:var(--ink);margin:8px 0 3px}
+.sbs-pop ul{margin:0;padding-left:16px;display:grid;gap:2px}
+.sbs-pop .pc2{margin:8px 0 0;color:var(--ink)}
+.sbs-pop .pf{margin:8px 0 0;font-size:11.5px;color:var(--muted)}
+.sbs-pop .px{position:absolute;top:4px;right:4px;border:0;background:none;color:var(--muted);font-size:19px;line-height:1;padding:6px 8px;cursor:pointer}
+.sbs-pop .px:hover{color:var(--ink)}
+@media (max-width:560px){
+  .sbs-panel{padding:8px}
+  .sbs{--rh:42px}
+  .sbs-row{flex-wrap:wrap;align-content:center;gap:1px 4px;padding:0 4px;font-size:12.5px;line-height:1.2}
+  .sbs-row .tx{flex:1 0 100%}
+  .sbs-row .rec{font-size:11.5px}
+  .cpill{font-size:9px;padding:2px 4px}
+}
 @media (prefers-reduced-motion:no-preference){ .seg button{transition:background .15s} }
 </style>
 
@@ -778,7 +833,130 @@ function updateConf(){
 }
 
 /* ================================================================ Playoff tab */
-const CFP = M.cfp, CFPS = {wi: Math.max(0, ((M.cfp || {}).weeks || []).length - 1)};
+const CFP = M.cfp, CFPS = {wi: Math.max(0, ((M.cfp || {}).weeks || []).length - 1), view: "ours", wide: false, pop: null};
+/* Side by side: ranked lists joined by connector lines.  Narrow (or a week without WAB): CFP and one list on
+   the right (ours, or WAB after a swap).  Wide on a WAB week: CFP, ours and WAB at once.  Everything below is
+   generated from the snapshot's stored lists and lines; nothing is recomputed. */
+const CONF_ABBR = {"Big Ten": "B1G", "SEC": "SEC", "Big 12": "B12", "ACC": "ACC", "Pac-12": "P12", "AAC": "AAC",
+  "Sun Belt": "SBC", "MWC": "MWC", "MAC": "MAC", "CUSA": "CUSA", "Independent": "IND"};
+const SBS_LBL = {cfp: "CFP", ours: "Ours", wab: "WAB"}, SBS_WIDE = 920;
+document.addEventListener("pointerdown", ev => { if (CFPS.pop && !(ev.target.closest && ev.target.closest("#cfp-side"))) sbsClose(); });
+function cpill(W, t){ const c = (W.conf || {})[t] || "", a = CONF_ABBR[c] || c || "?";
+  return `<span class="cpill cp-${esc(a.toLowerCase())}" title="${esc(c)}">${esc(a)}</span>`; }
+function sbsWeek(){ return ((CFP || {}).weeks || [])[CFPS.wi]; }
+function sbsRanks(W){
+  const R = {cfp: {}, ours: {}, wab: {}};
+  W.committee.forEach((t,i) => R.cfp[t] = i + 1); W.ours.forEach((t,i) => R.ours[t] = i + 1); (W.wab || []).forEach((t,i) => R.wab[t] = i + 1);
+  R.union = [...W.committee, ...W.ours.filter(t => !R.cfp[t])];
+  return R;
+}
+function sbsOrder(R, side){  // the list's own Top 25 in order, then its NR entries by committee rank, then our rank
+  const k = t => [R[side][t] ? 0 : 1, R[side][t] || R.cfp[t] || 26, R.ours[t] || 26];
+  return [...R.union].sort((a,b) => { const x = k(a), y = k(b); return x[0] - y[0] || x[1] - y[1] || x[2] - y[2]; });
+}
+function sbsDir(a, b){ a = a || 26; b = b || 26; return a < b ? "dn" : a > b ? "up" : "eq"; }  // left list's rank vs the right list's
+function sbsDelta(a, b){ if (!a || !b) return ["—", ""]; const d = a - b; return [d > 0 ? `+${d}` : d < 0 ? `−${-d}` : "0", d > 0 ? "up" : d < 0 ? "dn" : "eq"]; }
+function sbsSigned(v){ return (v > 0 ? "+" : v < 0 ? "−" : "") + fmt(Math.abs(v), 2); }
+function sbsView(W){ const wide = !!W.wab && CFPS.wide; return {wide, right: W.wab && !wide ? CFPS.view : "ours"}; }
+function sbsRender(){
+  const W = sbsWeek(), host = $("#cfp-side"); if (!W || !host) return;
+  const R = sbsRanks(W), {wide, right} = sbsView(W), slim = right === "ours" ? "wab" : "ours";
+  const row = (side, t) => { const r = R[side][t], L = W.lines[t] || {}, n = W.names[t] || t;
+    return `<div class="sbs-row${r ? "" : " nr"}" data-side="${side}" data-team="${esc(t)}" role="button" tabindex="0" aria-label="${esc(`${SBS_LBL[side]} ${r || "NR"}: ${n}`)}"><span class="tx"><span class="rk">${r || "NR"}</span> - <span class="nm">${esc(n)}</span></span> <span class="rec">(${esc(L.record || "")})</span>${cpill(W, t)}</div>`; };
+  const col = (side, pos) => `<div class="sbs-col" data-list="${side}" data-pos="${pos}"><div class="sbs-h">${SBS_LBL[side]}</div>${sbsOrder(R, side).map(t => row(side, t)).join("")}</div>`;
+  const dcol = of => `<div class="sbs-sl" data-delta="${of}"><div class="sbs-h" title="Committee rank minus ${SBS_LBL[of]} rank">Δ</div>${sbsOrder(R, of).map(t => {
+    const [v, c] = sbsDelta(R.cfp[t], R[of][t]); return `<div class="sbs-c sbs-d ${c}" data-team="${esc(t)}">${v}</div>`; }).join("")}</div>`;
+  const xcol = () => `<div class="sbs-sl sbs-xc"><div class="sbs-h"><button class="sbs-swap" type="button" aria-label="Swap the right list to ${slim === "wab" ? "Wins Above Bubble" : "our ranking"}">${SBS_LBL[slim]}<small>tap to swap</small></button></div>${sbsOrder(R, right).map(t =>
+    `<div class="sbs-c sbs-x" data-team="${esc(t)}">${R[slim][t] || "NR"}</div>`).join("")}</div>`;
+  const segs = wide ? [["cfp", "ours"], ["ours", "wab"]] : [["cfp", right]];
+  const paths = segs.map(([a,b], i) => R.union.map(t => `<path class="sbs-ln ${sbsDir(R[a][t], R[b][t])}" data-team="${esc(t)}" data-seg="${i}" data-a="${a}" data-b="${b}" d="M0 0"/>`).join("")).join("");
+  const cols = wide ? `${col("cfp", "left")}<div></div>${col("ours", "mid")}${dcol("ours")}<div></div>${col("wab", "right")}${dcol("wab")}`
+                    : `${col("cfp", "left")}<div></div>${col(right, "right")}${dcol(right)}${W.wab ? xcol() : ""}`;
+  host.innerHTML = `<div class="sbs${wide ? " wide" : W.wab ? " x3n" : ""}" data-view="${wide ? "wide" : right}">${cols}<svg class="sbs-svg" aria-hidden="true">${paths}</svg><div class="sbs-pop" role="dialog" hidden></div></div>`;
+  $("#cfp-side-cap").textContent = sbsCaption(W, R, wide, right);
+  sbsDraw(); if (CFPS.pop) sbsOpen(CFPS.pop.t, CFPS.pop.side);
+}
+function sbsCaption(W, R, wide, right){
+  const firstWab = ((CFP || {}).weeks || []).find(x => x.wab), wabStart = firstWab ? firstWab.week : "Week 13";
+  const lines = "red where the committee ranks the team higher, green where it ranks them lower, blue where the two agree.";
+  const out = [wide
+    ? "Three lists: the committee's, ours and Wins Above Bubble's.  Each Δ rides with the list on its left: committee rank minus that list's rank, so green (+) means that list ranks the team higher than the committee does.  Each line runs between neighbouring lists: red where the list on the left ranks the team higher, green where it ranks them lower, blue where they agree."
+    : right === "wab"
+    ? `Δ rides with the Wins Above Bubble list: committee rank minus WAB rank, so green (+) means WAB ranks the team higher than the committee does.  Lines join each team's two entries: ${lines}`
+    : `Δ rides with our list: committee rank minus our rank, so green (+) means we rank the team higher than the committee does.  Lines join each team's two entries: ${lines}`,
+    "The pill is the team's conference this season.  NR marks a team missing from that list's Top 25.  Tap any team for the numbers behind its gap."];
+  if (W.wab) {
+    if (!wide) out.push(`The slim column is each team's rank in the other numbers ranking; tap its button to swap the right list between ours and Wins Above Bubble (wide screens show all three lists at once).`);
+    out.push("Each pop-up carries the team's Wins Above Bubble rank and value: the wins it earned above (+) or below (−) a playoff-bubble team's expected total against the same schedule.");
+    const only = W.wab.filter(t => !R.cfp[t] && !R.ours[t]).map(t => W.names[t] || t);
+    if (only.length) out.push(`In Wins Above Bubble's Top 25 only: ${only.join(", ")}.`);
+  } else out.push(`Wins Above Bubble tracking began ${wabStart}.`);
+  return out.join("  ");
+}
+function sbsDraw(){
+  const box = $("#cfp-side .sbs"); if (!box) return;
+  const b = box.getBoundingClientRect(), at = {}, f = v => v.toFixed(1);
+  box.querySelectorAll(".sbs-row").forEach(e => at[e.dataset.side + "|" + e.dataset.team] = e);
+  box.querySelectorAll('.sbs-sl[data-delta="ours"] .sbs-d').forEach(e => at["d|" + e.dataset.team] = e);
+  box.querySelectorAll("path.sbs-ln").forEach(p => {
+    const t = p.dataset.team, A = p.dataset.seg === "1" ? at["d|" + t] : at[p.dataset.a + "|" + t], B = at[p.dataset.b + "|" + t];
+    if (!A || !B) return;
+    const ra = A.getBoundingClientRect(), rb = B.getBoundingClientRect();
+    const x1 = ra.right - b.left, y1 = ra.top + ra.height / 2 - b.top, x2 = rb.left - b.left, y2 = rb.top + rb.height / 2 - b.top, mx = (x1 + x2) / 2;
+    p.setAttribute("d", `M${f(x1)} ${f(y1)} C${f(mx)} ${f(y1)} ${f(mx)} ${f(y2)} ${f(x2)} ${f(y2)}`);
+  });
+  sbsPlace();
+}
+function sbsLayout(){  // pick the presentation from the section's own width (0 in jsdom: narrow), else just redraw
+  const host = $("#cfp-side"); if (!host) return;
+  const wide = host.getBoundingClientRect().width >= SBS_WIDE;
+  if (wide !== CFPS.wide) { CFPS.wide = wide; sbsRender(); } else sbsDraw();
+}
+function sbsHot(t){
+  const box = $("#cfp-side .sbs"); if (!box) return;
+  box.classList.toggle("hot", !!t);
+  box.querySelectorAll("[data-team]").forEach(e => e.classList.toggle("on", !!t && e.dataset.team === t));
+}
+function sbsOpen(t, side){
+  const W = sbsWeek(), p = $("#cfp-side .sbs-pop"); if (!W || !p) return;
+  CFPS.pop = {t, side}; p.innerHTML = sbsPopHtml(W, t); p.hidden = false; sbsPlace(); sbsHot(t);
+}
+function sbsClose(){ CFPS.pop = null; const p = $("#cfp-side .sbs-pop"); if (p) { p.hidden = true; p.innerHTML = ""; } sbsHot(null); }
+function sbsPlace(){  // under the tapped entry, clamped inside the section
+  const box = $("#cfp-side .sbs"), p = box && box.querySelector(".sbs-pop"); if (!p || p.hidden || !CFPS.pop) return;
+  const a = box.querySelector(`.sbs-row[data-side="${CFPS.pop.side}"][data-team="${CFPS.pop.t}"]`); if (!a) return;
+  const b = box.getBoundingClientRect(), r = a.getBoundingClientRect(), pw = p.offsetWidth || 0, ph = p.offsetHeight || 0;
+  let top = r.bottom - b.top + 6; if (top + ph > b.height) top = Math.max(0, r.top - b.top - ph - 6);
+  p.style.left = Math.max(0, Math.min(r.left - b.left, b.width - pw)) + "px"; p.style.top = top + "px";
+}
+function sbsPopHtml(W, t){
+  const R = sbsRanks(W), L = W.lines[t] || {}, n = W.names[t] || t, {wide, right} = sbsView(W);
+  const c = R.cfp[t], o = R.ours[t], wr = R.wab[t], rr = R[right][t], li = x => `<li>${x}</li>`;
+  const rk = (lab, r) => `${lab} ${r ? "#" + r : "NR"}`;
+  const gap = c && rr ? `Δ${W.wab ? ` vs ${SBS_LBL[right]}` : ""} ${sbsDelta(c, rr)[0]}` : c || rr ? "in one Top 25 only" : "in neither of these Top 25s";
+  const sub = [rk("CFP", c), rk("Ours", o), ...(W.wab ? [rk("WAB", wr)] : []), gap].join(" · ");
+  const all = Object.values(W.lines).filter(x => typeof x.srs === "number").map(x => x.srs);
+  const srsR = typeof L.srs === "number" ? 1 + all.filter(v => v > L.srs).length : null;
+  const srsTxt = srsR ? `the ${ord(srsR)} SRS here` : "the margin rating", sosTxt = L.sos_rank ? `the ${ord(L.sos_rank)} schedule` : "the schedule";
+  const tm = x => `${esc(x.name)} (${esc(x.record)})`, hasWab = typeof L.wab_rank === "number" && typeof L.wab === "number";
+  const qw = L.quality_wins || 0, t25 = L.top25_wins || 0, losses = +String(L.record || "").split("-")[1] || 0;
+  const wins = [li(`Quality wins (over winning teams): ${qw}`), li(`Top-25 wins: ${t25}`), ...(L.best_win ? [li(`Best win: ${tm(L.best_win)}`)] : [])];
+  const wabLi = hasWab ? li(`Wins Above Bubble: No. ${L.wab_rank} (${sbsSigned(L.wab)})${wide ? ` · Δ vs CFP ${sbsDelta(c, wr)[0]}` : ""}`) : "";
+  const first = right === "wab"
+    ? `<h4>What WAB sees</h4><ul>${hasWab ? li(`Wins Above Bubble: No. ${L.wab_rank} (${sbsSigned(L.wab)})`) + li("Wins earned above (+) or below (−) a bubble team's expected total on this schedule") : li("No Wins Above Bubble line stored")}${wins.join("")}${li(o ? `Our model: No. ${o}` : "Our model: outside our Top 25")}</ul>`
+    : `<h4>What our model sees</h4><ul>${typeof L.srs === "number" ? li(`SRS ${fmt(L.srs, 2)}: ${ord(srsR)} of the ${all.length} teams in this week's lists`) : ""}${L.sos_rank ? li(`Schedule strength: ${ord(L.sos_rank)} nationally`) : ""}${wins.join("")}${wabLi}</ul>`;
+  const comm = `<h4>What the committee sees</h4><ul>${li(`Record: ${esc(L.record || "")}${losses === 0 ? " — unbeaten" : ""}`)}${li(L.worst_loss ? `Worst loss: ${tm(L.worst_loss)}` : "No losses to weigh against them")}${t25 === 0 ? li("No Top-25 wins on the résumé") : ""}${qw === 0 ? li("No quality wins on the résumé") : ""}</ul>`;
+  const d = (c || 26) - (rr || 26), worst = L.worst_loss ? `, the worst of them ${tm(L.worst_loss)}` : "";
+  const best = L.best_win ? ` and the best win, ${tm(L.best_win)}` : "";
+  const close = d === 0 ? "No gap to explain — both land in the same spot."
+    : right === "wab"
+      ? d > 0 ? `WAB is pricing the wins themselves: ${qw} over winning teams${hasWab ? `, ${sbsSigned(L.wab)} against a bubble team on this schedule` : ""}.  ${L.worst_loss ? `The committee is pricing the losses${worst}` : "The committee has no losses to weigh, so the gap is in how it values the rest of the résumé"}.  Same facts, different weights.`
+              : `The committee is pricing the record (${esc(L.record || "")})${best}.  WAB is pricing the wins themselves and finds ${hasWab ? sbsSigned(L.wab) : "fewer"} against a bubble team on this schedule${t25 === 0 ? ", with no Top-25 wins" : ""}.`
+      : d > 0 ? `Our model is pricing the efficiency and the schedule: ${srsTxt} and ${sosTxt}.  ${L.worst_loss ? `The committee is pricing the losses${worst}` : "The committee has no losses to weigh, so the gap is in how it values the rest of the résumé"}.  Same facts, different weights.`
+              : `The committee is pricing the record (${esc(L.record || "")})${best}.  Our model is pricing ${srsTxt} and ${sosTxt}${t25 === 0 ? ", with no Top-25 wins" : ""}.`;
+  return `<button class="px" type="button" aria-label="Close">×</button><div class="ph"><b>${esc(n)} (${esc(L.record || "")})</b>${cpill(W, t)}</div>
+    <div class="ps">${sub}</div>${first}${comm}<p class="pc2">${close}</p><p class="pf">Generated from this snapshot's stored numbers.</p>`;
+}
 function cfpReason(line, dir){  // one line of evidence, from the stored numbers only
   const bits = [];
   if (!line) return "";
@@ -809,12 +987,28 @@ function renderCfpShell(){
     ${jump("cfp", [["score","Scorecard"], ["table","Side by side"], ["diff","Disagreements"], ["method","Method"]])}
     <section id="cfp-score">${secHead("How much the two Top 25s agree", "Agreement scorecard")}<div class="scgrid" id="cfp-score-grid"></div>
     <h3 class="sclabel">Wins Above Bubble vs the committee</h3><div id="cfp-wab-score"></div></section>
-    <section id="cfp-table">${secHead("Committee order, our rank alongside", "Side by side")}<div class="panel tscroll" id="cfp-side"></div><p class="caption" id="cfp-side-cap">Delta is committee rank minus our rank: ▲ means we rank the team higher than the committee does.  “Out” marks a team missing from the other list's Top 25; our extra teams are listed after the committee's 25.<span class="swipe">  Swipe the table sideways for every column.</span></p></section>
+    <section id="cfp-table">${secHead("Two Top 25s, drawn against each other", "Side by side")}<div class="panel sbs-panel" id="cfp-side"></div><p class="caption" id="cfp-side-cap"></p></section>
     <section id="cfp-diff">${secHead("Where the argument is", "Biggest disagreements")}<div class="panel"><ul class="difflist" id="cfp-diffs"></ul></div>
     <div id="cfp-context-wrap" hidden><h3 class="sclabel">Context this week (not part of any ranking)</h3><div class="panel"><ul class="difflist" id="cfp-context"></ul>
     <p class="small" style="margin:10px 0 0">Sourced availability and context notes, curated when the week was recorded.  They explain; they never move a ranking or a metric.</p></div></div></section>
     <section id="cfp-method">${secHead("How our ranking is built", "Method and sources")}<div class="notes"><div><h3>Notes</h3><ul id="cfp-notes"></ul></div><div><h3>Sources</h3><ul id="cfp-sources"></ul></div></div></section>`;
   seg($("#cfp-week"), W.map((w,i) => [i, w.week]), CFPS.wi, i => { CFPS.wi = +i; updateCfp(); });
+  const side = $("#cfp-side");   // delegated, registered once: the lists inside are re-rendered per week and view
+  side.addEventListener("click", e => {
+    if (e.target.closest(".sbs-swap")) { CFPS.view = CFPS.view === "wab" ? "ours" : "wab"; CFPS.pop = null; sbsRender(); return; }
+    if (e.target.closest(".sbs-pop .px")) { sbsClose(); return; }
+    const r = e.target.closest(".sbs-row"); if (!r) return;
+    if (CFPS.pop && CFPS.pop.t === r.dataset.team) sbsClose(); else sbsOpen(r.dataset.team, r.dataset.side);
+  });
+  side.addEventListener("keydown", e => {
+    const r = e.target.closest && e.target.closest(".sbs-row"); if (!r || (e.key !== "Enter" && e.key !== " ")) return;
+    e.preventDefault(); r.click();
+  });
+  side.addEventListener("pointerover", e => { const r = e.target.closest && e.target.closest(".sbs [data-team]"); if (r) sbsHot(r.dataset.team); });
+  side.addEventListener("pointerout", e => {
+    const to = e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest(".sbs [data-team]");
+    if (!to) sbsHot(CFPS.pop ? CFPS.pop.t : null);
+  });
 }
 function updateCfp(){
   const W = ((CFP || {}).weeks || [])[CFPS.wi]; if (!W) return;
@@ -839,15 +1033,9 @@ function updateCfp(){
         [`${wm.exact}`, "Exact position matches"]].map(box).join("")}</div>
       <p class="small" style="margin:10px 0 0">Same definitions as ours above.  Ours: ${m.overlap12} of 12 in the playoff field, ${m.overlap25} of 25 overall.  Wins Above Bubble: ${wm.overlap12} of 12, ${wm.overlap25} of 25.  The bubble this week sat at an SRS of ${fmt(W.wab_bubble.rating, 2)}, between ${esc(W.wab_bubble.team12)} (12th) and ${esc(W.wab_bubble.team13)} (13th).</p>`
     : `<p class="small" style="margin:0">WAB tracking began ${esc(wabStart)}${firstWab ? "" : " (the next committee release)"}.  This week's snapshot was frozen before then and is never recomputed, so it has no WAB column.</p>`;
-  const rowFor = t => {
-    const c = crank[t], o = orank[t], L = ln(t), d = c && o ? c - o : null;
-    const dtxt = !o ? `<span class="ddn">Out</span>` : !c ? `<span class="dup">In ours only</span>` : d > 0 ? `<span class="dup">▲ ${d}</span>` : d < 0 ? `<span class="ddn">▼ ${-d}</span>` : "—";
-    const wtd = !W.wab ? "" : `<td class="num">${L && L.wab_rank ? L.wab_rank : "—"}</td><td class="num">${L && typeof L.wab === "number" ? (L.wab > 0 ? "+" : L.wab < 0 ? "−" : "") + fmt(Math.abs(L.wab), 2) : ""}</td>`;
-    return `<tr><td class="num">${c || "—"}</td><td class="who">${esc(nm(t))}</td><td class="num">${L ? esc(L.record) : ""}</td><td class="num">${o || "—"}</td><td class="num">${dtxt}</td>${wtd}</tr>`; };
-  const extra = [...W.ours.filter(t => !crank[t]), ...(W.wab || []).filter(t => !crank[t] && !orank[t])];
-  $("#cfp-side").innerHTML = `<table class="cmp"><tr><th>CFP</th><th>Team</th><th>Record</th><th>Ours</th><th>Delta</th>${W.wab ? "<th>WAB</th><th>WAB value</th>" : ""}</tr>${W.committee.map(rowFor).join("")}${extra.map(rowFor).join("")}</table>`;
-  $("#cfp-side-cap").firstChild.textContent = "Delta is committee rank minus our rank: ▲ means we rank the team higher than the committee does.  “Out” marks a team missing from the other list's Top 25; our extra teams are listed after the committee's 25"
-    + (W.wab ? ", then any team only Wins Above Bubble has in its Top 25.  WAB is that team's Wins Above Bubble rank among all FBS teams, and WAB value is the wins it earned above (+) or below (−) a playoff-bubble team's expected total against the same schedule." : `.  Wins Above Bubble columns start ${wabStart}.`);
+  CFPS.pop = null; if (!W.wab) CFPS.view = "ours";
+  CFPS.wide = $("#cfp-side").getBoundingClientRect().width >= SBS_WIDE;
+  sbsRender();
   const diffs = [...new Set([...W.committee, ...W.ours])]
     .map(t => ({t, c: crank[t] || 26, o: orank[t] || 26})).filter(x => x.c !== x.o)
     .sort((a,b) => Math.abs(b.c - b.o) - Math.abs(a.c - a.o) || a.o - b.o).slice(0, 5);
@@ -965,7 +1153,7 @@ function showTab(k, user){
   if (user) { history.replaceState(null, "", "#"+curTab); window.scrollTo({top:0}); }
   drawAll();
 }
-function drawAll(){ if (curTab==="team") drawTeam(); else if (curTab==="player") drawPlayerAsync(); }
+function drawAll(){ if (curTab==="team") drawTeam(); else if (curTab==="player") drawPlayerAsync(); else if (curTab==="cfp") sbsLayout(); }
 document.querySelector(".tabs").addEventListener("click", e => { const b = e.target.closest("button[data-tab]"); if (b) showTab(b.dataset.tab, true); });
 document.querySelector(".tabs").addEventListener("keydown", e => {
   if (e.key!=="ArrowRight" && e.key!=="ArrowLeft") return;

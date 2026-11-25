@@ -195,8 +195,16 @@ season matches.
   time from the stored rows); Playoff carries a week picker over the frozen
   `data/cfp.json` snapshots and never recomputes a stored week.  From 2026
   Week 13 a snapshot carries a Wins Above Bubble Top 25 shown as a third
-  ranking (side-table columns + its own agreement line); earlier weeks say
-  "WAB tracking began Week 13" instead of showing empty columns.  Bias carries
+  ranking (rationale pop-ups + its own agreement line); earlier weeks say
+  "WAB tracking began Week 13".  Side by Side (`#cfp-side`, spec
+  `docs/claude-spec-side-by-side.md`) is ranked lists joined by SVG connector
+  lines (red = the left list ranks the team higher, green = lower, blue =
+  equal; NR counts as 26), a conference pill per entry (`conf` per week from
+  `build_cfp.py`), a Δ column (CFP minus that list) and a per-team rationale
+  pop-up generated from the stored line.  The presentation follows the
+  section's measured width: under 920px (and in jsdom) two lists, plus a slim
+  column and swap button to WAB on a WAB week; 920px and up on a WAB week,
+  CFP, ours and WAB at once.  WAB-only teams are named in the caption.  Bias carries
   the same week picker; a snapshot stored after 2026-11-21 freezes
   `srs_top25` and a `srs_rank` per line (lines cover committee ∪ ours ∪ WAB
   ∪ SRS Top 25), and earlier weeks say "Bias tracking began <first bias
