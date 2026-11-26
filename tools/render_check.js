@@ -34,6 +34,18 @@ const results = []; let failed = 0;
 const ok = (cond, what) => { results.push(`${cond ? "PASS" : "FAIL"}  ${what}`); if (!cond) failed++; return cond; };
 const BIAS_TREND = M => (M.bias || {}).trend || {rows: []};
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+// Async steps (an add fetches that pick's rows, then renders) wait for the rendered state, not a fixed clock:
+// poll fn every 50 ms; on timeout record a failed check naming what was awaited and the state found, then go on.
+async function waitFor(fn, what, timeoutMs = 5000, found = () => "") {
+  const t0 = Date.now();
+  for (;;) {
+    let v = false; try { v = fn(); } catch (e) {}
+    if (v) return true;
+    if (Date.now() - t0 >= timeoutMs) { let f = ""; try { f = found(); } catch (e) { f = `(state unreadable: ${e.message})`; }
+      ok(false, `waited ${timeoutMs} ms for ${what}; found ${f}`); return false; }
+    await sleep(50);
+  }
+}
 
 async function load() {
   if (live) { const r = await fetch(target); if (!r.ok) throw new Error(`GET ${target}: ${r.status}`); return await r.text(); }
@@ -133,6 +145,10 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
   for (const theme of ["light", "dark"]) {
     const { dom, errors } = await run(html, theme);
     const w = dom.window, doc = w.document, $ = s => doc.querySelector(s);
+    const teamAt = n => () => w.CF_CHECK.state().TS.sel.length === n && rowsOf(doc, "#team-table").length === n;
+    const teamFound = () => `${w.CF_CHECK.state().TS.sel.length} selected, ${rowsOf(doc, "#team-table").length} rows, cap message "${$("#team-cap").textContent}"`;
+    const playerAt = (pos, n) => () => w.CF_CHECK.state().PS[pos].sel.length === n && rowsOf(doc, "#player-table").length === n;
+    const playerFound = pos => () => `${w.CF_CHECK.state().PS[pos].sel.length} selected, ${rowsOf(doc, "#player-table").length} rows, cap message "${$("#player-cap").textContent}"`;
     const type = async (sel, v) => { const q = $(sel); q.dispatchEvent(new w.Event("focus")); q.value = v; q.dispatchEvent(new w.Event("input")); await sleep(20); };
     ok(doc.documentElement.getAttribute("data-theme") === theme, `[${theme}] theme applied before paint (data-theme=${doc.documentElement.getAttribute("data-theme")})`);
     const before = doc.documentElement.getAttribute("data-theme"); $("#theme-toggle").click();
@@ -174,25 +190,26 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
     // add a third team (current season), then a cross-season pick of a default school
     await type("#team-q", "");
     const third = [...doc.querySelectorAll("#team-res [data-add]")].find(b => !b.disabled);
-    third.click(); await sleep(150);
+    third.click(); await waitFor(teamAt(T.defaults.length + 1), `[${theme}] the third team to render`, 5000, teamFound);
     ok(rowsOf(doc, "#team-table").length === T.defaults.length + 1 && $("#team-chart").querySelectorAll("path").length >= 3, `[${theme}] 3-team selection: ${$("#team-title").textContent}`);
     doc.querySelector('#team-season [data-k="' + M.site.seasons[0] + '"]').click();
     const dname = T.index[M.site.seasons[0]].find(e => T.defaults.some(k => name(k).startsWith(e.name + " ")));
     await type("#team-q", dname.name);
     const cross = [...doc.querySelectorAll("#team-res [data-add]")].find(b => b.dataset.add === dname.k);
-    if (ok(!!cross, `[${theme}] picker finds ${dname.name} ${dname.season}`)) { cross.click(); await sleep(150); }
+    if (ok(!!cross, `[${theme}] picker finds ${dname.name} ${dname.season}`)) { cross.click(); await waitFor(teamAt(T.defaults.length + 2), `[${theme}] the cross-season team to render`, 5000, teamFound); }
     const t4 = $("#team-title").textContent;
     ok(rowsOf(doc, "#team-table").length === T.defaults.length + 2 && t4.includes(`${dname.name} ${dname.season}`) && doc.querySelectorAll("#team-logs details").length === T.defaults.length + 2, `[${theme}] cross-season selection renders table, chart and logs: ${t4}`);
     lc = leaderCheck(); ok(lc.bad === 0 && lc.swatches === lc.n, `[${theme}] leader boxes still correct with ${lc.n} teams`);
     // fill to the cap, then one more
     doc.querySelector(`#team-season [data-k="${M.site.season}"]`).click();
     for (let guard = 0; w.CF_CHECK.state().TS.sel.length < CAP.teams && guard < 20; guard++) {
-      await type("#team-q", ""); const b = [...doc.querySelectorAll("#team-res [data-add]")].find(b => !b.disabled); if (!b) break; b.click(); await sleep(120);
+      await type("#team-q", ""); const b = [...doc.querySelectorAll("#team-res [data-add]")].find(b => !b.disabled); if (!b) break;
+      const n = w.CF_CHECK.state().TS.sel.length; b.click(); await waitFor(teamAt(n + 1), `[${theme}] team ${n + 1} of the cap to render`, 5000, teamFound);
     }
     ok(rowsOf(doc, "#team-table").length === CAP.teams, `[${theme}] ${CAP.teams} teams selected (the cap)`);
     await type("#team-q", ""); const over = [...doc.querySelectorAll("#team-res [data-add]")].find(b => !b.disabled); over.click(); await sleep(60);
     ok(rowsOf(doc, "#team-table").length === CAP.teams && /readable with up to/.test($("#team-cap").textContent), `[${theme}] cap holds at ${CAP.teams}: "${$("#team-cap").textContent.slice(0, 70)}…"`);
-    $("#team-picks [data-x]").click(); await sleep(30);
+    $("#team-picks [data-x]").click(); await waitFor(teamAt(CAP.teams - 1), `[${theme}] × to remove a team`, 5000, teamFound);
     ok(rowsOf(doc, "#team-table").length === CAP.teams - 1 && !$("#team-cap").textContent, `[${theme}] × removes a team and clears the cap message`);
     const chip = $("#team-chips .pc"); chip.click(); ok(chip.getAttribute("aria-pressed") === "false", `[${theme}] team chip toggles off`); chip.click();
     const all = [...doc.querySelectorAll("#team-chips .pc")]; all.forEach(b => b.click());
@@ -221,19 +238,20 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
       const cats = [...doc.querySelectorAll("#player-compare details.cat > summary")].map(s => s.textContent.replace("▾", "").trim());
       ok(cats.join("|") === "Selected players|National Top 3", `[${theme}] ${U} chip groups: ${cats.join(", ")}`);
       const n0 = $("#player-chart").querySelectorAll("path").length, nt = $("#player-nrtop-pills .pc");
-      if (ok(!!nt, `[${theme}] ${U} National Top 3 chips present`)) { nt.click(); await sleep(200); ok($("#player-chart").querySelectorAll("path").length > n0, `[${theme}] ${U} National Top 3 chip adds a gray line`); nt.click(); await sleep(50); }
+      if (ok(!!nt, `[${theme}] ${U} National Top 3 chips present`)) { nt.click(); await waitFor(() => $("#player-chart").querySelectorAll("path").length > n0, `[${theme}] ${U} National Top 3 line to draw`, 5000, () => `${$("#player-chart").querySelectorAll("path").length} chart paths (was ${n0})`); ok($("#player-chart").querySelectorAll("path").length > n0, `[${theme}] ${U} National Top 3 chip adds a gray line`); nt.click(); await sleep(50); }
       const pc = $("#player-chips .pc"); pc.click(); ok(pc.getAttribute("aria-pressed") === "false", `[${theme}] ${U} player chip toggles`); pc.click();
       // cross-season pick: the first search hit from an earlier season
       await type("#player-q", "a");
       const old = [...doc.querySelectorAll("#player-res [data-add]")].find(b => !b.disabled && !b.dataset.add.startsWith(String(M.site.season)));
-      if (ok(!!old, `[${theme}] ${U} search finds an earlier-season player`)) { old.click(); await sleep(200); }
+      if (ok(!!old, `[${theme}] ${U} search finds an earlier-season player`)) { old.click(); await waitFor(playerAt(pos, 3), `[${theme}] ${U} cross-season player to render`, 5000, playerFound(pos)); }
       ok(rowsOf(doc, "#player-table").length === 3 && doc.querySelectorAll("#player-logs details").length === 3, `[${theme}] ${U} cross-season pick renders: ${$("#player-title").textContent}`);
       for (let guard = 0; w.CF_CHECK.state().PS[pos].sel.length < CAP.players && guard < 20; guard++) {
-        await type("#player-q", "e"); const b = [...doc.querySelectorAll("#player-res [data-add]")].find(b => !b.disabled); if (!b) break; b.click(); await sleep(150);
+        await type("#player-q", "e"); const b = [...doc.querySelectorAll("#player-res [data-add]")].find(b => !b.disabled); if (!b) break;
+        const n = w.CF_CHECK.state().PS[pos].sel.length; b.click(); await waitFor(playerAt(pos, n + 1), `[${theme}] ${U} player ${n + 1} of the cap to render`, 5000, playerFound(pos));
       }
       await type("#player-q", "e"); const b = [...doc.querySelectorAll("#player-res [data-add]")].find(b => !b.disabled); b.click(); await sleep(60);
       ok(rowsOf(doc, "#player-table").length === CAP.players && /readable with up to/.test($("#player-cap").textContent), `[${theme}] ${U} cap holds at ${CAP.players}`);
-      $("#player-picks [data-x]").click(); await sleep(30);
+      $("#player-picks [data-x]").click(); await waitFor(playerAt(pos, CAP.players - 1), `[${theme}] ${U} × to remove a player`, 5000, playerFound(pos));
       ok(rowsOf(doc, "#player-table").length === CAP.players - 1, `[${theme}] ${U} × removes a player`);
     }
     /* ---------------- Conferences tab */
