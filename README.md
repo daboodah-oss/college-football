@@ -31,7 +31,7 @@ validation, design system and chart engine are theirs; see AGENTS.md for what di
   TD, passer rating, completion %, attempts; RB rushing yards, TD, yards per carry, yards per game,
   carries; WR receptions, receiving yards, TD, yards per catch, yards per game.  Charts per game or
   running total (QB also INT), plus gray **National Top 3** reference lines for the viewed stat and a
-  chosen season (solid, dashed, dotted for #1, #2, #3; chips start off), game logs, Method and sources.
+  chosen season (solid, dashed, dotted for #1, #2, #3; chips start off, a Clear button turns them all off), game logs, Method and sources.
 - **Conferences:** per-season conference head-to-head: a non-conference standings table (W-L and win %,
   FCS games included, with a vs-FCS column) and a full conference-vs-conference matrix, counted from
   the same stored game rows as the Team tab (deduped by event id; an opponent with no FBS membership is
@@ -241,7 +241,7 @@ with the build's).
 
 `tools/render_check.js` executes the built page in jsdom (light and dark theme) and fails on any script
 error or empty section; it checks the default comparison, the page-vs-build totals, every leader box, a
-3-team and a cross-season pick, the caps and their message, chips, the empty state, the sticky tooltip,
+3-team and a cross-season pick, the caps and their message, chips, Clear all on the team and player picks and Clear on the National Top 3, the empty state, the sticky tooltip,
 rank order in the picker, each Player position with its defaults, National Top 3 and a cross-season pick,
 the Playoff and Bias tabs (a bias week's 25 team rows, conference rows, summary and verdict; a pre-bias
 week's "Bias tracking began" line with no tables), and scans the page script for const/let helpers called before their definition (the TDZ bug that once

@@ -91,7 +91,10 @@ section{padding-top:40px;scroll-margin-top:48px}
 .pills{display:flex;flex-wrap:wrap;gap:8px;padding:2px 14px 12px}
 .pc{font:500 13px/1.3 var(--body);color:var(--ink);background:var(--surface-2);border:1px solid var(--rule);border-radius:999px;padding:7px 14px;cursor:pointer;min-height:36px}
 .pc .pu{border-bottom:3px solid;padding-bottom:1px}
-.pc[aria-pressed="false"]{opacity:.4}
+.pc[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}  /* selected means filled (toggle pills only) */
+.clearbtn{font:600 13px/1.3 var(--body);color:var(--ink);background:transparent;border:1px solid var(--ink);border-radius:999px;padding:7px 14px;cursor:pointer;min-height:36px}
+.clearbtn:hover{background:var(--surface-2)}
+.clearbtn[hidden]{display:none}
 .nrnote{margin:0;padding:0 14px 10px;max-width:75ch}
 /* pickers (search + results + removable pills) */
 .picker{margin-top:16px}
@@ -527,7 +530,7 @@ function renderTeamShell(){
   q.addEventListener("focus", () => { teamFile().catch(()=>{}); teamSearch(); });  // start the download while the reader types
   q.addEventListener("input", teamSearch);
   $("#team-res").addEventListener("click", e => { const b = e.target.closest("[data-add]"); if (b && !b.disabled) addTeam(b.dataset.add); });
-  $("#team-picks").addEventListener("click", e => { const b = e.target.closest("[data-x]"); if (b) removeTeam(b.dataset.x); });
+  $("#team-picks").addEventListener("click", e => { if (e.target.closest("[data-clear]")) return clearTeams(); const b = e.target.closest("[data-x]"); if (b) removeTeam(b.dataset.x); });
   $("#team-chips").addEventListener("click", e => {
     const b = e.target.closest(".pc[data-k]"); if (!b) return;
     const k = b.dataset.k, on = !TS.off.has(k); on ? TS.off.add(k) : TS.off.delete(k); b.setAttribute("aria-pressed", String(!on)); drawTeam();
@@ -555,11 +558,13 @@ async function addTeam(k){
   $("#team-q").value = ""; teamSearch(); updateTeam();
 }
 function removeTeam(k){ TS.sel = TS.sel.filter(s => s.k!==k); TS.off.delete(k); $("#team-cap").textContent = ""; teamSearch(); updateTeam(); }
+function clearTeams(){ TS.sel = []; TS.off.clear(); $("#team-cap").textContent = ""; teamSearch(); updateTeam(); }
 function updateTeam(){
   const S = teamSel();
   $("#team-title").textContent = S.length ? S.map(s => tLab(s.e)).join(" vs ") : "Pick a team";
   $("#team-lede").textContent = S.length ? S.map(s => { const t = teamTotals(s.rows); return `${tLab(s.e)}${s.e.ap?` (AP #${s.e.ap})`:""} is ${t.record} in ${t.games} game${t.games>1?"s":""}, scoring ${fmt(t.pf)} and allowing ${fmt(t.pa)}.`; }).join("  ") : "Search for any FBS team in any season below, and add up to " + CAPS.teams + ".";
-  $("#team-picks").innerHTML = S.map(s => `<span class="pc nrpick"><span class="pn">${un(s.slot, `${esc(s.e.name)} ${s.e.season}`)}</span><button type="button" class="nr-x" data-x="${s.k}" aria-label="Remove ${esc(tLab(s.e))}">×</button></span>`).join("");
+  $("#team-picks").innerHTML = S.map(s => `<span class="pc nrpick"><span class="pn">${un(s.slot, `${esc(s.e.name)} ${s.e.season}`)}</span><button type="button" class="nr-x" data-x="${s.k}" aria-label="Remove ${esc(tLab(s.e))}">×</button></span>`).join("")
+    + (S.length ? `<button type="button" class="clearbtn" data-clear aria-label="Clear all team picks">Clear all</button>` : "");
   // head to head: one row per team-season, one column per stat (the reports' Team set, in order)
   if (!S.length) $("#team-table").innerHTML = `<p class="caption empty">No team picked yet.</p>`;
   else {
@@ -675,14 +680,16 @@ function renderPlayerShell(){
   q.addEventListener("focus", () => SEASONS.forEach(s => logsFile(s).catch(()=>{})));  // start the downloads while the reader types
   q.addEventListener("input", playerSearch);
   $("#player-res").addEventListener("click", e => { const b = e.target.closest("[data-add]"); if (b && !b.disabled) addPlayer(b.dataset.add); });
-  $("#player-picks").addEventListener("click", e => { const b = e.target.closest("[data-x]"); if (b) removePlayer(b.dataset.x); });
+  $("#player-picks").addEventListener("click", e => { if (e.target.closest("[data-clear]")) return clearPlayers(); const b = e.target.closest("[data-x]"); if (b) removePlayer(b.dataset.x); });
   $("#player-chips").addEventListener("click", e => {
     const b = e.target.closest(".pc[data-k]"); if (!b) return; const st = PS[PS.pos];
     const k = b.dataset.k, on = !st.off.has(k); on ? st.off.add(k) : st.off.delete(k); b.setAttribute("aria-pressed", String(!on)); drawPlayer();
   });
   $("#player-nrtop").addEventListener("click", e => {
-    const b = e.target.closest("[data-nrtop]"); if (!b) return; const st = PS[PS.pos];
-    const i = +b.dataset.nrtop, on = st.top.has(i); on ? st.top.delete(i) : st.top.add(i); b.setAttribute("aria-pressed", String(!on)); drawPlayerAsync();
+    const st = PS[PS.pos], clr = $("#player-nrtop-pills [data-nrclear]");
+    if (e.target.closest("[data-nrclear]")) { st.top.clear(); $("#player-nrtop-pills").querySelectorAll("[data-nrtop]").forEach(x => x.setAttribute("aria-pressed", "false")); clr.hidden = true; drawPlayerAsync(); return; }
+    const b = e.target.closest("[data-nrtop]"); if (!b) return;
+    const i = +b.dataset.nrtop, on = st.top.has(i); on ? st.top.delete(i) : st.top.add(i); b.setAttribute("aria-pressed", String(!on)); if (clr) clr.hidden = !st.top.size; drawPlayerAsync();
   });
   playerControls();
 }
@@ -717,14 +724,16 @@ async function addPlayer(k){
   $("#player-q").value = ""; playerSearch(); updatePlayer();
 }
 function removePlayer(k){ const st = PS[PS.pos]; st.sel = st.sel.filter(s => s.k!==k); st.off.delete(k); $("#player-cap").textContent = ""; playerSearch(); updatePlayer(); }
+function clearPlayers(){ const st = PS[PS.pos]; st.sel = []; st.off.clear(); $("#player-cap").textContent = ""; playerSearch(); updatePlayer(); }
 function topRefresh(){  // National Top 3 chips for the viewed stat and season
   const pos = PS.pos, st = PS[pos], pool = PL[pos].pools[st.topSeason] || {}, host = $("#player-nrtop-pills"), note = $("#player-nrtop-note");
   if (pool.status!=="ok") { host.innerHTML = ""; note.textContent = pool.message || "Not collected yet."; return; }
   const b = pool.stats[st.key];
   if (!b) { host.innerHTML = ""; note.textContent = "No national leaderboard for this stat."; return; }
   host.innerHTML = b.top.map((k,i) => { const p = PIDX[pos][k];
-    return `<button type="button" class="pc" data-nrtop="${i}" aria-pressed="${st.top.has(i)}" title="${esc(p.name)}, ${esc(p.team)}"><span class="pu" style="border-bottom-color:var(--field);border-bottom-style:${NRBORDER[i%3]}">${esc(p.name)} ${yr(p.season)}</span></button>`; }).join("");
-  note.innerHTML = `Gray lines.  The top ${b.top.length===3?"three":b.top.length} ${esc(pool.positions.join("/"))} in ${esc(PL[pos].chart.find(c=>c.key===st.key).label.toLowerCase())} on the <a href="${b.source_url}" target="_blank" rel="noopener">cfbstats.com ${st.topSeason} national leaderboard</a> through ${dateFmtY(pool.data_through)}.  Tap a name to draw his line; each is lined up by his own games played.`
+    return `<button type="button" class="pc" data-nrtop="${i}" aria-pressed="${st.top.has(i)}" title="${esc(p.name)}, ${esc(p.team)}"><span class="pu" style="border-bottom-color:var(--field);border-bottom-style:${NRBORDER[i%3]}">${esc(p.name)} ${yr(p.season)}</span></button>`; }).join("")
+    + `<button type="button" class="clearbtn" data-nrclear aria-label="Clear the National Top 3 lines"${st.top.size?"":" hidden"}>Clear</button>`;
+  note.innerHTML = `Gray lines.  The top ${b.top.length===3?"three":b.top.length} ${esc(pool.positions.join("/"))} in ${esc(PL[pos].chart.find(c=>c.key===st.key).label.toLowerCase())} on the <a href="${b.source_url}" target="_blank" rel="noopener">cfbstats.com ${st.topSeason} national leaderboard</a> through ${dateFmtY(pool.data_through)}.  Tap a name to draw his line, and tap a selected name again to remove it; each is lined up by his own games played.`
     + (b.top_dropped.length ? `  Not shown: ${b.top_dropped.map(esc).join(", ")} (game log could not be verified against the leaderboard).` : "");
 }
 const pSel = pos => PS[pos].sel.map(s => ({...s, p: PIDX[pos][s.k], rows: PROWS[pos][s.k] || []}));
@@ -735,7 +744,8 @@ function updatePlayer(){
   const first = P.table[0];
   $("#player-lede").textContent = S.length ? S.map(s => `${pLab(s.p)} (${s.p.team}): ${fmt(s.p.line[first.key])} ${first.label.toLowerCase()} in ${s.p.line.g} games.`).join("  ") : `Search the ${pos.toUpperCase()} pools below and add up to ${CAPS.players}.`;
   $("#player-pool").textContent = `${P.label}: the pool for each season is roughly the top 20 on every cfbstats.com national leaderboard this tab tracks (${P.table.map(t=>t.label.toLowerCase()).join(", ")}), with no team left out.  A pick is a player in one season; the same player in two seasons is two picks.  Up to ${CAPS.players} at once.`;
-  $("#player-picks").innerHTML = S.map(s => `<span class="pc nrpick"><span class="pn">${un(s.slot, `${esc(s.p.name)} ${s.p.season}`)}</span><button type="button" class="nr-x" data-x="${s.k}" aria-label="Remove ${esc(pLab(s.p))}">×</button></span>`).join("");
+  $("#player-picks").innerHTML = S.map(s => `<span class="pc nrpick"><span class="pn">${un(s.slot, `${esc(s.p.name)} ${s.p.season}`)}</span><button type="button" class="nr-x" data-x="${s.k}" aria-label="Remove ${esc(pLab(s.p))}">×</button></span>`).join("")
+    + (S.length ? `<button type="button" class="clearbtn" data-clear aria-label="Clear all ${esc(P.noun)} picks">Clear all</button>` : "");
   if (!S.length) $("#player-table").innerHTML = `<p class="caption empty">No player picked yet.</p>`;
   else {
     const tots = S.map(s => playerTotals(pos, s.p.line)), L = P.table.map(t => lead(tots.map(x => x[t.key]), t.dp, true));
