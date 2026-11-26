@@ -188,7 +188,15 @@ details.logd .tscroll{padding:0 14px 14px}
 .swipe{display:none}
 @media (max-width:820px){ .swipe{display:inline} }
 .empty{padding:20px 4px}
-@media (max-width:420px){ table.cmp td.v span{font-size:17px;padding:1px 4px} table.cmp th,table.cmp td{padding:7px 5px} }
+@media (max-width:560px){
+  /* phones: tables run smaller and tighter, and the name cell wraps its season/team line under the name */
+  table.cmp,table.log{font-size:13px}
+  table.cmp th,table.cmp td{padding:5px 6px}
+  table.log th,table.log td{padding:5px 6px}
+  table.cmp td.v span{font-size:17px;padding:1px 4px}
+  table.cmp td.who{white-space:normal}
+  table.cmp td.who .yr{display:block;margin-left:0;font-size:12px}
+}
 /* Conferences matrix + Playoff scorecard */
 table.mx td{text-align:center}
 table.mx td:first-child{text-align:left}
