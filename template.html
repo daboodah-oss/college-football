@@ -65,7 +65,7 @@ nav.jump a{font-family:var(--display);font-weight:600;text-transform:uppercase;l
 nav.jump a:hover{background:var(--surface-2);color:var(--ink)}
 
 section{padding-top:40px;scroll-margin-top:48px}
-.sec-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:16px;border-bottom:1px solid var(--rule);padding-bottom:10px}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:16px;background:var(--surface-2);border:1px solid var(--rule);border-radius:4px;padding:10px 14px}
 .fresh{font-size:12.5px;color:var(--muted);margin:6px 0 0}
 .fresh::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--good);margin-right:6px;vertical-align:1px}
 .fresh.stale::before{background:#c98500}
@@ -145,8 +145,9 @@ section{padding-top:40px;scroll-margin-top:48px}
 /* tables */
 .tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 table.log{width:100%;border-collapse:collapse;font-size:14px;min-width:640px}
-table.log th,table.log td{padding:7px 8px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap}
-table.log th{font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;color:var(--muted);font-weight:600}
+table.log th,table.log td{border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap}
+table.log td{padding:5px 8px}
+table.log th{padding:7px 8px;background:var(--surface-2);font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;color:var(--muted);font-weight:600}
 table.log th:nth-child(-n+4),table.log td:nth-child(-n+4){text-align:left}
 table.log tfoot td{font-weight:700;border-top:2px solid var(--ink);border-bottom:0}
 .lvl{font-size:11px;font-weight:700;letter-spacing:.06em;padding:1px 5px;border-radius:3px;border:1px solid var(--rule);color:var(--ink-2)}
@@ -173,9 +174,11 @@ footer{margin-top:36px;padding-top:14px;border-top:3px solid var(--ink);font-siz
 .lsw{display:inline-block;vertical-align:middle;flex:none}
 .un{border-bottom:3px solid;padding-bottom:1px}
 table.cmp{width:100%;border-collapse:collapse;font-size:14px}
-table.cmp th,table.cmp td{padding:8px 8px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap;vertical-align:middle}
-table.cmp th{font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;color:var(--muted);font-weight:600}
+table.cmp th,table.cmp td{border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap;vertical-align:middle}
+table.cmp td{padding:6px 8px}
+table.cmp th{padding:8px 8px;background:var(--surface-2);font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;color:var(--muted);font-weight:600}
 table.cmp th:first-child,table.cmp td:first-child{text-align:left;position:sticky;left:0;background:var(--surface);z-index:1}
+table.cmp th:first-child{background:var(--surface-2)}
 table.cmp td.who{font-weight:600}
 table.cmp td.who .yr{color:var(--muted);font-weight:400;margin-left:4px}
 table.cmp td.v span{display:inline-block;padding:1px 6px;border-radius:4px;font-family:var(--display);font-size:20px;font-weight:600}
@@ -193,8 +196,10 @@ details.logd .tscroll{padding:0 14px 14px}
 @media (max-width:560px){
   /* phones: tables run smaller and tighter, and the name cell wraps its season/team line under the name */
   table.cmp,table.log{font-size:13px}
-  table.cmp th,table.cmp td{padding:5px 6px}
-  table.log th,table.log td{padding:5px 6px}
+  table.cmp th{padding:6px 6px}
+  table.cmp td{padding:4px 6px}
+  table.log th{padding:6px 6px}
+  table.log td{padding:4px 6px}
   table.cmp td.v span{font-size:17px;padding:1px 4px}
   table.cmp td.who{white-space:normal}
   table.cmp td.who .yr{display:block;margin-left:0;font-size:12px}
