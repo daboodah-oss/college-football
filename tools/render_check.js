@@ -141,6 +141,7 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
   const name = k => { const [id, s] = k.split("-"); return (T.index[s].find(e => e.k === k) || {}).name + " " + s; };
 
   let sections = 0, populated = 0, errorsTotal = 0;
+  const visible = el => !!el && !el.hidden && !el.closest("[hidden]");
   const sec = (doc, s, what) => { sections++; if (ok(nonEmpty(doc, s), what)) populated++; };
   for (const theme of ["light", "dark"]) {
     const { dom, errors } = await run(html, theme);
@@ -224,6 +225,13 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
     ok(tip && !tip.hidden, `[${theme}] tooltip stays after pointerleave`);
     doc.body.dispatchEvent(new w.MouseEvent("pointerdown", { bubbles: true }));
     ok(tip && tip.hidden, `[${theme}] tap outside any chart dismisses the tooltip`);
+    // Clear all (spec docs/claude-spec-clear-reset.md): visible with picks, one tap empties the selection
+    const tClr = $("#team-picks [data-clear]");
+    if (ok(visible(tClr) && /Clear all/.test(tClr.textContent), `[${theme}] team "Clear all" visible with ${w.CF_CHECK.state().TS.sel.length} picks`)) {
+      tClr.click(); await waitFor(teamAt(0), `[${theme}] team Clear all to empty the selection`, 5000, teamFound);
+      ok(w.CF_CHECK.state().TS.sel.length === 0 && w.CF_CHECK.state().TS.off.size === 0 && /No team picked yet/.test($("#team-table").textContent) && /No team picked yet/.test($("#team-chart").textContent) && !$("#team-picks [data-clear]"),
+        `[${theme}] team Clear all leaves 0 selected and the empty state showing ("${$("#team-table").textContent.trim()}")`);
+    }
 
     /* ---------------- Player tab */
     doc.querySelector('.tabs [data-tab="player"]').click(); await sleep(150);
@@ -239,6 +247,17 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
       ok(cats.join("|") === "Selected players|National Top 3", `[${theme}] ${U} chip groups: ${cats.join(", ")}`);
       const n0 = $("#player-chart").querySelectorAll("path").length, nt = $("#player-nrtop-pills .pc");
       if (ok(!!nt, `[${theme}] ${U} National Top 3 chips present`)) { nt.click(); await waitFor(() => $("#player-chart").querySelectorAll("path").length > n0, `[${theme}] ${U} National Top 3 line to draw`, 5000, () => `${$("#player-chart").querySelectorAll("path").length} chart paths (was ${n0})`); ok($("#player-chart").querySelectorAll("path").length > n0, `[${theme}] ${U} National Top 3 chip adds a gray line`); nt.click(); await sleep(50); }
+      // National Top 3 Clear: a tapped pill reads pressed and adds its gray line; Clear turns every pill off
+      const tops = [...doc.querySelectorAll("#player-nrtop-pills [data-nrtop]")], nClr = $("#player-nrtop-pills [data-nrclear]");
+      if (ok(tops.length > 0 && !!nClr && !visible(nClr), `[${theme}] ${U} National Top 3 Clear hidden while all ${tops.length} pills are off`)) {
+        tops.forEach(b => b.click());
+        await waitFor(() => $("#player-chart").querySelectorAll("path").length > n0, `[${theme}] ${U} National Top 3 lines to draw`, 5000, () => `${$("#player-chart").querySelectorAll("path").length} chart paths (was ${n0})`);
+        ok(tops.every(b => b.getAttribute("aria-pressed") === "true") && $("#player-chart").querySelectorAll("path").length > n0 && visible(nClr), `[${theme}] ${U} National Top 3 pills on: aria-pressed="true", gray lines drawn, Clear visible`);
+        nClr.click();
+        await waitFor(() => $("#player-chart").querySelectorAll("path").length === n0, `[${theme}] ${U} National Top 3 gray lines to go`, 5000, () => `${$("#player-chart").querySelectorAll("path").length} chart paths (want ${n0})`);
+        ok(tops.every(b => b.getAttribute("aria-pressed") === "false") && w.CF_CHECK.state().PS[pos].top.size === 0 && $("#player-chart").querySelectorAll("path").length === n0 && !visible(nClr), `[${theme}] ${U} National Top 3 Clear turns every pill off and the gray lines are gone`);
+      }
+      ok(/tap a selected name again to remove it/.test($("#player-nrtop-note").textContent), `[${theme}] ${U} National Top 3 note says a second tap removes a name`);
       const pc = $("#player-chips .pc"); pc.click(); ok(pc.getAttribute("aria-pressed") === "false", `[${theme}] ${U} player chip toggles`); pc.click();
       // cross-season pick: the first search hit from an earlier season
       await type("#player-q", "a");
@@ -253,6 +272,13 @@ const rowsOf = (doc, sel) => [...doc.querySelectorAll(`${sel} table.cmp tr`)].sl
       ok(rowsOf(doc, "#player-table").length === CAP.players && /readable with up to/.test($("#player-cap").textContent), `[${theme}] ${U} cap holds at ${CAP.players}`);
       $("#player-picks [data-x]").click(); await waitFor(playerAt(pos, CAP.players - 1), `[${theme}] ${U} × to remove a player`, 5000, playerFound(pos));
       ok(rowsOf(doc, "#player-table").length === CAP.players - 1, `[${theme}] ${U} × removes a player`);
+      // Clear all, last for this position (nothing later reads this position's picks)
+      const pClr = $("#player-picks [data-clear]");
+      if (ok(visible(pClr) && /Clear all/.test(pClr.textContent), `[${theme}] ${U} "Clear all" visible with ${w.CF_CHECK.state().PS[pos].sel.length} picks`)) {
+        pClr.click(); await waitFor(playerAt(pos, 0), `[${theme}] ${U} Clear all to empty the selection`, 5000, playerFound(pos));
+        ok(w.CF_CHECK.state().PS[pos].sel.length === 0 && w.CF_CHECK.state().PS[pos].off.size === 0 && /No player picked yet/.test($("#player-table").textContent) && !$("#player-picks [data-clear]"),
+          `[${theme}] ${U} Clear all leaves 0 selected and the empty state showing ("${$("#player-table").textContent.trim()}")`);
+      }
     }
     /* ---------------- Conferences tab */
     doc.querySelector('.tabs [data-tab="conf"]').click(); await sleep(100);

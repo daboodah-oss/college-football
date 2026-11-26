@@ -115,6 +115,11 @@ season matches.
     neighbor): page copy, code comments, docs, specs, handoffs and commit
     messages, even when quoting or extending older text.  Jeff's standing
     preference, 2026-11-25.
+13. **Every filter or selection gets a clear or a reset.**  Jeff's standing
+    design rule, 2026-11-26: every filter or selection ships with a way to
+    clear it or reset it, or it does not ship.  A new picker, toggle group or
+    filter lands with its Clear / Reset control and a render-check assertion
+    that the control works (spec `docs/claude-spec-clear-reset.md`).
 
 ## File map
 
@@ -234,9 +239,16 @@ season matches.
   themes.  A removed pick frees its slot; the survivors keep their colors.
   National Top 3 lines are gray (`--field`), solid / dashed / dotted for #1 / #2
   / #3, chips off until tapped, chosen per stat and per season (a season toggle
-  inside the group).
+  inside the group).  A "Clear" button in the group, shown while any Top 3
+  pill is on, turns all three off; the note says a second tap removes a name.
+- The team and player picks rows end with a labeled "Clear all" button while
+  the selection is non-empty: one tap empties it (and its line-off state) and
+  the empty states show.  The per-pick × stays.
 - Chips and pills show the name (+ season) only, underlined in the line's color
-  and style (`.un` / `.pu`); ON is full opacity, OFF is dimmed; all off shows a
+  and style (`.un` / `.pu`).  A toggle pill (anything carrying `aria-pressed`:
+  the chart line chips and the National Top 3 pills) shows ON filled (ink
+  background, page-color text, like a selected `.seg` button) and OFF as the
+  normal pill; the underline stays visible in both.  All off shows a
   friendly empty state.  Tables keep their line swatches; table numbers are in
   ink, not the series color.
 - Chart tooltips are sticky: a tap or click in a chart pins the pop-up; a tap
