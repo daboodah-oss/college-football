@@ -1,5 +1,4 @@
-[registry] 2024: sealed (134 teams)
-[registry] 2025: sealed (136 teams)
+quick check: new final 2026-11-26 TCU Horned Frogs at Texas Tech Red Raiders
 STORED registry 2026: 138 of 138 cfbstats teams joined to ESPN
 [registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids
 STORED AP Top 25 2026-11-22 1 Georgia, 2 Utah, 3 Notre Dame, 4 Miami, 5 Texas ...
@@ -117,13 +116,15 @@ REFUSED: team-season Ohio 2026: ESPN box scores disagree with cfbstats season to
 [team] Southern Miss 2026: no new games; still matches cfbstats
 [team] Stanford 2026: no new games; still matches cfbstats
 [team] Syracuse 2026: no new games; still matches cfbstats
-[team] TCU 2026: no new games; still matches cfbstats
+STORED team TCU 2026: 12 games
+[team] TCU 2026: 12 games; not cross-checked yet: cfbstats is through 2026-11-24, ESPN's latest game is 2026-11-26
 [team] Temple 2026: no new games; still matches cfbstats
 [team] Tennessee 2026: no new games; still matches cfbstats
 [team] Texas 2026: no new games; still matches cfbstats
 [team] Texas A&M 2026: no new games; still matches cfbstats
 [team] Texas State 2026: no new games; still matches cfbstats
-[team] Texas Tech 2026: no new games; still matches cfbstats
+STORED team Texas Tech 2026: 12 games
+[team] Texas Tech 2026: 12 games; not cross-checked yet: cfbstats is through 2026-11-24, ESPN's latest game is 2026-11-26
 [team] Toledo 2026: no new games; still matches cfbstats
 [team] Troy 2026: no new games; still matches cfbstats
 [team] Tulane 2026: no new games; still matches cfbstats
@@ -151,53 +152,12 @@ REFUSED: team-season Virginia Tech 2026: ESPN box scores disagree with cfbstats 
 [team] Wisconsin 2026: no new games; still matches cfbstats
 [team] Wyoming 2026: no new games; still matches cfbstats
 [team] 2026: 138 registry teams; 0 sealed, 129 collected, 9 refused by the validator, 0 failed
-REFUSED: team-season Army 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (3194, 3314), 'pass_yds': (969, 1051), 'total_yds': (4163, 4365), 'to_gained': (14, 16)} (ESPN, cfbstats)
-[team] Army 2025 REFUSED by validator
-REFUSED: team-season East Carolina 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2280, 2292)} (ESPN, cfbstats)
-[team] East Carolina 2025 REFUSED by validator
-REFUSED: team-season UL Monroe 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1929, 1957), 'total_yds': (3854, 3882)} (ESPN, cfbstats)
-[team] UL Monroe 2025 REFUSED by validator
-REFUSED: team-season NC State 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1905, 1891)} (ESPN, cfbstats)
-[team] NC State 2025 REFUSED by validator
-REFUSED: team-season Navy 2025: ESPN box scores disagree with cfbstats season totals {'rush_yds': (3523, 3713), 'pass_yds': (1608, 1690), 'total_yds': (5131, 5403), 'to_lost': (12, 14)} (ESPN, cfbstats)
-[team] Navy 2025 REFUSED by validator
-[team] 2025: 136 registry teams; 131 sealed, 0 collected, 5 refused by the validator, 0 failed
-REFUSED: team-season Arizona 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1270, 1279)} (ESPN, cfbstats)
-[team] Arizona 2024 REFUSED by validator
-REFUSED: team-season Central Michigan 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2027, 1993), 'total_yds': (3988, 3954)} (ESPN, cfbstats)
-[team] Central Michigan 2024 REFUSED by validator
-REFUSED: team-season Louisiana Tech 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1430, 1420)} (ESPN, cfbstats)
-[team] Louisiana Tech 2024 REFUSED by validator
-REFUSED: team-season Middle Tennessee 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1086, 1068)} (ESPN, cfbstats)
-[team] Middle Tennessee 2024 REFUSED by validator
-REFUSED: team-season Northwestern 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1190, 1182)} (ESPN, cfbstats)
-[team] Northwestern 2024 REFUSED by validator
-REFUSED: team-season Old Dominion 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2633, 2517), 'total_yds': (4948, 4832)} (ESPN, cfbstats)
-[team] Old Dominion 2024 REFUSED by validator
-REFUSED: team-season San José State 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1138, 1145)} (ESPN, cfbstats)
-[team] San José State 2024 REFUSED by validator
-[team] box 2024-12-26 Pittsburgh (event 401677180, team 2649): ESPN totalYards 416 != rushing 80 + passing 351; player lines agree with the components, total stored as 431
-REFUSED: team-season Toledo 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (1524, 1504)} (ESPN, cfbstats)
-[team] Toledo 2024 REFUSED by validator
-REFUSED: team-season UTSA 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2197, 2180)} (ESPN, cfbstats)
-[team] UTSA 2024 REFUSED by validator
-REFUSED: team-season West Virginia 2024: ESPN box scores disagree with cfbstats season totals {'rush_yds': (2536, 2518)} (ESPN, cfbstats)
-[team] West Virginia 2024 REFUSED by validator
-[team] 2024: 134 registry teams; 124 sealed, 0 collected, 10 refused by the validator, 0 failed
 [natref] 2026 qb: 43 players stored (0 game logs fetched, 43 unchanged)
 STORED natref 2026 qb: 43 players through 2026-11-24
 [natref] 2026 rb: 45 players stored (0 game logs fetched, 45 unchanged)
 STORED natref 2026 rb: 45 players through 2026-11-24
 [natref] 2026 wr: 55 players stored (0 game logs fetched, 55 unchanged)
 STORED natref 2026 wr: 55 players through 2026-11-24
-[natref] 2025 qb: sealed (45 players)
-[natref] 2025 rb: sealed (51 players)
-[natref] 2025 wr: sealed (54 players)
-[natref] 2024 qb: sealed (47 players)
-[natref] 2024 rb: sealed (45 players)
-[natref] 2024 wr: sealed (60 players)
 [cfp] committee Top 25 unchanged since Week 13 (2026-11-24); no new snapshot
 FAILED sections: none
 [team] 2026: 9 team seasons refused by the validator
-[team] 2025: 5 team seasons refused by the validator
-[team] 2024: 10 team seasons refused by the validator

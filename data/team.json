@@ -79723,11 +79723,28 @@
        "to_gained": 0,
        "third_conv": 4,
        "third_att": 14
+      },
+      {
+       "event": "401856879",
+       "date": "2026-11-26",
+       "opp": "Texas Tech",
+       "opp_id": "2641",
+       "site": "A",
+       "pf": 27,
+       "pa": 48,
+       "result": "L 27-48",
+       "total_yds": 463,
+       "rush_yds": 245,
+       "pass_yds": 218,
+       "to_lost": 2,
+       "to_gained": 1,
+       "third_conv": 9,
+       "third_att": 18
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-22T13:11+00:00",
-     "check": "cfbstats season totals matched through 2026-11-21",
+     "retrieved_at": "2026-11-27T06:37+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-24, ESPN's latest game is 2026-11-26",
      "cfbstats_url": "https://cfbstats.com/2026/team/698/index.html"
     }
    }
@@ -81634,11 +81651,28 @@
        "to_gained": 0,
        "third_conv": 3,
        "third_att": 13
+      },
+      {
+       "event": "401856879",
+       "date": "2026-11-26",
+       "opp": "TCU",
+       "opp_id": "2628",
+       "site": "H",
+       "pf": 48,
+       "pa": 27,
+       "result": "W 48-27",
+       "total_yds": 459,
+       "rush_yds": 87,
+       "pass_yds": 372,
+       "to_lost": 1,
+       "to_gained": 2,
+       "third_conv": 3,
+       "third_att": 8
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-22T13:11+00:00",
-     "check": "cfbstats season totals matched through 2026-11-21",
+     "retrieved_at": "2026-11-27T06:37+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-24, ESPN's latest game is 2026-11-26",
      "cfbstats_url": "https://cfbstats.com/2026/team/700/index.html"
     },
     "2025": {
@@ -85448,6 +85482,6 @@
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-11-26T23:35+00:00"
+  "retrieved_at": "2026-11-27T06:36+00:00"
  }
 }

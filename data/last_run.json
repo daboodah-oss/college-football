@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T18:37-05:00",
+ "at": "2026-11-27T01:37-05:00",
  "failed": [],
  "refused": {
   "2026": [
@@ -12,34 +12,14 @@
    "Navy",
    "Ohio",
    "Virginia Tech"
-  ],
-  "2025": [
-   "Army",
-   "East Carolina",
-   "NC State",
-   "Navy",
-   "UL Monroe"
-  ],
-  "2024": [
-   "Arizona",
-   "Central Michigan",
-   "Louisiana Tech",
-   "Middle Tennessee",
-   "Northwestern",
-   "Old Dominion",
-   "San Jos\u00e9 State",
-   "Toledo",
-   "UTSA",
-   "West Virginia"
   ]
  },
  "registry_teams": {
-  "2026": 138,
-  "2025": 136,
-  "2024": 134
+  "2026": 138
  },
  "new_refusals": {},
  "log": [
+  "quick check: new final 2026-11-26 TCU Horned Frogs at Texas Tech Red Raiders",
   "[registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids",
   "[team] Arizona State 2026 REFUSED by validator",
   "[team] Coastal Carolina 2026 REFUSED by validator",
@@ -51,32 +31,12 @@
   "[team] Ohio 2026 REFUSED by validator",
   "[team] Virginia Tech 2026 REFUSED by validator",
   "[team] 2026: 138 registry teams; 0 sealed, 129 collected, 9 refused by the validator, 0 failed",
-  "[team] Army 2025 REFUSED by validator",
-  "[team] East Carolina 2025 REFUSED by validator",
-  "[team] UL Monroe 2025 REFUSED by validator",
-  "[team] NC State 2025 REFUSED by validator",
-  "[team] Navy 2025 REFUSED by validator",
-  "[team] 2025: 136 registry teams; 131 sealed, 0 collected, 5 refused by the validator, 0 failed",
-  "[team] Arizona 2024 REFUSED by validator",
-  "[team] Central Michigan 2024 REFUSED by validator",
-  "[team] Louisiana Tech 2024 REFUSED by validator",
-  "[team] Middle Tennessee 2024 REFUSED by validator",
-  "[team] Northwestern 2024 REFUSED by validator",
-  "[team] Old Dominion 2024 REFUSED by validator",
-  "[team] San Jos\u00e9 State 2024 REFUSED by validator",
-  "[team] box 2024-12-26 Pittsburgh (event 401677180, team 2649): ESPN totalYards 416 != rushing 80 + passing 351; player lines agree with the components, total stored as 431",
-  "[team] Toledo 2024 REFUSED by validator",
-  "[team] UTSA 2024 REFUSED by validator",
-  "[team] West Virginia 2024 REFUSED by validator",
-  "[team] 2024: 134 registry teams; 124 sealed, 0 collected, 10 refused by the validator, 0 failed",
   "[natref] 2026 qb: 43 players stored (0 game logs fetched, 43 unchanged)",
   "[natref] 2026 rb: 45 players stored (0 game logs fetched, 45 unchanged)",
   "[natref] 2026 wr: 55 players stored (0 game logs fetched, 55 unchanged)",
   "[cfp] committee Top 25 unchanged since Week 13 (2026-11-24); no new snapshot",
   "FAILED sections: none",
-  "[team] 2026: 9 team seasons refused by the validator",
-  "[team] 2025: 5 team seasons refused by the validator",
-  "[team] 2024: 10 team seasons refused by the validator"
+  "[team] 2026: 9 team seasons refused by the validator"
  ],
  "finals_seen": [
   "401856634",
@@ -285,6 +245,7 @@
   "401856870",
   "401856871",
   "401856872",
+  "401856879",
   "401856881",
   "401856882",
   "401856883",
