@@ -1,7 +1,7 @@
 {
  "qb": {
   "season": 2026,
-  "data_through": "2026-11-24",
+  "data_through": "2026-11-26",
   "positions": [
    "QB"
   ],
@@ -118,10 +118,10 @@
      "670-50207426",
      "334-2001303",
      "140-1179971",
+     "700-50312317",
      "513-50310480",
      "315-2002032",
-     "255-50312109",
-     "367-2000170"
+     "255-50312109"
     ],
     "top": [
      "415-2000040",
@@ -4879,6 +4879,130 @@
      }
     ]
    },
+   "700-50312317": {
+    "name": "Will Hammond",
+    "team": "Texas Tech",
+    "pos": "QB",
+    "line": {
+     "g": 9,
+     "att": 207,
+     "cmp": 141,
+     "yds": 1570,
+     "td": 6,
+     "int": 6
+    },
+    "url": "https://cfbstats.com/2026/player/700/50312317/passing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-05",
+      "opp": "Abilene Christian",
+      "site": "H",
+      "result": "W 33-10",
+      "att": 33,
+      "cmp": 26,
+      "yds": 298,
+      "td": 1,
+      "int": 1,
+      "src_rating": 158.58
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Oregon State",
+      "site": "A",
+      "result": "W 35-24",
+      "att": 27,
+      "cmp": 20,
+      "yds": 189,
+      "td": 1,
+      "int": 0,
+      "src_rating": 145.09
+     },
+     {
+      "date": "2026-09-18",
+      "opp": "Houston",
+      "site": "H",
+      "result": "W 28-26",
+      "att": 27,
+      "cmp": 17,
+      "yds": 257,
+      "td": 1,
+      "int": 1,
+      "src_rating": 147.73
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Sam Houston State",
+      "site": "H",
+      "result": "W 49-14",
+      "att": 29,
+      "cmp": 17,
+      "yds": 224,
+      "td": 1,
+      "int": 3,
+      "src_rating": 114.19
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Colorado",
+      "site": "A",
+      "result": "W 29-7",
+      "att": 26,
+      "cmp": 17,
+      "yds": 134,
+      "td": 1,
+      "int": 0,
+      "src_rating": 121.37
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Arizona State",
+      "site": "H",
+      "result": "W 53-25",
+      "att": 26,
+      "cmp": 18,
+      "yds": 232,
+      "td": 1,
+      "int": 0,
+      "src_rating": 156.87
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Cincinnati",
+      "site": "A",
+      "result": "L 24-37",
+      "att": 37,
+      "cmp": 24,
+      "yds": 227,
+      "td": 0,
+      "int": 1,
+      "src_rating": 110.99
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "Oklahoma State",
+      "site": "A",
+      "result": "W 52-27",
+      "att": 1,
+      "cmp": 1,
+      "yds": 5,
+      "td": 0,
+      "int": 0,
+      "src_rating": 142.0
+     },
+     {
+      "date": "2026-11-26",
+      "opp": "TCU",
+      "site": "H",
+      "result": "W 48-27",
+      "att": 1,
+      "cmp": 1,
+      "yds": 4,
+      "td": 0,
+      "int": 0,
+      "src_rating": 133.6
+     }
+    ]
+   },
    "315-2002032": {
     "name": "Caden Creel",
     "team": "J'ville St",
@@ -6325,11 +6449,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-27T06:37+00:00"
+  "retrieved_at": "2026-11-28T02:19+00:00"
  },
  "rb": {
   "season": 2026,
-  "data_through": "2026-11-24",
+  "data_through": "2026-11-26",
   "positions": [
    "RB"
   ],
@@ -6347,8 +6471,8 @@
      "404-50218273",
      "768-2000294",
      "694-1203707",
-     "434-2000108",
      "700-50257165",
+     "434-2000108",
      "472-1136312",
      "774-1180537",
      "140-50312285",
@@ -6404,9 +6528,9 @@
      "671-50286389",
      "749-50287768",
      "732-50287296",
-     "700-50257165",
      "419-1186917",
      "156-1182198",
+     "700-50257165",
      "509-1177828",
      "257-50312099",
      "311-50303320",
@@ -6441,8 +6565,8 @@
      "768-2000294",
      "694-1203707",
      "434-2000108",
-     "700-50257165",
      "472-1136312",
+     "700-50257165",
      "140-50312285",
      "674-50312286",
      "774-1180537",
@@ -7621,6 +7745,128 @@
      }
     ]
    },
+   "700-50257165": {
+    "name": "J'Koby Williams",
+    "team": "Texas Tech",
+    "pos": "RB",
+    "line": {
+     "g": 12,
+     "att": 164,
+     "yds": 1207,
+     "td": 9
+    },
+    "url": "https://cfbstats.com/2026/player/700/50257165/rushing/gamelog.html",
+    "games": [
+     {
+      "date": "2026-09-05",
+      "opp": "Abilene Christian",
+      "site": "H",
+      "result": "W 33-10",
+      "att": 13,
+      "yds": 71,
+      "td": 1
+     },
+     {
+      "date": "2026-09-12",
+      "opp": "Oregon State",
+      "site": "A",
+      "result": "W 35-24",
+      "att": 20,
+      "yds": 116,
+      "td": 1
+     },
+     {
+      "date": "2026-09-18",
+      "opp": "Houston",
+      "site": "H",
+      "result": "W 28-26",
+      "att": 7,
+      "yds": 62,
+      "td": 1
+     },
+     {
+      "date": "2026-09-26",
+      "opp": "Sam Houston State",
+      "site": "H",
+      "result": "W 49-14",
+      "att": 6,
+      "yds": 36,
+      "td": 0
+     },
+     {
+      "date": "2026-10-03",
+      "opp": "Colorado",
+      "site": "A",
+      "result": "W 29-7",
+      "att": 17,
+      "yds": 88,
+      "td": 0
+     },
+     {
+      "date": "2026-10-17",
+      "opp": "Arizona State",
+      "site": "H",
+      "result": "W 53-25",
+      "att": 11,
+      "yds": 165,
+      "td": 2
+     },
+     {
+      "date": "2026-10-24",
+      "opp": "Cincinnati",
+      "site": "A",
+      "result": "L 24-37",
+      "att": 12,
+      "yds": 81,
+      "td": 0
+     },
+     {
+      "date": "2026-10-31",
+      "opp": "Arizona",
+      "site": "H",
+      "result": "W 34-26",
+      "att": 14,
+      "yds": 175,
+      "td": 1
+     },
+     {
+      "date": "2026-11-07",
+      "opp": "West Virginia",
+      "site": "H",
+      "result": "W 53-48",
+      "att": 19,
+      "yds": 160,
+      "td": 1
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "Oklahoma State",
+      "site": "A",
+      "result": "W 52-27",
+      "att": 19,
+      "yds": 124,
+      "td": 1
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "Baylor",
+      "site": "A",
+      "result": "W 20-10",
+      "att": 21,
+      "yds": 117,
+      "td": 1
+     },
+     {
+      "date": "2026-11-26",
+      "opp": "TCU",
+      "site": "H",
+      "result": "W 48-27",
+      "att": 5,
+      "yds": 12,
+      "td": 0
+     }
+    ]
+   },
    "434-2000108": {
     "name": "Jamal Roberts",
     "team": "Missouri",
@@ -7731,119 +7977,6 @@
       "att": 23,
       "yds": 67,
       "td": 0
-     }
-    ]
-   },
-   "700-50257165": {
-    "name": "J'Koby Williams",
-    "team": "Texas Tech",
-    "pos": "RB",
-    "line": {
-     "g": 11,
-     "att": 159,
-     "yds": 1195,
-     "td": 9
-    },
-    "url": "https://cfbstats.com/2026/player/700/50257165/rushing/gamelog.html",
-    "games": [
-     {
-      "date": "2026-09-05",
-      "opp": "Abilene Christian",
-      "site": "H",
-      "result": "W 33-10",
-      "att": 13,
-      "yds": 71,
-      "td": 1
-     },
-     {
-      "date": "2026-09-12",
-      "opp": "Oregon State",
-      "site": "A",
-      "result": "W 35-24",
-      "att": 20,
-      "yds": 116,
-      "td": 1
-     },
-     {
-      "date": "2026-09-18",
-      "opp": "Houston",
-      "site": "H",
-      "result": "W 28-26",
-      "att": 7,
-      "yds": 62,
-      "td": 1
-     },
-     {
-      "date": "2026-09-26",
-      "opp": "Sam Houston State",
-      "site": "H",
-      "result": "W 49-14",
-      "att": 6,
-      "yds": 36,
-      "td": 0
-     },
-     {
-      "date": "2026-10-03",
-      "opp": "Colorado",
-      "site": "A",
-      "result": "W 29-7",
-      "att": 17,
-      "yds": 88,
-      "td": 0
-     },
-     {
-      "date": "2026-10-17",
-      "opp": "Arizona State",
-      "site": "H",
-      "result": "W 53-25",
-      "att": 11,
-      "yds": 165,
-      "td": 2
-     },
-     {
-      "date": "2026-10-24",
-      "opp": "Cincinnati",
-      "site": "A",
-      "result": "L 24-37",
-      "att": 12,
-      "yds": 81,
-      "td": 0
-     },
-     {
-      "date": "2026-10-31",
-      "opp": "Arizona",
-      "site": "H",
-      "result": "W 34-26",
-      "att": 14,
-      "yds": 175,
-      "td": 1
-     },
-     {
-      "date": "2026-11-07",
-      "opp": "West Virginia",
-      "site": "H",
-      "result": "W 53-48",
-      "att": 19,
-      "yds": 160,
-      "td": 1
-     },
-     {
-      "date": "2026-11-14",
-      "opp": "Oklahoma State",
-      "site": "A",
-      "result": "W 52-27",
-      "att": 19,
-      "yds": 124,
-      "td": 1
-     },
-     {
-      "date": "2026-11-21",
-      "opp": "Baylor",
-      "site": "A",
-      "result": "W 20-10",
-      "att": 21,
-      "yds": 117,
-      "td": 1
      }
     ]
    },
@@ -11479,11 +11612,11 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-27T06:37+00:00"
+  "retrieved_at": "2026-11-28T02:19+00:00"
  },
  "wr": {
   "season": 2026,
-  "data_through": "2026-11-24",
+  "data_through": "2026-11-26",
   "positions": [
    "WR",
    "TE"
@@ -17728,6 +17861,6 @@
    }
   },
   "dropped": [],
-  "retrieved_at": "2026-11-27T06:37+00:00"
+  "retrieved_at": "2026-11-28T02:20+00:00"
  }
 }

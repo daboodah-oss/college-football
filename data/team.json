@@ -1439,11 +1439,28 @@
        "to_gained": 1,
        "third_conv": 5,
        "third_att": 15
+      },
+      {
+       "event": "401869930",
+       "date": "2026-11-27",
+       "opp": "App State",
+       "opp_id": "2026",
+       "site": "H",
+       "pf": 20,
+       "pa": 13,
+       "result": "W 20-13",
+       "total_yds": 347,
+       "rush_yds": 136,
+       "pass_yds": 211,
+       "to_lost": 1,
+       "to_gained": 2,
+       "third_conv": 6,
+       "third_att": 16
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-22T13:11+00:00",
-     "check": "cfbstats season totals matched through 2026-11-21",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/646/index.html"
     },
     "2025": {
@@ -4666,11 +4683,28 @@
        "to_gained": 2,
        "third_conv": 7,
        "third_att": 16
+      },
+      {
+       "event": "401864549",
+       "date": "2026-11-27",
+       "opp": "North Dakota State",
+       "opp_id": "2449",
+       "site": "H",
+       "pf": 31,
+       "pa": 38,
+       "result": "L 31-38",
+       "total_yds": 386,
+       "rush_yds": 80,
+       "pass_yds": 306,
+       "to_lost": 3,
+       "to_gained": 1,
+       "third_conv": 7,
+       "third_att": 17
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-22T13:10+00:00",
-     "check": "cfbstats season totals matched through 2026-11-21",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/630/index.html"
     },
     "2025": {
@@ -10011,11 +10045,28 @@
        "to_gained": 0,
        "third_conv": 5,
        "third_att": 13
+      },
+      {
+       "event": "401856759",
+       "date": "2026-11-27",
+       "opp": "Florida",
+       "opp_id": "57",
+       "site": "H",
+       "pf": 10,
+       "pa": 26,
+       "result": "L 10-26",
+       "total_yds": 290,
+       "rush_yds": 98,
+       "pass_yds": 192,
+       "to_lost": 2,
+       "to_gained": 1,
+       "third_conv": 5,
+       "third_att": 17
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-22T13:08+00:00",
-     "check": "cfbstats season totals matched through 2026-11-21",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/234/index.html"
     },
     "2024": {
@@ -11327,11 +11378,28 @@
        "to_gained": 1,
        "third_conv": 11,
        "third_att": 16
+      },
+      {
+       "event": "401856759",
+       "date": "2026-11-27",
+       "opp": "Florida State",
+       "opp_id": "52",
+       "site": "A",
+       "pf": 26,
+       "pa": 10,
+       "result": "W 26-10",
+       "total_yds": 282,
+       "rush_yds": 146,
+       "pass_yds": 136,
+       "to_lost": 1,
+       "to_gained": 2,
+       "third_conv": 3,
+       "third_att": 12
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-25T18:52+00:00",
-     "check": "cfbstats season totals matched through 2026-11-24, except rushing yards 1,865 in ESPN box scores vs 1,859 on cfbstats; total yards 4,352 in ESPN box scores vs 4,346 on cfbstats",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/235/index.html"
     },
     "2025": {
@@ -24899,11 +24967,28 @@
        "to_gained": 2,
        "third_conv": 8,
        "third_att": 10
+      },
+      {
+       "event": "401856762",
+       "date": "2026-11-27",
+       "opp": "Mississippi State",
+       "opp_id": "344",
+       "site": "H",
+       "pf": 41,
+       "pa": 17,
+       "result": "W 41-17",
+       "total_yds": 355,
+       "rush_yds": 118,
+       "pass_yds": 237,
+       "to_lost": 0,
+       "to_gained": 1,
+       "third_conv": 8,
+       "third_att": 13
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-25T18:53+00:00",
-     "check": "cfbstats season totals matched through 2026-11-24",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/433/index.html"
     },
     "2025": {
@@ -28406,11 +28491,28 @@
        "to_gained": 2,
        "third_conv": 10,
        "third_att": 16
+      },
+      {
+       "event": "401858536",
+       "date": "2026-11-27",
+       "opp": "Iowa",
+       "opp_id": "2294",
+       "site": "A",
+       "pf": 7,
+       "pa": 31,
+       "result": "L 7-31",
+       "total_yds": 260,
+       "rush_yds": 107,
+       "pass_yds": 153,
+       "to_lost": 3,
+       "to_gained": 1,
+       "third_conv": 4,
+       "third_att": 12
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-22T13:09+00:00",
-     "check": "cfbstats season totals matched through 2026-11-21",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/463/index.html"
     },
     "2024": {
@@ -30329,11 +30431,28 @@
        "to_gained": 0,
        "third_conv": 7,
        "third_att": 16
+      },
+      {
+       "event": "401864546",
+       "date": "2026-11-27",
+       "opp": "Air Force",
+       "opp_id": "2005",
+       "site": "H",
+       "pf": 42,
+       "pa": 19,
+       "result": "W 42-19",
+       "total_yds": 430,
+       "rush_yds": 182,
+       "pass_yds": 248,
+       "to_lost": 1,
+       "to_gained": 2,
+       "third_conv": 7,
+       "third_att": 12
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-21T13:42+00:00",
-     "check": "cfbstats season totals matched through 2026-11-20",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/473/index.html"
     },
     "2025": {
@@ -33636,11 +33755,79 @@
        "to_gained": 1,
        "third_conv": 3,
        "third_att": 11
+      },
+      {
+       "event": "401866453",
+       "date": "2026-11-03",
+       "opp": "Akron",
+       "opp_id": "2006",
+       "site": "A",
+       "pf": 28,
+       "pa": 20,
+       "result": "W 28-20",
+       "total_yds": 364,
+       "rush_yds": 167,
+       "pass_yds": 197,
+       "to_lost": 1,
+       "to_gained": 2,
+       "third_conv": 3,
+       "third_att": 9
+      },
+      {
+       "event": "401866460",
+       "date": "2026-11-10",
+       "opp": "Miami (OH)",
+       "opp_id": "193",
+       "site": "A",
+       "pf": 17,
+       "pa": 34,
+       "result": "L 17-34",
+       "total_yds": 381,
+       "rush_yds": 152,
+       "pass_yds": 229,
+       "to_lost": 2,
+       "to_gained": 1,
+       "third_conv": 3,
+       "third_att": 17
+      },
+      {
+       "event": "401866464",
+       "date": "2026-11-17",
+       "opp": "Ball State",
+       "opp_id": "2050",
+       "site": "H",
+       "pf": 35,
+       "pa": 28,
+       "result": "W 35-28",
+       "total_yds": 365,
+       "rush_yds": 186,
+       "pass_yds": 179,
+       "to_lost": 1,
+       "to_gained": 2,
+       "third_conv": 5,
+       "third_att": 9
+      },
+      {
+       "event": "401866473",
+       "date": "2026-11-27",
+       "opp": "Toledo",
+       "opp_id": "2649",
+       "site": "H",
+       "pf": 31,
+       "pa": 34,
+       "result": "L 31-34",
+       "total_yds": 458,
+       "rush_yds": 130,
+       "pass_yds": 328,
+       "to_lost": 1,
+       "to_gained": 1,
+       "third_conv": 5,
+       "third_att": 14
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-10-25T08:33+00:00",
-     "check": "cfbstats season totals matched through 2026-10-24",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/519/index.html"
     },
     "2025": {
@@ -35593,11 +35780,28 @@
        "to_gained": 1,
        "third_conv": 4,
        "third_att": 12
+      },
+      {
+       "event": "401862840",
+       "date": "2026-11-27",
+       "opp": "UTSA",
+       "opp_id": "2636",
+       "site": "A",
+       "pf": 22,
+       "pa": 28,
+       "result": "L 22-28",
+       "total_yds": 274,
+       "rush_yds": 57,
+       "pass_yds": 217,
+       "to_lost": 0,
+       "to_gained": 1,
+       "third_conv": 3,
+       "third_att": 10
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-22T13:11+00:00",
-     "check": "cfbstats season totals matched through 2026-11-21",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/719/index.html"
     },
     "2024": {
@@ -37550,11 +37754,28 @@
        "to_gained": 1,
        "third_conv": 5,
        "third_att": 10
+      },
+      {
+       "event": "401862838",
+       "date": "2026-11-27",
+       "opp": "Memphis",
+       "opp_id": "235",
+       "site": "A",
+       "pf": 35,
+       "pa": 31,
+       "result": "W 35-31",
+       "total_yds": 397,
+       "rush_yds": 197,
+       "pass_yds": 200,
+       "to_lost": 1,
+       "to_gained": 3,
+       "third_conv": 9,
+       "third_att": 16
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-21T05:32+00:00",
-     "check": "cfbstats season totals matched through 2026-11-19, except rushing yards 2,041 in ESPN box scores vs 2,040 on cfbstats; total yards 3,822 in ESPN box scores vs 3,821 on cfbstats",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/690/index.html"
     },
     "2025": {
@@ -39507,11 +39728,28 @@
        "to_gained": 1,
        "third_conv": 3,
        "third_att": 15
+      },
+      {
+       "event": "401862838",
+       "date": "2026-11-27",
+       "opp": "Temple",
+       "opp_id": "218",
+       "site": "H",
+       "pf": 31,
+       "pa": 35,
+       "result": "L 31-35",
+       "total_yds": 410,
+       "rush_yds": 150,
+       "pass_yds": 260,
+       "to_lost": 3,
+       "to_gained": 1,
+       "third_conv": 3,
+       "third_att": 9
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-25T18:52+00:00",
-     "check": "cfbstats season totals matched through 2026-11-24, except rushing yards 2,605 in ESPN box scores vs 2,599 on cfbstats; total yards 5,735 in ESPN box scores vs 5,729 on cfbstats",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/404/index.html"
     },
     "2025": {
@@ -56798,11 +57036,28 @@
        "to_gained": 1,
        "third_conv": 2,
        "third_att": 6
+      },
+      {
+       "event": "401856762",
+       "date": "2026-11-27",
+       "opp": "Ole Miss",
+       "opp_id": "145",
+       "site": "A",
+       "pf": 17,
+       "pa": 41,
+       "result": "L 17-41",
+       "total_yds": 332,
+       "rush_yds": 131,
+       "pass_yds": 201,
+       "to_lost": 1,
+       "to_gained": 0,
+       "third_conv": 3,
+       "third_att": 11
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-22T13:09+00:00",
-     "check": "cfbstats season totals matched through 2026-11-21",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/430/index.html"
     },
     "2024": {
@@ -58950,11 +59205,28 @@
        "to_gained": 2,
        "third_conv": 9,
        "third_att": 13
+      },
+      {
+       "event": "401864546",
+       "date": "2026-11-27",
+       "opp": "New Mexico",
+       "opp_id": "167",
+       "site": "A",
+       "pf": 19,
+       "pa": 42,
+       "result": "L 19-42",
+       "total_yds": 398,
+       "rush_yds": 162,
+       "pass_yds": 236,
+       "to_lost": 2,
+       "to_gained": 1,
+       "third_conv": 5,
+       "third_att": 15
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-25T18:52+00:00",
-     "check": "cfbstats season totals matched through 2026-11-24",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/721/index.html"
     }
    }
@@ -59150,11 +59422,28 @@
        "to_gained": 1,
        "third_conv": 3,
        "third_att": 9
+      },
+      {
+       "event": "401866472",
+       "date": "2026-11-27",
+       "opp": "Buffalo",
+       "opp_id": "2084",
+       "site": "H",
+       "pf": 9,
+       "pa": 17,
+       "result": "L 9-17",
+       "total_yds": 304,
+       "rush_yds": 112,
+       "pass_yds": 192,
+       "to_lost": 0,
+       "to_gained": 0,
+       "third_conv": 3,
+       "third_att": 12
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-20T01:28+00:00",
-     "check": "cfbstats season totals matched through 2026-11-18",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/5/index.html"
     },
     "2024": {
@@ -59774,11 +60063,28 @@
        "to_gained": 1,
        "third_conv": 5,
        "third_att": 16
+      },
+      {
+       "event": "401869930",
+       "date": "2026-11-27",
+       "opp": "South Alabama",
+       "opp_id": "6",
+       "site": "A",
+       "pf": 13,
+       "pa": 20,
+       "result": "L 13-20",
+       "total_yds": 361,
+       "rush_yds": 110,
+       "pass_yds": 251,
+       "to_lost": 2,
+       "to_gained": 1,
+       "third_conv": 4,
+       "third_att": 12
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-22T13:07+00:00",
-     "check": "cfbstats season totals matched through 2026-11-21",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/27/index.html"
     },
     "2025": {
@@ -62121,11 +62427,28 @@
        "to_gained": 3,
        "third_conv": 7,
        "third_att": 12
+      },
+      {
+       "event": "401866472",
+       "date": "2026-11-27",
+       "opp": "Akron",
+       "opp_id": "2006",
+       "site": "A",
+       "pf": 17,
+       "pa": 9,
+       "result": "W 17-9",
+       "total_yds": 235,
+       "rush_yds": 147,
+       "pass_yds": 88,
+       "to_lost": 0,
+       "to_gained": 0,
+       "third_conv": 3,
+       "third_att": 13
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-25T18:52+00:00",
-     "check": "cfbstats season totals matched through 2026-11-24, except rushing yards 2,097 in ESPN box scores vs 2,091 on cfbstats; total yards 3,892 in ESPN box scores vs 3,886 on cfbstats",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/86/index.html"
     }
    }
@@ -66545,11 +66868,28 @@
        "to_gained": 2,
        "third_conv": 7,
        "third_att": 16
+      },
+      {
+       "event": "401858536",
+       "date": "2026-11-27",
+       "opp": "Nebraska",
+       "opp_id": "158",
+       "site": "H",
+       "pf": 31,
+       "pa": 7,
+       "result": "W 31-7",
+       "total_yds": 329,
+       "rush_yds": 156,
+       "pass_yds": 173,
+       "to_lost": 1,
+       "to_gained": 3,
+       "third_conv": 5,
+       "third_att": 13
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-22T13:08+00:00",
-     "check": "cfbstats season totals matched through 2026-11-21",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/312/index.html"
     },
     "2025": {
@@ -74064,11 +74404,28 @@
        "to_gained": 2,
        "third_conv": 8,
        "third_att": 12
+      },
+      {
+       "event": "401864549",
+       "date": "2026-11-27",
+       "opp": "San Jos\u00e9 State",
+       "opp_id": "23",
+       "site": "A",
+       "pf": 38,
+       "pa": 31,
+       "result": "W 38-31",
+       "total_yds": 409,
+       "rush_yds": 183,
+       "pass_yds": 226,
+       "to_lost": 1,
+       "to_gained": 3,
+       "third_conv": 5,
+       "third_att": 16
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-22T13:10+00:00",
-     "check": "cfbstats season totals matched through 2026-11-21",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/493/index.html"
     }
    }
@@ -79743,8 +80100,8 @@
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-27T06:37+00:00",
-     "check": "not cross-checked yet: cfbstats is through 2026-11-24, ESPN's latest game is 2026-11-26",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "cfbstats season totals matched through 2026-11-26",
      "cfbstats_url": "https://cfbstats.com/2026/team/698/index.html"
     }
    }
@@ -80598,11 +80955,28 @@
        "to_gained": 2,
        "third_conv": 6,
        "third_att": 17
+      },
+      {
+       "event": "401862840",
+       "date": "2026-11-27",
+       "opp": "Tulsa",
+       "opp_id": "202",
+       "site": "H",
+       "pf": 28,
+       "pa": 22,
+       "result": "W 28-22",
+       "total_yds": 526,
+       "rush_yds": 162,
+       "pass_yds": 364,
+       "to_lost": 1,
+       "to_gained": 0,
+       "third_conv": 8,
+       "third_att": 17
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-25T18:53+00:00",
-     "check": "cfbstats season totals matched through 2026-11-24, except rushing yards 2,070 in ESPN box scores vs 2,064 on cfbstats; total yards 4,361 in ESPN box scores vs 4,355 on cfbstats",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/706/index.html"
     },
     "2025": {
@@ -81671,8 +82045,8 @@
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-27T06:37+00:00",
-     "check": "not cross-checked yet: cfbstats is through 2026-11-24, ESPN's latest game is 2026-11-26",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "cfbstats season totals matched through 2026-11-26",
      "cfbstats_url": "https://cfbstats.com/2026/team/700/index.html"
     },
     "2025": {
@@ -82343,11 +82717,28 @@
        "to_gained": 1,
        "third_conv": 5,
        "third_att": 16
+      },
+      {
+       "event": "401866473",
+       "date": "2026-11-27",
+       "opp": "Ohio",
+       "opp_id": "195",
+       "site": "A",
+       "pf": 34,
+       "pa": 31,
+       "result": "W 34-31",
+       "total_yds": 437,
+       "rush_yds": 226,
+       "pass_yds": 211,
+       "to_lost": 1,
+       "to_gained": 1,
+       "third_conv": 7,
+       "third_att": 13
       }
      ],
      "complete": false,
-     "retrieved_at": "2026-11-21T13:43+00:00",
-     "check": "cfbstats season totals matched through 2026-11-20, except rushing yards 2,071 in ESPN box scores vs 2,067 on cfbstats; total yards 4,824 in ESPN box scores vs 4,820 on cfbstats",
+     "retrieved_at": "2026-11-28T02:19+00:00",
+     "check": "not cross-checked yet: cfbstats is through 2026-11-26, ESPN's latest game is 2026-11-27",
      "cfbstats_url": "https://cfbstats.com/2026/team/709/index.html"
     },
     "2025": {
@@ -85482,6 +85873,6 @@
    }
   ],
   "source_url": "https://www.espn.com/college-football/rankings",
-  "retrieved_at": "2026-11-27T06:36+00:00"
+  "retrieved_at": "2026-11-28T02:19+00:00"
  }
 }
