@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T21:20-05:00",
+ "at": "2026-11-28T01:12-05:00",
  "failed": [],
  "refused": {
   "2026": [
@@ -18,7 +18,7 @@
  },
  "new_refusals": {},
  "log": [
-  "quick check: new final 2026-11-27 Nebraska Cornhuskers at Iowa Hawkeyes",
+  "quick check: new final 2026-11-27 West Virginia Mountaineers at Utah Utes",
   "[registry] 2026: 138 teams on the cfbstats index, 138 joined to ESPN ids",
   "[team] Arizona State 2026 REFUSED by validator",
   "[team] Coastal Carolina 2026 REFUSED by validator",
@@ -29,8 +29,8 @@
   "[team] Navy 2026 REFUSED by validator",
   "[team] Virginia Tech 2026 REFUSED by validator",
   "[team] 2026: 138 registry teams; 0 sealed, 130 collected, 8 refused by the validator, 0 failed",
-  "[natref] 2026 qb: 44 players stored (1 game logs fetched, 43 unchanged)",
-  "[natref] 2026 rb: 45 players stored (1 game logs fetched, 44 unchanged)",
+  "[natref] 2026 qb: 44 players stored (0 game logs fetched, 44 unchanged)",
+  "[natref] 2026 rb: 45 players stored (0 game logs fetched, 45 unchanged)",
   "[natref] 2026 wr: 55 players stored (0 game logs fetched, 55 unchanged)",
   "[cfp] committee Top 25 unchanged since Week 13 (2026-11-24); no new snapshot",
   "FAILED sections: none",
@@ -137,6 +137,7 @@
   "401856753",
   "401856754",
   "401856755",
+  "401856756",
   "401856759",
   "401856762",
   "401856766",
@@ -246,6 +247,7 @@
   "401856871",
   "401856872",
   "401856879",
+  "401856880",
   "401856881",
   "401856882",
   "401856883",
@@ -477,6 +479,7 @@
   "401858534",
   "401858535",
   "401858536",
+  "401858544",
   "401859184",
   "401859185",
   "401860878",
